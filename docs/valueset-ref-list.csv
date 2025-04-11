@@ -1,0 +1,6 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://example.org/ValueSet/ConditionCertaintyVS,0.1.0,draft,,ConditionCertaintyVS,ConditionCertaintyVS,"Degree of confidence the condition is present","StructureDefinition/condition-certainty","SCT"
+http://example.org/ValueSet/CovidSeverityVS,0.1.0,draft,,CovidSeverityVS,CovidSeverityVS,"Values for COVID severity","StructureDefinition/covid-diagnosis","SCT"
+http://example.org/ValueSet/PatrickVS,0.1.0,draft,,PatrickVS,PatrickVS,"A ValueSet from Patrick",,"Internal"
+http://hl7.org/fhir/ValueSet/bodysite-laterality,4.0.1,draft,"2.16.840.1.113883.4.642.3.287",Laterality,Laterality,"Laterality: SNOMED-CT concepts for 'left', 'right', and 'bilateral'","StructureDefinition/Laterality","SCT"
+http://hl7.org/fhir/ValueSet/condition-severity,4.0.1,draft,"2.16.840.1.113883.4.642.3.168",Condition/DiagnosisSeverity,Condition/Diagnosis Severity,"Preferred value set for Condition/Diagnosis severity grading.","ValueSet/CovidSeverityVS","SCT"

@@ -1,0 +1,185 @@
+TestIG : Validation Results
+=========================================
+
+err = 10, warn = 19, info = 4
+IG Publisher Version: 1.8.23
+Generated Fri Apr 11 08:11:58 CEST 2025. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
+ Build Errors : 111 / 6 / 0
+ C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\CodeSystem-PatrickCS : 0 / 2 / 2
+ C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\Condition-DiagnosisExample : 2 / 0 / 2
+ C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\ImplementationGuide-fhir.example : 0 / 0 / 1
+ C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\Medication-MedicationExample : 2 / 0 / 1
+ C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\Patient-JaneDoe : 0 / 0 / 1
+ C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\Questionnaire-ExampleQuestionnaireInstance : 6 / 0 / 2
+ C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\StructureDefinition-Laterality : 0 / 2 / 1
+ C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\StructureDefinition-PatricksMedication : 0 / 0 / 2
+ C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\StructureDefinition-TestExtenstionMedication : 0 / 2 / 1
+ C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\StructureDefinition-condition-certainty : 0 / 2 / 1
+ C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\StructureDefinition-covid-diagnosis : 0 / 0 / 1
+ C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\StructureDefinition-example.questionnaire : 0 / 1 / 1
+ C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\StructureDefinition-patient-contact-details : 0 / 1 / 1
+ C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\ValueSet-ConditionCertaintyVS : 0 / 1 / 1
+ C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\ValueSet-CovidSeverityVS : 0 / 1 / 1
+ C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\ValueSet-PatrickVS : 0 / 1 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/ExampleQuestionnaireInstance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\CodeSystem-PatrickCS-testing.html#/html/body/div/div/div/p/a at Line 229, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\CodeSystem-PatrickCS.change.history.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\CodeSystem-PatrickCS.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\CodeSystem-PatrickCS.json.html#/html/body/div/div/div/p/a at Line 268, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\CodeSystem-PatrickCS.ttl.html#/html/body/div/div/div/p/a at Line 269, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\CodeSystem-PatrickCS.xml.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Condition-DiagnosisExample.change.history.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Condition-DiagnosisExample.html#/html/body/div/div/div/p/a at Line 207, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Condition-DiagnosisExample.json.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Condition-DiagnosisExample.ttl.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Condition-DiagnosisExample.xml.html#/html/body/div/div/div/p/a at Line 242, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Medication-MedicationExample.change.history.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Medication-MedicationExample.html#/html/body/div/div/div/p/a at Line 207, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Medication-MedicationExample.json.html#/html/body/div/div/div/p/a at Line 225, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Medication-MedicationExample.ttl.html#/html/body/div/div/div/p/a at Line 236, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Medication-MedicationExample.xml.html#/html/body/div/div/div/p/a at Line 222, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Patient-JaneDoe.change.history.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Patient-JaneDoe.html#/html/body/div/div/div/p/a at Line 207, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Patient-JaneDoe.json.html#/html/body/div/div/div/p/a at Line 222, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Patient-JaneDoe.ttl.html#/html/body/div/div/div/p/a at Line 229, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Patient-JaneDoe.xml.html#/html/body/div/div/div/p/a at Line 218, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Questionnaire-ExampleQuestionnaireInstance-testing.html#/html/body/div/div/div/p/a at Line 229, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Questionnaire-ExampleQuestionnaireInstance.change.history.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Questionnaire-ExampleQuestionnaireInstance.html#/html/body/div/div/div/p/a at Line 253, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Questionnaire-ExampleQuestionnaireInstance.json.html#/html/body/div/div/div/p/a at Line 282, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Questionnaire-ExampleQuestionnaireInstance.ttl.html#/html/body/div/div/div/p/a at Line 277, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\Questionnaire-ExampleQuestionnaireInstance.xml.html#/html/body/div/div/div/p/a at Line 278, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-Laterality-definitions.html#/html/body/div/div/div/p/a at Line 311, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-Laterality-mappings.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-Laterality-testing.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-Laterality.html#/html/body/div/div/div/p/a at Line 597, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-Laterality.profile.history.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-Laterality.profile.json.html#/html/body/div/div/div/p/a at Line 534, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-Laterality.profile.ttl.html#/html/body/div/div/div/p/a at Line 480, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-Laterality.profile.xml.html#/html/body/div/div/div/p/a at Line 490, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-PatricksMedication-definitions.html#/html/body/div/div/div/p/a at Line 418, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-PatricksMedication-examples.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-PatricksMedication-mappings.html#/html/body/div/div/div/p/a at Line 330, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-PatricksMedication-testing.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-PatricksMedication.html#/html/body/div/div/div/p/a at Line 1179, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-PatricksMedication.profile.history.html#/html/body/div/div/div/p/a at Line 244, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-PatricksMedication.profile.json.html#/html/body/div/div/div/p/a at Line 1592, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-PatricksMedication.profile.ttl.html#/html/body/div/div/div/p/a at Line 1251, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-PatricksMedication.profile.xml.html#/html/body/div/div/div/p/a at Line 1499, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-TestExtenstionMedication-definitions.html#/html/body/div/div/div/p/a at Line 311, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-TestExtenstionMedication-mappings.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-TestExtenstionMedication-testing.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-TestExtenstionMedication.html#/html/body/div/div/div/p/a at Line 592, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-TestExtenstionMedication.profile.history.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-TestExtenstionMedication.profile.json.html#/html/body/div/div/div/p/a at Line 526, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-TestExtenstionMedication.profile.ttl.html#/html/body/div/div/div/p/a at Line 470, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-TestExtenstionMedication.profile.xml.html#/html/body/div/div/div/p/a at Line 485, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-condition-certainty-definitions.html#/html/body/div/div/div/p/a at Line 311, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-condition-certainty-mappings.html#/html/body/div/div/div/p/a at Line 251, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-condition-certainty-testing.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-condition-certainty.html#/html/body/div/div/div/p/a at Line 597, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-condition-certainty.profile.history.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-condition-certainty.profile.json.html#/html/body/div/div/div/p/a at Line 534, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-condition-certainty.profile.ttl.html#/html/body/div/div/div/p/a at Line 480, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-condition-certainty.profile.xml.html#/html/body/div/div/div/p/a at Line 492, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-covid-diagnosis-definitions.html#/html/body/div/div/div/p/a at Line 499, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-covid-diagnosis-examples.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-covid-diagnosis-mappings.html#/html/body/div/div/div/p/a at Line 373, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-covid-diagnosis-testing.html#/html/body/div/div/div/p/a at Line 262, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-covid-diagnosis.html#/html/body/div/div/div/p/a at Line 1851, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-covid-diagnosis.profile.history.html#/html/body/div/div/div/p/a at Line 244, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-covid-diagnosis.profile.json.html#/html/body/div/div/div/p/a at Line 2414, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-covid-diagnosis.profile.ttl.html#/html/body/div/div/div/p/a at Line 1843, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-covid-diagnosis.profile.xml.html#/html/body/div/div/div/p/a at Line 2245, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-example.questionnaire-definitions.html#/html/body/div/div/div/p/a at Line 679, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-example.questionnaire-examples.html#/html/body/div/div/div/p/a at Line 245, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-example.questionnaire-mappings.html#/html/body/div/div/div/p/a at Line 359, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-example.questionnaire-testing.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-example.questionnaire.html#/html/body/div/div/div/p/a at Line 2727, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-example.questionnaire.profile.history.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-example.questionnaire.profile.json.html#/html/body/div/div/div/p/a at Line 3434, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-example.questionnaire.profile.ttl.html#/html/body/div/div/div/p/a at Line 2584, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-example.questionnaire.profile.xml.html#/html/body/div/div/div/p/a at Line 3204, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-patient-contact-details-definitions.html#/html/body/div/div/div/p/a at Line 521, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-patient-contact-details-mappings.html#/html/body/div/div/div/p/a at Line 277, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-patient-contact-details-testing.html#/html/body/div/div/div/p/a at Line 252, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-patient-contact-details.html#/html/body/div/div/div/p/a at Line 1180, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-patient-contact-details.profile.history.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-patient-contact-details.profile.json.html#/html/body/div/div/div/p/a at Line 2038, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-patient-contact-details.profile.ttl.html#/html/body/div/div/div/p/a at Line 1516, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\StructureDefinition-patient-contact-details.profile.xml.html#/html/body/div/div/div/p/a at Line 1835, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-ConditionCertaintyVS-testing.html#/html/body/div/div/div/p/a at Line 229, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-ConditionCertaintyVS.change.history.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-ConditionCertaintyVS.html#/html/body/div/div/div/p/a at Line 298, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-ConditionCertaintyVS.json.html#/html/body/div/div/div/p/a at Line 269, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-ConditionCertaintyVS.ttl.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-ConditionCertaintyVS.xml.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-CovidSeverityVS-testing.html#/html/body/div/div/div/p/a at Line 229, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-CovidSeverityVS.change.history.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-CovidSeverityVS.html#/html/body/div/div/div/p/a at Line 302, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-CovidSeverityVS.json.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-CovidSeverityVS.ttl.html#/html/body/div/div/div/p/a at Line 264, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-CovidSeverityVS.xml.html#/html/body/div/div/div/p/a at Line 256, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-PatrickVS-testing.html#/html/body/div/div/div/p/a at Line 229, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-PatrickVS.change.history.html#/html/body/div/div/div/p/a at Line 198, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-PatrickVS.html#/html/body/div/div/div/p/a at Line 296, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-PatrickVS.json.html#/html/body/div/div/div/p/a at Line 269, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-PatrickVS.ttl.html#/html/body/div/div/div/p/a at Line 265, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\ValueSet-PatrickVS.xml.html#/html/body/div/div/div/p/a at Line 261, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\artifacts.html#/html/body/div/div/div/p/a at Line 353, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\document.html#/html/body/div/div/div/p/a at Line 172, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\extensions.html#/html/body/div/div/div/p/a at Line 179, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\index.html#/html/body/div/div/div/p/a at Line 212, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\profiles.html#/html/body/div/div/div/p/a at Line 179, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\terminology.html#/html/body/div/div/div/p/a at Line 184, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+ERROR: C:\Users\Patrick\Documents\GitHub\TestIG\output\toc.html#/html/body/div/div/div/p/a at Line 154, column 28: The link 'http://example.org/example-publisher' for "Example Publisher" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: IG: The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters
+== fsh-generated\resources\CodeSystem-PatrickCS.json ==
+INFORMATION: CodeSystem/PatrickCS: CodeSystem: CodeSysteme SOLLTEN einen angegebenen Wert für das caseSensitive-Element haben, damit die Benutzer den Status und die Bedeutung des Codesystems eindeutig kennen
+WARNING: CodeSystem/PatrickCS: CodeSystem: !!Das ShareableCodeSystem-Profil sagt, dass das experimental-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte Codesysteme SOLLTEN mit dem ShareableCodeSystem-Profil übereinstimmen
+WARNING: CodeSystem/PatrickCS: CodeSystem: !!Das ShareableCodeSystem-Profil sagt, dass das caseSensitive-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte Codesysteme SOLLTEN mit dem ShareableCodeSystem-Profil übereinstimmen
+== fsh-generated\resources\Condition-DiagnosisExample.json ==
+INFORMATION: Condition/DiagnosisExample: Condition.extension[0]: !!Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://example.org/StructureDefinition/covid-diagnosis|0.1.0 überein.
+ERROR: Condition/DiagnosisExample: Condition.extension[0]: !!Die extension http://hl7.org/fhir/StructureDefinition/Laterality ist nicht bekannt, and hier nicht erlaubt
+ERROR: Condition/DiagnosisExample: Condition.extension[0].url: URL-Wert 'http://hl7.org/fhir/StructureDefinition/Laterality' löst nicht auf
+== fsh-generated\resources\ImplementationGuide-fhir.example.json ==
+== fsh-generated\resources\Medication-MedicationExample.json ==
+ERROR: Medication/MedicationExample: Medication.extension[0]: !!Die extension http://hl7.org/fhir/StructureDefinition/TestExtenstionMedication ist nicht bekannt, and hier nicht erlaubt
+ERROR: Medication/MedicationExample: Medication.extension[0].url: URL-Wert 'http://hl7.org/fhir/StructureDefinition/TestExtenstionMedication' löst nicht auf
+== fsh-generated\resources\Patient-JaneDoe.json ==
+== fsh-generated\resources\Questionnaire-ExampleQuestionnaireInstance.json ==
+ERROR: Questionnaire/ExampleQuestionnaireInstance: Questionnaire.item[2].answerOption[0].value.ofType(Coding): Unbekanntes Code System 'http://hl7.org/fhir/v3/AdministrativeGender'
+ERROR: Questionnaire/ExampleQuestionnaireInstance: Questionnaire.item[2].answerOption[0].value.ofType(Coding).system: URL-Wert 'http://hl7.org/fhir/v3/AdministrativeGender' löst nicht auf
+ERROR: Questionnaire/ExampleQuestionnaireInstance: Questionnaire.item[2].answerOption[1].value.ofType(Coding): Unbekanntes Code System 'http://hl7.org/fhir/v3/AdministrativeGender'
+ERROR: Questionnaire/ExampleQuestionnaireInstance: Questionnaire.item[2].answerOption[1].value.ofType(Coding).system: URL-Wert 'http://hl7.org/fhir/v3/AdministrativeGender' löst nicht auf
+ERROR: Questionnaire/ExampleQuestionnaireInstance: Questionnaire.item[2].answerOption[2].value.ofType(Coding): Unbekanntes Code System 'http://hl7.org/fhir/v3/AdministrativeGender'
+ERROR: Questionnaire/ExampleQuestionnaireInstance: Questionnaire.item[2].answerOption[2].value.ofType(Coding).system: URL-Wert 'http://hl7.org/fhir/v3/AdministrativeGender' löst nicht auf
+INFORMATION: Resource: The resource Questionnaire/ExampleQuestionnaireInstance could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated\resources\StructureDefinition-Laterality.json ==
+WARNING: StructureDefinition/Laterality: StructureDefinition.context[0]: !!Überprüfen Sie den Erweiterungstyp: Extensions sollten nicht den Kontext Element haben, es sei denn, es ist wirklich beabsichtigt, dass sie überall verwendet werden können.
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/Laterality'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-PatricksMedication.json ==
+INFORMATION: StructureDefinition/PatricksMedication: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+== fsh-generated\resources\StructureDefinition-TestExtenstionMedication.json ==
+WARNING: StructureDefinition/TestExtenstionMedication: StructureDefinition.context[0]: !!Überprüfen Sie den Erweiterungstyp: Extensions sollten nicht den Kontext Element haben, es sei denn, es ist wirklich beabsichtigt, dass sie überall verwendet werden können.
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/TestExtenstionMedication'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-condition-certainty.json ==
+WARNING: StructureDefinition/condition-certainty: StructureDefinition.context[0]: !!Überprüfen Sie den Erweiterungstyp: Extensions sollten nicht den Kontext Element haben, es sei denn, es ist wirklich beabsichtigt, dass sie überall verwendet werden können.
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/condition-certainty'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-covid-diagnosis.json ==
+== fsh-generated\resources\StructureDefinition-example.questionnaire.json ==
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/example.questionnaire'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-patient-contact-details.json ==
+WARNING: StructureDefinition.where(url = 'http://example.org/StructureDefinition/patient-contact-details'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\ValueSet-ConditionCertaintyVS.json ==
+WARNING: ValueSet/ConditionCertaintyVS: ValueSet: !!Das ShareableValueSet-Profil sagt, dass das experimental-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte ValueSets SOLLTEN mit dem ShareableValueSet-Profil übereinstimmen
+== fsh-generated\resources\ValueSet-CovidSeverityVS.json ==
+WARNING: ValueSet/CovidSeverityVS: ValueSet: !!Das ShareableValueSet-Profil sagt, dass das experimental-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte ValueSets SOLLTEN mit dem ShareableValueSet-Profil übereinstimmen
+== fsh-generated\resources\ValueSet-PatrickVS.json ==
+WARNING: ValueSet/PatrickVS: ValueSet: !!Das ShareableValueSet-Profil sagt, dass das experimental-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte ValueSets SOLLTEN mit dem ShareableValueSet-Profil übereinstimmen

@@ -1,0 +1,379 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/ValueSet/ConditionCertaintyVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ConditionCertaintyVS",
+      "title" : "ConditionCertaintyVS",
+      "description" : "Degree of confidence the condition is present",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-condition-certainty.html" : "Condition Certainty"
+    },
+    {
+      "url" : "http://example.org/ValueSet/CovidSeverityVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CovidSeverityVS",
+      "title" : "CovidSeverityVS",
+      "description" : "Values for COVID severity",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-covid-diagnosis.html" : "Covid Diagnosis"
+    },
+    {
+      "url" : "http://example.org/ValueSet/PatrickVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PatrickVS",
+      "title" : "PatrickVS",
+      "description" : "A ValueSet from Patrick",
+      "systems" : ["http://example.org/CodeSystem/PatrickCS"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-covid-diagnosis.html" : "Covid Diagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bodysite-laterality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Laterality",
+      "title" : "Laterality",
+      "description" : "Laterality: SNOMED-CT concepts for 'left', 'right', and 'bilateral'",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.287"],
+      "sources" : ["2.16.840.1.113883.4.642.3.287"],
+      "uses" : {
+      },
+      "StructureDefinition-Laterality.html" : "Laterality"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.162"],
+      "sources" : ["2.16.840.1.113883.4.642.3.162"],
+      "uses" : {
+      },
+      "StructureDefinition-covid-diagnosis.html" : "Covid Diagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.164"],
+      "sources" : ["2.16.840.1.113883.4.642.3.164"],
+      "uses" : {
+      },
+      "StructureDefinition-covid-diagnosis.html" : "Covid Diagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-covid-diagnosis.html" : "Covid Diagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/DiagnosisSeverity",
+      "title" : "Condition/Diagnosis Severity",
+      "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.168"],
+      "sources" : ["2.16.840.1.113883.4.642.3.168"],
+      "uses" : {
+      },
+      "ValueSet-CovidSeverityVS.html" : "CovidSeverityVS"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStage",
+      "title" : "Condition Stage",
+      "description" : "Example value set for stages of cancer and other conditions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.170"],
+      "sources" : ["2.16.840.1.113883.4.642.3.170"],
+      "uses" : {
+      },
+      "StructureDefinition-covid-diagnosis.html" : "Covid Diagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStageType",
+      "title" : "Condition Stage Type",
+      "description" : "Example value set for the type of stages of cancer and other conditions",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.171"],
+      "sources" : ["2.16.840.1.113883.4.642.3.171"],
+      "uses" : {
+      },
+      "StructureDefinition-covid-diagnosis.html" : "Covid Diagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.166"],
+      "uses" : {
+      },
+      "StructureDefinition-covid-diagnosis.html" : "Covid Diagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
+      "oids" : ["2.16.840.1.113883.4.642.3.71"],
+      "sources" : ["2.16.840.1.113883.4.642.3.71"],
+      "uses" : {
+      },
+      "StructureDefinition-patient-contact-details.html" : "Patient Contact Details"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.73"],
+      "sources" : ["2.16.840.1.113883.4.642.3.73"],
+      "uses" : {
+      },
+      "StructureDefinition-patient-contact-details.html" : "Patient Contact Details"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/item-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireItemType",
+      "title" : "QuestionnaireItemType",
+      "description" : "Distinguishes groups from questions and display text and indicates data type for questions.",
+      "systems" : ["http://hl7.org/fhir/item-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.444"],
+      "sources" : ["2.16.840.1.113883.4.642.3.444"],
+      "uses" : {
+      },
+      "StructureDefinition-example.questionnaire.html" : "Example Questionnaire Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/jurisdiction",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Jurisdiction ValueSet",
+      "title" : "Jurisdiction",
+      "description" : "This value set defines a base set of codes for country, country subdivision and region    for indicating where a resource is intended to be used.   \r\n   \r\n   Note: The codes for countries and country subdivisions are taken from    [ISO 3166](https://www.iso.org/iso-3166-country-codes.html)    while the codes for \"supra-national\" regions are from    [UN Standard country or area codes for statistical use (M49)](http://unstats.un.org/unsd/methods/m49/m49.htm).",
+      "systems" : [
+        "http://unstats.un.org/unsd/methods/m49/m49.htm",
+        "urn:iso:std:iso:3166",
+        "urn:iso:std:iso:3166:-2"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.48"],
+      "sources" : ["2.16.840.1.113883.4.642.3.48"],
+      "uses" : {
+      },
+      "StructureDefinition-example.questionnaire.html" : "Example Questionnaire Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-example.questionnaire.html" : "Example Questionnaire Profile",
+      "StructureDefinition-covid-diagnosis.html" : "Covid Diagnosis",
+      "StructureDefinition-PatricksMedication.html" : "PatricksMedication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ManifestationAndSymptomCodes",
+      "title" : "Manifestation and Symptom Codes",
+      "description" : "Example value set for Manifestation and Symptom codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.169"],
+      "sources" : ["2.16.840.1.113883.4.642.3.169"],
+      "uses" : {
+      },
+      "StructureDefinition-covid-diagnosis.html" : "Covid Diagnosis"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-PatricksMedication.html" : "PatricksMedication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTFormCodes",
+      "title" : "SNOMED CT Form Codes",
+      "description" : "This value set includes all dose form codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.374"],
+      "sources" : ["2.16.840.1.113883.4.642.3.374"],
+      "uses" : {
+      },
+      "StructureDefinition-PatricksMedication.html" : "PatricksMedication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication Status Codes",
+      "title" : "Medication  status  codes",
+      "description" : "Medication Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.376"],
+      "sources" : ["2.16.840.1.113883.4.642.3.376"],
+      "uses" : {
+      },
+      "StructureDefinition-PatricksMedication.html" : "PatricksMedication"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/publication-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PublicationStatus",
+      "title" : "PublicationStatus",
+      "description" : "The lifecycle status of an artifact.",
+      "systems" : ["http://hl7.org/fhir/publication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3"],
+      "uses" : {
+      },
+      "StructureDefinition-example.questionnaire.html" : "Example Questionnaire Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-answers",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireAnswerCodes",
+      "title" : "Questionnaire Answer Codes",
+      "description" : "Example list of codes for answers to questions. (Not complete or necessarily appropriate.)",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.446"],
+      "sources" : ["2.16.840.1.113883.4.642.3.446"],
+      "uses" : {
+      },
+      "StructureDefinition-example.questionnaire.html" : "Example Questionnaire Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-enable-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EnableWhenBehavior",
+      "title" : "EnableWhenBehavior",
+      "description" : "Controls how multiple enableWhen values are interpreted -  whether all or any must be true.",
+      "systems" : ["http://hl7.org/fhir/questionnaire-enable-behavior"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1007"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1007"],
+      "uses" : {
+      },
+      "StructureDefinition-example.questionnaire.html" : "Example Questionnaire Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-enable-operator",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireItemOperator",
+      "title" : "QuestionnaireItemOperator",
+      "description" : "The criteria by which a question is enabled.",
+      "systems" : ["http://hl7.org/fhir/questionnaire-enable-operator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1005"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1005"],
+      "uses" : {
+      },
+      "StructureDefinition-example.questionnaire.html" : "Example Questionnaire Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-questions",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireQuestionCodes",
+      "title" : "Questionnaire Question Codes",
+      "description" : "Example list of codes for questions and groups of questions. (Not necessarily complete or appropriate.)",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.443"],
+      "sources" : ["2.16.840.1.113883.4.642.3.443"],
+      "uses" : {
+      },
+      "StructureDefinition-example.questionnaire.html" : "Example Questionnaire Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-example.questionnaire.html" : "Example Questionnaire Profile"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+\fsh-generated\resources\ImplementationGuide-fhir.example.json	4985	-	0	0	0	0	1	0	16	950	0	0	0	0	0	0	0	2	0	0	335	194	0	0	0	0	7	0	2
+fsh-generated/resources/CodeSystem-PatrickCS.json	502	22	1	0	1	0	0	0	1	77	0	0	0	0	0	0	0	0	0	0	84	5867	0	0	0	0	0	0	0
+fsh-generated/resources/Condition-DiagnosisExample.json	823	24	0	0	0	0	0	0	0	108	0	0	0	0	0	0	0	0	0	0	66	77	0	0	0	1	0	0	0
+fsh-generated/resources/Medication-MedicationExample.json	316	26	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	62	65	0	0	0	0	0	0	0
+fsh-generated/resources/Patient-JaneDoe.json	143	29	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	48	73	0	0	0	0	0	0	0
+fsh-generated/resources/Questionnaire-ExampleQuestionnaireInstance.json	919	21	0	0	0	0	0	0	0	103	0	0	0	0	0	0	0	0	0	0	189	759	0	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-Laterality.json	1286	8	0	24	1	0	0	0	1	41	0	0	0	0	0	0	0	1	0	0	218	521	0	0	1	0	6	0	0
+fsh-generated/resources/StructureDefinition-PatricksMedication.json	629	6	0	102	0	0	0	0	0	43	0	0	0	0	0	0	0	0	0	0	650	1111	0	0	0	0	9	1	1
+fsh-generated/resources/StructureDefinition-TestExtenstionMedication.json	1230	7	0	36	0	0	0	0	0	28	0	0	0	0	0	0	0	1	0	0	253	466	0	0	0	0	4	0	0
+fsh-generated/resources/StructureDefinition-condition-certainty.json	1371	6	0	46	1	0	0	0	0	25	0	0	0	0	0	0	0	0	0	0	239	490	0	0	0	0	3	0	0
+fsh-generated/resources/StructureDefinition-covid-diagnosis.json	2394	7	0	151	0	0	0	0	0	103	0	0	0	0	0	0	0	1	0	0	830	1226	0	0	0	0	10	0	2
+fsh-generated/resources/StructureDefinition-example.questionnaire.json	785	7	0	245	0	0	0	0	0	81	0	0	1	0	0	0	0	2	0	0	1005	1954	0	0	0	0	12	0	1
+fsh-generated/resources/StructureDefinition-patient-contact-details.json	4040	8	0	116	0	0	0	0	0	208	0	0	0	0	0	0	0	1	0	0	730	1096	0	0	0	0	9	0	1
+fsh-generated/resources/ValueSet-ConditionCertaintyVS.json	764	5	0	0	2	0	0	0	0	167	0	0	0	0	0	0	0	0	0	0	70	292	0	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-CovidSeverityVS.json	611	4	0	0	0	0	0	0	1	123	0	0	0	0	0	0	0	0	0	0	64	287	0	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-PatrickVS.json	609	6	0	0	0	0	0	0	0	35	0	0	0	0	0	0	0	0	0	0	55	260	0	0	0	0	0	0	0

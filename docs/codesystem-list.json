@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/CodeSystem/PatrickCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PatrickCS",
+      "title" : "PatrickCS",
+      "description" : "Patricks Codesystem"
+    }
+  ]
+}

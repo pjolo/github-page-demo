@@ -1,0 +1,169 @@
+{
+  "package": "fhir.example",
+  "version": "0.1.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://example.org/StructureDefinition/Laterality",
+      "title": "Laterality",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/TestExtenstionMedication",
+      "title": "TestExtenstionMedication",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/condition-certainty",
+      "title": "Condition Certainty",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.org/StructureDefinition/patient-contact-details",
+      "title": "Patient Contact Details",
+      "types": [
+        "Address",
+        "ContactPoint",
+        "string",
+        "Extension",
+        "code",
+        "string",
+        "code",
+        "positiveInt",
+        "Period",
+        "ContactPoint",
+        "string",
+        "Extension",
+        "code",
+        "string",
+        "code",
+        "positiveInt",
+        "Period",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    }
+  ],
+  "profiles": {
+    "Medication": [
+      {
+        "url": "http://example.org/StructureDefinition/PatricksMedication",
+        "title": "PatricksMedication"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://example.org/StructureDefinition/covid-diagnosis",
+        "title": "Covid Diagnosis"
+      }
+    ],
+    "Questionnaire": [
+      {
+        "url": "http://example.org/StructureDefinition/example.questionnaire",
+        "title": "Example Questionnaire Profile"
+      }
+    ]
+  },
+  "usage": {
+    "http://example.org/StructureDefinition/Laterality": [
+      "Condition"
+    ],
+    "http://example.org/StructureDefinition/condition-certainty": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/Laterality": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/TestExtenstionMedication": [
+      "Medication"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ]
+  }
+}

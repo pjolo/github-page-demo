@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="6a4f9403-f29d-4e9f-aff4-9db14faad512"/>
+  <meta>
+    <lastUpdated value="2025-04-11T08:09:52.246+02:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/ConditionCertaintyVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb. 2025</p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-415684004"> </a>  
+                  <a href="http://snomed.info/id/415684004">415684004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Suspected (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-410592001"> </a>  
+                  <a href="http://snomed.info/id/410592001">410592001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Probably present (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-410605003"> </a>  
+                  <a href="http://snomed.info/id/410605003">410605003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Confirmed present (qualifier value)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/ConditionCertaintyVS"/>
+        <version value="0.1.0"/>
+        <name value="ConditionCertaintyVS"/>
+        <title value="ConditionCertaintyVS"/>
+        <status value="draft"/>
+        <date value="2025-04-11T08:08:48+02:00"/>
+        <expansion>
+          <identifier value="urn:uuid:8cdc8733-1195-4b74-a453-7ddf998ab50e"/>
+          <timestamp value="2025-04-11T08:10:28+02:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="415684004"/>
+            <display value="Suspected (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="410592001"/>
+            <display value="Probably present (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="410605003"/>
+            <display value="Confirmed present (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/CovidSeverityVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>SNOMED CT International edition 01-Feb. 2025</li>
+                <li>
+                  <a href="http://hl7.org/fhir/R4/valueset-condition-severity.html">valueset Condition/Diagnosis Severity v4.0.1 (ValueSet)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-24484000"> </a>  
+                  <a href="http://snomed.info/id/24484000">24484000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Severe</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-6736007"> </a>  
+                  <a href="http://snomed.info/id/6736007">6736007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Midgrade</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-255604002"> </a>  
+                  <a href="http://snomed.info/id/255604002">255604002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Mild</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-442452003"> </a>  
+                  <a href="http://snomed.info/id/442452003">442452003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Life threatening severity</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/CovidSeverityVS"/>
+        <version value="0.1.0"/>
+        <name value="CovidSeverityVS"/>
+        <title value="CovidSeverityVS"/>
+        <status value="draft"/>
+        <date value="2025-04-11T08:08:48+02:00"/>
+        <expansion>
+          <identifier value="urn:uuid:4399d207-05a4-4772-a5b9-e320c7e1bc46"/>
+          <timestamp value="2025-04-11T08:10:28+02:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="http://hl7.org/fhir/ValueSet/condition-severity|4.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="24484000"/>
+            <display value="Severe"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="6736007"/>
+            <display value="Midgrade"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="255604002"/>
+            <display value="Mild"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="442452003"/>
+            <display value="Life threatening severity"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/ValueSet/PatrickVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-PatrickCS.html">codesystem PatrickCS v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/PatrickCS-1"> </a>  
+                  <a href="CodeSystem-PatrickCS.html#PatrickCS-1">1</a>
+                </td>
+                <td>http://example.org/CodeSystem/PatrickCS</td>
+                <td>Code1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/PatrickCS-2"> </a>  
+                  <a href="CodeSystem-PatrickCS.html#PatrickCS-2">2</a>
+                </td>
+                <td>http://example.org/CodeSystem/PatrickCS</td>
+                <td>Code2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://example.org/CodeSystem/PatrickCS-3"> </a>  
+                  <a href="CodeSystem-PatrickCS.html#PatrickCS-3">3</a>
+                </td>
+                <td>http://example.org/CodeSystem/PatrickCS</td>
+                <td>Code3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://example.org/ValueSet/PatrickVS"/>
+        <version value="0.1.0"/>
+        <name value="PatrickVS"/>
+        <title value="PatrickVS"/>
+        <status value="draft"/>
+        <date value="2025-04-11T08:08:48+02:00"/>
+        <expansion>
+          <identifier value="urn:uuid:a5a48ce6-28d6-4113-bd20-2548b67d558b"/>
+          <timestamp value="2025-04-11T08:10:29+02:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://example.org/CodeSystem/PatrickCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://example.org/CodeSystem/PatrickCS"/>
+            <code value="1"/>
+            <display value="Code1"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/PatrickCS"/>
+            <code value="2"/>
+            <display value="Code2"/>
+          </contains>
+          <contains>
+            <system value="http://example.org/CodeSystem/PatrickCS"/>
+            <code value="3"/>
+            <display value="Code3"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

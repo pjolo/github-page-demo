@@ -1,0 +1,65 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/ValueSet/ConditionCertaintyVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ConditionCertaintyVS",
+      "title" : "ConditionCertaintyVS",
+      "description" : "Degree of confidence the condition is present",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-condition-certainty.html" : "Condition Certainty"
+    },
+    {
+      "url" : "http://example.org/ValueSet/CovidSeverityVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CovidSeverityVS",
+      "title" : "CovidSeverityVS",
+      "description" : "Values for COVID severity",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-covid-diagnosis.html" : "Covid Diagnosis"
+    },
+    {
+      "url" : "http://example.org/ValueSet/PatrickVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PatrickVS",
+      "title" : "PatrickVS",
+      "description" : "A ValueSet from Patrick",
+      "systems" : ["http://example.org/CodeSystem/PatrickCS"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bodysite-laterality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Laterality",
+      "title" : "Laterality",
+      "description" : "Laterality: SNOMED-CT concepts for 'left', 'right', and 'bilateral'",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.287"],
+      "sources" : ["2.16.840.1.113883.4.642.3.287"],
+      "uses" : {
+      },
+      "StructureDefinition-Laterality.html" : "Laterality"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/DiagnosisSeverity",
+      "title" : "Condition/Diagnosis Severity",
+      "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.168"],
+      "sources" : ["2.16.840.1.113883.4.642.3.168"],
+      "uses" : {
+      },
+      "ValueSet-CovidSeverityVS.html" : "CovidSeverityVS"
+    }
+  ]
+}

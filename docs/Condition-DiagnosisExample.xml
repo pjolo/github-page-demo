@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="DiagnosisExample"/>
+  <meta>
+    <profile value="http://example.org/StructureDefinition/covid-diagnosis"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition DiagnosisExample</b></p><a name="DiagnosisExample"> </a><a name="hcDiagnosisExample"> </a><a name="DiagnosisExample-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-covid-diagnosis.html">Covid Diagnosis</a></p></div><p><b>org/fhir/StructureDefinition/Laterality</b>: <span title="Codes:{http://snomed.info/sct 51440002}">Bilateral</span></p><p><b>severity</b>: <span title="Codes:{http://snomed.info/sct 24484000}">Severe</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/sid/icd-10-cm U07.1}">COVID-19</span></p><p><b>subject</b>: <a href="Patient-JaneDoe.html">Jane Doe  (no stated gender), DoB Unknown</a></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/Laterality">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="51440002"/>
+        <display value="Bilateral"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <severity>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="24484000"/>
+      <display value="Severe"/>
+    </coding>
+  </severity>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <code value="U07.1"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/JaneDoe"/>
+  </subject>
+</Condition>

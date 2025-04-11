@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="CovidSeverityVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet CovidSeverityVS</b></p><a name="CovidSeverityVS"> </a><a name="hcCovidSeverityVS"> </a><a name="CovidSeverityVS-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="http://hl7.org/fhir/R4/valueset-condition-severity.html">Condition/Diagnosis Severity</a></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/442452003">442452003</a></td><td>Life threatening severity (qualifier value)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/CovidSeverityVS"/>
+  <version value="0.1.0"/>
+  <name value="CovidSeverityVS"/>
+  <title value="CovidSeverityVS"/>
+  <status value="draft"/>
+  <date value="2025-04-11T08:08:48+02:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="Values for COVID severity"/>
+  <compose>
+    <include>
+      <valueSet value="http://hl7.org/fhir/ValueSet/condition-severity"/>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="442452003"/>
+        <display value="Life threatening severity (qualifier value)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

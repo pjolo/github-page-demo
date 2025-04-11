@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="PatrickVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet PatrickVS</b></p><a name="PatrickVS"> </a><a name="hcPatrickVS"> </a><a name="PatrickVS-en-US"> </a><ul><li>Include these codes as defined in <a href="CodeSystem-PatrickCS.html"><code>http://example.org/CodeSystem/PatrickCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-PatrickCS.html#PatrickCS-1">1</a></td><td>Code1</td></tr><tr><td><a href="CodeSystem-PatrickCS.html#PatrickCS-2">2</a></td><td>Code2</td></tr><tr><td><a href="CodeSystem-PatrickCS.html#PatrickCS-3">3</a></td><td>Code3</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://example.org/ValueSet/PatrickVS"/>
+  <version value="0.1.0"/>
+  <name value="PatrickVS"/>
+  <title value="PatrickVS"/>
+  <status value="draft"/>
+  <date value="2025-04-11T08:08:48+02:00"/>
+  <publisher value="Example Publisher"/>
+  <contact>
+    <name value="Example Publisher"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://example.org/example-publisher"/>
+    </telecom>
+  </contact>
+  <description value="A ValueSet from Patrick"/>
+  <compose>
+    <include>
+      <system value="http://example.org/CodeSystem/PatrickCS"/>
+      <concept>
+        <code value="1"/>
+        <display value="Code1"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Code2"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="Code3"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

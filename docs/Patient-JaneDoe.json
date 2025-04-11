@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Patient",
+  "id" : "JaneDoe",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient JaneDoe</b></p><a name=\"JaneDoe\"> </a><a name=\"hcJaneDoe\"> </a><a name=\"JaneDoe-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jane Doe  (no stated gender), DoB Unknown</p><hr/></div>"
+  },
+  "name" : [{
+    "family" : "Doe",
+    "given" : ["Jane"]
+  }]
+}

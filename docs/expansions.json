@@ -1,0 +1,208 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "6a4f9403-f29d-4e9f-aff4-9db14faad512",
+  "meta" : {
+    "lastUpdated" : "2025-04-11T08:09:52.246+02:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://example.org/ValueSet/ConditionCertaintyVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb. 2025</p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-415684004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/415684004\">415684004</a></td><td>http://snomed.info/sct</td><td>Suspected (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-410592001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/410592001\">410592001</a></td><td>http://snomed.info/sct</td><td>Probably present (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-410605003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/410605003\">410605003</a></td><td>http://snomed.info/sct</td><td>Confirmed present (qualifier value)</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/ConditionCertaintyVS",
+      "version" : "0.1.0",
+      "name" : "ConditionCertaintyVS",
+      "title" : "ConditionCertaintyVS",
+      "status" : "draft",
+      "date" : "2025-04-11T08:08:48+02:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:8cdc8733-1195-4b74-a453-7ddf998ab50e",
+        "timestamp" : "2025-04-11T08:10:28+02:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "415684004",
+          "display" : "Suspected (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "410592001",
+          "display" : "Probably present (qualifier value)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "410605003",
+          "display" : "Confirmed present (qualifier value)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/CovidSeverityVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion from tx.fhir.org based on:</p><ul><li>SNOMED CT International edition 01-Feb. 2025</li><li><a href=\"http://hl7.org/fhir/R4/valueset-condition-severity.html\">valueset Condition/Diagnosis Severity v4.0.1 (ValueSet)</a></li></ul></div><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-24484000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/24484000\">24484000</a></td><td>http://snomed.info/sct</td><td>Severe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-6736007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/6736007\">6736007</a></td><td>http://snomed.info/sct</td><td>Midgrade</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-255604002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/255604002\">255604002</a></td><td>http://snomed.info/sct</td><td>Mild</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://snomed.info/sct-442452003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/442452003\">442452003</a></td><td>http://snomed.info/sct</td><td>Life threatening severity</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/CovidSeverityVS",
+      "version" : "0.1.0",
+      "name" : "CovidSeverityVS",
+      "title" : "CovidSeverityVS",
+      "status" : "draft",
+      "date" : "2025-04-11T08:08:48+02:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:4399d207-05a4-4772-a5b9-e320c7e1bc46",
+        "timestamp" : "2025-04-11T08:10:28+02:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://hl7.org/fhir/ValueSet/condition-severity|4.0.1"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "24484000",
+          "display" : "Severe"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "6736007",
+          "display" : "Midgrade"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "255604002",
+          "display" : "Mild"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "442452003",
+          "display" : "Life threatening severity"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/ValueSet/PatrickVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-PatrickCS.html\">codesystem PatrickCS v0.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/PatrickCS-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PatrickCS.html#PatrickCS-1\">1</a></td><td>http://example.org/CodeSystem/PatrickCS</td><td>Code1</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/PatrickCS-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PatrickCS.html#PatrickCS-2\">2</a></td><td>http://example.org/CodeSystem/PatrickCS</td><td>Code2</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://example.org/CodeSystem/PatrickCS-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PatrickCS.html#PatrickCS-3\">3</a></td><td>http://example.org/CodeSystem/PatrickCS</td><td>Code3</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/PatrickVS",
+      "version" : "0.1.0",
+      "name" : "PatrickVS",
+      "title" : "PatrickVS",
+      "status" : "draft",
+      "date" : "2025-04-11T08:08:48+02:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:a5a48ce6-28d6-4113-bd20-2548b67d558b",
+        "timestamp" : "2025-04-11T08:10:29+02:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en-US"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/CodeSystem/PatrickCS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/PatrickCS",
+          "code" : "1",
+          "display" : "Code1"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/PatrickCS",
+          "code" : "2",
+          "display" : "Code2"
+        },
+        {
+          "system" : "http://example.org/CodeSystem/PatrickCS",
+          "code" : "3",
+          "display" : "Code3"
+        }]
+      }
+    }
+  }]
+}

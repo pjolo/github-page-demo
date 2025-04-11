@@ -1,0 +1,805 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 111, errors = 10, warn = 19, info = 4-->
+<head>
+  <title>TestIG : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    button { padding: 0px 8px; font-size: 12px; cursor: pointer; border-radius: 2px; border: 1px solid #ccc; background-color: #f0f0f0 }
+    button:hover { background-color: #e0e0e0; }
+    .code-value { display: inline; }
+    .code-hidden { display: none; }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+    function toggleCodes() {
+      const codes = document.getElementsByClassName('code-value');
+      for (let code of codes) {
+        code.classList.toggle('code-hidden');
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for TestIG</h1>
+ <p>Generated Fri Apr 11 08:11:58 CEST 2025, FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = <a href="http://example.org">http://example.org</a> (<a href="http://example.org/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.8.23</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.example, Canonical = http://example.org</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Language Info:</td><td>This IG has no language information</td></tr>
+ <tr><td>Publication Request:</td><td><ul><li><span title="Not Found">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="dep" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\Patrick\Documents\GitHub\TestIG\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> fhir.example</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://example.org</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\Patrick\Documents\GitHub\TestIG\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="Not yet released">U</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.2.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\Patrick\Documents\GitHub\TestIG\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: fhir.base.template#current. Tools: 0.4.1</para></div></td></tr>
+ <tr><td>Related IGs:</td><td>n/a</td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/valueset-bodysite-laterality.html">Laterality</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-status.html">Medication Status Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-form-codes.html">SNOMEDCTFormCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/substance.html">Substance</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-clinical.html">ConditionClinicalStatusCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-ver-status.html">ConditionVerificationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-category.html">ConditionCategoryCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-code.html">Condition/Problem/DiagnosisCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage.html">ConditionStage</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/clinicalimpression.html">ClinicalImpression</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-stage-type.html">ConditionStageType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html">ManifestationAndSymptomCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a>
+ (17 uses),     <a href="http://hl7.org/fhir/R4/valueset-questionnaire-questions.html">QuestionnaireQuestionCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-item-type.html">QuestionnaireItemType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-questionnaire-enable-operator.html">QuestionnaireItemOperator</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-questionnaire-answers.html">QuestionnaireAnswerCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-questionnaire-enable-behavior.html">EnableWhenBehavior</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-condition-severity.html">Condition/DiagnosisSeverity</a>
+ (1 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://example.org (Problem #1 with package-list.json at http://example.org: Not Found)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+ <tr><td>Summary:</td><td> errors = 10, warn = 19, info = 4, broken links = 111, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>111</b></td><td><b>6</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_CodeSystem-PatrickCS"><b>C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\CodeSystem-PatrickCS</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_Condition-DiagnosisExample"><b>C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\Condition-DiagnosisExample</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_Medication-MedicationExample"><b>C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\Medication-MedicationExample</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_Questionnaire-ExampleQuestionnaireInstance"><b>C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\Questionnaire-ExampleQuestionnaireInstance</b></a></td><td><b>6</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_StructureDefinition-Laterality"><b>C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\StructureDefinition-Laterality</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_StructureDefinition-TestExtenstionMedication"><b>C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\StructureDefinition-TestExtenstionMedication</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_StructureDefinition-condition-certainty"><b>C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\StructureDefinition-condition-certainty</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_StructureDefinition-example.questionnaire"><b>C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\StructureDefinition-example.questionnaire</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_StructureDefinition-patient-contact-details"><b>C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\StructureDefinition-patient-contact-details</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_ValueSet-ConditionCertaintyVS"><b>C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\ValueSet-ConditionCertaintyVS</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_ValueSet-CovidSeverityVS"><b>C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\ValueSet-CovidSeverityVS</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_ValueSet-PatrickVS"><b>C:\Users\Patrick\Documents\GitHub\TestIG\fsh-generated\resources\ValueSet-PatrickVS</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/ExampleQuestionnaireInstance.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-PatrickCS-testing.html#l342">output\CodeSystem-PatrickCS-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-PatrickCS.change.history.html#l311">output\CodeSystem-PatrickCS&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 198, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-PatrickCS.html#l433">output\CodeSystem-PatrickCS&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 265, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-PatrickCS.json.html#l426">output\CodeSystem-PatrickCS&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 268, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-PatrickCS.ttl.html#l492">output\CodeSystem-PatrickCS&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 269, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-PatrickCS.xml.html#l503">output\CodeSystem-PatrickCS&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 262, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Condition-DiagnosisExample.change.history.html#l311">output\Condition-DiagnosisExample&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 198, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Condition-DiagnosisExample.html#l360">output\Condition-DiagnosisExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 207, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Condition-DiagnosisExample.json.html#l411">output\Condition-DiagnosisExample&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Condition-DiagnosisExample.ttl.html#l447">output\Condition-DiagnosisExample&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 256, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Condition-DiagnosisExample.xml.html#l443">output\Condition-DiagnosisExample&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicationExample.change.history.html#l311">output\Medication-MedicationExample&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 198, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicationExample.html#l340">output\Medication-MedicationExample&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 207, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicationExample.json.html#l363">output\Medication-MedicationExample&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 225, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicationExample.ttl.html#l378">output\Medication-MedicationExample&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 236, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Medication-MedicationExample.xml.html#l371">output\Medication-MedicationExample&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-JaneDoe.change.history.html#l311">output\Patient-JaneDoe&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 198, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-JaneDoe.html#l333">output\Patient-JaneDoe&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 207, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-JaneDoe.json.html#l354">output\Patient-JaneDoe&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-JaneDoe.ttl.html#l363">output\Patient-JaneDoe&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-JaneDoe.xml.html#l365">output\Patient-JaneDoe&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Questionnaire-ExampleQuestionnaireInstance-testing.html#l342">output\Questionnaire-ExampleQuestionnaireInstance-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Questionnaire-ExampleQuestionnaireInstance.change.history.html#l311">output\Questionnaire-ExampleQuestionnaireInstance&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 198, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Questionnaire-ExampleQuestionnaireInstance.html#l472">output\Questionnaire-ExampleQuestionnaireInstance&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Questionnaire-ExampleQuestionnaireInstance.json.html#l444">output\Questionnaire-ExampleQuestionnaireInstance&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 282, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Questionnaire-ExampleQuestionnaireInstance.ttl.html#l525">output\Questionnaire-ExampleQuestionnaireInstance&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 277, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Questionnaire-ExampleQuestionnaireInstance.xml.html#l530">output\Questionnaire-ExampleQuestionnaireInstance&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 278, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Laterality-definitions.html#l1636">output\StructureDefinition-Laterality-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 311, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Laterality-mappings.html#l389">output\StructureDefinition-Laterality-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 251, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Laterality-testing.html#l358">output\StructureDefinition-Laterality-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Laterality.html#l1301">output\StructureDefinition-Laterality&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 597, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Laterality.profile.history.html#l331">output\StructureDefinition-Laterality&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 234, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Laterality.profile.json.html#l910">output\StructureDefinition-Laterality&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 534, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Laterality.profile.ttl.html#l1395">output\StructureDefinition-Laterality&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 480, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Laterality.profile.xml.html#l1350">output\StructureDefinition-Laterality&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 490, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatricksMedication-definitions.html#l3027">output\StructureDefinition-PatricksMedication-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 418, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatricksMedication-examples.html#l368">output\StructureDefinition-PatricksMedication-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 266, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatricksMedication-mappings.html#l738">output\StructureDefinition-PatricksMedication-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 330, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatricksMedication-testing.html#l364">output\StructureDefinition-PatricksMedication-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 262, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatricksMedication.html#l3713">output\StructureDefinition-PatricksMedication&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1179, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatricksMedication.profile.history.html#l337">output\StructureDefinition-PatricksMedication&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatricksMedication.profile.json.html#l2959">output\StructureDefinition-PatricksMedication&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1592, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatricksMedication.profile.ttl.html#l5358">output\StructureDefinition-PatricksMedication&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1251, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-PatricksMedication.profile.xml.html#l5310">output\StructureDefinition-PatricksMedication&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1499, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TestExtenstionMedication-definitions.html#l1594">output\StructureDefinition-TestExtenstionMedication-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 311, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TestExtenstionMedication-mappings.html#l389">output\StructureDefinition-TestExtenstionMedication-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 251, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TestExtenstionMedication-testing.html#l358">output\StructureDefinition-TestExtenstionMedication-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TestExtenstionMedication.html#l1227">output\StructureDefinition-TestExtenstionMedication&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 592, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TestExtenstionMedication.profile.history.html#l331">output\StructureDefinition-TestExtenstionMedication&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 234, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TestExtenstionMedication.profile.json.html#l892">output\StructureDefinition-TestExtenstionMedication&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 526, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TestExtenstionMedication.profile.ttl.html#l1359">output\StructureDefinition-TestExtenstionMedication&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 470, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TestExtenstionMedication.profile.xml.html#l1320">output\StructureDefinition-TestExtenstionMedication&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 485, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-condition-certainty-definitions.html#l1636">output\StructureDefinition-condition-certainty-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 311, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-condition-certainty-mappings.html#l389">output\StructureDefinition-condition-certainty-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 251, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-condition-certainty-testing.html#l358">output\StructureDefinition-condition-certainty-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-condition-certainty.html#l1301">output\StructureDefinition-condition-certainty&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 597, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-condition-certainty.profile.history.html#l331">output\StructureDefinition-condition-certainty&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 234, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-condition-certainty.profile.json.html#l910">output\StructureDefinition-condition-certainty&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 534, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-condition-certainty.profile.ttl.html#l1395">output\StructureDefinition-condition-certainty&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 480, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-condition-certainty.profile.xml.html#l1350">output\StructureDefinition-condition-certainty&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 492, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid-diagnosis-definitions.html#l4919">output\StructureDefinition-covid-diagnosis-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 499, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid-diagnosis-examples.html#l368">output\StructureDefinition-covid-diagnosis-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 266, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid-diagnosis-mappings.html#l1057">output\StructureDefinition-covid-diagnosis-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 373, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid-diagnosis-testing.html#l364">output\StructureDefinition-covid-diagnosis-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 262, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid-diagnosis.html#l7321">output\StructureDefinition-covid-diagnosis&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1851, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid-diagnosis.profile.history.html#l337">output\StructureDefinition-covid-diagnosis&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid-diagnosis.profile.json.html#l4483">output\StructureDefinition-covid-diagnosis&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2414, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid-diagnosis.profile.ttl.html#l8292">output\StructureDefinition-covid-diagnosis&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1843, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-covid-diagnosis.profile.xml.html#l8250">output\StructureDefinition-covid-diagnosis&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2245, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example.questionnaire-definitions.html#l8567">output\StructureDefinition-example&#8203;.questionnaire-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 679, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example.questionnaire-examples.html#l336">output\StructureDefinition-example&#8203;.questionnaire-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 245, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example.questionnaire-mappings.html#l1112">output\StructureDefinition-example&#8203;.questionnaire-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 359, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example.questionnaire-testing.html#l358">output\StructureDefinition-example&#8203;.questionnaire-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example.questionnaire.html#l10769">output\StructureDefinition-example&#8203;.questionnaire&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2727, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example.questionnaire.profile.history.html#l331">output\StructureDefinition-example&#8203;.questionnaire&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 234, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example.questionnaire.profile.json.html#l6547">output\StructureDefinition-example&#8203;.questionnaire&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 3434, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example.questionnaire.profile.ttl.html#l12291">output\StructureDefinition-example&#8203;.questionnaire&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2584, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-example.questionnaire.profile.xml.html#l12204">output\StructureDefinition-example&#8203;.questionnaire&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 3204, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-contact-details-definitions.html#l6896">output\StructureDefinition-patient-contact-details-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 521, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-contact-details-mappings.html#l567">output\StructureDefinition-patient-contact-details-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 277, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-contact-details-testing.html#l358">output\StructureDefinition-patient-contact-details-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 252, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-contact-details.html#l3835">output\StructureDefinition-patient-contact-details&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1180, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-contact-details.profile.history.html#l331">output\StructureDefinition-patient-contact-details&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 234, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-contact-details.profile.json.html#l3700">output\StructureDefinition-patient-contact-details&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 2038, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-contact-details.profile.ttl.html#l6756">output\StructureDefinition-patient-contact-details&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1516, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-patient-contact-details.profile.xml.html#l6747">output\StructureDefinition-patient-contact-details&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 1835, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-ConditionCertaintyVS-testing.html#l342">output\ValueSet-ConditionCertaintyVS-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-ConditionCertaintyVS.change.history.html#l311">output\ValueSet-ConditionCertaintyVS&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 198, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-ConditionCertaintyVS.html#l557">output\ValueSet-ConditionCertaintyVS&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 298, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-ConditionCertaintyVS.json.html#l423">output\ValueSet-ConditionCertaintyVS&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 269, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-ConditionCertaintyVS.ttl.html#l480">output\ValueSet-ConditionCertaintyVS&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 265, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-ConditionCertaintyVS.xml.html#l488">output\ValueSet-ConditionCertaintyVS&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 261, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CovidSeverityVS-testing.html#l342">output\ValueSet-CovidSeverityVS-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CovidSeverityVS.change.history.html#l311">output\ValueSet-CovidSeverityVS&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 198, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CovidSeverityVS.html#l573">output\ValueSet-CovidSeverityVS&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 302, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CovidSeverityVS.json.html#l417">output\ValueSet-CovidSeverityVS&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 266, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CovidSeverityVS.ttl.html#l465">output\ValueSet-CovidSeverityVS&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 264, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-CovidSeverityVS.xml.html#l467">output\ValueSet-CovidSeverityVS&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 256, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-PatrickVS-testing.html#l342">output\ValueSet-PatrickVS-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-PatrickVS.change.history.html#l311">output\ValueSet-PatrickVS&#8203;.change&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 198, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-PatrickVS.html#l555">output\ValueSet-PatrickVS&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 296, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-PatrickVS.json.html#l423">output\ValueSet-PatrickVS&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 269, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-PatrickVS.ttl.html#l480">output\ValueSet-PatrickVS&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 265, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-PatrickVS.xml.html#l488">output\ValueSet-PatrickVS&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 261, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#l637">output\artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 353, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="document.html#l295">output\document&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 172, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="extensions.html#l324">output\extensions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 179, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l335">output\index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 212, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="profiles.html#l319">output\profiles&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 179, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="terminology.html#l323">output\terminology&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 184, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#l453">output\toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 154, column 28</a></b></td><td><b>error</b></td><td><b>The link 'http://example.org/example-publisher' for &quot;Example Publisher&quot; cannot be resolved</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>IG</b></td><td><b>warning</b></td><td><b>The IG is not for the international realm, and it uses SNOMED CT, so it should fix the SCT edition in the expansion parameters</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_CodeSystem-PatrickCS"> </a>
+<h2><a href="CodeSystem-PatrickCS.html">fsh-generated\resources\CodeSystem-PatrickCS.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>CodeSystem: Validated against </li><li>CodeSystem/PatrickCS: CodeSystem: Validated against </li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem</b></td><td><b>information</b></td><td><b>CodeSysteme SOLLTEN einen angegebenen Wert für das caseSensitive-Element haben, damit die Benutzer den Status und die Bedeutung des Codesystems eindeutig kennen</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c1395)</b></td><td><b>warning</b></td><td><b>!!Das ShareableCodeSystem-Profil sagt, dass das experimental-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte Codesysteme SOLLTEN mit dem ShareableCodeSystem-Profil übereinstimmen</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c1395)</b></td><td><b>warning</b></td><td><b>!!Das ShareableCodeSystem-Profil sagt, dass das caseSensitive-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte Codesysteme SOLLTEN mit dem ShareableCodeSystem-Profil übereinstimmen</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_Condition-DiagnosisExample"> </a>
+<h2><a href="Condition-DiagnosisExample.html">fsh-generated\resources\Condition-DiagnosisExample.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Condition: Validated against </li><li>Condition/DiagnosisExample: Condition: Validated against </li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Condition.extension[0] (l13/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>!!Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://example.org/StructureDefinition/covid-diagnosis|0.1.0 überein.</b> <span id="sl120" class="flip" onclick="flip('l120')">Show Reasoning</span><div id="l120" style="display: none"><p>&nbsp;</p>!!Dieses Element stimmt mit keinem bekannten Sliceim Profil definiert http://example.org/StructureDefinition/covid-diagnosis|0.1.0 überein.<ul><li>Condition.extension[0]: discriminator = true and ('http://example.org/StructureDefinition/condition-certainty' in url)</li>, <li>Condition.extension[0]: discriminator = true and ('http://example.org/StructureDefinition/Laterality' in url)</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition.extension[0] (l13/c6)</b></td><td><b>error</b></td><td><b>!!Die extension http://hl7.org/fhir/StructureDefinition/Laterality ist nicht bekannt, and hier nicht erlaubt</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Extension_EXT_Unknown_NotHere</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Condition.extension[0].url (l14/c66)</b></td><td><b>error</b></td><td><b>URL-Wert 'http://hl7.org/fhir/StructureDefinition/Laterality' löst nicht auf</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_Medication-MedicationExample"> </a>
+<h2><a href="Medication-MedicationExample.html">fsh-generated\resources\Medication-MedicationExample.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Medication: Validated against </li><li>Medication/MedicationExample: Medication: Validated against </li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication.extension[0] (l10/c6)</b></td><td><b>error</b></td><td><b>!!Die extension http://hl7.org/fhir/StructureDefinition/TestExtenstionMedication ist nicht bekannt, and hier nicht erlaubt</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Extension_EXT_Unknown_NotHere</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Medication.extension[0].url (l11/c80)</b></td><td><b>error</b></td><td><b>URL-Wert 'http://hl7.org/fhir/StructureDefinition/TestExtenstionMedication' löst nicht auf</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_Questionnaire-ExampleQuestionnaireInstance"> </a>
+<h2><a href="Questionnaire-ExampleQuestionnaireInstance.html">fsh-generated\resources\Questionnaire-ExampleQuestionnaireInstance.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Questionnaire: Validated against </li><li>Questionnaire/ExampleQuestionnaireInstance: Questionnaire: Validated against </li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[2]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c11147)</b></td><td><b>error</b></td><td><b>Unbekanntes Code System 'http://hl7.org/fhir/v3/AdministrativeGender'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_System_Unknown</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[2]&#8203;.answerOption[0]&#8203;.value&#8203;.ofType(Coding)&#8203;.system (l1&#8203;/c11135)</b></td><td><b>error</b></td><td><b>URL-Wert 'http://hl7.org/fhir/v3/AdministrativeGender' löst nicht auf</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[2]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c11231)</b></td><td><b>error</b></td><td><b>Unbekanntes Code System 'http://hl7.org/fhir/v3/AdministrativeGender'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_System_Unknown</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[2]&#8203;.answerOption[1]&#8203;.value&#8203;.ofType(Coding)&#8203;.system (l1&#8203;/c11219)</b></td><td><b>error</b></td><td><b>URL-Wert 'http://hl7.org/fhir/v3/AdministrativeGender' löst nicht auf</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[2]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding) (l1&#8203;/c11316)</b></td><td><b>error</b></td><td><b>Unbekanntes Code System 'http://hl7.org/fhir/v3/AdministrativeGender'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_System_Unknown</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire&#8203;.item[2]&#8203;.answerOption[2]&#8203;.value&#8203;.ofType(Coding)&#8203;.system (l1&#8203;/c11303)</b></td><td><b>error</b></td><td><b>URL-Wert 'http://hl7.org/fhir/v3/AdministrativeGender' löst nicht auf</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Resource</b></td><td><b>information</b></td><td><b>The resource Questionnaire/ExampleQuestionnaireInstance could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_StructureDefinition-Laterality"> </a>
+<h2><a href="StructureDefinition-Laterality.html">fsh-generated\resources\StructureDefinition-Laterality.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against </li><li>StructureDefinition/Laterality: StructureDefinition: Validated against </li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td><b>!!Überprüfen Sie den Erweiterungstyp: Extensions sollten nicht den Kontext Element haben, es sei denn, es ist wirklich beabsichtigt, dass sie überall verwendet werden können.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_CONTEXT_SHOULD_NOT_BE_ELEMENT</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/StructureDefinition&#8203;/Laterality')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_StructureDefinition-TestExtenstionMedication"> </a>
+<h2><a href="StructureDefinition-TestExtenstionMedication.html">fsh-generated\resources\StructureDefinition-TestExtenstionMedication.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against </li><li>StructureDefinition/TestExtenstionMedication: StructureDefinition: Validated against </li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td><b>!!Überprüfen Sie den Erweiterungstyp: Extensions sollten nicht den Kontext Element haben, es sei denn, es ist wirklich beabsichtigt, dass sie überall verwendet werden können.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_CONTEXT_SHOULD_NOT_BE_ELEMENT</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/StructureDefinition&#8203;/TestExtenstionMedication')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_StructureDefinition-condition-certainty"> </a>
+<h2><a href="StructureDefinition-condition-certainty.html">fsh-generated\resources\StructureDefinition-condition-certainty.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against </li><li>StructureDefinition/condition-certainty: StructureDefinition: Validated against </li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td><b>!!Überprüfen Sie den Erweiterungstyp: Extensions sollten nicht den Kontext Element haben, es sei denn, es ist wirklich beabsichtigt, dass sie überall verwendet werden können.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">SD_CONTEXT_SHOULD_NOT_BE_ELEMENT</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/StructureDefinition&#8203;/condition-certainty')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_StructureDefinition-example.questionnaire"> </a>
+<h2><a href="StructureDefinition-example.questionnaire.html">fsh-generated\resources\StructureDefinition-example.questionnaire.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>StructureDefinition: Validated against </li><li>StructureDefinition/example.questionnaire: StructureDefinition: Validated against </li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/StructureDefinition&#8203;/example&#8203;.questionnaire')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_StructureDefinition-patient-contact-details"> </a>
+<h2><a href="StructureDefinition-patient-contact-details.html">fsh-generated\resources\StructureDefinition-patient-contact-details.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against </li><li>StructureDefinition/patient-contact-details: StructureDefinition: Validated against </li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/example&#8203;.org&#8203;/StructureDefinition&#8203;/patient-contact-details')</b></td><td><b>warning</b></td><td><b>The Implementation Guide contains no examples for this extension</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_ValueSet-ConditionCertaintyVS"> </a>
+<h2><a href="ValueSet-ConditionCertaintyVS.html">fsh-generated\resources\ValueSet-ConditionCertaintyVS.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/ConditionCertaintyVS: ValueSet: Validated against </li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1611)</b></td><td><b>warning</b></td><td><b>!!Das ShareableValueSet-Profil sagt, dass das experimental-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte ValueSets SOLLTEN mit dem ShareableValueSet-Profil übereinstimmen</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_ValueSet-CovidSeverityVS"> </a>
+<h2><a href="ValueSet-CovidSeverityVS.html">fsh-generated\resources\ValueSet-CovidSeverityVS.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/CovidSeverityVS: ValueSet: Validated against </li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1490)</b></td><td><b>warning</b></td><td><b>!!Das ShareableValueSet-Profil sagt, dass das experimental-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte ValueSets SOLLTEN mit dem ShareableValueSet-Profil übereinstimmen</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_Patrick_Documents_GitHub_TestIG_fsh-generated_resources_ValueSet-PatrickVS"> </a>
+<h2><a href="ValueSet-PatrickVS.html">fsh-generated\resources\ValueSet-PatrickVS.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>ValueSet: Validated against </li><li>ValueSet/PatrickVS: ValueSet: Validated against </li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet (l1/c1344)</b></td><td><b>warning</b></td><td><b>!!Das ShareableValueSet-Profil sagt, dass das experimental-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte ValueSets SOLLTEN mit dem ShareableValueSet-Profil übereinstimmen</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="CODESYSTEM_SHAREABLE_MISSING"> </a>
+<h2>CODESYSTEM_SHAREABLE_MISSING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-PatrickCS.html">fsh-generated\resources\CodeSystem-PatrickCS.json</a></td><td><b>!!Das ShareableCodeSystem-Profil sagt, dass das experimental-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte Codesysteme SOLLTEN mit dem ShareableCodeSystem-Profil übereinstimmen</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-PatrickCS.html">fsh-generated\resources\CodeSystem-PatrickCS.json</a></td><td><b>!!Das ShareableCodeSystem-Profil sagt, dass das caseSensitive-Element obligatorisch ist, aber es ist nicht vorhanden. Veröffentlichte Codesysteme SOLLTEN mit dem ShareableCodeSystem-Profil übereinstimmen</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Details_for__matching_against_Profile_"> </a>
+<h2>Details_for__matching_against_Profile_</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Condition-DiagnosisExample.html">fsh-generated\resources\Condition-DiagnosisExample.json</a></td><td><b>!!Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://example.org/StructureDefinition/covid-diagnosis|0.1.0 überein.</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Extension_EXT_Unknown_NotHere"> </a>
+<h2>Extension_EXT_Unknown_NotHere</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Condition-DiagnosisExample.html">fsh-generated\resources\Condition-DiagnosisExample.json</a></td><td><b>!!Die extension http://hl7.org/fhir/StructureDefinition/Laterality ist nicht bekannt, and hier nicht erlaubt</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Medication-MedicationExample.html">fsh-generated\resources\Medication-MedicationExample.json</a></td><td><b>!!Die extension http://hl7.org/fhir/StructureDefinition/TestExtenstionMedication ist nicht bekannt, and hier nicht erlaubt</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_DEPENDS_ON_DEPRECATED"> </a>
+<h2>MSG_DEPENDS_ON_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-PatricksMedication.html">fsh-generated\resources\StructureDefinition-PatricksMedication.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="SD_CONTEXT_SHOULD_NOT_BE_ELEMENT"> </a>
+<h2>SD_CONTEXT_SHOULD_NOT_BE_ELEMENT</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-Laterality.html">fsh-generated\resources\StructureDefinition-Laterality.json</a></td><td><b>!!Überprüfen Sie den Erweiterungstyp: Extensions sollten nicht den Kontext Element haben, es sei denn, es ist wirklich beabsichtigt, dass sie überall verwendet werden können.</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-TestExtenstionMedication.html">fsh-generated\resources\StructureDefinition-TestExtenstionMedication.json</a></td><td><b>!!Überprüfen Sie den Erweiterungstyp: Extensions sollten nicht den Kontext Element haben, es sei denn, es ist wirklich beabsichtigt, dass sie überall verwendet werden können.</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-condition-certainty.html">fsh-generated\resources\StructureDefinition-condition-certainty.json</a></td><td><b>!!Überprüfen Sie den Erweiterungstyp: Extensions sollten nicht den Kontext Element haben, es sei denn, es ist wirklich beabsichtigt, dass sie überall verwendet werden können.</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_Unknown"> </a>
+<h2>Terminology_TX_System_Unknown</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-ExampleQuestionnaireInstance.html">fsh-generated\resources\Questionnaire-ExampleQuestionnaireInstance.json</a></td><td><b>Unbekanntes Code System 'http://hl7.org/fhir/v3/AdministrativeGender'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-ExampleQuestionnaireInstance.html">fsh-generated\resources\Questionnaire-ExampleQuestionnaireInstance.json</a></td><td><b>Unbekanntes Code System 'http://hl7.org/fhir/v3/AdministrativeGender'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-ExampleQuestionnaireInstance.html">fsh-generated\resources\Questionnaire-ExampleQuestionnaireInstance.json</a></td><td><b>Unbekanntes Code System 'http://hl7.org/fhir/v3/AdministrativeGender'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
+<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Condition-DiagnosisExample.html">fsh-generated\resources\Condition-DiagnosisExample.json</a></td><td><b>URL-Wert 'http://hl7.org/fhir/StructureDefinition/Laterality' löst nicht auf</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Medication-MedicationExample.html">fsh-generated\resources\Medication-MedicationExample.json</a></td><td><b>URL-Wert 'http://hl7.org/fhir/StructureDefinition/TestExtenstionMedication' löst nicht auf</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-ExampleQuestionnaireInstance.html">fsh-generated\resources\Questionnaire-ExampleQuestionnaireInstance.json</a></td><td><b>URL-Wert 'http://hl7.org/fhir/v3/AdministrativeGender' löst nicht auf</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-ExampleQuestionnaireInstance.html">fsh-generated\resources\Questionnaire-ExampleQuestionnaireInstance.json</a></td><td><b>URL-Wert 'http://hl7.org/fhir/v3/AdministrativeGender' löst nicht auf</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-ExampleQuestionnaireInstance.html">fsh-generated\resources\Questionnaire-ExampleQuestionnaireInstance.json</a></td><td><b>URL-Wert 'http://hl7.org/fhir/v3/AdministrativeGender' löst nicht auf</b></td>
+   </tr>
+</table>
+</body>
+</html>

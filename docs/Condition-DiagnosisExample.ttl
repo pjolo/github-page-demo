@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/Condition/DiagnosisExample> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DiagnosisExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.org/StructureDefinition/covid-diagnosis"^^xsd:anyURI ;
+       fhir:link <http://example.org/StructureDefinition/covid-diagnosis>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition DiagnosisExample</b></p><a name=\"DiagnosisExample\"> </a><a name=\"hcDiagnosisExample\"> </a><a name=\"DiagnosisExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-covid-diagnosis.html\">Covid Diagnosis</a></p></div><p><b>org/fhir/StructureDefinition/Laterality</b>: <span title=\"Codes:{http://snomed.info/sct 51440002}\">Bilateral</span></p><p><b>severity</b>: <span title=\"Codes:{http://snomed.info/sct 24484000}\">Severe</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/icd-10-cm U07.1}\">COVID-19</span></p><p><b>subject</b>: <a href=\"Patient-JaneDoe.html\">Jane Doe  (no stated gender), DoB Unknown</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/Laterality"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:51440002 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "51440002" ] ;
+         fhir:display [ fhir:v "Bilateral" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:severity [
+     fhir:coding ( [
+       a sct:24484000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "24484000" ] ;
+       fhir:display [ fhir:v "Severe" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "U07.1" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://example.org/Patient/JaneDoe> ;
+     fhir:reference [ fhir:v "Patient/JaneDoe" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

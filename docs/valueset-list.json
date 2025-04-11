@@ -1,0 +1,31 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/ValueSet/ConditionCertaintyVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ConditionCertaintyVS",
+      "title" : "ConditionCertaintyVS",
+      "description" : "Degree of confidence the condition is present",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/CovidSeverityVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CovidSeverityVS",
+      "title" : "CovidSeverityVS",
+      "description" : "Values for COVID severity",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://example.org/ValueSet/PatrickVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PatrickVS",
+      "title" : "PatrickVS",
+      "description" : "A ValueSet from Patrick",
+      "systems" : ["http://example.org/CodeSystem/PatrickCS"]
+    }
+  ]
+}

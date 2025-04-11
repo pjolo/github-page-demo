@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ConditionCertaintyVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ConditionCertaintyVS</b></p><a name=\"ConditionCertaintyVS\"> </a><a name=\"hcConditionCertaintyVS\"> </a><a name=\"ConditionCertaintyVS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/415684004\">415684004</a></td><td>Supspected (qualifier vlaue)</td></tr><tr><td><a href=\"http://snomed.info/id/410592001\">410592001</a></td><td>Probably present (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/410605003\">410605003</a></td><td>Confirmed present (qualifier value)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://example.org/ValueSet/ConditionCertaintyVS",
+  "version" : "0.1.0",
+  "name" : "ConditionCertaintyVS",
+  "title" : "ConditionCertaintyVS",
+  "status" : "draft",
+  "date" : "2025-04-11T08:08:48+02:00",
+  "publisher" : "Example Publisher",
+  "contact" : [{
+    "name" : "Example Publisher",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://example.org/example-publisher"
+    }]
+  }],
+  "description" : "Degree of confidence the condition is present",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "415684004",
+        "display" : "Supspected (qualifier vlaue)"
+      },
+      {
+        "code" : "410592001",
+        "display" : "Probably present (qualifier value)"
+      },
+      {
+        "code" : "410605003",
+        "display" : "Confirmed present (qualifier value)"
+      }]
+    }]
+  }
+}

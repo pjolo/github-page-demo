@@ -1,0 +1,15 @@
+{
+  "resourceType" : "Medication",
+  "id" : "MedicationExample",
+  "meta" : {
+    "profile" : ["http://example.org/StructureDefinition/PatricksMedication"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication MedicationExample</b></p><a name=\"MedicationExample\"> </a><a name=\"hcMedicationExample\"> </a><a name=\"MedicationExample-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatricksMedication.html\">PatricksMedication</a></p></div><p><b>org/fhir/StructureDefinition/TestExtenstionMedication</b>: Aspirin</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/TestExtenstionMedication",
+    "valueString" : "Aspirin"
+  }]
+}

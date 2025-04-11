@@ -1,0 +1,91 @@
+<html><head><title>Terminology Server Log</title></head><body><h2>Terminology Server Log</h2><pre>
+
+</pre><hr/>
+<a name="l1"> </a><h3>1</h3>
+<pre>
+Request: 
+
+GET http://tx.fhir.org/r4/metadata HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+User-Agent: fhir/publisher
+
+
+Response (00:00:00.190): 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:4007
+content-type:application/fhir+json
+date:Fri, 11 Apr 2025 06:09:35 GMT
+pragma:no-cache
+server:nginx
+x-request-id:201-4255647
+
+{"resourceType" : "CapabilityStatement","id" : "FhirServer","text" : {"status" : "generated","div" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\">&lt;h2>Local User Conformance Statement&lt;/h2>&lt;p>FHIR v4.0.1 released 20250329034203.472Z. Server version 3.7.5 built 20250329034203.472Z&lt;/p>&lt;table class=\"grid\">&lt;tr>&lt;th>Resource Type&lt;/th>&lt;th>Profile&lt;/th>&lt;th>Read&lt;/th>&lt;th>V-Read&lt;/th>&lt;th>Search&lt;/th>&lt;th>Update&lt;/th>&lt;th>Updates&lt;/th>&lt;th>Create&lt;/th>&lt;th>Delete&lt;/th>&lt;th>History&lt;/th>&lt;/tr>\n&lt;/table>\n&lt;p>Operations&lt;/p>\n&lt;ul>\n &lt;li>expand: see OperationDefinition/fso-expand&lt;/li>\n &lt;li>lookup: see OperationDefinition/fso-lookup&lt;/li>\n &lt;li>validate-code: see OperationDefinition/fso-validate-code&lt;/li>\n &lt;li>translate: see OperationDefinition/fso-translate&lt;/li>\n &lt;li>closure: see OperationDefinition/fso-closure&lt;/li>\n &lt;li>versions: see OperationDefinition/fso-versions&lt;/li>\n&lt;/ul>\n&lt;/div>"},"extension" : [{"extension" : [{"url" : "definition","valueCanonical" : "http://hl7.org/fhir/uv/tx-tests/FeatureDefinition/test-version"},{"url" : "value","valueCode" : "1.7.6"},{"extension" : [{"url" : "name","valueCode" : "mode"},{"url" : "value","valueCode" : "tx.fhir.org"}],"url" : "qualifier"}],"url" : "http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature"},{"extension" : [{"url" : "definition","valueCanonical" : "http://hl7.org/fhir/uv/tx-ecosystem/FeatureDefinition/CodeSystemAsParameter"},{"url" : "value","valueBoolean" : true}],"url" : "http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature"}],"url" : "http://tx.fhir.org/r4/CapabilityStatement/tx","version" : "4.0.1-3.7.5","name" : "FHIRReferenceServer","title" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2025-04-11T06:09:35.615Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"description" : "Standard Conformance Statement for the open source Reference FHIR Server provided by Health Intersections","kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server","http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.7.5","releaseDate" : "2025-03-29T03:42:03.472Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"resource" : [{"type" : "CodeSystem","interaction" : [{"code" : "read","documentation" : "Read a code system"},{"code" : "search-type","documentation" : "Search the code systems. Not that there a few major code systems that are not available through this API (SCT, LOINC etc)"}],"operation" : [{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup"}]},{"type" : "ValueSet","interaction" : [{"code" : "read","documentation" : "Read a ValueSet"},{"code" : "search-type","documentation" : "Search the value sets"}],"operation" : [{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code"},{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"}]}],"interaction" : [{"code" : "transaction"}],"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
+
+</pre><hr/>
+<a name="l2"> </a><h3>2</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/fhir-types","code":"ImplementationGuide"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"8cda6209-ea60-4c25-8cd8-97f3ce06f1f0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.210): 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1577
+content-type:application/fhir+json
+date:Fri, 11 Apr 2025 06:09:53 GMT
+last-modified:Fri, 11 Apr 2025 06:09:53 GMT
+pragma:no-cache
+server:nginx
+x-request-id:201-4255763
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://hl7.org/fhir/fhir-types"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://hl7.org/fhir/fhir-types"},{"name" : "code","valueCode" : "ImplementationGuide"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://hl7.org/fhir/fhir-types' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"extension" : [{"url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id","valueString" : "UNKNOWN_CODESYSTEM"}],"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://hl7.org/fhir/fhir-types' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}},{"name" : "diagnostics","valueString" : "0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \"[http://hl7.org/fhir/fhir-types#ImplementationGuide (\"\")]\"\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \"http://hl7.org/fhir/fhir-types#ImplementationGuide\"\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \"http://hl7.org/fhir/fhir-types\"\r\n"}]}
+
+</pre><hr/>
+<a name="l3"> </a><h3>3</h3>
+<pre>
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/v3/AdministrativeGender","code":"M"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"8cda6209-ea60-4c25-8cd8-97f3ce06f1f0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+
+
+Response (00:00:00.122): 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1614
+content-type:application/fhir+json
+date:Fri, 11 Apr 2025 06:10:21 GMT
+last-modified:Fri, 11 Apr 2025 06:10:21 GMT
+pragma:no-cache
+server:nginx
+x-request-id:201-4255946
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "http://hl7.org/fhir/v3/AdministrativeGender"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://hl7.org/fhir/v3/AdministrativeGender"},{"name" : "code","valueCode" : "M"},{"name" : "message","valueString" : "A definition for CodeSystem 'http://hl7.org/fhir/v3/AdministrativeGender' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"extension" : [{"url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id","valueString" : "UNKNOWN_CODESYSTEM"}],"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'http://hl7.org/fhir/v3/AdministrativeGender' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}},{"name" : "diagnostics","valueString" : "0 0 : start\r\n0 0: tx-op\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Analysing\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Validate \"[http://hl7.org/fhir/v3/AdministrativeGender#M (\"\")]\"\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Check \"http://hl7.org/fhir/v3/AdministrativeGender#M\"\r\n0 0: 0ms http://hl7.org/fhir/ValueSet/@all: Didn't find CodeSystem \"http://hl7.org/fhir/v3/AdministrativeGender\"\r\n"}]}
+</pre></head></html>

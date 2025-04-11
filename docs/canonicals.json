@@ -1,0 +1,92 @@
+[
+  {
+    "id" : "PatrickCS",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/CodeSystem/PatrickCS",
+    "version" : "0.1.0",
+    "name" : "PatrickCS"
+  },
+  {
+    "id" : "fhir.example",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.org/ImplementationGuide/fhir.example",
+    "version" : "0.1.0",
+    "name" : "TestIG"
+  },
+  {
+    "id" : "ExampleQuestionnaireInstance",
+    "type" : "Questionnaire",
+    "url" : "http://example.org/Questionnaire/ExampleQuestionnaireInstance",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "Laterality",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/Laterality",
+    "version" : "0.1.0",
+    "name" : "Laterality"
+  },
+  {
+    "id" : "PatricksMedication",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/PatricksMedication",
+    "version" : "0.1.0",
+    "name" : "PatricksMedication"
+  },
+  {
+    "id" : "TestExtenstionMedication",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/TestExtenstionMedication",
+    "version" : "0.1.0",
+    "name" : "TestExtenstionMedication"
+  },
+  {
+    "id" : "condition-certainty",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/condition-certainty",
+    "version" : "0.1.0",
+    "name" : "ConditionCertainty"
+  },
+  {
+    "id" : "covid-diagnosis",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/covid-diagnosis",
+    "version" : "0.1.0",
+    "name" : "CovidDiagnosis"
+  },
+  {
+    "id" : "example.questionnaire",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/example.questionnaire",
+    "version" : "0.1.0",
+    "name" : "ExampleQuestionnaire"
+  },
+  {
+    "id" : "patient-contact-details",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/patient-contact-details",
+    "version" : "0.1.0",
+    "name" : "PatientContactDetails"
+  },
+  {
+    "id" : "ConditionCertaintyVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/ConditionCertaintyVS",
+    "version" : "0.1.0",
+    "name" : "ConditionCertaintyVS"
+  },
+  {
+    "id" : "CovidSeverityVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/CovidSeverityVS",
+    "version" : "0.1.0",
+    "name" : "CovidSeverityVS"
+  },
+  {
+    "id" : "PatrickVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/PatrickVS",
+    "version" : "0.1.0",
+    "name" : "PatrickVS"
+  }
+]

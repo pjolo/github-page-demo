@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://example.org/ValueSet/ConditionCertaintyVS,0.1.0,draft,,ConditionCertaintyVS,ConditionCertaintyVS,"Degree of confidence the condition is present",,"SCT"
+http://example.org/ValueSet/CovidSeverityVS,0.1.0,draft,,CovidSeverityVS,CovidSeverityVS,"Values for COVID severity",,"SCT"
+http://example.org/ValueSet/PatrickVS,0.1.0,draft,,PatrickVS,PatrickVS,"A ValueSet from Patrick",,"Internal"
