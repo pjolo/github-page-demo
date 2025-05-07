@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs,6.0.0-ballot-ci-build,active,,BasicImmunizationCodesystem,Basic Immunization codes,"Clinical Decision Support Event",
+http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-clinical-decision-support-event-cs,6.0.0-ballot-ci-build,active,,ClinicalDecisionSupportEvent,CDS Event,"Clinical Decision Support Event",
+http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-entry-conflict-cs,6.0.0-ballot-ci-build,active,,EntryConflictCodesystem,Entry Conflict Code System,"The entry conflict codesystem",
+http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs,6.0.0-ballot-ci-build,active,,SwissExposureRisksCodesystem,Swiss Exposure Risks Codesystem,"Exposure risks codes available in Switzerland.",

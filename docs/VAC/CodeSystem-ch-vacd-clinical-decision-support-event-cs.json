@@ -1,0 +1,93 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ch-vacd-clinical-decision-support-event-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ch-vacd-clinical-decision-support-event-cs</b></p><a name=\"ch-vacd-clinical-decision-support-event-cs\"> </a><a name=\"hcch-vacd-clinical-decision-support-event-cs\"> </a><a name=\"ch-vacd-clinical-decision-support-event-cs-en-US\"> </a><p>This case-sensitive code system <code>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-clinical-decision-support-event-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">immunrecorequest<a name=\"ch-vacd-clinical-decision-support-event-cs-immunrecorequest\"> </a></td><td>Immunization Recommendation Request</td></tr><tr><td style=\"white-space:nowrap\">immunrecoresponse<a name=\"ch-vacd-clinical-decision-support-event-cs-immunrecoresponse\"> </a></td><td>Immunization Recommendation Response</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (Schweiz) (German (Switzerland), de)</b></td><td><b>English (United States) (English (United States), en)</b></td><td><b>French (Switzerland) (fr)</b></td><td><b>Italian (Switzerland) (it)</b></td><td><b>rm</b></td></tr><tr><td>immunrecorequest</td><td>Immunization Recommendation Request</td><td>Immunization Recommendation Request</td><td>Immunization Recommendation Request</td><td>Immunization Recommendation Request</td><td>Immunization Recommendation Request</td></tr><tr><td>immunrecoresponse</td><td>Immunization Recommendation Response</td><td>Immunization Recommendation Response</td><td>Immunization Recommendation Response</td><td>Immunization Recommendation Response</td><td>Immunization Recommendation Response</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2021-12-21T00:00:00+01:00"
+    }
+  }],
+  "url" : "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-clinical-decision-support-event-cs",
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://fhir.ch/ig/ch-vacd/cs/entry-conflict",
+    "value" : "entry-conflict"
+  }],
+  "version" : "6.0.0-ballot-ci-build",
+  "name" : "ClinicalDecisionSupportEvent",
+  "title" : "CDS Event",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-07T07:26:19+02:00",
+  "publisher" : "HL7 Switzerland",
+  "contact" : [{
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/"
+    }]
+  }],
+  "description" : "Clinical Decision Support Event",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CHE"
+    }]
+  }],
+  "copyright" : "CC0-1.0",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "immunrecorequest",
+    "display" : "Immunization Recommendation Request",
+    "designation" : [{
+      "language" : "de-CH",
+      "value" : "Immunization Recommendation Request"
+    },
+    {
+      "language" : "fr-CH",
+      "value" : "Immunization Recommendation Request"
+    },
+    {
+      "language" : "it-CH",
+      "value" : "Immunization Recommendation Request"
+    },
+    {
+      "language" : "rm-CH",
+      "value" : "Immunization Recommendation Request"
+    },
+    {
+      "language" : "en-US",
+      "value" : "Immunization Recommendation Request"
+    }]
+  },
+  {
+    "code" : "immunrecoresponse",
+    "display" : "Immunization Recommendation Response",
+    "designation" : [{
+      "language" : "de-CH",
+      "value" : "Immunization Recommendation Response"
+    },
+    {
+      "language" : "fr-CH",
+      "value" : "Immunization Recommendation Response"
+    },
+    {
+      "language" : "it-CH",
+      "value" : "Immunization Recommendation Response"
+    },
+    {
+      "language" : "rm-CH",
+      "value" : "Immunization Recommendation Response"
+    },
+    {
+      "language" : "en-US",
+      "value" : "Immunization Recommendation Response"
+    }]
+  }]
+}

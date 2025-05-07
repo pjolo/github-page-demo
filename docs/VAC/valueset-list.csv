@@ -1,0 +1,11 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-basic-immunization-vs,6.0.0-ballot-ci-build,active,,BasicImmunizationCode,Basic Immunization Codes,"The codes for declaring basic immunization.",,"Internal"
+http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-entry-conflict-vs,6.0.0-ballot-ci-build,active,,CHVACDEntryConflictCode,Entry Conflict Codes,"The codes for declaring document entry conflicts",,"Internal"
+http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-immunization-allergyintolerances-vs,6.0.0-ballot-ci-build,draft,,AllergiesAndIntolerancesForImmunization,Allergies and Intolerance values for Immunization,"The allergies and adverse reactions which have an influence on the immunization recommendations.",,"SCT"
+http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-laboratory-serology-vs,6.0.0-ballot-ci-build,active,,LaboratorySerologyImmunization,Laboratory Serology for Immunization,"Laboratory Serology for immunization",,"LOINC"
+http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-medical-vs,6.0.0-ballot-ci-build,active,,SwissMedicalRisksForImmunizations,Swiss Medical Risks For Immunizations,"The medical risks used in Switzerland.",,"SCT"
+http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-occupation-vs,6.0.0-ballot-ci-build,active,,SwissOccupationRisksForImmunizations,Swiss Occupation Risks For Immunizations,"The occupation exposition risks used in Switzerland.",,"SCT,Internal"
+http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-preillness-vs,6.0.0-ballot-ci-build,active,,SwissPreillnessRisksForImmunizations,Swiss Preillness Risks For Immunizations,"The preillness risks used in Switzerland.",,"SCT"
+http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-social-vs,6.0.0-ballot-ci-build,active,,SwissSocialRisksForImmunizations,Swiss Social Risks For Immunizations,"The social exposition risks used in Switzerland.",,"SCT"
+http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-vs,6.0.0-ballot-ci-build,active,,SwissRisksForImmunizations,Swiss Risks For Immunizations,"The medical and exposition risks used in Switzerland.",,
+http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-verification-status-vs,6.0.0-ballot-ci-build,active,,CHVACDVerificationStatusVS,Verification Status Codes,"Definition the verification status codes for the extension ch-vacd-ext-verification-status.",,"SCT"

@@ -1,0 +1,63 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "83b40197-8873-4b2e-a9fd-813f4a7e06b6-5",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/83b40197-8873-4b2e-a9fd-813f4a7e06b6-5",
+  "name" : "UnionClinicalDecisionSupportEventAndClinicalDecisionSupportEvent",
+  "title" : "Union of CDS Event And CDS Event",
+  "status" : "active",
+  "date" : "2025-05-07T07:31:19+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CHE"
+    }]
+  }],
+  "concept" : [{
+    "code" : "immunrecorequest",
+    "display" : "Immunization Recommendation Request",
+    "designation" : [{
+      "language" : "de-CH",
+      "value" : "Immunization Recommendation Request"
+    },
+    {
+      "language" : "fr-CH",
+      "value" : "Immunization Recommendation Request"
+    },
+    {
+      "language" : "it-CH",
+      "value" : "Immunization Recommendation Request"
+    },
+    {
+      "language" : "rm-CH",
+      "value" : "Immunization Recommendation Request"
+    },
+    {
+      "language" : "en-US",
+      "value" : "Immunization Recommendation Request"
+    }]
+  },
+  {
+    "code" : "immunrecoresponse",
+    "display" : "Immunization Recommendation Response",
+    "designation" : [{
+      "language" : "de-CH",
+      "value" : "Immunization Recommendation Response"
+    },
+    {
+      "language" : "fr-CH",
+      "value" : "Immunization Recommendation Response"
+    },
+    {
+      "language" : "it-CH",
+      "value" : "Immunization Recommendation Response"
+    },
+    {
+      "language" : "rm-CH",
+      "value" : "Immunization Recommendation Response"
+    },
+    {
+      "language" : "en-US",
+      "value" : "Immunization Recommendation Response"
+    }]
+  }]
+}

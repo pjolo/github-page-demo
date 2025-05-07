@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>TC D 03 - Implementation Guide CH VACD v6.0.0-ballot-ci-build</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <style>
+    
+
+    
+
+    
+
+    </style>
+ 
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"27"}
+    h3,h4,h5,h6{--heading-prefix:"27"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+            <div id="family-nav">
+	<a id="logo" no-external="true" href="http://hl7.org/fhir"> <img
+		alt="logo fhir" src="fhir-logo-www.png" />
+	</a>
+</div>
+
+            <div id="family-nav">
+                <a id="logo" no-external="true" href="searchform.html">
+                    <img src="assets/images/search.png" alt="Search FHIR" />
+                </a>
+            </div>
+            <div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://www.hl7.ch">
+        <img alt="visit the hl7 website" height="50" src="hl7-logo.png" />
+    </a>            
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Implementation Guide CH VACD</span>
+            <br/>
+            <span style="display:inline-block;">6.0.0-ballot-ci-build - ci-build
+
+
+
+  <img alt="Switzerland flag" src="assets/images/che.svg" height="16" title="Switzerland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<!--<li><a href="toc.html">Table of Contents</a></li> -->
+	<li>
+		<a href="index.html">Home</a>
+	</li>
+
+
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Use Cases
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="Use-Cases-Deutsch.html">Anwendungsfälle</a>
+			</li>
+			<li>
+				<a href="Use-Cases-Francais.html">Les cas d'utilisation</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Documents/Messages
+			<b class="caret">
+			</b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="immunization-administration-document.html">Immunization Administration document</a>
+			</li>
+			<li>
+				<a href="vaccination-record-document.html">Vaccination Record document</a>
+			</li>
+			<li>
+				<a href="immunization-recommendation-request-message.html">Immunization Recommendation Request message</a>
+			</li>
+			<li>
+				<a href="immunization-recommendation-response-message.html">Immunization Recommendation Response message</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="profiles.html">Profiles</a>
+	</li>
+	<li>
+		<a href="extensions.html">Extensions</a>
+	</li>
+	<li>
+		<a href="terminology.html">Terminology</a>
+	</li>
+	<li>
+		<a href="artifacts.html">Artifacts</a>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Test Cases
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="TestCases.html">Overview</a>
+			</li>
+			<li>
+				<a href="TestCases.html#a-immunizations">A Immunizations</a>
+			</li>
+			<li>
+				<a href="TestCases.html#b-other-elements">B Other Elements</a>
+			</li>
+			<li>
+				<a href="TestCases.html#c-correction-of-entries">C Correction of Entries</a>
+			</li>
+			<li>
+				<a href="TestCases.html#d-conflicts-on-merging-documents">D Conflicts on merging Documents</a>
+			</li>
+			<li>
+				<a href="TestCases.html#e-language-handling-on-merging-documents">E Language handling on merging Documents</a>
+			</li>
+			<li>
+				<a href="TestCases.html#f-add-notes-to-existing-elements">F Add Notes to existing Elements</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>TC D 03</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Implementation Guide CH VACD - Local Development build (v6.0.0-ballot-ci-build) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://fhir.ch/ig/ch-vacd/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>TC D 03</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#test-case-d-03-merging-conflict-for-medicalproblem-in-three-documents" id="markdown-toc-test-case-d-03-merging-conflict-for-medicalproblem-in-three-documents">Test Case D 03: Merging conflict for medicalproblem in three documents</a>    <ul>
+      <li><a href="#precondition" id="markdown-toc-precondition">Precondition</a></li>
+      <li><a href="#sequence" id="markdown-toc-sequence">Sequence</a></li>
+      <li><a href="#result" id="markdown-toc-result">Result</a></li>
+      <li><a href="#documents" id="markdown-toc-documents">Documents</a></li>
+      <li><a href="#entries" id="markdown-toc-entries">Entries</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h2 id="test-case-d-03-merging-conflict-for-medicalproblem-in-three-documents">Test Case D 03: Merging conflict for medicalproblem in three documents</h2>
+
+<h3 id="precondition">Precondition</h3>
+<p>In the ehealth ecosystem of the patient there are several ImmunizationAdministration documents. In three documents the same MedicalProblem entry is entered.</p>
+
+<h3 id="sequence">Sequence</h3>
+
+<div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="SEQUENCE" height="533.0624px" preserveAspectRatio="none" style="width:800px;height:533px;background:#FFFFFF;" version="1.1" viewBox="0 0 800 533" width="800.043px" zoomAndPan="magnify"><title>Test Case D 03</title><defs /><g><text fill="#000000" font-family="sans-serif" font-size="12.5849" font-weight="bold" lengthAdjust="spacing" textLength="89.5387" x="352.9833" y="26.5481">Test Case D 03</text><rect fill="#DDDDDD" height="473.5788" style="stroke:#181818;stroke-width:0.4495;" width="627.6623" x="0.8989" y="40.1005" /><text fill="#000000" font-family="sans-serif" font-size="11.686" font-weight="bold" lengthAdjust="spacing" textLength="159.7527" x="234.8537" y="52.2316">eHealth Record Repository 1</text><rect fill="#DDDDDD" height="473.5788" style="stroke:#181818;stroke-width:0.4495;" width="165.1463" x="630.3591" y="40.1005" /><text fill="#000000" font-family="sans-serif" font-size="11.686" font-weight="bold" lengthAdjust="spacing" textLength="159.7527" x="633.0559" y="52.2316">eHealth Record Repository 2</text><g><title>Aggregator</title><rect fill="#FFFFFF" height="329.1539" style="stroke:#181818;stroke-width:0.8989;" width="8.9892" x="343.8787" y="157.2416" /></g><g><title>Aggregator</title><rect fill="#FFFFFF" height="191.5693" style="stroke:#181818;stroke-width:0.8989;" width="8.9892" x="348.3733" y="271.4542" /></g><g><title>Patient</title><rect fill="#000000" fill-opacity="0.00000" height="390.9129" width="7.1914" x="23.1859" y="128.16" /><line style="stroke:#181818;stroke-width:0.4495;stroke-dasharray:5.0,5.0;" x1="26.0688" x2="26.0688" y1="128.16" y2="519.0729" /></g><g><title>Doc1</title><rect fill="#000000" fill-opacity="0.00000" height="390.9129" width="7.1914" x="78.5905" y="128.16" /><line style="stroke:#181818;stroke-width:0.4495;stroke-dasharray:5.0,5.0;" x1="81.4299" x2="81.4299" y1="128.16" y2="519.0729" /></g><g><title>Doc2</title><rect fill="#000000" fill-opacity="0.00000" height="390.9129" width="7.1914" x="274.2339" y="128.16" /><line style="stroke:#181818;stroke-width:0.4495;stroke-dasharray:5.0,5.0;" x1="277.0734" x2="277.0734" y1="128.16" y2="519.0729" /></g><g><title>Aggregator</title><rect fill="#000000" fill-opacity="0.00000" height="390.9129" width="7.1914" x="344.7776" y="128.16" /><line style="stroke:#181818;stroke-width:0.4495;stroke-dasharray:5.0,5.0;" x1="347.8031" x2="347.8031" y1="128.16" y2="519.0729" /></g><g><title>Result</title><rect fill="#000000" fill-opacity="0.00000" height="390.9129" width="7.1914" x="594.7928" y="128.16" /><line style="stroke:#181818;stroke-width:0.4495;stroke-dasharray:5.0,5.0;" x1="597.8802" x2="597.8802" y1="128.16" y2="519.0729" /></g><g><title>Doc3</title><rect fill="#000000" fill-opacity="0.00000" height="390.9129" width="7.1914" x="709.3365" y="128.16" /><line style="stroke:#181818;stroke-width:0.4495;stroke-dasharray:5.0,5.0;" x1="712.176" x2="712.176" y1="128.16" y2="519.0729" /></g><g class="participant participant-head" data-participant="PAT"><text fill="#000000" font-family="sans-serif" font-size="12.5849" lengthAdjust="spacing" textLength="39.1805" x="4.4946" y="125.3947">Patient</text><ellipse cx="26.7816" cy="66.0359" fill="#0000FF" rx="7.1914" ry="7.1914" style="stroke:#181818;stroke-width:0.4495;" /><path d="M26.7816,73.2273 L26.7816,97.4982 M15.0956,80.4186 L38.4677,80.4186 M26.7816,97.4982 L15.0956,110.9821 M26.7816,97.4982 L38.4677,110.9821" fill="none" style="stroke:#181818;stroke-width:0.4495;" /></g><g class="participant participant-head" data-participant="Doc1"><rect fill="#ADD8E6" height="44.244" rx="2.2473" ry="2.2473" style="stroke:#181818;stroke-width:0.4495;" width="48.2566" x="58.0579" y="83.0171" /><text fill="#000000" font-family="sans-serif" font-size="12.5849" lengthAdjust="spacing" textLength="29.3792" x="67.4966" y="102.3738">Doc1</text><text fill="#000000" font-family="sans-serif" font-size="12.5849" lengthAdjust="spacing" textLength="35.6717" x="64.3504" y="118.2033">Admin</text></g><g class="participant participant-head" data-participant="Doc2"><rect fill="#ADD8E6" height="44.244" rx="2.2473" ry="2.2473" style="stroke:#181818;stroke-width:0.4495;" width="48.2566" x="253.7013" y="83.0171" /><text fill="#000000" font-family="sans-serif" font-size="12.5849" lengthAdjust="spacing" textLength="29.3792" x="263.14" y="102.3738">Doc2</text><text fill="#000000" font-family="sans-serif" font-size="12.5849" lengthAdjust="spacing" textLength="35.6717" x="259.9938" y="118.2033">Admin</text></g><g class="participant participant-head" data-participant="AGG"><rect fill="#E2E2F0" height="28.4144" rx="2.2473" ry="2.2473" style="stroke:#181818;stroke-width:0.4495;" width="74.8522" x="310.9472" y="98.8466" /><text fill="#000000" font-family="sans-serif" font-size="12.5849" lengthAdjust="spacing" textLength="62.2672" x="317.2397" y="118.2033">Aggregator</text></g><g class="participant participant-head" data-participant="RES"><rect fill="#90EE90" height="44.244" rx="2.2473" ry="2.2473" style="stroke:#181818;stroke-width:0.4495;" width="53.1542" x="571.8114" y="83.0171" /><text fill="#000000" font-family="sans-serif" font-size="12.5849" lengthAdjust="spacing" textLength="35.6717" x="580.5526" y="102.3738">Result</text><text fill="#000000" font-family="sans-serif" font-size="12.5849" lengthAdjust="spacing" textLength="40.5692" x="578.1039" y="118.2033">Record</text></g><g class="participant participant-head" data-participant="Doc3"><rect fill="#FFA500" height="44.244" rx="2.2473" ry="2.2473" style="stroke:#181818;stroke-width:0.4495;" width="48.2566" x="688.8039" y="83.0171" /><text fill="#000000" font-family="sans-serif" font-size="12.5849" lengthAdjust="spacing" textLength="29.3792" x="698.2426" y="102.3738">Doc3</text><text fill="#000000" font-family="sans-serif" font-size="12.5849" lengthAdjust="spacing" textLength="35.6717" x="695.0964" y="118.2033">Admin</text></g><g><title>Aggregator</title><rect fill="#FFFFFF" height="329.1539" style="stroke:#181818;stroke-width:0.8989;" width="8.9892" x="343.8787" y="157.2416" /></g><g><title>Aggregator</title><rect fill="#FFFFFF" height="191.5693" style="stroke:#181818;stroke-width:0.8989;" width="8.9892" x="348.3733" y="271.4542" /></g><g class="message" data-participant-1="PAT" data-participant-2="AGG"><polygon fill="#181818" points="333.0916,153.6459,342.0808,157.2416,333.0916,160.8373" style="stroke:#181818;stroke-width:0.8989;" /><line style="stroke:#181818;stroke-width:0.8989;" x1="26.7816" x2="338.4851" y1="157.2416" y2="157.2416" /><text fill="#000000" font-family="sans-serif" font-size="11.686" lengthAdjust="spacing" textLength="120.8259" x="33.0741" y="152.876">get Vaccination Record</text></g><g class="message" data-participant-1="AGG" data-participant-2="Doc1"><polygon fill="#181818" points="92.0744,180.9297,83.0851,184.5254,92.0744,188.1211" style="stroke:#181818;stroke-width:0.8989;" /><line style="stroke:#181818;stroke-width:0.8989;" x1="86.6808" x2="342.9797" y1="184.5254" y2="184.5254" /><text fill="#000000" font-family="sans-serif" font-size="11.686" lengthAdjust="spacing" textLength="38.3333" x="97.4679" y="180.1598">get doc</text></g><g class="message" data-participant-1="Doc1" data-participant-2="AGG"><polygon fill="#181818" points="333.0916,191.7168,342.0808,195.3125,333.0916,198.9082" style="stroke:#181818;stroke-width:0.8989;" /><line style="stroke:#181818;stroke-width:0.8989;stroke-dasharray:2.0,2.0;" x1="82.1862" x2="338.4851" y1="195.3125" y2="195.3125" /></g><g class="message" data-participant-1="AGG" data-participant-2="Doc2"><polygon fill="#181818" points="287.7178,220.7984,278.7286,224.3941,287.7178,227.9898" style="stroke:#181818;stroke-width:0.8989;" /><line style="stroke:#181818;stroke-width:0.8989;" x1="282.3243" x2="342.9797" y1="224.3941" y2="224.3941" /><text fill="#000000" font-family="sans-serif" font-size="11.686" lengthAdjust="spacing" textLength="38.3333" x="293.1114" y="220.0285">get doc</text></g><g class="message" data-participant-1="Doc2" data-participant-2="AGG"><polygon fill="#181818" points="333.0916,231.5855,342.0808,235.1812,333.0916,238.7769" style="stroke:#181818;stroke-width:0.8989;" /><line style="stroke:#181818;stroke-width:0.8989;stroke-dasharray:2.0,2.0;" x1="277.8296" x2="338.4851" y1="235.1812" y2="235.1812" /></g><g class="message" data-participant-1="AGG" data-participant-2="AGG"><line style="stroke:#181818;stroke-width:0.8989;" x1="352.8679" x2="395.1174" y1="259.7682" y2="259.7682" /><line style="stroke:#181818;stroke-width:0.8989;" x1="395.1174" x2="395.1174" y1="259.7682" y2="271.4542" /><line style="stroke:#181818;stroke-width:0.8989;" x1="358.2614" x2="395.1174" y1="271.4542" y2="271.4542" /><polygon fill="#181818" points="367.2507,267.8585,358.2614,271.4542,367.2507,275.0499" style="stroke:#181818;stroke-width:0.8989;" /><text fill="#000000" font-family="sans-serif" font-size="11.686" lengthAdjust="spacing" textLength="113.0429" x="363.655" y="255.4026">aggregate documents</text></g><g class="message" data-participant-1="Doc1" data-participant-2="Doc2"><ellipse cx="81.7368" cy="302.5584" fill="#000000" rx="3.5957" ry="3.5957" style="stroke:#FF0000;stroke-width:1.3484;" /><polygon fill="#FF0000" points="97.0185,299.6369,88.0292,303.2326,97.0185,306.8283" style="stroke:#FF0000;stroke-width:0.8989;" /><ellipse cx="277.3802" cy="302.5584" fill="#000000" rx="3.5957" ry="3.5957" style="stroke:#FF0000;stroke-width:1.3484;" /><polygon fill="#FF0000" points="262.0984,299.6369,271.0877,303.2326,262.0984,306.8283" style="stroke:#FF0000;stroke-width:0.8989;" /><line style="stroke:#FF0000;stroke-width:0.8989;stroke-dasharray:2.0,2.0;" x1="91.6249" x2="267.492" y1="303.2326" y2="303.2326" /><text fill="#000000" font-family="sans-serif" font-size="11.686" lengthAdjust="spacing" textLength="174.0692" x="97.4679" y="298.867">Same MedicalRisk entry detected</text></g><g class="message" data-participant-1="Doc2" data-participant-2="Doc3"><ellipse cx="277.3802" cy="329.8422" fill="#000000" rx="3.5957" ry="3.5957" style="stroke:#FF0000;stroke-width:1.3484;" /><polygon fill="#FF0000" points="292.6619,326.9207,283.6726,330.5164,292.6619,334.1121" style="stroke:#FF0000;stroke-width:0.8989;" /><ellipse cx="712.4828" cy="329.8422" fill="#000000" rx="3.5957" ry="3.5957" style="stroke:#FF0000;stroke-width:1.3484;" /><polygon fill="#FF0000" points="697.2011,326.9207,706.1903,330.5164,697.2011,334.1121" style="stroke:#FF0000;stroke-width:0.8989;" /><line style="stroke:#FF0000;stroke-width:0.8989;stroke-dasharray:2.0,2.0;" x1="287.2683" x2="702.5946" y1="330.5164" y2="330.5164" /><text fill="#000000" font-family="sans-serif" font-size="11.686" lengthAdjust="spacing" textLength="174.0692" x="293.1114" y="326.1508">Same MedicalRisk entry detected</text></g><g class="message" data-participant-1="Doc1" data-participant-2="Doc3"><ellipse cx="81.7368" cy="357.1259" fill="#000000" rx="3.5957" ry="3.5957" style="stroke:#FF0000;stroke-width:1.3484;" /><polygon fill="#FF0000" points="97.0185,354.2044,88.0292,357.8001,97.0185,361.3958" style="stroke:#FF0000;stroke-width:0.8989;" /><ellipse cx="712.4828" cy="357.1259" fill="#000000" rx="3.5957" ry="3.5957" style="stroke:#FF0000;stroke-width:1.3484;" /><polygon fill="#FF0000" points="697.2011,354.2044,706.1903,357.8001,697.2011,361.3958" style="stroke:#FF0000;stroke-width:0.8989;" /><line style="stroke:#FF0000;stroke-width:0.8989;stroke-dasharray:2.0,2.0;" x1="91.6249" x2="702.5946" y1="357.8001" y2="357.8001" /><text fill="#000000" font-family="sans-serif" font-size="11.686" lengthAdjust="spacing" textLength="174.0692" x="97.4679" y="353.4346">Same MedicalRisk entry detected</text></g><g class="message" data-participant-1="AGG" data-participant-2="AGG"><line style="stroke:#181818;stroke-width:0.8989;" x1="357.3625" x2="395.1174" y1="385.0839" y2="385.0839" /><line style="stroke:#181818;stroke-width:0.8989;" x1="395.1174" x2="395.1174" y1="385.0839" y2="396.7699" /><line style="stroke:#181818;stroke-width:0.8989;" x1="358.2614" x2="395.1174" y1="396.7699" y2="396.7699" /><polygon fill="#181818" points="367.2507,393.1742,358.2614,396.7699,367.2507,400.3656" style="stroke:#181818;stroke-width:0.8989;" /><text fill="#000000" font-family="sans-serif" font-size="11.686" lengthAdjust="spacing" textLength="124.0784" x="363.655" y="380.7183">add double entries error</text></g><g class="message" data-participant-1="AGG" data-participant-2="AGG"><line style="stroke:#181818;stroke-width:0.8989;" x1="357.3625" x2="395.1174" y1="424.0537" y2="424.0537" /><line style="stroke:#181818;stroke-width:0.8989;" x1="395.1174" x2="395.1174" y1="424.0537" y2="435.7397" /><line style="stroke:#181818;stroke-width:0.8989;" x1="358.2614" x2="395.1174" y1="435.7397" y2="435.7397" /><polygon fill="#181818" points="367.2507,432.144,358.2614,435.7397,367.2507,439.3354" style="stroke:#181818;stroke-width:0.8989;" /><text fill="#000000" font-family="sans-serif" font-size="11.686" lengthAdjust="spacing" textLength="210.4625" x="363.655" y="419.6881">add document author (Patient or Device)</text></g><g class="message" data-participant-1="AGG" data-participant-2="RES"><polygon fill="#181818" points="587.6014,459.4278,596.5906,463.0235,587.6014,466.6192" style="stroke:#181818;stroke-width:0.8989;" /><line style="stroke:#181818;stroke-width:0.8989;" x1="352.8679" x2="592.9949" y1="463.0235" y2="463.0235" /><text fill="#000000" font-family="sans-serif" font-size="11.686" lengthAdjust="spacing" textLength="137.0597" x="359.1604" y="458.6579">create Vaccination Record</text></g><g class="message" data-participant-1="RES" data-participant-2="AGG"><polygon fill="#181818" points="362.7561,470.2149,353.7668,473.8106,362.7561,477.4063" style="stroke:#181818;stroke-width:0.8989;" /><line style="stroke:#181818;stroke-width:0.8989;stroke-dasharray:2.0,2.0;" x1="357.3625" x2="597.4896" y1="473.8106" y2="473.8106" /></g><g class="message" data-participant-1="AGG" data-participant-2="PAT"><polygon fill="#181818" points="36.6698,482.7998,27.6806,486.3955,36.6698,489.9912" style="stroke:#181818;stroke-width:0.8989;" /><line style="stroke:#181818;stroke-width:0.8989;stroke-dasharray:2.0,2.0;" x1="31.2763" x2="347.4744" y1="486.3955" y2="486.3955" /><text fill="#000000" font-family="sans-serif" font-size="11.686" lengthAdjust="spacing" textLength="131.8615" x="42.0634" y="499.4256">show Vaccination Record</text></g><text fill="#888888" font-family="sans-serif" font-size="8.9892" lengthAdjust="spacing" textLength="45.473" x="375.0162" y="523.9098">Version 1.0</text></g></svg></div>
+
+<h3 id="result">Result</h3>
+<p>A Vaccination Record Document is created with the merging result. The duplicated entries are all in the list, but on all duplicated entries the extension is added to make the duplicate entry visible by reference.</p>
+
+<h3 id="documents">Documents</h3>
+<ul>
+  <li><a href="Bundle-D-D5-HCP1-C1.html">D_D5_HCP1_C1</a></li>
+  <li><a href="Bundle-D-D6-HCP2-C2.html">D_D6_HCP2_C2</a></li>
+  <li><a href="Bundle-D-D7-HCP3-C1.html">D_D7_HCP3_C1</a></li>
+  <li><a href="Bundle-RDD03.html">Result. Document D 03</a></li>
+  <li><a href="Bundle-RDD03b.html">Result. Document D 03b</a></li>
+</ul>
+
+<h3 id="entries">Entries</h3>
+<ul>
+  <li><a href="Condition-TCD03-EXPRISK1.html">TCD03_EXPRISK1</a></li>
+  <li><a href="Condition-TCD03-EXPRISK2.html">TCD03_EXPRISK2</a></li>
+  <li><a href="Condition-TCD03-EXPRISK3.html">TCD03_EXPRISK3</a></li>
+  <li><a href="Condition-TCD03-EXPRISK1-2.html">TCD03_EXPRISK1_2</a></li>
+  <li><a href="Condition-TCD03-EXPRISK2-2.html">TCD03_EXPRISK2_2</a></li>
+  <li><a href="Condition-TCD03-EXPRISK3-2.html">TCD03_EXPRISK3_2</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.ch/">HL7 Switzerland</a>.  Package ch.fhir.ig.ch-vacd#6.0.0-ballot-ci-build based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 7, 2025 07:29+0200">2025-05-07</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+
+| <a style="color: #81BEF7" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSejY5cinbQ4kHgGKMhncYu0mPuWb7euUkxfeXZeiUCFFa4k6g/viewform?usp=sf_link&amp;entry%2E1353807103=ch.fhir.ig.ch-vacd%236.0.0-ballot-ci-build%20/TC_D03.html&amp;entry%2E247644557=TC%20D%2003">Propose a change</a>
+
+
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

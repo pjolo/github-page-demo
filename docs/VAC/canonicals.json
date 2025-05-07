@@ -1,0 +1,247 @@
+[
+  {
+    "id" : "ch-vacd-basic-immunization-cs",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "BasicImmunizationCodesystem"
+  },
+  {
+    "id" : "ch-vacd-clinical-decision-support-event-cs",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-clinical-decision-support-event-cs",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "ClinicalDecisionSupportEvent"
+  },
+  {
+    "id" : "ch-vacd-entry-conflict-cs",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-entry-conflict-cs",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "EntryConflictCodesystem"
+  },
+  {
+    "id" : "ch-vacd-exposure-risks-cs",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "SwissExposureRisksCodesystem"
+  },
+  {
+    "id" : "ch.fhir.ig.ch-vacd",
+    "type" : "ImplementationGuide",
+    "url" : "http://fhir.ch/ig/ch-vacd/ImplementationGuide/ch.fhir.ig.ch-vacd",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CH_VACD"
+  },
+  {
+    "id" : "ch-vacd-allergyintolerances",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-allergyintolerances",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDAllergyIntolerance"
+  },
+  {
+    "id" : "ch-vacd-basic-immunization",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-basic-immunization",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDBasicImmunization"
+  },
+  {
+    "id" : "ch-vacd-composition-immunization-administration",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-composition-immunization-administration",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDCompositionImmunizationAdministration"
+  },
+  {
+    "id" : "ch-vacd-composition-vaccination-record",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-composition-vaccination-record",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDCompositionVaccinationRecord"
+  },
+  {
+    "id" : "ch-vacd-condition",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-condition",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDCondition"
+  },
+  {
+    "id" : "ch-vacd-document-immunization-administration",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-document-immunization-administration",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDDocumentImmunizationAdministration"
+  },
+  {
+    "id" : "ch-vacd-document-vaccination-record",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-document-vaccination-record",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDDocumentVaccinationRecord"
+  },
+  {
+    "id" : "ch-vacd-ext-immunization-medication-reference",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-immunization-medication-reference",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDExtensionImmunizationMedicationReference"
+  },
+  {
+    "id" : "ch-vacd-ext-merging-conflict-entry-reference",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-merging-conflict-entry-reference",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDExtensionMergingConflictEntryReference"
+  },
+  {
+    "id" : "ch-vacd-ext-verification-status",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDExtensionVerificationStatus"
+  },
+  {
+    "id" : "ch-vacd-immunization",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDImmunization"
+  },
+  {
+    "id" : "ch-vacd-immunization-recommendation",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization-recommendation",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDImmunizationRecommendation"
+  },
+  {
+    "id" : "ch-vacd-laboratory-serology",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-laboratory-serology",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDLaboratorySerology"
+  },
+  {
+    "id" : "ch-vacd-medical-problems",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medical-problems",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDMedicalProblems"
+  },
+  {
+    "id" : "ch-vacd-medication-for-immunization",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medication-for-immunization",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDMedicationForImmunization"
+  },
+  {
+    "id" : "ch-vacd-pastillnesses",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-pastillnesses",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDPastIllness"
+  },
+  {
+    "id" : "ch-vacd-recommendation-request-message",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-recommendation-request-message",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDRecommendationRequestMessage"
+  },
+  {
+    "id" : "ch-vacd-recommendation-request-messageheader",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-recommendation-request-messageheader",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDRecommendationRequestMessageHeader"
+  },
+  {
+    "id" : "ch-vacd-recommendation-response-message",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-recommendation-response-message",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDRecommendationResponseMessage"
+  },
+  {
+    "id" : "ch-vacd-recommendation-response-messageheader",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-recommendation-response-messageheader",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDRecommendationResponseMessageHeader"
+  },
+  {
+    "id" : "ch-vacd-basic-immunization-vs",
+    "type" : "ValueSet",
+    "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-basic-immunization-vs",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "BasicImmunizationCode"
+  },
+  {
+    "id" : "ch-vacd-entry-conflict-vs",
+    "type" : "ValueSet",
+    "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-entry-conflict-vs",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDEntryConflictCode"
+  },
+  {
+    "id" : "ch-vacd-immunization-allergyintolerances-vs",
+    "type" : "ValueSet",
+    "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-immunization-allergyintolerances-vs",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "AllergiesAndIntolerancesForImmunization"
+  },
+  {
+    "id" : "ch-vacd-laboratory-serology-vs",
+    "type" : "ValueSet",
+    "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-laboratory-serology-vs",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "LaboratorySerologyImmunization"
+  },
+  {
+    "id" : "ch-vacd-risks-medical-vs",
+    "type" : "ValueSet",
+    "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-medical-vs",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "SwissMedicalRisksForImmunizations"
+  },
+  {
+    "id" : "ch-vacd-risks-occupation-vs",
+    "type" : "ValueSet",
+    "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-occupation-vs",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "SwissOccupationRisksForImmunizations"
+  },
+  {
+    "id" : "ch-vacd-risks-preillness-vs",
+    "type" : "ValueSet",
+    "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-preillness-vs",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "SwissPreillnessRisksForImmunizations"
+  },
+  {
+    "id" : "ch-vacd-risks-social-vs",
+    "type" : "ValueSet",
+    "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-social-vs",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "SwissSocialRisksForImmunizations"
+  },
+  {
+    "id" : "ch-vacd-risks-vs",
+    "type" : "ValueSet",
+    "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-vs",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "SwissRisksForImmunizations"
+  },
+  {
+    "id" : "ch-vacd-verification-status-vs",
+    "type" : "ValueSet",
+    "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-verification-status-vs",
+    "version" : "6.0.0-ballot-ci-build",
+    "name" : "CHVACDVerificationStatusVS"
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Organization",
+  "id" : "TC-ORG3",
+  "meta" : {
+    "profile" : ["http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization TC-ORG3</b></p><a name=\"TC-ORG3\"> </a><a name=\"hcTC-ORG3\"> </a><a name=\"TC-ORG3-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization.html\">CH Core Organization</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601999999981</p><p><b>name</b>: Labor Wir Messen Alles</p><p><b>telecom</b>: ph: tel:+41.56.299.55.22(Work), <a href=\"mailto:mailto:resultate@labor-messenalles.ch\">mailto:resultate@labor-messenalles.ch</a>, <a href=\"http://www.labor-messenalles.ch\">http://www.labor-messenalles.ch</a></p><p><b>address</b>: Messweg 1 Wissen ZG 6310 CH </p></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:2.51.1.3",
+    "value" : "7601999999981"
+  }],
+  "name" : "Labor Wir Messen Alles",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "tel:+41.56.299.55.22",
+    "use" : "work"
+  },
+  {
+    "system" : "email",
+    "value" : "mailto:resultate@labor-messenalles.ch",
+    "use" : "work"
+  },
+  {
+    "system" : "url",
+    "value" : "http://www.labor-messenalles.ch",
+    "use" : "work"
+  }],
+  "address" : [{
+    "line" : ["Messweg 1"],
+    "city" : "Wissen",
+    "state" : "ZG",
+    "postalCode" : "6310",
+    "country" : "CH"
+  }]
+}

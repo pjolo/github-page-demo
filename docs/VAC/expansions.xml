@@ -1,0 +1,3469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="2e1c5ab7-1467-4667-a0f6-6586eaed4795"/>
+  <meta>
+    <lastUpdated value="2025-05-07T07:29:31.979+02:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-basic-immunization-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-ch-vacd-basic-immunization-cs.html">codesystem Basic Immunization codes v6.0.0-ballot-ci-build (CodeSystem)</a>
+            </p>
+            <p>This value set contains 13 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs-bi-dtpa"> </a>  
+                  <a href="CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-dtpa">bi-dtpa</a>
+                </td>
+                <td>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs</td>
+                <td>Received basic immunization against DTPa in childhood.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs-bi-polio"> </a>  
+                  <a href="CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-polio">bi-polio</a>
+                </td>
+                <td>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs</td>
+                <td>Received basic immunization against poliomyelitis in childhood.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs-bi-fsme"> </a>  
+                  <a href="CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-fsme">bi-fsme</a>
+                </td>
+                <td>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs</td>
+                <td>Received basic immunization against tick-borne encephalitis.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs-bi-hib"> </a>  
+                  <a href="CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-hib">bi-hib</a>
+                </td>
+                <td>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs</td>
+                <td>Received basic immunization against Haemophilus influenzae type b.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs-bi-hpv"> </a>  
+                  <a href="CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-hpv">bi-hpv</a>
+                </td>
+                <td>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs</td>
+                <td>Received basic immunization against Human papillomavirus.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs-bi-variz"> </a>  
+                  <a href="CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-variz">bi-variz</a>
+                </td>
+                <td>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs</td>
+                <td>Received basic immunization against varicella.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs-bi-mmr"> </a>  
+                  <a href="CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-mmr">bi-mmr</a>
+                </td>
+                <td>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs</td>
+                <td>Received basic immunization against .</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs-bi-pneumo"> </a>  
+                  <a href="CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-pneumo">bi-pneumo</a>
+                </td>
+                <td>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs</td>
+                <td>Received basic immunization against Pneumococcal infectious disease.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs-bi-hepb"> </a>  
+                  <a href="CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-hepb">bi-hepb</a>
+                </td>
+                <td>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs</td>
+                <td>Received basic immunization against viral hepatitis type B.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs-bi-hepa"> </a>  
+                  <a href="CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-hepa">bi-hepa</a>
+                </td>
+                <td>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs</td>
+                <td>Received basic immunization against viral hepatitis type A.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs-bi-herpzos"> </a>  
+                  <a href="CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-herpzos">bi-herpzos</a>
+                </td>
+                <td>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs</td>
+                <td>Received basic immunization against herpes zoster.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs-bi-mening"> </a>  
+                  <a href="CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-mening">bi-mening</a>
+                </td>
+                <td>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs</td>
+                <td>Received basic immunization against meningococcal infectious disease.</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs-bi-rabi"> </a>  
+                  <a href="CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-rabi">bi-rabi</a>
+                </td>
+                <td>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs</td>
+                <td>Received basic immunization against rabies.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-basic-immunization-vs"/>
+        <version value="6.0.0-ballot-ci-build"/>
+        <name value="BasicImmunizationCode"/>
+        <title value="Basic Immunization Codes"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-07T07:26:19+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CHE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:96383cf4-3b0f-41bf-b8ac-9ec3084a5373"/>
+          <timestamp value="2025-05-07T07:35:34+02:00"/>
+          <total value="13"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs|6.0.0-ballot-ci-build"/>
+          </parameter>
+          <contains>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"/>
+            <code value="bi-dtpa"/>
+            <display value="Received basic immunization against DTPa in childhood."/>
+          </contains>
+          <contains>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"/>
+            <code value="bi-polio"/>
+            <display value="Received basic immunization against poliomyelitis in childhood."/>
+          </contains>
+          <contains>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"/>
+            <code value="bi-fsme"/>
+            <display value="Received basic immunization against tick-borne encephalitis."/>
+          </contains>
+          <contains>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"/>
+            <code value="bi-hib"/>
+            <display value="Received basic immunization against Haemophilus influenzae type b."/>
+          </contains>
+          <contains>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"/>
+            <code value="bi-hpv"/>
+            <display value="Received basic immunization against Human papillomavirus."/>
+          </contains>
+          <contains>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"/>
+            <code value="bi-variz"/>
+            <display value="Received basic immunization against varicella."/>
+          </contains>
+          <contains>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"/>
+            <code value="bi-mmr"/>
+            <display value="Received basic immunization against ."/>
+          </contains>
+          <contains>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"/>
+            <code value="bi-pneumo"/>
+            <display value="Received basic immunization against Pneumococcal infectious disease."/>
+          </contains>
+          <contains>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"/>
+            <code value="bi-hepb"/>
+            <display value="Received basic immunization against viral hepatitis type B."/>
+          </contains>
+          <contains>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"/>
+            <code value="bi-hepa"/>
+            <display value="Received basic immunization against viral hepatitis type A."/>
+          </contains>
+          <contains>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"/>
+            <code value="bi-herpzos"/>
+            <display value="Received basic immunization against herpes zoster."/>
+          </contains>
+          <contains>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"/>
+            <code value="bi-mening"/>
+            <display value="Received basic immunization against meningococcal infectious disease."/>
+          </contains>
+          <contains>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"/>
+            <code value="bi-rabi"/>
+            <display value="Received basic immunization against rabies."/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-entry-conflict-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-ch-vacd-entry-conflict-cs.html">codesystem Entry Conflict Code System v6.0.0-ballot-ci-build (CodeSystem)</a>
+            </p>
+            <p>This value set contains 1 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-entry-conflict-cs-duplicate"> </a>  
+                  <a href="CodeSystem-ch-vacd-entry-conflict-cs.html#ch-vacd-entry-conflict-cs-duplicate">duplicate</a>
+                </td>
+                <td>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-entry-conflict-cs</td>
+                <td>duplicate</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-entry-conflict-vs"/>
+        <version value="6.0.0-ballot-ci-build"/>
+        <name value="CHVACDEntryConflictCode"/>
+        <title value="Entry Conflict Codes"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-07T07:26:19+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CHE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:f931cd6b-a58a-4d29-a527-ef095804a4b3"/>
+          <timestamp value="2025-05-07T07:35:35+02:00"/>
+          <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-entry-conflict-cs|6.0.0-ballot-ci-build"/>
+          </parameter>
+          <contains>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-entry-conflict-cs"/>
+            <code value="duplicate"/>
+            <display value="duplicate"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-immunization-allergyintolerances-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.ch, tx.fhir.org based on:</p>
+              <ul>
+                <li>SNOMED CT Swiss Edition edition 07-Juni 2023</li>
+                <li>SNOMED CT Swiss Edition edition 07-Dez. 2024</li>
+              </ul>
+            </div>
+            <p>This value set contains 37 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-716186003"> </a>  
+                  <a href="http://snomed.info/id/716186003">716186003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>No known allergy</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-213020009"> </a>  
+                  <a href="http://snomed.info/id/213020009">213020009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Allergy to egg protein</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-416098002"> </a>  
+                  <a href="http://snomed.info/id/416098002">416098002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Allergy to drug</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-39579001"> </a>  
+                  <a href="http://snomed.info/id/39579001">39579001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Anaphylactic reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-24079001"> </a>  
+                  <a href="http://snomed.info/id/24079001">24079001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Atopic dermatitis</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-863903001"> </a>  
+                  <a href="http://snomed.info/id/863903001">863903001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Allergy to component of vaccine product</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-293104008"> </a>  
+                  <a href="http://snomed.info/id/293104008">293104008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-219082005"> </a>  
+                  <a href="http://snomed.info/id/219082005">219082005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cholera vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1142181004"> </a>  
+                  <a href="http://snomed.info/id/1142181004">1142181004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>COVID-19 mRNA vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1157106007"> </a>  
+                  <a href="http://snomed.info/id/1157106007">1157106007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>COVID-19 non-replicating viral vector vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1162639000"> </a>  
+                  <a href="http://snomed.info/id/1162639000">1162639000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diphtheria and acellular pertussis and Haemophilus influenzae type B and hepatitis B and inactivated poliomyelitis and tetanus vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-293108006"> </a>  
+                  <a href="http://snomed.info/id/293108006">293108006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diphtheria and tetanus vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-293109003"> </a>  
+                  <a href="http://snomed.info/id/293109003">293109003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diphtheria, pertussis, and tetanus vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-293127000"> </a>  
+                  <a href="http://snomed.info/id/293127000">293127000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Haemophilus influenzae Type B vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-293126009"> </a>  
+                  <a href="http://snomed.info/id/293126009">293126009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hepatitis A vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-293110008"> </a>  
+                  <a href="http://snomed.info/id/293110008">293110008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Hepatitis B vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-420113004"> </a>  
+                  <a href="http://snomed.info/id/420113004">420113004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Influenza virus vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-293125008"> </a>  
+                  <a href="http://snomed.info/id/293125008">293125008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Measles and mumps and rubella vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-219096004"> </a>  
+                  <a href="http://snomed.info/id/219096004">219096004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Measles vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-219088009"> </a>  
+                  <a href="http://snomed.info/id/219088009">219088009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Meningococcal vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-293114004"> </a>  
+                  <a href="http://snomed.info/id/293114004">293114004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Mumps vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-293116002"> </a>  
+                  <a href="http://snomed.info/id/293116002">293116002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pneumococcal vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-293117006"> </a>  
+                  <a href="http://snomed.info/id/293117006">293117006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Poliomyelitis vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-293118001"> </a>  
+                  <a href="http://snomed.info/id/293118001">293118001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Rabies vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-219084006"> </a>  
+                  <a href="http://snomed.info/id/219084006">219084006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Tetanus vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-219076007"> </a>  
+                  <a href="http://snomed.info/id/219076007">219076007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Adverse reaction to component of vaccine product containing Bacillus Calmette-Guerin antigen (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-293122006"> </a>  
+                  <a href="http://snomed.info/id/293122006">293122006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Typhoid vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-219095000"> </a>  
+                  <a href="http://snomed.info/id/219095000">219095000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Yellow fever vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1162644007"> </a>  
+                  <a href="http://snomed.info/id/1162644007">1162644007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>COVID-19 recombinant spike protein antigen vaccine adverse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1217476001"> </a>  
+                  <a href="http://snomed.info/id/1217476001">1217476001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Anaphylaxis due to vaccine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-293120003"> </a>  
+                  <a href="http://snomed.info/id/293120003">293120003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Smallpox vaccine adverse reactionerse reaction</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-294657002"> </a>  
+                  <a href="http://snomed.info/id/294657002">294657002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Allergy to smallpox vaccine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-294641002"> </a>  
+                  <a href="http://snomed.info/id/294641002">294641002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Allergy to anthrax vaccine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-700468006"> </a>  
+                  <a href="http://snomed.info/id/700468006">700468006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Allergy to Rotavirus vaccine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1303850003"> </a>  
+                  <a href="http://snomed.info/id/1303850003">1303850003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Adverse reaction to component of vaccine product containing Tick-borne encephalitis virus antigen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1303851004"> </a>  
+                  <a href="http://snomed.info/id/1303851004">1303851004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Adverse reaction to component of vaccine product containing Human papillomavirus antigen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1303852006"> </a>  
+                  <a href="http://snomed.info/id/1303852006">1303852006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Adverse reaction to component of vaccine product containing Human alphaherpesvirus 3 antigen</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-immunization-allergyintolerances-vs"/>
+        <version value="6.0.0-ballot-ci-build"/>
+        <name value="AllergiesAndIntolerancesForImmunization"/>
+        <title value="Allergies and Intolerance values for Immunization"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2025-05-07T07:26:19+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CHE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:021e0218-4fb7-42ac-9b39-cd73a3f41f9c"/>
+          <timestamp value="2025-05-07T07:35:35+02:00"/>
+          <total value="37"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20230607"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20230607"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20241207"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20241207"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="716186003"/>
+            <display value="No known allergy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="213020009"/>
+            <display value="Allergy to egg protein"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="416098002"/>
+            <display value="Allergy to drug"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="39579001"/>
+            <display value="Anaphylactic reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="24079001"/>
+            <display value="Atopic dermatitis"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="863903001"/>
+            <display value="Allergy to component of vaccine product"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="293104008"/>
+            <display value="Vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="219082005"/>
+            <display value="Cholera vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1142181004"/>
+            <display value="COVID-19 mRNA vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1157106007"/>
+            <display value="COVID-19 non-replicating viral vector vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1162639000"/>
+            <display value="Diphtheria and acellular pertussis and Haemophilus influenzae type B and hepatitis B and inactivated poliomyelitis and tetanus vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="293108006"/>
+            <display value="Diphtheria and tetanus vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="293109003"/>
+            <display value="Diphtheria, pertussis, and tetanus vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="293127000"/>
+            <display value="Haemophilus influenzae Type B vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="293126009"/>
+            <display value="Hepatitis A vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="293110008"/>
+            <display value="Hepatitis B vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="420113004"/>
+            <display value="Influenza virus vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="293125008"/>
+            <display value="Measles and mumps and rubella vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="219096004"/>
+            <display value="Measles vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="219088009"/>
+            <display value="Meningococcal vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="293114004"/>
+            <display value="Mumps vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="293116002"/>
+            <display value="Pneumococcal vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="293117006"/>
+            <display value="Poliomyelitis vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="293118001"/>
+            <display value="Rabies vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="219084006"/>
+            <display value="Tetanus vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="219076007"/>
+            <display value="Adverse reaction to component of vaccine product containing Bacillus Calmette-Guerin antigen (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="293122006"/>
+            <display value="Typhoid vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="219095000"/>
+            <display value="Yellow fever vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1162644007"/>
+            <display value="COVID-19 recombinant spike protein antigen vaccine adverse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1217476001"/>
+            <display value="Anaphylaxis due to vaccine"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="293120003"/>
+            <display value="Smallpox vaccine adverse reactionerse reaction"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="294657002"/>
+            <display value="Allergy to smallpox vaccine"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="294641002"/>
+            <display value="Allergy to anthrax vaccine"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="700468006"/>
+            <display value="Allergy to Rotavirus vaccine"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1303850003"/>
+            <display value="Adverse reaction to component of vaccine product containing Tick-borne encephalitis virus antigen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1303851004"/>
+            <display value="Adverse reaction to component of vaccine product containing Human papillomavirus antigen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1303852006"/>
+            <display value="Adverse reaction to component of vaccine product containing Human alphaherpesvirus 3 antigen"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-laboratory-serology-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.80</p>
+            <p>This value set contains 12 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-22602-7"> </a>  
+                  <a href="https://loinc.org/22602-7/">22602-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Varicella zoster virus IgG Ab [Titer] in Serum</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-22502-9"> </a>  
+                  <a href="https://loinc.org/22502-9/">22502-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Measles virus IgG Ab [Titer] in Serum</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-41763-4"> </a>  
+                  <a href="https://loinc.org/41763-4/">41763-4</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Rubella virus IgG Ab [Titer] in Serum</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-22313-1"> </a>  
+                  <a href="https://loinc.org/22313-1/">22313-1</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Hepatitis A virus IgG Ab [Units/volume] in Serum</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-16935-9"> </a>  
+                  <a href="https://loinc.org/16935-9/">16935-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Hepatitis B virus surface Ab [Units/volume] in Serum</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-26061-2"> </a>  
+                  <a href="https://loinc.org/26061-2/">26061-2</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>European tick borne encephalitis virus Ab [Titer] in Serum</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-6589-6"> </a>  
+                  <a href="https://loinc.org/6589-6/">6589-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Yellow fever virus Ab [Titer] in Serum by Immunofluorescence</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-58770-9"> </a>  
+                  <a href="https://loinc.org/58770-9/">58770-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Clostridium tetani toxoid IgG Ab [Units/volume] in Serum by Immunofluorescence</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-94505-5"> </a>  
+                  <a href="https://loinc.org/94505-5/">94505-5</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>SARS-CoV-2 (COVID-19) IgG Ab [Units/volume] in Serum or Plasma by Immunoassay</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-14128-3"> </a>  
+                  <a href="https://loinc.org/14128-3/">14128-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Rabies virus Ab [Titer] in Serum</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-22755-3"> </a>  
+                  <a href="https://loinc.org/22755-3/">22755-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Haemophilus influenzae B Ab [Mass/volume] in Serum</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://loinc.org-25531-5"> </a>  
+                  <a href="https://loinc.org/25531-5/">25531-5</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Streptococcus pneumoniae Ab [Mass/volume] in Serum</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-laboratory-serology-vs"/>
+        <version value="6.0.0-ballot-ci-build"/>
+        <name value="LaboratorySerologyImmunization"/>
+        <title value="Laboratory Serology for Immunization"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-07T07:26:19+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CHE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:1a2ea9d8-38c7-48d9-9688-b7050ada2a07"/>
+          <timestamp value="2025-05-07T07:35:36+02:00"/>
+          <total value="12"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.80"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.80"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="22602-7"/>
+            <display value="Varicella zoster virus IgG Ab [Titer] in Serum"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="22502-9"/>
+            <display value="Measles virus IgG Ab [Titer] in Serum"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="41763-4"/>
+            <display value="Rubella virus IgG Ab [Titer] in Serum"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="22313-1"/>
+            <display value="Hepatitis A virus IgG Ab [Units/volume] in Serum"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="16935-9"/>
+            <display value="Hepatitis B virus surface Ab [Units/volume] in Serum"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="26061-2"/>
+            <display value="European tick borne encephalitis virus Ab [Titer] in Serum"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="6589-6"/>
+            <display value="Yellow fever virus Ab [Titer] in Serum by Immunofluorescence"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="58770-9"/>
+            <display value="Clostridium tetani toxoid IgG Ab [Units/volume] in Serum by Immunofluorescence"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="94505-5"/>
+            <display value="SARS-CoV-2 (COVID-19) IgG Ab [Units/volume] in Serum or Plasma by Immunoassay"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="14128-3"/>
+            <display value="Rabies virus Ab [Titer] in Serum"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="22755-3"/>
+            <display value="Haemophilus influenzae B Ab [Mass/volume] in Serum"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="25531-5"/>
+            <display value="Streptococcus pneumoniae Ab [Mass/volume] in Serum"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-medical-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT Swiss Edition edition 07-Juni 2023</p>
+            <p>This value set contains 28 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-373068000"> </a>  
+                  <a href="http://snomed.info/id/373068000">373068000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Undetermined (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-77386006"> </a>  
+                  <a href="http://snomed.info/id/77386006">77386006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pregnancy (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-102947004"> </a>  
+                  <a href="http://snomed.info/id/102947004">102947004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>High risk sexual behavior (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-226034001"> </a>  
+                  <a href="http://snomed.info/id/226034001">226034001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Injecting drug user (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237016007"> </a>  
+                  <a href="http://snomed.info/id/1237016007">1237016007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Measles virus (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237017003"> </a>  
+                  <a href="http://snomed.info/id/1237017003">1237017003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Mumps virus (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237018008"> </a>  
+                  <a href="http://snomed.info/id/1237018008">1237018008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Rubella virus (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237019000"> </a>  
+                  <a href="http://snomed.info/id/1237019000">1237019000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Haemophilus influenzae type b (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237020006"> </a>  
+                  <a href="http://snomed.info/id/1237020006">1237020006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to hepatitis B virus (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237021005"> </a>  
+                  <a href="http://snomed.info/id/1237021005">1237021005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to European tick-borne encephalitis virus (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237022003"> </a>  
+                  <a href="http://snomed.info/id/1237022003">1237022003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to human poliovirus (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237023008"> </a>  
+                  <a href="http://snomed.info/id/1237023008">1237023008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Neisseria meningitidis (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237024002"> </a>  
+                  <a href="http://snomed.info/id/1237024002">1237024002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to rabies virus (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237025001"> </a>  
+                  <a href="http://snomed.info/id/1237025001">1237025001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Mycobacterium tuberculosis complex (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237026000"> </a>  
+                  <a href="http://snomed.info/id/1237026000">1237026000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to hepatitis A virus (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237027009"> </a>  
+                  <a href="http://snomed.info/id/1237027009">1237027009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Human alphaherpesvirus 3 (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237028004"> </a>  
+                  <a href="http://snomed.info/id/1237028004">1237028004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Influenza virus (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237029007"> </a>  
+                  <a href="http://snomed.info/id/1237029007">1237029007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Streptococcus pneumoniae (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237030002"> </a>  
+                  <a href="http://snomed.info/id/1237030002">1237030002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Bordetella pertussis (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237443008"> </a>  
+                  <a href="http://snomed.info/id/1237443008">1237443008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Birth weight 1.5 kilogram or less (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237570003"> </a>  
+                  <a href="http://snomed.info/id/1237570003">1237570003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Maternal history of viral hepatitis B (situation)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237576009"> </a>  
+                  <a href="http://snomed.info/id/1237576009">1237576009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Baby premature at delivery less than 32 weeks (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1251534000"> </a>  
+                  <a href="http://snomed.info/id/1251534000">1251534000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Exposure to invasive meningococcal disease (event)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1254737008"> </a>  
+                  <a href="http://snomed.info/id/1254737008">1254737008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Has contact with infant (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1254738003"> </a>  
+                  <a href="http://snomed.info/id/1254738003">1254738003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>In contact with infant younger than 6 months (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1254739006"> </a>  
+                  <a href="http://snomed.info/id/1254739006">1254739006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Has contact with premature infant (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1255625008"> </a>  
+                  <a href="http://snomed.info/id/1255625008">1255625008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Childbirth within last 4 weeks (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-870577009"> </a>  
+                  <a href="http://snomed.info/id/870577009">870577009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to severe acute respiratory syndrome coronavirus 2</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-medical-vs"/>
+        <version value="6.0.0-ballot-ci-build"/>
+        <name value="SwissMedicalRisksForImmunizations"/>
+        <title value="Swiss Medical Risks For Immunizations"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-07T07:26:19+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CHE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:89f5e843-9aeb-49a1-831d-cc36e8391ef2"/>
+          <timestamp value="2025-05-07T07:35:37+02:00"/>
+          <total value="28"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20230607"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20230607"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373068000"/>
+            <display value="Undetermined (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="77386006"/>
+            <display value="Pregnancy (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="102947004"/>
+            <display value="High risk sexual behavior (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="226034001"/>
+            <display value="Injecting drug user (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237016007"/>
+            <display value="At increased risk of exposure to Measles virus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237017003"/>
+            <display value="At increased risk of exposure to Mumps virus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237018008"/>
+            <display value="At increased risk of exposure to Rubella virus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237019000"/>
+            <display value="At increased risk of exposure to Haemophilus influenzae type b (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237020006"/>
+            <display value="At increased risk of exposure to hepatitis B virus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237021005"/>
+            <display value="At increased risk of exposure to European tick-borne encephalitis virus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237022003"/>
+            <display value="At increased risk of exposure to human poliovirus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237023008"/>
+            <display value="At increased risk of exposure to Neisseria meningitidis (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237024002"/>
+            <display value="At increased risk of exposure to rabies virus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237025001"/>
+            <display value="At increased risk of exposure to Mycobacterium tuberculosis complex (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237026000"/>
+            <display value="At increased risk of exposure to hepatitis A virus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237027009"/>
+            <display value="At increased risk of exposure to Human alphaherpesvirus 3 (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237028004"/>
+            <display value="At increased risk of exposure to Influenza virus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237029007"/>
+            <display value="At increased risk of exposure to Streptococcus pneumoniae (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237030002"/>
+            <display value="At increased risk of exposure to Bordetella pertussis (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237443008"/>
+            <display value="Birth weight 1.5 kilogram or less (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237570003"/>
+            <display value="Maternal history of viral hepatitis B (situation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237576009"/>
+            <display value="Baby premature at delivery less than 32 weeks (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1251534000"/>
+            <display value="Exposure to invasive meningococcal disease (event)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1254737008"/>
+            <display value="Has contact with infant (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1254738003"/>
+            <display value="In contact with infant younger than 6 months (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1254739006"/>
+            <display value="Has contact with premature infant (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255625008"/>
+            <display value="Childbirth within last 4 weeks (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="870577009"/>
+            <display value="At increased risk of exposure to severe acute respiratory syndrome coronavirus 2"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-occupation-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.org based on:</p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-ch-vacd-exposure-risks-cs.html">codesystem Swiss Exposure Risks Codesystem v6.0.0-ballot-ci-build (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT Swiss Edition edition 07-Juni 2023</li>
+              </ul>
+            </div>
+            <p>This value set contains 8 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-373068000"> </a>  
+                  <a href="http://snomed.info/id/373068000">373068000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Undetermined (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-61246008"> </a>  
+                  <a href="http://snomed.info/id/61246008">61246008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Laboratory medicine specialist (occupation)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-159653008"> </a>  
+                  <a href="http://snomed.info/id/159653008">159653008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Trainee - armed forces (occupation)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-160157004"> </a>  
+                  <a href="http://snomed.info/id/160157004">160157004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Sewerman (occupation)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-265940000"> </a>  
+                  <a href="http://snomed.info/id/265940000">265940000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Animal health occupation (occupation)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1186914001"> </a>  
+                  <a href="http://snomed.info/id/1186914001">1186914001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Intellectual disability nurse (occupation)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-223366009"> </a>  
+                  <a href="http://snomed.info/id/223366009">223366009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Healthcare professional (occupation)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs-100002"> </a>  
+                  <a href="CodeSystem-ch-vacd-exposure-risks-cs.html#ch-vacd-exposure-risks-cs-100002">100002</a>
+                </td>
+                <td>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs</td>
+                <td>Social workers, prison staff, police with frequent contact with drug users</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-occupation-vs"/>
+        <version value="6.0.0-ballot-ci-build"/>
+        <name value="SwissOccupationRisksForImmunizations"/>
+        <title value="Swiss Occupation Risks For Immunizations"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-07T07:26:19+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CHE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:5ff8ae65-6c7b-46b6-b843-e6e34c780240"/>
+          <timestamp value="2025-05-07T07:35:37+02:00"/>
+          <total value="8"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20230607"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20230607"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs|6.0.0-ballot-ci-build"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373068000"/>
+            <display value="Undetermined (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="61246008"/>
+            <display value="Laboratory medicine specialist (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="159653008"/>
+            <display value="Trainee - armed forces (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="160157004"/>
+            <display value="Sewerman (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="265940000"/>
+            <display value="Animal health occupation (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1186914001"/>
+            <display value="Intellectual disability nurse (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="223366009"/>
+            <display value="Healthcare professional (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs"/>
+            <code value="100002"/>
+            <display value="Social workers, prison staff, police with frequent contact with drug users"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-preillness-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.ch, tx.fhir.org based on:</p>
+              <ul>
+                <li>SNOMED CT Swiss Edition edition 07-Juni 2023</li>
+                <li>SNOMED CT Swiss Edition edition 07-Dez. 2024</li>
+              </ul>
+            </div>
+            <p>This value set contains 18 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-373068000"> </a>  
+                  <a href="http://snomed.info/id/373068000">373068000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Undetermined (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-24063002"> </a>  
+                  <a href="http://snomed.info/id/24063002">24063002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Fracture of base of skull (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-51244008"> </a>  
+                  <a href="http://snomed.info/id/51244008">51244008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disorder of spleen (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-51655004"> </a>  
+                  <a href="http://snomed.info/id/51655004">51655004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Congenital anomaly of skull (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-56265001"> </a>  
+                  <a href="http://snomed.info/id/56265001">56265001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Heart disease (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-75934005"> </a>  
+                  <a href="http://snomed.info/id/75934005">75934005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Metabolic disease (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-90708001"> </a>  
+                  <a href="http://snomed.info/id/90708001">90708001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Kidney disease (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-230744007"> </a>  
+                  <a href="http://snomed.info/id/230744007">230744007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cerebrospinal fluid leak (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-235856003"> </a>  
+                  <a href="http://snomed.info/id/235856003">235856003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disorder of liver (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-363346000"> </a>  
+                  <a href="http://snomed.info/id/363346000">363346000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Malignant neoplastic disease (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-402196005"> </a>  
+                  <a href="http://snomed.info/id/402196005">402196005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Childhood atopic dermatitis (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-414029004"> </a>  
+                  <a href="http://snomed.info/id/414029004">414029004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disorder of immune function (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-449840001"> </a>  
+                  <a href="http://snomed.info/id/449840001">449840001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cochlear prosthesis in situ (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-737294004"> </a>  
+                  <a href="http://snomed.info/id/737294004">737294004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Transplant present (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-19829001"> </a>  
+                  <a href="http://snomed.info/id/19829001">19829001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disorder of lung (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-414027002"> </a>  
+                  <a href="http://snomed.info/id/414027002">414027002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disorder of hematopoietic structure (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-42251000195104"> </a>  
+                  <a href="http://snomed.info/id/42251000195104">42251000195104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disorder of nervous system with systemic manifestations (disorder)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-42261000195101"> </a>  
+                  <a href="http://snomed.info/id/42261000195101">42261000195101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disorder of musculoskeletal system with systemic manifestations (disorder)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-preillness-vs"/>
+        <version value="6.0.0-ballot-ci-build"/>
+        <name value="SwissPreillnessRisksForImmunizations"/>
+        <title value="Swiss Preillness Risks For Immunizations"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-07T07:26:19+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CHE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:92fbbfd3-e194-4518-9410-517d1c6dd3ec"/>
+          <timestamp value="2025-05-07T07:35:38+02:00"/>
+          <total value="18"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20230607"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20230607"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20241207"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20241207"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373068000"/>
+            <display value="Undetermined (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="24063002"/>
+            <display value="Fracture of base of skull (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="51244008"/>
+            <display value="Disorder of spleen (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="51655004"/>
+            <display value="Congenital anomaly of skull (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="56265001"/>
+            <display value="Heart disease (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="75934005"/>
+            <display value="Metabolic disease (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="90708001"/>
+            <display value="Kidney disease (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="230744007"/>
+            <display value="Cerebrospinal fluid leak (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="235856003"/>
+            <display value="Disorder of liver (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="363346000"/>
+            <display value="Malignant neoplastic disease (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="402196005"/>
+            <display value="Childhood atopic dermatitis (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="414029004"/>
+            <display value="Disorder of immune function (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="449840001"/>
+            <display value="Cochlear prosthesis in situ (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="737294004"/>
+            <display value="Transplant present (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="19829001"/>
+            <display value="Disorder of lung (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="414027002"/>
+            <display value="Disorder of hematopoietic structure (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="42251000195104"/>
+            <display value="Disorder of nervous system with systemic manifestations (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="42261000195101"/>
+            <display value="Disorder of musculoskeletal system with systemic manifestations (disorder)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-social-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.ch, tx.fhir.org based on:</p>
+              <ul>
+                <li>SNOMED CT Swiss Edition edition 07-Juni 2023</li>
+                <li>SNOMED CT Swiss Edition edition 07-Dez. 2024</li>
+              </ul>
+            </div>
+            <p>This value set contains 11 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+                <td>
+                  <b>Inactive</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-373068000"> </a>  
+                  <a href="http://snomed.info/id/373068000">373068000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Undetermined (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-105568001"> </a>  
+                  <a href="http://snomed.info/id/105568001">105568001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>In prison (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-169449001"> </a>  
+                  <a href="http://snomed.info/id/169449001">169449001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Trying to conceive (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-224224003"> </a>  
+                  <a href="http://snomed.info/id/224224003">224224003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Lives in staffed home (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237572006"> </a>  
+                  <a href="http://snomed.info/id/1237572006">1237572006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Lives in home for intellectually disabled people (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1255626009"> </a>  
+                  <a href="http://snomed.info/id/1255626009">1255626009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Has contact with injecting drug user (situation)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1342377006"> </a>  
+                  <a href="http://snomed.info/id/1342377006">1342377006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Has contact with wild bird</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1342378001"> </a>  
+                  <a href="http://snomed.info/id/1342378001">1342378001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Has contact with poultry bird (situation)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-72281000195108"> </a>  
+                  <a href="http://snomed.info/id/72281000195108">72281000195108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Contact with human alphaherpesvirus 3 risk patient (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-72291000195105"> </a>  
+                  <a href="http://snomed.info/id/72291000195105">72291000195105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Residence or stay in Switzerland except Geneva and Ticino (finding)</td>
+                <td>inactive</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-102311000195108"> </a>  
+                  <a href="http://snomed.info/id/102311000195108">102311000195108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Residence or stay in Switzerland except Ticino (finding)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-social-vs"/>
+        <version value="6.0.0-ballot-ci-build"/>
+        <name value="SwissSocialRisksForImmunizations"/>
+        <title value="Swiss Social Risks For Immunizations"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-07T07:26:19+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CHE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:e5d123b9-9aff-4b05-907f-df78e76f52d8"/>
+          <timestamp value="2025-05-07T07:35:38+02:00"/>
+          <total value="11"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20230607"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20230607"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20241207"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20241207"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373068000"/>
+            <display value="Undetermined (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="105568001"/>
+            <display value="In prison (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="169449001"/>
+            <display value="Trying to conceive (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="224224003"/>
+            <display value="Lives in staffed home (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237572006"/>
+            <display value="Lives in home for intellectually disabled people (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255626009"/>
+            <display value="Has contact with injecting drug user (situation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1342377006"/>
+            <display value="Has contact with wild bird"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1342378001"/>
+            <display value="Has contact with poultry bird (situation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72281000195108"/>
+            <display value="Contact with human alphaherpesvirus 3 risk patient (finding)"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-deprecated">
+              <valueBoolean value="true"/>
+            </extension>
+            <system value="http://snomed.info/sct"/>
+            <inactive value="true"/>
+            <code value="72291000195105"/>
+            <display value="Residence or stay in Switzerland except Geneva and Ticino (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="102311000195108"/>
+            <display value="Residence or stay in Switzerland except Ticino (finding)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion from tx.fhir.ch, tx.fhir.org based on:</p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-ch-vacd-exposure-risks-cs.html">codesystem Swiss Exposure Risks Codesystem v6.0.0-ballot-ci-build (CodeSystem)</a>
+                </li>
+                <li>SNOMED CT Swiss Edition edition 07-Juni 2023</li>
+                <li>SNOMED CT Swiss Edition edition 07-Dez. 2024</li>
+                <li>
+                  <a href="ValueSet-ch-vacd-risks-medical-vs.html">valueset Swiss Medical Risks For Immunizations v6.0.0-ballot-ci-build (ValueSet)</a>
+                </li>
+                <li>
+                  <a href="ValueSet-ch-vacd-risks-occupation-vs.html">valueset Swiss Occupation Risks For Immunizations v6.0.0-ballot-ci-build (ValueSet)</a>
+                </li>
+                <li>
+                  <a href="ValueSet-ch-vacd-risks-preillness-vs.html">valueset Swiss Preillness Risks For Immunizations v6.0.0-ballot-ci-build (ValueSet)</a>
+                </li>
+                <li>
+                  <a href="ValueSet-ch-vacd-risks-social-vs.html">valueset Swiss Social Risks For Immunizations v6.0.0-ballot-ci-build (ValueSet)</a>
+                </li>
+              </ul>
+            </div>
+            <p>This value set contains 62 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+                <td>
+                  <b>Inactive</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-373068000"> </a>  
+                  <a href="http://snomed.info/id/373068000">373068000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Undetermined (qualifier value)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-77386006"> </a>  
+                  <a href="http://snomed.info/id/77386006">77386006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pregnancy (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-102947004"> </a>  
+                  <a href="http://snomed.info/id/102947004">102947004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>High risk sexual behavior (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-226034001"> </a>  
+                  <a href="http://snomed.info/id/226034001">226034001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Injecting drug user (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237016007"> </a>  
+                  <a href="http://snomed.info/id/1237016007">1237016007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Measles virus (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237017003"> </a>  
+                  <a href="http://snomed.info/id/1237017003">1237017003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Mumps virus (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237018008"> </a>  
+                  <a href="http://snomed.info/id/1237018008">1237018008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Rubella virus (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237019000"> </a>  
+                  <a href="http://snomed.info/id/1237019000">1237019000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Haemophilus influenzae type b (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237020006"> </a>  
+                  <a href="http://snomed.info/id/1237020006">1237020006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to hepatitis B virus (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237021005"> </a>  
+                  <a href="http://snomed.info/id/1237021005">1237021005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to European tick-borne encephalitis virus (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237022003"> </a>  
+                  <a href="http://snomed.info/id/1237022003">1237022003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to human poliovirus (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237023008"> </a>  
+                  <a href="http://snomed.info/id/1237023008">1237023008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Neisseria meningitidis (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237024002"> </a>  
+                  <a href="http://snomed.info/id/1237024002">1237024002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to rabies virus (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237025001"> </a>  
+                  <a href="http://snomed.info/id/1237025001">1237025001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Mycobacterium tuberculosis complex (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237026000"> </a>  
+                  <a href="http://snomed.info/id/1237026000">1237026000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to hepatitis A virus (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237027009"> </a>  
+                  <a href="http://snomed.info/id/1237027009">1237027009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Human alphaherpesvirus 3 (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237028004"> </a>  
+                  <a href="http://snomed.info/id/1237028004">1237028004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Influenza virus (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237029007"> </a>  
+                  <a href="http://snomed.info/id/1237029007">1237029007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Streptococcus pneumoniae (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237030002"> </a>  
+                  <a href="http://snomed.info/id/1237030002">1237030002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to Bordetella pertussis (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237443008"> </a>  
+                  <a href="http://snomed.info/id/1237443008">1237443008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Birth weight 1.5 kilogram or less (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237570003"> </a>  
+                  <a href="http://snomed.info/id/1237570003">1237570003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Maternal history of viral hepatitis B (situation)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237576009"> </a>  
+                  <a href="http://snomed.info/id/1237576009">1237576009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Baby premature at delivery less than 32 weeks (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1251534000"> </a>  
+                  <a href="http://snomed.info/id/1251534000">1251534000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Exposure to invasive meningococcal disease (event)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1254737008"> </a>  
+                  <a href="http://snomed.info/id/1254737008">1254737008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Has contact with infant (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1254738003"> </a>  
+                  <a href="http://snomed.info/id/1254738003">1254738003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>In contact with infant younger than 6 months (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1254739006"> </a>  
+                  <a href="http://snomed.info/id/1254739006">1254739006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Has contact with premature infant (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1255625008"> </a>  
+                  <a href="http://snomed.info/id/1255625008">1255625008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Childbirth within last 4 weeks (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-870577009"> </a>  
+                  <a href="http://snomed.info/id/870577009">870577009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>At increased risk of exposure to severe acute respiratory syndrome coronavirus 2</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-105568001"> </a>  
+                  <a href="http://snomed.info/id/105568001">105568001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>In prison (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-169449001"> </a>  
+                  <a href="http://snomed.info/id/169449001">169449001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Trying to conceive (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-224224003"> </a>  
+                  <a href="http://snomed.info/id/224224003">224224003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Lives in staffed home (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1237572006"> </a>  
+                  <a href="http://snomed.info/id/1237572006">1237572006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Lives in home for intellectually disabled people (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1255626009"> </a>  
+                  <a href="http://snomed.info/id/1255626009">1255626009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Has contact with injecting drug user (situation)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1342377006"> </a>  
+                  <a href="http://snomed.info/id/1342377006">1342377006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Has contact with wild bird</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1342378001"> </a>  
+                  <a href="http://snomed.info/id/1342378001">1342378001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Has contact with poultry bird (situation)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-72281000195108"> </a>  
+                  <a href="http://snomed.info/id/72281000195108">72281000195108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Contact with human alphaherpesvirus 3 risk patient (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-72291000195105"> </a>  
+                  <a href="http://snomed.info/id/72291000195105">72291000195105</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Residence or stay in Switzerland except Geneva and Ticino (finding)</td>
+                <td>inactive</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-102311000195108"> </a>  
+                  <a href="http://snomed.info/id/102311000195108">102311000195108</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Residence or stay in Switzerland except Ticino (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-61246008"> </a>  
+                  <a href="http://snomed.info/id/61246008">61246008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Laboratory medicine specialist (occupation)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-159653008"> </a>  
+                  <a href="http://snomed.info/id/159653008">159653008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Trainee - armed forces (occupation)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-160157004"> </a>  
+                  <a href="http://snomed.info/id/160157004">160157004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Sewerman (occupation)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-265940000"> </a>  
+                  <a href="http://snomed.info/id/265940000">265940000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Animal health occupation (occupation)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1186914001"> </a>  
+                  <a href="http://snomed.info/id/1186914001">1186914001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Intellectual disability nurse (occupation)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-223366009"> </a>  
+                  <a href="http://snomed.info/id/223366009">223366009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Healthcare professional (occupation)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs-100002"> </a>  
+                  <a href="CodeSystem-ch-vacd-exposure-risks-cs.html#ch-vacd-exposure-risks-cs-100002">100002</a>
+                </td>
+                <td>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs</td>
+                <td>Social workers, prison staff, police with frequent contact with drug users</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-24063002"> </a>  
+                  <a href="http://snomed.info/id/24063002">24063002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Fracture of base of skull (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-51244008"> </a>  
+                  <a href="http://snomed.info/id/51244008">51244008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disorder of spleen (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-51655004"> </a>  
+                  <a href="http://snomed.info/id/51655004">51655004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Congenital anomaly of skull (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-56265001"> </a>  
+                  <a href="http://snomed.info/id/56265001">56265001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Heart disease (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-75934005"> </a>  
+                  <a href="http://snomed.info/id/75934005">75934005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Metabolic disease (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-90708001"> </a>  
+                  <a href="http://snomed.info/id/90708001">90708001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Kidney disease (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-230744007"> </a>  
+                  <a href="http://snomed.info/id/230744007">230744007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cerebrospinal fluid leak (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-235856003"> </a>  
+                  <a href="http://snomed.info/id/235856003">235856003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disorder of liver (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-363346000"> </a>  
+                  <a href="http://snomed.info/id/363346000">363346000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Malignant neoplastic disease (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-402196005"> </a>  
+                  <a href="http://snomed.info/id/402196005">402196005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Childhood atopic dermatitis (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-414029004"> </a>  
+                  <a href="http://snomed.info/id/414029004">414029004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disorder of immune function (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-449840001"> </a>  
+                  <a href="http://snomed.info/id/449840001">449840001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cochlear prosthesis in situ (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-737294004"> </a>  
+                  <a href="http://snomed.info/id/737294004">737294004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Transplant present (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-19829001"> </a>  
+                  <a href="http://snomed.info/id/19829001">19829001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disorder of lung (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-414027002"> </a>  
+                  <a href="http://snomed.info/id/414027002">414027002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disorder of hematopoietic structure (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-42251000195104"> </a>  
+                  <a href="http://snomed.info/id/42251000195104">42251000195104</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disorder of nervous system with systemic manifestations (disorder)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-42261000195101"> </a>  
+                  <a href="http://snomed.info/id/42261000195101">42261000195101</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Disorder of musculoskeletal system with systemic manifestations (disorder)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-vs"/>
+        <version value="6.0.0-ballot-ci-build"/>
+        <name value="SwissRisksForImmunizations"/>
+        <title value="Swiss Risks For Immunizations"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-07T07:26:19+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CHE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:d59f2bae-8145-4787-9c02-4c434adbc633"/>
+          <timestamp value="2025-05-07T07:35:39+02:00"/>
+          <total value="62"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-medical-vs|6.0.0-ballot-ci-build"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20230607"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20230607"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-social-vs|6.0.0-ballot-ci-build"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20241207"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20241207"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-occupation-vs|6.0.0-ballot-ci-build"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs|6.0.0-ballot-ci-build"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-preillness-vs|6.0.0-ballot-ci-build"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373068000"/>
+            <display value="Undetermined (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="77386006"/>
+            <display value="Pregnancy (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="102947004"/>
+            <display value="High risk sexual behavior (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="226034001"/>
+            <display value="Injecting drug user (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237016007"/>
+            <display value="At increased risk of exposure to Measles virus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237017003"/>
+            <display value="At increased risk of exposure to Mumps virus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237018008"/>
+            <display value="At increased risk of exposure to Rubella virus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237019000"/>
+            <display value="At increased risk of exposure to Haemophilus influenzae type b (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237020006"/>
+            <display value="At increased risk of exposure to hepatitis B virus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237021005"/>
+            <display value="At increased risk of exposure to European tick-borne encephalitis virus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237022003"/>
+            <display value="At increased risk of exposure to human poliovirus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237023008"/>
+            <display value="At increased risk of exposure to Neisseria meningitidis (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237024002"/>
+            <display value="At increased risk of exposure to rabies virus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237025001"/>
+            <display value="At increased risk of exposure to Mycobacterium tuberculosis complex (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237026000"/>
+            <display value="At increased risk of exposure to hepatitis A virus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237027009"/>
+            <display value="At increased risk of exposure to Human alphaherpesvirus 3 (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237028004"/>
+            <display value="At increased risk of exposure to Influenza virus (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237029007"/>
+            <display value="At increased risk of exposure to Streptococcus pneumoniae (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237030002"/>
+            <display value="At increased risk of exposure to Bordetella pertussis (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237443008"/>
+            <display value="Birth weight 1.5 kilogram or less (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237570003"/>
+            <display value="Maternal history of viral hepatitis B (situation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237576009"/>
+            <display value="Baby premature at delivery less than 32 weeks (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1251534000"/>
+            <display value="Exposure to invasive meningococcal disease (event)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1254737008"/>
+            <display value="Has contact with infant (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1254738003"/>
+            <display value="In contact with infant younger than 6 months (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1254739006"/>
+            <display value="Has contact with premature infant (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255625008"/>
+            <display value="Childbirth within last 4 weeks (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="870577009"/>
+            <display value="At increased risk of exposure to severe acute respiratory syndrome coronavirus 2"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="105568001"/>
+            <display value="In prison (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="169449001"/>
+            <display value="Trying to conceive (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="224224003"/>
+            <display value="Lives in staffed home (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1237572006"/>
+            <display value="Lives in home for intellectually disabled people (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255626009"/>
+            <display value="Has contact with injecting drug user (situation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1342377006"/>
+            <display value="Has contact with wild bird"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1342378001"/>
+            <display value="Has contact with poultry bird (situation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="72281000195108"/>
+            <display value="Contact with human alphaherpesvirus 3 risk patient (finding)"/>
+          </contains>
+          <contains>
+            <extension url="http://hl7.org/fhir/StructureDefinition/valueset-deprecated">
+              <valueBoolean value="true"/>
+            </extension>
+            <system value="http://snomed.info/sct"/>
+            <inactive value="true"/>
+            <code value="72291000195105"/>
+            <display value="Residence or stay in Switzerland except Geneva and Ticino (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="102311000195108"/>
+            <display value="Residence or stay in Switzerland except Ticino (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="61246008"/>
+            <display value="Laboratory medicine specialist (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="159653008"/>
+            <display value="Trainee - armed forces (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="160157004"/>
+            <display value="Sewerman (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="265940000"/>
+            <display value="Animal health occupation (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1186914001"/>
+            <display value="Intellectual disability nurse (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="223366009"/>
+            <display value="Healthcare professional (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs"/>
+            <code value="100002"/>
+            <display value="Social workers, prison staff, police with frequent contact with drug users"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="24063002"/>
+            <display value="Fracture of base of skull (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="51244008"/>
+            <display value="Disorder of spleen (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="51655004"/>
+            <display value="Congenital anomaly of skull (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="56265001"/>
+            <display value="Heart disease (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="75934005"/>
+            <display value="Metabolic disease (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="90708001"/>
+            <display value="Kidney disease (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="230744007"/>
+            <display value="Cerebrospinal fluid leak (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="235856003"/>
+            <display value="Disorder of liver (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="363346000"/>
+            <display value="Malignant neoplastic disease (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="402196005"/>
+            <display value="Childhood atopic dermatitis (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="414029004"/>
+            <display value="Disorder of immune function (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="449840001"/>
+            <display value="Cochlear prosthesis in situ (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="737294004"/>
+            <display value="Transplant present (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="19829001"/>
+            <display value="Disorder of lung (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="414027002"/>
+            <display value="Disorder of hematopoietic structure (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="42251000195104"/>
+            <display value="Disorder of nervous system with systemic manifestations (disorder)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="42261000195101"/>
+            <display value="Disorder of musculoskeletal system with systemic manifestations (disorder)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-verification-status-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT Swiss Edition edition 07-Juni 2023</p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-59156000"> </a>  
+                  <a href="http://snomed.info/id/59156000">59156000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Confirmed</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-76104008"> </a>  
+                  <a href="http://snomed.info/id/76104008">76104008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Not confirmed</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-verification-status-vs"/>
+        <version value="6.0.0-ballot-ci-build"/>
+        <name value="CHVACDVerificationStatusVS"/>
+        <title value="Verification Status Codes"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2025-05-07T07:26:19+02:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="CHE"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:43f9f1c8-0dc7-4c87-8dc7-fd97cd7e0e7d"/>
+          <timestamp value="2025-05-07T07:35:39+02:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20230607"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/2011000195101/version/20230607"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="59156000"/>
+            <display value="Confirmed"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="76104008"/>
+            <display value="Not confirmed"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

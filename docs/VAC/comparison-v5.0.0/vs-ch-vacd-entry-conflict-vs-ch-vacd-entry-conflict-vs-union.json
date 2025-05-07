@@ -1,0 +1,23 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "83b40197-8873-4b2e-a9fd-813f4a7e06b6-128",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/83b40197-8873-4b2e-a9fd-813f4a7e06b6-128",
+  "name" : "UnionCHVACDEntryConflictCodeAndCHVACDEntryConflictCode",
+  "title" : "Union of Entry Conflict Codes And Entry Conflict Codes",
+  "status" : "active",
+  "date" : "2025-05-07T07:31:23+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CHE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "duplicate",
+        "display" : "duplicate"
+      }]
+    }]
+  }
+}

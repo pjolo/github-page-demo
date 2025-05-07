@@ -1,0 +1,69 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ch-vacd-entry-conflict-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ch-vacd-entry-conflict-cs</b></p><a name=\"ch-vacd-entry-conflict-cs\"> </a><a name=\"hcch-vacd-entry-conflict-cs\"> </a><a name=\"ch-vacd-entry-conflict-cs-en-US\"> </a><p>This case-sensitive code system <code>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-entry-conflict-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">duplicate<a name=\"ch-vacd-entry-conflict-cs-duplicate\"> </a></td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (Schweiz) (German (Switzerland), de)</b></td><td><b>English (United States) (English (United States), en)</b></td><td><b>French (Switzerland) (fr)</b></td><td><b>Italian (Switzerland) (it)</b></td><td><b>rm</b></td></tr><tr><td>duplicate</td><td>Duplikat</td><td>duplicate</td><td>doublon</td><td>duplicare</td><td>duplicat</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2021-12-21T00:00:00+01:00"
+    }
+  }],
+  "url" : "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-entry-conflict-cs",
+  "identifier" : [{
+    "use" : "official",
+    "system" : "http://fhir.ch/ig/ch-vacd/cs/entry-conflict",
+    "value" : "entry-conflict"
+  }],
+  "version" : "6.0.0-ballot-ci-build",
+  "name" : "EntryConflictCodesystem",
+  "title" : "Entry Conflict Code System",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-07T07:26:19+02:00",
+  "publisher" : "HL7 Switzerland",
+  "contact" : [{
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/"
+    }]
+  }],
+  "description" : "The entry conflict codesystem",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CHE"
+    }]
+  }],
+  "copyright" : "CC0-1.0",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "duplicate",
+    "display" : "duplicate",
+    "designation" : [{
+      "language" : "de-CH",
+      "value" : "Duplikat"
+    },
+    {
+      "language" : "fr-CH",
+      "value" : "doublon"
+    },
+    {
+      "language" : "it-CH",
+      "value" : "duplicare"
+    },
+    {
+      "language" : "rm-CH",
+      "value" : "duplicat"
+    },
+    {
+      "language" : "en-US",
+      "value" : "duplicate"
+    }]
+  }]
+}

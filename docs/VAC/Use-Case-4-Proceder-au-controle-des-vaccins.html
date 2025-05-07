@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Use Case 4 Proceder Au Controle Des Vaccins - Implementation Guide CH VACD v6.0.0-ballot-ci-build</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <style>
+    
+
+    
+
+    
+
+    </style>
+ 
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"43"}
+    h3,h4,h5,h6{--heading-prefix:"43"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+            <div id="family-nav">
+	<a id="logo" no-external="true" href="http://hl7.org/fhir"> <img
+		alt="logo fhir" src="fhir-logo-www.png" />
+	</a>
+</div>
+
+            <div id="family-nav">
+                <a id="logo" no-external="true" href="searchform.html">
+                    <img src="assets/images/search.png" alt="Search FHIR" />
+                </a>
+            </div>
+            <div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://www.hl7.ch">
+        <img alt="visit the hl7 website" height="50" src="hl7-logo.png" />
+    </a>            
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Implementation Guide CH VACD</span>
+            <br/>
+            <span style="display:inline-block;">6.0.0-ballot-ci-build - ci-build
+
+
+
+  <img alt="Switzerland flag" src="assets/images/che.svg" height="16" title="Switzerland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<!--<li><a href="toc.html">Table of Contents</a></li> -->
+	<li>
+		<a href="index.html">Home</a>
+	</li>
+
+
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Use Cases
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="Use-Cases-Deutsch.html">Anwendungsfälle</a>
+			</li>
+			<li>
+				<a href="Use-Cases-Francais.html">Les cas d'utilisation</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Documents/Messages
+			<b class="caret">
+			</b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="immunization-administration-document.html">Immunization Administration document</a>
+			</li>
+			<li>
+				<a href="vaccination-record-document.html">Vaccination Record document</a>
+			</li>
+			<li>
+				<a href="immunization-recommendation-request-message.html">Immunization Recommendation Request message</a>
+			</li>
+			<li>
+				<a href="immunization-recommendation-response-message.html">Immunization Recommendation Response message</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="profiles.html">Profiles</a>
+	</li>
+	<li>
+		<a href="extensions.html">Extensions</a>
+	</li>
+	<li>
+		<a href="terminology.html">Terminology</a>
+	</li>
+	<li>
+		<a href="artifacts.html">Artifacts</a>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Test Cases
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="TestCases.html">Overview</a>
+			</li>
+			<li>
+				<a href="TestCases.html#a-immunizations">A Immunizations</a>
+			</li>
+			<li>
+				<a href="TestCases.html#b-other-elements">B Other Elements</a>
+			</li>
+			<li>
+				<a href="TestCases.html#c-correction-of-entries">C Correction of Entries</a>
+			</li>
+			<li>
+				<a href="TestCases.html#d-conflicts-on-merging-documents">D Conflicts on merging Documents</a>
+			</li>
+			<li>
+				<a href="TestCases.html#e-language-handling-on-merging-documents">E Language handling on merging Documents</a>
+			</li>
+			<li>
+				<a href="TestCases.html#f-add-notes-to-existing-elements">F Add Notes to existing Elements</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Use Case 4 Proceder Au Controle Des Vaccins</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Implementation Guide CH VACD - Local Development build (v6.0.0-ballot-ci-build) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://fhir.ch/ig/ch-vacd/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Use Case 4 Proceder Au Controle Des Vaccins</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#procéder-au-contrôle-des-vaccins-professionnel-de-la-santé" id="markdown-toc-procéder-au-contrôle-des-vaccins-professionnel-de-la-santé">Procéder au contrôle des vaccins (professionnel de la santé)</a></li>
+  <li><a href="#procéder-au-contrôle-des-vaccins-patient" id="markdown-toc-procéder-au-contrôle-des-vaccins-patient">Procéder au contrôle des vaccins (patient)</a></li>
+</ul>
+
+</div>
+<h3 id="procéder-au-contrôle-des-vaccins-professionnel-de-la-santé">Procéder au contrôle des vaccins (professionnel de la santé)</h3>
+
+<p>Un professionnel de la santé met à jour les données de vaccination dans son système primaire à l’aide des données de vaccination d’un patient dans le DEP.</p>
+
+<p>Le cas échéant, le professionnel de la santé rassemble dans le système primaire les informations médicales supplémentaires relatives au statut immunitaire du patient nécessaires pour le contrôle des vaccins ou sélectionne celles-ci dans les interfaces utilisateur du portail de la communauté.</p>
+
+<p>Le professionnel de la santé exécute le contrôle des vaccins automatisé, examine les recommandations de vaccination et en tient compte dans la planification des futures vaccinations.</p>
+
+<p>Le cas échéant, le professionnel de la santé complète le dossier de vaccination du patient avec les recommandations de vaccination et sauvegarde le dossier de vaccination à jour au format d’échange <em>dossier de vaccination</em> dans le DEP. Le nouveau document contient une indication sur les anciens documents remplacés ou complétés par le nouveau. L’élément de données <em>relatesTo</em> du format d’échange <em>dossier de vaccination</em> est utilisé à cet effet.</p>
+
+<div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="SEQUENCE" height="372.0683px" preserveAspectRatio="none" style="width:800px;height:372px;background:#FFFFFF;" version="1.1" viewBox="0 0 800 372" width="800.2979px" zoomAndPan="magnify"><title>Rechercher et r&#233;sumer documents de vaccination</title><defs /><g><text fill="#000000" font-family="sans-serif" font-size="9.8282" font-weight="bold" lengthAdjust="spacing" textLength="233.2331" x="283.0325" y="20.7328">Rechercher et r&#233;sumer documents de vaccination</text><rect fill="none" height="55.4976" style="stroke:#000000;stroke-width:1.053;" width="480.7426" x="261.1306" y="118.339" /><g><title>Professionnel de la sant&#233;</title><rect fill="#000000" fill-opacity="0.00000" height="218.6889" width="5.6161" x="57.991" y="85.0975" /><line style="stroke:#181818;stroke-width:0.351;stroke-dasharray:5.0,5.0;" x1="60.3733" x2="60.3733" y1="85.0975" y2="303.7863" /></g><g><title>Portal</title><rect fill="#000000" fill-opacity="0.00000" height="218.6889" width="5.6161" x="283.094" y="85.0975" /><line style="stroke:#181818;stroke-width:0.351;stroke-dasharray:5.0,5.0;" x1="285.7012" x2="285.7012" y1="85.0975" y2="303.7863" /></g><g><title>Agr&#233;gateur de vaccins</title><rect fill="#000000" fill-opacity="0.00000" height="218.6889" width="5.6161" x="482.8281" y="85.0975" /><line style="stroke:#181818;stroke-width:0.351;stroke-dasharray:5.0,5.0;" x1="485.1789" x2="485.1789" y1="85.0975" y2="303.7863" /></g><g><title>Contr&#244;le de vaccination</title><rect fill="#000000" fill-opacity="0.00000" height="218.6889" width="5.6161" x="599.9286" y="85.0975" /><line style="stroke:#181818;stroke-width:0.351;stroke-dasharray:5.0,5.0;" x1="602.628" x2="602.628" y1="85.0975" y2="303.7863" /></g><g><title>Communaut&#233;</title><rect fill="#000000" fill-opacity="0.00000" height="218.6889" width="5.6161" x="697.6319" y="85.0975" /><line style="stroke:#181818;stroke-width:0.351;stroke-dasharray:5.0,5.0;" x1="700.4255" x2="700.4255" y1="85.0975" y2="303.7863" /></g><g><title>Impfcheck</title><rect fill="#000000" fill-opacity="0.00000" height="218.6889" width="5.6161" x="766.3735" y="85.0975" /><line style="stroke:#181818;stroke-width:0.351;stroke-dasharray:5.0,5.0;" x1="768.5498" x2="768.5498" y1="85.0975" y2="303.7863" /></g><g class="participant participant-head" data-participant="Docteur"><text fill="#000000" font-family="sans-serif" font-size="9.8282" lengthAdjust="spacing" textLength="110.3659" x="3.5101" y="82.9379">Professionnel de la sant&#233;</text><ellipse cx="60.7991" cy="36.5816" fill="#0000FF" rx="5.6161" ry="5.6161" style="stroke:#181818;stroke-width:0.351;" /><path d="M60.7991,42.1977 L60.7991,61.1521 M51.6729,47.8138 L69.9253,47.8138 M60.7991,61.1521 L51.6729,71.6824 M60.7991,61.1521 L69.9253,71.6824" fill="none" style="stroke:#181818;stroke-width:0.351;" /></g><g class="participant participant-tail" data-participant="Docteur"><text fill="#000000" font-family="sans-serif" font-size="9.8282" lengthAdjust="spacing" textLength="110.3659" x="3.5101" y="313.2868">Professionnel de la sant&#233;</text><ellipse cx="60.7991" cy="321.4135" fill="#0000FF" rx="5.6161" ry="5.6161" style="stroke:#181818;stroke-width:0.351;" /><path d="M60.7991,327.0296 L60.7991,345.984 M51.6729,332.6457 L69.9253,332.6457 M60.7991,345.984 L51.6729,356.5143 M60.7991,345.984 L69.9253,356.5143" fill="none" style="stroke:#181818;stroke-width:0.351;" /></g><g class="participant participant-head" data-participant="Portal"><rect fill="#00CC00" height="22.1903" rx="1.755" ry="1.755" style="stroke:#181818;stroke-width:0.351;" width="35.5025" x="268.1508" y="62.2052" /><text fill="#000000" font-family="sans-serif" font-size="9.8282" lengthAdjust="spacing" textLength="25.6743" x="273.0649" y="77.3218">Portal</text></g><g class="participant participant-tail" data-participant="Portal"><rect fill="#00CC00" height="22.1903" rx="1.755" ry="1.755" style="stroke:#181818;stroke-width:0.351;" width="35.5025" x="268.1508" y="303.0843" /><text fill="#000000" font-family="sans-serif" font-size="9.8282" lengthAdjust="spacing" textLength="25.6743" x="273.0649" y="318.2009">Portal</text></g><g class="participant participant-head" data-participant="Agr&#233;gateur de vaccins"><rect fill="#E2E2F0" height="22.1903" rx="1.755" ry="1.755" style="stroke:#181818;stroke-width:0.351;" width="107.6209" x="431.8257" y="62.2052" /><text fill="#000000" font-family="sans-serif" font-size="9.8282" lengthAdjust="spacing" textLength="97.7927" x="436.7398" y="77.3218">Agr&#233;gateur de vaccins</text></g><g class="participant participant-tail" data-participant="Agr&#233;gateur de vaccins"><rect fill="#E2E2F0" height="22.1903" rx="1.755" ry="1.755" style="stroke:#181818;stroke-width:0.351;" width="107.6209" x="431.8257" y="303.0843" /><text fill="#000000" font-family="sans-serif" font-size="9.8282" lengthAdjust="spacing" textLength="97.7927" x="436.7398" y="318.2009">Agr&#233;gateur de vaccins</text></g><g class="participant participant-head" data-participant="Contr&#244;le de vaccination"><rect fill="#FF0000" height="22.1903" rx="1.755" ry="1.755" style="stroke:#181818;stroke-width:0.351;" width="112.5398" x="546.4668" y="62.2052" /><text fill="#000000" font-family="sans-serif" font-size="9.8282" lengthAdjust="spacing" textLength="102.7116" x="551.3809" y="77.3218">Contr&#244;le de vaccination</text></g><g class="participant participant-tail" data-participant="Contr&#244;le de vaccination"><rect fill="#FF0000" height="22.1903" rx="1.755" ry="1.755" style="stroke:#181818;stroke-width:0.351;" width="112.5398" x="546.4668" y="303.0843" /><text fill="#000000" font-family="sans-serif" font-size="9.8282" lengthAdjust="spacing" textLength="102.7116" x="551.3809" y="318.2009">Contr&#244;le de vaccination</text></g><g class="participant participant-head" data-participant="Communaut&#233;\nA..N"><rect fill="#00CC00" height="34.5523" rx="1.755" ry="1.755" style="stroke:#181818;stroke-width:0.351;" width="68.8263" x="666.0268" y="49.8431" /><text fill="#000000" font-family="sans-serif" font-size="9.8282" lengthAdjust="spacing" textLength="58.9981" x="670.9409" y="64.9598">Communaut&#233;</text><text fill="#000000" font-family="sans-serif" font-size="9.8282" lengthAdjust="spacing" textLength="19.1142" x="690.8828" y="77.3218">A..N</text></g><g class="participant participant-tail" data-participant="Communaut&#233;\nA..N"><rect fill="#00CC00" height="34.5523" rx="1.755" ry="1.755" style="stroke:#181818;stroke-width:0.351;" width="68.8263" x="666.0268" y="303.0843" /><text fill="#000000" font-family="sans-serif" font-size="9.8282" lengthAdjust="spacing" textLength="58.9981" x="670.9409" y="318.2009">Communaut&#233;</text><text fill="#000000" font-family="sans-serif" font-size="9.8282" lengthAdjust="spacing" textLength="19.1142" x="690.8828" y="330.563">A..N</text></g><g class="participant participant-head" data-participant="Impfcheck"><rect fill="#E2E2F0" height="22.1903" rx="1.755" ry="1.755" style="stroke:#181818;stroke-width:0.351;" width="54.6167" x="741.8732" y="62.2052" /><text fill="#000000" font-family="sans-serif" font-size="9.8282" lengthAdjust="spacing" textLength="44.7885" x="746.7873" y="77.3218">Impfcheck</text></g><g class="participant participant-tail" data-participant="Impfcheck"><rect fill="#E2E2F0" height="22.1903" rx="1.755" ry="1.755" style="stroke:#181818;stroke-width:0.351;" width="54.6167" x="741.8732" y="303.0843" /><text fill="#000000" font-family="sans-serif" font-size="9.8282" lengthAdjust="spacing" textLength="44.7885" x="746.7873" y="318.2009">Impfcheck</text></g><g class="message" data-participant-1="Docteur" data-participant-2="Portal"><polygon fill="#181818" points="277.4779,105.0007,284.498,107.8088,277.4779,110.6168,280.2859,107.8088" style="stroke:#181818;stroke-width:0.702;" /><line style="stroke:#181818;stroke-width:0.702;" x1="60.7991" x2="281.69" y1="107.8088" y2="107.8088" /><text fill="#000000" font-family="sans-serif" font-size="9.1262" font-weight="bold" lengthAdjust="spacing" textLength="16.2293" x="65.7132" y="104.3995">[01]</text><text fill="#000000" font-family="sans-serif" font-size="9.1262" lengthAdjust="spacing" textLength="189.2172" x="84.7506" y="104.3995">Rechercher tous les documents de vaccination</text></g><path d="M261.1306,118.339 L311.9808,118.339 L311.9808,124.2019 L304.9607,131.2221 L261.1306,131.2221 L261.1306,118.339" fill="#EEEEEE" style="stroke:#000000;stroke-width:1.053;" /><rect fill="none" height="55.4976" style="stroke:#000000;stroke-width:1.053;" width="480.7426" x="261.1306" y="118.339" /><text fill="#000000" font-family="sans-serif" font-size="9.1262" font-weight="bold" lengthAdjust="spacing" textLength="19.2595" x="271.6609" y="128.5148">loop</text><text fill="#000000" font-family="sans-serif" font-size="7.7222" font-weight="bold" lengthAdjust="spacing" textLength="163.9303" x="322.5111" y="127.7593">["Interrogation de toutes les communaut&#233;s"]</text><g class="message" data-participant-1="Portal" data-participant-2="Communaut&#233;\nA..N"><polygon fill="#181818" points="692.0157,144.1052,699.0359,146.9132,692.0157,149.7213,694.8238,146.9132" style="stroke:#181818;stroke-width:0.702;" /><line style="stroke:#181818;stroke-width:0.702;" x1="285.9021" x2="696.2278" y1="146.9132" y2="146.9132" /><text fill="#000000" font-family="sans-serif" font-size="9.1262" font-weight="bold" lengthAdjust="spacing" textLength="16.2293" x="290.8162" y="143.5039">[02]</text><text fill="#000000" font-family="sans-serif" font-size="9.1262" lengthAdjust="spacing" textLength="155.2301" x="309.8535" y="143.5039">Rechercher documents de vaccination</text></g><g class="message" data-participant-1="Communaut&#233;\nA..N" data-participant-2="Portal"><polygon fill="#181818" points="293.6242,165.4124,286.6041,168.2205,293.6242,171.0286,290.8162,168.2205" style="stroke:#181818;stroke-width:0.702;" /><line style="stroke:#181818;stroke-width:0.702;" x1="289.4121" x2="699.7379" y1="168.2205" y2="168.2205" /><text fill="#000000" font-family="sans-serif" font-size="9.1262" font-weight="bold" lengthAdjust="spacing" textLength="16.2293" x="297.8363" y="164.8112">[03]</text><text fill="#000000" font-family="sans-serif" font-size="9.1262" lengthAdjust="spacing" textLength="211.5158" x="316.8737" y="164.8112">Tous les documents de vaccination trouv&#233;s (Com A)</text></g><g class="message" data-participant-1="Portal" data-participant-2="Agr&#233;gateur de vaccins"><polygon fill="#181818" points="477.212,191.6338,484.2321,194.4419,477.212,197.25,480.02,194.4419" style="stroke:#181818;stroke-width:0.702;" /><line style="stroke:#181818;stroke-width:0.702;" x1="285.9021" x2="481.424" y1="194.4419" y2="194.4419" /><text fill="#000000" font-family="sans-serif" font-size="9.1262" font-weight="bold" lengthAdjust="spacing" textLength="16.2293" x="290.8162" y="191.0326">[04]</text><text fill="#000000" font-family="sans-serif" font-size="9.1262" lengthAdjust="spacing" textLength="163.8483" x="309.8535" y="191.0326">R&#233;sumer toutes les donn&#233;es structur&#233;es</text></g><g class="message" data-participant-1="Agr&#233;gateur de vaccins" data-participant-2="Portal"><polygon fill="#181818" points="293.6242,212.9411,286.6041,215.7492,293.6242,218.5572,290.8162,215.7492" style="stroke:#181818;stroke-width:0.702;" /><line style="stroke:#181818;stroke-width:0.702;" x1="289.4121" x2="484.9341" y1="215.7492" y2="215.7492" /><text fill="#000000" font-family="sans-serif" font-size="9.1262" font-weight="bold" lengthAdjust="spacing" textLength="16.2293" x="297.8363" y="212.3399">[05]</text><text fill="#000000" font-family="sans-serif" font-size="9.1262" lengthAdjust="spacing" textLength="131.3986" x="316.8737" y="212.3399">Un carnet de vaccination agr&#233;g&#233;</text></g><g class="message" data-participant-1="Portal" data-participant-2="Contr&#244;le de vaccination"><polygon fill="#181818" points="594.3125,234.2484,601.3326,237.0564,594.3125,239.8645,597.1206,237.0564" style="stroke:#181818;stroke-width:0.702;" /><line style="stroke:#181818;stroke-width:0.702;" x1="285.9021" x2="598.5246" y1="237.0564" y2="237.0564" /><text fill="#000000" font-family="sans-serif" font-size="9.1262" font-weight="bold" lengthAdjust="spacing" textLength="16.2293" x="290.8162" y="233.6471">[06]</text><text fill="#000000" font-family="sans-serif" font-size="9.1262" lengthAdjust="spacing" textLength="131.9111" x="309.8535" y="233.6471">document de vaccination agr&#233;g&#233;</text></g><g class="message" data-participant-1="Impfcheck" data-participant-2="Portal"><polygon fill="#181818" points="293.6242,255.5556,286.6041,258.3637,293.6242,261.1718,290.8162,258.3637" style="stroke:#181818;stroke-width:0.702;" /><line style="stroke:#181818;stroke-width:0.702;" x1="289.4121" x2="768.4796" y1="258.3637" y2="258.3637" /><text fill="#000000" font-family="sans-serif" font-size="9.1262" font-weight="bold" lengthAdjust="spacing" textLength="16.2293" x="297.8363" y="254.9544">[07]</text><text fill="#000000" font-family="sans-serif" font-size="9.1262" lengthAdjust="spacing" textLength="128.8542" x="316.8737" y="254.9544">recommandation de vaccination</text></g><g class="message" data-participant-1="Portal" data-participant-2="Docteur"><polygon fill="#181818" points="68.5213,288.342,61.5011,291.15,68.5213,293.9581,65.7132,291.15" style="stroke:#181818;stroke-width:0.702;" /><line style="stroke:#181818;stroke-width:0.702;" x1="64.3092" x2="285.2" y1="291.15" y2="291.15" /><text fill="#000000" font-family="sans-serif" font-size="9.1262" font-weight="bold" lengthAdjust="spacing" textLength="16.2293" x="72.7333" y="282.0012">[08]</text><text fill="#000000" font-family="sans-serif" font-size="9.1262" lengthAdjust="spacing" textLength="95.3795" x="91.7707" y="276.2617">Afficher les donn&#233;es de</text><text fill="#000000" font-family="sans-serif" font-size="9.1262" lengthAdjust="spacing" textLength="86.2489" x="91.7707" y="287.7407">vaccination agr&#233;g&#233;es</text></g><text fill="#888888" font-family="sans-serif" font-size="7.0202" lengthAdjust="spacing" textLength="35.5121" x="381.8929" y="365.5568">Version 1.0</text></g></svg></div>
+
+<h3 id="procéder-au-contrôle-des-vaccins-patient">Procéder au contrôle des vaccins (patient)</h3>
+
+<p>Un patient consulte les données de vaccination et sélectionne sur le portail de la communauté les informations médicales supplémentaires et nécessaires au contrôle des vaccins (cf. 3.3.2) relatives au statut immunitaire.</p>
+
+<p>Le patient exécute le contrôle des vaccins automatisé et examine les recommandations de vaccination.</p>
+
+<p>Le cas échéant, le patient complète son dossier de vaccination avec les recommandations de vaccination et sauvegarde le dossier de vaccination à jour au format d’échange <em>dossier de vaccination</em> dans le DEP. Les nouveaux documents contiennent une indication sur les anciens documents remplacés ou complétés par les nouveaux. L’élément de données <em>relatesTo</em> du format d’échange CH VACD est utilisé à cet effet.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.ch/">HL7 Switzerland</a>.  Package ch.fhir.ig.ch-vacd#6.0.0-ballot-ci-build based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 7, 2025 07:29+0200">2025-05-07</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+
+| <a style="color: #81BEF7" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSejY5cinbQ4kHgGKMhncYu0mPuWb7euUkxfeXZeiUCFFa4k6g/viewform?usp=sf_link&amp;entry%2E1353807103=ch.fhir.ig.ch-vacd%236.0.0-ballot-ci-build%20/Use-Case-4-Proceder-au-controle-des-vaccins.html&amp;entry%2E247644557=Use%20Case%204%20Proceder%20Au%20Controle%20Des%20Vaccins">Propose a change</a>
+
+
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

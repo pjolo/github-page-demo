@@ -1,0 +1,1803 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "83b40197-8873-4b2e-a9fd-813f4a7e06b6-131",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/83b40197-8873-4b2e-a9fd-813f4a7e06b6-131",
+  "name" : "UnionAllergiesAndIntolerancesForImmunizationAndAllergiesAndIntolerancesForImmunization",
+  "title" : "Union of Allergies and Intolerance values for Immunization And Allergies and Intolerance values for Immunization",
+  "status" : "draft",
+  "date" : "2025-05-07T07:31:23+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CHE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "716186003",
+        "display" : "No known allergy (situation)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Keine Allergie bekannt"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "pas d'allergie connue"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "nessuna allergia nota"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "nagina allergia enconuschenta"
+        },
+        {
+          "language" : "en-US",
+          "value" : "No known allergy"
+        }]
+      },
+      {
+        "code" : "213020009",
+        "display" : "Allergy to egg protein (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Allergie gegen Hühnereiweiss"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "allergie aux protéines de l'œuf"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "allergia alle proteine dell'uovo"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "allergia cunter alv d'ov da giaglina"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Allergy to egg protein"
+        }]
+      },
+      {
+        "code" : "416098002",
+        "display" : "Allergy to drug (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Medikamenten-Allergie"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "allergie aux médicaments"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "allergia ai farmaci"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "allergia cunter medicaments"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Allergy to drug"
+        }]
+      },
+      {
+        "code" : "39579001",
+        "display" : "Anaphylaxis (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Anaphylaktische Reaktion"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "réaction anaphylactique"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione anafilattica"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "reacziun anafilactica"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Anaphylactic reaction"
+        }]
+      },
+      {
+        "code" : "24079001",
+        "display" : "Atopic dermatitis (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Atopische Dermatitis"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "dermite atopique"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "dermatite atopica"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "dermatitis atopica"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Atopic dermatitis"
+        }]
+      },
+      {
+        "code" : "863903001",
+        "display" : "Allergy to component of vaccine product (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Allergie gegen Bestandteil eines Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "allergie à un composant du vaccin"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "allergia a un componente del vaccino"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "allergia cunter ina cumponenta d'in vaccin"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Allergy to component of vaccine product"
+        }]
+      },
+      {
+        "code" : "293104008",
+        "display" : "Adverse reaction to component of vaccine product (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable à un vaccin"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa a un vaccino"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "219082005",
+        "display" : "Adverse reaction to component of vaccine product containing Vibrio cholerae antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Cholera-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable d'un vaccin contre le choléra"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro il colera"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter colera"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Cholera vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "1142181004",
+        "display" : "Adverse reaction to component of vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines mRNA-Impfstoffs gegen COVID-19"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable d'un vaccin à ARNm contre la COVID-19"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino a mRNA anti-COVID-19"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter COVID-19 mRNA"
+        },
+        {
+          "language" : "en-US",
+          "value" : "COVID-19 mRNA vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "1157106007",
+        "display" : "Adverse reaction to component of vaccine product containing only recombinant non-replicating viral vector encoding Severe acute respiratory syndrome coronavirus 2 spike protein (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines nicht replizierenden viralen Vektorimpfstoffs gegen COVID-19"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable d'un vaccin à vecteur viral recombinant non réplicatif contre le COVID-19"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino a vettore virale non replicante anti-COVID-19"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin vectorial viral betg replitgant cunter COVID-19"
+        },
+        {
+          "language" : "en-US",
+          "value" : "COVID-19 non-replicating viral vector vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "1162639000",
+        "display" : "Adverse reaction to component of vaccine product containing only acellular Bordetella pertussis, Clostridium tetani, Corynebacterium diphtheriae, Haemophilus influenzae type B, Hepatitis B virus and inactivated Human poliovirus antigens (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Diphtherie-, Pertussis (azellulär)-, Haemophilus influenzae B-, Hepatitis B- und Poliomyelitis sowie Tetanus (inaktiviert)-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable d'un vaccin contre la diphtérie, la coqueluche (acellulaire), Haemophilus influenzae de type B, l'hépatite B, la poliomyélite (inactivé) et le tétanos"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la difterite, il tetano, la pertosse (acellulare), la poliomielite (inattivato), l’Haemophilus influenzae di tipo B e l’epatite B"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin (inactivà) cunter difteria, la tuss chanina (acellulara), hemofilus influenza B, hepatitis B e poliomielitis sco er tetanus"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Diphtheria and acellular pertussis and Haemophilus influenzae type B and hepatitis B and inactivated poliomyelitis and tetanus vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293108006",
+        "display" : "Adverse reaction to component of vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Diphtherie- und Tetanus-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la diphtérie et le tétanos"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la difterite e il tetano"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter difteria e tetanus"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Diphtheria and tetanus vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293109003",
+        "display" : "Adverse reaction to component of vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Diphtherie-, Pertussis und Tetanus-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la diphtérie, le tétanos et la coqueluche"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la difterite, il tetano e la pertosse"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter difteria, la tuss chanina e tetanus"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Diphtheria, pertussis, and tetanus vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293127000",
+        "display" : "Adverse reaction to component of vaccine product containing Haemophilus influenzae type B antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Haemophilus influenzae B-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre Haemophilus influenzae de type B"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro l’Haemophilus influenzae di tipo B"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter hemofilus influenza B"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Haemophilus influenzae Type B vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293126009",
+        "display" : "Adverse reaction to component of vaccine product containing Hepatitis A virus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Hepatitis A-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre l'hépatite A"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro l’epatite A"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter hepatitis A"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Hepatitis A vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293110008",
+        "display" : "Adverse reaction to component of vaccine product containing Hepatitis B virus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Hepatitis B-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre l'hépatite B"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro l’epatite B"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter hepatitis B"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Hepatitis B vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "420113004",
+        "display" : "Adverse reaction to component of vaccine product containing Influenza virus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Influenzavirus-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre l'influenza"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro l’influenza"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter la grippa"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Influenza virus vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293125008",
+        "display" : "Adverse reaction to component of vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Masern-, Mumps- und Röteln-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la rougeole, les oreillons et la rubéole"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro il morbillo, la parotite e la rosolia"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter il virustgel, il glandun e la rubella"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Measles and mumps and rubella vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "219096004",
+        "display" : "Adverse reaction to component of vaccine product containing Measles morbillivirus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Masern-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin antirougeoleux"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro il morbillo"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter il virustgel"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Measles vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "219088009",
+        "display" : "Adverse reaction to component of vaccine product containing Neisseria meningitidis antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Meningokokken-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre les méningocoques"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro i meningococchi"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter meningococcus"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Meningococcal vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293114004",
+        "display" : "Adverse reaction to component of vaccine product containing Mumps orthorubulavirus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Mumps-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre les oreillons"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la parotite"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter il glandun"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Mumps vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293116002",
+        "display" : "Adverse reaction to component of vaccine product containing Streptococcus pneumoniae antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Pneumokokken-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre les pneumocoques"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro gli pneumococchi"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter pneumococcus"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Pneumococcal vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293117006",
+        "display" : "Adverse reaction to component of vaccine product containing Human poliovirus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Poliomyelitis-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la poliomyélite"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la poliomielite"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter poliomielitis"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Poliomyelitis vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293118001",
+        "display" : "Adverse reaction to component of vaccine product containing Rabies lyssavirus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Tollwut-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la rage"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la rabbia"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter la frenesia"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Rabies vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "219084006",
+        "display" : "Adverse reaction to component of vaccine product containing Clostridium tetani antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Tetanus-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre le tétanos"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro il tetano"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter tetanus"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Tetanus vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "219076007",
+        "display" : "Adverse reaction to component of vaccine product containing Bacillus Calmette-Guerin antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Tuberkulose-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la tuberculose"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la tubercolosi"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter tuberculosa"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Adverse reaction to component of vaccine product containing Bacillus Calmette-Guerin antigen (disorder)"
+        }]
+      },
+      {
+        "code" : "293122006",
+        "display" : "Adverse reaction to component of vaccine product containing Salmonella enterica subspecies enterica serovar Typhi antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Typhus-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la fièvre typhoïde"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la febbre tifoide"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter tifus"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Typhoid vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "219095000",
+        "display" : "Adverse reaction to component of vaccine product containing Yellow fever virus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Gelbfieber-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la fièvre jaune"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la febbre gialla"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter la fevra melna"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Yellow fever vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "1162644007",
+        "display" : "Adverse reaction to component of vaccine product containing only severe acute respiratory syndrome coronavirus 2 recombinant spike protein antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Covid-19-rekombinanten Spike-Protein-Antigen-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin antigénique à protéine Spike recombinante contre le COVID-19"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino anti-COVID-19 ricombinante con antigene della proteina spike"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter COVID-19 cun antigens dal protein spike recumbinant"
+        },
+        {
+          "language" : "en-US",
+          "value" : "COVID-19 recombinant spike protein antigen vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "1217476001",
+        "display" : "Anaphylaxis caused by component of vaccine product (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Anaphylaktische Reaktion auf einen Impfstoff"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "réaction anaphylactique due au vaccin"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "anafilassi dovuta al vaccino"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "reacziun anafilactica sin in vaccin"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Anaphylaxis due to vaccine"
+        }]
+      },
+      {
+        "code" : "293120003",
+        "display" : "Adverse reaction to component of vaccine product containing Vaccinia virus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Pocken-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable d'un vaccin contre la variole"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "effetto indesiderato di un vaccino antivaiolo"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter la virola"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Smallpox vaccine adverse reactionerse reaction"
+        }]
+      },
+      {
+        "code" : "294657002",
+        "display" : "Allergy to component of vaccine product containing Vaccinia virus antigen (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Allergie gegen Pockenimpfstoff"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "allergie au vaccin contre la variole"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "allergia al vaccino contro il vaiolo"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "allergia cunter in vaccin en virola"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Allergy to smallpox vaccine"
+        }]
+      },
+      {
+        "code" : "294641002",
+        "display" : "Allergy to component of vaccine product containing Bacillus anthracis antigen (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Allergie gegen Anthrax-Impfstoff"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "allergie au vaccin contre le charbon"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "allergia al vaccino contro l'antrace"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "allergia cunter in vaccin cunter antrax"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Allergy to anthrax vaccine"
+        }]
+      },
+      {
+        "code" : "700468006",
+        "display" : "Allergy to component of vaccine product containing Rotavirus antigen (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Allergie gegen Impfstoff gegen Rotavirus"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "allergie au vaccin contre le rotavirus"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "allergia al vaccino contro il Rotavirus"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "allergia cunter il vaccin cunter Rotavirus"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Allergy to Rotavirus vaccine"
+        }]
+      },
+      {
+        "code" : "1303850003",
+        "display" : "Adverse reaction to component of vaccine product containing Tick-borne encephalitis virus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines FSME-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la FSME"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la TBE"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin FSME"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Adverse reaction to component of vaccine product containing Tick-borne encephalitis virus antigen"
+        }]
+      },
+      {
+        "code" : "1303851004",
+        "display" : "Adverse reaction to component of vaccine product containing Human papillomavirus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Humanen-Papillomaviren-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre le papillomavirus humain"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro il papillomavirus umano"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin da pirlas da l'uman"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Adverse reaction to component of vaccine product containing Human papillomavirus antigen"
+        }]
+      },
+      {
+        "code" : "1303852006",
+        "display" : "Adverse reaction to component of vaccine product containing Human alphaherpesvirus 3 antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Varizellen-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la varicelle"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la varicella"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter varizellas"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Adverse reaction to component of vaccine product containing Human alphaherpesvirus 3 antigen"
+        }]
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "716186003",
+        "display" : "No known allergy (situation)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Keine Allergie bekannt"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "pas d'allergie connue"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "nessuna allergia nota"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "nagina allergia enconuschenta"
+        },
+        {
+          "language" : "en-US",
+          "value" : "No known allergy"
+        }]
+      },
+      {
+        "code" : "213020009",
+        "display" : "Allergy to egg protein (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Allergie gegen Hühnereiweiss"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "allergie aux protéines de l'œuf"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "allergia alle proteine dell'uovo"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "allergia cunter alv d'ov da giaglina"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Allergy to egg protein"
+        }]
+      },
+      {
+        "code" : "416098002",
+        "display" : "Allergy to drug (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Medikamenten-Allergie"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "allergie aux médicaments"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "allergia ai farmaci"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "allergia cunter medicaments"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Allergy to drug"
+        }]
+      },
+      {
+        "code" : "39579001",
+        "display" : "Anaphylaxis (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Anaphylaktische Reaktion"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "réaction anaphylactique"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione anafilattica"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "reacziun anafilactica"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Anaphylactic reaction"
+        }]
+      },
+      {
+        "code" : "24079001",
+        "display" : "Atopic dermatitis (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Atopische Dermatitis"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "dermite atopique"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "dermatite atopica"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "dermatitis atopica"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Atopic dermatitis"
+        }]
+      },
+      {
+        "code" : "863903001",
+        "display" : "Allergy to component of vaccine product (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Allergie gegen Bestandteil eines Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "allergie à un composant du vaccin"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "allergia a un componente del vaccino"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "allergia cunter ina cumponenta d'in vaccin"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Allergy to component of vaccine product"
+        }]
+      },
+      {
+        "code" : "293104008",
+        "display" : "Adverse reaction to component of vaccine product (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable à un vaccin"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa a un vaccino"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "219082005",
+        "display" : "Adverse reaction to component of vaccine product containing Vibrio cholerae antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Cholera-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable d'un vaccin contre le choléra"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro il colera"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter colera"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Cholera vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "1142181004",
+        "display" : "Adverse reaction to component of vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines mRNA-Impfstoffs gegen COVID-19"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable d'un vaccin à ARNm contre la COVID-19"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino a mRNA anti-COVID-19"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter COVID-19 mRNA"
+        },
+        {
+          "language" : "en-US",
+          "value" : "COVID-19 mRNA vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "1157106007",
+        "display" : "Adverse reaction to component of vaccine product containing only recombinant non-replicating viral vector encoding Severe acute respiratory syndrome coronavirus 2 spike protein (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines nicht replizierenden viralen Vektorimpfstoffs gegen COVID-19"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable d'un vaccin à vecteur viral recombinant non réplicatif contre le COVID-19"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino a vettore virale non replicante anti-COVID-19"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin vectorial viral betg replitgant cunter COVID-19"
+        },
+        {
+          "language" : "en-US",
+          "value" : "COVID-19 non-replicating viral vector vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "1162639000",
+        "display" : "Adverse reaction to component of vaccine product containing only acellular Bordetella pertussis, Clostridium tetani, Corynebacterium diphtheriae, Haemophilus influenzae type B, Hepatitis B virus and inactivated Human poliovirus antigens (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Diphtherie-, Pertussis (azellulär)-, Haemophilus influenzae B-, Hepatitis B- und Poliomyelitis sowie Tetanus (inaktiviert)-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable d'un vaccin contre la diphtérie, la coqueluche (acellulaire), Haemophilus influenzae de type B, l'hépatite B, la poliomyélite (inactivé) et le tétanos"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la difterite, il tetano, la pertosse (acellulare), la poliomielite (inattivato), l’Haemophilus influenzae di tipo B e l’epatite B"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin (inactivà) cunter difteria, la tuss chanina (acellulara), hemofilus influenza B, hepatitis B e poliomielitis sco er tetanus"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Diphtheria and acellular pertussis and Haemophilus influenzae type B and hepatitis B and inactivated poliomyelitis and tetanus vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293108006",
+        "display" : "Adverse reaction to component of vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Diphtherie- und Tetanus-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la diphtérie et le tétanos"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la difterite e il tetano"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter difteria e tetanus"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Diphtheria and tetanus vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293109003",
+        "display" : "Adverse reaction to component of vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Diphtherie-, Pertussis und Tetanus-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la diphtérie, le tétanos et la coqueluche"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la difterite, il tetano e la pertosse"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter difteria, la tuss chanina e tetanus"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Diphtheria, pertussis, and tetanus vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293127000",
+        "display" : "Adverse reaction to component of vaccine product containing Haemophilus influenzae type B antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Haemophilus influenzae B-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre Haemophilus influenzae de type B"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro l’Haemophilus influenzae di tipo B"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter hemofilus influenza B"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Haemophilus influenzae Type B vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293126009",
+        "display" : "Adverse reaction to component of vaccine product containing Hepatitis A virus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Hepatitis A-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre l'hépatite A"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro l’epatite A"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter hepatitis A"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Hepatitis A vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293110008",
+        "display" : "Adverse reaction to component of vaccine product containing Hepatitis B virus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Hepatitis B-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre l'hépatite B"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro l’epatite B"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter hepatitis B"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Hepatitis B vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "420113004",
+        "display" : "Adverse reaction to component of vaccine product containing Influenza virus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Influenzavirus-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre l'influenza"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro l’influenza"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter la grippa"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Influenza virus vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293125008",
+        "display" : "Adverse reaction to component of vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Masern-, Mumps- und Röteln-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la rougeole, les oreillons et la rubéole"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro il morbillo, la parotite e la rosolia"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter il virustgel, il glandun e la rubella"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Measles and mumps and rubella vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "219096004",
+        "display" : "Adverse reaction to component of vaccine product containing Measles morbillivirus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Masern-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin antirougeoleux"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro il morbillo"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter il virustgel"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Measles vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "219088009",
+        "display" : "Adverse reaction to component of vaccine product containing Neisseria meningitidis antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Meningokokken-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre les méningocoques"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro i meningococchi"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter meningococcus"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Meningococcal vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293114004",
+        "display" : "Adverse reaction to component of vaccine product containing Mumps orthorubulavirus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Mumps-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre les oreillons"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la parotite"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter il glandun"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Mumps vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293116002",
+        "display" : "Adverse reaction to component of vaccine product containing Streptococcus pneumoniae antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Pneumokokken-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre les pneumocoques"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro gli pneumococchi"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter pneumococcus"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Pneumococcal vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293117006",
+        "display" : "Adverse reaction to component of vaccine product containing Human poliovirus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Poliomyelitis-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la poliomyélite"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la poliomielite"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter poliomielitis"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Poliomyelitis vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "293118001",
+        "display" : "Adverse reaction to component of vaccine product containing Rabies lyssavirus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Tollwut-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la rage"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la rabbia"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter la frenesia"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Rabies vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "219084006",
+        "display" : "Adverse reaction to component of vaccine product containing Clostridium tetani antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Tetanus-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre le tétanos"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro il tetano"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter tetanus"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Tetanus vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "219076007",
+        "display" : "Adverse reaction to component of vaccine product containing Bacillus Calmette-Guerin antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Tuberkulose-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la tuberculose"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la tubercolosi"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter tuberculosa"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Adverse reaction to component of vaccine product containing Bacillus Calmette-Guerin antigen (disorder)"
+        }]
+      },
+      {
+        "code" : "293122006",
+        "display" : "Adverse reaction to component of vaccine product containing Salmonella enterica subspecies enterica serovar Typhi antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Typhus-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la fièvre typhoïde"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la febbre tifoide"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter tifus"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Typhoid vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "219095000",
+        "display" : "Adverse reaction to component of vaccine product containing Yellow fever virus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Gelbfieber-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la fièvre jaune"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la febbre gialla"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter la fevra melna"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Yellow fever vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "1162644007",
+        "display" : "Adverse reaction to component of vaccine product containing only severe acute respiratory syndrome coronavirus 2 recombinant spike protein antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Covid-19-rekombinanten Spike-Protein-Antigen-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin antigénique à protéine Spike recombinante contre le COVID-19"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino anti-COVID-19 ricombinante con antigene della proteina spike"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter COVID-19 cun antigens dal protein spike recumbinant"
+        },
+        {
+          "language" : "en-US",
+          "value" : "COVID-19 recombinant spike protein antigen vaccine adverse reaction"
+        }]
+      },
+      {
+        "code" : "1217476001",
+        "display" : "Anaphylaxis caused by component of vaccine product (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Anaphylaktische Reaktion auf einen Impfstoff"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "réaction anaphylactique due au vaccin"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "anafilassi dovuta al vaccino"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "reacziun anafilactica sin in vaccin"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Anaphylaxis due to vaccine"
+        }]
+      },
+      {
+        "code" : "293120003",
+        "display" : "Adverse reaction to component of vaccine product containing Vaccinia virus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Pocken-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable d'un vaccin contre la variole"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "effetto indesiderato di un vaccino antivaiolo"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter la virola"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Smallpox vaccine adverse reactionerse reaction"
+        }]
+      },
+      {
+        "code" : "294657002",
+        "display" : "Allergy to component of vaccine product containing Vaccinia virus antigen (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Allergie gegen Pockenimpfstoff"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "allergie au vaccin contre la variole"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "allergia al vaccino contro il vaiolo"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "allergia cunter in vaccin en virola"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Allergy to smallpox vaccine"
+        }]
+      },
+      {
+        "code" : "294641002",
+        "display" : "Allergy to component of vaccine product containing Bacillus anthracis antigen (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Allergie gegen Anthrax-Impfstoff"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "allergie au vaccin contre le charbon"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "allergia al vaccino contro l'antrace"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "allergia cunter in vaccin cunter antrax"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Allergy to anthrax vaccine"
+        }]
+      },
+      {
+        "code" : "700468006",
+        "display" : "Allergy to component of vaccine product containing Rotavirus antigen (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Allergie gegen Impfstoff gegen Rotavirus"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "allergie au vaccin contre le rotavirus"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "allergia al vaccino contro il Rotavirus"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "allergia cunter il vaccin cunter Rotavirus"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Allergy to Rotavirus vaccine"
+        }]
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/2011000195101/version/20241207",
+      "concept" : [{
+        "code" : "1303850003",
+        "display" : "Adverse reaction to component of vaccine product containing Tick-borne encephalitis virus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines FSME-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la FSME"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la TBE"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin FSME"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Adverse reaction to component of vaccine product containing Tick-borne encephalitis virus antigen"
+        }]
+      },
+      {
+        "code" : "1303851004",
+        "display" : "Adverse reaction to component of vaccine product containing Human papillomavirus antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Humanen-Papillomaviren-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre le papillomavirus humain"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro il papillomavirus umano"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin da pirlas da l'uman"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Adverse reaction to component of vaccine product containing Human papillomavirus antigen"
+        }]
+      },
+      {
+        "code" : "1303852006",
+        "display" : "Adverse reaction to component of vaccine product containing Human alphaherpesvirus 3 antigen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Unerwünschte Wirkung eines Varizellen-Impfstoffs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "effet indésirable du vaccin contre la varicelle"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "reazione avversa al vaccino contro la varicella"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "effect nungiavischà d'in vaccin cunter varizellas"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Adverse reaction to component of vaccine product containing Human alphaherpesvirus 3 antigen"
+        }]
+      }]
+    }]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ch-vacd-risks-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ch-vacd-risks-vs</b></p><a name=\"ch-vacd-risks-vs\"> </a><a name=\"hcch-vacd-risks-vs\"> </a><a name=\"ch-vacd-risks-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-ch-vacd-risks-medical-vs.html\">Swiss Medical Risks For Immunizations</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-ch-vacd-risks-social-vs.html\">Swiss Social Risks For Immunizations</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-ch-vacd-risks-occupation-vs.html\">Swiss Occupation Risks For Immunizations</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-ch-vacd-risks-preillness-vs.html\">Swiss Preillness Risks For Immunizations</a></li></ul></div>"
+  },
+  "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-vs",
+  "version" : "6.0.0-ballot-ci-build",
+  "name" : "SwissRisksForImmunizations",
+  "title" : "Swiss Risks For Immunizations",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-07T07:26:19+02:00",
+  "publisher" : "HL7 Switzerland",
+  "contact" : [{
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/"
+    }]
+  }],
+  "description" : "The medical and exposition risks used in Switzerland.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CHE"
+    }]
+  }],
+  "copyright" : "CC0-1.0",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-medical-vs"]
+    },
+    {
+      "valueSet" : ["http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-social-vs"]
+    },
+    {
+      "valueSet" : ["http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-occupation-vs"]
+    },
+    {
+      "valueSet" : ["http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-preillness-vs"]
+    }]
+  }
+}

@@ -1,0 +1,294 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-basic-immunization-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ch-vacd-basic-immunization-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ch-vacd-basic-immunization-vs</b></p><a name=\"ch-vacd-basic-immunization-vs\"> </a><a name=\"hcch-vacd-basic-immunization-vs\"> </a><a name=\"ch-vacd-basic-immunization-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html\"><code>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-dtpa\">bi-dtpa</a></td><td>Received basic immunization against DTPa in childhood.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-polio\">bi-polio</a></td><td>Received basic immunization against poliomyelitis in childhood.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-fsme\">bi-fsme</a></td><td>Received basic immunization against tick-borne encephalitis.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-hib\">bi-hib</a></td><td>Received basic immunization against Haemophilus influenzae type b.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-hpv\">bi-hpv</a></td><td>Received basic immunization against Human papillomavirus.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-variz\">bi-variz</a></td><td>Received basic immunization against varicella.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-mmr\">bi-mmr</a></td><td>Received basic immunization against Measles, Mumps, Rubella.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-pneumo\">bi-pneumo</a></td><td>Received basic immunization against Pneumococcal infectious disease.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-hepb\">bi-hepb</a></td><td>Received basic immunization against viral hepatitis type B</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-hepa\">bi-hepa</a></td><td>Received basic immunization against viral hepatitis type A</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-herpzos\">bi-herpzos</a></td><td>Received basic immunization against herpes zoster</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-mening\">bi-mening</a></td><td>Received basic immunization against meningococcal infectious disease.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-rabi\">bi-rabi</a></td><td>Received basic immunization against rabies</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (Schweiz) (German (Switzerland), de)</b></td><td><b>English (United States) (English (United States), en)</b></td><td><b>French (Switzerland) (fr)</b></td><td><b>Italian (Switzerland) (it)</b></td><td><b>rm</b></td></tr><tr><td>bi-dtpa</td><td>Grundimmunisierung gegen DTPa in der Kindheit erhalten.</td><td>Received basic immunization against DTPa in childhood.</td><td>Vaccination de base contre le DTPa effectuée durant l’enfance.</td><td>Completamento dell’immunizzazione di base contro DTPa durante l’infanzia.</td><td>Ha obtegnì tut las vaccinaziuns cunter la DTPa durant l'uffanza.</td></tr><tr><td>bi-polio</td><td>Grundimmunisierung gegen Poliomyelitis in der Kindheit erhalten.</td><td>Received basic immunization against poliomyelitis in childhood.</td><td>Vaccination de base contre la poliomyélite effectuée durant l’enfance.</td><td>Completamento dell’immunizzazione di base contro la poliomielite durante l’infanzia.</td><td>Ha obtegnì tut las vaccinaziuns cunter la poliomielitis durant l'uffanza.</td></tr><tr><td>bi-fsme</td><td>Grundimmunisierung gegen die Frühsommer-Meningoenzephalitis erhalten.</td><td>Received basic immunization against tick-borne encephalitis.</td><td>Vaccination de base contre la méningo-encéphalite verno-estivale effectuée.</td><td>Completamento dell’immunizzazione di base contro la meningoencefalite verno-estiva.</td><td>Grundimmunisierung gegen die Frühsommer-Meningoenzephalitis erhalten.</td></tr><tr><td>bi-hib</td><td>Grundimmunisierung gegen Hämophilus influenzae Typ b erhalten.</td><td>Received basic immunization against Haemophilus influenzae type b.</td><td>Vaccination de base contre l’Haemophilus influenzae de type b effectuée.</td><td>Completamento dell’immunizzazione di base contro l’Haemophilus influenzae di tipo b.</td><td>Grundimmunisierung gegen Hämophilus influenzae Typ b erhalten.</td></tr><tr><td>bi-hpv</td><td>Grundimmunisierung gegen Humanes Papillomavirus erhalten.</td><td>Received basic immunization against Human papillomavirus.</td><td>Vaccination de base contre le papillomavirus humain effectuée.</td><td>Completamento dell’immunizzazione di base contro i papillomavirus umani.</td><td>Grundimmunisierung gegen Humanes Papillomavirus erhalten.</td></tr><tr><td>bi-variz</td><td>Grundimmunisierung gegen Windpocken erhalten.</td><td>Received basic immunization against varicella.</td><td>Vaccination de base contre la varicelle effectuée.</td><td>Completamento dell’immunizzazione di base contro la varicella.</td><td>Grundimmunisierung gegen Windpocken erhalten.</td></tr><tr><td>bi-mmr</td><td>Grundimmunisierung gegen Masern, Mumps, Röteln erhalten.</td><td>Received basic immunization against .</td><td>Vaccination de base contre la rougeole, les oreillons et la rubéole effectuée.</td><td>Completamento dell’immunizzazione di base contro morbillo, orecchioni e rosolia.</td><td>Grundimmunisierung gegen Masern, Mumps, Röteln erhalten.</td></tr><tr><td>bi-pneumo</td><td>Grundimmunisierung gegen Pneumokokken-Erkrankung erhalten.</td><td>Received basic immunization against Pneumococcal infectious disease.</td><td>Vaccination de base contre la maladie à pneumocoques effectuée.</td><td>Completamento dell’immunizzazione di base contro la malattia invasiva da pneumococchi.</td><td>Grundimmunisierung gegen Pneumokokken-Erkrankung erhalten.</td></tr><tr><td>bi-hepb</td><td>Grundimmunisierung gegen virale Hepatitis Typ B erhalten.</td><td>Received basic immunization against viral hepatitis type B.</td><td>Vaccination de base contre l’hépatite virale de type B.</td><td>Completamento dell’immunizzazione di base contro l’epatite virale B.</td><td>Grundimmunisierung gegen virale Hepatitis Typ B erhalten.</td></tr><tr><td>bi-hepa</td><td>Grundimmunisierung gegen virale Hepatitis Typ A erhalten.</td><td>Received basic immunization against viral hepatitis type A.</td><td>Vaccination de base contre l’hépatite virale de type A effectuée.</td><td>Completamento dell’immunizzazione di base contro l’epatite virale A.</td><td>Grundimmunisierung gegen virale Hepatitis Typ A erhalten.</td></tr><tr><td>bi-herpzos</td><td>Grundimmunisierung gegen Herpes zoster erhalten.</td><td>Received basic immunization against herpes zoster.</td><td>Vaccination de base contre l’herpès zoster effectuée.</td><td>Completamento dell’immunizzazione di base contro l’herpes zoster.</td><td>Grundimmunisierung gegen Herpes zoster erhalten.</td></tr><tr><td>bi-mening</td><td>Grundimmunisierung gegen Meningokokken-Erkrankung erhalten.</td><td>Received basic immunization against meningococcal infectious disease.</td><td>Vaccination de base contre la maladie à méningocoque effectuée.</td><td>Completamento dell’immunizzazione di base contro la malattia invasiva da meningococchi.</td><td>Grundimmunisierung gegen Meningokokken-Erkrankung erhalten.</td></tr><tr><td>bi-rabi</td><td>Grundimmunisierung gegen Tollwut erhalten.</td><td>Received basic immunization against rabies.</td><td>Vaccination de base contre la rage effectuée.</td><td>Completamento dell’immunizzazione di base contro la rabbia.</td><td>Grundimmunisierung gegen Tollwut erhalten.</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-basic-immunization-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "6.0.0-ballot-ci-build"] ; # 
+  fhir:name [ fhir:v "BasicImmunizationCode"] ; # 
+  fhir:title [ fhir:v "Basic Immunization Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-07T07:26:19+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Switzerland"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Switzerland" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7.ch/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The codes for declaring basic immunization."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CHE" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "CC0-1.0"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "bi-dtpa" ] ;
+         fhir:display [ fhir:v "Received basic immunization against DTPa in childhood." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen DTPa in der Kindheit erhalten." ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Vaccination de base contre le DTPa effectuée durant l’enfance." ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Completamento dell’immunizzazione di base contro DTPa durante l’infanzia." ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Ha obtegnì tut las vaccinaziuns cunter la DTPa durant l'uffanza." ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Received basic immunization against DTPa in childhood." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "bi-polio" ] ;
+         fhir:display [ fhir:v "Received basic immunization against poliomyelitis in childhood." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Poliomyelitis in der Kindheit erhalten." ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Vaccination de base contre la poliomyélite effectuée durant l’enfance." ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Completamento dell’immunizzazione di base contro la poliomielite durante l’infanzia." ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Ha obtegnì tut las vaccinaziuns cunter la poliomielitis durant l'uffanza." ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Received basic immunization against poliomyelitis in childhood." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "bi-fsme" ] ;
+         fhir:display [ fhir:v "Received basic immunization against tick-borne encephalitis." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen die Frühsommer-Meningoenzephalitis erhalten." ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Vaccination de base contre la méningo-encéphalite verno-estivale effectuée." ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Completamento dell’immunizzazione di base contro la meningoencefalite verno-estiva." ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen die Frühsommer-Meningoenzephalitis erhalten." ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Received basic immunization against tick-borne encephalitis." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "bi-hib" ] ;
+         fhir:display [ fhir:v "Received basic immunization against Haemophilus influenzae type b." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Hämophilus influenzae Typ b erhalten." ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Vaccination de base contre l’Haemophilus influenzae de type b effectuée." ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Completamento dell’immunizzazione di base contro l’Haemophilus influenzae di tipo b." ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Hämophilus influenzae Typ b erhalten." ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Received basic immunization against Haemophilus influenzae type b." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "bi-hpv" ] ;
+         fhir:display [ fhir:v "Received basic immunization against Human papillomavirus." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Humanes Papillomavirus erhalten." ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Vaccination de base contre le papillomavirus humain effectuée." ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Completamento dell’immunizzazione di base contro i papillomavirus umani." ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Humanes Papillomavirus erhalten." ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Received basic immunization against Human papillomavirus." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "bi-variz" ] ;
+         fhir:display [ fhir:v "Received basic immunization against varicella." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Windpocken erhalten." ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Vaccination de base contre la varicelle effectuée." ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Completamento dell’immunizzazione di base contro la varicella." ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Windpocken erhalten." ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Received basic immunization against varicella." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "bi-mmr" ] ;
+         fhir:display [ fhir:v "Received basic immunization against Measles, Mumps, Rubella." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Masern, Mumps, Röteln erhalten." ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Vaccination de base contre la rougeole, les oreillons et la rubéole effectuée." ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Completamento dell’immunizzazione di base contro morbillo, orecchioni e rosolia." ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Masern, Mumps, Röteln erhalten." ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Received basic immunization against ." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "bi-pneumo" ] ;
+         fhir:display [ fhir:v "Received basic immunization against Pneumococcal infectious disease." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Pneumokokken-Erkrankung erhalten." ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Vaccination de base contre la maladie à pneumocoques effectuée." ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Completamento dell’immunizzazione di base contro la malattia invasiva da pneumococchi." ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Pneumokokken-Erkrankung erhalten." ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Received basic immunization against Pneumococcal infectious disease." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "bi-hepb" ] ;
+         fhir:display [ fhir:v "Received basic immunization against viral hepatitis type B" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen virale Hepatitis Typ B erhalten." ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Vaccination de base contre l’hépatite virale de type B." ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Completamento dell’immunizzazione di base contro l’epatite virale B." ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen virale Hepatitis Typ B erhalten." ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Received basic immunization against viral hepatitis type B." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "bi-hepa" ] ;
+         fhir:display [ fhir:v "Received basic immunization against viral hepatitis type A" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen virale Hepatitis Typ A erhalten." ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Vaccination de base contre l’hépatite virale de type A effectuée." ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Completamento dell’immunizzazione di base contro l’epatite virale A." ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen virale Hepatitis Typ A erhalten." ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Received basic immunization against viral hepatitis type A." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "bi-herpzos" ] ;
+         fhir:display [ fhir:v "Received basic immunization against herpes zoster" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Herpes zoster erhalten." ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Vaccination de base contre l’herpès zoster effectuée." ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Completamento dell’immunizzazione di base contro l’herpes zoster." ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Herpes zoster erhalten." ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Received basic immunization against herpes zoster." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "bi-mening" ] ;
+         fhir:display [ fhir:v "Received basic immunization against meningococcal infectious disease." ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Meningokokken-Erkrankung erhalten." ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Vaccination de base contre la maladie à méningocoque effectuée." ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Completamento dell’immunizzazione di base contro la malattia invasiva da meningococchi." ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Meningokokken-Erkrankung erhalten." ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Received basic immunization against meningococcal infectious disease." ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "bi-rabi" ] ;
+         fhir:display [ fhir:v "Received basic immunization against rabies" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Tollwut erhalten." ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Vaccination de base contre la rage effectuée." ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Completamento dell’immunizzazione di base contro la rabbia." ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Grundimmunisierung gegen Tollwut erhalten." ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Received basic immunization against rabies." ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="TCD02-UNDILL1-2"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-pastillnesses"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition TCD02-UNDILL1-2</b></p><a name="TCD02-UNDILL1-2"> </a><a name="hcTCD02-UNDILL1-2"> </a><a name="TCD02-UNDILL1-2-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ch-vacd-pastillnesses.html">CH VACD Past Illness</a></p></div><blockquote><p><b>CH VACD Extension Merging Conflict Entry Reference</b></p><ul><li>entry: <a href="Condition-TCB02-UNDILL1-2.html">Condition Varicella (disorder)</a></li><li>conflict: duplicate</li></ul></blockquote><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.2</code>/e82fe9ba-40f5-4d3d-beb4-51853b90e980</p><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}">Resolved</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 38907003}">Varicella (disorder)</span></p><p><b>subject</b>: <a href="Patient-TC-patient.html">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>onset</b>: 2015-05-30</p><p><b>recordedDate</b>: 2015-05-30</p><p><b>recorder</b>: <a href="PractitionerRole-TC-HCP2-ORG2-ROLE-author.html">PractitionerRole</a></p></div>
+  </text>
+  <extension url="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-merging-conflict-entry-reference">
+    <extension url="entry">
+      <valueReference>
+        <reference value="Condition/TCB02-UNDILL1-2"/>
+      </valueReference>
+    </extension>
+    <extension url="conflict">
+      <valueCode value="duplicate"/>
+    </extension>
+  </extension>
+  <identifier>
+    <system value="urn:oid:2.16.756.5.30.1.402.1.3.1.1.2"/>
+    <value value="e82fe9ba-40f5-4d3d-beb4-51853b90e980"/>
+  </identifier>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="resolved"/>
+      <display value="Resolved"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+  </verificationStatus>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="38907003"/>
+      <display value="Varicella (disorder)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/TC-patient"/>
+  </subject>
+  <onsetDateTime value="2015-05-30"/>
+  <recordedDate value="2015-05-30"/>
+  <recorder>
+    <reference value="PractitionerRole/TC-HCP2-ORG2-ROLE-author"/>
+  </recorder>
+</Condition>

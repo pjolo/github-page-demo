@@ -1,0 +1,67 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "83b40197-8873-4b2e-a9fd-813f4a7e06b6-135",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/83b40197-8873-4b2e-a9fd-813f4a7e06b6-135",
+  "name" : "IntersectionLaboratorySerologyImmunizationAndLaboratorySerologyImmunization",
+  "title" : "Intersection of Laboratory Serology for Immunization And Laboratory Serology for Immunization",
+  "status" : "active",
+  "date" : "2025-05-07T07:31:23+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CHE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "22602-7",
+        "display" : "Varicella zoster virus IgG Ab [Titer] in Serum"
+      },
+      {
+        "code" : "22502-9",
+        "display" : "Measles virus IgG Ab [Titer] in Serum"
+      },
+      {
+        "code" : "41763-4",
+        "display" : "Rubella virus IgG Ab [Titer] in Serum"
+      },
+      {
+        "code" : "22313-1",
+        "display" : "Hepatitis A virus IgG Ab [Units/volume] in SerumActive"
+      },
+      {
+        "code" : "16935-9",
+        "display" : "Hepatitis B virus surface Ab [Units/volume] in Serum"
+      },
+      {
+        "code" : "26061-2",
+        "display" : "European tick borne encephalitis virus Ab [Titer] in Serum"
+      },
+      {
+        "code" : "6589-6",
+        "display" : "Yellow fever virus Ab [Titer] in Serum by Immunofluorescence"
+      },
+      {
+        "code" : "58770-9",
+        "display" : "Clostridium tetani toxoid IgG Ab [Units/volume] in Serum by Immunofluorescence"
+      },
+      {
+        "code" : "94505-5",
+        "display" : "SARS-CoV-2 (COVID-19) IgG Ab [Units/volume] in Serum or Plasma by Immunoassay"
+      },
+      {
+        "code" : "14128-3",
+        "display" : "Rabies virus Ab [Titer] in Serum"
+      },
+      {
+        "code" : "22755-3",
+        "display" : "Haemophilus influenzae B Ab [Mass/volume] in Serum"
+      },
+      {
+        "code" : "25531-5",
+        "display" : "Streptococcus pneumoniae Ab [Mass/volume] in Serum"
+      }]
+    }]
+  }
+}

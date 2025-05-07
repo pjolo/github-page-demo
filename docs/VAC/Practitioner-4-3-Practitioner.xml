@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="4-3-Practitioner"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner 4-3-Practitioner</b></p><a name="4-3-Practitioner"> </a><a name="hc4-3-Practitioner"> </a><a name="4-3-Practitioner-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitioner.html">CH Core Practitioner</a></p></div><p><b>identifier</b>: <a href="https://www.gs1.org/standards/id-keys/gln" title="Global Location Number">GLN</a>/7601000000316</p><p><b>active</b>: true</p><p><b>name</b>: Max Muster </p><p><b>address</b>: Mustergasse 99 Beispielen SG 9876 CH </p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.51.1.3"/>
+    <value value="7601000000316"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Muster"/>
+    <given value="Max"/>
+  </name>
+  <address>
+    <line value="Mustergasse 99"/>
+    <city value="Beispielen"/>
+    <state value="SG"/>
+    <postalCode value="9876"/>
+    <country value="CH"/>
+  </address>
+</Practitioner>

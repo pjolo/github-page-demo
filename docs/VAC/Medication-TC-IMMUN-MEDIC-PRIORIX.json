@@ -1,0 +1,61 @@
+{
+  "resourceType" : "Medication",
+  "id" : "TC-IMMUN-MEDIC-PRIORIX",
+  "meta" : {
+    "profile" : ["http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medication-for-immunization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication TC-IMMUN-MEDIC-PRIORIX</b></p><a name=\"TC-IMMUN-MEDIC-PRIORIX\"> </a><a name=\"hcTC-IMMUN-MEDIC-PRIORIX\"> </a><a name=\"TC-IMMUN-MEDIC-PRIORIX-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-medication-for-immunization.html\">CH VACD Medication For Immunization</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/47fd8496-cadb-4546-9533-5fad5127a1d5</p><p><b>code</b>: <span title=\"Codes:{urn:oid:2.51.1.1 7680006150010}\">PRIORIX Trockensub c Solv</span></p><p><b>status</b>: Active</p><p><b>manufacturer</b>: <a href=\"Organization-TC-ORG-GSK.html\">Organization GlaxoSmithKline AG</a></p><p><b>form</b>: <span title=\"Codes:{urn:oid:0.4.0.127.0.16.1.1.2.1 11202000}\">Suspension for injection</span></p><p><b>amount</b>: 0.5 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span>/1 Syringe (unit of presentation)<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code733020007 = 'Syringe')</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 106181007}\">Immunologic substance (substance)</span></td></tr></table><h3>Batches</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>LotNumber</b></td></tr><tr><td style=\"display: none\">*</td><td>A69FE297A</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:2.16.756.5.30.1.402.1.3.1.1.1",
+    "value" : "47fd8496-cadb-4546-9533-5fad5127a1d5"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "urn:oid:2.51.1.1",
+      "code" : "7680006150010",
+      "display" : "PRIORIX Trockensub c Solv"
+    }],
+    "text" : "PRIORIX Trockensub c Solv"
+  },
+  "status" : "active",
+  "manufacturer" : {
+    "reference" : "Organization/TC-ORG-GSK"
+  },
+  "form" : {
+    "coding" : [{
+      "system" : "urn:oid:0.4.0.127.0.16.1.1.2.1",
+      "code" : "11202000",
+      "display" : "Suspension for injection"
+    }]
+  },
+  "amount" : {
+    "numerator" : {
+      "value" : 0.5,
+      "unit" : "milliliter",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mL"
+    },
+    "denominator" : {
+      "value" : 1,
+      "unit" : "Syringe (unit of presentation)",
+      "system" : "http://snomed.info/sct",
+      "code" : "733020007"
+    }
+  },
+  "ingredient" : [{
+    "itemCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "106181007",
+        "display" : "Immunologic substance (substance)"
+      }],
+      "text" : "Immunologic substance (substance)"
+    }
+  }],
+  "batch" : {
+    "lotNumber" : "A69FE297A"
+  }
+}

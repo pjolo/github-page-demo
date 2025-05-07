@@ -1,0 +1,31 @@
+{
+  "resourceType" : "Location",
+  "id" : "TC-Device-Aggregator-Location",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location TC-Device-Aggregator-Location</b></p><a name=\"TC-Device-Aggregator-Location\"> </a><a name=\"hcTC-Device-Aggregator-Location\"> </a><a name=\"TC-Device-Aggregator-Location-en-US\"> </a><p><b>status</b>: Active</p><p><b>telecom</b>: ph: tel:+41.56.299.55.22(Work), <a href=\"mailto:mailto:resultate@labor-messenalles.ch\">mailto:resultate@labor-messenalles.ch</a>, <a href=\"http://www.labor-messenalles.ch\">http://www.labor-messenalles.ch</a></p><p><b>address</b>: Messweg 1 Wissen ZG 6310 CH </p></div>"
+  },
+  "status" : "active",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "tel:+41.56.299.55.22",
+    "use" : "work"
+  },
+  {
+    "system" : "email",
+    "value" : "mailto:resultate@labor-messenalles.ch",
+    "use" : "work"
+  },
+  {
+    "system" : "url",
+    "value" : "http://www.labor-messenalles.ch",
+    "use" : "work"
+  }],
+  "address" : {
+    "line" : ["Messweg 1"],
+    "city" : "Wissen",
+    "state" : "ZG",
+    "postalCode" : "6310",
+    "country" : "CH"
+  }
+}

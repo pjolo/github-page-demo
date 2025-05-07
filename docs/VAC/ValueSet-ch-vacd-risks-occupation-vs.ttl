@@ -1,0 +1,202 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-occupation-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ch-vacd-risks-occupation-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ch-vacd-risks-occupation-vs</b></p><a name=\"ch-vacd-risks-occupation-vs\"> </a><a name=\"hcch-vacd-risks-occupation-vs\"> </a><a name=\"ch-vacd-risks-occupation-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/373068000\">373068000</a></td><td>Undetermined (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/61246008\">61246008</a></td><td>Laboratory medicine specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159653008\">159653008</a></td><td>Trainee - armed forces (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/160157004\">160157004</a></td><td>Sewerman (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/265940000\">265940000</a></td><td>Animal health occupation (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1186914001\">1186914001</a></td><td>Intellectual disability nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/223366009\">223366009</a></td><td>Healthcare professional (occupation)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ch-vacd-exposure-risks-cs.html\"><code>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-ch-vacd-exposure-risks-cs.html#ch-vacd-exposure-risks-cs-100002\">100002</a></td><td>Social workers, prison staff, police with frequent contact with drug users</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (Schweiz) (German (Switzerland), de)</b></td><td><b>English (United States) (English (United States), en)</b></td><td><b>French (Switzerland) (fr)</b></td><td><b>Italian (Switzerland) (it)</b></td><td><b>rm</b></td></tr><tr><td>373068000</td><td>Nicht bekannt</td><td>Undetermined (qualifier value)</td><td>Indéterminé</td><td>Indeterminato</td><td>Nunenconuschent</td></tr><tr><td>61246008</td><td>Spezialist / Spezialistin für Labormedizin</td><td>Laboratory medicine specialist (occupation)</td><td>spécialiste en médecine de laboratoire</td><td>specialista in medicina di laboratorio</td><td>spezialista u spezialist per medischina da labor</td></tr><tr><td>159653008</td><td>Rekrut / Rekrutin</td><td>Trainee - armed forces (occupation)</td><td>recrue</td><td>recluta</td><td>recruta u recrut</td></tr><tr><td>160157004</td><td>Kanalisationsarbeiter / Kanalisationsarbeiterin</td><td>Sewerman (occupation)</td><td>agent d'entretien des canalisations</td><td>persona addetta alla manutenzione delle fognature</td><td>lavuranta u lavurant da chanalisaziun</td></tr><tr><td>265940000</td><td>Beschäftigt im Veterinärwesen</td><td>Animal health occupation (occupation)</td><td>profession en santé animale</td><td>professione in ambito veterinario</td><td>occupada u occupà en ils fatgs veterinars</td></tr><tr><td>1186914001</td><td>Betreuungsperson von geistig Behinderten</td><td>Intellectual disability nurse (occupation)</td><td>auxiliaire de vie de personnes vivant avec un handicap mental</td><td>persona che assiste disabili mentali</td><td>persuna che assitsa persunas cun impediments spiertals</td></tr><tr><td>223366009</td><td>Gesundheitsfachperson</td><td>Healthcare professional (occupation)</td><td>professionnel de la santé</td><td>professionista della salute</td><td>persuna spezialisada dal sectur da sanadad</td></tr><tr><td>100002</td><td>Sozialarbeiter, Gefängnispersonal, Polizei mit häufigem Kontakt zu Drogenkonsumenten</td><td>Social workers, prison staff, police with frequent contact with drug users</td><td>Travailleurs sociaux, personnel des prisons et de la police en contact fréquent avec des consommateurs de drogues</td><td>Social workers, prison staff, police with frequent contact with drug users</td><td>Social workers, prison staff, police with frequent contact with drug users</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-occupation-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "6.0.0-ballot-ci-build"] ; # 
+  fhir:name [ fhir:v "SwissOccupationRisksForImmunizations"] ; # 
+  fhir:title [ fhir:v "Swiss Occupation Risks For Immunizations"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-07T07:26:19+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Switzerland"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Switzerland" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7.ch/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The occupation exposition risks used in Switzerland."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CHE" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "CC0-1.0"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "373068000" ] ;
+         fhir:display [ fhir:v "Undetermined (qualifier value)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Nicht bekannt" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Indéterminé" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Indeterminato" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Nunenconuschent" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Undetermined (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "61246008" ] ;
+         fhir:display [ fhir:v "Laboratory medicine specialist (occupation)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Spezialist / Spezialistin für Labormedizin" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "spécialiste en médecine de laboratoire" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "specialista in medicina di laboratorio" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "spezialista u spezialist per medischina da labor" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Laboratory medicine specialist (occupation)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "159653008" ] ;
+         fhir:display [ fhir:v "Trainee - armed forces (occupation)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Rekrut / Rekrutin" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "recrue" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "recluta" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "recruta u recrut" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Trainee - armed forces (occupation)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "160157004" ] ;
+         fhir:display [ fhir:v "Sewerman (occupation)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Kanalisationsarbeiter / Kanalisationsarbeiterin" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "agent d'entretien des canalisations" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "persona addetta alla manutenzione delle fognature" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "lavuranta u lavurant da chanalisaziun" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Sewerman (occupation)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "265940000" ] ;
+         fhir:display [ fhir:v "Animal health occupation (occupation)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Beschäftigt im Veterinärwesen" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "profession en santé animale" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "professione in ambito veterinario" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "occupada u occupà en ils fatgs veterinars" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Animal health occupation (occupation)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1186914001" ] ;
+         fhir:display [ fhir:v "Intellectual disability nurse (occupation)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Betreuungsperson von geistig Behinderten" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "auxiliaire de vie de personnes vivant avec un handicap mental" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "persona che assiste disabili mentali" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "persuna che assitsa persunas cun impediments spiertals" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Intellectual disability nurse (occupation)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "223366009" ] ;
+         fhir:display [ fhir:v "Healthcare professional (occupation)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Gesundheitsfachperson" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "professionnel de la santé" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "professionista della salute" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "persuna spezialisada dal sectur da sanadad" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Healthcare professional (occupation)" ]
+         ] )
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "100002" ] ;
+         fhir:display [ fhir:v "Social workers, prison staff, police with frequent contact with drug users" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Sozialarbeiter, Gefängnispersonal, Polizei mit häufigem Kontakt zu Drogenkonsumenten" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Travailleurs sociaux, personnel des prisons et de la police en contact fréquent avec des consommateurs de drogues" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Social workers, prison staff, police with frequent contact with drug users" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Social workers, prison staff, police with frequent contact with drug users" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Social workers, prison staff, police with frequent contact with drug users" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

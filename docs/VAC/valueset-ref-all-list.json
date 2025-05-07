@@ -1,0 +1,1238 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.ch/ig/ch-allergyintolerance/ValueSet/CHAllergyIntoleranceConditionValueSet",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "CHAllergyIntoleranceConditionValueSet",
+      "title" : "CH AllergyIntolerance Condition",
+      "description" : "CH AllergyIntolerance condition value set. This value set includes codes from SNOMED Clinical Terms®  values  for values from the manifestation of reactions value set PLUS findings for the documentation of allergy or intolerances in conditions as problem-list or as encounter-diagnosis as well as its absence (no know allergies)",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-basic-immunization.html" : "CH VACD Basic Immunization",
+      "StructureDefinition-ch-vacd-condition.html" : "CH VACD Condition Profile (Abstract)",
+      "StructureDefinition-ch-vacd-pastillnesses.html" : "CH VACD Past Illness",
+      "StructureDefinition-ch-vacd-medical-problems.html" : "CH VACD Medical Problems"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-allergyintolerance/ValueSet/CHAllergyIntoleranceReactionManifestationValueSet",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "CHAllergyIntoleranceReactionManifestationValueSet",
+      "title" : "CH AllergyIntolerance Reaction Manifestation",
+      "description" : "CH AllergyIntolerance reaction manifestation value set, including codes values according to the Allergy Reaction (GPS) - IPS value set from SNOMED Clinical Terms®  for the documentation of manifestation of allergy or intolerance reactions",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-allergyintolerances.html" : "CH VACD AllergyIntolerance"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-allergyintolerance/ValueSet/CHAllergyIntoleranceReactionSubstanceValueSet",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "CHAllergyIntoleranceReactionSubstanceValueSet",
+      "title" : "CH AllergyIntolerance Reaction Substance",
+      "description" : "CH AllergyIntolerance reation substance value set. This value set includes codes from SNOMED Clinical Terms® substances for the documentation of substancies of allergy or intolerance reactions",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-allergyintolerances.html" : "CH VACD AllergyIntolerance"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-term/ValueSet/ActivePharmaceuticalIngredient",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "ActivePharmaceuticalIngredient",
+      "title" : "ActivePharmaceuticalIngredient",
+      "description" : "ActivePharmaceuticalIngredient",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.756.5.30.1.1.11.82"],
+      "sources" : ["2.16.756.5.30.1.1.11.82"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-medication-for-immunization.html" : "CH VACD Medication For Immunization"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.formatCode",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "DocumentEntryFormatCode",
+      "title" : "DocumentEntry.formatCode",
+      "description" : "Document format as per Annex; EPRO-FDHA.       \t\tThis unambiguous code defines the format of the XDS document. Together with the mimetype, this should provide the potential consumer with sufficient information as to whether they are in a position to process the document.",
+      "systems" : [
+        "urn:oid:2.16.756.5.30.1.127.3.10.10",
+        "urn:oid:1.2.840.10008.2.6.1",
+        "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"
+      ],
+      "oids" : ["2.16.756.5.30.1.127.3.10.1.9"],
+      "sources" : ["2.16.756.5.30.1.127.3.10.1.9"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-composition-vaccination-record.html" : "CH VACD VaccinationRecord Composition",
+      "StructureDefinition-ch-vacd-composition-immunization-administration.html" : "CH VACD Immunization Administration Composition"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.typeCode",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "DocumentEntryTypeCode",
+      "title" : "DocumentEntry.typeCode",
+      "description" : "Type of document as per Annex 3 EPRO-FDHA.\r\n\n\r\nThe code defines a document’s type (e.g. discharge report, laboratory report). Each document type should be assigned to precisely one document class.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.756.5.30.1.127.3.10.1.27"],
+      "sources" : ["2.16.756.5.30.1.127.3.10.1.27"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-composition-vaccination-record.html" : "CH VACD VaccinationRecord Composition",
+      "StructureDefinition-ch-vacd-composition-immunization-administration.html" : "CH VACD Immunization Administration Composition"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-term/ValueSet/ch-vacd-swissmedic-imunglobuline-vs",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "SwissImunglobuline",
+      "title" : "CH VACD Swissmedic Authorized Immunglobuline Codes",
+      "description" : "The list of ATC J06B – Immunglobuline codes swissmedic has given an autorization number.",
+      "systems" : [
+        "http://fhir.ch/ig/ch-term/CodeSystem/ch-vacd-swissmedic-imunglobuline-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization.html" : "CH VACD Immunization"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-term/ValueSet/condition-category",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Additional codes for condition category.",
+      "systems" : [
+        "http://fhir.ch/ig/ch-etoc/CodeSystem/ch-etoc-conditioncategory"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-basic-immunization.html" : "CH VACD Basic Immunization",
+      "StructureDefinition-ch-vacd-condition.html" : "CH VACD Condition Profile (Abstract)",
+      "StructureDefinition-ch-vacd-pastillnesses.html" : "CH VACD Past Illness",
+      "StructureDefinition-ch-vacd-medical-problems.html" : "CH VACD Medical Problems"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-term/ValueSet/edqm-pharmaceuticaldoseform",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "PharmaceuticalDoseFormEDQM",
+      "title" : "EDQM - Pharmaceutical Dose Form",
+      "description" : "Valueset Pharmaceutical Dose Form from EDQM, PDF, export20.5.2021, see https://standardterms.edqm.eu/#",
+      "systems" : ["urn:oid:0.4.0.127.0.16.1.1.2.1"],
+      "oids" : ["2.16.756.5.30.1.1.11.3"],
+      "sources" : ["2.16.756.5.30.1.1.11.3"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-medication-for-immunization.html" : "CH VACD Medication For Immunization"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-basic-immunization-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "BasicImmunizationCode",
+      "title" : "Basic Immunization Codes",
+      "description" : "The codes for declaring basic immunization.",
+      "systems" : [
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-basic-immunization.html" : "CH VACD Basic Immunization"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-ch-vaccination-plan-immunizations-vs",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "SwissVaccinationPlanImmunizations",
+      "title" : "CH VACD Swiss Vaccination Plan Immunizations",
+      "description" : "Immunization procedures for recommendations according to the vaccination plan.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization-recommendation.html" : "CH VACD Immunization Recommendations"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-entry-conflict-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "CHVACDEntryConflictCode",
+      "title" : "Entry Conflict Codes",
+      "description" : "The codes for declaring document entry conflicts",
+      "systems" : [
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-entry-conflict-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-ext-merging-conflict-entry-reference.html" : "CH VACD Extension Merging Conflict Entry Reference"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-immunization-allergyintolerances-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "draft",
+      "name" : "AllergiesAndIntolerancesForImmunization",
+      "title" : "Allergies and Intolerance values for Immunization",
+      "description" : "The allergies and adverse reactions which have an influence on the immunization recommendations.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-allergyintolerances.html" : "CH VACD AllergyIntolerance"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-laboratory-serology-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "LaboratorySerologyImmunization",
+      "title" : "Laboratory Serology for Immunization",
+      "description" : "Laboratory Serology for immunization",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-laboratory-serology.html" : "CH VACD Laboratory And Serology"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-recommendation-categories-vs",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "SwissImmunizationRecommendationCategories",
+      "title" : "CH VACD Recommendation Categories for Immunizations",
+      "description" : "Immunization recommendation categories.",
+      "systems" : [
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-categories-cs",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization-recommendation.html" : "CH VACD Immunization Recommendations"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-recommendation-forecast-status-vs",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "SwissRecommendationForecastStatus",
+      "title" : "CH VACD Swiss Recommendation Forecast Status",
+      "description" : "Immunization recommendation forecast status values.",
+      "systems" : [
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-forecast-status-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization-recommendation.html" : "CH VACD Immunization Recommendations"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-medical-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "SwissMedicalRisksForImmunizations",
+      "title" : "Swiss Medical Risks For Immunizations",
+      "description" : "The medical risks used in Switzerland.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ValueSet-ch-vacd-risks-vs.html" : "Swiss Risks For Immunizations"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-occupation-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "SwissOccupationRisksForImmunizations",
+      "title" : "Swiss Occupation Risks For Immunizations",
+      "description" : "The occupation exposition risks used in Switzerland.",
+      "systems" : [
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "ValueSet-ch-vacd-risks-vs.html" : "Swiss Risks For Immunizations"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-preillness-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "SwissPreillnessRisksForImmunizations",
+      "title" : "Swiss Preillness Risks For Immunizations",
+      "description" : "The preillness risks used in Switzerland.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ValueSet-ch-vacd-risks-vs.html" : "Swiss Risks For Immunizations"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-social-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "SwissSocialRisksForImmunizations",
+      "title" : "Swiss Social Risks For Immunizations",
+      "description" : "The social exposition risks used in Switzerland.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ValueSet-ch-vacd-risks-vs.html" : "Swiss Risks For Immunizations"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "SwissRisksForImmunizations",
+      "title" : "Swiss Risks For Immunizations",
+      "description" : "The medical and exposition risks used in Switzerland.",
+      "systems" : [
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-medical-problems.html" : "CH VACD Medical Problems"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-route-of-administration-vs",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "RouteOfAdministrationImmunization",
+      "title" : "CH VACD Route of Administration for Immunization",
+      "description" : "The route of immunization administration codes. This list is only a sublist of the List used for eMedication.",
+      "systems" : ["http://standardterms.edqm.eu"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization.html" : "CH VACD Immunization"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-targetdiseasesandillnessesundergoneforimmunization-vs",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "ChVacdTargetDiseasesAndIllnessesUndergoneForImmunization",
+      "title" : "CH VACD Target disease and illnesses undergone for immunization",
+      "description" : "This valueset contains all entries defining target deseases or illnesses undergone for immunization reasons.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization.html" : "CH VACD Immunization",
+      "StructureDefinition-ch-vacd-pastillnesses.html" : "CH VACD Past Illness",
+      "StructureDefinition-ch-vacd-immunization-recommendation.html" : "CH VACD Immunization Recommendations"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-vaccines-snomedct-vs",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "SnomedCTForVaccineCode",
+      "title" : "CH VACD Snomed CT for vaccine code",
+      "description" : "The list of vaccine products in Snomed CT list.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization.html" : "CH VACD Immunization"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-vaccines-vs",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "SwissVaccines",
+      "title" : "CH VACD Swissmedic code for vaccine code",
+      "description" : "The list of vaccines available (Swissmedic authorized) or earlier available in Switzerland.",
+      "systems" : [
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-myvaccines-cs",
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization.html" : "CH VACD Immunization"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-verification-status-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "CHVACDVerificationStatusVS",
+      "title" : "Verification Status Codes",
+      "description" : "Definition the verification status codes for the extension ch-vacd-ext-verification-status.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-ext-verification-status.html" : "CH VACD Extension verificationStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCategory",
+      "title" : "AllergyIntoleranceCategory",
+      "description" : "Category of an identified substance associated with allergies or intolerances.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.133"],
+      "sources" : ["2.16.840.1.113883.4.642.3.133"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-allergyintolerances.html" : "CH VACD AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCriticality",
+      "title" : "AllergyIntoleranceCriticality",
+      "description" : "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-criticality"],
+      "oids" : ["2.16.840.1.113883.4.642.3.129"],
+      "sources" : ["2.16.840.1.113883.4.642.3.129"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-allergyintolerances.html" : "CH VACD AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceType",
+      "title" : "AllergyIntoleranceType",
+      "description" : "Identification of the underlying physiological mechanism for a Reaction Risk.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.131"],
+      "sources" : ["2.16.840.1.113883.4.642.3.131"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-allergyintolerances.html" : "CH VACD AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceClinicalStatusCodes",
+      "title" : "AllergyIntolerance Clinical Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1372"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1372"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-allergyintolerances.html" : "CH VACD AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceVerificationStatusCodes",
+      "title" : "AllergyIntolerance Verification Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Verification Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1370"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1370"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-allergyintolerances.html" : "CH VACD AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-basic-immunization.html" : "CH VACD Basic Immunization",
+      "StructureDefinition-ch-vacd-condition.html" : "CH VACD Condition Profile (Abstract)",
+      "StructureDefinition-ch-vacd-laboratory-serology.html" : "CH VACD Laboratory And Serology",
+      "StructureDefinition-ch-vacd-pastillnesses.html" : "CH VACD Past Illness",
+      "StructureDefinition-ch-vacd-medical-problems.html" : "CH VACD Medical Problems"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "systems" : ["http://hl7.org/fhir/bundle-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.620"],
+      "sources" : ["2.16.840.1.113883.4.642.3.620"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-document-vaccination-record.html" : "CH VACD Vaccination Record Document",
+      "StructureDefinition-ch-vacd-recommendation-response-message.html" : "CH VACD Message Immunization Recommendation Response",
+      "StructureDefinition-ch-vacd-recommendation-request-message.html" : "CH VACD Message Immunization Recommendation Request",
+      "StructureDefinition-ch-vacd-document-immunization-administration.html" : "CH VACD Immunization Administration Document"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-attestation-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionAttestationMode",
+      "title" : "CompositionAttestationMode",
+      "description" : "The way in which a person authenticated a composition.",
+      "systems" : ["http://hl7.org/fhir/composition-attestation-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.238"],
+      "sources" : ["2.16.840.1.113883.4.642.3.238"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-composition-vaccination-record.html" : "CH VACD VaccinationRecord Composition",
+      "StructureDefinition-ch-vacd-composition-immunization-administration.html" : "CH VACD Immunization Administration Composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "systems" : ["http://hl7.org/fhir/composition-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.241"],
+      "sources" : ["2.16.840.1.113883.4.642.3.241"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-composition-vaccination-record.html" : "CH VACD VaccinationRecord Composition",
+      "StructureDefinition-ch-vacd-composition-immunization-administration.html" : "CH VACD Immunization Administration Composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.162"],
+      "sources" : ["2.16.840.1.113883.4.642.3.162"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-basic-immunization.html" : "CH VACD Basic Immunization",
+      "StructureDefinition-ch-vacd-condition.html" : "CH VACD Condition Profile (Abstract)",
+      "StructureDefinition-ch-vacd-pastillnesses.html" : "CH VACD Past Illness",
+      "StructureDefinition-ch-vacd-medical-problems.html" : "CH VACD Medical Problems"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.164"],
+      "sources" : ["2.16.840.1.113883.4.642.3.164"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-basic-immunization.html" : "CH VACD Basic Immunization",
+      "StructureDefinition-ch-vacd-condition.html" : "CH VACD Condition Profile (Abstract)",
+      "StructureDefinition-ch-vacd-pastillnesses.html" : "CH VACD Past Illness",
+      "StructureDefinition-ch-vacd-medical-problems.html" : "CH VACD Medical Problems"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-condition.html" : "CH VACD Condition Profile (Abstract)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/DiagnosisSeverity",
+      "title" : "Condition/Diagnosis Severity",
+      "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.168"],
+      "sources" : ["2.16.840.1.113883.4.642.3.168"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-basic-immunization.html" : "CH VACD Basic Immunization",
+      "StructureDefinition-ch-vacd-condition.html" : "CH VACD Condition Profile (Abstract)",
+      "StructureDefinition-ch-vacd-pastillnesses.html" : "CH VACD Past Illness",
+      "StructureDefinition-ch-vacd-medical-problems.html" : "CH VACD Medical Problems"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStage",
+      "title" : "Condition Stage",
+      "description" : "Example value set for stages of cancer and other conditions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.170"],
+      "sources" : ["2.16.840.1.113883.4.642.3.170"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-basic-immunization.html" : "CH VACD Basic Immunization",
+      "StructureDefinition-ch-vacd-condition.html" : "CH VACD Condition Profile (Abstract)",
+      "StructureDefinition-ch-vacd-pastillnesses.html" : "CH VACD Past Illness",
+      "StructureDefinition-ch-vacd-medical-problems.html" : "CH VACD Medical Problems"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStageType",
+      "title" : "Condition Stage Type",
+      "description" : "Example value set for the type of stages of cancer and other conditions",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.171"],
+      "sources" : ["2.16.840.1.113883.4.642.3.171"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-basic-immunization.html" : "CH VACD Basic Immunization",
+      "StructureDefinition-ch-vacd-condition.html" : "CH VACD Condition Profile (Abstract)",
+      "StructureDefinition-ch-vacd-pastillnesses.html" : "CH VACD Past Illness",
+      "StructureDefinition-ch-vacd-medical-problems.html" : "CH VACD Medical Problems"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.166"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-basic-immunization.html" : "CH VACD Basic Immunization",
+      "StructureDefinition-ch-vacd-condition.html" : "CH VACD Condition Profile (Abstract)",
+      "StructureDefinition-ch-vacd-pastillnesses.html" : "CH VACD Past Illness",
+      "StructureDefinition-ch-vacd-medical-problems.html" : "CH VACD Medical Problems"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-laboratory-serology.html" : "CH VACD Laboratory And Serology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/doc-section-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentSectionCodes",
+      "title" : "Document Section Codes",
+      "description" : "Document section codes (LOINC codes used in CCDA sections).",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.237"],
+      "sources" : ["2.16.840.1.113883.4.642.3.237"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-composition-vaccination-record.html" : "CH VACD VaccinationRecord Composition",
+      "StructureDefinition-ch-vacd-composition-immunization-administration.html" : "CH VACD Immunization Administration Composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentRelationshipType",
+      "title" : "DocumentRelationshipType",
+      "description" : "The type of relationship between documents.",
+      "systems" : ["http://hl7.org/fhir/document-relationship-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.244"],
+      "sources" : ["2.16.840.1.113883.4.642.3.244"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-composition-vaccination-record.html" : "CH VACD VaccinationRecord Composition",
+      "StructureDefinition-ch-vacd-composition-immunization-administration.html" : "CH VACD Immunization Administration Composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "systems" : ["http://hl7.org/fhir/http-verb"],
+      "oids" : ["2.16.840.1.113883.4.642.3.624"],
+      "sources" : ["2.16.840.1.113883.4.642.3.624"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-document-vaccination-record.html" : "CH VACD Vaccination Record Document",
+      "StructureDefinition-ch-vacd-recommendation-response-message.html" : "CH VACD Message Immunization Recommendation Response",
+      "StructureDefinition-ch-vacd-recommendation-request-message.html" : "CH VACD Message Immunization Recommendation Request",
+      "StructureDefinition-ch-vacd-document-immunization-administration.html" : "CH VACD Immunization Administration Document"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-document-vaccination-record.html" : "CH VACD Vaccination Record Document",
+      "StructureDefinition-ch-vacd-composition-vaccination-record.html" : "CH VACD VaccinationRecord Composition",
+      "StructureDefinition-ch-vacd-recommendation-response-message.html" : "CH VACD Message Immunization Recommendation Response",
+      "StructureDefinition-ch-vacd-recommendation-request-message.html" : "CH VACD Message Immunization Recommendation Request",
+      "StructureDefinition-ch-vacd-composition-immunization-administration.html" : "CH VACD Immunization Administration Composition",
+      "StructureDefinition-ch-vacd-document-immunization-administration.html" : "CH VACD Immunization Administration Document"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-document-vaccination-record.html" : "CH VACD Vaccination Record Document",
+      "StructureDefinition-ch-vacd-composition-vaccination-record.html" : "CH VACD VaccinationRecord Composition",
+      "StructureDefinition-ch-vacd-recommendation-response-message.html" : "CH VACD Message Immunization Recommendation Response",
+      "StructureDefinition-ch-vacd-recommendation-request-message.html" : "CH VACD Message Immunization Recommendation Request",
+      "StructureDefinition-ch-vacd-composition-immunization-administration.html" : "CH VACD Immunization Administration Composition",
+      "StructureDefinition-ch-vacd-document-immunization-administration.html" : "CH VACD Immunization Administration Document"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationFunctionCodes",
+      "title" : "Immunization Function Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the function a practitioner or organization may play in the immunization event. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0443"],
+      "oids" : ["2.16.840.1.113883.4.642.3.995"],
+      "sources" : ["2.16.840.1.113883.4.642.3.995"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization.html" : "CH VACD Immunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-funding-source",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationFundingSource",
+      "title" : "Immunization Funding Source",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the vaccine administered. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/immunization-funding-source"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.293"],
+      "sources" : ["2.16.840.1.113883.4.642.3.293"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization.html" : "CH VACD Immunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-origin",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationOriginCodes",
+      "title" : "Immunization Origin Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the data when the report of the immunization event is not based on information from the person, entity or organization who administered the vaccine. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/immunization-origin"],
+      "oids" : ["2.16.840.1.113883.4.642.3.296"],
+      "sources" : ["2.16.840.1.113883.4.642.3.296"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization.html" : "CH VACD Immunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-program-eligibility",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationProgramEligibility",
+      "title" : "Immunization Program Eligibility",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the patient's eligibility for a vaccination program. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/immunization-program-eligibility"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.291"],
+      "sources" : ["2.16.840.1.113883.4.642.3.291"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization.html" : "CH VACD Immunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationReasonCodes",
+      "title" : "Immunization Reason Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose of vaccine was administered. This value set is provided as a suggestive example.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.290"],
+      "sources" : ["2.16.840.1.113883.4.642.3.290"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization.html" : "CH VACD Immunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-recommendation-date-criterion",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationRecommendationDateCriterionCodes",
+      "title" : "Immunization Recommendation Date Criterion Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support the definition of dates relevant to recommendations for future doses of vaccines. This value set is provided as a suggestive example.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.308"],
+      "sources" : ["2.16.840.1.113883.4.642.3.308"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization-recommendation.html" : "CH VACD Immunization Recommendations"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CodesForImmunizationSiteOfAdministration",
+      "title" : "Codes for Immunization Site of Administration",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the body site where the vaccination occurred. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActSite"],
+      "oids" : ["2.16.840.1.113883.4.642.3.288"],
+      "sources" : ["2.16.840.1.113883.4.642.3.288"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization.html" : "CH VACD Immunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationStatusCodes",
+      "title" : "Immunization Status Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the current status of the administered dose of vaccine.",
+      "systems" : ["http://hl7.org/fhir/event-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.295"],
+      "sources" : ["2.16.840.1.113883.4.642.3.295"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization.html" : "CH VACD Immunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationStatusReasonCodes",
+      "title" : "Immunization Status Reason Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose of vaccine was not administered. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.992"],
+      "sources" : ["2.16.840.1.113883.4.642.3.992"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization.html" : "CH VACD Immunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-subpotent-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationSubpotentReason",
+      "title" : "Immunization Subpotent Reason",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose is considered to be subpotent. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/immunization-subpotent-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.993"],
+      "sources" : ["2.16.840.1.113883.4.642.3.993"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization.html" : "CH VACD Immunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization.html" : "CH VACD Immunization",
+      "StructureDefinition-ch-vacd-medication-for-immunization.html" : "CH VACD Medication For Immunization",
+      "StructureDefinition-ch-vacd-recommendation-response-messageheader.html" : "CH VACD Immunization Recommendation Response MessageHeader",
+      "StructureDefinition-ch-vacd-laboratory-serology.html" : "CH VACD Laboratory And Serology",
+      "StructureDefinition-ch-vacd-recommendation-response-message.html" : "CH VACD Message Immunization Recommendation Response",
+      "StructureDefinition-ch-vacd-pastillnesses.html" : "CH VACD Past Illness",
+      "StructureDefinition-ch-vacd-recommendation-request-message.html" : "CH VACD Message Immunization Recommendation Request",
+      "StructureDefinition-ch-vacd-document-immunization-administration.html" : "CH VACD Immunization Administration Document",
+      "StructureDefinition-ch-vacd-recommendation-request-messageheader.html" : "CH VACD Immunization Recommendation Request MessageHeader",
+      "StructureDefinition-ch-vacd-allergyintolerances.html" : "CH VACD AllergyIntolerance",
+      "StructureDefinition-ch-vacd-document-vaccination-record.html" : "CH VACD Vaccination Record Document",
+      "StructureDefinition-ch-vacd-basic-immunization.html" : "CH VACD Basic Immunization",
+      "StructureDefinition-ch-vacd-composition-vaccination-record.html" : "CH VACD VaccinationRecord Composition",
+      "StructureDefinition-ch-vacd-condition.html" : "CH VACD Condition Profile (Abstract)",
+      "StructureDefinition-ch-vacd-composition-immunization-administration.html" : "CH VACD Immunization Administration Composition",
+      "StructureDefinition-ch-vacd-immunization-recommendation.html" : "CH VACD Immunization Recommendations",
+      "StructureDefinition-ch-vacd-medical-problems.html" : "CH VACD Medical Problems"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-empty-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListEmptyReasons",
+      "title" : "List Empty Reasons",
+      "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/list-empty-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.322"],
+      "sources" : ["2.16.840.1.113883.4.642.3.322"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-composition-vaccination-record.html" : "CH VACD VaccinationRecord Composition",
+      "StructureDefinition-ch-vacd-composition-immunization-administration.html" : "CH VACD Immunization Administration Composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListMode",
+      "title" : "ListMode",
+      "description" : "The processing mode that applies to this list.",
+      "systems" : ["http://hl7.org/fhir/list-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.318"],
+      "sources" : ["2.16.840.1.113883.4.642.3.318"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-composition-vaccination-record.html" : "CH VACD VaccinationRecord Composition",
+      "StructureDefinition-ch-vacd-composition-immunization-administration.html" : "CH VACD Immunization Administration Composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/list-order",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ListOrderCodes",
+      "title" : "List Order Codes",
+      "description" : "Base values for the order of the items in a list resource.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/list-order"],
+      "oids" : ["2.16.840.1.113883.4.642.3.324"],
+      "sources" : ["2.16.840.1.113883.4.642.3.324"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-composition-vaccination-record.html" : "CH VACD VaccinationRecord Composition",
+      "StructureDefinition-ch-vacd-composition-immunization-administration.html" : "CH VACD Immunization Administration Composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ManifestationAndSymptomCodes",
+      "title" : "Manifestation and Symptom Codes",
+      "description" : "Example value set for Manifestation and Symptom codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.169"],
+      "sources" : ["2.16.840.1.113883.4.642.3.169"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-basic-immunization.html" : "CH VACD Basic Immunization",
+      "StructureDefinition-ch-vacd-condition.html" : "CH VACD Condition Profile (Abstract)",
+      "StructureDefinition-ch-vacd-pastillnesses.html" : "CH VACD Past Illness",
+      "StructureDefinition-ch-vacd-medical-problems.html" : "CH VACD Medical Problems"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-medication-for-immunization.html" : "CH VACD Medication For Immunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication Status Codes",
+      "title" : "Medication  status  codes",
+      "description" : "Medication Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.376"],
+      "sources" : ["2.16.840.1.113883.4.642.3.376"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-medication-for-immunization.html" : "CH VACD Medication For Immunization"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/message-events",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "MessageEvent",
+      "title" : "MessageEvent",
+      "description" : "One of the message events defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/message-events"],
+      "oids" : ["2.16.840.1.113883.4.642.3.26"],
+      "sources" : ["2.16.840.1.113883.4.642.3.26"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-recommendation-response-messageheader.html" : "CH VACD Immunization Recommendation Response MessageHeader",
+      "StructureDefinition-ch-vacd-recommendation-request-messageheader.html" : "CH VACD Immunization Recommendation Request MessageHeader"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/message-reason-encounter",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ExampleMessageReasonCodes",
+      "title" : "Example Message Reason Codes",
+      "description" : "Example Message Reasons. These are the set of codes that might be used an updating an encounter using admin-update.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/message-reasons-encounter"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.378"],
+      "sources" : ["2.16.840.1.113883.4.642.3.378"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-recommendation-response-messageheader.html" : "CH VACD Immunization Recommendation Response MessageHeader",
+      "StructureDefinition-ch-vacd-recommendation-request-messageheader.html" : "CH VACD Immunization Recommendation Request MessageHeader"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-laboratory-serology.html" : "CH VACD Laboratory And Serology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-laboratory-serology.html" : "CH VACD Laboratory And Serology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.399"],
+      "sources" : ["2.16.840.1.113883.4.642.3.399"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-laboratory-serology.html" : "CH VACD Laboratory And Serology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.395"],
+      "sources" : ["2.16.840.1.113883.4.642.3.395"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-laboratory-serology.html" : "CH VACD Laboratory And Serology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-laboratory-serology.html" : "CH VACD Laboratory And Serology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reaction-event-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceSeverity",
+      "title" : "AllergyIntoleranceSeverity",
+      "description" : "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.",
+      "systems" : ["http://hl7.org/fhir/reaction-event-severity"],
+      "oids" : ["2.16.840.1.113883.4.642.3.135"],
+      "sources" : ["2.16.840.1.113883.4.642.3.135"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-allergyintolerances.html" : "CH VACD AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.407"],
+      "sources" : ["2.16.840.1.113883.4.642.3.407"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-laboratory-serology.html" : "CH VACD Laboratory And Serology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.397"],
+      "sources" : ["2.16.840.1.113883.4.642.3.397"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-laboratory-serology.html" : "CH VACD Laboratory And Serology"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-composition-vaccination-record.html" : "CH VACD VaccinationRecord Composition",
+      "StructureDefinition-ch-vacd-composition-immunization-administration.html" : "CH VACD Immunization Administration Composition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/response-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ResponseType",
+      "title" : "ResponseType",
+      "description" : "The kind of response to a message.",
+      "systems" : ["http://hl7.org/fhir/response-code"],
+      "oids" : ["2.16.840.1.113883.4.642.3.380"],
+      "sources" : ["2.16.840.1.113883.4.642.3.380"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-recommendation-response-messageheader.html" : "CH VACD Immunization Recommendation Response MessageHeader",
+      "StructureDefinition-ch-vacd-recommendation-request-messageheader.html" : "CH VACD Immunization Recommendation Request MessageHeader"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTRouteCodes",
+      "title" : "SNOMED CT Route Codes",
+      "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.98"],
+      "sources" : ["2.16.840.1.113883.4.642.3.98"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-allergyintolerances.html" : "CH VACD AllergyIntolerance"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "systems" : ["http://hl7.org/fhir/search-entry-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.622"],
+      "sources" : ["2.16.840.1.113883.4.642.3.622"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-document-vaccination-record.html" : "CH VACD Vaccination Record Document",
+      "StructureDefinition-ch-vacd-recommendation-response-message.html" : "CH VACD Message Immunization Recommendation Response",
+      "StructureDefinition-ch-vacd-recommendation-request-message.html" : "CH VACD Message Immunization Recommendation Request",
+      "StructureDefinition-ch-vacd-document-immunization-administration.html" : "CH VACD Immunization Administration Document"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/vaccine-code",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "VaccineAdministeredValueSet",
+      "title" : "Vaccine Administered Value Set",
+      "description" : "This identifies the vaccine substance administered - CVX codes.",
+      "systems" : ["urn:oid:1.2.36.1.2001.1005.17", "http://hl7.org/fhir/sid/cvx"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.22"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.22"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization-recommendation.html" : "CH VACD Immunization Recommendations"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "v3 Code System ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-composition-vaccination-record.html" : "CH VACD VaccinationRecord Composition",
+      "StructureDefinition-ch-vacd-composition-immunization-administration.html" : "CH VACD Immunization Administration Composition"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ConfidentialityClassification",
+      "version" : "2014-03-26",
+      "status" : "active",
+      "name" : "v3.ConfidentialityClassification",
+      "title" : "V3 Value SetConfidentialityClassification",
+      "description" : " Set of codes used to value Act.Confidentiality and Role.Confidentiality attribute in accordance with the definition for concept domain \"Confidentiality\".",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Confidentiality"],
+      "oids" : ["2.16.840.1.113883.1.11.10228"],
+      "sources" : ["2.16.840.1.113883.1.11.10228"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-composition-vaccination-record.html" : "CH VACD VaccinationRecord Composition",
+      "StructureDefinition-ch-vacd-composition-immunization-administration.html" : "CH VACD Immunization Administration Composition"
+    }
+  ]
+}

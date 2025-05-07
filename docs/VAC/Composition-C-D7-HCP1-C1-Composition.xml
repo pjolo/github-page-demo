@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="C-D7-HCP1-C1-Composition"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-composition-immunization-administration"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><h3>Immunization Administration</h3><p><b>Id: </b>C-D7-HCP1-C1-Composition</p><p><b>Identifier: </b><span>urn:ietf:rfc:3986#urn:uuid:73d0abee-843e-437f-9f52-aeeff8ba758d</span></p><p><b>Status: </b>Final</p><p><b>Code: </b><span>Immunization record (http://snomed.info/sct#41000179103)</span></p><p><b>Patient: </b><a href="Patient-TC-patient.html">Patient/TC-patient</a> Wegmueller Monika</p><p><b>Date: </b>October 6, 2021</p><p><b>Authors:</b></p><table><tr><td><p><a href="Practitioner-TC-HCP1-C1.html">Practitioner/TC-HCP1-C1</a> Bereit Allzeit</p><p><a href="Organization-TC-ORG1.html">Organization/TC-ORG1</a> Gruppenpraxis CH</p></td></tr></table><p><b>Confidentiality: </b>null<span> Normal (qualifier value) (http://snomed.info/sct#17621005)</span></p><p><b>Sections:</b></p><table><tr><td>Previous illnesses</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:73d0abee-843e-437f-9f52-aeeff8ba758d"/>
+  </identifier>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="41000179103"/>
+      <display value="Immunization record"/>
+    </coding>
+  </type>
+  <category>
+    <coding>
+      <system value="urn:oid:2.16.756.5.30.1.127.3.10.10"/>
+      <code value="urn:che:epr:ch-vacd:immunization-administration:2022"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/TC-patient"/>
+  </subject>
+  <date value="2021-10-06T00:00:00.390+02:00"/>
+  <author>
+    <reference value="PractitionerRole/TC-HCP1-ORG1-ROLE-author"/>
+  </author>
+  <title value="Immunization Administration"/>
+  <confidentiality value="N">
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="17621005"/>
+          <display value="Normal (qualifier value)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </confidentiality>
+  <custodian>
+    <reference value="Organization/TC-ORG1"/>
+  </custodian>
+  <section id="pastillnesses">
+    <title value="Previous illnesses"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11348-0"/>
+        <display value="Hx of Past illness"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Code: </b><span>Hx of Past illness (http://loinc.org#11348-0)</span></p><p><b>Entries:</b></p><table><tr><td><a href="Condition-TCC05-UNDILL2.html">Condition/TCC05-UNDILL2</a></td></tr></table></div>
+    </text>
+    <entry>
+      <reference value="Condition/TCC05-UNDILL2"/>
+    </entry>
+  </section>
+</Composition>

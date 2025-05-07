@@ -1,0 +1,36 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "BasicImmunizationCodesystem",
+      "title" : "Basic Immunization codes",
+      "description" : "Clinical Decision Support Event"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-clinical-decision-support-event-cs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "ClinicalDecisionSupportEvent",
+      "title" : "CDS Event",
+      "description" : "Clinical Decision Support Event"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-entry-conflict-cs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "EntryConflictCodesystem",
+      "title" : "Entry Conflict Code System",
+      "description" : "The entry conflict codesystem"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "SwissExposureRisksCodesystem",
+      "title" : "Swiss Exposure Risks Codesystem",
+      "description" : "Exposure risks codes available in Switzerland."
+    }
+  ]
+}

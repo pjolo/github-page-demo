@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ch-vacd-clinical-decision-support-event-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ch-vacd-clinical-decision-support-event-cs</b></p><a name="ch-vacd-clinical-decision-support-event-cs"> </a><a name="hcch-vacd-clinical-decision-support-event-cs"> </a><a name="ch-vacd-clinical-decision-support-event-cs-en-US"> </a><p>This case-sensitive code system <code>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-clinical-decision-support-event-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">immunrecorequest<a name="ch-vacd-clinical-decision-support-event-cs-immunrecorequest"> </a></td><td>Immunization Recommendation Request</td></tr><tr><td style="white-space:nowrap">immunrecoresponse<a name="ch-vacd-clinical-decision-support-event-cs-immunrecoresponse"> </a></td><td>Immunization Recommendation Response</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>Deutsch (Schweiz) (German (Switzerland), de)</b></td><td><b>English (United States) (English (United States), en)</b></td><td><b>French (Switzerland) (fr)</b></td><td><b>Italian (Switzerland) (it)</b></td><td><b>rm</b></td></tr><tr><td>immunrecorequest</td><td>Immunization Recommendation Request</td><td>Immunization Recommendation Request</td><td>Immunization Recommendation Request</td><td>Immunization Recommendation Request</td><td>Immunization Recommendation Request</td></tr><tr><td>immunrecoresponse</td><td>Immunization Recommendation Response</td><td>Immunization Recommendation Response</td><td>Immunization Recommendation Response</td><td>Immunization Recommendation Response</td><td>Immunization Recommendation Response</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+    <valuePeriod>
+      <start value="2021-12-21T00:00:00+01:00"/>
+    </valuePeriod>
+  </extension>
+  <url value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-clinical-decision-support-event-cs"/>
+  <identifier>
+    <use value="official"/>
+    <system value="http://fhir.ch/ig/ch-vacd/cs/entry-conflict"/>
+    <value value="entry-conflict"/>
+  </identifier>
+  <version value="6.0.0-ballot-ci-build"/>
+  <name value="ClinicalDecisionSupportEvent"/>
+  <title value="CDS Event"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-07T07:26:19+02:00"/>
+  <publisher value="HL7 Switzerland"/>
+  <contact>
+    <name value="HL7 Switzerland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ch/"/>
+    </telecom>
+  </contact>
+  <description value="Clinical Decision Support Event"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CHE"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC0-1.0"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="immunrecorequest"/>
+    <display value="Immunization Recommendation Request"/>
+    <designation>
+      <language value="de-CH"/>
+      <value value="Immunization Recommendation Request"/>
+    </designation>
+    <designation>
+      <language value="fr-CH"/>
+      <value value="Immunization Recommendation Request"/>
+    </designation>
+    <designation>
+      <language value="it-CH"/>
+      <value value="Immunization Recommendation Request"/>
+    </designation>
+    <designation>
+      <language value="rm-CH"/>
+      <value value="Immunization Recommendation Request"/>
+    </designation>
+    <designation>
+      <language value="en-US"/>
+      <value value="Immunization Recommendation Request"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="immunrecoresponse"/>
+    <display value="Immunization Recommendation Response"/>
+    <designation>
+      <language value="de-CH"/>
+      <value value="Immunization Recommendation Response"/>
+    </designation>
+    <designation>
+      <language value="fr-CH"/>
+      <value value="Immunization Recommendation Response"/>
+    </designation>
+    <designation>
+      <language value="it-CH"/>
+      <value value="Immunization Recommendation Response"/>
+    </designation>
+    <designation>
+      <language value="rm-CH"/>
+      <value value="Immunization Recommendation Response"/>
+    </designation>
+    <designation>
+      <language value="en-US"/>
+      <value value="Immunization Recommendation Response"/>
+    </designation>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="TC-HCP1-ORG1-ROLE-performer"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole TC-HCP1-ORG1-ROLE-performer</b></p><a name="TC-HCP1-ORG1-ROLE-performer"> </a><a name="hcTC-HCP1-ORG1-ROLE-performer"> </a><a name="TC-HCP1-ORG1-ROLE-performer-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitionerrole-epr.html">CH Core PractitionerRole EPR</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner-TC-HCP1-C1.html">Practitioner Peter Müller </a></p><p><b>organization</b>: <a href="Organization-TC-ORG1.html">Organization Gruppenpraxis Müller</a></p></div>
+  </text>
+  <active value="true"/>
+  <practitioner>
+    <reference value="Practitioner/TC-HCP1-C1"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/TC-ORG1"/>
+  </organization>
+</PractitionerRole>

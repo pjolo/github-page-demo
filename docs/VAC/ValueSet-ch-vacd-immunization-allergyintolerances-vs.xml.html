@@ -1,0 +1,1359 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Allergies and Intolerance values for Immunization - XML Representation - Implementation Guide CH VACD v6.0.0-ballot-ci-build</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <style>
+    
+
+    
+
+    
+
+    </style>
+ 
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"66.21"}
+    h3,h4,h5,h6{--heading-prefix:"66.21"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+            <div id="family-nav">
+	<a id="logo" no-external="true" href="http://hl7.org/fhir"> <img
+		alt="logo fhir" src="fhir-logo-www.png" />
+	</a>
+</div>
+
+            <div id="family-nav">
+                <a id="logo" no-external="true" href="searchform.html">
+                    <img src="assets/images/search.png" alt="Search FHIR" />
+                </a>
+            </div>
+            <div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://www.hl7.ch">
+        <img alt="visit the hl7 website" height="50" src="hl7-logo.png" />
+    </a>            
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Implementation Guide CH VACD</span>
+            <br/>
+            <span style="display:inline-block;">6.0.0-ballot-ci-build - ci-build
+
+
+
+  <img alt="Switzerland flag" src="assets/images/che.svg" height="16" title="Switzerland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<!--<li><a href="toc.html">Table of Contents</a></li> -->
+	<li>
+		<a href="index.html">Home</a>
+	</li>
+
+
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Use Cases
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="Use-Cases-Deutsch.html">Anwendungsfälle</a>
+			</li>
+			<li>
+				<a href="Use-Cases-Francais.html">Les cas d'utilisation</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Documents/Messages
+			<b class="caret">
+			</b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="immunization-administration-document.html">Immunization Administration document</a>
+			</li>
+			<li>
+				<a href="vaccination-record-document.html">Vaccination Record document</a>
+			</li>
+			<li>
+				<a href="immunization-recommendation-request-message.html">Immunization Recommendation Request message</a>
+			</li>
+			<li>
+				<a href="immunization-recommendation-response-message.html">Immunization Recommendation Response message</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="profiles.html">Profiles</a>
+	</li>
+	<li>
+		<a href="extensions.html">Extensions</a>
+	</li>
+	<li>
+		<a href="terminology.html">Terminology</a>
+	</li>
+	<li>
+		<a href="artifacts.html">Artifacts</a>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Test Cases
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="TestCases.html">Overview</a>
+			</li>
+			<li>
+				<a href="TestCases.html#a-immunizations">A Immunizations</a>
+			</li>
+			<li>
+				<a href="TestCases.html#b-other-elements">B Other Elements</a>
+			</li>
+			<li>
+				<a href="TestCases.html#c-correction-of-entries">C Correction of Entries</a>
+			</li>
+			<li>
+				<a href="TestCases.html#d-conflicts-on-merging-documents">D Conflicts on merging Documents</a>
+			</li>
+			<li>
+				<a href="TestCases.html#e-language-handling-on-merging-documents">E Language handling on merging Documents</a>
+			</li>
+			<li>
+				<a href="TestCases.html#f-add-notes-to-existing-elements">F Add Notes to existing Elements</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Allergies and Intolerance values for Immunization</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Implementation Guide CH VACD - Local Development build (v6.0.0-ballot-ci-build) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://fhir.ch/ig/ch-vacd/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-ch-vacd-immunization-allergyintolerances-vs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-ch-vacd-immunization-allergyintolerances-vs.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Allergies and Intolerance values for Immunization - XML Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2025-05-07
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-ch-vacd-immunization-allergyintolerances-vs.xml" no-download="true">Raw xml</a> | <a href="ValueSet-ch-vacd-immunization-allergyintolerances-vs.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ch-vacd-immunization-allergyintolerances-vs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet ch-vacd-immunization-allergyintolerances-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ch-vacd-immunization-allergyintolerances-vs&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcch-vacd-immunization-allergyintolerances-vs&quot;&gt; &lt;/a&gt;&lt;a name=&quot;ch-vacd-immunization-allergyintolerances-vs-en-US&quot;&gt; &lt;/a&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;http://www.snomed.org/&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/716186003&quot;&gt;716186003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;No known allergy (situation)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/213020009&quot;&gt;213020009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergy to egg protein (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/416098002&quot;&gt;416098002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergy to drug (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/39579001&quot;&gt;39579001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anaphylaxis (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/24079001&quot;&gt;24079001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Atopic dermatitis (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/863903001&quot;&gt;863903001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergy to component of vaccine product (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/293104008&quot;&gt;293104008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/219082005&quot;&gt;219082005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Vibrio cholerae antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/1142181004&quot;&gt;1142181004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/1157106007&quot;&gt;1157106007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing only recombinant non-replicating viral vector encoding Severe acute respiratory syndrome coronavirus 2 spike protein (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/1162639000&quot;&gt;1162639000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing only acellular Bordetella pertussis, Clostridium tetani, Corynebacterium diphtheriae, Haemophilus influenzae type B, Hepatitis B virus and inactivated Human poliovirus antigens (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/293108006&quot;&gt;293108006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/293109003&quot;&gt;293109003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/293127000&quot;&gt;293127000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Haemophilus influenzae type B antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/293126009&quot;&gt;293126009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Hepatitis A virus antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/293110008&quot;&gt;293110008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Hepatitis B virus antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/420113004&quot;&gt;420113004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Influenza virus antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/293125008&quot;&gt;293125008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/219096004&quot;&gt;219096004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Measles morbillivirus antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/219088009&quot;&gt;219088009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Neisseria meningitidis antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/293114004&quot;&gt;293114004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Mumps orthorubulavirus antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/293116002&quot;&gt;293116002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Streptococcus pneumoniae antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/293117006&quot;&gt;293117006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Human poliovirus antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/293118001&quot;&gt;293118001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Rabies lyssavirus antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/219084006&quot;&gt;219084006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Clostridium tetani antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/219076007&quot;&gt;219076007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Bacillus Calmette-Guerin antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/293122006&quot;&gt;293122006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Salmonella enterica subspecies enterica serovar Typhi antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/219095000&quot;&gt;219095000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Yellow fever virus antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/1162644007&quot;&gt;1162644007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing only severe acute respiratory syndrome coronavirus 2 recombinant spike protein antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/1217476001&quot;&gt;1217476001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anaphylaxis caused by component of vaccine product (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/293120003&quot;&gt;293120003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Vaccinia virus antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/294657002&quot;&gt;294657002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergy to component of vaccine product containing Vaccinia virus antigen (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/294641002&quot;&gt;294641002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergy to component of vaccine product containing Bacillus anthracis antigen (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/700468006&quot;&gt;700468006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergy to component of vaccine product containing Rotavirus antigen (finding)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;http://www.snomed.org/&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt; version &lt;code&gt;http://snomed.info/sct/2011000195101/version/20241207&lt;/code&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/1303850003&quot;&gt;1303850003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Tick-borne encephalitis virus antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/1303851004&quot;&gt;1303851004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Human papillomavirus antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/1303852006&quot;&gt;1303852006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Human alphaherpesvirus 3 antigen (disorder)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Deutsch (Schweiz) (German (Switzerland), de)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (United States) (English (United States), en)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;French (Switzerland) (fr)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Italian (Switzerland) (it)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;rm&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;716186003&lt;/td&gt;&lt;td&gt;Keine Allergie bekannt&lt;/td&gt;&lt;td&gt;No known allergy&lt;/td&gt;&lt;td&gt;pas d'allergie connue&lt;/td&gt;&lt;td&gt;nessuna allergia nota&lt;/td&gt;&lt;td&gt;nagina allergia enconuschenta&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;213020009&lt;/td&gt;&lt;td&gt;Allergie gegen Hühnereiweiss&lt;/td&gt;&lt;td&gt;Allergy to egg protein&lt;/td&gt;&lt;td&gt;allergie aux protéines de l'œuf&lt;/td&gt;&lt;td&gt;allergia alle proteine dell'uovo&lt;/td&gt;&lt;td&gt;allergia cunter alv d'ov da giaglina&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;416098002&lt;/td&gt;&lt;td&gt;Medikamenten-Allergie&lt;/td&gt;&lt;td&gt;Allergy to drug&lt;/td&gt;&lt;td&gt;allergie aux médicaments&lt;/td&gt;&lt;td&gt;allergia ai farmaci&lt;/td&gt;&lt;td&gt;allergia cunter medicaments&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;39579001&lt;/td&gt;&lt;td&gt;Anaphylaktische Reaktion&lt;/td&gt;&lt;td&gt;Anaphylactic reaction&lt;/td&gt;&lt;td&gt;réaction anaphylactique&lt;/td&gt;&lt;td&gt;reazione anafilattica&lt;/td&gt;&lt;td&gt;reacziun anafilactica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;24079001&lt;/td&gt;&lt;td&gt;Atopische Dermatitis&lt;/td&gt;&lt;td&gt;Atopic dermatitis&lt;/td&gt;&lt;td&gt;dermite atopique&lt;/td&gt;&lt;td&gt;dermatite atopica&lt;/td&gt;&lt;td&gt;dermatitis atopica&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;863903001&lt;/td&gt;&lt;td&gt;Allergie gegen Bestandteil eines Impfstoffs&lt;/td&gt;&lt;td&gt;Allergy to component of vaccine product&lt;/td&gt;&lt;td&gt;allergie à un composant du vaccin&lt;/td&gt;&lt;td&gt;allergia a un componente del vaccino&lt;/td&gt;&lt;td&gt;allergia cunter ina cumponenta d'in vaccin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;293104008&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Impfstoffs&lt;/td&gt;&lt;td&gt;Vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable à un vaccin&lt;/td&gt;&lt;td&gt;reazione avversa a un vaccino&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;219082005&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Cholera-Impfstoffs&lt;/td&gt;&lt;td&gt;Cholera vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable d'un vaccin contre le choléra&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro il colera&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter colera&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1142181004&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines mRNA-Impfstoffs gegen COVID-19&lt;/td&gt;&lt;td&gt;COVID-19 mRNA vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable d'un vaccin à ARNm contre la COVID-19&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino a mRNA anti-COVID-19&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter COVID-19 mRNA&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1157106007&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines nicht replizierenden viralen Vektorimpfstoffs gegen COVID-19&lt;/td&gt;&lt;td&gt;COVID-19 non-replicating viral vector vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable d'un vaccin à vecteur viral recombinant non réplicatif contre le COVID-19&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino a vettore virale non replicante anti-COVID-19&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin vectorial viral betg replitgant cunter COVID-19&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1162639000&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Diphtherie-, Pertussis (azellulär)-, Haemophilus influenzae B-, Hepatitis B- und Poliomyelitis sowie Tetanus (inaktiviert)-Impfstoffs&lt;/td&gt;&lt;td&gt;Diphtheria and acellular pertussis and Haemophilus influenzae type B and hepatitis B and inactivated poliomyelitis and tetanus vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable d'un vaccin contre la diphtérie, la coqueluche (acellulaire), Haemophilus influenzae de type B, l'hépatite B, la poliomyélite (inactivé) et le tétanos&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro la difterite, il tetano, la pertosse (acellulare), la poliomielite (inattivato), l’Haemophilus influenzae di tipo B e l’epatite B&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin (inactivà) cunter difteria, la tuss chanina (acellulara), hemofilus influenza B, hepatitis B e poliomielitis sco er tetanus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;293108006&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Diphtherie- und Tetanus-Impfstoffs&lt;/td&gt;&lt;td&gt;Diphtheria and tetanus vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre la diphtérie et le tétanos&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro la difterite e il tetano&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter difteria e tetanus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;293109003&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Diphtherie-, Pertussis und Tetanus-Impfstoffs&lt;/td&gt;&lt;td&gt;Diphtheria, pertussis, and tetanus vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre la diphtérie, le tétanos et la coqueluche&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro la difterite, il tetano e la pertosse&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter difteria, la tuss chanina e tetanus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;293127000&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Haemophilus influenzae B-Impfstoffs&lt;/td&gt;&lt;td&gt;Haemophilus influenzae Type B vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre Haemophilus influenzae de type B&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro l’Haemophilus influenzae di tipo B&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter hemofilus influenza B&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;293126009&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Hepatitis A-Impfstoffs&lt;/td&gt;&lt;td&gt;Hepatitis A vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre l'hépatite A&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro l’epatite A&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter hepatitis A&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;293110008&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Hepatitis B-Impfstoffs&lt;/td&gt;&lt;td&gt;Hepatitis B vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre l'hépatite B&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro l’epatite B&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter hepatitis B&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;420113004&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Influenzavirus-Impfstoffs&lt;/td&gt;&lt;td&gt;Influenza virus vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre l'influenza&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro l’influenza&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter la grippa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;293125008&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Masern-, Mumps- und Röteln-Impfstoffs&lt;/td&gt;&lt;td&gt;Measles and mumps and rubella vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre la rougeole, les oreillons et la rubéole&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro il morbillo, la parotite e la rosolia&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter il virustgel, il glandun e la rubella&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;219096004&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Masern-Impfstoffs&lt;/td&gt;&lt;td&gt;Measles vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin antirougeoleux&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro il morbillo&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter il virustgel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;219088009&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Meningokokken-Impfstoffs&lt;/td&gt;&lt;td&gt;Meningococcal vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre les méningocoques&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro i meningococchi&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter meningococcus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;293114004&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Mumps-Impfstoffs&lt;/td&gt;&lt;td&gt;Mumps vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre les oreillons&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro la parotite&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter il glandun&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;293116002&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Pneumokokken-Impfstoffs&lt;/td&gt;&lt;td&gt;Pneumococcal vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre les pneumocoques&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro gli pneumococchi&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter pneumococcus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;293117006&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Poliomyelitis-Impfstoffs&lt;/td&gt;&lt;td&gt;Poliomyelitis vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre la poliomyélite&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro la poliomielite&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter poliomielitis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;293118001&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Tollwut-Impfstoffs&lt;/td&gt;&lt;td&gt;Rabies vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre la rage&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro la rabbia&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter la frenesia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;219084006&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Tetanus-Impfstoffs&lt;/td&gt;&lt;td&gt;Tetanus vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre le tétanos&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro il tetano&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter tetanus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;219076007&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Tuberkulose-Impfstoffs&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Bacillus Calmette-Guerin antigen (disorder)&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre la tuberculose&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro la tubercolosi&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter tuberculosa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;293122006&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Typhus-Impfstoffs&lt;/td&gt;&lt;td&gt;Typhoid vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre la fièvre typhoïde&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro la febbre tifoide&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter tifus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;219095000&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Gelbfieber-Impfstoffs&lt;/td&gt;&lt;td&gt;Yellow fever vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre la fièvre jaune&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro la febbre gialla&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter la fevra melna&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1162644007&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Covid-19-rekombinanten Spike-Protein-Antigen-Impfstoffs&lt;/td&gt;&lt;td&gt;COVID-19 recombinant spike protein antigen vaccine adverse reaction&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin antigénique à protéine Spike recombinante contre le COVID-19&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino anti-COVID-19 ricombinante con antigene della proteina spike&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter COVID-19 cun antigens dal protein spike recumbinant&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1217476001&lt;/td&gt;&lt;td&gt;Anaphylaktische Reaktion auf einen Impfstoff&lt;/td&gt;&lt;td&gt;Anaphylaxis due to vaccine&lt;/td&gt;&lt;td&gt;réaction anaphylactique due au vaccin&lt;/td&gt;&lt;td&gt;anafilassi dovuta al vaccino&lt;/td&gt;&lt;td&gt;reacziun anafilactica sin in vaccin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;293120003&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Pocken-Impfstoffs&lt;/td&gt;&lt;td&gt;Smallpox vaccine adverse reactionerse reaction&lt;/td&gt;&lt;td&gt;effet indésirable d'un vaccin contre la variole&lt;/td&gt;&lt;td&gt;effetto indesiderato di un vaccino antivaiolo&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter la virola&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;294657002&lt;/td&gt;&lt;td&gt;Allergie gegen Pockenimpfstoff&lt;/td&gt;&lt;td&gt;Allergy to smallpox vaccine&lt;/td&gt;&lt;td&gt;allergie au vaccin contre la variole&lt;/td&gt;&lt;td&gt;allergia al vaccino contro il vaiolo&lt;/td&gt;&lt;td&gt;allergia cunter in vaccin en virola&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;294641002&lt;/td&gt;&lt;td&gt;Allergie gegen Anthrax-Impfstoff&lt;/td&gt;&lt;td&gt;Allergy to anthrax vaccine&lt;/td&gt;&lt;td&gt;allergie au vaccin contre le charbon&lt;/td&gt;&lt;td&gt;allergia al vaccino contro l'antrace&lt;/td&gt;&lt;td&gt;allergia cunter in vaccin cunter antrax&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;700468006&lt;/td&gt;&lt;td&gt;Allergie gegen Impfstoff gegen Rotavirus&lt;/td&gt;&lt;td&gt;Allergy to Rotavirus vaccine&lt;/td&gt;&lt;td&gt;allergie au vaccin contre le rotavirus&lt;/td&gt;&lt;td&gt;allergia al vaccino contro il Rotavirus&lt;/td&gt;&lt;td&gt;allergia cunter il vaccin cunter Rotavirus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1303850003&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines FSME-Impfstoffs&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Tick-borne encephalitis virus antigen&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre la FSME&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro la TBE&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin FSME&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1303851004&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Humanen-Papillomaviren-Impfstoffs&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Human papillomavirus antigen&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre le papillomavirus humain&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro il papillomavirus umano&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin da pirlas da l'uman&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1303852006&lt;/td&gt;&lt;td&gt;Unerwünschte Wirkung eines Varizellen-Impfstoffs&lt;/td&gt;&lt;td&gt;Adverse reaction to component of vaccine product containing Human alphaherpesvirus 3 antigen&lt;/td&gt;&lt;td&gt;effet indésirable du vaccin contre la varicelle&lt;/td&gt;&lt;td&gt;reazione avversa al vaccino contro la varicella&lt;/td&gt;&lt;td&gt;effect nungiavischà d'in vaccin cunter varizellas&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-immunization-allergyintolerances-vs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;6.0.0-ballot-ci-build&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;AllergiesAndIntolerancesForImmunization&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergies and Intolerance values for Immunization&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-05-07T07:26:19+02:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HL7 Switzerland&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HL7 Switzerland&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://www.hl7.ch/&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;The allergies and adverse reactions which have an influence on the immunization recommendations.&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:iso:std:iso:3166&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;CHE&quot;/&gt;
+    &lt;/coding&gt;
+  &lt;/jurisdiction&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.copyright">copyright</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;CC0-1.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;716186003&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;No known allergy (situation)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Keine Allergie bekannt&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;pas d'allergie connue&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;nessuna allergia nota&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;nagina allergia enconuschenta&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;No known allergy&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;213020009&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergy to egg protein (finding)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergie gegen Hühnereiweiss&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergie aux protéines de l'œuf&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergia alle proteine dell'uovo&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergia cunter alv d'ov da giaglina&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergy to egg protein&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;416098002&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergy to drug (finding)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Medikamenten-Allergie&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergie aux médicaments&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergia ai farmaci&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergia cunter medicaments&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergy to drug&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;39579001&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anaphylaxis (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anaphylaktische Reaktion&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;réaction anaphylactique&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione anafilattica&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reacziun anafilactica&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anaphylactic reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;24079001&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Atopic dermatitis (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Atopische Dermatitis&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;dermite atopique&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;dermatite atopica&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;dermatitis atopica&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Atopic dermatitis&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;863903001&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergy to component of vaccine product (finding)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergie gegen Bestandteil eines Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergie à un composant du vaccin&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergia a un componente del vaccino&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergia cunter ina cumponenta d'in vaccin&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergy to component of vaccine product&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;293104008&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable à un vaccin&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa a un vaccino&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;219082005&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Vibrio cholerae antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Cholera-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable d'un vaccin contre le choléra&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro il colera&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter colera&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cholera vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1142181004&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines mRNA-Impfstoffs gegen COVID-19&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable d'un vaccin à ARNm contre la COVID-19&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino a mRNA anti-COVID-19&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter COVID-19 mRNA&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COVID-19 mRNA vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1157106007&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing only recombinant non-replicating viral vector encoding Severe acute respiratory syndrome coronavirus 2 spike protein (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines nicht replizierenden viralen Vektorimpfstoffs gegen COVID-19&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable d'un vaccin à vecteur viral recombinant non réplicatif contre le COVID-19&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino a vettore virale non replicante anti-COVID-19&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin vectorial viral betg replitgant cunter COVID-19&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COVID-19 non-replicating viral vector vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1162639000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing only acellular Bordetella pertussis, Clostridium tetani, Corynebacterium diphtheriae, Haemophilus influenzae type B, Hepatitis B virus and inactivated Human poliovirus antigens (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Diphtherie-, Pertussis (azellulär)-, Haemophilus influenzae B-, Hepatitis B- und Poliomyelitis sowie Tetanus (inaktiviert)-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable d'un vaccin contre la diphtérie, la coqueluche (acellulaire), Haemophilus influenzae de type B, l'hépatite B, la poliomyélite (inactivé) et le tétanos&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro la difterite, il tetano, la pertosse (acellulare), la poliomielite (inattivato), l’Haemophilus influenzae di tipo B e l’epatite B&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin (inactivà) cunter difteria, la tuss chanina (acellulara), hemofilus influenza B, hepatitis B e poliomielitis sco er tetanus&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Diphtheria and acellular pertussis and Haemophilus influenzae type B and hepatitis B and inactivated poliomyelitis and tetanus vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;293108006&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Diphtherie- und Tetanus-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre la diphtérie et le tétanos&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro la difterite e il tetano&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter difteria e tetanus&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Diphtheria and tetanus vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;293109003&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Diphtherie-, Pertussis und Tetanus-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre la diphtérie, le tétanos et la coqueluche&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro la difterite, il tetano e la pertosse&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter difteria, la tuss chanina e tetanus&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Diphtheria, pertussis, and tetanus vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;293127000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Haemophilus influenzae type B antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Haemophilus influenzae B-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre Haemophilus influenzae de type B&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro l’Haemophilus influenzae di tipo B&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter hemofilus influenza B&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Haemophilus influenzae Type B vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;293126009&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Hepatitis A virus antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Hepatitis A-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre l'hépatite A&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro l’epatite A&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter hepatitis A&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Hepatitis A vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;293110008&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Hepatitis B virus antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Hepatitis B-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre l'hépatite B&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro l’epatite B&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter hepatitis B&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Hepatitis B vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;420113004&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Influenza virus antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Influenzavirus-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre l'influenza&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro l’influenza&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter la grippa&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Influenza virus vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;293125008&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Masern-, Mumps- und Röteln-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre la rougeole, les oreillons et la rubéole&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro il morbillo, la parotite e la rosolia&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter il virustgel, il glandun e la rubella&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Measles and mumps and rubella vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;219096004&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Measles morbillivirus antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Masern-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin antirougeoleux&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro il morbillo&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter il virustgel&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Measles vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;219088009&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Neisseria meningitidis antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Meningokokken-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre les méningocoques&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro i meningococchi&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter meningococcus&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Meningococcal vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;293114004&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Mumps orthorubulavirus antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Mumps-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre les oreillons&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro la parotite&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter il glandun&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Mumps vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;293116002&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Streptococcus pneumoniae antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Pneumokokken-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre les pneumocoques&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro gli pneumococchi&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter pneumococcus&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Pneumococcal vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;293117006&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Human poliovirus antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Poliomyelitis-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre la poliomyélite&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro la poliomielite&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter poliomielitis&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Poliomyelitis vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;293118001&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Rabies lyssavirus antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Tollwut-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre la rage&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro la rabbia&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter la frenesia&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Rabies vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;219084006&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Clostridium tetani antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Tetanus-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre le tétanos&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro il tetano&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter tetanus&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Tetanus vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;219076007&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Bacillus Calmette-Guerin antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Tuberkulose-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre la tuberculose&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro la tubercolosi&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter tuberculosa&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Bacillus Calmette-Guerin antigen (disorder)&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;293122006&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Salmonella enterica subspecies enterica serovar Typhi antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Typhus-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre la fièvre typhoïde&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro la febbre tifoide&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter tifus&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Typhoid vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;219095000&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Yellow fever virus antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Gelbfieber-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre la fièvre jaune&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro la febbre gialla&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter la fevra melna&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Yellow fever vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1162644007&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing only severe acute respiratory syndrome coronavirus 2 recombinant spike protein antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Covid-19-rekombinanten Spike-Protein-Antigen-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin antigénique à protéine Spike recombinante contre le COVID-19&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino anti-COVID-19 ricombinante con antigene della proteina spike&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter COVID-19 cun antigens dal protein spike recumbinant&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;COVID-19 recombinant spike protein antigen vaccine adverse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1217476001&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anaphylaxis caused by component of vaccine product (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anaphylaktische Reaktion auf einen Impfstoff&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;réaction anaphylactique due au vaccin&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;anafilassi dovuta al vaccino&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reacziun anafilactica sin in vaccin&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anaphylaxis due to vaccine&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;293120003&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Vaccinia virus antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Pocken-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable d'un vaccin contre la variole&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effetto indesiderato di un vaccino antivaiolo&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter la virola&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Smallpox vaccine adverse reactionerse reaction&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;294657002&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergy to component of vaccine product containing Vaccinia virus antigen (finding)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergie gegen Pockenimpfstoff&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergie au vaccin contre la variole&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergia al vaccino contro il vaiolo&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergia cunter in vaccin en virola&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergy to smallpox vaccine&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;294641002&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergy to component of vaccine product containing Bacillus anthracis antigen (finding)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergie gegen Anthrax-Impfstoff&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergie au vaccin contre le charbon&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergia al vaccino contro l'antrace&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergia cunter in vaccin cunter antrax&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergy to anthrax vaccine&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;700468006&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergy to component of vaccine product containing Rotavirus antigen (finding)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergie gegen Impfstoff gegen Rotavirus&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergie au vaccin contre le rotavirus&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergia al vaccino contro il Rotavirus&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;allergia cunter il vaccin cunter Rotavirus&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Allergy to Rotavirus vaccine&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+    &lt;/include&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;http://snomed.info/sct/2011000195101/version/20241207&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1303850003&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Tick-borne encephalitis virus antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines FSME-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre la FSME&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro la TBE&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin FSME&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Tick-borne encephalitis virus antigen&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1303851004&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Human papillomavirus antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Humanen-Papillomaviren-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre le papillomavirus humain&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro il papillomavirus umano&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin da pirlas da l'uman&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Human papillomavirus antigen&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;1303852006&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Human alphaherpesvirus 3 antigen (disorder)&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unerwünschte Wirkung eines Varizellen-Impfstoffs&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;fr-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effet indésirable du vaccin contre la varicelle&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;it-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;reazione avversa al vaccino contro la varicella&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;rm-CH&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;effect nungiavischà d'in vaccin cunter varizellas&quot;/&gt;
+        &lt;/designation&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en-US&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Adverse reaction to component of vaccine product containing Human alphaherpesvirus 3 antigen&quot;/&gt;
+        &lt;/designation&gt;
+      &lt;/concept&gt;
+    &lt;/include&gt;
+  &lt;/compose&gt;
+&lt;/ValueSet&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.ch/">HL7 Switzerland</a>.  Package ch.fhir.ig.ch-vacd#6.0.0-ballot-ci-build based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 7, 2025 07:29+0200">2025-05-07</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+
+| <a style="color: #81BEF7" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSejY5cinbQ4kHgGKMhncYu0mPuWb7euUkxfeXZeiUCFFa4k6g/viewform?usp=sf_link&amp;entry%2E1353807103=ch.fhir.ig.ch-vacd%236.0.0-ballot-ci-build%20/ValueSet-ch-vacd-immunization-allergyintolerances-vs.xml.html&amp;entry%2E247644557=Allergies%20and%20Intolerance%20values%20for%20Immunization%20-%20XML%20Representation">Propose a change</a>
+
+
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

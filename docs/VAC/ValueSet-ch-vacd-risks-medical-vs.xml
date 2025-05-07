@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ch-vacd-risks-medical-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ch-vacd-risks-medical-vs</b></p><a name="ch-vacd-risks-medical-vs"> </a><a name="hcch-vacd-risks-medical-vs"> </a><a name="ch-vacd-risks-medical-vs-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/373068000">373068000</a></td><td>Undetermined (qualifier value)</td></tr><tr><td><a href="http://snomed.info/id/77386006">77386006</a></td><td>Pregnancy (finding)</td></tr><tr><td><a href="http://snomed.info/id/102947004">102947004</a></td><td>High risk sexual behavior (finding)</td></tr><tr><td><a href="http://snomed.info/id/226034001">226034001</a></td><td>Injecting drug user (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237016007">1237016007</a></td><td>At increased risk of exposure to Measles virus (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237017003">1237017003</a></td><td>At increased risk of exposure to Mumps virus (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237018008">1237018008</a></td><td>At increased risk of exposure to Rubella virus (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237019000">1237019000</a></td><td>At increased risk of exposure to Haemophilus influenzae type b (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237020006">1237020006</a></td><td>At increased risk of exposure to hepatitis B virus (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237021005">1237021005</a></td><td>At increased risk of exposure to European tick-borne encephalitis virus (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237022003">1237022003</a></td><td>At increased risk of exposure to human poliovirus (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237023008">1237023008</a></td><td>At increased risk of exposure to Neisseria meningitidis (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237024002">1237024002</a></td><td>At increased risk of exposure to rabies virus (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237025001">1237025001</a></td><td>At increased risk of exposure to Mycobacterium tuberculosis complex (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237026000">1237026000</a></td><td>At increased risk of exposure to hepatitis A virus (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237027009">1237027009</a></td><td>At increased risk of exposure to Human alphaherpesvirus 3 (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237028004">1237028004</a></td><td>At increased risk of exposure to Influenza virus (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237029007">1237029007</a></td><td>At increased risk of exposure to Streptococcus pneumoniae (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237030002">1237030002</a></td><td>At increased risk of exposure to Bordetella pertussis (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237443008">1237443008</a></td><td>Birth weight 1.5 kilogram or less (finding)</td></tr><tr><td><a href="http://snomed.info/id/1237570003">1237570003</a></td><td>Maternal history of viral hepatitis B (situation)</td></tr><tr><td><a href="http://snomed.info/id/1237576009">1237576009</a></td><td>Baby premature at delivery less than 32 weeks (finding)</td></tr><tr><td><a href="http://snomed.info/id/1251534000">1251534000</a></td><td>Exposure to invasive meningococcal disease (event)</td></tr><tr><td><a href="http://snomed.info/id/1254737008">1254737008</a></td><td>Has contact with infant (finding)</td></tr><tr><td><a href="http://snomed.info/id/1254738003">1254738003</a></td><td>In contact with infant younger than 6 months (finding)</td></tr><tr><td><a href="http://snomed.info/id/1254739006">1254739006</a></td><td>Has contact with premature infant (finding)</td></tr><tr><td><a href="http://snomed.info/id/1255625008">1255625008</a></td><td>Childbirth within last 4 weeks (finding)</td></tr><tr><td><a href="http://snomed.info/id/870577009">870577009</a></td><td>At increased risk of exposure to severe acute respiratory syndrome coronavirus 2 (finding)</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>Deutsch (Schweiz) (German (Switzerland), de)</b></td><td><b>English (United States) (English (United States), en)</b></td><td><b>French (Switzerland) (fr)</b></td><td><b>Italian (Switzerland) (it)</b></td><td><b>rm</b></td></tr><tr><td>373068000</td><td>Nicht bekannt</td><td>Undetermined (qualifier value)</td><td>Indéterminé</td><td>Indeterminato</td><td>Nunenconuschent</td></tr><tr><td>77386006</td><td>Schwangerschaft</td><td>Pregnancy (finding)</td><td>grossesse</td><td>gravidanza</td><td>gravidanza</td></tr><tr><td>102947004</td><td>Risikoreiches Sexualverhalten</td><td>High risk sexual behavior (finding)</td><td>comportement sexuel à risque élevé</td><td>comportamento sessuale ad alto rischio</td><td>cumportament sexual privlus</td></tr><tr><td>226034001</td><td>Konsument / Konsumentin von injizierbaren Drogen</td><td>Injecting drug user (finding)</td><td>consommateurs de drogue par injection</td><td>consumatore di stupefacenti iniettabili</td><td>consumenta u consument da drogas injectablas</td></tr><tr><td>1237016007</td><td>Erhöhtes Expositionsrisiko für Masern</td><td>At increased risk of exposure to Measles virus (finding)</td><td>risque accru d'exposition à la rougeole</td><td>maggiore rischio d'esposizione al morbillo</td><td>pli gronda ristga d'esser expost al virustgel</td></tr><tr><td>1237017003</td><td>Erhöhtes Expositionsrisiko für Mumps</td><td>At increased risk of exposure to Mumps virus (finding)</td><td>risque accru d'exposition aux oreillons</td><td>maggiore rischio d'esposizione agli orecchioni</td><td>pli gronda ristga d'esser expost al glandun</td></tr><tr><td>1237018008</td><td>Erhöhtes Expositionsrisiko für Röteln</td><td>At increased risk of exposure to Rubella virus (finding)</td><td>risque accru d'exposition à la rubéole</td><td>maggiore rischio d'esposizione alla rosolia</td><td>pli gronda ristga d'esser expost la rubella</td></tr><tr><td>1237019000</td><td>Erhöhtes Expositionsrisiko für Haemophilus influenzae Typ b</td><td>At increased risk of exposure to Haemophilus influenzae type b (finding)</td><td>risque accru d'exposition à l'Haemophilus influenzae de type b</td><td>maggiore rischio d'esposizione a Haemophilus influenzae di tipo B</td><td>pli gronda ristga d'esser expost a la hemofilus influenza tip B</td></tr><tr><td>1237020006</td><td>Erhöhtes Expositionsrisiko für Hepatitis B</td><td>At increased risk of exposure to hepatitis B virus (finding)</td><td>risque accru d'exposition à l'hépatite B</td><td>maggiore rischio d'esposizione all'epatite B</td><td>pli gronda ristga d'esser expost a hepatitis B</td></tr><tr><td>1237021005</td><td>Erhöhtes Expositionsrisiko für FSME</td><td>At increased risk of exposure to European tick-borne encephalitis virus (finding)</td><td>risque accru d'exposition à la MEVE</td><td>maggiore rischio d'esposizione all'encefalite da zecche (FSME)</td><td>pli gronda ristga d'esser expost a la meningoencefalitis da zeccas</td></tr><tr><td>1237022003</td><td>Erhöhtes Expositionsrisiko für Poliomyelitis</td><td>At increased risk of exposure to human poliovirus (finding)</td><td>risque accru d'exposition à la poliomyélite</td><td>maggiore rischio d'esposizione alla poliomielite</td><td>pli gronda ristga d'esser expost a la poliomielitis</td></tr><tr><td>1237023008</td><td>Erhöhtes Expositionsrisiko für Meningokokken</td><td>At increased risk of exposure to Neisseria meningitidis (finding)</td><td>risque accru d'exposition aux méningocoques</td><td>maggiore rischio d'esposizione ai meningococchi</td><td>pli gronda ristga d'esser expost a meningococcus</td></tr><tr><td>1237024002</td><td>Erhöhtes Expositionsrisiko für Tollwut</td><td>At increased risk of exposure to rabies virus (finding)</td><td>risque accru d'exposition à la rage</td><td>maggiore rischio d'esposizione alla rabbia</td><td>pli gronda ristga d'esser expost a la frenesia</td></tr><tr><td>1237025001</td><td>Erhöhtes Expositionsrisiko für Tuberkulose</td><td>At increased risk of exposure to Mycobacterium tuberculosis complex (finding)</td><td>risque accru d'exposition à la tuberculose</td><td>maggiore rischio d'esposizione alla tubercolosi</td><td>pli gronda ristga d'esser expost a tuberculosa</td></tr><tr><td>1237026000</td><td>Erhöhtes Expositionsrisiko für Hepatitis A</td><td>At increased risk of exposure to hepatitis A virus (finding)</td><td>risque accru d'exposition à l'hépatite A</td><td>maggiore rischio d'esposizione all'epatite A</td><td>pli gronda ristga d'esser expost a hepatitis A</td></tr><tr><td>1237027009</td><td>Erhöhtes Expositionsrisiko für Varizellen</td><td>At increased risk of exposure to Human alphaherpesvirus 3 (finding)</td><td>risque accru d'exposition à la varicelle</td><td>maggiore rischio d'esposizione alla varicella</td><td>pli gronda ristga d'esser expost a la virola selvadia</td></tr><tr><td>1237028004</td><td>Erhöhtes Expositionsrisiko für Influenza</td><td>At increased risk of exposure to Influenza virus (finding)</td><td>risque accru d'exposition à l'influenza</td><td>maggiore rischio d'esposizione all'influenza</td><td>pli gronda ristga d'esser expost a l'influenza</td></tr><tr><td>1237029007</td><td>Erhöhtes Expositionsrisiko für Pneumokokken</td><td>At increased risk of exposure to Streptococcus pneumoniae (finding)</td><td>risque accru d'exposition aux pneumocoques</td><td>maggiore rischio d'esposizione agli pneumococchi</td><td>pli gronda ristga d'esser expost a pneumococcus</td></tr><tr><td>1237030002</td><td>Erhöhtes Expositionsrisiko für Pertussis</td><td>At increased risk of exposure to Bordetella pertussis (finding)</td><td>risque accru d'exposition à la coqueluche</td><td>maggiore rischio d'esposizione alla pertosse</td><td>pli gronda ristga d'esser expost a la tuss chanina</td></tr><tr><td>1237443008</td><td>Geburtsgewicht 1,5 Kilogramm oder weniger</td><td>Birth weight 1.5 kilogram or less (finding)</td><td>Poids à la naissance 1,5 kilogramme ou moins</td><td>peso alla nascita 1,5 kg o meno</td><td>pais da naschientscha 1,5 kilograms u damain</td></tr><tr><td>1237570003</td><td>Mütterliche Anamnese einer Virushepatitis B</td><td>Maternal history of viral hepatitis B (situation)</td><td>antécédents maternels d'hépatite B</td><td>anamnesi materna di epatite virale B</td><td>anamnesa materna d'ina hepatitis virala B</td></tr><tr><td>1237576009</td><td>Frühgeburt bei einer Geburt von weniger als 32 Wochen</td><td>Baby premature at delivery less than 32 weeks (finding)</td><td>naissance prématurée à moins de 32 semaines</td><td>prematurità: parto prima della 32a settimana</td><td>naschientscha prematura en cas d'ina gravidanza da main che 32 emnas</td></tr><tr><td>1251534000</td><td>Exposition gegenüber invasiver Meningokokkeninfektion</td><td>Exposure to invasive meningococcal disease (event)</td><td>exposition à une infection invasive à méningocoque</td><td>esposizione a infezione invasiva da meningococchi</td><td>expost ad ina infecziun invasiva cun meningococcus</td></tr><tr><td>1254737008</td><td>Kontakt zu Säuglingen</td><td>Has contact with infant (finding)</td><td>contact avec un nourrisson</td><td>contatto con un lattante</td><td>contact cun in poppin</td></tr><tr><td>1254738003</td><td>Kontakt zu Säugling jünger als 6 Monate</td><td>In contact with infant younger than 6 months (finding)</td><td>contact avec un nourrisson de moins de 6 mois</td><td>contatto con un lattante di meno di 6 mesi</td><td>contact cun in poppin da main che 6 mais</td></tr><tr><td>1254739006</td><td>Kontakt zu Frühgeborenen</td><td>Has contact with premature infant (finding)</td><td>contact avec des prématurés</td><td>contatto con un prematuro</td><td>contact cun in uffant naschì permaturamain</td></tr><tr><td>1255625008</td><td>Entbindung in letzten 4 Wochen</td><td>Childbirth within last 4 weeks (finding)</td><td>accouchement au cours des 4 dernières semaines</td><td>parto nelle ultime 4 settimane</td><td>pagliola entaifer las ultimas 4 emnas</td></tr><tr><td>870577009</td><td>Erhöhtes Expositionsrisiko für das schwere akute respiratorische Syndrom Coronavirus 2</td><td>At increased risk of exposure to severe acute respiratory syndrome coronavirus 2</td><td>risque accru d'exposition aux syndromes respiratoires aigus sévères coronavirus 2</td><td>maggiore rischio d'esposizione a sindrome respiratoria acuta grave coronavirus 2</td><td>pli gronda ristga d'esser expost a la situaziun dal grev sindrom respiratoric acut coronavirus 2</td></tr></table></div>
+  </text>
+  <url value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-medical-vs"/>
+  <version value="6.0.0-ballot-ci-build"/>
+  <name value="SwissMedicalRisksForImmunizations"/>
+  <title value="Swiss Medical Risks For Immunizations"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-07T07:26:19+02:00"/>
+  <publisher value="HL7 Switzerland"/>
+  <contact>
+    <name value="HL7 Switzerland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ch/"/>
+    </telecom>
+  </contact>
+  <description value="The medical risks used in Switzerland."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CHE"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC0-1.0"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="373068000"/>
+        <display value="Undetermined (qualifier value)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Nicht bekannt"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="Indéterminé"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="Indeterminato"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="Nunenconuschent"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Undetermined (qualifier value)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="77386006"/>
+        <display value="Pregnancy (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Schwangerschaft"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="grossesse"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="gravidanza"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="gravidanza"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Pregnancy (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="102947004"/>
+        <display value="High risk sexual behavior (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Risikoreiches Sexualverhalten"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="comportement sexuel à risque élevé"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="comportamento sessuale ad alto rischio"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="cumportament sexual privlus"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="High risk sexual behavior (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="226034001"/>
+        <display value="Injecting drug user (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Konsument / Konsumentin von injizierbaren Drogen"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="consommateurs de drogue par injection"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="consumatore di stupefacenti iniettabili"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="consumenta u consument da drogas injectablas"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Injecting drug user (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237016007"/>
+        <display value="At increased risk of exposure to Measles virus (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Erhöhtes Expositionsrisiko für Masern"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="risque accru d'exposition à la rougeole"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="maggiore rischio d'esposizione al morbillo"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pli gronda ristga d'esser expost al virustgel"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="At increased risk of exposure to Measles virus (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237017003"/>
+        <display value="At increased risk of exposure to Mumps virus (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Erhöhtes Expositionsrisiko für Mumps"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="risque accru d'exposition aux oreillons"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="maggiore rischio d'esposizione agli orecchioni"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pli gronda ristga d'esser expost al glandun"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="At increased risk of exposure to Mumps virus (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237018008"/>
+        <display value="At increased risk of exposure to Rubella virus (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Erhöhtes Expositionsrisiko für Röteln"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="risque accru d'exposition à la rubéole"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="maggiore rischio d'esposizione alla rosolia"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pli gronda ristga d'esser expost la rubella"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="At increased risk of exposure to Rubella virus (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237019000"/>
+        <display value="At increased risk of exposure to Haemophilus influenzae type b (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Erhöhtes Expositionsrisiko für Haemophilus influenzae Typ b"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="risque accru d'exposition à l'Haemophilus influenzae de type b"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="maggiore rischio d'esposizione a Haemophilus influenzae di tipo B"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pli gronda ristga d'esser expost a la hemofilus influenza tip B"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="At increased risk of exposure to Haemophilus influenzae type b (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237020006"/>
+        <display value="At increased risk of exposure to hepatitis B virus (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Erhöhtes Expositionsrisiko für Hepatitis B"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="risque accru d'exposition à l'hépatite B"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="maggiore rischio d'esposizione all'epatite B"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pli gronda ristga d'esser expost a hepatitis B"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="At increased risk of exposure to hepatitis B virus (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237021005"/>
+        <display value="At increased risk of exposure to European tick-borne encephalitis virus (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Erhöhtes Expositionsrisiko für FSME"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="risque accru d'exposition à la MEVE"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="maggiore rischio d'esposizione all'encefalite da zecche (FSME)"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pli gronda ristga d'esser expost a la meningoencefalitis da zeccas"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="At increased risk of exposure to European tick-borne encephalitis virus (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237022003"/>
+        <display value="At increased risk of exposure to human poliovirus (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Erhöhtes Expositionsrisiko für Poliomyelitis"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="risque accru d'exposition à la poliomyélite"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="maggiore rischio d'esposizione alla poliomielite"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pli gronda ristga d'esser expost a la poliomielitis"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="At increased risk of exposure to human poliovirus (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237023008"/>
+        <display value="At increased risk of exposure to Neisseria meningitidis (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Erhöhtes Expositionsrisiko für Meningokokken"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="risque accru d'exposition aux méningocoques"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="maggiore rischio d'esposizione ai meningococchi"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pli gronda ristga d'esser expost a meningococcus"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="At increased risk of exposure to Neisseria meningitidis (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237024002"/>
+        <display value="At increased risk of exposure to rabies virus (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Erhöhtes Expositionsrisiko für Tollwut"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="risque accru d'exposition à la rage"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="maggiore rischio d'esposizione alla rabbia"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pli gronda ristga d'esser expost a la frenesia"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="At increased risk of exposure to rabies virus (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237025001"/>
+        <display value="At increased risk of exposure to Mycobacterium tuberculosis complex (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Erhöhtes Expositionsrisiko für Tuberkulose"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="risque accru d'exposition à la tuberculose"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="maggiore rischio d'esposizione alla tubercolosi"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pli gronda ristga d'esser expost a tuberculosa"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="At increased risk of exposure to Mycobacterium tuberculosis complex (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237026000"/>
+        <display value="At increased risk of exposure to hepatitis A virus (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Erhöhtes Expositionsrisiko für Hepatitis A"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="risque accru d'exposition à l'hépatite A"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="maggiore rischio d'esposizione all'epatite A"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pli gronda ristga d'esser expost a hepatitis A"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="At increased risk of exposure to hepatitis A virus (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237027009"/>
+        <display value="At increased risk of exposure to Human alphaherpesvirus 3 (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Erhöhtes Expositionsrisiko für Varizellen"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="risque accru d'exposition à la varicelle"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="maggiore rischio d'esposizione alla varicella"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pli gronda ristga d'esser expost a la virola selvadia"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="At increased risk of exposure to Human alphaherpesvirus 3 (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237028004"/>
+        <display value="At increased risk of exposure to Influenza virus (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Erhöhtes Expositionsrisiko für Influenza"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="risque accru d'exposition à l'influenza"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="maggiore rischio d'esposizione all'influenza"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pli gronda ristga d'esser expost a l'influenza"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="At increased risk of exposure to Influenza virus (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237029007"/>
+        <display value="At increased risk of exposure to Streptococcus pneumoniae (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Erhöhtes Expositionsrisiko für Pneumokokken"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="risque accru d'exposition aux pneumocoques"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="maggiore rischio d'esposizione agli pneumococchi"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pli gronda ristga d'esser expost a pneumococcus"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="At increased risk of exposure to Streptococcus pneumoniae (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237030002"/>
+        <display value="At increased risk of exposure to Bordetella pertussis (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Erhöhtes Expositionsrisiko für Pertussis"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="risque accru d'exposition à la coqueluche"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="maggiore rischio d'esposizione alla pertosse"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pli gronda ristga d'esser expost a la tuss chanina"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="At increased risk of exposure to Bordetella pertussis (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237443008"/>
+        <display value="Birth weight 1.5 kilogram or less (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Geburtsgewicht 1,5 Kilogramm oder weniger"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="Poids à la naissance 1,5 kilogramme ou moins"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="peso alla nascita 1,5 kg o meno"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pais da naschientscha 1,5 kilograms u damain"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Birth weight 1.5 kilogram or less (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237570003"/>
+        <display value="Maternal history of viral hepatitis B (situation)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Mütterliche Anamnese einer Virushepatitis B"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="antécédents maternels d'hépatite B"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="anamnesi materna di epatite virale B"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="anamnesa materna d'ina hepatitis virala B"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Maternal history of viral hepatitis B (situation)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1237576009"/>
+        <display value="Baby premature at delivery less than 32 weeks (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Frühgeburt bei einer Geburt von weniger als 32 Wochen"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="naissance prématurée à moins de 32 semaines"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="prematurità: parto prima della 32a settimana"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="naschientscha prematura en cas d'ina gravidanza da main che 32 emnas"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Baby premature at delivery less than 32 weeks (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1251534000"/>
+        <display value="Exposure to invasive meningococcal disease (event)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Exposition gegenüber invasiver Meningokokkeninfektion"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="exposition à une infection invasive à méningocoque"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="esposizione a infezione invasiva da meningococchi"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="expost ad ina infecziun invasiva cun meningococcus"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Exposure to invasive meningococcal disease (event)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1254737008"/>
+        <display value="Has contact with infant (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Kontakt zu Säuglingen"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="contact avec un nourrisson"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="contatto con un lattante"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="contact cun in poppin"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Has contact with infant (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1254738003"/>
+        <display value="In contact with infant younger than 6 months (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Kontakt zu Säugling jünger als 6 Monate"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="contact avec un nourrisson de moins de 6 mois"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="contatto con un lattante di meno di 6 mesi"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="contact cun in poppin da main che 6 mais"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="In contact with infant younger than 6 months (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1254739006"/>
+        <display value="Has contact with premature infant (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Kontakt zu Frühgeborenen"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="contact avec des prématurés"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="contatto con un prematuro"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="contact cun in uffant naschì permaturamain"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Has contact with premature infant (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="1255625008"/>
+        <display value="Childbirth within last 4 weeks (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Entbindung in letzten 4 Wochen"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="accouchement au cours des 4 dernières semaines"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="parto nelle ultime 4 settimane"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pagliola entaifer las ultimas 4 emnas"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Childbirth within last 4 weeks (finding)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="870577009"/>
+        <display value="At increased risk of exposure to severe acute respiratory syndrome coronavirus 2 (finding)"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Erhöhtes Expositionsrisiko für das schwere akute respiratorische Syndrom Coronavirus 2"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="risque accru d'exposition aux syndromes respiratoires aigus sévères coronavirus 2"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="maggiore rischio d'esposizione a sindrome respiratoria acuta grave coronavirus 2"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="pli gronda ristga d'esser expost a la situaziun dal grev sindrom respiratoric acut coronavirus 2"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="At increased risk of exposure to severe acute respiratory syndrome coronavirus 2"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,6 @@
+{
+  "version" : "6.0.0-ballot-ci-build",
+  "date" : "20250507072619",
+  "notForPublication" : true,
+  "name" : "ch.fhir.ig.ch-vacd.r4b"
+}

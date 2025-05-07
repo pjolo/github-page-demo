@@ -1,0 +1,83 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "83b40197-8873-4b2e-a9fd-813f4a7e06b6-144",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/83b40197-8873-4b2e-a9fd-813f4a7e06b6-144",
+  "name" : "IntersectionSwissPreillnessRisksForImmunizationsAndSwissPreillnessRisksForImmunizations",
+  "title" : "Intersection of Swiss Preillness Risks For Immunizations And Swiss Preillness Risks For Immunizations",
+  "status" : "active",
+  "date" : "2025-05-07T07:31:23+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CHE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "373068000",
+        "display" : "Undetermined (qualifier value)"
+      },
+      {
+        "code" : "24063002",
+        "display" : "Fracture of base of skull (disorder)"
+      },
+      {
+        "code" : "51244008",
+        "display" : "Disorder of spleen (disorder)"
+      },
+      {
+        "code" : "51655004",
+        "display" : "Congenital anomaly of skull (disorder)"
+      },
+      {
+        "code" : "56265001",
+        "display" : "Heart disease (disorder)"
+      },
+      {
+        "code" : "75934005",
+        "display" : "Metabolic disease (disorder)"
+      },
+      {
+        "code" : "90708001",
+        "display" : "Kidney disease (disorder)"
+      },
+      {
+        "code" : "230744007",
+        "display" : "Cerebrospinal fluid leak (disorder)"
+      },
+      {
+        "code" : "235856003",
+        "display" : "Disorder of liver (disorder)"
+      },
+      {
+        "code" : "363346000",
+        "display" : "Malignant neoplastic disease (disorder)"
+      },
+      {
+        "code" : "402196005",
+        "display" : "Childhood atopic dermatitis (disorder)"
+      },
+      {
+        "code" : "414029004",
+        "display" : "Disorder of immune function (disorder)"
+      },
+      {
+        "code" : "449840001",
+        "display" : "Cochlear prosthesis in situ (finding)"
+      },
+      {
+        "code" : "737294004",
+        "display" : "Transplant present (finding)"
+      },
+      {
+        "code" : "19829001",
+        "display" : "Disorder of lung (disorder)"
+      },
+      {
+        "code" : "414027002",
+        "display" : "Disorder of hematopoietic structure (disorder)"
+      }]
+    }]
+  }
+}

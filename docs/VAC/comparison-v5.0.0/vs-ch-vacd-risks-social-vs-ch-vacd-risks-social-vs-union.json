@@ -1,0 +1,567 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "83b40197-8873-4b2e-a9fd-813f4a7e06b6-146",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/83b40197-8873-4b2e-a9fd-813f4a7e06b6-146",
+  "name" : "UnionSwissSocialRisksForImmunizationsAndSwissSocialRisksForImmunizations",
+  "title" : "Union of Swiss Social Risks For Immunizations And Swiss Social Risks For Immunizations",
+  "status" : "active",
+  "date" : "2025-05-07T07:31:23+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CHE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "373068000",
+        "display" : "Undetermined (qualifier value)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Nicht bekannt"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Indéterminé"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Indeterminato"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Nunenconuschent"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Undetermined (qualifier value)"
+        }]
+      },
+      {
+        "code" : "105568001",
+        "display" : "In prison (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Im Gefängnis"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "en prison"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "in prigione"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "en praschun"
+        },
+        {
+          "language" : "en-US",
+          "value" : "In prison (finding)"
+        }]
+      },
+      {
+        "code" : "169449001",
+        "display" : "Trying to conceive (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Versuch, schwanger zu werden"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "tentative de tomber enceinte"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "tentativo di gravidanza"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "emprova da vegnir en speranza"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Trying to conceive (finding)"
+        }]
+      },
+      {
+        "code" : "224224003",
+        "display" : "Lives in staffed home (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Bewohner / Bewohnerinn von Gemeinschaftseinrichtungen"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "pensionnaire d'une institution communautaire"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "persona residente in una struttura collettiva"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "abitanta u abitant d'instituziuns communablas"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Lives in staffed home (finding)"
+        }]
+      },
+      {
+        "code" : "1237572006",
+        "display" : "Lives in home for intellectually disabled people (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Lebt in Heim für geistig behinderte Menschen"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "vit dans un foyer pour personnes vivant avec un handicap mental"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "vive in una struttura per disabili mentali"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "viva en ina chasa per persunas cun impediments spiertals"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Lives in home for intellectually disabled people (finding)"
+        }]
+      },
+      {
+        "code" : "1255626009",
+        "display" : "Has contact with injecting drug user (situation)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Kontakt zu Drogenkonsumenten"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "contact avec des consommateurs de drogue"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "contatto con consumatori di stupefacenti"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "contact cun consuments da drogas"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Has contact with injecting drug user (situation)"
+        }]
+      },
+      {
+        "code" : "1342377006",
+        "display" : "Has contact with wild bird (situation)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Kontakt zu Wildvögeln"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "contact avec des oiseaux sauvages"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "contatto con uccelli selvatici"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "contact cun utschels selvadis"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Has contact with wild bird"
+        }]
+      },
+      {
+        "code" : "1342378001",
+        "display" : "Has contact with poultry bird (situation)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Kontakt zu Geflügelvögeln"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "contact avec les oiseaux de volaille"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "contatto con uccelli da cortile"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "contact cun utschels da giaglinom"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Has contact with poultry bird (situation)"
+        }]
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/2011000195101",
+      "concept" : [{
+        "code" : "72281000195108",
+        "display" : "Contact with human alphaherpesvirus 3 risk patient (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Kontakt zu Varizella-Zoster-Risikopatienten"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "contact avec des patients à risque de varicelle-zona"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "contatto con un paziente a rischio di varicella-zoster"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "contact cun pazients periclitads da la virola selvadia"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Contact with human alphaherpesvirus 3 risk patient (finding)"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-deprecated",
+          "valueBoolean" : true
+        }],
+        "code" : "72291000195105",
+        "display" : "Residence or stay in Switzerland except Geneva and Ticino (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Wohnort oder Aufenthalt in Schweiz ausser Genf und Tessin"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "domicile ou séjour en Suisse hors Genève et Tessin"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "domicilio o soggiorno in Svizzera, esclusi Ginevra e Ticino"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "lieu da domicil u da dimora en Svizra senza Genevra e Tessin"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Residence or stay in Switzerland except Geneva and Ticino (finding)"
+        }]
+      },
+      {
+        "code" : "102311000195108",
+        "display" : "Residence or stay in Switzerland except Ticino (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Wohnort oder Aufenthalt in Schweiz ausser Tessin"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "domicile ou séjour en Suisse sauf Tessin"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "residenza o soggiorno in Svizzera eccezione di Ticino"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "lieu da domicil u da dimora en Svizra senza Tessin"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Residence or stay in Switzerland except Ticino (finding)"
+        }]
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "373068000",
+        "display" : "Undetermined (qualifier value)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Nicht bekannt"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Indéterminé"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Indeterminato"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Nunenconuschent"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Undetermined (qualifier value)"
+        }]
+      },
+      {
+        "code" : "105568001",
+        "display" : "In prison (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Im Gefängnis"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "en prison"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "in prigione"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "en praschun"
+        },
+        {
+          "language" : "en-US",
+          "value" : "In prison (finding)"
+        }]
+      },
+      {
+        "code" : "169449001",
+        "display" : "Trying to conceive (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Versuch, schwanger zu werden"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "tentative de tomber enceinte"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "tentativo di gravidanza"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "emprova da vegnir en speranza"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Trying to conceive (finding)"
+        }]
+      },
+      {
+        "code" : "224224003",
+        "display" : "Lives in staffed home (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Bewohner / Bewohnerinn von Gemeinschaftseinrichtungen"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "pensionnaire d'une institution communautaire"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "persona residente in una struttura collettiva"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "abitanta u abitant d'instituziuns communablas"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Lives in staffed home (finding)"
+        }]
+      },
+      {
+        "code" : "1237572006",
+        "display" : "Lives in home for intellectually disabled people (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Lebt in Heim für geistig behinderte Menschen"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "vit dans un foyer pour personnes vivant avec un handicap mental"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "vive in una struttura per disabili mentali"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "viva en ina chasa per persunas cun impediments spiertals"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Lives in home for intellectually disabled people (finding)"
+        }]
+      },
+      {
+        "code" : "1255626009",
+        "display" : "Has contact with injecting drug user (situation)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Kontakt zu Drogenkonsumenten"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "contact avec des consommateurs de drogue"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "contatto con consumatori di stupefacenti"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "contact cun consuments da drogas"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Has contact with injecting drug user (situation)"
+        }]
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/2011000195101/version/20241207",
+      "concept" : [{
+        "code" : "1342377006",
+        "display" : "Has contact with wild bird (situation)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Kontakt zu Wildvögeln"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "contact avec des oiseaux sauvages"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "contatto con uccelli selvatici"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "contact cun utschels selvadis"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Has contact with wild bird"
+        }]
+      },
+      {
+        "code" : "1342378001",
+        "display" : "Has contact with poultry bird (situation)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Kontakt zu Geflügelvögeln"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "contact avec les oiseaux de volaille"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "contatto con uccelli da cortile"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "contact cun utschels da giaglinom"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Has contact with poultry bird (situation)"
+        }]
+      },
+      {
+        "code" : "72281000195108",
+        "display" : "Contact with human alphaherpesvirus 3 risk patient (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Kontakt zu Varizella-Zoster-Risikopatienten"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "contact avec des patients à risque de varicelle-zona"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "contatto con un paziente a rischio di varicella-zoster"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "contact cun pazients periclitads da la virola selvadia"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Contact with human alphaherpesvirus 3 risk patient (finding)"
+        }]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/valueset-deprecated",
+          "valueBoolean" : true
+        }],
+        "code" : "72291000195105",
+        "display" : "Residence or stay in Switzerland except Geneva and Ticino (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Wohnort oder Aufenthalt in Schweiz ausser Genf und Tessin"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "domicile ou séjour en Suisse hors Genève et Tessin"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "domicilio o soggiorno in Svizzera, esclusi Ginevra e Ticino"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "lieu da domicil u da dimora en Svizra senza Genevra e Tessin"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Residence or stay in Switzerland except Geneva and Ticino (finding)"
+        }]
+      },
+      {
+        "code" : "102311000195108",
+        "display" : "Residence or stay in Switzerland except Ticino (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Wohnort oder Aufenthalt in Schweiz ausser Tessin"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "domicile ou séjour en Suisse sauf Tessin"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "residenza o soggiorno in Svizzera eccezione di Ticino"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "lieu da domicil u da dimora en Svizra senza Tessin"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Residence or stay in Switzerland except Ticino (finding)"
+        }]
+      }]
+    }]
+  }
+}

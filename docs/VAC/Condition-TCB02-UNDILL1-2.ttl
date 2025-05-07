@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/Condition/TCB02-UNDILL1-2> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TCB02-UNDILL1-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-pastillnesses"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-pastillnesses>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition TCB02-UNDILL1-2</b></p><a name=\"TCB02-UNDILL1-2\"> </a><a name=\"hcTCB02-UNDILL1-2\"> </a><a name=\"TCB02-UNDILL1-2-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-pastillnesses.html\">CH VACD Past Illness</a></p></div><blockquote><p><b>CH VACD Extension Merging Conflict Entry Reference</b></p><ul><li>entry: <a href=\"Condition-TCD02-UNDILL1-2.html\">Condition Varicella (disorder)</a></li><li>conflict: duplicate</li></ul></blockquote><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.2</code>/5f727b7b-87ae-464f-85ac-1a45d23f0897</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\">Resolved</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 38907003}\">Varicella (disorder)</span></p><p><b>subject</b>: <a href=\"Patient-TC-patient.html\">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>onset</b>: 2015-05-30</p><p><b>recordedDate</b>: 2015-05-30</p><p><b>recorder</b>: <a href=\"PractitionerRole-TC-HCP1-ORG1-ROLE-author.html\">PractitionerRole</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "entry"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://fhir.ch/ig/ch-vacd/Condition/TCD02-UNDILL1-2> ;
+         fhir:reference [ fhir:v "Condition/TCD02-UNDILL1-2" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "conflict"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "duplicate"
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-merging-conflict-entry-reference"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.402.1.3.1.1.2"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "5f727b7b-87ae-464f-85ac-1a45d23f0897" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "resolved" ] ;
+       fhir:display [ fhir:v "Resolved" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:38907003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "38907003" ] ;
+       fhir:display [ fhir:v "Varicella (disorder)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/TC-patient> ;
+     fhir:reference [ fhir:v "Patient/TC-patient" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:dateTime ;
+     fhir:v "2015-05-30"^^xsd:date
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2015-05-30"^^xsd:date] ; # 
+  fhir:recorder [
+     fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/TC-HCP1-ORG1-ROLE-author> ;
+     fhir:reference [ fhir:v "PractitionerRole/TC-HCP1-ORG1-ROLE-author" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

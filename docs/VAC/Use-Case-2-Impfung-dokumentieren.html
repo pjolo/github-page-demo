@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Use Case 2 Impfung Dokumentieren - Implementation Guide CH VACD v6.0.0-ballot-ci-build</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <style>
+    
+
+    
+
+    
+
+    </style>
+ 
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"39"}
+    h3,h4,h5,h6{--heading-prefix:"39"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+            <div id="family-nav">
+	<a id="logo" no-external="true" href="http://hl7.org/fhir"> <img
+		alt="logo fhir" src="fhir-logo-www.png" />
+	</a>
+</div>
+
+            <div id="family-nav">
+                <a id="logo" no-external="true" href="searchform.html">
+                    <img src="assets/images/search.png" alt="Search FHIR" />
+                </a>
+            </div>
+            <div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://www.hl7.ch">
+        <img alt="visit the hl7 website" height="50" src="hl7-logo.png" />
+    </a>            
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Implementation Guide CH VACD</span>
+            <br/>
+            <span style="display:inline-block;">6.0.0-ballot-ci-build - ci-build
+
+
+
+  <img alt="Switzerland flag" src="assets/images/che.svg" height="16" title="Switzerland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<!--<li><a href="toc.html">Table of Contents</a></li> -->
+	<li>
+		<a href="index.html">Home</a>
+	</li>
+
+
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Use Cases
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="Use-Cases-Deutsch.html">Anwendungsfälle</a>
+			</li>
+			<li>
+				<a href="Use-Cases-Francais.html">Les cas d'utilisation</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Documents/Messages
+			<b class="caret">
+			</b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="immunization-administration-document.html">Immunization Administration document</a>
+			</li>
+			<li>
+				<a href="vaccination-record-document.html">Vaccination Record document</a>
+			</li>
+			<li>
+				<a href="immunization-recommendation-request-message.html">Immunization Recommendation Request message</a>
+			</li>
+			<li>
+				<a href="immunization-recommendation-response-message.html">Immunization Recommendation Response message</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="profiles.html">Profiles</a>
+	</li>
+	<li>
+		<a href="extensions.html">Extensions</a>
+	</li>
+	<li>
+		<a href="terminology.html">Terminology</a>
+	</li>
+	<li>
+		<a href="artifacts.html">Artifacts</a>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Test Cases
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="TestCases.html">Overview</a>
+			</li>
+			<li>
+				<a href="TestCases.html#a-immunizations">A Immunizations</a>
+			</li>
+			<li>
+				<a href="TestCases.html#b-other-elements">B Other Elements</a>
+			</li>
+			<li>
+				<a href="TestCases.html#c-correction-of-entries">C Correction of Entries</a>
+			</li>
+			<li>
+				<a href="TestCases.html#d-conflicts-on-merging-documents">D Conflicts on merging Documents</a>
+			</li>
+			<li>
+				<a href="TestCases.html#e-language-handling-on-merging-documents">E Language handling on merging Documents</a>
+			</li>
+			<li>
+				<a href="TestCases.html#f-add-notes-to-existing-elements">F Add Notes to existing Elements</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Use Case 2 Impfung Dokumentieren</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Implementation Guide CH VACD - Local Development build (v6.0.0-ballot-ci-build) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://fhir.ch/ig/ch-vacd/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Use Case 2 Impfung Dokumentieren</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#impfung-dokumentieren-gesundheitsfachperson" id="markdown-toc-impfung-dokumentieren-gesundheitsfachperson">Impfung dokumentieren (Gesundheitsfachperson)</a></li>
+  <li><a href="#impfung-dokumentieren-patient" id="markdown-toc-impfung-dokumentieren-patient">Impfung dokumentieren (Patient)</a></li>
+</ul>
+
+</div>
+<h3 id="impfung-dokumentieren-gesundheitsfachperson">Impfung dokumentieren (Gesundheitsfachperson)</h3>
+
+<p>Eine Gesundheitsfachperson erfasst aktuell verabreichte Impfungen in ihrem Primärsystem oder dem Portal der Gemeinschaft. Sie wählt dazu die entsprechenden Benutzeroberflächen aus und sucht die strukturierten Daten der verabreichten Impfung anhand von Suchkriterien und Stichworten. Sie sucht die Gesundheitsfachperson, welche die Impfung verordnet hat anhand von Suchkriterien und Stichwörtern bzw. gibt die Daten manuell ein, wenn diese nicht am EPD teilnimmt. Die Gesundheitsfachperson speichert die Daten.</p>
+
+<p>Die Gesundheitsfachperson erfasst eine vom Patienten nicht erwünschte oder unnötige Impfung (nach Genesung) in ihrem Primärsystem bzw. dem Portal der Gemeinschaft. Sie wählt dazu die entsprechenden Benutzeroberflächen aus und sucht die strukturierten Impfdaten anhand von Suchkriterien und Stichwörtern. Die Gesundheitsfachperson speichert die Daten.</p>
+
+<p>Die Gesundheitsfachperson erfasst eine frühere Erkrankung des Patienten mit Relevanz für die Impfungen in ihrem Primärsystem bzw. dem Portal der Gemeinschaft. Sie wählt dazu die entsprechenden Benutzeroberflächen aus, sucht die strukturierten Daten der Erkrankung und speichert die Daten.</p>
+
+<p>Die Gesundheitsfachperson erfasst eine Allergie eines Patienten auf einen Impfstoff in ihrem Primärsystem bzw. dem Portal der Gemeinschaft. Sie wählt dazu die entsprechenden Benutzeroberflächen aus und sucht die strukturierten Daten der Allergie. Die Gesundheitsfachperson speichert die Daten.</p>
+
+<p><em>Technische Umsetzung im EPD</em>: Das Primärsystem bzw. das Portal der Gemeinschaft legt die erfassten Informationen im Austauschformat Impfdokumentation im EPD ab.</p>
+
+<div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="SEQUENCE" height="393px" preserveAspectRatio="none" style="width:591px;height:393px;background:#FFFFFF;" version="1.1" viewBox="0 0 591 393" width="591px" zoomAndPan="magnify"><title>Erfassen und speichern Impfung im EPD</title><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="270.7168" x="159.3792" y="29.5332">Erfassen und speichern Impfung im EPD</text><g><title>Gesundheitsfachperson</title><rect fill="#000000" fill-opacity="0.00000" height="174.1094" width="8" x="77.9375" y="121.2188" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="81" x2="81" y1="121.2188" y2="295.3281" /></g><g><title>Portal</title><rect fill="#000000" fill-opacity="0.00000" height="174.1094" width="8" x="296.729" y="121.2188" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="300.4429" x2="300.4429" y1="121.2188" y2="295.3281" /></g><g><title>Eigene Gemeinschaft</title><rect fill="#000000" fill-opacity="0.00000" height="174.1094" width="8" x="507.5479" y="121.2188" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="510.6206" x2="510.6206" y1="121.2188" y2="295.3281" /></g><g class="participant participant-head" data-participant="Gesundheitsfachperson"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147.875" x="5" y="118.1426">Gesundheitsfachperson</text><ellipse cx="81.9375" cy="52.1094" fill="#0000FF" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M81.9375,60.1094 L81.9375,87.1094 M68.9375,68.1094 L94.9375,68.1094 M81.9375,87.1094 L68.9375,102.1094 M81.9375,87.1094 L94.9375,102.1094" fill="none" style="stroke:#181818;stroke-width:0.5;" /></g><g class="participant participant-tail" data-participant="Gesundheitsfachperson"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147.875" x="5" y="308.8613">Gesundheitsfachperson</text><ellipse cx="81.9375" cy="320.4375" fill="#0000FF" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M81.9375,328.4375 L81.9375,355.4375 M68.9375,336.4375 L94.9375,336.4375 M81.9375,355.4375 L68.9375,370.4375 M81.9375,355.4375 L94.9375,370.4375" fill="none" style="stroke:#181818;stroke-width:0.5;" /></g><g class="participant participant-head" data-participant="Portal"><rect fill="#00CC00" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="50.5723" x="275.4429" y="88.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36.5723" x="282.4429" y="110.1426">Portal</text></g><g class="participant participant-tail" data-participant="Portal"><rect fill="#00CC00" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="50.5723" x="275.4429" y="294.3281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36.5723" x="282.4429" y="315.8613">Portal</text></g><g class="participant participant-head" data-participant="Eigene Gemeinschaft\nA"><rect fill="#00CC00" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147.8545" x="437.6206" y="71" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133.8545" x="444.6206" y="92.5332">Eigene Gemeinschaft</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9.3379" x="506.8789" y="110.1426">A</text></g><g class="participant participant-tail" data-participant="Eigene Gemeinschaft\nA"><rect fill="#00CC00" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147.8545" x="437.6206" y="294.3281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133.8545" x="444.6206" y="315.8613">Eigene Gemeinschaft</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9.3379" x="506.8789" y="333.4707">A</text></g><g class="message" data-participant-1="Gesundheitsfachperson" data-participant-2="Portal"><polygon fill="#181818" points="288.729,165.9219,298.729,169.9219,288.729,173.9219,292.729,169.9219" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="81.9375" x2="294.729" y1="169.9219" y2="169.9219" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23.1182" x="88.9375" y="156.8896">[01]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="156.8442" x="116.0557" y="148.7139">Erfassen der abgegebenen</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="132.2534" x="116.0557" y="165.0654">Impfung und speichern</text></g><g class="message" data-participant-1="Portal" data-participant-2="Eigene Gemeinschaft\nA"><polygon fill="#181818" points="499.5479,212.625,509.5479,216.625,499.5479,220.625,503.5479,216.625" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="300.729" x2="505.5479" y1="216.625" y2="216.625" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23.1182" x="307.729" y="203.5928">[02]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="159.7007" x="334.8472" y="195.417">Speichern des Dokumentes</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="119.793" x="334.8472" y="211.7686">"Impfdokumentation"</text></g><g class="message" data-participant-1="Eigene Gemeinschaft\nA" data-participant-2="Portal"><polygon fill="#181818" points="311.729,242.9766,301.729,246.9766,311.729,250.9766,307.729,246.9766" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="305.729" x2="510.5479" y1="246.9766" y2="246.9766" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23.1182" x="317.729" y="242.1201">[03]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18.7827" x="344.8472" y="242.1201">OK</text></g><g class="message" data-participant-1="Portal" data-participant-2="Gesundheitsfachperson"><polygon fill="#181818" points="92.9375,273.3281,82.9375,277.3281,92.9375,281.3281,88.9375,277.3281" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="86.9375" x2="299.729" y1="277.3281" y2="277.3281" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23.1182" x="98.9375" y="272.4717">[04]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="167.6733" x="126.0557" y="272.4717">Best&#228;tigung der Speicherung</text></g><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="50.5859" x="269.4446" y="383.3184">Version 1.0</text></g></svg></div>
+
+<h3 id="impfung-dokumentieren-patient">Impfung dokumentieren (Patient)</h3>
+
+<p>Ein Patient erfasst aktuell verabreichte Impfungen im Portal der Stammgemeinschaft. Er wählt dazu die entsprechenden Benutzeroberflächen aus und sucht die strukturierten Daten der verabreichten Impfung anhand von Suchkriterien und Stichworten. Der Patient sucht die Gesundheitsfachperson, welche die Impfung verordnet hat anhand von Suchkriterien und Stichwörtern bzw. gibt die Daten manuell ein, wenn diese nicht am EPD teilnimmt. Der Patient speichert die Daten. 
+Der Patient erfasst eine neue unerwünschte oder unnötige Impfung (nach Genesung) in seinem Primärsystem bzw. dem Portal der Gemeinschaft. Er wählt dazu die entsprechende Benutzeroberfläche aus und sucht die strukturierten Impfdaten anhand von Suchkriterien und Stichwörtern. Der Patient speichert die Daten.</p>
+
+<p>Der Patient erfasst eine frühere Erkrankung mit Relevanz für die Impfungen im Portal der Stammgemeinschaft. Er wählt dazu die entsprechenden Benutzeroberflächen aus, sucht die strukturierten Daten der Erkrankung und speichert die Daten.</p>
+
+<p>Der Patient erfasst die Daten einer Allergie auf einen Impfstoff im Portal der Stammgemeinschaft. Er wählt dazu die entsprechenden Benutzeroberflächen aus, sucht die strukturierten Daten der Allergie und speichert die Daten.</p>
+
+<p><em>Technische Umsetzung im EPD</em>: Das Portal der Stammgemeinschaft legt die erfassten Informationen im Austauschformat Impfdokumentation im EPD ab.</p>
+
+<div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="SEQUENCE" height="393px" preserveAspectRatio="none" style="width:539px;height:393px;background:#FFFFFF;" version="1.1" viewBox="0 0 539 393" width="539px" zoomAndPan="magnify"><title>Erfassen und speichern Impfung im EPD</title><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="270.7168" x="133.3069" y="29.5332">Erfassen und speichern Impfung im EPD</text><g><title>Patient</title><rect fill="#000000" fill-opacity="0.00000" height="174.1094" width="8" x="25.793" y="121.2188" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="29" x2="29" y1="121.2188" y2="295.3281" /></g><g><title>Portal</title><rect fill="#000000" fill-opacity="0.00000" height="174.1094" width="8" x="244.5845" y="121.2188" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="248.2983" x2="248.2983" y1="121.2188" y2="295.3281" /></g><g><title>Eigene Gemeinschaft</title><rect fill="#000000" fill-opacity="0.00000" height="174.1094" width="8" x="455.4033" y="121.2188" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="458.4761" x2="458.4761" y1="121.2188" y2="295.3281" /></g><g class="participant participant-head" data-participant="Patient"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43.5859" x="5" y="118.1426">Patient</text><ellipse cx="29.793" cy="52.1094" fill="#FF0000" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M29.793,60.1094 L29.793,87.1094 M16.793,68.1094 L42.793,68.1094 M29.793,87.1094 L16.793,102.1094 M29.793,87.1094 L42.793,102.1094" fill="none" style="stroke:#181818;stroke-width:0.5;" /></g><g class="participant participant-tail" data-participant="Patient"><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43.5859" x="5" y="308.8613">Patient</text><ellipse cx="29.793" cy="320.4375" fill="#FF0000" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M29.793,328.4375 L29.793,355.4375 M16.793,336.4375 L42.793,336.4375 M29.793,355.4375 L16.793,370.4375 M29.793,355.4375 L42.793,370.4375" fill="none" style="stroke:#181818;stroke-width:0.5;" /></g><g class="participant participant-head" data-participant="Portal"><rect fill="#00CC00" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="50.5723" x="223.2983" y="88.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36.5723" x="230.2983" y="110.1426">Portal</text></g><g class="participant participant-tail" data-participant="Portal"><rect fill="#00CC00" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="50.5723" x="223.2983" y="294.3281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36.5723" x="230.2983" y="315.8613">Portal</text></g><g class="participant participant-head" data-participant="Eigene Gemeinschaft\nA"><rect fill="#00CC00" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147.8545" x="385.4761" y="71" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133.8545" x="392.4761" y="92.5332">Eigene Gemeinschaft</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9.3379" x="454.7344" y="110.1426">A</text></g><g class="participant participant-tail" data-participant="Eigene Gemeinschaft\nA"><rect fill="#00CC00" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147.8545" x="385.4761" y="294.3281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133.8545" x="392.4761" y="315.8613">Eigene Gemeinschaft</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="9.3379" x="454.7344" y="333.4707">A</text></g><g class="message" data-participant-1="Patient" data-participant-2="Portal"><polygon fill="#181818" points="236.5845,165.9219,246.5845,169.9219,236.5845,173.9219,240.5845,169.9219" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="29.793" x2="242.5845" y1="169.9219" y2="169.9219" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23.1182" x="36.793" y="156.8896">[01]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="156.8442" x="63.9111" y="148.7139">Erfassen der abgegebenen</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="135.8652" x="63.9111" y="165.0654">Impfung und speichern.</text></g><g class="message" data-participant-1="Portal" data-participant-2="Eigene Gemeinschaft\nA"><polygon fill="#181818" points="447.4033,212.625,457.4033,216.625,447.4033,220.625,451.4033,216.625" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="248.5845" x2="453.4033" y1="216.625" y2="216.625" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23.1182" x="255.5845" y="203.5928">[02]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="159.7007" x="282.7026" y="195.417">Speichern des Dokumentes</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="119.793" x="282.7026" y="211.7686">"Impfdokumentation"</text></g><g class="message" data-participant-1="Eigene Gemeinschaft\nA" data-participant-2="Portal"><polygon fill="#181818" points="259.5845,242.9766,249.5845,246.9766,259.5845,250.9766,255.5845,246.9766" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="253.5845" x2="458.4033" y1="246.9766" y2="246.9766" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23.1182" x="265.5845" y="242.1201">[03]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18.7827" x="292.7026" y="242.1201">OK</text></g><g class="message" data-participant-1="Portal" data-participant-2="Patient"><polygon fill="#181818" points="40.793,273.3281,30.793,277.3281,40.793,281.3281,36.793,277.3281" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="34.793" x2="247.5845" y1="277.3281" y2="277.3281" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="23.1182" x="46.793" y="272.4717">[04]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="167.6733" x="73.9111" y="272.4717">Best&#228;tigung der Speicherung</text></g><text fill="#888888" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="50.5859" x="243.3723" y="383.3184">Version 1.0</text></g></svg></div>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.ch/">HL7 Switzerland</a>.  Package ch.fhir.ig.ch-vacd#6.0.0-ballot-ci-build based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 7, 2025 07:29+0200">2025-05-07</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+
+| <a style="color: #81BEF7" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSejY5cinbQ4kHgGKMhncYu0mPuWb7euUkxfeXZeiUCFFa4k6g/viewform?usp=sf_link&amp;entry%2E1353807103=ch.fhir.ig.ch-vacd%236.0.0-ballot-ci-build%20/Use-Case-2-Impfung-dokumentieren.html&amp;entry%2E247644557=Use%20Case%202%20Impfung%20Dokumentieren">Propose a change</a>
+
+
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

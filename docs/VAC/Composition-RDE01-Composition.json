@@ -1,0 +1,93 @@
+{
+  "resourceType" : "Composition",
+  "id" : "RDE01-Composition",
+  "meta" : {
+    "profile" : ["http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-composition-vaccination-record"]
+  },
+  "language" : "de-CH",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"de-CH\" lang=\"de-CH\"><h3>Impfdossier</h3><p><b>Id: </b>RDE01-Composition</p><p><b>Identifier: </b><span>urn:ietf:rfc:3986#urn:uuid:bd70b715-a6cd-4855-b1be-e7a38ddf5775</span></p><p><b>Status: </b>Final</p><p><b>Code: </b><span>Immunization record (http://snomed.info/sct#41000179103)</span></p><p><b>Patient: </b><a href=\"Patient-TC-patient.html\">Patient/TC-patient</a> Wegmueller Monika</p><p><b>Date: </b>November 20, 2021</p><p><b>Authors:</b></p><table><tr><td><p><a href=\"Patient-TC-patient.html\">Patient/TC-patient</a> Wegmueller Monika</p></td></tr></table><p><b>Confidentiality: </b>null<span> Normal (qualifier value) (http://snomed.info/sct#17621005)</span></p><p><b>Sections:</b></p><table><tr><td>Liste der verabreichten Impfungen</td></tr><tr><td>Bisherige Krankheiten</td></tr></table></div>"
+  },
+  "identifier" : {
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:uuid:bd70b715-a6cd-4855-b1be-e7a38ddf5775"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "41000179103",
+      "display" : "Immunization record"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "urn:oid:2.16.756.5.30.1.127.3.10.10",
+      "code" : "urn:che:epr:ch-vacd:vaccination-record:2022"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/TC-patient"
+  },
+  "date" : "2021-11-20T14:00:00.390+02:00",
+  "author" : [{
+    "reference" : "Patient/TC-patient"
+  }],
+  "title" : "Impfdossier",
+  "confidentiality" : "N",
+  "_confidentiality" : {
+    "extension" : [{
+      "url" : "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "17621005",
+          "display" : "Normal (qualifier value)"
+        }]
+      }
+    }]
+  },
+  "custodian" : {
+    "reference" : "Organization/TC-ORG1"
+  },
+  "section" : [{
+    "id" : "administration",
+    "title" : "Liste der verabreichten Impfungen",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "11369-6",
+        "display" : "Hx of Immunization"
+      }]
+    },
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"de-CH\" lang=\"de-CH\"><p><b>Code: </b><span>Hx of Immunization (http://loinc.org#11369-6)</span></p><p><b>Entries:</b></p><table><tr><td><a href=\"Immunization-TCE01-IMMUN1-de.html\">Immunization/TCE01-IMMUN1-de</a></td></tr><tr><td><a href=\"Immunization-TCE01-IMMUN2-de.html\">Immunization/TCE01-IMMUN2-de</a></td></tr></table></div>"
+    },
+    "entry" : [{
+      "reference" : "Immunization/TCE01-IMMUN1-de"
+    },
+    {
+      "reference" : "Immunization/TCE01-IMMUN2-de"
+    }]
+  },
+  {
+    "id" : "pastillnesses",
+    "title" : "Bisherige Krankheiten",
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "11348-0",
+        "display" : "Hx of Past illness"
+      }]
+    },
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"de-CH\" lang=\"de-CH\"><p><b>Code: </b><span>Hx of Past illness (http://loinc.org#11348-0)</span></p><p><b>Entries:</b></p><table><tr><td><a href=\"Condition-TCE01-UNDILL1-de.html\">Condition/TCE01-UNDILL1-de</a></td></tr></table></div>"
+    },
+    "entry" : [{
+      "reference" : "Condition/TCE01-UNDILL1-de"
+    }]
+  }]
+}

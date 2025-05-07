@@ -1,0 +1,287 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/Bundle/1-5-ImmunizationRecommendationResponse> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "1-5-ImmunizationRecommendationResponse"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2021-06-01T00:00:00.159+02:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-recommendation-response-message"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-recommendation-response-message>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:5b8a26b2-dd6d-4c04-acaf-e4a44b7bcf47" ]
+  ] ; # 
+  fhir:type [ fhir:v "message"] ; # 
+  fhir:timestamp [ fhir:v "2021-06-01T00:00:00.159+02:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/MessageHeader/2-5-ImmunizationRecommendationResponseMessageHeader"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/MessageHeader/2-5-ImmunizationRecommendationResponseMessageHeader> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Patient/3-2-Patient"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Patient/3-2-Patient> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Organization/CDSS-Organization"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Organization/CDSS-Organization> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/ImmunizationRecommendation/10-3-ImmunizationRecommendation"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/ImmunizationRecommendation/10-3-ImmunizationRecommendation> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/ImmunizationRecommendation/10-4-ImmunizationRecommendation"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/ImmunizationRecommendation/10-4-ImmunizationRecommendation> )
+  ] ) . # 
+
+<http://test.fhir.ch/r4/MessageHeader/2-5-ImmunizationRecommendationResponseMessageHeader> a fhir:MessageHeader ;
+  fhir:id [ fhir:v "2-5-ImmunizationRecommendationResponseMessageHeader"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2021-06-01T00:00:00.394+02:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-recommendation-response-messageheader"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-recommendation-response-messageheader>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MessageHeader_2-5-ImmunizationRecommendationResponseMessageHeader\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader 2-5-ImmunizationRecommendationResponseMessageHeader</b></p><a name=\"2-5-ImmunizationRecommendationResponseMessageHeader\"> </a><a name=\"hc2-5-ImmunizationRecommendationResponseMessageHeader\"> </a><a name=\"2-5-ImmunizationRecommendationResponseMessageHeader-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-06-01 00:00:00+0200</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-recommendation-response-messageheader.html\">CH VACD Immunization Recommendation Response MessageHeader</a></p></div><p><b>event</b>: <a href=\"CodeSystem-ch-vacd-clinical-decision-support-event-cs.html#ch-vacd-clinical-decision-support-event-cs-immunrecoresponse\">CDS Event immunrecoresponse</a>: Immunization Recommendation Response</p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>Example Portal EPR</td><td>urn:oid:1.2.3.4.5</td></tr></table><p><b>sender</b>: <a href=\"Organization-CDSS-Organization.html\">Organization Immunization CDS Service</a></p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>Example Vaccination Clinical Decision Support System</td><td><a href=\"https://example.com/cds/immunization/ws\">https://example.com/cds/immunization/ws</a></td></tr></table><p><b>responsible</b>: <a href=\"Organization-CDSS-Organization.html\">Organization Immunization CDS Service</a></p><p><b>reason</b>: <span title=\"Codes:{http://snomed.info/sct 830152006}\">Recommendation regarding vaccination (procedure)</span></p><h3>Responses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>1-4-ImmunizationRecommendationRequest</td><td>OK</td></tr></table><p><b>focus</b>: </p><ul><li><a href=\"ImmunizationRecommendation-10-4-ImmunizationRecommendation.html\">ImmunizationRecommendation: identifier = urn:oid:2.16.756.5.30.1.147.1.3.1#1; date = 2021-06-01 00:00:00+0200</a></li><li><a href=\"ImmunizationRecommendation-10-3-ImmunizationRecommendation.html\">ImmunizationRecommendation: identifier = urn:oid:2.16.756.5.30.1.147.1.3.1#2; date = 2021-06-01 00:00:00+0200</a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:event [
+     a fhir:Coding ;
+     fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-clinical-decision-support-event-cs"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "immunrecoresponse" ] ;
+     fhir:display [ fhir:v "Immunization Recommendation Response" ]
+  ] ; # 
+  fhir:destination ( [
+     fhir:name [ fhir:v "Example Portal EPR" ] ;
+     fhir:endpoint [ fhir:v "urn:oid:1.2.3.4.5"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:sender [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Organization/CDSS-Organization> ;
+     fhir:reference [ fhir:v "Organization/CDSS-Organization" ]
+  ] ; # 
+  fhir:source [
+     fhir:name [ fhir:v "Example Vaccination Clinical Decision Support System" ] ;
+     fhir:endpoint [ fhir:v "https://example.com/cds/immunization/ws"^^xsd:anyURI ]
+  ] ; # 
+  fhir:responsible [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Organization/CDSS-Organization> ;
+     fhir:reference [ fhir:v "Organization/CDSS-Organization" ]
+  ] ; # 
+  fhir:reason [
+     fhir:coding ( [
+       a sct:830152006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "830152006" ] ;
+       fhir:display [ fhir:v "Recommendation regarding vaccination (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:response [
+     fhir:identifier [ fhir:v "1-4-ImmunizationRecommendationRequest" ] ;
+     fhir:code [ fhir:v "ok" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://fhir.ch/ig/ch-vacd/ImmunizationRecommendation/10-4-ImmunizationRecommendation> ;
+     fhir:reference [ fhir:v "ImmunizationRecommendation/10-4-ImmunizationRecommendation" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/ImmunizationRecommendation/10-3-ImmunizationRecommendation> ;
+     fhir:reference [ fhir:v "ImmunizationRecommendation/10-3-ImmunizationRecommendation" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Patient/3-2-Patient> a fhir:Patient ;
+  fhir:id [ fhir:v "3-2-Patient"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_3-2-Patient\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient 3-2-Patient</b></p><a name=\"3-2-Patient\"> </a><a name=\"hc3-2-Patient\"> </a><a name=\"3-2-Patient-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-patient-epr.html\">CH Core Patient EPR</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Monika Wegmueller  Female, DoB: 1967-03-10 ( Medical record number)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">9876 </td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.3.4"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12345678" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Wegmueller" ] ;
+     fhir:given ( [ fhir:v "Monika" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1967-03-10"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:postalCode [ fhir:v "9876" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Organization/CDSS-Organization> a fhir:Organization ;
+  fhir:id [ fhir:v "CDSS-Organization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_CDSS-Organization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization CDSS-Organization</b></p><a name=\"CDSS-Organization\"> </a><a name=\"hcCDSS-Organization\"> </a><a name=\"CDSS-Organization-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization.html\">CH Core Organization</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601000000781</p><p><b>name</b>: Immunization CDS Service</p><p><b>address</b>: Mustergasse 99 Beispielen SG 9876 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601000000781" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Immunization CDS Service"] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "Mustergasse 99" ] ) ;
+     fhir:city [ fhir:v "Beispielen" ] ;
+     fhir:state [ fhir:v "SG" ] ;
+     fhir:postalCode [ fhir:v "9876" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/ImmunizationRecommendation/10-3-ImmunizationRecommendation> a fhir:ImmunizationRecommendation ;
+  fhir:id [ fhir:v "10-3-ImmunizationRecommendation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization-recommendation"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization-recommendation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ImmunizationRecommendation_10-3-ImmunizationRecommendation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ImmunizationRecommendation 10-3-ImmunizationRecommendation</b></p><a name=\"10-3-ImmunizationRecommendation\"> </a><a name=\"hc10-3-ImmunizationRecommendation\"> </a><a name=\"10-3-ImmunizationRecommendation-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-immunization-recommendation.html\">CH VACD Immunization Recommendations</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.147.1.3.1</code>/2</p><p><b>patient</b>: <a href=\"Patient-3-2-Patient.html\">Monika Wegmueller  Female, DoB: 1967-03-10 ( Medical record number)</a></p><p><b>date</b>: 2021-06-01 00:00:00+0200</p><blockquote><p><b>recommendation</b></p><p><b>vaccineCode</b>: <span title=\"Codes:{http://snomed.info/sct 1181000221105}\">Vaccine product containing only Influenza virus antigen (medicinal product)</span></p><p><b>targetDisease</b>: <span title=\"Codes:{http://snomed.info/sct 719590007}\">Influenza caused by seasonal influenza virus (disorder)</span></p><p><b>forecastStatus</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-forecast-status-cs due}\">Due</span></p><p><b>forecastReason</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-categories-cs 41503}\">Empfohlene Impfungen für Risikogruppen</span></p><h3>DateCriterions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 30980-7}\">Date vaccine due</span></td><td>2021-06-01 00:00:00+0200</td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.147.1.3.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2" ]
+  ] ) ; # 
+  fhir:patient [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/3-2-Patient> ;
+     fhir:reference [ fhir:v "Patient/3-2-Patient" ]
+  ] ; # 
+  fhir:date [ fhir:v "2021-06-01T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:recommendation ( [
+     fhir:vaccineCode ( [
+       fhir:coding ( [
+         a sct:1181000221105 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1181000221105" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Influenza virus antigen (medicinal product)" ]
+       ] )
+     ] ) ;
+     fhir:targetDisease [
+       fhir:coding ( [
+         a sct:719590007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "719590007" ] ;
+         fhir:display [ fhir:v "Influenza caused by seasonal influenza virus (disorder)" ]
+       ] )
+     ] ;
+     fhir:forecastStatus [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-forecast-status-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "due" ] ;
+         fhir:display [ fhir:v "Due" ]
+       ] )
+     ] ;
+     fhir:forecastReason ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-categories-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "41503" ] ;
+         fhir:display [ fhir:v "Empfohlene Impfungen für Risikogruppen" ]
+       ] )
+     ] ) ;
+     fhir:dateCriterion ( [
+       fhir:code [
+         fhir:coding ( [
+           a loinc:30980-7 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "30980-7" ] ;
+           fhir:display [ fhir:v "Date vaccine due" ]
+         ] )
+       ] ;
+       fhir:value [ fhir:v "2021-06-01T00:00:00+02:00"^^xsd:dateTime ]
+     ] )
+  ] ) . # 
+
+<http://test.fhir.ch/r4/ImmunizationRecommendation/10-4-ImmunizationRecommendation> a fhir:ImmunizationRecommendation ;
+  fhir:id [ fhir:v "10-4-ImmunizationRecommendation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization-recommendation"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization-recommendation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ImmunizationRecommendation_10-4-ImmunizationRecommendation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ImmunizationRecommendation 10-4-ImmunizationRecommendation</b></p><a name=\"10-4-ImmunizationRecommendation\"> </a><a name=\"hc10-4-ImmunizationRecommendation\"> </a><a name=\"10-4-ImmunizationRecommendation-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-immunization-recommendation.html\">CH VACD Immunization Recommendations</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.147.1.3.1</code>/1</p><p><b>patient</b>: <a href=\"Patient-3-2-Patient.html\">Monika Wegmueller  Female, DoB: 1967-03-10 ( Medical record number)</a></p><p><b>date</b>: 2021-06-01 00:00:00+0200</p><blockquote><p><b>recommendation</b></p><p><b>vaccineCode</b>: <span title=\"Codes:{http://snomed.info/sct 72093006}\">Poliomyelitis vaccination</span></p><p><b>targetDisease</b>: <span title=\"Codes:{http://snomed.info/sct 398102009}\">Acute poliomyelitis (disorder)</span></p><p><b>forecastStatus</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-forecast-status-cs due}\">Due</span></p><p><b>forecastReason</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-categories-cs 41501}\">Empfohlene Basisimpfungen</span></p><h3>DateCriterions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 30980-7}\">Date vaccine due</span></td><td>2021-06-01 00:00:00+0200</td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.147.1.3.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1" ]
+  ] ) ; # 
+  fhir:patient [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/3-2-Patient> ;
+     fhir:reference [ fhir:v "Patient/3-2-Patient" ]
+  ] ; # 
+  fhir:date [ fhir:v "2021-06-01T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:recommendation ( [
+     fhir:vaccineCode ( [
+       fhir:coding ( [
+         a sct:72093006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "72093006" ] ;
+         fhir:display [ fhir:v "Poliomyelitis vaccination" ]
+       ] )
+     ] ) ;
+     fhir:targetDisease [
+       fhir:coding ( [
+         a sct:398102009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "398102009" ] ;
+         fhir:display [ fhir:v "Acute poliomyelitis (disorder)" ]
+       ] )
+     ] ;
+     fhir:forecastStatus [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-forecast-status-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "due" ] ;
+         fhir:display [ fhir:v "Due" ]
+       ] )
+     ] ;
+     fhir:forecastReason ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-categories-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "41501" ] ;
+         fhir:display [ fhir:v "Empfohlene Basisimpfungen" ]
+       ] )
+     ] ) ;
+     fhir:dateCriterion ( [
+       fhir:code [
+         fhir:coding ( [
+           a loinc:30980-7 ;
+           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "30980-7" ] ;
+           fhir:display [ fhir:v "Date vaccine due" ]
+         ] )
+       ] ;
+       fhir:value [ fhir:v "2021-06-01T00:00:00+02:00"^^xsd:dateTime ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="6-5-PractitionerRole"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole 6-5-PractitionerRole</b></p><a name="6-5-PractitionerRole"> </a><a name="hc6-5-PractitionerRole"> </a><a name="6-5-PractitionerRole-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitionerrole.html">CH Core PractitionerRole</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner-4-5-Practitioner.html">Practitioner Detlef Demo </a></p><p><b>organization</b>: <a href="Organization-5-5-Organization.html">Organization Praxis Demo</a></p></div>
+  </text>
+  <active value="true"/>
+  <practitioner>
+    <reference value="Practitioner/4-5-Practitioner"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/5-5-Organization"/>
+  </organization>
+</PractitionerRole>

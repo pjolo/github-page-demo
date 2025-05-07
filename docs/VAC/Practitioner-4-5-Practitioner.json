@@ -1,0 +1,25 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "4-5-Practitioner",
+  "meta" : {
+    "profile" : ["http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner 4-5-Practitioner</b></p><a name=\"4-5-Practitioner\"> </a><a name=\"hc4-5-Practitioner\"> </a><a name=\"4-5-Practitioner-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitioner.html\">CH Core Practitioner</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601000000309</p><p><b>active</b>: true</p><p><b>name</b>: Detlef Demo </p><p><b>address</b>: 3456 CH </p></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:2.51.1.3",
+    "value" : "7601000000309"
+  }],
+  "active" : true,
+  "name" : [{
+    "family" : "Demo",
+    "given" : ["Detlef"]
+  }],
+  "address" : [{
+    "id" : "12-3-Address",
+    "postalCode" : "3456",
+    "country" : "CH"
+  }]
+}

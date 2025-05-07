@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="11-1-AllergyIntolerance"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-allergyintolerances"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance 11-1-AllergyIntolerance</b></p><a name="11-1-AllergyIntolerance"> </a><a name="hc11-1-AllergyIntolerance"> </a><a name="11-1-AllergyIntolerance-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ch-vacd-allergyintolerances.html">CH VACD AllergyIntolerance</a></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.3.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:0028b459-11f0-4d8a-8d37-5276f88ddb06</p><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 213020009}">Allergy to egg protein (finding)</span></p><p><b>patient</b>: <a href="Patient-3-1-Patient.html">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>recordedDate</b>: 2004-07-11 00:00:00+0200</p><p><b>recorder</b>: <a href="PractitionerRole-6-1-PractitionerRole.html">PractitionerRole</a></p></div>
+  </text>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:0028b459-11f0-4d8a-8d37-5276f88ddb06"/>
+  </identifier>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+  </verificationStatus>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="213020009"/>
+      <display value="Allergy to egg protein (finding)"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/3-1-Patient"/>
+  </patient>
+  <recordedDate value="2004-07-11T00:00:00+02:00"/>
+  <recorder>
+    <reference value="PractitionerRole/6-1-PractitionerRole"/>
+  </recorder>
+</AllergyIntolerance>

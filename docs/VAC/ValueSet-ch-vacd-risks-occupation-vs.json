@@ -1,0 +1,231 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ch-vacd-risks-occupation-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ch-vacd-risks-occupation-vs</b></p><a name=\"ch-vacd-risks-occupation-vs\"> </a><a name=\"hcch-vacd-risks-occupation-vs\"> </a><a name=\"ch-vacd-risks-occupation-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/373068000\">373068000</a></td><td>Undetermined (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/61246008\">61246008</a></td><td>Laboratory medicine specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159653008\">159653008</a></td><td>Trainee - armed forces (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/160157004\">160157004</a></td><td>Sewerman (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/265940000\">265940000</a></td><td>Animal health occupation (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1186914001\">1186914001</a></td><td>Intellectual disability nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/223366009\">223366009</a></td><td>Healthcare professional (occupation)</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-ch-vacd-exposure-risks-cs.html\"><code>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-ch-vacd-exposure-risks-cs.html#ch-vacd-exposure-risks-cs-100002\">100002</a></td><td>Social workers, prison staff, police with frequent contact with drug users</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (Schweiz) (German (Switzerland), de)</b></td><td><b>English (United States) (English (United States), en)</b></td><td><b>French (Switzerland) (fr)</b></td><td><b>Italian (Switzerland) (it)</b></td><td><b>rm</b></td></tr><tr><td>373068000</td><td>Nicht bekannt</td><td>Undetermined (qualifier value)</td><td>Indéterminé</td><td>Indeterminato</td><td>Nunenconuschent</td></tr><tr><td>61246008</td><td>Spezialist / Spezialistin für Labormedizin</td><td>Laboratory medicine specialist (occupation)</td><td>spécialiste en médecine de laboratoire</td><td>specialista in medicina di laboratorio</td><td>spezialista u spezialist per medischina da labor</td></tr><tr><td>159653008</td><td>Rekrut / Rekrutin</td><td>Trainee - armed forces (occupation)</td><td>recrue</td><td>recluta</td><td>recruta u recrut</td></tr><tr><td>160157004</td><td>Kanalisationsarbeiter / Kanalisationsarbeiterin</td><td>Sewerman (occupation)</td><td>agent d'entretien des canalisations</td><td>persona addetta alla manutenzione delle fognature</td><td>lavuranta u lavurant da chanalisaziun</td></tr><tr><td>265940000</td><td>Beschäftigt im Veterinärwesen</td><td>Animal health occupation (occupation)</td><td>profession en santé animale</td><td>professione in ambito veterinario</td><td>occupada u occupà en ils fatgs veterinars</td></tr><tr><td>1186914001</td><td>Betreuungsperson von geistig Behinderten</td><td>Intellectual disability nurse (occupation)</td><td>auxiliaire de vie de personnes vivant avec un handicap mental</td><td>persona che assiste disabili mentali</td><td>persuna che assitsa persunas cun impediments spiertals</td></tr><tr><td>223366009</td><td>Gesundheitsfachperson</td><td>Healthcare professional (occupation)</td><td>professionnel de la santé</td><td>professionista della salute</td><td>persuna spezialisada dal sectur da sanadad</td></tr><tr><td>100002</td><td>Sozialarbeiter, Gefängnispersonal, Polizei mit häufigem Kontakt zu Drogenkonsumenten</td><td>Social workers, prison staff, police with frequent contact with drug users</td><td>Travailleurs sociaux, personnel des prisons et de la police en contact fréquent avec des consommateurs de drogues</td><td>Social workers, prison staff, police with frequent contact with drug users</td><td>Social workers, prison staff, police with frequent contact with drug users</td></tr></table></div>"
+  },
+  "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-occupation-vs",
+  "version" : "6.0.0-ballot-ci-build",
+  "name" : "SwissOccupationRisksForImmunizations",
+  "title" : "Swiss Occupation Risks For Immunizations",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-07T07:26:19+02:00",
+  "publisher" : "HL7 Switzerland",
+  "contact" : [{
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/"
+    }]
+  }],
+  "description" : "The occupation exposition risks used in Switzerland.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CHE"
+    }]
+  }],
+  "copyright" : "CC0-1.0",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "373068000",
+        "display" : "Undetermined (qualifier value)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Nicht bekannt"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Indéterminé"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Indeterminato"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Nunenconuschent"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Undetermined (qualifier value)"
+        }]
+      },
+      {
+        "code" : "61246008",
+        "display" : "Laboratory medicine specialist (occupation)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Spezialist / Spezialistin für Labormedizin"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "spécialiste en médecine de laboratoire"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "specialista in medicina di laboratorio"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "spezialista u spezialist per medischina da labor"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Laboratory medicine specialist (occupation)"
+        }]
+      },
+      {
+        "code" : "159653008",
+        "display" : "Trainee - armed forces (occupation)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Rekrut / Rekrutin"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "recrue"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "recluta"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "recruta u recrut"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Trainee - armed forces (occupation)"
+        }]
+      },
+      {
+        "code" : "160157004",
+        "display" : "Sewerman (occupation)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Kanalisationsarbeiter / Kanalisationsarbeiterin"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "agent d'entretien des canalisations"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "persona addetta alla manutenzione delle fognature"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "lavuranta u lavurant da chanalisaziun"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Sewerman (occupation)"
+        }]
+      },
+      {
+        "code" : "265940000",
+        "display" : "Animal health occupation (occupation)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Beschäftigt im Veterinärwesen"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "profession en santé animale"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "professione in ambito veterinario"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "occupada u occupà en ils fatgs veterinars"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Animal health occupation (occupation)"
+        }]
+      },
+      {
+        "code" : "1186914001",
+        "display" : "Intellectual disability nurse (occupation)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Betreuungsperson von geistig Behinderten"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "auxiliaire de vie de personnes vivant avec un handicap mental"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "persona che assiste disabili mentali"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "persuna che assitsa persunas cun impediments spiertals"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Intellectual disability nurse (occupation)"
+        }]
+      },
+      {
+        "code" : "223366009",
+        "display" : "Healthcare professional (occupation)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Gesundheitsfachperson"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "professionnel de la santé"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "professionista della salute"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "persuna spezialisada dal sectur da sanadad"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Healthcare professional (occupation)"
+        }]
+      }]
+    },
+    {
+      "system" : "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs",
+      "concept" : [{
+        "code" : "100002",
+        "display" : "Social workers, prison staff, police with frequent contact with drug users",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Sozialarbeiter, Gefängnispersonal, Polizei mit häufigem Kontakt zu Drogenkonsumenten"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Travailleurs sociaux, personnel des prisons et de la police en contact fréquent avec des consommateurs de drogues"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Social workers, prison staff, police with frequent contact with drug users"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Social workers, prison staff, police with frequent contact with drug users"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Social workers, prison staff, police with frequent contact with drug users"
+        }]
+      }]
+    }]
+  }
+}

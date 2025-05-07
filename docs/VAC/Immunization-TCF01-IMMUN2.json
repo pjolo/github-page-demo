@@ -1,0 +1,105 @@
+{
+  "resourceType" : "Immunization",
+  "id" : "TCF01-IMMUN2",
+  "meta" : {
+    "profile" : ["http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization TCF01-IMMUN2</b></p><a name=\"TCF01-IMMUN2\"> </a><a name=\"hcTCF01-IMMUN2\"> </a><a name=\"TCF01-IMMUN2-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-immunization.html\">CH VACD Immunization</a></p></div><p><b>Author of the content</b>: <a href=\"Patient-TC-patient.html\">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>CH VACD Extension Immunization Medication Reference</b>: <a href=\"Medication-TC-IMMUN-MEDIC-HAVRIX1440.html\">Medication HAVRIX 1440 Inj Susp</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href=\"http://snomed.info/id/76104008\">SNOMED CT 76104008</a>: Not confirmed</p><blockquote><p><b>Entry Resource Cross References</b></p><ul><li>entry: Identifier: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/855bdd69-0a39-4241-b208-9b248a62fb76</li><li>container: Identifier: <a href=\"http://terminology.hl7.org/6.3.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:e2233a2f-d1c2-459d-b4fe-4920c35339e7</li><li>relationcode: replaces</li></ul></blockquote><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/e2233a2f-d1c2-459d-b4fe-4920c35339e7</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs 558}\">Havrix 1440</span></p><p><b>patient</b>: <a href=\"Patient-TC-patient.html\">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>occurrence</b>: 2021-05-27</p><p><b>recorded</b>: 2021-05-27 00:00:00+0200</p><p><b>lotNumber</b>: AHAVB946A</p><p><b>route</b>: <span title=\"Codes:{http://standardterms.edqm.eu 20035000}\">Intramuscular use</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-TC-HCP1-ORG1-ROLE-performer.html\">PractitionerRole</a></td></tr></table><p><b>note</b>: Der Patient hat diese Impfung ohne jegliche Nebenwirkungen gut vertragen. (By Practitioner/TC-HCP1-C1 @2021-06-02)</p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 40468003}\">Viral hepatitis, type A (disorder)</span></td><td>1</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author",
+    "valueReference" : {
+      "reference" : "Patient/TC-patient"
+    }
+  },
+  {
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-immunization-medication-reference",
+    "valueReference" : {
+      "reference" : "Medication/TC-IMMUN-MEDIC-HAVRIX1440"
+    }
+  },
+  {
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status",
+    "valueCoding" : {
+      "system" : "http://snomed.info/sct",
+      "code" : "76104008",
+      "display" : "Not confirmed"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "entry",
+      "valueReference" : {
+        "type" : "Immunization",
+        "identifier" : {
+          "system" : "urn:oid:2.16.756.5.30.1.402.1.3.1.1.1",
+          "value" : "855bdd69-0a39-4241-b208-9b248a62fb76"
+        }
+      }
+    },
+    {
+      "url" : "container",
+      "valueReference" : {
+        "type" : "Composition",
+        "identifier" : {
+          "system" : "urn:ietf:rfc:3986",
+          "value" : "urn:uuid:e2233a2f-d1c2-459d-b4fe-4920c35339e7"
+        }
+      }
+    },
+    {
+      "url" : "relationcode",
+      "valueCode" : "replaces"
+    }],
+    "url" : "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-ext-entry-resource-cross-references"
+  }],
+  "identifier" : [{
+    "system" : "urn:oid:2.16.756.5.30.1.402.1.3.1.1.1",
+    "value" : "e2233a2f-d1c2-459d-b4fe-4920c35339e7"
+  }],
+  "status" : "completed",
+  "vaccineCode" : {
+    "coding" : [{
+      "system" : "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs",
+      "code" : "558",
+      "display" : "Havrix 1440"
+    }]
+  },
+  "patient" : {
+    "reference" : "Patient/TC-patient"
+  },
+  "occurrenceDateTime" : "2021-05-27",
+  "recorded" : "2021-05-27T00:00:00.390+02:00",
+  "lotNumber" : "AHAVB946A",
+  "route" : {
+    "coding" : [{
+      "system" : "http://standardterms.edqm.eu",
+      "code" : "20035000",
+      "display" : "Intramuscular use"
+    }]
+  },
+  "performer" : [{
+    "actor" : {
+      "reference" : "PractitionerRole/TC-HCP1-ORG1-ROLE-performer"
+    }
+  }],
+  "note" : [{
+    "authorReference" : {
+      "reference" : "Practitioner/TC-HCP1-C1"
+    },
+    "time" : "2021-06-02",
+    "text" : "Der Patient hat diese Impfung ohne jegliche Nebenwirkungen gut vertragen."
+  }],
+  "protocolApplied" : [{
+    "targetDisease" : [{
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "40468003",
+        "display" : "Viral hepatitis, type A (disorder)"
+      }]
+    }],
+    "doseNumberPositiveInt" : 1
+  }]
+}

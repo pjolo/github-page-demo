@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImmunizationRecommendation xmlns="http://hl7.org/fhir">
+  <id value="10-2-ImmunizationRecommendation"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization-recommendation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImmunizationRecommendation 10-2-ImmunizationRecommendation</b></p><a name="10-2-ImmunizationRecommendation"> </a><a name="hc10-2-ImmunizationRecommendation"> </a><a name="10-2-ImmunizationRecommendation-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ch-vacd-immunization-recommendation.html">CH VACD Immunization Recommendations</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.147.1.3.1</code>/1</p><p><b>patient</b>: <a href="Patient-3-1-Patient.html">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>date</b>: 2021-06-01 00:00:00+0200</p><blockquote><p><b>recommendation</b></p><p><b>vaccineCode</b>: <span title="Codes:{http://snomed.info/sct 72093006}">Poliomyelitis vaccination</span></p><p><b>targetDisease</b>: <span title="Codes:{http://snomed.info/sct 398102009}">Acute poliomyelitis (disorder)</span></p><p><b>forecastStatus</b>: <span title="Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-forecast-status-cs due}">Due</span></p><p><b>forecastReason</b>: <span title="Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-categories-cs 41501}">Empfohlene Basisimpfungen</span></p><h3>DateCriterions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://loinc.org 30980-7}">Date vaccine due</span></td><td>2021-06-01 00:00:00+0200</td></tr></table></blockquote></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.756.5.30.1.147.1.3.1"/>
+    <value value="1"/>
+  </identifier>
+  <patient>
+    <reference value="Patient/3-1-Patient"/>
+  </patient>
+  <date value="2021-06-01T00:00:00+02:00"/>
+  <recommendation>
+    <vaccineCode>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="72093006"/>
+        <display value="Poliomyelitis vaccination"/>
+      </coding>
+    </vaccineCode>
+    <targetDisease>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="398102009"/>
+        <display value="Acute poliomyelitis (disorder)"/>
+      </coding>
+    </targetDisease>
+    <forecastStatus>
+      <coding>
+        <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-forecast-status-cs"/>
+        <code value="due"/>
+        <display value="Due"/>
+      </coding>
+    </forecastStatus>
+    <forecastReason>
+      <coding>
+        <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-categories-cs"/>
+        <code value="41501"/>
+        <display value="Empfohlene Basisimpfungen"/>
+      </coding>
+    </forecastReason>
+    <dateCriterion>
+      <code>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="30980-7"/>
+          <display value="Date vaccine due"/>
+        </coding>
+      </code>
+      <value value="2021-06-01T00:00:00+02:00"/>
+    </dateCriterion>
+  </recommendation>
+</ImmunizationRecommendation>

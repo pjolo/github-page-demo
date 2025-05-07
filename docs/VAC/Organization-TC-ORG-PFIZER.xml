@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="TC-ORG-PFIZER"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization TC-ORG-PFIZER</b></p><a name="TC-ORG-PFIZER"> </a><a name="hcTC-ORG-PFIZER"> </a><a name="TC-ORG-PFIZER-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization.html">CH Core Organization</a></p></div><p><b>identifier</b>: <a href="https://www.gs1.org/standards/id-keys/gln" title="Global Location Number">GLN</a>/7601001010604</p><p><b>name</b>: Pfizer AG</p><p><b>telecom</b>: ph: tel:+41 800 562 825(Work), fax: fax:+41 44 583 07 00(Work), <a href="mailto:mailto:customer.ch@pfizer.com">mailto:customer.ch@pfizer.com</a>, <a href="https://www.pfizer.ch">https://www.pfizer.ch</a></p><p><b>address</b>: Schärenmoosstrasse 99 Postfach Zürich ZH 8052 CH </p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.51.1.3"/>
+    <value value="7601001010604"/>
+  </identifier>
+  <name value="Pfizer AG"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="tel:+41 800 562 825"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="fax"/>
+    <value value="fax:+41 44 583 07 00"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="mailto:customer.ch@pfizer.com"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="url"/>
+    <value value="https://www.pfizer.ch"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <line value="Schärenmoosstrasse 99"/>
+    <line value="Postfach"/>
+    <city value="Zürich"/>
+    <state value="ZH"/>
+    <postalCode value="8052"/>
+    <country value="CH"/>
+  </address>
+</Organization>

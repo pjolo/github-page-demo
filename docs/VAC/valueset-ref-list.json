@@ -1,0 +1,221 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.ch/ig/ch-term/ValueSet/ActivePharmaceuticalIngredient",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "ActivePharmaceuticalIngredient",
+      "title" : "ActivePharmaceuticalIngredient",
+      "description" : "ActivePharmaceuticalIngredient",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.756.5.30.1.1.11.82"],
+      "sources" : ["2.16.756.5.30.1.1.11.82"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-medication-for-immunization.html" : "CH VACD Medication For Immunization"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-term/ValueSet/DocumentEntry.formatCode",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "DocumentEntryFormatCode",
+      "title" : "DocumentEntry.formatCode",
+      "description" : "Document format as per Annex; EPRO-FDHA.       \t\tThis unambiguous code defines the format of the XDS document. Together with the mimetype, this should provide the potential consumer with sufficient information as to whether they are in a position to process the document.",
+      "systems" : [
+        "urn:oid:2.16.756.5.30.1.127.3.10.10",
+        "urn:oid:1.2.840.10008.2.6.1",
+        "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode"
+      ],
+      "oids" : ["2.16.756.5.30.1.127.3.10.1.9"],
+      "sources" : ["2.16.756.5.30.1.127.3.10.1.9"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-composition-vaccination-record.html" : "CH VACD VaccinationRecord Composition",
+      "StructureDefinition-ch-vacd-composition-immunization-administration.html" : "CH VACD Immunization Administration Composition"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-term/ValueSet/edqm-pharmaceuticaldoseform",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "PharmaceuticalDoseFormEDQM",
+      "title" : "EDQM - Pharmaceutical Dose Form",
+      "description" : "Valueset Pharmaceutical Dose Form from EDQM, PDF, export20.5.2021, see https://standardterms.edqm.eu/#",
+      "systems" : ["urn:oid:0.4.0.127.0.16.1.1.2.1"],
+      "oids" : ["2.16.756.5.30.1.1.11.3"],
+      "sources" : ["2.16.756.5.30.1.1.11.3"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-medication-for-immunization.html" : "CH VACD Medication For Immunization"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-basic-immunization-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "BasicImmunizationCode",
+      "title" : "Basic Immunization Codes",
+      "description" : "The codes for declaring basic immunization.",
+      "systems" : [
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-basic-immunization.html" : "CH VACD Basic Immunization"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-ch-vaccination-plan-immunizations-vs",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "SwissVaccinationPlanImmunizations",
+      "title" : "CH VACD Swiss Vaccination Plan Immunizations",
+      "description" : "Immunization procedures for recommendations according to the vaccination plan.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization-recommendation.html" : "CH VACD Immunization Recommendations"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-entry-conflict-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "CHVACDEntryConflictCode",
+      "title" : "Entry Conflict Codes",
+      "description" : "The codes for declaring document entry conflicts",
+      "systems" : [
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-entry-conflict-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-ext-merging-conflict-entry-reference.html" : "CH VACD Extension Merging Conflict Entry Reference"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-immunization-allergyintolerances-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "draft",
+      "name" : "AllergiesAndIntolerancesForImmunization",
+      "title" : "Allergies and Intolerance values for Immunization",
+      "description" : "The allergies and adverse reactions which have an influence on the immunization recommendations.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-allergyintolerances.html" : "CH VACD AllergyIntolerance"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-laboratory-serology-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "LaboratorySerologyImmunization",
+      "title" : "Laboratory Serology for Immunization",
+      "description" : "Laboratory Serology for immunization",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-laboratory-serology.html" : "CH VACD Laboratory And Serology"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-recommendation-categories-vs",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "SwissImmunizationRecommendationCategories",
+      "title" : "CH VACD Recommendation Categories for Immunizations",
+      "description" : "Immunization recommendation categories.",
+      "systems" : [
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-recommendation-categories-cs",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-immunization-recommendation.html" : "CH VACD Immunization Recommendations"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-medical-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "SwissMedicalRisksForImmunizations",
+      "title" : "Swiss Medical Risks For Immunizations",
+      "description" : "The medical risks used in Switzerland.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ValueSet-ch-vacd-risks-vs.html" : "Swiss Risks For Immunizations"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-occupation-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "SwissOccupationRisksForImmunizations",
+      "title" : "Swiss Occupation Risks For Immunizations",
+      "description" : "The occupation exposition risks used in Switzerland.",
+      "systems" : [
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "ValueSet-ch-vacd-risks-vs.html" : "Swiss Risks For Immunizations"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-preillness-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "SwissPreillnessRisksForImmunizations",
+      "title" : "Swiss Preillness Risks For Immunizations",
+      "description" : "The preillness risks used in Switzerland.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ValueSet-ch-vacd-risks-vs.html" : "Swiss Risks For Immunizations"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-social-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "SwissSocialRisksForImmunizations",
+      "title" : "Swiss Social Risks For Immunizations",
+      "description" : "The social exposition risks used in Switzerland.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "ValueSet-ch-vacd-risks-vs.html" : "Swiss Risks For Immunizations"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "SwissRisksForImmunizations",
+      "title" : "Swiss Risks For Immunizations",
+      "description" : "The medical and exposition risks used in Switzerland.",
+      "systems" : [
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-medical-problems.html" : "CH VACD Medical Problems"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-targetdiseasesandillnessesundergoneforimmunization-vs",
+      "version" : "3.1.1-ci-build",
+      "status" : "active",
+      "name" : "ChVacdTargetDiseasesAndIllnessesUndergoneForImmunization",
+      "title" : "CH VACD Target disease and illnesses undergone for immunization",
+      "description" : "This valueset contains all entries defining target deseases or illnesses undergone for immunization reasons.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-pastillnesses.html" : "CH VACD Past Illness",
+      "StructureDefinition-ch-vacd-immunization-recommendation.html" : "CH VACD Immunization Recommendations"
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-verification-status-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "CHVACDVerificationStatusVS",
+      "title" : "Verification Status Codes",
+      "description" : "Definition the verification status codes for the extension ch-vacd-ext-verification-status.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ch-vacd-ext-verification-status.html" : "CH VACD Extension verificationStatus"
+    }
+  ]
+}

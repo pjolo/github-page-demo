@@ -1,0 +1,18 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "TC-HCP3-ORG1-ROLE-performer",
+  "meta" : {
+    "profile" : ["http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole TC-HCP3-ORG1-ROLE-performer</b></p><a name=\"TC-HCP3-ORG1-ROLE-performer\"> </a><a name=\"hcTC-HCP3-ORG1-ROLE-performer\"> </a><a name=\"TC-HCP3-ORG1-ROLE-performer-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitionerrole-epr.html\">CH Core PractitionerRole EPR</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-TC-HCP3-C1.html\">Practitioner Macht Gesund </a></p><p><b>organization</b>: <a href=\"Organization-TC-ORG1.html\">Organization Gruppenpraxis Müller</a></p></div>"
+  },
+  "active" : true,
+  "practitioner" : {
+    "reference" : "Practitioner/TC-HCP3-C1"
+  },
+  "organization" : {
+    "reference" : "Organization/TC-ORG1"
+  }
+}

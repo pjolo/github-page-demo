@@ -1,0 +1,333 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/Bundle/F-D5-HCP1-C1> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "F-D5-HCP1-C1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-document-immunization-administration"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-document-immunization-administration>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:fb253a1b-7e26-48db-a9c8-d605875bcdc4" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2015-05-30T00:00:00.390+02:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Composition/F-D5-HCP1-C1-Composition"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Composition/F-D5-HCP1-C1-Composition> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Patient/TC-patient"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Patient/TC-patient> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Organization/TC-ORG1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Organization/TC-ORG1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Practitioner/TC-HCP1-C1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Practitioner/TC-HCP1-C1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/PractitionerRole/TC-HCP1-ORG1-ROLE-author"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/PractitionerRole/TC-HCP1-ORG1-ROLE-author> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Condition/TCF03-UNDILL1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Condition/TCF03-UNDILL1> )
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Composition/F-D5-HCP1-C1-Composition> a fhir:Composition ;
+  fhir:id [ fhir:v "F-D5-HCP1-C1-Composition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-composition-immunization-administration"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-composition-immunization-administration>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "en-US"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><h3>Immunization Administration</h3><p><b>Id: </b>F-D5-HCP1-C1-Composition</p><p><b>Identifier: </b><span>urn:ietf:rfc:3986#urn:uuid:b9d9efbc-2115-42c0-98e6-b374f942560b</span></p><p><b>Status: </b>Final</p><p><b>Code: </b><span>Immunization record (http://snomed.info/sct#41000179103)</span></p><p><b>Patient: </b><a href=\"Patient-TC-patient.html\">Patient/TC-patient</a> Wegmueller Monika</p><p><b>Date: </b>October 6, 2021</p><p><b>Authors:</b></p><table><tr><td><p><a href=\"Practitioner-TC-HCP1-C1.html\">Practitioner/TC-HCP1-C1</a> Bereit Allzeit</p><p><a href=\"Organization-TC-ORG1.html\">Organization/TC-ORG1</a> Gruppenpraxis CH</p></td></tr></table><p><b>Confidentiality: </b>null<span> Normal (qualifier value) (http://snomed.info/sct#17621005)</span></p><p><b>Sections:</b></p><table><tr><td>Previous illnesses</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:fb253a1b-7e26-48db-a9c8-d605875bcdc4" ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:41000179103 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "41000179103" ] ;
+       fhir:display [ fhir:v "Immunization record" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.127.3.10.10"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "urn:che:epr:ch-vacd:immunization-administration:2022" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/TC-patient> ;
+     fhir:reference [ fhir:v "Patient/TC-patient" ]
+  ] ; # 
+  fhir:date [ fhir:v "2015-05-30T00:00:00.390+02:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/TC-HCP1-ORG1-ROLE-author> ;
+     fhir:reference [ fhir:v "PractitionerRole/TC-HCP1-ORG1-ROLE-author" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Immunization Administration"] ; # 
+  fhir:confidentiality [
+     fhir:v "N" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:17621005 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "17621005" ] ;
+           fhir:display [ fhir:v "Normal (qualifier value)" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:custodian [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Organization/TC-ORG1> ;
+     fhir:reference [ fhir:v "Organization/TC-ORG1" ]
+  ] ; # 
+  fhir:section ( [
+     fhir:id [ fhir:v "pastillnesses" ] ;
+     fhir:title [ fhir:v "Previous illnesses" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11348-0 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11348-0" ] ;
+         fhir:display [ fhir:v "Hx of Past illness" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Code: </b><span>Hx of Past illness (http://loinc.org#11348-0)</span></p><p><b>Entries:</b></p><table><tr><td><a href=\"Condition-TCF03-UNDILL1.html\">Condition/TCF03-UNDILL1</a></td></tr></table></div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://fhir.ch/ig/ch-vacd/Condition/TCF03-UNDILL1> ;
+       fhir:reference [ fhir:v "Condition/TCF03-UNDILL1" ]
+     ] )
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Patient/TC-patient> a fhir:Patient ;
+  fhir:id [ fhir:v "TC-patient"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_TC-patient\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient TC-patient</b></p><a name=\"TC-patient\"> </a><a name=\"hcTC-patient\"> </a><a name=\"TC-patient-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-patient-epr.html\">CH Core Patient EPR</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: tel:+41.32.685.12.34(Home)</li><li>Leidensweg 10 Specimendorf 9876 CH </li></ul></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.3.4"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12345678" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Wegmueller" ] ;
+     fhir:given ( [ fhir:v "Monika" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "tel:+41.32.685.12.34" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1967-02-10"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:type [ fhir:v "both" ] ;
+     fhir:line ( [ fhir:v "Leidensweg 10" ] ) ;
+     fhir:city [ fhir:v "Specimendorf" ] ;
+     fhir:postalCode [ fhir:v "9876" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Organization/TC-ORG1> a fhir:Organization ;
+  fhir:id [ fhir:v "TC-ORG1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_TC-ORG1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization TC-ORG1</b></p><a name=\"TC-ORG1\"> </a><a name=\"hcTC-ORG1\"> </a><a name=\"TC-ORG1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization-epr.html\">CH Core Organization EPR</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601777777718</p><p><b>name</b>: Gruppenpraxis Müller</p><p><b>telecom</b>: ph: tel:+41.32.234.55.66(Work), fax: fax:+41.32.234.55.67(Work), <a href=\"mailto:mailto:bereit@gruppenpraxis.ch\">mailto:bereit@gruppenpraxis.ch</a>, <a href=\"http://www.gruppenpraxis.ch\">http://www.gruppenpraxis.ch</a></p><p><b>address</b>: Grabenstrasse 2 Zürich ZH 8005 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601777777718" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Gruppenpraxis Müller"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "tel:+41.32.234.55.66" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "fax" ] ;
+     fhir:value [ fhir:v "fax:+41.32.234.55.67" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mailto:bereit@gruppenpraxis.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "url" ] ;
+     fhir:value [ fhir:v "http://www.gruppenpraxis.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "Grabenstrasse 2" ] ) ;
+     fhir:city [ fhir:v "Zürich" ] ;
+     fhir:state [ fhir:v "ZH" ] ;
+     fhir:postalCode [ fhir:v "8005" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Practitioner/TC-HCP1-C1> a fhir:Practitioner ;
+  fhir:id [ fhir:v "TC-HCP1-C1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_TC-HCP1-C1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner TC-HCP1-C1</b></p><a name=\"TC-HCP1-C1\"> </a><a name=\"hcTC-HCP1-C1\"> </a><a name=\"TC-HCP1-C1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitioner-epr.html\">CH Core Practitioner EPR</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601888888884</p><p><b>active</b>: true</p><p><b>name</b>: Peter Müller </p><p><b>telecom</b>: ph: tel:+41.32.234.55.66(Work), fax: fax:+41.32.234.55.67(Work), <a href=\"mailto:mailto:allzeit.bereit@gruppenpraxis.ch\">mailto:allzeit.bereit@gruppenpraxis.ch</a>, <a href=\"http://www.gruppenpraxis.ch\">http://www.gruppenpraxis.ch</a></p><p><b>address</b>: Grabenstrasse 2 Zürich 8005 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601888888884" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Müller" ] ;
+     fhir:given ( [ fhir:v "Peter" ] ) ;
+     fhir:prefix ( [ fhir:v "Dr. med." ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "tel:+41.32.234.55.66" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "fax" ] ;
+     fhir:value [ fhir:v "fax:+41.32.234.55.67" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mailto:allzeit.bereit@gruppenpraxis.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "url" ] ;
+     fhir:value [ fhir:v "http://www.gruppenpraxis.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:type [ fhir:v "physical" ] ;
+     fhir:line ( [ fhir:v "Grabenstrasse 2" ] ) ;
+     fhir:city [ fhir:v "Zürich" ] ;
+     fhir:postalCode [ fhir:v "8005" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/PractitionerRole/TC-HCP1-ORG1-ROLE-author> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "TC-HCP1-ORG1-ROLE-author"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_TC-HCP1-ORG1-ROLE-author\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole TC-HCP1-ORG1-ROLE-author</b></p><a name=\"TC-HCP1-ORG1-ROLE-author\"> </a><a name=\"hcTC-HCP1-ORG1-ROLE-author\"> </a><a name=\"TC-HCP1-ORG1-ROLE-author-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitionerrole-epr.html\">CH Core PractitionerRole EPR</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-TC-HCP1-C1.html\">Practitioner Peter Müller </a></p><p><b>organization</b>: <a href=\"Organization-TC-ORG1.html\">Organization Gruppenpraxis Müller</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:practitioner [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Practitioner/TC-HCP1-C1> ;
+     fhir:reference [ fhir:v "Practitioner/TC-HCP1-C1" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Organization/TC-ORG1> ;
+     fhir:reference [ fhir:v "Organization/TC-ORG1" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/Condition/TCF03-UNDILL1> a fhir:Condition ;
+  fhir:id [ fhir:v "TCF03-UNDILL1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-pastillnesses"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-pastillnesses>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_TCF03-UNDILL1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition TCF03-UNDILL1</b></p><a name=\"TCF03-UNDILL1\"> </a><a name=\"hcTCF03-UNDILL1\"> </a><a name=\"TCF03-UNDILL1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-pastillnesses.html\">CH VACD Past Illness</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.2</code>/14802b84-6b1d-4545-930d-17ce5ca7443c</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\">Resolved</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 38907003}\">Varicella (disorder)</span></p><p><b>subject</b>: <a href=\"Patient-TC-patient.html\">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>onset</b>: 2015-05-30</p><p><b>recordedDate</b>: 2015-05-30</p><p><b>recorder</b>: <a href=\"PractitionerRole-TC-HCP1-ORG1-ROLE-author.html\">PractitionerRole</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.402.1.3.1.1.2"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "14802b84-6b1d-4545-930d-17ce5ca7443c" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "resolved" ] ;
+       fhir:display [ fhir:v "Resolved" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:38907003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "38907003" ] ;
+       fhir:display [ fhir:v "Varicella (disorder)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/TC-patient> ;
+     fhir:reference [ fhir:v "Patient/TC-patient" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:dateTime ;
+     fhir:v "2015-05-30"^^xsd:date
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2015-05-30"^^xsd:date] ; # 
+  fhir:recorder [
+     fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/TC-HCP1-ORG1-ROLE-author> ;
+     fhir:reference [ fhir:v "PractitionerRole/TC-HCP1-ORG1-ROLE-author" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

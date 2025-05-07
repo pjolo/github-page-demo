@@ -1,0 +1,348 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ch-vacd-basic-immunization-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ch-vacd-basic-immunization-vs</b></p><a name=\"ch-vacd-basic-immunization-vs\"> </a><a name=\"hcch-vacd-basic-immunization-vs\"> </a><a name=\"ch-vacd-basic-immunization-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html\"><code>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-dtpa\">bi-dtpa</a></td><td>Received basic immunization against DTPa in childhood.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-polio\">bi-polio</a></td><td>Received basic immunization against poliomyelitis in childhood.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-fsme\">bi-fsme</a></td><td>Received basic immunization against tick-borne encephalitis.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-hib\">bi-hib</a></td><td>Received basic immunization against Haemophilus influenzae type b.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-hpv\">bi-hpv</a></td><td>Received basic immunization against Human papillomavirus.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-variz\">bi-variz</a></td><td>Received basic immunization against varicella.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-mmr\">bi-mmr</a></td><td>Received basic immunization against Measles, Mumps, Rubella.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-pneumo\">bi-pneumo</a></td><td>Received basic immunization against Pneumococcal infectious disease.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-hepb\">bi-hepb</a></td><td>Received basic immunization against viral hepatitis type B</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-hepa\">bi-hepa</a></td><td>Received basic immunization against viral hepatitis type A</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-herpzos\">bi-herpzos</a></td><td>Received basic immunization against herpes zoster</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-mening\">bi-mening</a></td><td>Received basic immunization against meningococcal infectious disease.</td></tr><tr><td><a href=\"CodeSystem-ch-vacd-basic-immunization-cs.html#ch-vacd-basic-immunization-cs-bi-rabi\">bi-rabi</a></td><td>Received basic immunization against rabies</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (Schweiz) (German (Switzerland), de)</b></td><td><b>English (United States) (English (United States), en)</b></td><td><b>French (Switzerland) (fr)</b></td><td><b>Italian (Switzerland) (it)</b></td><td><b>rm</b></td></tr><tr><td>bi-dtpa</td><td>Grundimmunisierung gegen DTPa in der Kindheit erhalten.</td><td>Received basic immunization against DTPa in childhood.</td><td>Vaccination de base contre le DTPa effectuée durant l’enfance.</td><td>Completamento dell’immunizzazione di base contro DTPa durante l’infanzia.</td><td>Ha obtegnì tut las vaccinaziuns cunter la DTPa durant l'uffanza.</td></tr><tr><td>bi-polio</td><td>Grundimmunisierung gegen Poliomyelitis in der Kindheit erhalten.</td><td>Received basic immunization against poliomyelitis in childhood.</td><td>Vaccination de base contre la poliomyélite effectuée durant l’enfance.</td><td>Completamento dell’immunizzazione di base contro la poliomielite durante l’infanzia.</td><td>Ha obtegnì tut las vaccinaziuns cunter la poliomielitis durant l'uffanza.</td></tr><tr><td>bi-fsme</td><td>Grundimmunisierung gegen die Frühsommer-Meningoenzephalitis erhalten.</td><td>Received basic immunization against tick-borne encephalitis.</td><td>Vaccination de base contre la méningo-encéphalite verno-estivale effectuée.</td><td>Completamento dell’immunizzazione di base contro la meningoencefalite verno-estiva.</td><td>Grundimmunisierung gegen die Frühsommer-Meningoenzephalitis erhalten.</td></tr><tr><td>bi-hib</td><td>Grundimmunisierung gegen Hämophilus influenzae Typ b erhalten.</td><td>Received basic immunization against Haemophilus influenzae type b.</td><td>Vaccination de base contre l’Haemophilus influenzae de type b effectuée.</td><td>Completamento dell’immunizzazione di base contro l’Haemophilus influenzae di tipo b.</td><td>Grundimmunisierung gegen Hämophilus influenzae Typ b erhalten.</td></tr><tr><td>bi-hpv</td><td>Grundimmunisierung gegen Humanes Papillomavirus erhalten.</td><td>Received basic immunization against Human papillomavirus.</td><td>Vaccination de base contre le papillomavirus humain effectuée.</td><td>Completamento dell’immunizzazione di base contro i papillomavirus umani.</td><td>Grundimmunisierung gegen Humanes Papillomavirus erhalten.</td></tr><tr><td>bi-variz</td><td>Grundimmunisierung gegen Windpocken erhalten.</td><td>Received basic immunization against varicella.</td><td>Vaccination de base contre la varicelle effectuée.</td><td>Completamento dell’immunizzazione di base contro la varicella.</td><td>Grundimmunisierung gegen Windpocken erhalten.</td></tr><tr><td>bi-mmr</td><td>Grundimmunisierung gegen Masern, Mumps, Röteln erhalten.</td><td>Received basic immunization against .</td><td>Vaccination de base contre la rougeole, les oreillons et la rubéole effectuée.</td><td>Completamento dell’immunizzazione di base contro morbillo, orecchioni e rosolia.</td><td>Grundimmunisierung gegen Masern, Mumps, Röteln erhalten.</td></tr><tr><td>bi-pneumo</td><td>Grundimmunisierung gegen Pneumokokken-Erkrankung erhalten.</td><td>Received basic immunization against Pneumococcal infectious disease.</td><td>Vaccination de base contre la maladie à pneumocoques effectuée.</td><td>Completamento dell’immunizzazione di base contro la malattia invasiva da pneumococchi.</td><td>Grundimmunisierung gegen Pneumokokken-Erkrankung erhalten.</td></tr><tr><td>bi-hepb</td><td>Grundimmunisierung gegen virale Hepatitis Typ B erhalten.</td><td>Received basic immunization against viral hepatitis type B.</td><td>Vaccination de base contre l’hépatite virale de type B.</td><td>Completamento dell’immunizzazione di base contro l’epatite virale B.</td><td>Grundimmunisierung gegen virale Hepatitis Typ B erhalten.</td></tr><tr><td>bi-hepa</td><td>Grundimmunisierung gegen virale Hepatitis Typ A erhalten.</td><td>Received basic immunization against viral hepatitis type A.</td><td>Vaccination de base contre l’hépatite virale de type A effectuée.</td><td>Completamento dell’immunizzazione di base contro l’epatite virale A.</td><td>Grundimmunisierung gegen virale Hepatitis Typ A erhalten.</td></tr><tr><td>bi-herpzos</td><td>Grundimmunisierung gegen Herpes zoster erhalten.</td><td>Received basic immunization against herpes zoster.</td><td>Vaccination de base contre l’herpès zoster effectuée.</td><td>Completamento dell’immunizzazione di base contro l’herpes zoster.</td><td>Grundimmunisierung gegen Herpes zoster erhalten.</td></tr><tr><td>bi-mening</td><td>Grundimmunisierung gegen Meningokokken-Erkrankung erhalten.</td><td>Received basic immunization against meningococcal infectious disease.</td><td>Vaccination de base contre la maladie à méningocoque effectuée.</td><td>Completamento dell’immunizzazione di base contro la malattia invasiva da meningococchi.</td><td>Grundimmunisierung gegen Meningokokken-Erkrankung erhalten.</td></tr><tr><td>bi-rabi</td><td>Grundimmunisierung gegen Tollwut erhalten.</td><td>Received basic immunization against rabies.</td><td>Vaccination de base contre la rage effectuée.</td><td>Completamento dell’immunizzazione di base contro la rabbia.</td><td>Grundimmunisierung gegen Tollwut erhalten.</td></tr></table></div>"
+  },
+  "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-basic-immunization-vs",
+  "version" : "6.0.0-ballot-ci-build",
+  "name" : "BasicImmunizationCode",
+  "title" : "Basic Immunization Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-07T07:26:19+02:00",
+  "publisher" : "HL7 Switzerland",
+  "contact" : [{
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/"
+    }]
+  }],
+  "description" : "The codes for declaring basic immunization.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CHE"
+    }]
+  }],
+  "copyright" : "CC0-1.0",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs",
+      "concept" : [{
+        "code" : "bi-dtpa",
+        "display" : "Received basic immunization against DTPa in childhood.",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Grundimmunisierung gegen DTPa in der Kindheit erhalten."
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Vaccination de base contre le DTPa effectuée durant l’enfance."
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Completamento dell’immunizzazione di base contro DTPa durante l’infanzia."
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Ha obtegnì tut las vaccinaziuns cunter la DTPa durant l'uffanza."
+        },
+        {
+          "language" : "en-US",
+          "value" : "Received basic immunization against DTPa in childhood."
+        }]
+      },
+      {
+        "code" : "bi-polio",
+        "display" : "Received basic immunization against poliomyelitis in childhood.",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Grundimmunisierung gegen Poliomyelitis in der Kindheit erhalten."
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Vaccination de base contre la poliomyélite effectuée durant l’enfance."
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Completamento dell’immunizzazione di base contro la poliomielite durante l’infanzia."
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Ha obtegnì tut las vaccinaziuns cunter la poliomielitis durant l'uffanza."
+        },
+        {
+          "language" : "en-US",
+          "value" : "Received basic immunization against poliomyelitis in childhood."
+        }]
+      },
+      {
+        "code" : "bi-fsme",
+        "display" : "Received basic immunization against tick-borne encephalitis.",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Grundimmunisierung gegen die Frühsommer-Meningoenzephalitis erhalten."
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Vaccination de base contre la méningo-encéphalite verno-estivale effectuée."
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Completamento dell’immunizzazione di base contro la meningoencefalite verno-estiva."
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Grundimmunisierung gegen die Frühsommer-Meningoenzephalitis erhalten."
+        },
+        {
+          "language" : "en-US",
+          "value" : "Received basic immunization against tick-borne encephalitis."
+        }]
+      },
+      {
+        "code" : "bi-hib",
+        "display" : "Received basic immunization against Haemophilus influenzae type b.",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Grundimmunisierung gegen Hämophilus influenzae Typ b erhalten."
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Vaccination de base contre l’Haemophilus influenzae de type b effectuée."
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Completamento dell’immunizzazione di base contro l’Haemophilus influenzae di tipo b."
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Grundimmunisierung gegen Hämophilus influenzae Typ b erhalten."
+        },
+        {
+          "language" : "en-US",
+          "value" : "Received basic immunization against Haemophilus influenzae type b."
+        }]
+      },
+      {
+        "code" : "bi-hpv",
+        "display" : "Received basic immunization against Human papillomavirus.",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Grundimmunisierung gegen Humanes Papillomavirus erhalten."
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Vaccination de base contre le papillomavirus humain effectuée."
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Completamento dell’immunizzazione di base contro i papillomavirus umani."
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Grundimmunisierung gegen Humanes Papillomavirus erhalten."
+        },
+        {
+          "language" : "en-US",
+          "value" : "Received basic immunization against Human papillomavirus."
+        }]
+      },
+      {
+        "code" : "bi-variz",
+        "display" : "Received basic immunization against varicella.",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Grundimmunisierung gegen Windpocken erhalten."
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Vaccination de base contre la varicelle effectuée."
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Completamento dell’immunizzazione di base contro la varicella."
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Grundimmunisierung gegen Windpocken erhalten."
+        },
+        {
+          "language" : "en-US",
+          "value" : "Received basic immunization against varicella."
+        }]
+      },
+      {
+        "code" : "bi-mmr",
+        "display" : "Received basic immunization against Measles, Mumps, Rubella.",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Grundimmunisierung gegen Masern, Mumps, Röteln erhalten."
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Vaccination de base contre la rougeole, les oreillons et la rubéole effectuée."
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Completamento dell’immunizzazione di base contro morbillo, orecchioni e rosolia."
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Grundimmunisierung gegen Masern, Mumps, Röteln erhalten."
+        },
+        {
+          "language" : "en-US",
+          "value" : "Received basic immunization against ."
+        }]
+      },
+      {
+        "code" : "bi-pneumo",
+        "display" : "Received basic immunization against Pneumococcal infectious disease.",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Grundimmunisierung gegen Pneumokokken-Erkrankung erhalten."
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Vaccination de base contre la maladie à pneumocoques effectuée."
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Completamento dell’immunizzazione di base contro la malattia invasiva da pneumococchi."
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Grundimmunisierung gegen Pneumokokken-Erkrankung erhalten."
+        },
+        {
+          "language" : "en-US",
+          "value" : "Received basic immunization against Pneumococcal infectious disease."
+        }]
+      },
+      {
+        "code" : "bi-hepb",
+        "display" : "Received basic immunization against viral hepatitis type B",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Grundimmunisierung gegen virale Hepatitis Typ B erhalten."
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Vaccination de base contre l’hépatite virale de type B."
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Completamento dell’immunizzazione di base contro l’epatite virale B."
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Grundimmunisierung gegen virale Hepatitis Typ B erhalten."
+        },
+        {
+          "language" : "en-US",
+          "value" : "Received basic immunization against viral hepatitis type B."
+        }]
+      },
+      {
+        "code" : "bi-hepa",
+        "display" : "Received basic immunization against viral hepatitis type A",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Grundimmunisierung gegen virale Hepatitis Typ A erhalten."
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Vaccination de base contre l’hépatite virale de type A effectuée."
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Completamento dell’immunizzazione di base contro l’epatite virale A."
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Grundimmunisierung gegen virale Hepatitis Typ A erhalten."
+        },
+        {
+          "language" : "en-US",
+          "value" : "Received basic immunization against viral hepatitis type A."
+        }]
+      },
+      {
+        "code" : "bi-herpzos",
+        "display" : "Received basic immunization against herpes zoster",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Grundimmunisierung gegen Herpes zoster erhalten."
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Vaccination de base contre l’herpès zoster effectuée."
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Completamento dell’immunizzazione di base contro l’herpes zoster."
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Grundimmunisierung gegen Herpes zoster erhalten."
+        },
+        {
+          "language" : "en-US",
+          "value" : "Received basic immunization against herpes zoster."
+        }]
+      },
+      {
+        "code" : "bi-mening",
+        "display" : "Received basic immunization against meningococcal infectious disease.",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Grundimmunisierung gegen Meningokokken-Erkrankung erhalten."
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Vaccination de base contre la maladie à méningocoque effectuée."
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Completamento dell’immunizzazione di base contro la malattia invasiva da meningococchi."
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Grundimmunisierung gegen Meningokokken-Erkrankung erhalten."
+        },
+        {
+          "language" : "en-US",
+          "value" : "Received basic immunization against meningococcal infectious disease."
+        }]
+      },
+      {
+        "code" : "bi-rabi",
+        "display" : "Received basic immunization against rabies",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Grundimmunisierung gegen Tollwut erhalten."
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Vaccination de base contre la rage effectuée."
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Completamento dell’immunizzazione di base contro la rabbia."
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Grundimmunisierung gegen Tollwut erhalten."
+        },
+        {
+          "language" : "en-US",
+          "value" : "Received basic immunization against rabies."
+        }]
+      }]
+    }]
+  }
+}

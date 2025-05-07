@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="9-1-Observation"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-laboratory-serology"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation 9-1-Observation</b></p><a name="9-1-Observation"> </a><a name="hc9-1-Observation"> </a><a name="9-1-Observation-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ch-vacd-laboratory-serology.html">CH VACD Laboratory And Serology</a></p></div><p><b>Author of the content</b>: <a href="PractitionerRole-6-1-PractitionerRole.html">PractitionerRole</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href="http://snomed.info/id/59156000">SNOMED CT 59156000</a>: Confirmed</p><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.3.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:e12a5c59-8785-4ecc-90f5-39b39bced95f</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 16935-9}">Hepatitis B virus surface Ab [Units/volume] in Serum</span></p><p><b>subject</b>: <a href="Patient-3-1-Patient.html">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>effective</b>: 1971-10</p><p><b>performer</b>: <a href="PractitionerRole-6-1-PractitionerRole.html">PractitionerRole</a></p><p><b>value</b>: 99 [iU]/L<span style="background: LightGoldenRodYellow"> (Details: UCUM  code[iU]/L = '[iU]/L')</span></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation POS}">Positive</span></p></div>
+  </text>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
+    <valueReference>
+      <reference value="PractitionerRole/6-1-PractitionerRole"/>
+    </valueReference>
+  </extension>
+  <extension url="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status">
+    <valueCoding>
+      <system value="http://snomed.info/sct"/>
+      <code value="59156000"/>
+      <display value="Confirmed"/>
+    </valueCoding>
+  </extension>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:e12a5c59-8785-4ecc-90f5-39b39bced95f"/>
+  </identifier>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="16935-9"/>
+      <display value="Hepatitis B virus surface Ab [Units/volume] in Serum"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/3-1-Patient"/>
+  </subject>
+  <effectiveDateTime value="1971-10"/>
+  <performer>
+    <reference value="PractitionerRole/6-1-PractitionerRole"/>
+  </performer>
+  <valueQuantity>
+    <value value="99"/>
+    <unit value="[iU]/L"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="[iU]/L"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="POS"/>
+      <display value="Positive"/>
+    </coding>
+  </interpretation>
+</Observation>

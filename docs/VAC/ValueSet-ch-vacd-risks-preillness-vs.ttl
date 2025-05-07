@@ -1,0 +1,393 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-preillness-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ch-vacd-risks-preillness-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ch-vacd-risks-preillness-vs</b></p><a name=\"ch-vacd-risks-preillness-vs\"> </a><a name=\"hcch-vacd-risks-preillness-vs\"> </a><a name=\"ch-vacd-risks-preillness-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/373068000\">373068000</a></td><td>Undetermined (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/24063002\">24063002</a></td><td>Fracture of base of skull (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/51244008\">51244008</a></td><td>Disorder of spleen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/51655004\">51655004</a></td><td>Congenital anomaly of skull (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/56265001\">56265001</a></td><td>Heart disease (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/75934005\">75934005</a></td><td>Metabolic disease (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/90708001\">90708001</a></td><td>Kidney disease (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/230744007\">230744007</a></td><td>Cerebrospinal fluid leak (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/235856003\">235856003</a></td><td>Disorder of liver (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/363346000\">363346000</a></td><td>Malignant neoplastic disease (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/402196005\">402196005</a></td><td>Childhood atopic dermatitis (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/414029004\">414029004</a></td><td>Disorder of immune function (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/449840001\">449840001</a></td><td>Cochlear prosthesis in situ (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/737294004\">737294004</a></td><td>Transplant present (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/19829001\">19829001</a></td><td>Disorder of lung (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/414027002\">414027002</a></td><td>Disorder of hematopoietic structure (disorder)</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/2011000195101/version/20241207</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/42251000195104\">42251000195104</a></td><td>Disorder of nervous system with systemic manifestations (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/42261000195101\">42261000195101</a></td><td>Disorder of musculoskeletal system with systemic manifestations (disorder)</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (Schweiz) (German (Switzerland), de)</b></td><td><b>English (United States) (English (United States), en)</b></td><td><b>French (Switzerland) (fr)</b></td><td><b>Italian (Switzerland) (it)</b></td><td><b>rm</b></td></tr><tr><td>373068000</td><td>Nicht bekannt</td><td>Undetermined (qualifier value)</td><td>Indéterminé</td><td>Indeterminato</td><td>Nunenconuschent</td></tr><tr><td>24063002</td><td>Schädelbasisfraktur</td><td>Fracture of base of skull (disorder)</td><td>fracture de la base du crâne</td><td>frattura della base del cranio</td><td>fractura da la basa da la chavazza</td></tr><tr><td>51244008</td><td>Milzerkrankung</td><td>Disorder of spleen (disorder)</td><td>affection de la rate</td><td>malattia della milza</td><td>malsogna da la spletga</td></tr><tr><td>51655004</td><td>Kongenitale Schädelmissbildung</td><td>Congenital anomaly of skull (disorder)</td><td>anomalie congénitale du crâne</td><td>malformazione congenita del cranio</td><td>defurmaziun congenitala dal la chavazza</td></tr><tr><td>56265001</td><td>Herzerkrankung</td><td>Heart disease (disorder)</td><td>maladie cardiaque</td><td>malattia cardiaca</td><td>malsogna dal cor</td></tr><tr><td>75934005</td><td>Stoffwechselerkrankung</td><td>Metabolic disease (disorder)</td><td>maladie métabolique</td><td>malattia metabolica</td><td>malsogna dal metabolissem</td></tr><tr><td>90708001</td><td>Nierenerkrankung</td><td>Kidney disease (disorder)</td><td>maladie rénale</td><td>malattia renale</td><td>malsogna dals gnirunchels</td></tr><tr><td>230744007</td><td>Zerebrospinale Liquorfistel</td><td>Cerebrospinal fluid leak (disorder)</td><td>fistule de liquide céphalorachidien</td><td>fistola di liquido cerebrospinale</td><td>fistla da liquor cerebrospinal</td></tr><tr><td>235856003</td><td>Lebererkrankung</td><td>Disorder of liver (disorder)</td><td>affection du foie</td><td>malattia epatica</td><td>malsogna dal gnirom</td></tr><tr><td>363346000</td><td>Krebs</td><td>Malignant neoplastic disease (disorder)</td><td>cancer</td><td>cancro</td><td>giomber</td></tr><tr><td>402196005</td><td>Atopische Dermatitis im Kindesalter</td><td>Childhood atopic dermatitis (disorder)</td><td>dermatite atopique de l'enfance</td><td>dermatite atopica nell'infanzia</td><td>dermatitis atopica durant l'uffanza</td></tr><tr><td>414029004</td><td>Störung der Immunfunktion</td><td>Disorder of immune function (disorder)</td><td>perturbation de la fonction immunitaire</td><td>disturbo della funzione immunitaria</td><td>disturbi da la funcziun d'immunitad</td></tr><tr><td>449840001</td><td>Cochleaimplantat in situ</td><td>Cochlear prosthesis in situ (finding)</td><td>implant cochléaire in situ</td><td>impianto cocleare in situ</td><td>implantat d'udida in situ</td></tr><tr><td>737294004</td><td>Transplantation vorhanden</td><td>Transplant present (finding)</td><td>présence d'une transplantation</td><td>presenza di un trapianto</td><td>transplantaziun avant maun</td></tr><tr><td>19829001</td><td>Lungenerkrankung</td><td>Disorder of lung (disorder)</td><td>maladie du poumon</td><td>malattia polmonare</td><td>malsogna dal pulmun</td></tr><tr><td>414027002</td><td>Erkrankung des blutbildenden Systems</td><td>Disorder of hematopoietic structure (disorder)</td><td>affection du système hématopoïétique</td><td>disturbo del sistema ematopoietico</td><td>malsogna dal sistem che producescha sang</td></tr><tr><td>42251000195104</td><td>Erkrankung des Nervensystems mit systemischen Manifestationen</td><td>Disorder of nervous system with systemic manifestations (disorder)</td><td>affection du système nerveux avec manifestations systémiques</td><td>malattia del sistema nervoso con manifestazioni sistemiche</td><td>malsogna dal sistem da la gnerva cun manifestaziuns sistemicas</td></tr><tr><td>42261000195101</td><td>Erkrankung des Muskel-Skelett-Systems mit systemischen Manifestationen</td><td>Disorder of musculoskeletal system with systemic manifestations (disorder)</td><td>affection du système musculo-squelettique avec manifestations systémiques</td><td>malattia dell'apparato muscoloscheletrico con manifestazioni sistemiche</td><td>malsogna dal sistem dals musculs e dal skelet cun manifestaziuns sistemicas</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-preillness-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "6.0.0-ballot-ci-build"] ; # 
+  fhir:name [ fhir:v "SwissPreillnessRisksForImmunizations"] ; # 
+  fhir:title [ fhir:v "Swiss Preillness Risks For Immunizations"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-07T07:26:19+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Switzerland"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Switzerland" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7.ch/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The preillness risks used in Switzerland."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CHE" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "CC0-1.0"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "373068000" ] ;
+         fhir:display [ fhir:v "Undetermined (qualifier value)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Nicht bekannt" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Indéterminé" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Indeterminato" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Nunenconuschent" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Undetermined (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "24063002" ] ;
+         fhir:display [ fhir:v "Fracture of base of skull (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Schädelbasisfraktur" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "fracture de la base du crâne" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "frattura della base del cranio" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "fractura da la basa da la chavazza" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Fracture of base of skull (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "51244008" ] ;
+         fhir:display [ fhir:v "Disorder of spleen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Milzerkrankung" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "affection de la rate" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "malattia della milza" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "malsogna da la spletga" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Disorder of spleen (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "51655004" ] ;
+         fhir:display [ fhir:v "Congenital anomaly of skull (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Kongenitale Schädelmissbildung" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "anomalie congénitale du crâne" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "malformazione congenita del cranio" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "defurmaziun congenitala dal la chavazza" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Congenital anomaly of skull (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "56265001" ] ;
+         fhir:display [ fhir:v "Heart disease (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Herzerkrankung" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "maladie cardiaque" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "malattia cardiaca" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "malsogna dal cor" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Heart disease (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "75934005" ] ;
+         fhir:display [ fhir:v "Metabolic disease (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Stoffwechselerkrankung" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "maladie métabolique" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "malattia metabolica" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "malsogna dal metabolissem" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Metabolic disease (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "90708001" ] ;
+         fhir:display [ fhir:v "Kidney disease (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Nierenerkrankung" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "maladie rénale" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "malattia renale" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "malsogna dals gnirunchels" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Kidney disease (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "230744007" ] ;
+         fhir:display [ fhir:v "Cerebrospinal fluid leak (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Zerebrospinale Liquorfistel" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "fistule de liquide céphalorachidien" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "fistola di liquido cerebrospinale" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "fistla da liquor cerebrospinal" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Cerebrospinal fluid leak (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "235856003" ] ;
+         fhir:display [ fhir:v "Disorder of liver (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Lebererkrankung" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "affection du foie" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "malattia epatica" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "malsogna dal gnirom" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Disorder of liver (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "363346000" ] ;
+         fhir:display [ fhir:v "Malignant neoplastic disease (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Krebs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "cancer" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "cancro" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "giomber" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Malignant neoplastic disease (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "402196005" ] ;
+         fhir:display [ fhir:v "Childhood atopic dermatitis (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Atopische Dermatitis im Kindesalter" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "dermatite atopique de l'enfance" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "dermatite atopica nell'infanzia" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "dermatitis atopica durant l'uffanza" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Childhood atopic dermatitis (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "414029004" ] ;
+         fhir:display [ fhir:v "Disorder of immune function (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Störung der Immunfunktion" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "perturbation de la fonction immunitaire" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "disturbo della funzione immunitaria" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "disturbi da la funcziun d'immunitad" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Disorder of immune function (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "449840001" ] ;
+         fhir:display [ fhir:v "Cochlear prosthesis in situ (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Cochleaimplantat in situ" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "implant cochléaire in situ" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "impianto cocleare in situ" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "implantat d'udida in situ" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Cochlear prosthesis in situ (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "737294004" ] ;
+         fhir:display [ fhir:v "Transplant present (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Transplantation vorhanden" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "présence d'une transplantation" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "presenza di un trapianto" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "transplantaziun avant maun" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Transplant present (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "19829001" ] ;
+         fhir:display [ fhir:v "Disorder of lung (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Lungenerkrankung" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "maladie du poumon" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "malattia polmonare" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "malsogna dal pulmun" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Disorder of lung (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "414027002" ] ;
+         fhir:display [ fhir:v "Disorder of hematopoietic structure (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erkrankung des blutbildenden Systems" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "affection du système hématopoïétique" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "disturbo del sistema ematopoietico" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "malsogna dal sistem che producescha sang" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Disorder of hematopoietic structure (disorder)" ]
+         ] )
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/2011000195101/version/20241207" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "42251000195104" ] ;
+         fhir:display [ fhir:v "Disorder of nervous system with systemic manifestations (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erkrankung des Nervensystems mit systemischen Manifestationen" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "affection du système nerveux avec manifestations systémiques" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "malattia del sistema nervoso con manifestazioni sistemiche" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "malsogna dal sistem da la gnerva cun manifestaziuns sistemicas" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Disorder of nervous system with systemic manifestations (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "42261000195101" ] ;
+         fhir:display [ fhir:v "Disorder of musculoskeletal system with systemic manifestations (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erkrankung des Muskel-Skelett-Systems mit systemischen Manifestationen" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "affection du système musculo-squelettique avec manifestations systémiques" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "malattia dell'apparato muscoloscheletrico con manifestazioni sistemiche" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "malsogna dal sistem dals musculs e dal skelet cun manifestaziuns sistemicas" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Disorder of musculoskeletal system with systemic manifestations (disorder)" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

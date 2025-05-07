@@ -1,0 +1,472 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ch-vacd-risks-preillness-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ch-vacd-risks-preillness-vs</b></p><a name=\"ch-vacd-risks-preillness-vs\"> </a><a name=\"hcch-vacd-risks-preillness-vs\"> </a><a name=\"ch-vacd-risks-preillness-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/373068000\">373068000</a></td><td>Undetermined (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/24063002\">24063002</a></td><td>Fracture of base of skull (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/51244008\">51244008</a></td><td>Disorder of spleen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/51655004\">51655004</a></td><td>Congenital anomaly of skull (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/56265001\">56265001</a></td><td>Heart disease (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/75934005\">75934005</a></td><td>Metabolic disease (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/90708001\">90708001</a></td><td>Kidney disease (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/230744007\">230744007</a></td><td>Cerebrospinal fluid leak (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/235856003\">235856003</a></td><td>Disorder of liver (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/363346000\">363346000</a></td><td>Malignant neoplastic disease (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/402196005\">402196005</a></td><td>Childhood atopic dermatitis (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/414029004\">414029004</a></td><td>Disorder of immune function (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/449840001\">449840001</a></td><td>Cochlear prosthesis in situ (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/737294004\">737294004</a></td><td>Transplant present (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/19829001\">19829001</a></td><td>Disorder of lung (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/414027002\">414027002</a></td><td>Disorder of hematopoietic structure (disorder)</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/2011000195101/version/20241207</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/42251000195104\">42251000195104</a></td><td>Disorder of nervous system with systemic manifestations (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/42261000195101\">42261000195101</a></td><td>Disorder of musculoskeletal system with systemic manifestations (disorder)</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (Schweiz) (German (Switzerland), de)</b></td><td><b>English (United States) (English (United States), en)</b></td><td><b>French (Switzerland) (fr)</b></td><td><b>Italian (Switzerland) (it)</b></td><td><b>rm</b></td></tr><tr><td>373068000</td><td>Nicht bekannt</td><td>Undetermined (qualifier value)</td><td>Indéterminé</td><td>Indeterminato</td><td>Nunenconuschent</td></tr><tr><td>24063002</td><td>Schädelbasisfraktur</td><td>Fracture of base of skull (disorder)</td><td>fracture de la base du crâne</td><td>frattura della base del cranio</td><td>fractura da la basa da la chavazza</td></tr><tr><td>51244008</td><td>Milzerkrankung</td><td>Disorder of spleen (disorder)</td><td>affection de la rate</td><td>malattia della milza</td><td>malsogna da la spletga</td></tr><tr><td>51655004</td><td>Kongenitale Schädelmissbildung</td><td>Congenital anomaly of skull (disorder)</td><td>anomalie congénitale du crâne</td><td>malformazione congenita del cranio</td><td>defurmaziun congenitala dal la chavazza</td></tr><tr><td>56265001</td><td>Herzerkrankung</td><td>Heart disease (disorder)</td><td>maladie cardiaque</td><td>malattia cardiaca</td><td>malsogna dal cor</td></tr><tr><td>75934005</td><td>Stoffwechselerkrankung</td><td>Metabolic disease (disorder)</td><td>maladie métabolique</td><td>malattia metabolica</td><td>malsogna dal metabolissem</td></tr><tr><td>90708001</td><td>Nierenerkrankung</td><td>Kidney disease (disorder)</td><td>maladie rénale</td><td>malattia renale</td><td>malsogna dals gnirunchels</td></tr><tr><td>230744007</td><td>Zerebrospinale Liquorfistel</td><td>Cerebrospinal fluid leak (disorder)</td><td>fistule de liquide céphalorachidien</td><td>fistola di liquido cerebrospinale</td><td>fistla da liquor cerebrospinal</td></tr><tr><td>235856003</td><td>Lebererkrankung</td><td>Disorder of liver (disorder)</td><td>affection du foie</td><td>malattia epatica</td><td>malsogna dal gnirom</td></tr><tr><td>363346000</td><td>Krebs</td><td>Malignant neoplastic disease (disorder)</td><td>cancer</td><td>cancro</td><td>giomber</td></tr><tr><td>402196005</td><td>Atopische Dermatitis im Kindesalter</td><td>Childhood atopic dermatitis (disorder)</td><td>dermatite atopique de l'enfance</td><td>dermatite atopica nell'infanzia</td><td>dermatitis atopica durant l'uffanza</td></tr><tr><td>414029004</td><td>Störung der Immunfunktion</td><td>Disorder of immune function (disorder)</td><td>perturbation de la fonction immunitaire</td><td>disturbo della funzione immunitaria</td><td>disturbi da la funcziun d'immunitad</td></tr><tr><td>449840001</td><td>Cochleaimplantat in situ</td><td>Cochlear prosthesis in situ (finding)</td><td>implant cochléaire in situ</td><td>impianto cocleare in situ</td><td>implantat d'udida in situ</td></tr><tr><td>737294004</td><td>Transplantation vorhanden</td><td>Transplant present (finding)</td><td>présence d'une transplantation</td><td>presenza di un trapianto</td><td>transplantaziun avant maun</td></tr><tr><td>19829001</td><td>Lungenerkrankung</td><td>Disorder of lung (disorder)</td><td>maladie du poumon</td><td>malattia polmonare</td><td>malsogna dal pulmun</td></tr><tr><td>414027002</td><td>Erkrankung des blutbildenden Systems</td><td>Disorder of hematopoietic structure (disorder)</td><td>affection du système hématopoïétique</td><td>disturbo del sistema ematopoietico</td><td>malsogna dal sistem che producescha sang</td></tr><tr><td>42251000195104</td><td>Erkrankung des Nervensystems mit systemischen Manifestationen</td><td>Disorder of nervous system with systemic manifestations (disorder)</td><td>affection du système nerveux avec manifestations systémiques</td><td>malattia del sistema nervoso con manifestazioni sistemiche</td><td>malsogna dal sistem da la gnerva cun manifestaziuns sistemicas</td></tr><tr><td>42261000195101</td><td>Erkrankung des Muskel-Skelett-Systems mit systemischen Manifestationen</td><td>Disorder of musculoskeletal system with systemic manifestations (disorder)</td><td>affection du système musculo-squelettique avec manifestations systémiques</td><td>malattia dell'apparato muscoloscheletrico con manifestazioni sistemiche</td><td>malsogna dal sistem dals musculs e dal skelet cun manifestaziuns sistemicas</td></tr></table></div>"
+  },
+  "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-preillness-vs",
+  "version" : "6.0.0-ballot-ci-build",
+  "name" : "SwissPreillnessRisksForImmunizations",
+  "title" : "Swiss Preillness Risks For Immunizations",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-07T07:26:19+02:00",
+  "publisher" : "HL7 Switzerland",
+  "contact" : [{
+    "name" : "HL7 Switzerland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.ch/"
+    }]
+  }],
+  "description" : "The preillness risks used in Switzerland.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CHE"
+    }]
+  }],
+  "copyright" : "CC0-1.0",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "373068000",
+        "display" : "Undetermined (qualifier value)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Nicht bekannt"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "Indéterminé"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "Indeterminato"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "Nunenconuschent"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Undetermined (qualifier value)"
+        }]
+      },
+      {
+        "code" : "24063002",
+        "display" : "Fracture of base of skull (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Schädelbasisfraktur"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "fracture de la base du crâne"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "frattura della base del cranio"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "fractura da la basa da la chavazza"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Fracture of base of skull (disorder)"
+        }]
+      },
+      {
+        "code" : "51244008",
+        "display" : "Disorder of spleen (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Milzerkrankung"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "affection de la rate"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "malattia della milza"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "malsogna da la spletga"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Disorder of spleen (disorder)"
+        }]
+      },
+      {
+        "code" : "51655004",
+        "display" : "Congenital anomaly of skull (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Kongenitale Schädelmissbildung"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "anomalie congénitale du crâne"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "malformazione congenita del cranio"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "defurmaziun congenitala dal la chavazza"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Congenital anomaly of skull (disorder)"
+        }]
+      },
+      {
+        "code" : "56265001",
+        "display" : "Heart disease (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Herzerkrankung"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "maladie cardiaque"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "malattia cardiaca"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "malsogna dal cor"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Heart disease (disorder)"
+        }]
+      },
+      {
+        "code" : "75934005",
+        "display" : "Metabolic disease (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Stoffwechselerkrankung"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "maladie métabolique"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "malattia metabolica"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "malsogna dal metabolissem"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Metabolic disease (disorder)"
+        }]
+      },
+      {
+        "code" : "90708001",
+        "display" : "Kidney disease (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Nierenerkrankung"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "maladie rénale"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "malattia renale"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "malsogna dals gnirunchels"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Kidney disease (disorder)"
+        }]
+      },
+      {
+        "code" : "230744007",
+        "display" : "Cerebrospinal fluid leak (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Zerebrospinale Liquorfistel"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "fistule de liquide céphalorachidien"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "fistola di liquido cerebrospinale"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "fistla da liquor cerebrospinal"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Cerebrospinal fluid leak (disorder)"
+        }]
+      },
+      {
+        "code" : "235856003",
+        "display" : "Disorder of liver (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Lebererkrankung"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "affection du foie"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "malattia epatica"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "malsogna dal gnirom"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Disorder of liver (disorder)"
+        }]
+      },
+      {
+        "code" : "363346000",
+        "display" : "Malignant neoplastic disease (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Krebs"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "cancer"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "cancro"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "giomber"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Malignant neoplastic disease (disorder)"
+        }]
+      },
+      {
+        "code" : "402196005",
+        "display" : "Childhood atopic dermatitis (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Atopische Dermatitis im Kindesalter"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "dermatite atopique de l'enfance"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "dermatite atopica nell'infanzia"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "dermatitis atopica durant l'uffanza"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Childhood atopic dermatitis (disorder)"
+        }]
+      },
+      {
+        "code" : "414029004",
+        "display" : "Disorder of immune function (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Störung der Immunfunktion"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "perturbation de la fonction immunitaire"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "disturbo della funzione immunitaria"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "disturbi da la funcziun d'immunitad"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Disorder of immune function (disorder)"
+        }]
+      },
+      {
+        "code" : "449840001",
+        "display" : "Cochlear prosthesis in situ (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Cochleaimplantat in situ"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "implant cochléaire in situ"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "impianto cocleare in situ"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "implantat d'udida in situ"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Cochlear prosthesis in situ (finding)"
+        }]
+      },
+      {
+        "code" : "737294004",
+        "display" : "Transplant present (finding)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Transplantation vorhanden"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "présence d'une transplantation"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "presenza di un trapianto"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "transplantaziun avant maun"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Transplant present (finding)"
+        }]
+      },
+      {
+        "code" : "19829001",
+        "display" : "Disorder of lung (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Lungenerkrankung"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "maladie du poumon"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "malattia polmonare"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "malsogna dal pulmun"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Disorder of lung (disorder)"
+        }]
+      },
+      {
+        "code" : "414027002",
+        "display" : "Disorder of hematopoietic structure (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Erkrankung des blutbildenden Systems"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "affection du système hématopoïétique"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "disturbo del sistema ematopoietico"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "malsogna dal sistem che producescha sang"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Disorder of hematopoietic structure (disorder)"
+        }]
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/2011000195101/version/20241207",
+      "concept" : [{
+        "code" : "42251000195104",
+        "display" : "Disorder of nervous system with systemic manifestations (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Erkrankung des Nervensystems mit systemischen Manifestationen"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "affection du système nerveux avec manifestations systémiques"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "malattia del sistema nervoso con manifestazioni sistemiche"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "malsogna dal sistem da la gnerva cun manifestaziuns sistemicas"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Disorder of nervous system with systemic manifestations (disorder)"
+        }]
+      },
+      {
+        "code" : "42261000195101",
+        "display" : "Disorder of musculoskeletal system with systemic manifestations (disorder)",
+        "designation" : [{
+          "language" : "de-CH",
+          "value" : "Erkrankung des Muskel-Skelett-Systems mit systemischen Manifestationen"
+        },
+        {
+          "language" : "fr-CH",
+          "value" : "affection du système musculo-squelettique avec manifestations systémiques"
+        },
+        {
+          "language" : "it-CH",
+          "value" : "malattia dell'apparato muscoloscheletrico con manifestazioni sistemiche"
+        },
+        {
+          "language" : "rm-CH",
+          "value" : "malsogna dal sistem dals musculs e dal skelet cun manifestaziuns sistemicas"
+        },
+        {
+          "language" : "en-US",
+          "value" : "Disorder of musculoskeletal system with systemic manifestations (disorder)"
+        }]
+      }]
+    }]
+  }
+}

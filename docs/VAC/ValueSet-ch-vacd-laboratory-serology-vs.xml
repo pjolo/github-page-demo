@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ch-vacd-laboratory-serology-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ch-vacd-laboratory-serology-vs</b></p><a name="ch-vacd-laboratory-serology-vs"> </a><a name="hcch-vacd-laboratory-serology-vs"> </a><a name="ch-vacd-laboratory-serology-vs-en-US"> </a><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/22602-7/">22602-7</a></td><td>Varicella zoster virus IgG Ab [Titer] in Serum</td></tr><tr><td><a href="https://loinc.org/22502-9/">22502-9</a></td><td>Measles virus IgG Ab [Titer] in Serum</td></tr><tr><td><a href="https://loinc.org/41763-4/">41763-4</a></td><td>Rubella virus IgG Ab [Titer] in Serum</td></tr><tr><td><a href="https://loinc.org/22313-1/">22313-1</a></td><td>Hepatitis A virus IgG Ab [Units/volume] in SerumActive</td></tr><tr><td><a href="https://loinc.org/16935-9/">16935-9</a></td><td>Hepatitis B virus surface Ab [Units/volume] in Serum</td></tr><tr><td><a href="https://loinc.org/26061-2/">26061-2</a></td><td>European tick borne encephalitis virus Ab [Titer] in Serum</td></tr><tr><td><a href="https://loinc.org/6589-6/">6589-6</a></td><td>Yellow fever virus Ab [Titer] in Serum by Immunofluorescence</td></tr><tr><td><a href="https://loinc.org/58770-9/">58770-9</a></td><td>Clostridium tetani toxoid IgG Ab [Units/volume] in Serum by Immunofluorescence</td></tr><tr><td><a href="https://loinc.org/94505-5/">94505-5</a></td><td>SARS-CoV-2 (COVID-19) IgG Ab [Units/volume] in Serum or Plasma by Immunoassay</td></tr><tr><td><a href="https://loinc.org/14128-3/">14128-3</a></td><td>Rabies virus Ab [Titer] in Serum</td></tr><tr><td><a href="https://loinc.org/22755-3/">22755-3</a></td><td>Haemophilus influenzae B Ab [Mass/volume] in Serum</td></tr><tr><td><a href="https://loinc.org/25531-5/">25531-5</a></td><td>Streptococcus pneumoniae Ab [Mass/volume] in Serum</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>Deutsch (Schweiz) (German (Switzerland), de)</b></td><td><b>English (United States) (English (United States), en)</b></td><td><b>French (Switzerland) (fr)</b></td><td><b>Italian (Switzerland) (it)</b></td><td><b>rm</b></td></tr><tr><td>22602-7</td><td>Varizellen-Zoster-Virus IgG Ab [Titer] in Serum</td><td>Varicella zoster virus IgG Ab [Titer] in Serum</td><td>Anticorps IgG du virus varicelle-zona [titre] dans le sérum</td><td>virus varicella-zoster Ab IgG [titolo] in siero</td><td>virus da la virola selvadia IgG Ab [titer] en il serum</td></tr><tr><td>22502-9</td><td>Masern-Virus IgG Ab [Titer] in Serum</td><td>Measles virus IgG Ab [Titer] in Serum</td><td>Anticorps IgG du virus de la rougeole [titre] dans le sérum</td><td>virus del morbillo Ab IgG [titolo] in siero</td><td>virus dal virustgel IgG Ab [titer] en il serum</td></tr><tr><td>41763-4</td><td>Röteln-Virus IgG Ab [Titer] in Serum</td><td>Rubella virus IgG Ab [Titer] in Serum</td><td>Anticorps IgG du virus de la rubéole [titre] dans le sérum</td><td>virus della rosolia Ab IgG [titolo] in siero</td><td>virus da la rubella IgG Ab [titer] en il serum</td></tr><tr><td>22313-1</td><td>Hepatitis-A-Virus IgG Ab [Einheiten/Volumen] in SerumAktiv</td><td>Hepatitis A virus IgG Ab [Units/volume] in SerumActive</td><td>Anticorps IgG du virus de l'hépatite A [unités/volume] dans le sérum</td><td>virus dell'epatite A Ab IgG [unità/volume] in siero attivo</td><td>virus da hepatitis A IgG Ab [unitads/volumen] en il serum activ</td></tr><tr><td>16935-9</td><td>Hepatitis-B-Virus-Oberfläche Ab [Einheiten/Volumen] in Serum</td><td>Hepatitis B virus surface Ab [Units/volume] in Serum</td><td>Anticorps surface du virus de l'hépatite B [unités/volume] dans le sérum</td><td>virus dell'epatite B Ab di superficie [unità/volume] in siero</td><td>virus da hepatitis B da surfatscha Ab [unitads/volumen] en il serum</td></tr><tr><td>26061-2</td><td>Europäischer Zeckenenzephalitis-Virus Ab [Titer] in Serum</td><td>European tick borne encephalitis virus Ab [Titer] in Serum</td><td>Anticorps du virus de l'encéphalite à tiques [titre] dans le serum</td><td>virus della meningoencefalite da zecche europea Ab [titolo] in siero</td><td>virus da l'encefalitis da zeccas europeic Ab [titer] en il serum</td></tr><tr><td>6589-6</td><td>Gelbfieber-Virus Ab [Titer] in Serum durch Immunfluoreszenz</td><td>Yellow fever virus Ab [Titer] in Serum by Immunofluorescence</td><td>Anticorps du virus de la fièvre jaune [titre] dans le sérum par immunofluorescence</td><td>virus della febbre gialla Ab [titolo] in siero mediante immunofluorescenza</td><td>virus da la fevrra melna Ab [titer] en il serum tras immunofluorescenza</td></tr><tr><td>58770-9</td><td>Clostridium tetani Toxoid IgG Ab [Einheiten/Volumen] in Serum durch Immunfluoreszenz</td><td>Clostridium tetani toxoid IgG Ab [Units/volume] in Serum by Immunofluorescence</td><td>Anticorps IgG de la toxine du Clostridium tetani [unités/volume] dans le sérum par immunofluorescence</td><td>tossoide di Clostridium tetani Ab IgG [unità/volume] in siero mediante immunofluorescenza</td><td>toxoid dal clostridium tetani IgG Ab [unitads/volumen] en il serum tras immunofluorescenza</td></tr><tr><td>94505-5</td><td>SARS-CoV-2 (COVID-19) IgG Ab [Einheiten/Volumen] in Serum oder Plasma durch Immunoassay</td><td>SARS-CoV-2 (COVID-19) IgG Ab [Units/volume] in Serum or Plasma by Immunoassay</td><td>Anticorps IgG du SARS-CoV-2 (COVID-19) [unités/volume] dans le sérum ou le plasma par immunoanalyse</td><td>SARS-CoV-2 (COVID-19) Ab IgG [unità/volume] in siero o plasma mediante immunodosaggio</td><td>SARS-CoV-2 (COVID-19) IgG Ab [unitads/volumen] en il serum u en il plasma tras immunoassay</td></tr><tr><td>14128-3</td><td>Tollwut-Virus Ab [Titer] im Serum</td><td>Rabies virus Ab [Titer] in Serum</td><td>Anticorps du virus de la rage [titre] dans le sérum</td><td>virus della rabbia Ab [titolo] in siero</td><td>virus da la frenesia Ab [titer] en il serum</td></tr><tr><td>22755-3</td><td>Haemophilus influenzae B Ak [Masse/Volumen] im Serum</td><td>Haemophilus influenzae B Ab [mass/volume] in Serum</td><td>Haemophilus influenzae B Ac [masse/volume] dans le sérum</td><td>Haemophilus influenzae B Ab [masse/volume] in siero</td><td>hemofilus influenza B Ak [massa/volumen] en il serum</td></tr><tr><td>25531-5</td><td>Streptococcus pneumoniae Ak [Masse/Volumen] im Serum</td><td>Streptococcus pneumoniae Ab [mass/volume] in Serum</td><td>Streptococcus pneumoniae Ac [masse/volume] dans le sérum</td><td>Streptococcus pneumoniae Ab [masse/volume] in siero</td><td>streptococcus pneumoniae Ak [massa/volumen] en il serum</td></tr></table></div>
+  </text>
+  <url value="http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-laboratory-serology-vs"/>
+  <version value="6.0.0-ballot-ci-build"/>
+  <name value="LaboratorySerologyImmunization"/>
+  <title value="Laboratory Serology for Immunization"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-07T07:26:19+02:00"/>
+  <publisher value="HL7 Switzerland"/>
+  <contact>
+    <name value="HL7 Switzerland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.ch/"/>
+    </telecom>
+  </contact>
+  <description value="Laboratory Serology for immunization"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CHE"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC0-1.0"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="22602-7"/>
+        <display value="Varicella zoster virus IgG Ab [Titer] in Serum"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Varizellen-Zoster-Virus IgG Ab [Titer] in Serum"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="Anticorps IgG du virus varicelle-zona [titre] dans le sérum"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="virus varicella-zoster Ab IgG [titolo] in siero"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="virus da la virola selvadia IgG Ab [titer] en il serum"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Varicella zoster virus IgG Ab [Titer] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22502-9"/>
+        <display value="Measles virus IgG Ab [Titer] in Serum"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Masern-Virus IgG Ab [Titer] in Serum"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="Anticorps IgG du virus de la rougeole [titre] dans le sérum"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="virus del morbillo Ab IgG [titolo] in siero"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="virus dal virustgel IgG Ab [titer] en il serum"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Measles virus IgG Ab [Titer] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41763-4"/>
+        <display value="Rubella virus IgG Ab [Titer] in Serum"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Röteln-Virus IgG Ab [Titer] in Serum"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="Anticorps IgG du virus de la rubéole [titre] dans le sérum"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="virus della rosolia Ab IgG [titolo] in siero"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="virus da la rubella IgG Ab [titer] en il serum"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Rubella virus IgG Ab [Titer] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22313-1"/>
+        <display value="Hepatitis A virus IgG Ab [Units/volume] in SerumActive"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Hepatitis-A-Virus IgG Ab [Einheiten/Volumen] in SerumAktiv"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="Anticorps IgG du virus de l'hépatite A [unités/volume] dans le sérum"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="virus dell'epatite A Ab IgG [unità/volume] in siero attivo"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="virus da hepatitis A IgG Ab [unitads/volumen] en il serum activ"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Hepatitis A virus IgG Ab [Units/volume] in SerumActive"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16935-9"/>
+        <display value="Hepatitis B virus surface Ab [Units/volume] in Serum"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Hepatitis-B-Virus-Oberfläche Ab [Einheiten/Volumen] in Serum"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="Anticorps surface du virus de l'hépatite B [unités/volume] dans le sérum"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="virus dell'epatite B Ab di superficie [unità/volume] in siero"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="virus da hepatitis B da surfatscha Ab [unitads/volumen] en il serum"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Hepatitis B virus surface Ab [Units/volume] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="26061-2"/>
+        <display value="European tick borne encephalitis virus Ab [Titer] in Serum"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Europäischer Zeckenenzephalitis-Virus Ab [Titer] in Serum"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="Anticorps du virus de l'encéphalite à tiques [titre] dans le serum"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="virus della meningoencefalite da zecche europea Ab [titolo] in siero"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="virus da l'encefalitis da zeccas europeic Ab [titer] en il serum"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="European tick borne encephalitis virus Ab [Titer] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6589-6"/>
+        <display value="Yellow fever virus Ab [Titer] in Serum by Immunofluorescence"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Gelbfieber-Virus Ab [Titer] in Serum durch Immunfluoreszenz"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="Anticorps du virus de la fièvre jaune [titre] dans le sérum par immunofluorescence"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="virus della febbre gialla Ab [titolo] in siero mediante immunofluorescenza"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="virus da la fevrra melna Ab [titer] en il serum tras immunofluorescenza"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Yellow fever virus Ab [Titer] in Serum by Immunofluorescence"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="58770-9"/>
+        <display value="Clostridium tetani toxoid IgG Ab [Units/volume] in Serum by Immunofluorescence"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Clostridium tetani Toxoid IgG Ab [Einheiten/Volumen] in Serum durch Immunfluoreszenz"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="Anticorps IgG de la toxine du Clostridium tetani [unités/volume] dans le sérum par immunofluorescence"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="tossoide di Clostridium tetani Ab IgG [unità/volume] in siero mediante immunofluorescenza"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="toxoid dal clostridium tetani IgG Ab [unitads/volumen] en il serum tras immunofluorescenza"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Clostridium tetani toxoid IgG Ab [Units/volume] in Serum by Immunofluorescence"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="94505-5"/>
+        <display value="SARS-CoV-2 (COVID-19) IgG Ab [Units/volume] in Serum or Plasma by Immunoassay"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="SARS-CoV-2 (COVID-19) IgG Ab [Einheiten/Volumen] in Serum oder Plasma durch Immunoassay"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="Anticorps IgG du SARS-CoV-2 (COVID-19) [unités/volume] dans le sérum ou le plasma par immunoanalyse"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="SARS-CoV-2 (COVID-19) Ab IgG [unità/volume] in siero o plasma mediante immunodosaggio"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="SARS-CoV-2 (COVID-19) IgG Ab [unitads/volumen] en il serum u en il plasma tras immunoassay"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="SARS-CoV-2 (COVID-19) IgG Ab [Units/volume] in Serum or Plasma by Immunoassay"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="14128-3"/>
+        <display value="Rabies virus Ab [Titer] in Serum"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Tollwut-Virus Ab [Titer] im Serum"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="Anticorps du virus de la rage [titre] dans le sérum"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="virus della rabbia Ab [titolo] in siero"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="virus da la frenesia Ab [titer] en il serum"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Rabies virus Ab [Titer] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22755-3"/>
+        <display value="Haemophilus influenzae B Ab [Mass/volume] in Serum"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Haemophilus influenzae B Ak [Masse/Volumen] im Serum"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="Haemophilus influenzae B Ac [masse/volume] dans le sérum"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="Haemophilus influenzae B Ab [masse/volume] in siero"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="hemofilus influenza B Ak [massa/volumen] en il serum"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Haemophilus influenzae B Ab [mass/volume] in Serum"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="25531-5"/>
+        <display value="Streptococcus pneumoniae Ab [Mass/volume] in Serum"/>
+        <designation>
+          <language value="de-CH"/>
+          <value value="Streptococcus pneumoniae Ak [Masse/Volumen] im Serum"/>
+        </designation>
+        <designation>
+          <language value="fr-CH"/>
+          <value value="Streptococcus pneumoniae Ac [masse/volume] dans le sérum"/>
+        </designation>
+        <designation>
+          <language value="it-CH"/>
+          <value value="Streptococcus pneumoniae Ab [masse/volume] in siero"/>
+        </designation>
+        <designation>
+          <language value="rm-CH"/>
+          <value value="streptococcus pneumoniae Ak [massa/volumen] en il serum"/>
+        </designation>
+        <designation>
+          <language value="en-US"/>
+          <value value="Streptococcus pneumoniae Ab [mass/volume] in Serum"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

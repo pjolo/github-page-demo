@@ -1,0 +1,3189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - Implementation Guide CH VACD v6.0.0-ballot-ci-build</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <style>
+    
+
+    
+
+    
+
+    </style>
+ 
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"66"}
+    h3,h4,h5,h6{--heading-prefix:"66.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+            <div id="family-nav">
+	<a id="logo" no-external="true" href="http://hl7.org/fhir"> <img
+		alt="logo fhir" src="fhir-logo-www.png" />
+	</a>
+</div>
+
+            <div id="family-nav">
+                <a id="logo" no-external="true" href="searchform.html">
+                    <img src="assets/images/search.png" alt="Search FHIR" />
+                </a>
+            </div>
+            <div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://www.hl7.ch">
+        <img alt="visit the hl7 website" height="50" src="hl7-logo.png" />
+    </a>            
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Implementation Guide CH VACD</span>
+            <br/>
+            <span style="display:inline-block;">6.0.0-ballot-ci-build - ci-build
+
+
+
+  <img alt="Switzerland flag" src="assets/images/che.svg" height="16" title="Switzerland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<!--<li><a href="toc.html">Table of Contents</a></li> -->
+	<li>
+		<a href="index.html">Home</a>
+	</li>
+
+
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Use Cases
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="Use-Cases-Deutsch.html">Anwendungsfälle</a>
+			</li>
+			<li>
+				<a href="Use-Cases-Francais.html">Les cas d'utilisation</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Documents/Messages
+			<b class="caret">
+			</b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="immunization-administration-document.html">Immunization Administration document</a>
+			</li>
+			<li>
+				<a href="vaccination-record-document.html">Vaccination Record document</a>
+			</li>
+			<li>
+				<a href="immunization-recommendation-request-message.html">Immunization Recommendation Request message</a>
+			</li>
+			<li>
+				<a href="immunization-recommendation-response-message.html">Immunization Recommendation Response message</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="profiles.html">Profiles</a>
+	</li>
+	<li>
+		<a href="extensions.html">Extensions</a>
+	</li>
+	<li>
+		<a href="terminology.html">Terminology</a>
+	</li>
+	<li>
+		<a href="artifacts.html">Artifacts</a>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Test Cases
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="TestCases.html">Overview</a>
+			</li>
+			<li>
+				<a href="TestCases.html#a-immunizations">A Immunizations</a>
+			</li>
+			<li>
+				<a href="TestCases.html#b-other-elements">B Other Elements</a>
+			</li>
+			<li>
+				<a href="TestCases.html#c-correction-of-entries">C Correction of Entries</a>
+			</li>
+			<li>
+				<a href="TestCases.html#d-conflicts-on-merging-documents">D Conflicts on merging Documents</a>
+			</li>
+			<li>
+				<a href="TestCases.html#e-language-handling-on-merging-documents">E Language handling on merging Documents</a>
+			</li>
+			<li>
+				<a href="TestCases.html#f-add-notes-to-existing-elements">F Add Notes to existing Elements</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Implementation Guide CH VACD - Local Development build (v6.0.0-ballot-ci-build) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://fhir.ch/ig/ch-vacd/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#6">Other</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-allergyintolerances.html"
+                  title="StructureDefinition/ch-vacd-allergyintolerances">CH VACD AllergyIntolerance</a>
+            </td>
+            <td>
+<p>Definition of the AllergyIntolerance part for vaccination record documents.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-basic-immunization.html"
+                  title="StructureDefinition/ch-vacd-basic-immunization">CH VACD Basic Immunization</a>
+            </td>
+            <td>
+<p>Condition to declare Basic Immunization done by one single condition for DTPa or Polio. This is for cases the patient does not have a vaccination certificate to declare it, but knows that it is done.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-condition.html"
+                  title="StructureDefinition/ch-vacd-condition">CH VACD Condition Profile (Abstract)</a>
+            </td>
+            <td>
+<p>Generic definition (abstract profile) of the condition for all documents except recommendation request or response.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-immunization.html"
+                  title="StructureDefinition/ch-vacd-immunization">CH VACD Immunization</a>
+            </td>
+            <td>
+<p>Definition of the immunization part for all documents.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-composition-immunization-administration.html"
+                  title="StructureDefinition/ch-vacd-composition-immunization-administration">CH VACD Immunization Administration Composition</a>
+            </td>
+            <td>
+<p>Definition of the composition for the  immunization administration document.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-document-immunization-administration.html"
+                  title="StructureDefinition/ch-vacd-document-immunization-administration">CH VACD Immunization Administration Document</a>
+            </td>
+            <td>
+<p>Definition of the bundle for the immunization administration document. This document is allowed to be used in context of the Swiss EPR but can also used in context of data exchange next to the Swiss EPR.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-recommendation-request-messageheader.html"
+                  title="StructureDefinition/ch-vacd-recommendation-request-messageheader">CH VACD Immunization Recommendation Request MessageHeader</a>
+            </td>
+            <td>
+<p>Definition of the MessageHeader for the immunization recommendation request.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-recommendation-response-messageheader.html"
+                  title="StructureDefinition/ch-vacd-recommendation-response-messageheader">CH VACD Immunization Recommendation Response MessageHeader</a>
+            </td>
+            <td>
+<p>Definition of the MessageHeader for the immunization recommendation response.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-immunization-recommendation.html"
+                  title="StructureDefinition/ch-vacd-immunization-recommendation">CH VACD Immunization Recommendations</a>
+            </td>
+            <td>
+<p>Definition of the immunization recommendation part for all documents.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-laboratory-serology.html"
+                  title="StructureDefinition/ch-vacd-laboratory-serology">CH VACD Laboratory And Serology</a>
+            </td>
+            <td>
+<p>Definition of the labor and serology part for all documents.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-medical-problems.html"
+                  title="StructureDefinition/ch-vacd-medical-problems">CH VACD Medical Problems</a>
+            </td>
+            <td>
+<p>Definition of the medical problems part for all documents.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-medication-for-immunization.html"
+                  title="StructureDefinition/ch-vacd-medication-for-immunization">CH VACD Medication For Immunization</a>
+            </td>
+            <td>
+<p>Definition of the medication for immunization.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-recommendation-request-message.html"
+                  title="StructureDefinition/ch-vacd-recommendation-request-message">CH VACD Message Immunization Recommendation Request</a>
+            </td>
+            <td>
+<p>Definition of the bundle for the immunization recommendation request.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-recommendation-response-message.html"
+                  title="StructureDefinition/ch-vacd-recommendation-response-message">CH VACD Message Immunization Recommendation Response</a>
+            </td>
+            <td>
+<p>Definition of the bundle for the immunization recommendation response.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-pastillnesses.html"
+                  title="StructureDefinition/ch-vacd-pastillnesses">CH VACD Past Illness</a>
+            </td>
+            <td>
+<p>Definition of the past illness part for all documents.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-document-vaccination-record.html"
+                  title="StructureDefinition/ch-vacd-document-vaccination-record">CH VACD Vaccination Record Document</a>
+            </td>
+            <td>
+<p>Definition of the bundle for the vaccination record document. This document is allowed to be used in context of the Swiss EPR but can also used in context of data exchange next to the Swiss EPR.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-composition-vaccination-record.html"
+                  title="StructureDefinition/ch-vacd-composition-vaccination-record">CH VACD VaccinationRecord Composition</a>
+            </td>
+            <td>
+<p>Definition of the composition for the vaccination record document.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-ext-immunization-medication-reference.html"
+                  title="StructureDefinition/ch-vacd-ext-immunization-medication-reference">CH VACD Extension Immunization Medication Reference</a>
+            </td>
+            <td>
+<p>Extension to make a reference to the medication for the immunization.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-ext-merging-conflict-entry-reference.html"
+                  title="StructureDefinition/ch-vacd-ext-merging-conflict-entry-reference">CH VACD Extension Merging Conflict Entry Reference</a>
+            </td>
+            <td>
+<p>Extension to make a reference to an entry conflicting with other entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ch-vacd-ext-verification-status.html"
+                  title="StructureDefinition/ch-vacd-ext-verification-status">CH VACD Extension verificationStatus</a>
+            </td>
+            <td>
+<p>Extension to define the verificationStatus on resources not defining this field like Immunization and Observation.&lt;br/&gt;Within the verificationStatus, a practitioner can verify the data added by a patient or related person.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ch-vacd-immunization-allergyintolerances-vs.html"
+                  title="ValueSet/ch-vacd-immunization-allergyintolerances-vs">Allergies and Intolerance values for Immunization</a>
+            </td>
+            <td>
+<p>The allergies and adverse reactions which have an influence on the immunization recommendations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ch-vacd-basic-immunization-vs.html"
+                  title="ValueSet/ch-vacd-basic-immunization-vs">Basic Immunization Codes</a>
+            </td>
+            <td>
+<p>The codes for declaring basic immunization.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ch-vacd-entry-conflict-vs.html"
+                  title="ValueSet/ch-vacd-entry-conflict-vs">Entry Conflict Codes</a>
+            </td>
+            <td>
+<p>The codes for declaring document entry conflicts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ch-vacd-laboratory-serology-vs.html"
+                  title="ValueSet/ch-vacd-laboratory-serology-vs">Laboratory Serology for Immunization</a>
+            </td>
+            <td>
+<p>Laboratory Serology for immunization</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ch-vacd-risks-medical-vs.html"
+                  title="ValueSet/ch-vacd-risks-medical-vs">Swiss Medical Risks For Immunizations</a>
+            </td>
+            <td>
+<p>The medical risks used in Switzerland.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ch-vacd-risks-occupation-vs.html"
+                  title="ValueSet/ch-vacd-risks-occupation-vs">Swiss Occupation Risks For Immunizations</a>
+            </td>
+            <td>
+<p>The occupation exposition risks used in Switzerland.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ch-vacd-risks-preillness-vs.html"
+                  title="ValueSet/ch-vacd-risks-preillness-vs">Swiss Preillness Risks For Immunizations</a>
+            </td>
+            <td>
+<p>The preillness risks used in Switzerland.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ch-vacd-risks-vs.html" title="ValueSet/ch-vacd-risks-vs">Swiss Risks For Immunizations</a>
+            </td>
+            <td>
+<p>The medical and exposition risks used in Switzerland.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ch-vacd-risks-social-vs.html"
+                  title="ValueSet/ch-vacd-risks-social-vs">Swiss Social Risks For Immunizations</a>
+            </td>
+            <td>
+<p>The social exposition risks used in Switzerland.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ch-vacd-verification-status-vs.html"
+                  title="ValueSet/ch-vacd-verification-status-vs">Verification Status Codes</a>
+            </td>
+            <td>
+<p>Definition the verification status codes for the extension ch-vacd-ext-verification-status.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ch-vacd-basic-immunization-cs.html"
+                  title="CodeSystem/ch-vacd-basic-immunization-cs">Basic Immunization codes</a>
+            </td>
+            <td>
+<p>Clinical Decision Support Event</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ch-vacd-clinical-decision-support-event-cs.html"
+                  title="CodeSystem/ch-vacd-clinical-decision-support-event-cs">CDS Event</a>
+            </td>
+            <td>
+<p>Clinical Decision Support Event</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ch-vacd-entry-conflict-cs.html"
+                  title="CodeSystem/ch-vacd-entry-conflict-cs">Entry Conflict Code System</a>
+            </td>
+            <td>
+<p>The entry conflict codesystem</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ch-vacd-exposure-risks-cs.html"
+                  title="CodeSystem/ch-vacd-exposure-risks-cs">Swiss Exposure Risks Codesystem</a>
+            </td>
+            <td>
+<p>Exposure risks codes available in Switzerland.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-1-1-ImmunizationAdministration.html"
+                  title="Bundle/1-1-ImmunizationAdministration">1.1 Immunization Administration</a>
+            </td>
+            <td>
+<p>Example for Bundle Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-1-3-VaccinationRecord.html"
+                  title="Bundle/1-3-VaccinationRecord">1.3 Vaccination Record</a>
+            </td>
+            <td>
+<p>Example for Bundle Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-1-4-ImmunizationRecommendationRequest.html"
+                  title="Bundle/1-4-ImmunizationRecommendationRequest">1.4 Immunization Recommendation Request</a>
+            </td>
+            <td>
+<p>Example for Bundle Immunization Recommendation Request</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-1-5-ImmunizationRecommendationResponse.html"
+                  title="Bundle/1-5-ImmunizationRecommendationResponse">1.5 Immunization Recommendation Response</a>
+            </td>
+            <td>
+<p>Example for Bundle Immunization Recommendation Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ImmunizationRecommendation-10-1-ImmunizationRecommendation.html"
+                  title="ImmunizationRecommendation/10-1-ImmunizationRecommendation">10.1 ImmunizationRecommendation</a>
+            </td>
+            <td>
+<p>Example ImmunizationRecommendation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ImmunizationRecommendation-10-2-ImmunizationRecommendation.html"
+                  title="ImmunizationRecommendation/10-2-ImmunizationRecommendation">10.2 ImmunizationRecommendation</a>
+            </td>
+            <td>
+<p>Example ImmunizationRecommendation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ImmunizationRecommendation-10-3-ImmunizationRecommendation.html"
+                  title="ImmunizationRecommendation/10-3-ImmunizationRecommendation">10.3 ImmunizationRecommendation (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example ImmunizationRecommendation for Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ImmunizationRecommendation-10-4-ImmunizationRecommendation.html"
+                  title="ImmunizationRecommendation/10-4-ImmunizationRecommendation">10.4 ImmunizationRecommendation (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example ImmunizationRecommendation for Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AllergyIntolerance-11-1-AllergyIntolerance.html"
+                  title="AllergyIntolerance/11-1-AllergyIntolerance">11.1 AllergyIntolerance</a>
+            </td>
+            <td>
+<p>Example AllergyIntolerance</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AllergyIntolerance-11-2-AllergyIntolerance.html"
+                  title="AllergyIntolerance/11-2-AllergyIntolerance">11.2 AllergyIntolerance</a>
+            </td>
+            <td>
+<p>Example AllergyIntolerance</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AllergyIntolerance-11-3-AllergyIntolerance.html"
+                  title="AllergyIntolerance/11-3-AllergyIntolerance">11.3 AllergyIntolerance (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example AllergyIntolerance for Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AllergyIntolerance-11-4-AllergyIntolerance.html"
+                  title="AllergyIntolerance/11-4-AllergyIntolerance">11.4 AllergyIntolerance (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example AllergyIntolerance for Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-2-1-ImmunizationAdministrationComposition.html"
+                  title="Composition/2-1-ImmunizationAdministrationComposition">2.1 Composition Immunization Administration</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-2-3-VaccinationRecordComposition.html"
+                  title="Composition/2-3-VaccinationRecordComposition">2.3 Composition Vaccination Record</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MessageHeader-2-4-ImmunizationRecommendationRequestMessageHeader.html"
+                  title="MessageHeader/2-4-ImmunizationRecommendationRequestMessageHeader">2.4 Immunization Recommendation Request MessageHeader</a>
+            </td>
+            <td>
+<p>Example for Bundle Immunization Recommendation Request MessageHeader</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MessageHeader-2-5-ImmunizationRecommendationResponseMessageHeader.html"
+                  title="MessageHeader/2-5-ImmunizationRecommendationResponseMessageHeader">2.4 Immunization Recommendation Response MessageHeader</a>
+            </td>
+            <td>
+<p>Example for Bundle Immunization Recommendation Response MessageHeader</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-3-2-Patient.html" title="Patient/3-2-Patient">3.2 Patient</a>
+            </td>
+            <td>
+<p>Example for Patient in Immunization Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-4-1-Practitioner.html"
+                  title="Practitioner/4-1-Practitioner">4.1 Practitioner</a>
+            </td>
+            <td>
+<p>Example for Practitioner for all documents except Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-4-4-Practitioner.html"
+                  title="Practitioner/4-4-Practitioner">4.4 Practitioner (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example for Practitioner in Immunization Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-4-5-Practitioner.html"
+                  title="Practitioner/4-5-Practitioner">4.5 Practitioner (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example for Practitioner in Immunization Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-4-6-Practitioner.html"
+                  title="Practitioner/4-6-Practitioner">4.6 Practitioner (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example for Practitioner in Immunization Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-5-4-Organization.html"
+                  title="Organization/5-4-Organization">5.4 Organization (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example for Organization in Immunization Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-5-5-Organization.html"
+                  title="Organization/5-5-Organization">5.5 Organization (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example for Organization in Immunization Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-5-6-Organization.html"
+                  title="Organization/5-6-Organization">5.6 Organization (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example for Organization in Immunization Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-6-4-PractitionerRole.html"
+                  title="PractitionerRole/6-4-PractitionerRole">6.4 Practitioner Role (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example for Practitioner Role in Immunization Recommendation Request</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-6-5-PractitionerRole.html"
+                  title="PractitionerRole/6-5-PractitionerRole">6.5 Practitioner Role (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example for Practitioner Role in Immunization Recommendation Request</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-6-6-PractitionerRole.html"
+                  title="PractitionerRole/6-6-PractitionerRole">6.6 Practitioner Role (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example for Practitioner Role in Immunization Recommendation Request</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-7-1-Immunization.html"
+                  title="Immunization/7-1-Immunization">7.1 Immunization</a>
+            </td>
+            <td>
+<p>Example for Immunization for all documents except Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-7-1-Immunization2.html"
+                  title="Immunization/7-1-Immunization2">7.1 Immunization</a>
+            </td>
+            <td>
+<p>Example for Immunization with absent reason</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-7-10-Immunization.html"
+                  title="Immunization/7-10-Immunization">7.10 Immunization (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example forImmunization for Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-7-11-Immunization.html"
+                  title="Immunization/7-11-Immunization">7.11 Immunization (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example forImmunization for Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-7-2-Immunization.html"
+                  title="Immunization/7-2-Immunization">7.2 Immunization</a>
+            </td>
+            <td>
+<p>Example forImmunization for all documents except Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-7-3-Immunization.html"
+                  title="Immunization/7-3-Immunization">7.3 Immunization</a>
+            </td>
+            <td>
+<p>Example forImmunization for all documents except Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-7-4-Immunization.html"
+                  title="Immunization/7-4-Immunization">7.4 Immunization</a>
+            </td>
+            <td>
+<p>Example forImmunization for all documents except Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-7-5-Immunization.html"
+                  title="Immunization/7-5-Immunization">7.5 Immunization</a>
+            </td>
+            <td>
+<p>Example forImmunization for all documents except Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-7-6-Immunization.html"
+                  title="Immunization/7-6-Immunization">7.6 Immunization</a>
+            </td>
+            <td>
+<p>Example forImmunization for all documents except Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-7-7-Immunization.html"
+                  title="Immunization/7-7-Immunization">7.7 Immunization (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example forImmunization for Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-7-8-Immunization.html"
+                  title="Immunization/7-8-Immunization">7.8 Immunization (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example forImmunization for Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-7-9-Immunization.html"
+                  title="Immunization/7-9-Immunization">7.9 Immunization (Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example forImmunization for Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-8-2-Condition.html" title="Condition/8-2-Condition">8.2 Condition (Medical Problems)</a>
+            </td>
+            <td>
+<p>Example Condition for medical problems</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-8-3-Condition.html" title="Condition/8-3-Condition">8.3 Condition (Medical Problems)</a>
+            </td>
+            <td>
+<p>Example Condition for medical problems</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-8-4-Condition.html" title="Condition/8-4-Condition">8.4 Condition (Past Illnesses)</a>
+            </td>
+            <td>
+<p>Example Condition for past illnesses</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-8-6-Condition.html" title="Condition/8-6-Condition">8.6 Condition (Medical Problems for Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example Condition for medical problems for Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-8-7-Condition.html" title="Condition/8-7-Condition">8.7 Condition (Medical Problems for Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example Condition for medical problems for Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-8-8-Condition.html" title="Condition/8-8-Condition">8.8 Condition (Past Illnesses for Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example Condition for past illnesses for Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-9-1-Observation.html"
+                  title="Observation/9-1-Observation">9.1 Observation (Labor and Serology)</a>
+            </td>
+            <td>
+<p>Example Observation for labor and serology</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-9-2-Observation.html"
+                  title="Observation/9-2-Observation">9.2 Observation (Labor and Serology for Recommendation Request/Response)</a>
+            </td>
+            <td>
+<p>Example Observation for labor and serology for Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-B-D1-HCP1-C1-Composition.html"
+                  title="Composition/B-D1-HCP1-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-B-D2-HCP1-C1-Composition.html"
+                  title="Composition/B-D2-HCP1-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-B-D3-HCP1-C1-Composition.html"
+                  title="Composition/B-D3-HCP1-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-B-D4-HCP1-C1-Composition.html"
+                  title="Composition/B-D4-HCP1-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-B-D5-HCP1-C1-Composition.html"
+                  title="Composition/B-D5-HCP1-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-B-D6-HCP1-C1-Composition.html"
+                  title="Composition/B-D6-HCP1-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-C-D3-HCP1-C1-Composition.html"
+                  title="Composition/C-D3-HCP1-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-C-D6-P-C1-Composition.html"
+                  title="Composition/C-D6-P-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-C-D7-HCP1-C1-Composition.html"
+                  title="Composition/C-D7-HCP1-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-D-D1-HCP1-C1-Composition.html"
+                  title="Composition/D-D1-HCP1-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-D-D2-HCP2-C2-Composition.html"
+                  title="Composition/D-D2-HCP2-C2-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-D-D3-HCP1-C1-Composition.html"
+                  title="Composition/D-D3-HCP1-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-D-D4-HCP2-C2-Composition.html"
+                  title="Composition/D-D4-HCP2-C2-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-D-D5-HCP1-C1-Composition.html"
+                  title="Composition/D-D5-HCP1-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-D-D6-HCP2-C2-Composition.html"
+                  title="Composition/D-D6-HCP2-C2-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-D-D7-HCP3-C1-Composition.html"
+                  title="Composition/D-D7-HCP3-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-E-D1-HCP1-C1-Composition.html"
+                  title="Composition/E-D1-HCP1-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-E-D2-HCP1-C1-Composition.html"
+                  title="Composition/E-D2-HCP1-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-F-D5-HCP1-C1-Composition.html"
+                  title="Composition/F-D5-HCP1-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-F-D6-HCP1-C1-Composition.html"
+                  title="Composition/F-D6-HCP1-C1-Composition">Administration Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDA01-Composition.html"
+                  title="Composition/RDA01-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDA01-Composition-b.html"
+                  title="Composition/RDA01-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDA02-Composition.html"
+                  title="Composition/RDA02-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDA02-Composition-b.html"
+                  title="Composition/RDA02-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDA03-Composition.html"
+                  title="Composition/RDA03-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDA03-Composition-b.html"
+                  title="Composition/RDA03-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDA04-Composition.html"
+                  title="Composition/RDA04-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDA04-Composition-b.html"
+                  title="Composition/RDA04-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDB01-Composition.html"
+                  title="Composition/RDB01-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDB01-Composition-b.html"
+                  title="Composition/RDB01-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDB02-Composition.html"
+                  title="Composition/RDB02-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDB02-Composition-b.html"
+                  title="Composition/RDB02-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDB03-Composition.html"
+                  title="Composition/RDB03-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDB03-Composition-b.html"
+                  title="Composition/RDB03-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDB04-Composition.html"
+                  title="Composition/RDB04-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDB04-Composition-b.html"
+                  title="Composition/RDB04-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDB05-Composition.html"
+                  title="Composition/RDB05-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDB05-Composition-b.html"
+                  title="Composition/RDB05-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDC01-Composition.html"
+                  title="Composition/RDC01-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDC01-Composition-b.html"
+                  title="Composition/RDC01-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDC02-Composition.html"
+                  title="Composition/RDC02-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDC02-Composition-b.html"
+                  title="Composition/RDC02-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDC03-Composition.html"
+                  title="Composition/RDC03-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDC03-Composition-b.html"
+                  title="Composition/RDC03-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDC04-Composition.html"
+                  title="Composition/RDC04-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDC04-Composition-b.html"
+                  title="Composition/RDC04-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDC05-Composition.html"
+                  title="Composition/RDC05-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDC05-Composition-b.html"
+                  title="Composition/RDC05-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDD01-Composition.html"
+                  title="Composition/RDD01-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDD01-Composition-b.html"
+                  title="Composition/RDD01-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDD02-Composition.html"
+                  title="Composition/RDD02-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDD02-Composition-b.html"
+                  title="Composition/RDD02-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDD03-Composition.html"
+                  title="Composition/RDD03-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDD03-Composition-b.html"
+                  title="Composition/RDD03-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDE01-Composition.html"
+                  title="Composition/RDE01-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDE01-Composition-b.html"
+                  title="Composition/RDE01-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDF01-Composition.html"
+                  title="Composition/RDF01-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDF01-Composition-b.html"
+                  title="Composition/RDF01-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDF02-Composition.html"
+                  title="Composition/RDF02-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDF02-Composition-b.html"
+                  title="Composition/RDF02-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDF03-Composition.html"
+                  title="Composition/RDF03-Composition">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-RDF03-Composition-b.html"
+                  title="Composition/RDF03-Composition-b">Aggregated Document Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Vaccination Record</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-CDSS-Organization.html"
+                  title="Organization/CDSS-Organization">CDSS Organization</a>
+            </td>
+            <td>
+<p>Example for Organization for CDS Service</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-F-D1-HCP1-C1-Composition.html"
+                  title="Composition/F-D1-HCP1-C1-Composition">Document 1 GFP Gemeinschaft Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-F-D2-HCP1-C1-Composition.html"
+                  title="Composition/F-D2-HCP1-C1-Composition">Document 1 GFP Gemeinschaft Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-F-D3-HCP1-C1-Composition.html"
+                  title="Composition/F-D3-HCP1-C1-Composition">Document 1 GFP Gemeinschaft Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-F-D4-HCP1-C1-Composition.html"
+                  title="Composition/F-D4-HCP1-C1-Composition">Document 1 GFP Gemeinschaft Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-A-D2-HCP1-C1-Composition.html"
+                  title="Composition/A-D2-HCP1-C1-Composition">Document 2 GFP Gemeinschaft Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-C-D2-HCP1-C1-Composition.html"
+                  title="Composition/C-D2-HCP1-C1-Composition">Document 2 HCP1 Community 1 Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration to fix Immunization entry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-A-D3-HCP2-C2-Composition.html"
+                  title="Composition/A-D3-HCP2-C2-Composition">Document 3 GFP Gemeinschaft 2 Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-A-D4-HCP2-C2-Composition.html"
+                  title="Composition/A-D4-HCP2-C2-Composition">Document 4 GFP Gemeinschaft 2 Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-C-D4-HCP2-C2-Composition.html"
+                  title="Composition/C-D4-HCP2-C2-Composition">Document 4 GFP Gemeinschaft 2 Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCC04-EXPRISK1.html" title="Condition/TCC04-EXPRISK1">Exposition Risk "Bat researcher or guard" (Condition)</a>
+            </td>
+            <td>
+<p>Example Condition for expositionrisk "Bat researcher or guard"</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCC04-EXPRISK2.html" title="Condition/TCC04-EXPRISK2">Exposition Risk "Bat researcher or guard" (Condition)</a>
+            </td>
+            <td>
+<p>Example Condition for canceling expositionrisk "FLEDERMAUSFORSCHER_UND_SCHUETZER'"</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCC04-EXPRISK3.html" title="Condition/TCC04-EXPRISK3">Exposition Risk "Bat researcher or guard" (Condition)</a>
+            </td>
+            <td>
+<p>Example Condition for canceling expositionrisk "Bat researcher or guard"</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCB03-EXPRISK1.html" title="Condition/TCB03-EXPRISK1">Exposition Risk Worker in Healthcare (Condition)</a>
+            </td>
+            <td>
+<p>Example Condition for expositionrisk Worker in Healthcare</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCB03-EXPRISK1-2.html"
+                  title="Condition/TCB03-EXPRISK1-2">Exposition Risk Worker in Healthcare (Condition)</a>
+            </td>
+            <td>
+<p>Example Condition for expositionrisk Worker in Healthcare</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCC03-EXPRISK1.html" title="Condition/TCC03-EXPRISK1">Exposition Risk Worker in Healthcare (Condition)</a>
+            </td>
+            <td>
+<p>Example Condition for expositionrisk Worker in Healthcare</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCD02-EXPRISK1.html" title="Condition/TCD02-EXPRISK1">Exposition Risk Worker in Healthcare (Condition)</a>
+            </td>
+            <td>
+<p>Example Condition for expositionrisk Worker in Healthcare</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCD02-EXPRISK1-2.html"
+                  title="Condition/TCD02-EXPRISK1-2">Exposition Risk Worker in Healthcare (Condition)</a>
+            </td>
+            <td>
+<p>Example Condition for expositionrisk Worker in Healthcare</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCD03-EXPRISK1.html" title="Condition/TCD03-EXPRISK1">Exposition Risk Worker in Healthcare (Condition)</a>
+            </td>
+            <td>
+<p>Example Condition for expositionrisk Worker in Healthcare</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCD03-EXPRISK1-2.html"
+                  title="Condition/TCD03-EXPRISK1-2">Exposition Risk Worker in Healthcare (Condition)</a>
+            </td>
+            <td>
+<p>Example Condition for expositionrisk Worker in Healthcare</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCD03-EXPRISK2.html" title="Condition/TCD03-EXPRISK2">Exposition Risk Worker in Healthcare (Condition)</a>
+            </td>
+            <td>
+<p>Example Condition for expositionrisk Worker in Healthcare</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCD03-EXPRISK2-2.html"
+                  title="Condition/TCD03-EXPRISK2-2">Exposition Risk Worker in Healthcare (Condition)</a>
+            </td>
+            <td>
+<p>Example Condition for expositionrisk Worker in Healthcare</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCD03-EXPRISK3.html" title="Condition/TCD03-EXPRISK3">Exposition Risk Worker in Healthcare (Condition)</a>
+            </td>
+            <td>
+<p>Example Condition for expositionrisk Worker in Healthcare</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCD03-EXPRISK3-2.html"
+                  title="Condition/TCD03-EXPRISK3-2">Exposition Risk Worker in Healthcare (Condition)</a>
+            </td>
+            <td>
+<p>Example Condition for expositionrisk Worker in Healthcare</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-A-D6-HCP1-C1-Composition.html"
+                  title="Composition/A-D6-HCP1-C1-Composition">GFP Document 6 Stammgemeinschaft Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-TCB04-LABRES1.html" title="Observation/TCB04-LABRES1">Laboratory And Serology Labresult</a>
+            </td>
+            <td>
+<p>Example Observation for Hepatitis B virus surface Ab</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCB05-EXPRISK2.html" title="Condition/TCB05-EXPRISK2">Medical Risk Pregnancy (Condition)</a>
+            </td>
+            <td>
+<p>Example Condition for expositionrisk Worker in Healthcare</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-A-D1-P-C1-Composition.html"
+                  title="Composition/A-D1-P-C1-Composition">Patient Document 1 Stammgemeinschaft Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-C-D1-P-C1-Composition.html"
+                  title="Composition/C-D1-P-C1-Composition">Patient Document 1 Stammgemeinschaft Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-A-D5-P-C1-Composition.html"
+                  title="Composition/A-D5-P-C1-Composition">Patient Document 5 Stammgemeinschaft Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-TC-Device-Aggregator.html"
+                  title="Device/TC-Device-Aggregator">TC Device Aggregator</a>
+            </td>
+            <td>
+<p>A Device example representing am aggregation service</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-TC-HCP1-C1.html" title="Practitioner/TC-HCP1-C1">TC HCP1 C1</a>
+            </td>
+            <td>
+<p>Testcase practitioner HCP1 of C1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-TC-HCP2-C2.html" title="Practitioner/TC-HCP2-C2">TC HCP2 G2</a>
+            </td>
+            <td>
+<p>Testcase practitione HCP2 of C2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-TC-HCP3-C1.html" title="Practitioner/TC-HCP3-C1">TC HCP3 C1</a>
+            </td>
+            <td>
+<p>Testcase practitioner HCP3 of C1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-TC-IMMUN-MEDIC-BOOSTRIX.html"
+                  title="Medication/TC-IMMUN-MEDIC-BOOSTRIX">TC Medication for Immunization (Boostrix)</a>
+            </td>
+            <td>
+<p>Testcase  example of medication for immunization extension Boostrix</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-TC-IMMUN-MEDIC-GARDASIL9.html"
+                  title="Medication/TC-IMMUN-MEDIC-GARDASIL9">TC Medication for Immunization (Gardasil) against HPV</a>
+            </td>
+            <td>
+<p>Testcase  example of medication for immunization extension Gardasil® 9</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-TC-IMMUN-MEDIC-PRIORIX.html"
+                  title="Medication/TC-IMMUN-MEDIC-PRIORIX">TC Medication for Immunization (Priorix) against MMR</a>
+            </td>
+            <td>
+<p>Testcase  example of medication for immunization extension Priorix</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCA02-IMMUN4-HCP2-ORG2-ROLE.html"
+                  title="Immunization/TCA02-IMMUN4-HCP2-ORG2-ROLE">TC02 Immunization by GFP</a>
+            </td>
+            <td>
+<p>Testcase 2 example of immunization from GFP for second dose hepatite A</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCA01-IMMUN2-HCP1-ORG1-ROLE.html"
+                  title="Immunization/TCA01-IMMUN2-HCP1-ORG1-ROLE">TC1 Immunization by HCP1</a>
+            </td>
+            <td>
+<p>Testcase 1 example of immunization from HCP1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCB01-IMMUN1.html" title="Immunization/TCB01-IMMUN1">TC1 Immunization by HCP1</a>
+            </td>
+            <td>
+<p>Testcase D01 example of immunization against Central European encephalitis (disorder)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCB01-IMMUN2.html" title="Immunization/TCB01-IMMUN2">TC1 Immunization by HCP1</a>
+            </td>
+            <td>
+<p>Testcase D01 example of immunization against Tetanus, Pertussis, Diphtheria</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCB05-IMMUN1.html" title="Immunization/TCB05-IMMUN1">TC1 Immunization by HCP1</a>
+            </td>
+            <td>
+<p>Testcase D01 example of immunization against Central European encephalitis (disorder)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCB05-IMMUN2.html" title="Immunization/TCB05-IMMUN2">TC1 Immunization by HCP1</a>
+            </td>
+            <td>
+<p>Testcase D01 example of immunization against Tetanus, Pertussis, Diphtheria</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCD01-IMMUN1.html" title="Immunization/TCD01-IMMUN1">TC1 Immunization by HCP1</a>
+            </td>
+            <td>
+<p>Testcase D01 example of immunization against Central European encephalitis (disorder)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCD01-IMMUN2.html" title="Immunization/TCD01-IMMUN2">TC1 Immunization by HCP1</a>
+            </td>
+            <td>
+<p>Testcase D01 example of immunization against Tetanus, Pertussis, Diphtheria</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCD01-IMMUN2-2.html"
+                  title="Immunization/TCD01-IMMUN2-2">TC1 Immunization by HCP1</a>
+            </td>
+            <td>
+<p>Testcase D01 example of immunization against Tetanus, Pertussis, Diphtheria</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCE01-IMMUN1-de.html"
+                  title="Immunization/TCE01-IMMUN1-de">TC1 Immunization by HCP1</a>
+            </td>
+            <td>
+<p>Testcase D01 example of immunization against Central European encephalitis (disorder)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCE01-IMMUN1-fr.html"
+                  title="Immunization/TCE01-IMMUN1-fr">TC1 Immunization by HCP1</a>
+            </td>
+            <td>
+<p>Testcase D01 example of immunization against Central European encephalitis (disorder)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCE01-IMMUN2-de.html"
+                  title="Immunization/TCE01-IMMUN2-de">TC1 Immunization by HCP1</a>
+            </td>
+            <td>
+<p>Testcase D01 example of immunization against Tetanus, Pertussis, Diphtheria</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCE01-IMMUN2-fr.html"
+                  title="Immunization/TCE01-IMMUN2-fr">TC1 Immunization by HCP1</a>
+            </td>
+            <td>
+<p>Testcase D01 example of immunization against Tetanus, Pertussis, Diphtheria</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCA01-IMMUN3-HCP2-ORG2-ROLE.html"
+                  title="Immunization/TCA01-IMMUN3-HCP2-ORG2-ROLE">TC1 Immunization by HCP2</a>
+            </td>
+            <td>
+<p>Testcase 1 example of immunization from HCP2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCD01-IMMUN3.html" title="Immunization/TCD01-IMMUN3">TC1 Immunization by HCP2</a>
+            </td>
+            <td>
+<p>Testcase D01 example of immunization against Tetanus, Pertussis, Diphtheria</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCD01-IMMUN3-2.html"
+                  title="Immunization/TCD01-IMMUN3-2">TC1 Immunization by HCP2</a>
+            </td>
+            <td>
+<p>Testcase D01 example of immunization against Tetanus, Pertussis, Diphtheria</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCD01-IMMUN4.html" title="Immunization/TCD01-IMMUN4">TC1 Immunization by HCP2</a>
+            </td>
+            <td>
+<p>Testcase D01 example of immunization against MMR</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCD01-IMMUN5.html" title="Immunization/TCD01-IMMUN5">TC1 Immunization by HCP2</a>
+            </td>
+            <td>
+<p>Testcase D01 example of immunization against HPV</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCA03-IMMUN5-patient.html"
+                  title="Immunization/TCA03-IMMUN5-patient">TC1 Immunization by Patient</a>
+            </td>
+            <td>
+<p>Testcase 3 example of immunization against Central European encephalitis (disorder) from patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCA04-IMMUN5-patient-val-gfp.html"
+                  title="Immunization/TCA04-IMMUN5-patient-val-gfp">TC1 Immunization by Patient</a>
+            </td>
+            <td>
+<p>Testcase 3 example of immunization against Central European encephalitis (disorder) from patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-TC-IMMUN-MEDIC-FSMEIMMCC.html"
+                  title="Medication/TC-IMMUN-MEDIC-FSMEIMMCC">TC1 Medication for Immunization by patient</a>
+            </td>
+            <td>
+<p>Testcase 1 example of medication for immunization extension</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-TC-IMMUN-MEDIC-HAVRIX1440.html"
+                  title="Medication/TC-IMMUN-MEDIC-HAVRIX1440">TC1 Medication for Immunization by patient</a>
+            </td>
+            <td>
+<p>Testcase 1 example of medication for immunization extension</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCA01-IMMUN1-patient.html"
+                  title="Immunization/TCA01-IMMUN1-patient">TCA1 Immunization by patient</a>
+            </td>
+            <td>
+<p>Testcase A 1 example of immunization</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AllergyIntolerance-TCB01-ALLINTO1.html"
+                  title="AllergyIntolerance/TCB01-ALLINTO1">TCB01 AllergyIntolerance</a>
+            </td>
+            <td>
+<p>Testcase B 1 example of allergyintolerance to typhoid vaccine.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCC02-IMMUN3-HCP1-ORG1-ROLE.html"
+                  title="Immunization/TCC02-IMMUN3-HCP1-ORG1-ROLE">TCC1 Immunization by HCP2 corrected by HCP1</a>
+            </td>
+            <td>
+<p>Testcase C 02 example of correction of immunization of HCP2 by HCP1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCC02-IMMUN4-HCP1-ORG1-ROLE.html"
+                  title="Immunization/TCC02-IMMUN4-HCP1-ORG1-ROLE">TCC1 Immunization by HCP2 corrected by HCP1</a>
+            </td>
+            <td>
+<p>Testcase C 02 example of correction of immunization of HCP2 by HCP1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCC01-IMMUN1-patient.html"
+                  title="Immunization/TCC01-IMMUN1-patient">TCC1 Immunization by patient</a>
+            </td>
+            <td>
+<p>Testcase C 1 example of immunization</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCC01-IMMUN2-patient.html"
+                  title="Immunization/TCC01-IMMUN2-patient">TCC1 Immunization by patient</a>
+            </td>
+            <td>
+<p>Testcase C 1 example of immunization</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AllergyIntolerance-TCF02-ALLINTO1.html"
+                  title="AllergyIntolerance/TCF02-ALLINTO1">TCF02 AllergyIntolerance 1</a>
+            </td>
+            <td>
+<p>Testcase F2: Add comment (note) to an existing AllergyIntolerance</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AllergyIntolerance-TCF02-ALLINTO2.html"
+                  title="AllergyIntolerance/TCF02-ALLINTO2">TCF02 AllergyIntolerance 2</a>
+            </td>
+            <td>
+<p>Testcase F 2: Add comment (note) to an existing AllergyIntolerance</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AllergyIntolerance-TCF02-ALLINTO3.html"
+                  title="AllergyIntolerance/TCF02-ALLINTO3">TCF02 AllergyIntolerance 3</a>
+            </td>
+            <td>
+<p>Testcase F 2: Add comment (note) to an existing AllergyIntolerance</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCF01-IMMUN1.html" title="Immunization/TCF01-IMMUN1">TCF1 Immunization 1</a>
+            </td>
+            <td>
+<p>Testcase F 1 example of immunization</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCF01-IMMUN2.html" title="Immunization/TCF01-IMMUN2">TCF1 Immunization 2</a>
+            </td>
+            <td>
+<p>Testcase F 1 example of immunization with added note</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-TCF01-IMMUN3.html" title="Immunization/TCF01-IMMUN3">TCF1 Immunization 3</a>
+            </td>
+            <td>
+<p>Testcase F 1 example of immunization with added note</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-TC-Device-Aggregator-Location.html"
+                  title="Location/TC-Device-Aggregator-Location">TC_Device Aggregator Location</a>
+            </td>
+            <td>
+<p>The location of the device.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDA01.html" title="Bundle/RDA01">Test Case A 01: Aggregated Dokument (RDA01)</a>
+            </td>
+            <td>
+<p>Test Case A 01: Patient hat drei Impfdokumente in zwei unterschiedlichen Gemeinschaften (eines davon vom Patient selbst erfasst). Dies ist das vom Patienten erstellte Dokument</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDA01b.html" title="Bundle/RDA01b">Test Case A 01: Aggregated Dokument (RDA01)</a>
+            </td>
+            <td>
+<p>Test Case A 01: Patient hat drei Impfdokumente in zwei unterschiedlichen Gemeinschaften (eines davon vom Patient selbst erfasst). Dies ist das vom Patienten erstellte Dokument</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-A-D2-HCP1-C1.html" title="Bundle/A-D2-HCP1-C1">Test Case A 01: GFP Dokument (A_D2_HCP1_C1)</a>
+            </td>
+            <td>
+<p>Test Case A 01: Patient hat drei Impfdokumente in zwei unterschiedlichen Gemeinschaften (eines davon vom Patient selbst erfasst). Dies ist das vom Patienten erstellte Dokument</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-A-D3-HCP2-C2.html" title="Bundle/A-D3-HCP2-C2">Test Case A 01: GFP Dokument (A_D3_HCP2_C2)</a>
+            </td>
+            <td>
+<p>Test Case A 01: Patient hat drei Impfdokumente in zwei unterschiedlichen Gemeinschaften (eines davon vom Patient selbst erfasst). Dies ist das vom Patienten erstellte Dokument</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-A-D1-P-C1.html" title="Bundle/A-D1-P-C1">Test Case A 01: Patient Dokument (A-D1-P_C1)</a>
+            </td>
+            <td>
+<p>Test Case A 01: Patient hat drei Impfdokumente in zwei unterschiedlichen Gemeinschaften (eines davon vom Patient selbst erfasst). Dies ist das vom Patienten erstellte Dokument</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDA02.html" title="Bundle/RDA02">Test Case A 02: Aggregated Dokument (RDA02)</a>
+            </td>
+            <td>
+<p>Test Case A 02: GFP trägt zweite Dosis einer Impfung (Hepatitis A) ein</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDA02b.html" title="Bundle/RDA02b">Test Case A 02: Aggregated Dokument (RDA02)</a>
+            </td>
+            <td>
+<p>Test Case A 02: GFP trägt zweite Dosis einer Impfung (Hepatitis A) ein</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-A-D4-HCP2-C2.html" title="Bundle/A-D4-HCP2-C2">Test Case A 02: GFP aus andere Gemeinschaft trägt zweite Dosis einer Impfung (Hepatitis A) ein</a>
+            </td>
+            <td>
+<p>Test Case A 02: GFP trägt zweite Dosis einer Impfung (Hepatitis A) ein.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDA03.html" title="Bundle/RDA03">Test Case A 03: Aggregated Dokument (RDA03)</a>
+            </td>
+            <td>
+<p>Test Case A 03:  Patient trägt zweite Dosis einer Impfung (FSME) ein.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDA03b.html" title="Bundle/RDA03b">Test Case A 03: Aggregated Dokument (RDA03)</a>
+            </td>
+            <td>
+<p>Test Case A 03:  Patient trägt zweite Dosis einer Impfung (FSME) ein.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-A-D5-P-C1.html" title="Bundle/A-D5-P-C1">Test Case A 03: Patient Dokument 5 (D5_P_C1)</a>
+            </td>
+            <td>
+<p>Test Case A 03: Patient trägt zweite Dosis einer Impfung (FSME) ein</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDA04.html" title="Bundle/RDA04">Test Case A 04: Aggregated Dokument (RDA04)</a>
+            </td>
+            <td>
+<p>Test Case A 04: GFP validiert die Impfung (FSME)(Dok6) welche vom Patienten eingetragen wurde (Dok5)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDA04b.html" title="Bundle/RDA04b">Test Case A 04: Aggregated Dokument (RDA04)</a>
+            </td>
+            <td>
+<p>Test Case A 04: GFP validiert die Impfung (FSME)(Dok6) welche vom Patienten eingetragen wurde (Dok5)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-A-D6-HCP1-C1.html" title="Bundle/A-D6-HCP1-C1">Test Case A 04: GFP Dokument (A_D6_HCP1_C1)</a>
+            </td>
+            <td>
+<p>Test Case A 04: GFP validiert die Impfung (FSME)(Dok6) welche vom Patienten eingetragen wurde (Dok5)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-B-D2-HCP1-C1.html" title="Bundle/B-D2-HCP1-C1">Test Case B 01: Document HCP1 with AllergyIntolerance Entry</a>
+            </td>
+            <td>
+<p>Test Case B 01: ImmunizationAdministration document created by HCP1 for Patient with AllergyIntolerance entry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-B-D1-HCP1-C1.html" title="Bundle/B-D1-HCP1-C1">Test Case B 01: Document HCP1 with Immunization Entries</a>
+            </td>
+            <td>
+<p>Test Case B 01: ImmunizationAdministration document created by HCP1 for Patient with Immunization Entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDB01.html" title="Bundle/RDB01">Test Case B 01: Resulting Document TC B 1 (RDB01)</a>
+            </td>
+            <td>
+<p>Test Case B 01: VaccinationRecord document created as merging result with immunization and allergyintolerance entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDB01b.html" title="Bundle/RDB01b">Test Case B 01: Resulting Document TC B 1 (RDB01)</a>
+            </td>
+            <td>
+<p>Test Case B 01: VaccinationRecord document created as merging result with immunization and allergyintolerance entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-B-D3-HCP1-C1.html" title="Bundle/B-D3-HCP1-C1">Test Case B 02: Document HCP1 with Past Illness Entries</a>
+            </td>
+            <td>
+<p>Test Case B 02: ImmunizationAdministration document created by HCP1 for patient with past illness entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDB02.html" title="Bundle/RDB02">Test Case B 02: Resulting Document TC B 2 (RDB02)</a>
+            </td>
+            <td>
+<p>Test Case B 02: VaccinationRecord document created as merging result with immunization and past illness entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDB02b.html" title="Bundle/RDB02b">Test Case B 02: Resulting Document TC B 2 (RDB02)</a>
+            </td>
+            <td>
+<p>Test Case B 02: VaccinationRecord document created as merging result with immunization and past illness entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-B-D4-HCP1-C1.html" title="Bundle/B-D4-HCP1-C1">Test Case B 03: Document HCP1 with Medical Problem Entries</a>
+            </td>
+            <td>
+<p>Test Case B 03: ImmunizationAdministration document created by HCP1 for patient with medical problem entry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDB03.html" title="Bundle/RDB03">Test Case B 03: Resulting Document TC B 3 (RDB03)</a>
+            </td>
+            <td>
+<p>Test Case B 03: VaccinationRecord document created as merging result with immunization and exposition risk entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDB03b.html" title="Bundle/RDB03b">Test Case B 03: Resulting Document TC B 3 (RDB03)</a>
+            </td>
+            <td>
+<p>Test Case B 03: VaccinationRecord document created as merging result with immunization and exposition risk entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-B-D5-HCP1-C1.html" title="Bundle/B-D5-HCP1-C1">Test Case B 04: Document HCP1 with Laboratory Entries</a>
+            </td>
+            <td>
+<p>Test Case B 04: ImmunizationAdministration document created by HCP1 for patient with laboratory entry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDB04.html" title="Bundle/RDB04">Test Case B 04: Resulting Document TC B 4 (RDB04)</a>
+            </td>
+            <td>
+<p>Test Case B 04: VaccinationRecord document created as merging result with immunization and laboratory entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDB04b.html" title="Bundle/RDB04b">Test Case B 04: Resulting Document TC B 4 (RDB04)</a>
+            </td>
+            <td>
+<p>Test Case B 04: VaccinationRecord document created as merging result with immunization and laboratory entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-B-D6-HCP1-C1.html" title="Bundle/B-D6-HCP1-C1">Test Case B 05: Document HCP1 with Medical Problem and Pregnancy Entries</a>
+            </td>
+            <td>
+<p>Test Case B 05: ImmunizationAdministration document created by HCP1 for patient with medical problem entry and pregnancy.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDB05.html" title="Bundle/RDB05">Test Case B 05: Resulting Document TC B 4 (RDB05)</a>
+            </td>
+            <td>
+<p>Test Case B 05: VaccinationRecord document created as merging result with immunization, medical problem and pregnancy entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDB05b.html" title="Bundle/RDB05b">Test Case B 05: Resulting Document TC B 4 (RDB05)</a>
+            </td>
+            <td>
+<p>Test Case B 05: VaccinationRecord document created as merging result with immunization, medical problem and pregnancy entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDC01.html" title="Bundle/RDC01">Test Case C 01: Aggregated Dokument (RDD01)</a>
+            </td>
+            <td>
+<p>Test Case C 01: Correctzion of own Immunization entry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDC01b.html" title="Bundle/RDC01b">Test Case C 01: Aggregated Dokument (RDD01)</a>
+            </td>
+            <td>
+<p>Test Case C 01: Correctzion of own Immunization entry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-C-D1-P-C1.html" title="Bundle/C-D1-P-C1">Test Case C 01: Patient Dokument (C_D1_P_C1)</a>
+            </td>
+            <td>
+<p>Test Case C 01: patient corrects an entry of its own document</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDC02.html" title="Bundle/RDC02">Test Case C 02: Aggregated Dokument (RDD01)</a>
+            </td>
+            <td>
+<p>Test Case C 02: Correction of foreign Immunization entry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDC02b.html" title="Bundle/RDC02b">Test Case C 02: Aggregated Dokument (RDD01)</a>
+            </td>
+            <td>
+<p>Test Case C 02: Correction of foreign Immunization entry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-C-D2-HCP1-C1.html" title="Bundle/C-D2-HCP1-C1">Test Case C 02: GFP Dokument (C_D2_HCP1_C1)</a>
+            </td>
+            <td>
+<p>Test Case C 02: Example for Document Immunization Administration to fix Immunization entry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-C-D3-HCP1-C1.html" title="Bundle/C-D3-HCP1-C1">Test Case C 03: Document HCP1 with Medical Problem Entries</a>
+            </td>
+            <td>
+<p>Test Case C 03: ImmunizationAdministration document created by HCP1 for patient with medical problem entry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDC03.html" title="Bundle/RDC03">Test Case C 03: Resulting Document TC B 3 (RDC03)</a>
+            </td>
+            <td>
+<p>Test Case C 03: VaccinationRecord document created as merging result with immunization and exposition risk entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDC03b.html" title="Bundle/RDC03b">Test Case C 03: Resulting Document TC B 3 (RDC03)</a>
+            </td>
+            <td>
+<p>Test Case C 03: VaccinationRecord document created as merging result with immunization and exposition risk entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Composition-C-D5-HCP1-C1-Composition.html"
+                  title="Composition/C-D5-HCP1-C1-Composition">Test Case C 04: Document 4 HCP Community 2 Composition</a>
+            </td>
+            <td>
+<p>Example for Composition Immunization Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-C-D4-HCP2-C2.html" title="Bundle/C-D4-HCP2-C2">Test Case C 04: Medical Problem "Bat researcher or guard"</a>
+            </td>
+            <td>
+<p>Test Case C 04: HCP2 enters medical problem (exposition risk) "Bat researcher or guard"</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-C-D5-HCP1-C1.html" title="Bundle/C-D5-HCP1-C1">Test Case C 04: Medical Problem "Bat researcher or guard"</a>
+            </td>
+            <td>
+<p>Test Case C 04: HCP2 enters medical problem (exposition risk) "Bat researcher or guard"</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDC04.html" title="Bundle/RDC04">Test Case C 04: Resulting Document TC C 4 (RDC04)</a>
+            </td>
+            <td>
+<p>Test Case C 04: VaccinationRecord document created as merging result with  exposition risk entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDC04b.html" title="Bundle/RDC04b">Test Case C 04: Resulting Document TC C 4 (RDC04)</a>
+            </td>
+            <td>
+<p>Test Case C 04: VaccinationRecord document created as merging result with  exposition risk entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-C-D6-P-C1.html" title="Bundle/C-D6-P-C1">Test Case C 05: Document Patient with Past Illness Entries</a>
+            </td>
+            <td>
+<p>Test Case C 05: ImmunizationAdministration document created by Patient with past illness entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-C-D7-HCP1-C1.html" title="Bundle/C-D7-HCP1-C1">Test Case C 05: Document by HCP1 with Past Illness Entries</a>
+            </td>
+            <td>
+<p>Test Case C 05: ImmunizationAdministration document created by HCP1 with past illness entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDC05.html" title="Bundle/RDC05">Test Case C 05: Resulting Document TC C 5 (RDC05)</a>
+            </td>
+            <td>
+<p>Test Case C 05: VaccinationRecord document created as merging result with past illness entry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDC05b.html" title="Bundle/RDC05b">Test Case C 05: Resulting Document TC C 5 (RDC05)</a>
+            </td>
+            <td>
+<p>Test Case C 05: VaccinationRecord document created as merging result with past illness entry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDD01.html" title="Bundle/RDD01">Test Case D 01: Aggregated Dokument (RDD01)</a>
+            </td>
+            <td>
+<p>Test Case D 01: Error aggregating documents due to dupplicated Immunization entry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDD01b.html" title="Bundle/RDD01b">Test Case D 01: Aggregated Dokument (RDD01)</a>
+            </td>
+            <td>
+<p>Test Case D 01: Error aggregating documents due to dupplicated Immunization entry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-D-D1-HCP1-C1.html" title="Bundle/D-D1-HCP1-C1">Test Case D 01: Document HCP1 with Immunization Entries (RDD01)</a>
+            </td>
+            <td>
+<p>Test Case D 01: ImmunizationAdministration document created by HCP1 for Patient with Immunization Entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-D-D2-HCP2-C2.html" title="Bundle/D-D2-HCP2-C2">Test Case D 01: Document HCP1 with Immunization Entries (RDD01)</a>
+            </td>
+            <td>
+<p>Test Case D 01: ImmunizationAdministration document created by HCP1 for Patient with Immunization Entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-D-D3-HCP1-C1.html" title="Bundle/D-D3-HCP1-C1">Test Case D 01: Document HCP1 with Immunization Entries (RDD01)</a>
+            </td>
+            <td>
+<p>Test Case D 01: ImmunizationAdministration document created by HCP1 for Patient with Immunization Entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-D-D4-HCP2-C2.html" title="Bundle/D-D4-HCP2-C2">Test Case D 01: Document HCP1 with Immunization Entries (RDD01)</a>
+            </td>
+            <td>
+<p>Test Case D 01: ImmunizationAdministration document created by HCP1 for Patient with Immunization Entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDD02.html" title="Bundle/RDD02">Test Case D 02: Aggregated Dokument (RDD02)</a>
+            </td>
+            <td>
+<p>Test Case D 01: Error aggregating documents due to dupplicated entries for immunization and medical risks.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDD02b.html" title="Bundle/RDD02b">Test Case D 02: Aggregated Dokument (RDD02)</a>
+            </td>
+            <td>
+<p>Test Case D 01: Error aggregating documents due to dupplicated entries for immunization and medical risks.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDD03.html" title="Bundle/RDD03">Test Case D 03: Aggregated Dokument (RDD03)</a>
+            </td>
+            <td>
+<p>Test Case D 03: Error aggregating documents due to dupplicated entries for medical risks.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDD03b.html" title="Bundle/RDD03b">Test Case D 03: Aggregated Dokument (RDD03)</a>
+            </td>
+            <td>
+<p>Test Case D 03: Error aggregating documents due to dupplicated entries for medical risks.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-D-D5-HCP1-C1.html" title="Bundle/D-D5-HCP1-C1">Test Case D 03: Document HCP1 with MedicalProblem Entries (RDD02)</a>
+            </td>
+            <td>
+<p>Test Case D 03: ImmunizationAdministration document created by HCP1 for Patient with Immunization Entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-D-D6-HCP2-C2.html" title="Bundle/D-D6-HCP2-C2">Test Case D 03: Document HCP1 with MedicalProblem Entries (RDD02)</a>
+            </td>
+            <td>
+<p>Test Case D 03: ImmunizationAdministration document created by HCP1 for Patient with Immunization Entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-D-D7-HCP3-C1.html" title="Bundle/D-D7-HCP3-C1">Test Case D 03: Document HCP1 with MedicalProblem Entries (RDD02)</a>
+            </td>
+            <td>
+<p>Test Case D 03: ImmunizationAdministration document created by HCP1 for Patient with Immunization Entries.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDE01.html" title="Bundle/RDE01">Test Case E 01: Aggregated Dokument (RDE01)</a>
+            </td>
+            <td>
+<p>Test Case E 01: Aggregating documents with different languages merge to document in german language.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDE01b.html" title="Bundle/RDE01b">Test Case E 01: Aggregated Dokument (RDE01)</a>
+            </td>
+            <td>
+<p>Test Case E 01: Aggregating documents with different languages merge to document in german language.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-E-D2-HCP1-C1.html" title="Bundle/E-D2-HCP1-C1">Test Case E 01: Document HCP1 with Immunization Entries English</a>
+            </td>
+            <td>
+<p>Test Case E 01: ImmunizationAdministration document created by HCP1 for Patient with Immunization entries in english language</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-E-D1-HCP1-C1.html" title="Bundle/E-D1-HCP1-C1">Test Case E 01: Document HCP1 with Immunization Entries French</a>
+            </td>
+            <td>
+<p>Test Case E 01: ImmunizationAdministration document created by HCP1 for Patient with Immunization entries in french language</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-F-D3-HCP1-C1.html" title="Bundle/F-D3-HCP1-C1">Test Case F 01: Add comment (note) to an existing AllergyIntolerance</a>
+            </td>
+            <td>
+<p>Test Case F 01: Add comment (note) to an existing AllergyIntolerance</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-F-D4-HCP1-C1.html" title="Bundle/F-D4-HCP1-C1">Test Case F 01: Add comment (note) to an existing AllergyIntolerance</a>
+            </td>
+            <td>
+<p>Test Case F 01: Add comment (note) to an existing AllergyIntolerance</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-F-D1-HCP1-C1.html" title="Bundle/F-D1-HCP1-C1">Test Case F 01: Add comment (note) to an existing Immunization</a>
+            </td>
+            <td>
+<p>Test Case F 01: Patient hat ein Impfdokumente mit einer Impfung Havrix 1440.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-F-D2-HCP1-C1.html" title="Bundle/F-D2-HCP1-C1">Test Case F 01: Add comment (note) to an existing Immunization</a>
+            </td>
+            <td>
+<p>Test Case F 01: Arzt fügt ein Kommentar (note) zur impfung hinzu.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDF01.html" title="Bundle/RDF01">Test Case F 01: Add comment (note) to an existing Immunization</a>
+            </td>
+            <td>
+<p>Test Case F 01: Arzt fügt ein Kommentar (note) zur impfung hinzu.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDF01b.html" title="Bundle/RDF01b">Test Case F 01: Add comment (note) to an existing Immunization</a>
+            </td>
+            <td>
+<p>Test Case F 01: Arzt fügt ein Kommentar (note) zur impfung hinzu.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDF02.html" title="Bundle/RDF02">Test Case F 02: Add comment (note) to an existing AllergyIntolerance</a>
+            </td>
+            <td>
+<p>Test Case F 02: Add comment (note) to an existing AllergyIntolerance</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDF02b.html" title="Bundle/RDF02b">Test Case F 02: Add comment (note) to an existing AllergyIntolerance</a>
+            </td>
+            <td>
+<p>Test Case F 02: Add comment (note) to an existing AllergyIntolerance</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-F-D5-HCP1-C1.html" title="Bundle/F-D5-HCP1-C1">Test Case F 03: Add comment (note) to an existing Condition(PastIllness)</a>
+            </td>
+            <td>
+<p>Test Case F 03: Add comment (note) to an existing Condition(PastIllness)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-F-D6-HCP1-C1.html" title="Bundle/F-D6-HCP1-C1">Test Case F 03: Add comment (note) to an existing Condition(PastIllness)</a>
+            </td>
+            <td>
+<p>Test Case F 03: Add comment (note) to an existing Condition(PastIllness)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDF03.html" title="Bundle/RDF03">Test Case F 03: Add comment (note) to an existing Condition(PastIllness)</a>
+            </td>
+            <td>
+<p>Test Case F 03: Add comment (note) to an existing Condition(PastIllness)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-RDF03b.html" title="Bundle/RDF03b">Test Case F 03: Add comment (note) to an existing Condition(PastIllness)</a>
+            </td>
+            <td>
+<p>Test Case F 03: Add comment (note) to an existing Condition(PastIllness)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCB02-UNDILL1.html" title="Condition/TCB02-UNDILL1">Undergone Illness Chickenpox (Past Illnesses)</a>
+            </td>
+            <td>
+<p>Example Condition for past illnesses chickenpox</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCB02-UNDILL1-2.html" title="Condition/TCB02-UNDILL1-2">Undergone Illness Chickenpox (Past Illnesses)</a>
+            </td>
+            <td>
+<p>Example Condition for past illnesses chickenpox</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCC05-UNDILL1.html" title="Condition/TCC05-UNDILL1">Undergone Illness Chickenpox (Past Illnesses)</a>
+            </td>
+            <td>
+<p>Example Condition for past illnesses chickenpox</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCC05-UNDILL2.html" title="Condition/TCC05-UNDILL2">Undergone Illness Chickenpox (Past Illnesses)</a>
+            </td>
+            <td>
+<p>Example Condition for past illnesses chickenpox</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCC05-UNDILL3.html" title="Condition/TCC05-UNDILL3">Undergone Illness Chickenpox (Past Illnesses)</a>
+            </td>
+            <td>
+<p>Example Condition for past illnesses chickenpox</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCD02-UNDILL1.html" title="Condition/TCD02-UNDILL1">Undergone Illness Chickenpox (Past Illnesses)</a>
+            </td>
+            <td>
+<p>Example Condition for past illnesses chickenpox</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCD02-UNDILL1-2.html" title="Condition/TCD02-UNDILL1-2">Undergone Illness Chickenpox (Past Illnesses)</a>
+            </td>
+            <td>
+<p>Example Condition for past illnesses chickenpox</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCE01-UNDILL1-de.html"
+                  title="Condition/TCE01-UNDILL1-de">Undergone Illness Chickenpox (Past Illnesses)</a>
+            </td>
+            <td>
+<p>Example Condition for past illnesses chickenpox</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCF03-UNDILL1.html" title="Condition/TCF03-UNDILL1">Undergone Illness Chickenpox (Past Illnesses)</a>
+            </td>
+            <td>
+<p>Example Condition for past illnesses chickenpox</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCF03-UNDILL2.html" title="Condition/TCF03-UNDILL2">Undergone Illness Chickenpox (Past Illnesses)</a>
+            </td>
+            <td>
+<p>Example Condition for past illnesses chickenpox</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-TCF03-UNDILL3.html" title="Condition/TCF03-UNDILL3">Undergone Illness Chickenpox (Past Illnesses)</a>
+            </td>
+            <td>
+<p>Example Condition for past illnesses chickenpox</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Other </h3>
+    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-1-1-ImmunizationAdministration-Binary.html"
+                  title="Binary/1-1-ImmunizationAdministration-Binary">13.1 Binary Original Representation (Immunization Certificate)</a>
+            </td>
+            <td>
+<p>Example Binary for original represenation in section immunization certificate.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-originalRepresentation1.html"
+                  title="Binary/originalRepresentation1">13.1 Binary Original Representation (Immunization Certificate)</a>
+            </td>
+            <td>
+<p>Example Binary for original represenation in section immunization certificate.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-3-1-Patient.html" title="Patient/3-1-Patient">3.1 Patient</a>
+            </td>
+            <td>
+<p>Example for Patient for all document except Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-4-2-Practitioner.html"
+                  title="Practitioner/4-2-Practitioner">4.2 Practitioner</a>
+            </td>
+            <td>
+<p>Example for Practitioner for all documents except Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-4-3-Practitioner.html"
+                  title="Practitioner/4-3-Practitioner">4.3 Practitioner</a>
+            </td>
+            <td>
+<p>Example for Practitioner for all documents except Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-5-1-Organization.html"
+                  title="Organization/5-1-Organization">5.1 Organization</a>
+            </td>
+            <td>
+<p>Example for Organization for all documents except  Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-5-2-Organization.html"
+                  title="Organization/5-2-Organization">5.2 Organization</a>
+            </td>
+            <td>
+<p>Example for Organization for all documents except  Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-5-3-Organization.html"
+                  title="Organization/5-3-Organization">5.3 Organization</a>
+            </td>
+            <td>
+<p>Example for Organization for all documents except  Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-6-1-PractitionerRole.html"
+                  title="PractitionerRole/6-1-PractitionerRole">6.1 Practitioner Role</a>
+            </td>
+            <td>
+<p>Example for Practitioner Role for all documents except Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-6-2-PractitionerRole.html"
+                  title="PractitionerRole/6-2-PractitionerRole">6.2 Practitioner Role</a>
+            </td>
+            <td>
+<p>Example for Practitioner Role for all documents except Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-6-3-PractitionerRole.html"
+                  title="PractitionerRole/6-3-PractitionerRole">6.3 Practitioner Role</a>
+            </td>
+            <td>
+<p>Example for Practitioner Role for all documents except Recommendation Request/Response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-TC-ORG-GSK.html" title="Organization/TC-ORG-GSK">Manufacturer GlaxoSmithKline AG</a>
+            </td>
+            <td>
+<p>Manufacturer GlaxoSmithKline AG</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-TC-ORG-MSD.html" title="Organization/TC-ORG-MSD">Manufacturer GlaxoSmithKline AG</a>
+            </td>
+            <td>
+<p>Manufacturer GlaxoSmithKline AG</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-TC-ORG-PFIZER.html"
+                  title="Organization/TC-ORG-PFIZER">Manufacturer Pfizer AG</a>
+            </td>
+            <td>
+<p>Manufacturer Pfizer AG</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-TC-HCP1-ORG1-ROLE-author.html"
+                  title="PractitionerRole/TC-HCP1-ORG1-ROLE-author">TC HCP1 ORG1 Role Author in C1</a>
+            </td>
+            <td>
+<p>Testcase practitionerole HCP1 ORG1 as author</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-TC-HCP1-ORG1-ROLE-performer.html"
+                  title="PractitionerRole/TC-HCP1-ORG1-ROLE-performer">TC HCP1 ORG1 Role Performer</a>
+            </td>
+            <td>
+<p>Testcase practitionerole HCP1 ORG1 as performer in C1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-TC-HCP2-ORG2-ROLE-author.html"
+                  title="PractitionerRole/TC-HCP2-ORG2-ROLE-author">TC HCP2 G2 ORG2 Role Author</a>
+            </td>
+            <td>
+<p>Testcase practitionerole HCP2 ORG2 as author in G2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-TC-HCP2-ORG2-ROLE-performer.html"
+                  title="PractitionerRole/TC-HCP2-ORG2-ROLE-performer">TC HCP2 ORG2 Role Performer</a>
+            </td>
+            <td>
+<p>Testcase practitionerole HCP2 ORG2 as performer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-TC-HCP3-ORG1-ROLE-author.html"
+                  title="PractitionerRole/TC-HCP3-ORG1-ROLE-author">TC HCP3 ORG1 Role Author in C1</a>
+            </td>
+            <td>
+<p>Testcase practitionerole HCP3 ORG1 as author</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-TC-HCP3-ORG1-ROLE-performer.html"
+                  title="PractitionerRole/TC-HCP3-ORG1-ROLE-performer">TC HCP3 ORG1 Role Performer</a>
+            </td>
+            <td>
+<p>Testcase practitionerole HCP3 ORG1 as performer in C1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-TC-ORG3.html" title="Organization/TC-ORG3">TC Labor Organization</a>
+            </td>
+            <td>
+<p>Testcase labor organization for lab results</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-TC-ORG1.html" title="Organization/TC-ORG1">TC Organization 1</a>
+            </td>
+            <td>
+<p>Testcase organization of HCP1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-TC-ORG2.html" title="Organization/TC-ORG2">TC Organization 2</a>
+            </td>
+            <td>
+<p>Testcase organization of HCP2 in C2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-TC-patient.html" title="Patient/TC-patient">TC patient 1</a>
+            </td>
+            <td>
+<p>Testcase: Example of patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-TC-patient2.html" title="Patient/TC-patient2">TC patient 2</a>
+            </td>
+            <td>
+<p>Testcase: Example of patient</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.ch/">HL7 Switzerland</a>.  Package ch.fhir.ig.ch-vacd#6.0.0-ballot-ci-build based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 7, 2025 07:29+0200">2025-05-07</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+
+| <a style="color: #81BEF7" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSejY5cinbQ4kHgGKMhncYu0mPuWb7euUkxfeXZeiUCFFa4k6g/viewform?usp=sf_link&amp;entry%2E1353807103=ch.fhir.ig.ch-vacd%236.0.0-ballot-ci-build%20/artifacts.html&amp;entry%2E247644557=Artifacts%20Summary">Propose a change</a>
+
+
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

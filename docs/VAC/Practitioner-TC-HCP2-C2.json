@@ -1,0 +1,49 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "TC-HCP2-C2",
+  "meta" : {
+    "profile" : ["http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner TC-HCP2-C2</b></p><a name=\"TC-HCP2-C2\"> </a><a name=\"hcTC-HCP2-C2\"> </a><a name=\"TC-HCP2-C2-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitioner-epr.html\">CH Core Practitioner EPR</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601999999998</p><p><b>active</b>: true</p><p><b>name</b>: Gabriela Meier </p><p><b>telecom</b>: ph: tel:+41.32.234.77.88(Work), fax: fax:+41.32.234.77.89(Work), <a href=\"mailto:mailto:leitung@praxis-gesund.ch\">mailto:leitung@praxis-gesund.ch</a>, <a href=\"http://www.praxis-gesund.ch\">http://www.praxis-gesund.ch</a></p><p><b>address</b>: Werthgasse 34 Bern ZH 3000 CH </p></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:2.51.1.3",
+    "value" : "7601999999998"
+  }],
+  "active" : true,
+  "name" : [{
+    "family" : "Meier",
+    "given" : ["Gabriela"],
+    "prefix" : ["Dr. med."]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "tel:+41.32.234.77.88",
+    "use" : "work"
+  },
+  {
+    "system" : "fax",
+    "value" : "fax:+41.32.234.77.89",
+    "use" : "work"
+  },
+  {
+    "system" : "email",
+    "value" : "mailto:leitung@praxis-gesund.ch",
+    "use" : "work"
+  },
+  {
+    "system" : "url",
+    "value" : "http://www.praxis-gesund.ch",
+    "use" : "work"
+  }],
+  "address" : [{
+    "type" : "physical",
+    "line" : ["Werthgasse 34"],
+    "city" : "Bern",
+    "state" : "ZH",
+    "postalCode" : "3000",
+    "country" : "CH"
+  }]
+}

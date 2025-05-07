@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Test Case C 04: Medical Problem &quot;Bat researcher or guard&quot; - Implementation Guide CH VACD v6.0.0-ballot-ci-build</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <style>
+    
+
+    
+
+    
+
+    </style>
+ 
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"66.256"}
+    h3,h4,h5,h6{--heading-prefix:"66.256"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+            <div id="family-nav">
+	<a id="logo" no-external="true" href="http://hl7.org/fhir"> <img
+		alt="logo fhir" src="fhir-logo-www.png" />
+	</a>
+</div>
+
+            <div id="family-nav">
+                <a id="logo" no-external="true" href="searchform.html">
+                    <img src="assets/images/search.png" alt="Search FHIR" />
+                </a>
+            </div>
+            <div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://www.hl7.ch">
+        <img alt="visit the hl7 website" height="50" src="hl7-logo.png" />
+    </a>            
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Implementation Guide CH VACD</span>
+            <br/>
+            <span style="display:inline-block;">6.0.0-ballot-ci-build - ci-build
+
+
+
+  <img alt="Switzerland flag" src="assets/images/che.svg" height="16" title="Switzerland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<!--<li><a href="toc.html">Table of Contents</a></li> -->
+	<li>
+		<a href="index.html">Home</a>
+	</li>
+
+
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Use Cases
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="Use-Cases-Deutsch.html">Anwendungsfälle</a>
+			</li>
+			<li>
+				<a href="Use-Cases-Francais.html">Les cas d'utilisation</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Documents/Messages
+			<b class="caret">
+			</b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="immunization-administration-document.html">Immunization Administration document</a>
+			</li>
+			<li>
+				<a href="vaccination-record-document.html">Vaccination Record document</a>
+			</li>
+			<li>
+				<a href="immunization-recommendation-request-message.html">Immunization Recommendation Request message</a>
+			</li>
+			<li>
+				<a href="immunization-recommendation-response-message.html">Immunization Recommendation Response message</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="profiles.html">Profiles</a>
+	</li>
+	<li>
+		<a href="extensions.html">Extensions</a>
+	</li>
+	<li>
+		<a href="terminology.html">Terminology</a>
+	</li>
+	<li>
+		<a href="artifacts.html">Artifacts</a>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Test Cases
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="TestCases.html">Overview</a>
+			</li>
+			<li>
+				<a href="TestCases.html#a-immunizations">A Immunizations</a>
+			</li>
+			<li>
+				<a href="TestCases.html#b-other-elements">B Other Elements</a>
+			</li>
+			<li>
+				<a href="TestCases.html#c-correction-of-entries">C Correction of Entries</a>
+			</li>
+			<li>
+				<a href="TestCases.html#d-conflicts-on-merging-documents">D Conflicts on merging Documents</a>
+			</li>
+			<li>
+				<a href="TestCases.html#e-language-handling-on-merging-documents">E Language handling on merging Documents</a>
+			</li>
+			<li>
+				<a href="TestCases.html#f-add-notes-to-existing-elements">F Add Notes to existing Elements</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Test Case C 04: Medical Problem &quot;Bat researcher or guard&quot;</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Implementation Guide CH VACD - Local Development build (v6.0.0-ballot-ci-build) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://fhir.ch/ig/ch-vacd/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-C-D4-HCP2-C2.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-C-D4-HCP2-C2.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example Bundle: Test Case C 04: Medical Problem &quot;Bat researcher or guard&quot;</h2>
+
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Details</b></p><p class="res-header-id"><b>Generated Narrative: Bundle Immunization Administration</b></p><a name="C-D4-HCP2-C2"> </a><a name="hcC-D4-HCP2-C2"> </a><a name="C-D4-HCP2-C2-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ch-vacd-document-immunization-administration.html">CH VACD Immunization Administration Document</a></p><p>Final Document at 2021-08-20 00:00:00+0200 by <a href="PractitionerRole-TC-HCP2-ORG2-ROLE-author.html">PractitionerRole</a> for <a href="Patient-TC-patient2.html">Lea Knecht  Female, DoB: 1992-05-14 ( Medical record number)</a> </p></div></div><hr/><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Subject</b></p><p class="res-header-id"><b>Generated Narrative: Patient TC-patient2</b></p><a name="C-D4-HCP2-C2/TC-patient2"> </a><a name="hcC-D4-HCP2-C2/TC-patient2"> </a><a name="C-D4-HCP2-C2/TC-patient2-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-patient-epr.html">CH Core Patient EPR</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Lea Knecht  Female, DoB: 1992-05-14 ( Medical record number)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li>ph: tel:+41.32.685.45.67(Home)</li><li>Mustergasse 99 Specimendorf 9876 CH </li></ul></td></tr></table></div><hr/><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Content</b></p><h3>Immunization Administration</h3><p><b>Id: </b>C-D4-HCP2-C2-Composition</p><p><b>Identifier: </b><span>urn:ietf:rfc:3986#urn:uuid:9686dae0-448c-49f8-9c78-2db1aa95b921</span></p><p><b>Status: </b>Final</p><p><b>Code: </b><span>Immunization record (http://snomed.info/sct#41000179103)</span></p><p><b>Patient: </b><a href="Patient-TC-patient2.html">Patient/TC-patient2</a> Knecht Lea</p><p><b>Date: </b>August 20, 2021</p><p><b>Authors:</b></p><table><tr><td><p><a href="Practitioner-TC-HCP2-C2.html">Practitioner/TC-HCP2-C2</a> Gesund Meist</p><p><a href="Organization-TC-ORG2.html">Organization/TC-ORG2</a> Praxis Dr. Gesund</p></td></tr></table><p><b>Confidentiality: </b>null<span> Normal (qualifier value) (http://snomed.info/sct#17621005)</span></p><p><b>Sections:</b></p><table><tr><td>Medical Problems</td></tr></table><hr/><div><h2>Medical Problems</h2></div><p><b>Code: </b><span>Problem list Reported (http://loinc.org#11450-4)</span></p><p><b>Entries:</b></p><table><tr><td><a href="Condition-TCC04-EXPRISK1.html">Condition/TCC04-EXPRISK1</a></td></tr></table></div><hr/><h2>Additional Resources Included in Document</h2><a name="http-//test.fhir.ch/r4/Composition/C-D4-HCP2-C2-Composition"> </a><a name="Composition_C-D4-HCP2-C2-Composition"> </a><a name="hcComposition_C-D4-HCP2-C2-Composition"> </a><hr/><p>Entry 1 - fullUrl = http://test.fhir.ch/r4/Composition/C-D4-HCP2-C2-Composition</p><p>Resso}:</p><blockquote><h3>Immunization Administration</h3><p><b>Id: </b>C-D4-HCP2-C2-Composition</p><p><b>Identifier: </b><span>urn:ietf:rfc:3986#urn:uuid:9686dae0-448c-49f8-9c78-2db1aa95b921</span></p><p><b>Status: </b>Final</p><p><b>Code: </b><span>Immunization record (http://snomed.info/sct#41000179103)</span></p><p><b>Patient: </b><a href="Patient-TC-patient2.html">Patient/TC-patient2</a> Knecht Lea</p><p><b>Date: </b>August 20, 2021</p><p><b>Authors:</b></p><table><tr><td><p><a href="Practitioner-TC-HCP2-C2.html">Practitioner/TC-HCP2-C2</a> Gesund Meist</p><p><a href="Organization-TC-ORG2.html">Organization/TC-ORG2</a> Praxis Dr. Gesund</p></td></tr></table><p><b>Confidentiality: </b>null<span> Normal (qualifier value) (http://snomed.info/sct#17621005)</span></p><p><b>Sections:</b></p><table><tr><td>Medical Problems</td></tr></table></blockquote><a name="http-//test.fhir.ch/r4/Patient/TC-patient2"> </a><a name="Patient_TC-patient2"> </a><a name="hcPatient_TC-patient2"> </a><hr/><p>Entry 2 - fullUrl = http://test.fhir.ch/r4/Patient/TC-patient2</p><p>Resso}:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Patient TC-patient2</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-patient-epr.html">CH Core Patient EPR</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Lea Knecht  Female, DoB: 1992-05-14 ( Medical record number)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li>ph: tel:+41.32.685.45.67(Home)</li><li>Mustergasse 99 Specimendorf 9876 CH </li></ul></td></tr></table></blockquote><a name="http-//test.fhir.ch/r4/Practitioner/TC-HCP2-C2"> </a><a name="Practitioner_TC-HCP2-C2"> </a><a name="hcPractitioner_TC-HCP2-C2"> </a><hr/><p>Entry 3 - fullUrl = http://test.fhir.ch/r4/Practitioner/TC-HCP2-C2</p><p>Resso}:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Practitioner TC-HCP2-C2</b></p><a name="C-D4-HCP2-C2/TC-HCP2-C2"> </a><a name="hcC-D4-HCP2-C2/TC-HCP2-C2"> </a><a name="C-D4-HCP2-C2/TC-HCP2-C2-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitioner-epr.html">CH Core Practitioner EPR</a></p></div><p><b>identifier</b>: <a href="https://www.gs1.org/standards/id-keys/gln" title="Global Location Number">GLN</a>/7601999999998</p><p><b>active</b>: true</p><p><b>name</b>: Gabriela Meier </p><p><b>telecom</b>: ph: tel:+41.32.234.77.88(Work), fax: fax:+41.32.234.77.89(Work), <a href="mailto:mailto:leitung@praxis-gesund.ch">mailto:leitung@praxis-gesund.ch</a>, <a href="http://www.praxis-gesund.ch">http://www.praxis-gesund.ch</a></p><p><b>address</b>: Werthgasse 34 Bern ZH 3000 CH </p></blockquote><a name="http-//test.fhir.ch/r4/Organization/TC-ORG2"> </a><a name="Organization_TC-ORG2"> </a><a name="hcOrganization_TC-ORG2"> </a><hr/><p>Entry 4 - fullUrl = http://test.fhir.ch/r4/Organization/TC-ORG2</p><p>Resso}:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Organization TC-ORG2</b></p><a name="C-D4-HCP2-C2/TC-ORG2"> </a><a name="hcC-D4-HCP2-C2/TC-ORG2"> </a><a name="C-D4-HCP2-C2/TC-ORG2-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization-epr.html">CH Core Organization EPR</a></p></div><p><b>identifier</b>: <a href="https://www.gs1.org/standards/id-keys/gln" title="Global Location Number">GLN</a>/7601999999912</p><p><b>name</b>: Praxis Dr. G. Meier</p><blockquote><p><b>contact</b></p><p><b>telecom</b>: ph: tel:+41.32.234.77.88(Work), fax: fax:+41.32.234.77.89(Work), <a href="mailto:mailto:leitung@praxis-gesund.ch">mailto:leitung@praxis-gesund.ch</a>, <a href="http://www.praxis-gesund.ch">http://www.praxis-gesund.ch</a></p><p><b>address</b>: Werthgasse 34 Bern ZH 3000 CH </p></blockquote></blockquote><a name="http-//test.fhir.ch/r4/PractitionerRole/TC-HCP2-ORG2-ROLE-author"> </a><a name="PractitionerRole_TC-HCP2-ORG2-ROLE-author"> </a><a name="hcPractitionerRole_TC-HCP2-ORG2-ROLE-author"> </a><hr/><p>Entry 5 - fullUrl = http://test.fhir.ch/r4/PractitionerRole/TC-HCP2-ORG2-ROLE-author</p><p>Resso}:</p><blockquote><p class="res-header-id"><b>Generated Narrative: PractitionerRole TC-HCP2-ORG2-ROLE-author</b></p><a name="C-D4-HCP2-C2/TC-HCP2-ORG2-ROLE-author"> </a><a name="hcC-D4-HCP2-C2/TC-HCP2-ORG2-ROLE-author"> </a><a name="C-D4-HCP2-C2/TC-HCP2-ORG2-ROLE-author-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitionerrole-epr.html">CH Core PractitionerRole EPR</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner-TC-HCP2-C2.html">Practitioner Gabriela Meier </a></p><p><b>organization</b>: <a href="Organization-TC-ORG2.html">Organization Praxis Dr. G. Meier</a></p></blockquote><a name="http-//test.fhir.ch/r4/Condition/TCC04-EXPRISK1"> </a><a name="Condition_TCC04-EXPRISK1"> </a><a name="hcCondition_TCC04-EXPRISK1"> </a><hr/><p>Entry 6 - fullUrl = http://test.fhir.ch/r4/Condition/TCC04-EXPRISK1</p><p>Resso}:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Condition TCC04-EXPRISK1</b></p><a name="C-D4-HCP2-C2/TCC04-EXPRISK1"> </a><a name="hcC-D4-HCP2-C2/TCC04-EXPRISK1"> </a><a name="C-D4-HCP2-C2/TCC04-EXPRISK1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ch-vacd-medical-problems.html">CH VACD Medical Problems</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.2</code>/dc168f1f-967c-4ff2-95ef-f8c468d67b45</p><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 265940000}">Animal health occupation (occupation)</span></p><p><b>subject</b>: <a href="Patient-TC-patient2.html">Lea Knecht  Female, DoB: 1992-05-14 ( Medical record number)</a></p><p><b>onset</b>: 2021-08-20</p><p><b>recordedDate</b>: 2021-08-20</p></blockquote><a name="http-//test.fhir.ch/r4/Practitioner/TC-HCP1-C1"> </a><a name="Practitioner_TC-HCP1-C1"> </a><a name="hcPractitioner_TC-HCP1-C1"> </a><hr/><p>Entry 7 - fullUrl = http://test.fhir.ch/r4/Practitioner/TC-HCP1-C1</p><p>Resso}:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Practitioner TC-HCP1-C1</b></p><a name="C-D4-HCP2-C2/TC-HCP1-C1"> </a><a name="hcC-D4-HCP2-C2/TC-HCP1-C1"> </a><a name="C-D4-HCP2-C2/TC-HCP1-C1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitioner-epr.html">CH Core Practitioner EPR</a></p></div><p><b>identifier</b>: <a href="https://www.gs1.org/standards/id-keys/gln" title="Global Location Number">GLN</a>/7601888888884</p><p><b>active</b>: true</p><p><b>name</b>: Peter Müller </p><p><b>telecom</b>: ph: tel:+41.32.234.55.66(Work), fax: fax:+41.32.234.55.67(Work), <a href="mailto:mailto:allzeit.bereit@gruppenpraxis.ch">mailto:allzeit.bereit@gruppenpraxis.ch</a>, <a href="http://www.gruppenpraxis.ch">http://www.gruppenpraxis.ch</a></p><p><b>address</b>: Grabenstrasse 2 Zürich 8005 CH </p></blockquote><a name="http-//test.fhir.ch/r4/Organization/TC-ORG1"> </a><a name="Organization_TC-ORG1"> </a><a name="hcOrganization_TC-ORG1"> </a><hr/><p>Entry 8 - fullUrl = http://test.fhir.ch/r4/Organization/TC-ORG1</p><p>Resso}:</p><blockquote><p class="res-header-id"><b>Generated Narrative: Organization TC-ORG1</b></p><a name="C-D4-HCP2-C2/TC-ORG1"> </a><a name="hcC-D4-HCP2-C2/TC-ORG1"> </a><a name="C-D4-HCP2-C2/TC-ORG1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization-epr.html">CH Core Organization EPR</a></p></div><p><b>identifier</b>: <a href="https://www.gs1.org/standards/id-keys/gln" title="Global Location Number">GLN</a>/7601777777718</p><p><b>name</b>: Gruppenpraxis Müller</p><blockquote><p><b>contact</b></p><p><b>telecom</b>: ph: tel:+41.32.234.55.66(Work), fax: fax:+41.32.234.55.67(Work), <a href="mailto:mailto:bereit@gruppenpraxis.ch">mailto:bereit@gruppenpraxis.ch</a>, <a href="http://www.gruppenpraxis.ch">http://www.gruppenpraxis.ch</a></p><p><b>address</b>: Grabenstrasse 2 Zürich ZH 8005 CH </p></blockquote></blockquote><a name="http-//test.fhir.ch/r4/PractitionerRole/TC-HCP1-ORG1-ROLE-author"> </a><a name="PractitionerRole_TC-HCP1-ORG1-ROLE-author"> </a><a name="hcPractitionerRole_TC-HCP1-ORG1-ROLE-author"> </a><hr/><p>Entry 9 - fullUrl = http://test.fhir.ch/r4/PractitionerRole/TC-HCP1-ORG1-ROLE-author</p><p>Resso}:</p><blockquote><p class="res-header-id"><b>Generated Narrative: PractitionerRole TC-HCP1-ORG1-ROLE-author</b></p><a name="C-D4-HCP2-C2/TC-HCP1-ORG1-ROLE-author"> </a><a name="hcC-D4-HCP2-C2/TC-HCP1-ORG1-ROLE-author"> </a><a name="C-D4-HCP2-C2/TC-HCP1-ORG1-ROLE-author-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitionerrole-epr.html">CH Core PractitionerRole EPR</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner-TC-HCP1-C1.html">Practitioner Peter Müller </a></p><p><b>organization</b>: <a href="Organization-TC-ORG1.html">Organization Gruppenpraxis Müller</a></p></blockquote></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.ch/">HL7 Switzerland</a>.  Package ch.fhir.ig.ch-vacd#6.0.0-ballot-ci-build based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 7, 2025 07:29+0200">2025-05-07</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+
+| <a style="color: #81BEF7" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSejY5cinbQ4kHgGKMhncYu0mPuWb7euUkxfeXZeiUCFFa4k6g/viewform?usp=sf_link&amp;entry%2E1353807103=ch.fhir.ig.ch-vacd%236.0.0-ballot-ci-build%20/Bundle-C-D4-HCP2-C2.html&amp;entry%2E247644557=Test%20Case%20C%2004:%20Medical%20Problem%20%22Bat%20researcher%20or%20guard%22">Propose a change</a>
+
+
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

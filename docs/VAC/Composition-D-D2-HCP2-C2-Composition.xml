@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="D-D2-HCP2-C2-Composition"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-composition-immunization-administration"/>
+  </meta>
+  <language value="en-US"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><h3>Immunization Administration</h3><p><b>Id: </b>D-D2-HCP2-C2-Composition</p><p><b>Identifier: </b><span>urn:ietf:rfc:3986#urn:uuid:cb155588-9718-42b0-9e2e-f50f8bab5bcf</span></p><p><b>Status: </b>Final</p><p><b>Code: </b><span>Immunization record (http://snomed.info/sct#41000179103)</span></p><p><b>Patient: </b><a href="Patient-TC-patient.html">Patient/TC-patient</a> Wegmueller Monika</p><p><b>Date: </b>October 6, 2021</p><p><b>Authors:</b></p><table><tr><td><p><a href="Patient-TC-patient.html">Patient/TC-patient</a> Wegmueller Monika</p></td></tr></table><p><b>Confidentiality: </b>null<span> Normal (qualifier value) (http://snomed.info/sct#17621005)</span></p><p><b>Sections:</b></p><table><tr><td>Immunization Administration</td></tr><tr><td>Comments</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:cb155588-9718-42b0-9e2e-f50f8bab5bcf"/>
+  </identifier>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="41000179103"/>
+      <display value="Immunization record"/>
+    </coding>
+  </type>
+  <category>
+    <coding>
+      <system value="urn:oid:2.16.756.5.30.1.127.3.10.10"/>
+      <code value="urn:che:epr:ch-vacd:immunization-administration:2022"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="Patient/TC-patient"/>
+  </subject>
+  <date value="2021-10-06T00:00:00.390+02:00"/>
+  <author>
+    <reference value="Patient/TC-patient"/>
+  </author>
+  <title value="Immunization Administration"/>
+  <confidentiality value="N">
+    <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="17621005"/>
+          <display value="Normal (qualifier value)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </confidentiality>
+  <custodian>
+    <reference value="Organization/TC-ORG1"/>
+  </custodian>
+  <section id="administration">
+    <title value="Immunization Administration"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="11369-6"/>
+        <display value="Hx of Immunization"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Code: </b><span>Hx of Immunization (http://loinc.org#11369-6)</span></p><p><b>Entries:</b></p><table><tr><td><a href="Immunization-TCD01-IMMUN3.html">Immunization/TCD01-IMMUN3</a></td></tr><tr><td><a href="Immunization-TCD01-IMMUN4.html">Immunization/TCD01-IMMUN4</a></td></tr><tr><td><a href="Immunization-TCD01-IMMUN5.html">Immunization/TCD01-IMMUN5</a></td></tr></table></div>
+    </text>
+    <entry>
+      <reference value="Immunization/TCD01-IMMUN3"/>
+    </entry>
+    <entry>
+      <reference value="Immunization/TCD01-IMMUN4"/>
+    </entry>
+    <entry>
+      <reference value="Immunization/TCD01-IMMUN5"/>
+    </entry>
+  </section>
+  <section id="Annotation">
+    <title value="Comments"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="48767-8"/>
+        <display value="Annotation comment Imp"/>
+      </coding>
+    </code>
+    <text>
+      <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Code: </b><span>Annotation comment [Interpretation] Narrative (http://loinc.org#48767-8)</span></p></div>
+    </text>
+  </section>
+</Composition>

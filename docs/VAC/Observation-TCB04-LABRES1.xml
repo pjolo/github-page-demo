@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="TCB04-LABRES1"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-laboratory-serology"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation TCB04-LABRES1</b></p><a name="TCB04-LABRES1"> </a><a name="hcTCB04-LABRES1"> </a><a name="TCB04-LABRES1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ch-vacd-laboratory-serology.html">CH VACD Laboratory And Serology</a></p></div><p><b>CH VACD Extension verificationStatus</b>: <a href="http://snomed.info/id/59156000">SNOMED CT 59156000</a>: Confirmed</p><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.2</code>/135f604f-f5c8-4e9b-a49b-5f34cdb9cf60</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 16935-9}">Hepatitis B virus surface Ab [Units/volume] in Serum</span></p><p><b>subject</b>: <a href="Patient-TC-patient.html">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>effective</b>: 2021-10-01</p><p><b>performer</b>: <a href="Organization-TC-ORG3.html">Organization Labor Wir Messen Alles</a></p><p><b>value</b>: 99 [iU]/L<span style="background: LightGoldenRodYellow"> (Details: UCUM  code[iU]/L = '[iU]/L')</span></p><p><b>interpretation</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation POS}">Positive</span></p></div>
+  </text>
+  <extension url="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status">
+    <valueCoding>
+      <system value="http://snomed.info/sct"/>
+      <code value="59156000"/>
+      <display value="Confirmed"/>
+    </valueCoding>
+  </extension>
+  <identifier>
+    <system value="urn:oid:2.16.756.5.30.1.402.1.3.1.1.2"/>
+    <value value="135f604f-f5c8-4e9b-a49b-5f34cdb9cf60"/>
+  </identifier>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="16935-9"/>
+      <display value="Hepatitis B virus surface Ab [Units/volume] in Serum"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/TC-patient"/>
+  </subject>
+  <effectiveDateTime value="2021-10-01"/>
+  <performer>
+    <reference value="Organization/TC-ORG3"/>
+  </performer>
+  <valueQuantity>
+    <value value="99"/>
+    <unit value="[iU]/L"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="[iU]/L"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="POS"/>
+      <display value="Positive"/>
+    </coding>
+  </interpretation>
+</Observation>

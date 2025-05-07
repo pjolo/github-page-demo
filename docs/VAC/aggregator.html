@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Aggregator - Implementation Guide CH VACD v6.0.0-ballot-ci-build</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <style>
+    
+
+    
+
+    
+
+    </style>
+ 
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+            <div id="family-nav">
+	<a id="logo" no-external="true" href="http://hl7.org/fhir"> <img
+		alt="logo fhir" src="fhir-logo-www.png" />
+	</a>
+</div>
+
+            <div id="family-nav">
+                <a id="logo" no-external="true" href="searchform.html">
+                    <img src="assets/images/search.png" alt="Search FHIR" />
+                </a>
+            </div>
+            <div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://www.hl7.ch">
+        <img alt="visit the hl7 website" height="50" src="hl7-logo.png" />
+    </a>            
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Implementation Guide CH VACD</span>
+            <br/>
+            <span style="display:inline-block;">6.0.0-ballot-ci-build - ci-build
+
+
+
+  <img alt="Switzerland flag" src="assets/images/che.svg" height="16" title="Switzerland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<!--<li><a href="toc.html">Table of Contents</a></li> -->
+	<li>
+		<a href="index.html">Home</a>
+	</li>
+
+
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Use Cases
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="Use-Cases-Deutsch.html">Anwendungsfälle</a>
+			</li>
+			<li>
+				<a href="Use-Cases-Francais.html">Les cas d'utilisation</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Documents/Messages
+			<b class="caret">
+			</b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="immunization-administration-document.html">Immunization Administration document</a>
+			</li>
+			<li>
+				<a href="vaccination-record-document.html">Vaccination Record document</a>
+			</li>
+			<li>
+				<a href="immunization-recommendation-request-message.html">Immunization Recommendation Request message</a>
+			</li>
+			<li>
+				<a href="immunization-recommendation-response-message.html">Immunization Recommendation Response message</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="profiles.html">Profiles</a>
+	</li>
+	<li>
+		<a href="extensions.html">Extensions</a>
+	</li>
+	<li>
+		<a href="terminology.html">Terminology</a>
+	</li>
+	<li>
+		<a href="artifacts.html">Artifacts</a>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Test Cases
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="TestCases.html">Overview</a>
+			</li>
+			<li>
+				<a href="TestCases.html#a-immunizations">A Immunizations</a>
+			</li>
+			<li>
+				<a href="TestCases.html#b-other-elements">B Other Elements</a>
+			</li>
+			<li>
+				<a href="TestCases.html#c-correction-of-entries">C Correction of Entries</a>
+			</li>
+			<li>
+				<a href="TestCases.html#d-conflicts-on-merging-documents">D Conflicts on merging Documents</a>
+			</li>
+			<li>
+				<a href="TestCases.html#e-language-handling-on-merging-documents">E Language handling on merging Documents</a>
+			</li>
+			<li>
+				<a href="TestCases.html#f-add-notes-to-existing-elements">F Add Notes to existing Elements</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Aggregator</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Implementation Guide CH VACD - Local Development build (v6.0.0-ballot-ci-build) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://fhir.ch/ig/ch-vacd/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Aggregator</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="aggregator">Aggregator</h3>
+
+<h4 id="aggregation-without-problems">Aggregation without problems</h4>
+
+<p>There are different Immunization Administration documents with different entries.</p>
+
+<div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="CLASS" height="375px" preserveAspectRatio="none" style="width:652px;height:375px;background:#FFFFFF;" version="1.1" viewBox="0 0 652 375" width="652px" zoomAndPan="magnify"><title>Aggregation of Immunization Administration Documents</title><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="376.4482" x="131.1997" y="24.5332">Aggregation of Immunization Administration Documents</text><g class="entity" data-entity="Doc1" data-source-line="6" data-uid="ent0002" id="entity_Doc1"><rect fill="#ADD8E6" height="64.8281" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="189.8477" x="7" y="45.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175.8477" x="14" y="62.1426">Immunization Administration</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75.4824" x="64.1826" y="79.752">Document 1</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="195.8477" y1="84.8281" y2="84.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135.9941" x="13" y="103.3613">entry "Immunization1"</text></g><g class="entity" data-entity="Doc2" data-source-line="9" data-uid="ent0003" id="entity_Doc2"><rect fill="#ADD8E6" height="64.8281" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="189.8477" x="232" y="45.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175.8477" x="239" y="62.1426">Immunization Administration</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75.4824" x="289.1826" y="79.752">Document 2</text><line style="stroke:#181818;stroke-width:0.5;" x1="233" x2="420.8477" y1="84.8281" y2="84.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139.8838" x="238" y="103.3613">entry "Immunization 2"</text></g><g class="entity" data-entity="Doc3" data-source-line="12" data-uid="ent0004" id="entity_Doc3"><rect fill="#ADD8E6" height="64.8281" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="189.8477" x="457" y="45.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175.8477" x="464" y="62.1426">Immunization Administration</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75.4824" x="514.1826" y="79.752">Document 3</text><line style="stroke:#181818;stroke-width:0.5;" x1="458" x2="645.8477" y1="84.8281" y2="84.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139.8838" x="463" y="103.3613">entry "Immunization 3"</text></g><g class="entity" data-entity="AGG" data-source-line="15" data-uid="ent0005" id="entity_AGG"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="83.2686" x="285.5" y="170.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69.2686" x="292.5" y="187.1426">Aggregator</text><line style="stroke:#181818;stroke-width:0.5;" x1="286.5" x2="367.7686" y1="192.2188" y2="192.2188" /></g><g class="entity" data-entity="RES" data-source-line="17" data-uid="ent0006" id="entity_RES"><rect fill="#90EE90" height="100.0469" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="151.8838" x="251" y="268.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121.3994" x="266.2422" y="285.1426">Vaccination Record</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63.8066" x="295.0386" y="302.752">Document</text><line style="stroke:#181818;stroke-width:0.5;" x1="252" x2="401.8838" y1="307.8281" y2="307.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139.8838" x="257" y="326.3613">entry "Immunization 1"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139.8838" x="257" y="343.9707">entry "Immunization 2"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139.8838" x="257" y="361.5801">entry "Immunization 3"</text></g><!--link Doc1 to AGG--><g class="link" data-entity-1="Doc1" data-entity-2="AGG" data-source-line="23" data-uid="lnk7" id="link_Doc1_AGG"><path codeLine="23" d="M166.78,110.6394 C206.76,130.0894 251.225,151.7338 284.615,167.9838" fill="none" id="Doc1-to-AGG" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="290.01,170.6094,283.6679,163.0743,285.5142,168.4214,280.1671,170.2676,290.01,170.6094" style="stroke:#181818;stroke-width:1;" /></g><!--link Doc2 to AGG--><g class="link" data-entity-1="Doc2" data-entity-2="AGG" data-source-line="24" data-uid="lnk8" id="link_Doc2_AGG"><path codeLine="24" d="M327,110.7794 C327,130.1094 327,148.1294 327,164.3394" fill="none" id="Doc2-to-AGG" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="327,170.3394,331,161.3394,327,165.3394,323,161.3394,327,170.3394" style="stroke:#181818;stroke-width:1;" /></g><!--link Doc3 to AGG--><g class="link" data-entity-1="Doc3" data-entity-2="AGG" data-source-line="25" data-uid="lnk9" id="link_Doc3_AGG"><path codeLine="25" d="M487.22,110.6394 C447.24,130.0894 402.775,151.7338 369.385,167.9838" fill="none" id="Doc3-to-AGG" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="363.99,170.6094,373.8329,170.2676,368.4858,168.4214,370.3321,163.0743,363.99,170.6094" style="stroke:#181818;stroke-width:1;" /></g><!--link AGG to RES--><g class="link" data-entity-1="AGG" data-entity-2="RES" data-source-line="26" data-uid="lnk10" id="link_AGG_RES"><path codeLine="26" d="M327,208.8094 C327,224.3794 327,241.5294 327,262.4794" fill="none" id="AGG-to-RES" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="327,268.4794,331,259.4794,327,263.4794,323,259.4794,327,268.4794" style="stroke:#181818;stroke-width:1;" /></g></g></svg></div>
+
+<h4 id="aggregation-with-duplicated-entries---error">Aggregation with duplicated entries - error</h4>
+
+<p>There are different Immunization Administration documents with different entries, but in two documents the same entry is documented.</p>
+
+<div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="CLASS" height="375px" preserveAspectRatio="none" style="width:652px;height:375px;background:#FFFFFF;" version="1.1" viewBox="0 0 652 375" width="652px" zoomAndPan="magnify"><title>Aggregation of Immunization Administration Documents with duplicate</title><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="473.6758" x="82.5859" y="24.5332">Aggregation of Immunization Administration Documents with duplicate</text><g class="entity" data-entity="Doc1" data-source-line="6" data-uid="ent0002" id="entity_Doc1"><rect fill="#ADD8E6" height="64.8281" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="189.8477" x="7" y="45.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175.8477" x="14" y="62.1426">Immunization Administration</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75.4824" x="64.1826" y="79.752">Document 1</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="195.8477" y1="84.8281" y2="84.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135.9941" x="13" y="103.3613">entry "Immunization1"</text></g><g class="entity" data-entity="Doc2" data-source-line="9" data-uid="ent0003" id="entity_Doc2"><rect fill="#ADD8E6" height="64.8281" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="189.8477" x="232" y="45.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175.8477" x="239" y="62.1426">Immunization Administration</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75.4824" x="289.1826" y="79.752">Document 2</text><line style="stroke:#181818;stroke-width:0.5;" x1="233" x2="420.8477" y1="84.8281" y2="84.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139.8838" x="238" y="103.3613">entry "Immunization 1"</text></g><g class="entity" data-entity="Doc3" data-source-line="12" data-uid="ent0004" id="entity_Doc3"><rect fill="#ADD8E6" height="64.8281" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="189.8477" x="457" y="45.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175.8477" x="464" y="62.1426">Immunization Administration</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75.4824" x="514.1826" y="79.752">Document 3</text><line style="stroke:#181818;stroke-width:0.5;" x1="458" x2="645.8477" y1="84.8281" y2="84.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139.8838" x="463" y="103.3613">entry "Immunization 2"</text></g><g class="entity" data-entity="AGG" data-source-line="15" data-uid="ent0005" id="entity_AGG"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="83.2686" x="285.5" y="170.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69.2686" x="292.5" y="187.1426">Aggregator</text><line style="stroke:#181818;stroke-width:0.5;" x1="286.5" x2="367.7686" y1="192.2188" y2="192.2188" /></g><g class="entity" data-entity="RES" data-source-line="17" data-uid="ent0006" id="entity_RES"><rect fill="#90EE90" height="100.0469" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="316.8486" x="168.5" y="268.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121.3994" x="266.2246" y="285.1426">Vaccination Record</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63.8066" x="295.021" y="302.752">Document</text><line style="stroke:#181818;stroke-width:0.5;" x1="169.5" x2="484.3486" y1="307.8281" y2="307.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="304.8486" x="174.5" y="326.3613">entry "Immunization 1 - duplicate error reference"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="304.8486" x="174.5" y="343.9707">entry "Immunization 1 - duplicate error reference"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139.8838" x="174.5" y="361.5801">entry "Immunization 2"</text></g><!--link Doc1 to AGG--><g class="link" data-entity-1="Doc1" data-entity-2="AGG" data-source-line="23" data-uid="lnk7" id="link_Doc1_AGG"><path codeLine="23" d="M166.78,110.6394 C206.76,130.0894 251.225,151.7338 284.615,167.9838" fill="none" id="Doc1-to-AGG" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="290.01,170.6094,283.6679,163.0743,285.5142,168.4214,280.1671,170.2676,290.01,170.6094" style="stroke:#181818;stroke-width:1;" /></g><!--link Doc2 to AGG--><g class="link" data-entity-1="Doc2" data-entity-2="AGG" data-source-line="24" data-uid="lnk8" id="link_Doc2_AGG"><path codeLine="24" d="M327,110.7794 C327,130.1094 327,148.1294 327,164.3394" fill="none" id="Doc2-to-AGG" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="327,170.3394,331,161.3394,327,165.3394,323,161.3394,327,170.3394" style="stroke:#181818;stroke-width:1;" /></g><!--link Doc3 to AGG--><g class="link" data-entity-1="Doc3" data-entity-2="AGG" data-source-line="25" data-uid="lnk9" id="link_Doc3_AGG"><path codeLine="25" d="M487.22,110.6394 C447.24,130.0894 402.775,151.7338 369.385,167.9838" fill="none" id="Doc3-to-AGG" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="363.99,170.6094,373.8329,170.2676,368.4858,168.4214,370.3321,163.0743,363.99,170.6094" style="stroke:#181818;stroke-width:1;" /></g><!--link AGG to RES--><g class="link" data-entity-1="AGG" data-entity-2="RES" data-source-line="26" data-uid="lnk10" id="link_AGG_RES"><path codeLine="26" d="M327,208.8094 C327,224.3794 327,241.5294 327,262.4794" fill="none" id="AGG-to-RES" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="327,268.4794,331,259.4794,327,263.4794,323,259.4794,327,268.4794" style="stroke:#181818;stroke-width:1;" /></g></g></svg></div>
+
+<h4 id="aggregation-with-referencing-documentation">Aggregation with referencing documentation</h4>
+
+<p>There are different Immunization Administration documents with different entries, but in one document i.e. replaces an entry of an other document by reference.</p>
+
+<div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="CLASS" height="358px" preserveAspectRatio="none" style="width:824px;height:358px;background:#FFFFFF;" version="1.1" viewBox="0 0 824 358" width="824px" zoomAndPan="magnify"><title>Aggregation of Immunization Administration Documents with references</title><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="483.0479" x="163.8999" y="24.5332">Aggregation of Immunization Administration Documents with references</text><g class="entity" data-entity="Doc1" data-source-line="6" data-uid="ent0002" id="entity_Doc1"><rect fill="#ADD8E6" height="64.8281" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="189.8477" x="7" y="45.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175.8477" x="14" y="62.1426">Immunization Administration</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75.4824" x="64.1826" y="79.752">Document 1</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="195.8477" y1="84.8281" y2="84.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147.6699" x="13" y="103.3613">entry "Immunization 1a"</text></g><g class="entity" data-entity="Doc2" data-source-line="9" data-uid="ent0003" id="entity_Doc2"><rect fill="#ADD8E6" height="64.8281" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="361.207" x="232.5" y="45.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175.8477" x="325.1797" y="62.1426">Immunization Administration</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75.4824" x="375.3623" y="79.752">Document 2</text><line style="stroke:#181818;stroke-width:0.5;" x1="233.5" x2="592.707" y1="84.8281" y2="84.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="349.207" x="238.5" y="103.3613">entry "Immunization 1b - replace Doc1:Immunization 1a"</text></g><g class="entity" data-entity="Doc3" data-source-line="12" data-uid="ent0004" id="entity_Doc3"><rect fill="#ADD8E6" height="64.8281" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="189.8477" x="629" y="45.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175.8477" x="636" y="62.1426">Immunization Administration</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75.4824" x="686.1826" y="79.752">Document 3</text><line style="stroke:#181818;stroke-width:0.5;" x1="630" x2="817.8477" y1="84.8281" y2="84.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139.8838" x="635" y="103.3613">entry "Immunization 2"</text></g><g class="entity" data-entity="AGG" data-source-line="15" data-uid="ent0005" id="entity_AGG"><rect fill="#F1F1F1" height="37.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="83.2686" x="371.5" y="170.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69.2686" x="378.5" y="187.1426">Aggregator</text><line style="stroke:#181818;stroke-width:0.5;" x1="372.5" x2="453.7686" y1="192.2188" y2="192.2188" /></g><g class="entity" data-entity="RES" data-source-line="17" data-uid="ent0006" id="entity_RES"><rect fill="#90EE90" height="82.4375" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="159.6699" x="333" y="268.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121.3994" x="352.1353" y="285.1426">Vaccination Record</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63.8066" x="380.9316" y="302.752">Document</text><line style="stroke:#181818;stroke-width:0.5;" x1="334" x2="491.6699" y1="307.8281" y2="307.8281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147.6699" x="339" y="326.3613">entry "Immunization 1b"</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139.8838" x="339" y="343.9707">entry "Immunization 2"</text></g><!--link Doc1 to AGG--><g class="link" data-entity-1="Doc1" data-entity-2="AGG" data-source-line="22" data-uid="lnk7" id="link_Doc1_AGG"><path codeLine="22" d="M191.54,110.6394 C250.75,131.4794 319.9806,155.8565 365.7306,171.9665" fill="none" id="Doc1-to-AGG" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="371.39,173.9594,364.2295,167.1972,366.6739,172.2987,361.5724,174.743,371.39,173.9594" style="stroke:#181818;stroke-width:1;" /></g><!--link Doc2 to AGG--><g class="link" data-entity-1="Doc2" data-entity-2="AGG" data-source-line="23" data-uid="lnk8" id="link_Doc2_AGG"><path codeLine="23" d="M413,110.7794 C413,130.1094 413,148.1294 413,164.3394" fill="none" id="Doc2-to-AGG" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="413,170.3394,417,161.3394,413,165.3394,409,161.3394,413,170.3394" style="stroke:#181818;stroke-width:1;" /></g><!--link Doc3 to AGG--><g class="link" data-entity-1="Doc3" data-entity-2="AGG" data-source-line="24" data-uid="lnk9" id="link_Doc3_AGG"><path codeLine="24" d="M634.46,110.6394 C575.25,131.4794 506.0194,155.8565 460.2694,171.9665" fill="none" id="Doc3-to-AGG" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="454.61,173.9594,464.4276,174.743,459.3261,172.2987,461.7705,167.1972,454.61,173.9594" style="stroke:#181818;stroke-width:1;" /></g><!--link AGG to RES--><g class="link" data-entity-1="AGG" data-entity-2="RES" data-source-line="25" data-uid="lnk10" id="link_AGG_RES"><path codeLine="25" d="M413,208.7894 C413,224.5594 413,241.9694 413,262.1594" fill="none" id="AGG-to-RES" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="413,268.1594,417,259.1594,413,263.1594,409,259.1594,413,268.1594" style="stroke:#181818;stroke-width:1;" /></g></g></svg></div>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.ch/">HL7 Switzerland</a>.  Package ch.fhir.ig.ch-vacd#6.0.0-ballot-ci-build based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 7, 2025 07:29+0200">2025-05-07</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+
+| <a style="color: #81BEF7" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSejY5cinbQ4kHgGKMhncYu0mPuWb7euUkxfeXZeiUCFFa4k6g/viewform?usp=sf_link&amp;entry%2E1353807103=ch.fhir.ig.ch-vacd%236.0.0-ballot-ci-build%20/aggregator.html&amp;entry%2E247644557=Aggregator">Propose a change</a>
+
+
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,1213 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/Bundle/1-4-ImmunizationRecommendationRequest> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "1-4-ImmunizationRecommendationRequest"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2021-06-01T00:00:00.394+02:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-recommendation-request-message"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-recommendation-request-message>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:53b4759d-041f-4c04-955a-5fa58d248f77" ]
+  ] ; # 
+  fhir:type [ fhir:v "message"] ; # 
+  fhir:timestamp [ fhir:v "2021-06-01T00:00:00.394+02:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/MessageHeader/2-4-ImmunizationRecommendationRequestMessageHeader"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/MessageHeader/2-4-ImmunizationRecommendationRequestMessageHeader> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Patient/3-2-Patient"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Patient/3-2-Patient> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Organization/CDSS-Organization"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Organization/CDSS-Organization> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Practitioner/4-4-Practitioner"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Practitioner/4-4-Practitioner> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Organization/5-4-Organization"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Organization/5-4-Organization> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/PractitionerRole/6-4-PractitionerRole"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/PractitionerRole/6-4-PractitionerRole> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/PractitionerRole/6-5-PractitionerRole"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/PractitionerRole/6-5-PractitionerRole> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Practitioner/4-5-Practitioner"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Practitioner/4-5-Practitioner> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Organization/5-5-Organization"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Organization/5-5-Organization> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/PractitionerRole/6-6-PractitionerRole"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/PractitionerRole/6-6-PractitionerRole> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Practitioner/4-6-Practitioner"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Practitioner/4-6-Practitioner> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Organization/5-6-Organization"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Organization/5-6-Organization> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Immunization/7-7-Immunization"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Immunization/7-7-Immunization> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Immunization/7-8-Immunization"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Immunization/7-8-Immunization> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Immunization/7-9-Immunization"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Immunization/7-9-Immunization> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Immunization/7-10-Immunization"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Immunization/7-10-Immunization> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Immunization/7-11-Immunization"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Immunization/7-11-Immunization> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Condition/8-6-Condition"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Condition/8-6-Condition> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Condition/8-7-Condition"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Condition/8-7-Condition> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Condition/8-8-Condition"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Condition/8-8-Condition> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/AllergyIntolerance/11-3-AllergyIntolerance"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/AllergyIntolerance/11-3-AllergyIntolerance> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/AllergyIntolerance/11-4-AllergyIntolerance"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/AllergyIntolerance/11-4-AllergyIntolerance> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Observation/9-2-Observation"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Observation/9-2-Observation> )
+  ] ) . # 
+
+<http://test.fhir.ch/r4/MessageHeader/2-4-ImmunizationRecommendationRequestMessageHeader> a fhir:MessageHeader ;
+  fhir:id [ fhir:v "2-4-ImmunizationRecommendationRequestMessageHeader"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2021-06-01T00:00:00.394+02:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-recommendation-request-messageheader"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-recommendation-request-messageheader>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"MessageHeader_2-4-ImmunizationRecommendationRequestMessageHeader\"> </a><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader 2-4-ImmunizationRecommendationRequestMessageHeader</b></p><a name=\"2-4-ImmunizationRecommendationRequestMessageHeader\"> </a><a name=\"hc2-4-ImmunizationRecommendationRequestMessageHeader\"> </a><a name=\"2-4-ImmunizationRecommendationRequestMessageHeader-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-06-01 00:00:00+0200</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-recommendation-request-messageheader.html\">CH VACD Immunization Recommendation Request MessageHeader</a></p></div><p><b>event</b>: <a href=\"CodeSystem-ch-vacd-clinical-decision-support-event-cs.html#ch-vacd-clinical-decision-support-event-cs-immunrecorequest\">CDS Event immunrecorequest</a>: Immunization Recommendation Request</p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td style=\"display: none\">*</td><td>Example Vaccination Clinical Decision Support System</td><td><a href=\"https://example.com/cds/immunization/ws\">https://example.com/cds/immunization/ws</a></td><td><a href=\"Organization-CDSS-Organization.html\">Organization Immunization CDS Service</a></td></tr></table><p><b>sender</b>: <a href=\"PractitionerRole-6-4-PractitionerRole.html\">PractitionerRole</a></p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Software</b></td><td><b>Version</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>Example Portal EPR</td><td>EPR-Portal-VacModule</td><td>V1.1</td><td>urn:oid:1.2.3.4.5</td></tr></table><p><b>responsible</b>: <a href=\"PractitionerRole-6-4-PractitionerRole.html\">PractitionerRole</a></p><p><b>reason</b>: <span title=\"Codes:{http://snomed.info/sct 830152006}\">Recommendation regarding vaccination (procedure)</span></p><p><b>focus</b>: </p><ul><li><a href=\"Immunization-7-7-Immunization.html\">Immunization: extension = -&gt;PractitionerRole,Confirmed (SNOMED CT#59156000); identifier = urn:oid:2.16.756.5.30.1.147.1.3.1#12345; status = completed; vaccineCode = Boostrix; occurrence[x] = 2013-09-15 00:00:00+0200; recorded = 2013-09-15 00:00:00+0200; lotNumber = 12345; reasonCode = Immunization</a></li><li><a href=\"Immunization-7-8-Immunization.html\">Immunization: extension = -&gt;PractitionerRole,Confirmed (SNOMED CT#59156000); identifier = urn:oid:2.16.756.5.30.1.147.1.3.1#23456; status = completed; vaccineCode = Boostrix; occurrence[x] = 2014-08-12 00:00:00+0200; recorded = 2014-08-12 00:00:00+0200; lotNumber = 12345; reasonCode = Immunization</a></li><li><a href=\"Immunization-7-9-Immunization.html\">Immunization: extension = -&gt;PractitionerRole,Confirmed (SNOMED CT#59156000); identifier = urn:oid:2.16.756.5.30.1.147.1.3.1#34567; status = completed; vaccineCode = Boostrix; occurrence[x] = 2015-11-01 00:00:00+0100; recorded = 2015-11-01 00:00:00+0100; lotNumber = 12345; reasonCode = Immunization</a></li><li><a href=\"Immunization-7-10-Immunization.html\">Immunization: extension = -&gt;PractitionerRole,Confirmed (SNOMED CT#59156000); identifier = urn:oid:2.16.756.5.30.1.147.1.3.1#45678; status = completed; vaccineCode = MMR-II; occurrence[x] = 2016-03-05 00:00:00+0100; recorded = 2016-03-05 00:00:00+0100; lotNumber = 12345; reasonCode = Immunization</a></li><li><a href=\"Immunization-7-11-Immunization.html\">Immunization: extension = -&gt;PractitionerRole,Confirmed (SNOMED CT#59156000); identifier = urn:oid:2.16.756.5.30.1.147.1.3.1#12312; status = completed; vaccineCode = HBVAXPRO 40; occurrence[x] = 2012-02-26 00:00:00+0100; recorded = 2012-02-26 00:00:00+0100; lotNumber = 12345; reasonCode = Immunization</a></li><li><a href=\"Condition-8-6-Condition.html\">Condition Disorder of liver (disorder)</a></li><li><a href=\"Condition-8-7-Condition.html\">Condition Animal health occupation (occupation)</a></li><li><a href=\"Condition-8-8-Condition.html\">Condition Measles (disorder)</a></li><li><a href=\"AllergyIntolerance-11-3-AllergyIntolerance.html\">AllergyIntolerance Allergy to egg protein (finding)</a></li><li><a href=\"AllergyIntolerance-11-4-AllergyIntolerance.html\">AllergyIntolerance Atopic dermatitis (disorder)</a></li><li><a href=\"Observation-9-2-Observation.html\">Observation Hepatitis B virus surface Ab [Units/volume] in Serum</a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:event [
+     a fhir:Coding ;
+     fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-clinical-decision-support-event-cs"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "immunrecorequest" ] ;
+     fhir:display [ fhir:v "Immunization Recommendation Request" ]
+  ] ; # 
+  fhir:destination ( [
+     fhir:name [ fhir:v "Example Vaccination Clinical Decision Support System" ] ;
+     fhir:endpoint [ fhir:v "https://example.com/cds/immunization/ws"^^xsd:anyURI ] ;
+     fhir:receiver [
+       fhir:link <http://fhir.ch/ig/ch-vacd/Organization/CDSS-Organization> ;
+       fhir:reference [ fhir:v "Organization/CDSS-Organization" ]
+     ]
+  ] ) ; # 
+  fhir:sender [
+     fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-4-PractitionerRole> ;
+     fhir:reference [ fhir:v "PractitionerRole/6-4-PractitionerRole" ]
+  ] ; # 
+  fhir:source [
+     fhir:name [ fhir:v "Example Portal EPR" ] ;
+     fhir:software [ fhir:v "EPR-Portal-VacModule" ] ;
+     fhir:version [ fhir:v "V1.1" ] ;
+     fhir:endpoint [ fhir:v "urn:oid:1.2.3.4.5"^^xsd:anyURI ]
+  ] ; # 
+  fhir:responsible [
+     fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-4-PractitionerRole> ;
+     fhir:reference [ fhir:v "PractitionerRole/6-4-PractitionerRole" ]
+  ] ; # 
+  fhir:reason [
+     fhir:coding ( [
+       a sct:830152006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "830152006" ] ;
+       fhir:display [ fhir:v "Recommendation regarding vaccination (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/7-7-Immunization> ;
+     fhir:reference [ fhir:v "Immunization/7-7-Immunization" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/7-8-Immunization> ;
+     fhir:reference [ fhir:v "Immunization/7-8-Immunization" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/7-9-Immunization> ;
+     fhir:reference [ fhir:v "Immunization/7-9-Immunization" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/7-10-Immunization> ;
+     fhir:reference [ fhir:v "Immunization/7-10-Immunization" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/7-11-Immunization> ;
+     fhir:reference [ fhir:v "Immunization/7-11-Immunization" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Condition/8-6-Condition> ;
+     fhir:reference [ fhir:v "Condition/8-6-Condition" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Condition/8-7-Condition> ;
+     fhir:reference [ fhir:v "Condition/8-7-Condition" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Condition/8-8-Condition> ;
+     fhir:reference [ fhir:v "Condition/8-8-Condition" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/AllergyIntolerance/11-3-AllergyIntolerance> ;
+     fhir:reference [ fhir:v "AllergyIntolerance/11-3-AllergyIntolerance" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/AllergyIntolerance/11-4-AllergyIntolerance> ;
+     fhir:reference [ fhir:v "AllergyIntolerance/11-4-AllergyIntolerance" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Observation/9-2-Observation> ;
+     fhir:reference [ fhir:v "Observation/9-2-Observation" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Patient/3-2-Patient> a fhir:Patient ;
+  fhir:id [ fhir:v "3-2-Patient"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_3-2-Patient\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient 3-2-Patient</b></p><a name=\"3-2-Patient\"> </a><a name=\"hc3-2-Patient\"> </a><a name=\"3-2-Patient-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-patient-epr.html\">CH Core Patient EPR</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Monika Wegmueller  Female, DoB: 1967-03-10 ( Medical record number)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">9876 </td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.3.4"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12345678" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Wegmueller" ] ;
+     fhir:given ( [ fhir:v "Monika" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1967-03-10"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:postalCode [ fhir:v "9876" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Organization/CDSS-Organization> a fhir:Organization ;
+  fhir:id [ fhir:v "CDSS-Organization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_CDSS-Organization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization CDSS-Organization</b></p><a name=\"CDSS-Organization\"> </a><a name=\"hcCDSS-Organization\"> </a><a name=\"CDSS-Organization-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization.html\">CH Core Organization</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601000000781</p><p><b>name</b>: Immunization CDS Service</p><p><b>address</b>: Mustergasse 99 Beispielen SG 9876 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601000000781" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Immunization CDS Service"] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "Mustergasse 99" ] ) ;
+     fhir:city [ fhir:v "Beispielen" ] ;
+     fhir:state [ fhir:v "SG" ] ;
+     fhir:postalCode [ fhir:v "9876" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Practitioner/4-4-Practitioner> a fhir:Practitioner ;
+  fhir:id [ fhir:v "4-4-Practitioner"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_4-4-Practitioner\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner 4-4-Practitioner</b></p><a name=\"4-4-Practitioner\"> </a><a name=\"hc4-4-Practitioner\"> </a><a name=\"4-4-Practitioner-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitioner.html\">CH Core Practitioner</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601013000013</p><p><b>active</b>: true</p><p><b>name</b>: Max Muster </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601013000013" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Muster" ] ;
+     fhir:given ( [ fhir:v "Max" ] )
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Organization/5-4-Organization> a fhir:Organization ;
+  fhir:id [ fhir:v "5-4-Organization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_5-4-Organization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization 5-4-Organization</b></p><a name=\"5-4-Organization\"> </a><a name=\"hc5-4-Organization\"> </a><a name=\"5-4-Organization-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization.html\">CH Core Organization</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601023000119</p><p><b>name</b>: CDSS Requesting Org</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601023000119" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "CDSS Requesting Org"] . # 
+
+<http://test.fhir.ch/r4/PractitionerRole/6-4-PractitionerRole> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "6-4-PractitionerRole"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_6-4-PractitionerRole\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole 6-4-PractitionerRole</b></p><a name=\"6-4-PractitionerRole\"> </a><a name=\"hc6-4-PractitionerRole\"> </a><a name=\"6-4-PractitionerRole-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitionerrole.html\">CH Core PractitionerRole</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-4-4-Practitioner.html\">Practitioner Max Muster </a></p><p><b>organization</b>: <a href=\"Organization-5-4-Organization.html\">Organization CDSS Requesting Org</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:practitioner [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Practitioner/4-4-Practitioner> ;
+     fhir:reference [ fhir:v "Practitioner/4-4-Practitioner" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Organization/5-4-Organization> ;
+     fhir:reference [ fhir:v "Organization/5-4-Organization" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/PractitionerRole/6-5-PractitionerRole> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "6-5-PractitionerRole"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_6-5-PractitionerRole\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole 6-5-PractitionerRole</b></p><a name=\"6-5-PractitionerRole\"> </a><a name=\"hc6-5-PractitionerRole\"> </a><a name=\"6-5-PractitionerRole-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitionerrole.html\">CH Core PractitionerRole</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-4-5-Practitioner.html\">Practitioner Detlef Demo </a></p><p><b>organization</b>: <a href=\"Organization-5-5-Organization.html\">Organization Praxis Demo</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:practitioner [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Practitioner/4-5-Practitioner> ;
+     fhir:reference [ fhir:v "Practitioner/4-5-Practitioner" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Organization/5-5-Organization> ;
+     fhir:reference [ fhir:v "Organization/5-5-Organization" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/Practitioner/4-5-Practitioner> a fhir:Practitioner ;
+  fhir:id [ fhir:v "4-5-Practitioner"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_4-5-Practitioner\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner 4-5-Practitioner</b></p><a name=\"4-5-Practitioner\"> </a><a name=\"hc4-5-Practitioner\"> </a><a name=\"4-5-Practitioner-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitioner.html\">CH Core Practitioner</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601000000309</p><p><b>active</b>: true</p><p><b>name</b>: Detlef Demo </p><p><b>address</b>: 3456 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601000000309" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Demo" ] ;
+     fhir:given ( [ fhir:v "Detlef" ] )
+  ] ) ; # 
+  fhir:address ( [
+     fhir:id [ fhir:v "12-3-Address" ] ;
+     fhir:postalCode [ fhir:v "3456" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Organization/5-5-Organization> a fhir:Organization ;
+  fhir:id [ fhir:v "5-5-Organization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_5-5-Organization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization 5-5-Organization</b></p><a name=\"5-5-Organization\"> </a><a name=\"hc5-5-Organization\"> </a><a name=\"5-5-Organization-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization.html\">CH Core Organization</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601000000415</p><p><b>name</b>: Praxis Demo</p><p><b>address</b>: 3456 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601000000415" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Praxis Demo"] ; # 
+  fhir:address ( [
+     fhir:id [ fhir:v "12-3-Address" ] ;
+     fhir:postalCode [ fhir:v "3456" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/PractitionerRole/6-6-PractitionerRole> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "6-6-PractitionerRole"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_6-6-PractitionerRole\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole 6-6-PractitionerRole</b></p><a name=\"6-6-PractitionerRole\"> </a><a name=\"hc6-6-PractitionerRole\"> </a><a name=\"6-6-PractitionerRole-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitionerrole.html\">CH Core PractitionerRole</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-4-6-Practitioner.html\">Practitioner Max Muster </a></p><p><b>organization</b>: <a href=\"Organization-5-6-Organization.html\">Organization Praxis Muster</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:practitioner [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Practitioner/4-6-Practitioner> ;
+     fhir:reference [ fhir:v "Practitioner/4-6-Practitioner" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Organization/5-6-Organization> ;
+     fhir:reference [ fhir:v "Organization/5-6-Organization" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/Practitioner/4-6-Practitioner> a fhir:Practitioner ;
+  fhir:id [ fhir:v "4-6-Practitioner"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_4-6-Practitioner\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner 4-6-Practitioner</b></p><a name=\"4-6-Practitioner\"> </a><a name=\"hc4-6-Practitioner\"> </a><a name=\"4-6-Practitioner-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitioner.html\">CH Core Practitioner</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601000000514</p><p><b>active</b>: true</p><p><b>name</b>: Max Muster </p><p><b>address</b>: 9876 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601000000514" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Muster" ] ;
+     fhir:given ( [ fhir:v "Max" ] )
+  ] ) ; # 
+  fhir:address ( [
+     fhir:postalCode [ fhir:v "9876" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Organization/5-6-Organization> a fhir:Organization ;
+  fhir:id [ fhir:v "5-6-Organization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_5-6-Organization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization 5-6-Organization</b></p><a name=\"5-6-Organization\"> </a><a name=\"hc5-6-Organization\"> </a><a name=\"5-6-Organization-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization.html\">CH Core Organization</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601000000514</p><p><b>name</b>: Praxis Muster</p><p><b>address</b>: 9876 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601000000514" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Praxis Muster"] ; # 
+  fhir:address ( [
+     fhir:postalCode [ fhir:v "9876" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Immunization/7-7-Immunization> a fhir:Immunization ;
+  fhir:id [ fhir:v "7-7-Immunization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_7-7-Immunization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization 7-7-Immunization</b></p><a name=\"7-7-Immunization\"> </a><a name=\"hc7-7-Immunization\"> </a><a name=\"7-7-Immunization-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-immunization.html\">CH VACD Immunization</a></p></div><p><b>Author of the content</b>: <a href=\"PractitionerRole-6-5-PractitionerRole.html\">PractitionerRole</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href=\"http://snomed.info/id/59156000\">SNOMED CT 59156000</a>: Confirmed</p><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.147.1.3.1</code>/12345</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs 637}\">Boostrix</span></p><p><b>patient</b>: <a href=\"Patient-3-2-Patient.html\">Monika Wegmueller  Female, DoB: 1967-03-10 ( Medical record number)</a></p><p><b>occurrence</b>: 2013-09-15 00:00:00+0200</p><p><b>recorded</b>: 2013-09-15 00:00:00+0200</p><p><b>lotNumber</b>: 12345</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-6-5-PractitionerRole.html\">PractitionerRole</a></td></tr></table><p><b>reasonCode</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode IMMUNIZ}\">Immunization</span></p><blockquote><p><b>protocolApplied</b></p><p><b>targetDisease</b>: <span title=\"Codes:{http://snomed.info/sct 397430003}\">Diphtheria caused by Corynebacterium diphtheriae (disorder)</span>, <span title=\"Codes:{http://snomed.info/sct 76902006}\">Tetanus (disorder)</span>, <span title=\"Codes:{http://snomed.info/sct 27836007}\">Pertussis (disorder)</span></p><p><b>doseNumber</b>: 1</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-5-PractitionerRole> ;
+       fhir:reference [ fhir:v "PractitionerRole/6-5-PractitionerRole" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding, sct:59156000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "59156000" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.147.1.3.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12345" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "637" ] ;
+       fhir:display [ fhir:v "Boostrix" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/3-2-Patient> ;
+     fhir:reference [ fhir:v "Patient/3-2-Patient" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2013-09-15T00:00:00+02:00"^^xsd:dateTime
+  ] ; # 
+  fhir:recorded [ fhir:v "2013-09-15T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:lotNumber [ fhir:v "12345"] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-5-PractitionerRole> ;
+       fhir:reference [ fhir:v "PractitionerRole/6-5-PractitionerRole" ]
+     ]
+  ] ) ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IMMUNIZ" ] ;
+       fhir:display [ fhir:v "Immunization" ]
+     ] )
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:targetDisease ( [
+       fhir:coding ( [
+         a sct:397430003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "397430003" ] ;
+         fhir:display [ fhir:v "Diphtheria caused by Corynebacterium diphtheriae (disorder)" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         a sct:76902006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "76902006" ] ;
+         fhir:display [ fhir:v "Tetanus (disorder)" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         a sct:27836007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "27836007" ] ;
+         fhir:display [ fhir:v "Pertussis (disorder)" ]
+       ] )
+     ] ) ;
+     fhir:doseNumber [
+       a fhir:positiveInt ;
+       fhir:v "1"^^xsd:positiveInteger
+     ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Immunization/7-8-Immunization> a fhir:Immunization ;
+  fhir:id [ fhir:v "7-8-Immunization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_7-8-Immunization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization 7-8-Immunization</b></p><a name=\"7-8-Immunization\"> </a><a name=\"hc7-8-Immunization\"> </a><a name=\"7-8-Immunization-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-immunization.html\">CH VACD Immunization</a></p></div><p><b>Author of the content</b>: <a href=\"PractitionerRole-6-5-PractitionerRole.html\">PractitionerRole</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href=\"http://snomed.info/id/59156000\">SNOMED CT 59156000</a>: Confirmed</p><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.147.1.3.1</code>/23456</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs 637}\">Boostrix</span></p><p><b>patient</b>: <a href=\"Patient-3-2-Patient.html\">Monika Wegmueller  Female, DoB: 1967-03-10 ( Medical record number)</a></p><p><b>occurrence</b>: 2014-08-12 00:00:00+0200</p><p><b>recorded</b>: 2014-08-12 00:00:00+0200</p><p><b>lotNumber</b>: 12345</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-6-5-PractitionerRole.html\">PractitionerRole</a></td></tr></table><p><b>reasonCode</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode IMMUNIZ}\">Immunization</span></p><blockquote><p><b>protocolApplied</b></p><p><b>targetDisease</b>: <span title=\"Codes:{http://snomed.info/sct 397430003}\">Diphtheria caused by Corynebacterium diphtheriae (disorder)</span>, <span title=\"Codes:{http://snomed.info/sct 76902006}\">Tetanus (disorder)</span>, <span title=\"Codes:{http://snomed.info/sct 27836007}\">Pertussis (disorder)</span></p><p><b>doseNumber</b>: 1</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-5-PractitionerRole> ;
+       fhir:reference [ fhir:v "PractitionerRole/6-5-PractitionerRole" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding, sct:59156000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "59156000" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.147.1.3.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "23456" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "637" ] ;
+       fhir:display [ fhir:v "Boostrix" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/3-2-Patient> ;
+     fhir:reference [ fhir:v "Patient/3-2-Patient" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2014-08-12T00:00:00+02:00"^^xsd:dateTime
+  ] ; # 
+  fhir:recorded [ fhir:v "2014-08-12T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:lotNumber [ fhir:v "12345"] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-5-PractitionerRole> ;
+       fhir:reference [ fhir:v "PractitionerRole/6-5-PractitionerRole" ]
+     ]
+  ] ) ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IMMUNIZ" ] ;
+       fhir:display [ fhir:v "Immunization" ]
+     ] )
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:targetDisease ( [
+       fhir:coding ( [
+         a sct:397430003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "397430003" ] ;
+         fhir:display [ fhir:v "Diphtheria caused by Corynebacterium diphtheriae (disorder)" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         a sct:76902006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "76902006" ] ;
+         fhir:display [ fhir:v "Tetanus (disorder)" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         a sct:27836007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "27836007" ] ;
+         fhir:display [ fhir:v "Pertussis (disorder)" ]
+       ] )
+     ] ) ;
+     fhir:doseNumber [
+       a fhir:positiveInt ;
+       fhir:v "1"^^xsd:positiveInteger
+     ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Immunization/7-9-Immunization> a fhir:Immunization ;
+  fhir:id [ fhir:v "7-9-Immunization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_7-9-Immunization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization 7-9-Immunization</b></p><a name=\"7-9-Immunization\"> </a><a name=\"hc7-9-Immunization\"> </a><a name=\"7-9-Immunization-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-immunization.html\">CH VACD Immunization</a></p></div><p><b>Author of the content</b>: <a href=\"PractitionerRole-6-5-PractitionerRole.html\">PractitionerRole</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href=\"http://snomed.info/id/59156000\">SNOMED CT 59156000</a>: Confirmed</p><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.147.1.3.1</code>/34567</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs 637}\">Boostrix</span></p><p><b>patient</b>: <a href=\"Patient-3-2-Patient.html\">Monika Wegmueller  Female, DoB: 1967-03-10 ( Medical record number)</a></p><p><b>occurrence</b>: 2015-11-01 00:00:00+0100</p><p><b>recorded</b>: 2015-11-01 00:00:00+0100</p><p><b>lotNumber</b>: 12345</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-6-5-PractitionerRole.html\">PractitionerRole</a></td></tr></table><p><b>reasonCode</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode IMMUNIZ}\">Immunization</span></p><blockquote><p><b>protocolApplied</b></p><p><b>targetDisease</b>: <span title=\"Codes:{http://snomed.info/sct 397430003}\">Diphtheria caused by Corynebacterium diphtheriae (disorder)</span>, <span title=\"Codes:{http://snomed.info/sct 76902006}\">Tetanus (disorder)</span>, <span title=\"Codes:{http://snomed.info/sct 27836007}\">Pertussis (disorder)</span></p><p><b>doseNumber</b>: 1</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-5-PractitionerRole> ;
+       fhir:reference [ fhir:v "PractitionerRole/6-5-PractitionerRole" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding, sct:59156000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "59156000" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.147.1.3.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "34567" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "637" ] ;
+       fhir:display [ fhir:v "Boostrix" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/3-2-Patient> ;
+     fhir:reference [ fhir:v "Patient/3-2-Patient" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2015-11-01T00:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:recorded [ fhir:v "2015-11-01T00:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:lotNumber [ fhir:v "12345"] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-5-PractitionerRole> ;
+       fhir:reference [ fhir:v "PractitionerRole/6-5-PractitionerRole" ]
+     ]
+  ] ) ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IMMUNIZ" ] ;
+       fhir:display [ fhir:v "Immunization" ]
+     ] )
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:targetDisease ( [
+       fhir:coding ( [
+         a sct:397430003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "397430003" ] ;
+         fhir:display [ fhir:v "Diphtheria caused by Corynebacterium diphtheriae (disorder)" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         a sct:76902006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "76902006" ] ;
+         fhir:display [ fhir:v "Tetanus (disorder)" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         a sct:27836007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "27836007" ] ;
+         fhir:display [ fhir:v "Pertussis (disorder)" ]
+       ] )
+     ] ) ;
+     fhir:doseNumber [
+       a fhir:positiveInt ;
+       fhir:v "1"^^xsd:positiveInteger
+     ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Immunization/7-10-Immunization> a fhir:Immunization ;
+  fhir:id [ fhir:v "7-10-Immunization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_7-10-Immunization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization 7-10-Immunization</b></p><a name=\"7-10-Immunization\"> </a><a name=\"hc7-10-Immunization\"> </a><a name=\"7-10-Immunization-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-immunization.html\">CH VACD Immunization</a></p></div><p><b>Author of the content</b>: <a href=\"PractitionerRole-6-6-PractitionerRole.html\">PractitionerRole</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href=\"http://snomed.info/id/59156000\">SNOMED CT 59156000</a>: Confirmed</p><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.147.1.3.1</code>/45678</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs 268}\">MMR-II</span></p><p><b>patient</b>: <a href=\"Patient-3-2-Patient.html\">Monika Wegmueller  Female, DoB: 1967-03-10 ( Medical record number)</a></p><p><b>occurrence</b>: 2016-03-05 00:00:00+0100</p><p><b>recorded</b>: 2016-03-05 00:00:00+0100</p><p><b>lotNumber</b>: 12345</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-6-6-PractitionerRole.html\">PractitionerRole</a></td></tr></table><p><b>reasonCode</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode IMMUNIZ}\">Immunization</span></p><blockquote><p><b>protocolApplied</b></p><p><b>targetDisease</b>: <span title=\"Codes:{http://snomed.info/sct 14189004}\">Measles (disorder)</span>, <span title=\"Codes:{http://snomed.info/sct 36989005}\">Mumps (disorder)</span>, <span title=\"Codes:{http://snomed.info/sct 36653000}\">Rubella (disorder)</span></p><p><b>doseNumber</b>: 1</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-6-PractitionerRole> ;
+       fhir:reference [ fhir:v "PractitionerRole/6-6-PractitionerRole" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding, sct:59156000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "59156000" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.147.1.3.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "45678" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "268" ] ;
+       fhir:display [ fhir:v "MMR-II" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/3-2-Patient> ;
+     fhir:reference [ fhir:v "Patient/3-2-Patient" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2016-03-05T00:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:recorded [ fhir:v "2016-03-05T00:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:lotNumber [ fhir:v "12345"] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-6-PractitionerRole> ;
+       fhir:reference [ fhir:v "PractitionerRole/6-6-PractitionerRole" ]
+     ]
+  ] ) ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IMMUNIZ" ] ;
+       fhir:display [ fhir:v "Immunization" ]
+     ] )
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:targetDisease ( [
+       fhir:coding ( [
+         a sct:14189004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "14189004" ] ;
+         fhir:display [ fhir:v "Measles (disorder)" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         a sct:36989005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "36989005" ] ;
+         fhir:display [ fhir:v "Mumps (disorder)" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         a sct:36653000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "36653000" ] ;
+         fhir:display [ fhir:v "Rubella (disorder)" ]
+       ] )
+     ] ) ;
+     fhir:doseNumber [
+       a fhir:positiveInt ;
+       fhir:v "1"^^xsd:positiveInteger
+     ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Immunization/7-11-Immunization> a fhir:Immunization ;
+  fhir:id [ fhir:v "7-11-Immunization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_7-11-Immunization\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization 7-11-Immunization</b></p><a name=\"7-11-Immunization\"> </a><a name=\"hc7-11-Immunization\"> </a><a name=\"7-11-Immunization-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-immunization.html\">CH VACD Immunization</a></p></div><p><b>Author of the content</b>: <a href=\"PractitionerRole-6-6-PractitionerRole.html\">PractitionerRole</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href=\"http://snomed.info/id/59156000\">SNOMED CT 59156000</a>: Confirmed</p><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.147.1.3.1</code>/12312</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs 545}\">HBVAXPRO 40</span></p><p><b>patient</b>: <a href=\"Patient-3-2-Patient.html\">Monika Wegmueller  Female, DoB: 1967-03-10 ( Medical record number)</a></p><p><b>occurrence</b>: 2012-02-26 00:00:00+0100</p><p><b>recorded</b>: 2012-02-26 00:00:00+0100</p><p><b>lotNumber</b>: 12345</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-6-6-PractitionerRole.html\">PractitionerRole</a></td></tr></table><p><b>reasonCode</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode IMMUNIZ}\">Immunization</span></p><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 66071002}\">Viral hepatitis type B (disorder)</span></td><td>1</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-6-PractitionerRole> ;
+       fhir:reference [ fhir:v "PractitionerRole/6-6-PractitionerRole" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding, sct:59156000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "59156000" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.147.1.3.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12312" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "545" ] ;
+       fhir:display [ fhir:v "HBVAXPRO 40" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/3-2-Patient> ;
+     fhir:reference [ fhir:v "Patient/3-2-Patient" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2012-02-26T00:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:recorded [ fhir:v "2012-02-26T00:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:lotNumber [ fhir:v "12345"] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-6-PractitionerRole> ;
+       fhir:reference [ fhir:v "PractitionerRole/6-6-PractitionerRole" ]
+     ]
+  ] ) ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IMMUNIZ" ] ;
+       fhir:display [ fhir:v "Immunization" ]
+     ] )
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:targetDisease ( [
+       fhir:coding ( [
+         a sct:66071002 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "66071002" ] ;
+         fhir:display [ fhir:v "Viral hepatitis type B (disorder)" ]
+       ] )
+     ] ) ;
+     fhir:doseNumber [
+       a fhir:positiveInt ;
+       fhir:v "1"^^xsd:positiveInteger
+     ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Condition/8-6-Condition> a fhir:Condition ;
+  fhir:id [ fhir:v "8-6-Condition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medical-problems"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medical-problems>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_8-6-Condition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition 8-6-Condition</b></p><a name=\"8-6-Condition\"> </a><a name=\"hc8-6-Condition\"> </a><a name=\"8-6-Condition-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-medical-problems.html\">CH VACD Medical Problems</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.3.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:634c70b8-6a73-4a06-8858-0a6ad0f2f5c9</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 235856003}\">Disorder of liver (disorder)</span></p><p><b>subject</b>: <a href=\"Patient-3-2-Patient.html\">Monika Wegmueller  Female, DoB: 1967-03-10 ( Medical record number)</a></p><p><b>recordedDate</b>: 2019-04-01 00:00:00+0200</p><p><b>recorder</b>: <a href=\"PractitionerRole-6-4-PractitionerRole.html\">PractitionerRole</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:634c70b8-6a73-4a06-8858-0a6ad0f2f5c9" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "problem-list-item" ] ;
+       fhir:display [ fhir:v "Problem List Item" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:235856003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "235856003" ] ;
+       fhir:display [ fhir:v "Disorder of liver (disorder)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/3-2-Patient> ;
+     fhir:reference [ fhir:v "Patient/3-2-Patient" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2019-04-01T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:recorder [
+     fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-4-PractitionerRole> ;
+     fhir:reference [ fhir:v "PractitionerRole/6-4-PractitionerRole" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/Condition/8-7-Condition> a fhir:Condition ;
+  fhir:id [ fhir:v "8-7-Condition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medical-problems"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medical-problems>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_8-7-Condition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition 8-7-Condition</b></p><a name=\"8-7-Condition\"> </a><a name=\"hc8-7-Condition\"> </a><a name=\"8-7-Condition-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-medical-problems.html\">CH VACD Medical Problems</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.3.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:36d1ebae-564e-4c2a-8af6-c1224c3d9e77</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 265940000}\">Animal health occupation (occupation)</span></p><p><b>subject</b>: <a href=\"Patient-3-2-Patient.html\">Monika Wegmueller  Female, DoB: 1967-03-10 ( Medical record number)</a></p><p><b>recordedDate</b>: 2009-04-01 00:00:00+0200</p><p><b>recorder</b>: <a href=\"PractitionerRole-6-4-PractitionerRole.html\">PractitionerRole</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:36d1ebae-564e-4c2a-8af6-c1224c3d9e77" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ] ;
+       fhir:display [ fhir:v "Active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "problem-list-item" ] ;
+       fhir:display [ fhir:v "Problem List Item" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:265940000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "265940000" ] ;
+       fhir:display [ fhir:v "Animal health occupation (occupation)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/3-2-Patient> ;
+     fhir:reference [ fhir:v "Patient/3-2-Patient" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2009-04-01T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:recorder [
+     fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-4-PractitionerRole> ;
+     fhir:reference [ fhir:v "PractitionerRole/6-4-PractitionerRole" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/Condition/8-8-Condition> a fhir:Condition ;
+  fhir:id [ fhir:v "8-8-Condition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-pastillnesses"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-pastillnesses>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_8-8-Condition\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition 8-8-Condition</b></p><a name=\"8-8-Condition\"> </a><a name=\"hc8-8-Condition\"> </a><a name=\"8-8-Condition-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-pastillnesses.html\">CH VACD Past Illness</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.3.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:a8831ab5-37f5-4273-a127-4c5da6daa5ed</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\">Resolved</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 14189004}\">Measles (disorder)</span></p><p><b>subject</b>: <a href=\"Patient-3-2-Patient.html\">Monika Wegmueller  Female, DoB: 1967-03-10 ( Medical record number)</a></p><p><b>onset</b>: 1966-11-30 00:00:00+0100</p><p><b>recordedDate</b>: 1999-04-01 00:00:00+0200</p><p><b>recorder</b>: <a href=\"PractitionerRole-6-4-PractitionerRole.html\">PractitionerRole</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:a8831ab5-37f5-4273-a127-4c5da6daa5ed" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "resolved" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:14189004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "14189004" ] ;
+       fhir:display [ fhir:v "Measles (disorder)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/3-2-Patient> ;
+     fhir:reference [ fhir:v "Patient/3-2-Patient" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:dateTime ;
+     fhir:v "1966-11-30T00:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:recordedDate [ fhir:v "1999-04-01T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:recorder [
+     fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-4-PractitionerRole> ;
+     fhir:reference [ fhir:v "PractitionerRole/6-4-PractitionerRole" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/AllergyIntolerance/11-3-AllergyIntolerance> a fhir:AllergyIntolerance ;
+  fhir:id [ fhir:v "11-3-AllergyIntolerance"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-allergyintolerances"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-allergyintolerances>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AllergyIntolerance_11-3-AllergyIntolerance\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance 11-3-AllergyIntolerance</b></p><a name=\"11-3-AllergyIntolerance\"> </a><a name=\"hc11-3-AllergyIntolerance\"> </a><a name=\"11-3-AllergyIntolerance-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-allergyintolerances.html\">CH VACD AllergyIntolerance</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.3.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:c6ebe781-e4b3-451e-82cf-ee68aa61904d</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 213020009}\">Allergy to egg protein (finding)</span></p><p><b>patient</b>: <a href=\"Patient-3-2-Patient.html\">Monika Wegmueller  Female, DoB: 1967-03-10 ( Medical record number)</a></p><p><b>recordedDate</b>: 2004-07-11 00:00:00+0200</p><p><b>recorder</b>: <a href=\"PractitionerRole-6-4-PractitionerRole.html\">PractitionerRole</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:c6ebe781-e4b3-451e-82cf-ee68aa61904d" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:213020009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "213020009" ] ;
+       fhir:display [ fhir:v "Allergy to egg protein (finding)" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/3-2-Patient> ;
+     fhir:reference [ fhir:v "Patient/3-2-Patient" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2004-07-11T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:recorder [
+     fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-4-PractitionerRole> ;
+     fhir:reference [ fhir:v "PractitionerRole/6-4-PractitionerRole" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/AllergyIntolerance/11-4-AllergyIntolerance> a fhir:AllergyIntolerance ;
+  fhir:id [ fhir:v "11-4-AllergyIntolerance"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-allergyintolerances"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-allergyintolerances>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"AllergyIntolerance_11-4-AllergyIntolerance\"> </a><p class=\"res-header-id\"><b>Generated Narrative: AllergyIntolerance 11-4-AllergyIntolerance</b></p><a name=\"11-4-AllergyIntolerance\"> </a><a name=\"hc11-4-AllergyIntolerance\"> </a><a name=\"11-4-AllergyIntolerance-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-allergyintolerances.html\">CH VACD AllergyIntolerance</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.3.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:36b26038-a43e-4319-9c2e-0fdad5b8f06e</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 24079001}\">Atopic dermatitis (disorder)</span></p><p><b>patient</b>: <a href=\"Patient-3-2-Patient.html\">Monika Wegmueller  Female, DoB: 1967-03-10 ( Medical record number)</a></p><p><b>recordedDate</b>: 1996-07-11 00:00:00+0200</p><p><b>recorder</b>: <a href=\"PractitionerRole-6-4-PractitionerRole.html\">PractitionerRole</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:36b26038-a43e-4319-9c2e-0fdad5b8f06e" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:24079001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "24079001" ] ;
+       fhir:display [ fhir:v "Atopic dermatitis (disorder)" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/3-2-Patient> ;
+     fhir:reference [ fhir:v "Patient/3-2-Patient" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "1996-07-11T00:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:recorder [
+     fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-4-PractitionerRole> ;
+     fhir:reference [ fhir:v "PractitionerRole/6-4-PractitionerRole" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/Observation/9-2-Observation> a fhir:Observation ;
+  fhir:id [ fhir:v "9-2-Observation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-laboratory-serology"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-laboratory-serology>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_9-2-Observation\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation 9-2-Observation</b></p><a name=\"9-2-Observation\"> </a><a name=\"hc9-2-Observation\"> </a><a name=\"9-2-Observation-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-laboratory-serology.html\">CH VACD Laboratory And Serology</a></p></div><p><b>Author of the content</b>: <a href=\"PractitionerRole-6-4-PractitionerRole.html\">PractitionerRole</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href=\"http://snomed.info/id/59156000\">SNOMED CT 59156000</a>: Confirmed</p><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.3.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:2c4d07e4-d978-4a1f-88de-440920f4913f</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 16935-9}\">Hepatitis B virus surface Ab [Units/volume] in Serum</span></p><p><b>subject</b>: <a href=\"Patient-3-2-Patient.html\">Monika Wegmueller  Female, DoB: 1967-03-10 ( Medical record number)</a></p><p><b>effective</b>: 1971-10</p><p><b>performer</b>: <a href=\"PractitionerRole-6-4-PractitionerRole.html\">PractitionerRole</a></p><p><b>value</b>: 99 [iU]/L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code[iU]/L = '[iU]/L')</span></p><p><b>interpretation</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation POS}\">Positive</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-4-PractitionerRole> ;
+       fhir:reference [ fhir:v "PractitionerRole/6-4-PractitionerRole" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding, sct:59156000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "59156000" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:2c4d07e4-d978-4a1f-88de-440920f4913f" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:16935-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "16935-9" ] ;
+       fhir:display [ fhir:v "Hepatitis B virus surface Ab [Units/volume] in Serum" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/3-2-Patient> ;
+     fhir:reference [ fhir:v "Patient/3-2-Patient" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "1971-10"^^xsd:gYearMonth
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-4-PractitionerRole> ;
+     fhir:reference [ fhir:v "PractitionerRole/6-4-PractitionerRole" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "99"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "[iU]/L" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "[iU]/L" ]
+  ] ; # 
+  fhir:interpretation ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "POS" ] ;
+       fhir:display [ fhir:v "Positive" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

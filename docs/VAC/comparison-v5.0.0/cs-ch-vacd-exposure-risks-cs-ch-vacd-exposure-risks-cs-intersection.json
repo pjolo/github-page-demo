@@ -1,0 +1,39 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "83b40197-8873-4b2e-a9fd-813f4a7e06b6-12",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/83b40197-8873-4b2e-a9fd-813f4a7e06b6-12",
+  "name" : "IntersectionSwissExposureRisksCodesystemAndSwissExposureRisksCodesystem",
+  "title" : "Intersection of Swiss Exposure Risks Codesystem And Swiss Exposure Risks Codesystem",
+  "status" : "active",
+  "date" : "2025-05-07T07:31:19+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CHE"
+    }]
+  }],
+  "concept" : [{
+    "code" : "100002",
+    "display" : "Social workers, prison staff, police with frequent contact with drug users",
+    "designation" : [{
+      "language" : "de-CH",
+      "value" : "Sozialarbeiter, Gefängnispersonal, Polizei mit häufigem Kontakt zu Drogenkonsumenten"
+    },
+    {
+      "language" : "fr-CH",
+      "value" : "Travailleurs sociaux, personnel des prisons et de la police en contact fréquent avec des consommateurs de drogues"
+    },
+    {
+      "language" : "it-CH",
+      "value" : "Social workers, prison staff, police with frequent contact with drug users"
+    },
+    {
+      "language" : "rm-CH",
+      "value" : "Social workers, prison staff, police with frequent contact with drug users"
+    },
+    {
+      "language" : "en-US",
+      "value" : "Social workers, prison staff, police with frequent contact with drug users"
+    }]
+  }]
+}

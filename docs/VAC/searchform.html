@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Search Implementation Guide CH VACD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        #main {
+            max-width: 728px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin: 1em 0 0.4em 0;
+            font-size: 22.4px;
+            font-weight: 500;
+            border-bottom: 1px solid #dcdcdc;
+        }
+
+        /* search */
+        .input_wrapper {
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid #bebebe;
+            height: 30px;
+            padding: 10px 20px;
+            border-radius: 999px;
+            width: 75vw;
+            margin: 4em auto 0;
+            max-width: 560px;
+        }
+
+        svg {
+            fill: #49484d;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px 20px;
+            border: none;
+            outline: none;
+            font-size: 1.2em;
+        }
+
+        .button_wrapper {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            background-color: #f8f8f8;
+            outline: none;
+            border: 1px solid #bebebe;
+            border-radius: 999px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: #f8f8f8;
+            border: 1px solid #49484d;
+            transition: background-color 1s;
+        }
+
+        button img {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+            vertical-align: text-bottom;
+        }
+
+        p {
+            font-size: 14px;
+            color: #535353;
+            margin-top: 4em;
+        }
+    </style>
+</head>
+<body>
+
+<div id="main">
+    <h2>Search Implementation Guide CH VACD</h2>
+
+    <form method="get" id="searchForm">
+        <div class="input_wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                <path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/>
+            </svg>
+            <input type="text" name="q" placeholder="Search Implementation Guide CH VACD"/>
+        </div>
+
+        <div class="button_wrapper">
+            <button type="submit" name="sitesearch" value="file://C:\Users\Patrick\Documents\GitHub\ch-vacd-master\output"
+                    formaction="https://www.google.com/search">
+                <img src="https://icons.duckduckgo.com/ip3/www.google.com.ico" alt="Icon"/> Google
+            </button>
+            <button type="submit" name="sites" value="file://C:\Users\Patrick\Documents\GitHub\ch-vacd-master\output"
+                    formaction="https://duckduckgo.com">
+                <img src="https://icons.duckduckgo.com/ip3/duckduckgo.com.ico" alt="Icon"/> DuckDuckGo
+            </button>
+            <button type="submit" name="siteParameterToUpdate" value="site"
+                    formaction="https://www.bing.com/search">
+                <img src="https://icons.duckduckgo.com/ip3/www.bing.com.ico" alt="Icon"/> Bing
+            </button>
+            <button type="submit" name="siteParameterToUpdate" value="site"
+                    formaction="https://www.qwant.com/">
+                <img src="https://icons.duckduckgo.com/ip3/www.qwant.com.ico" alt="Icon"/> Qwant
+            </button>
+            <button type="submit" name="siteParameterToUpdate" value="site"
+                    formaction="https://search.brave.com/search">
+                <img src="https://icons.duckduckgo.com/ip3/search.brave.com.ico" alt="Icon"/> Brave
+            </button>
+        </div>
+    </form>
+
+    <p>
+        Note: this search searches the current build of Implementation Guide CH VACD (file://C:\Users\Patrick\Documents\GitHub\ch-vacd-master\output).
+    </p>
+</div>
+<script type="text/javascript" src="assets/js/searchform.js"> </script>
+
+</body>
+</html>

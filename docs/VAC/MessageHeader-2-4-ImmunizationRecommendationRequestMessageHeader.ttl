@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/MessageHeader/2-4-ImmunizationRecommendationRequestMessageHeader> a fhir:MessageHeader ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "2-4-ImmunizationRecommendationRequestMessageHeader"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2021-06-01T00:00:00.394+02:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-recommendation-request-messageheader"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-recommendation-request-messageheader>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MessageHeader 2-4-ImmunizationRecommendationRequestMessageHeader</b></p><a name=\"2-4-ImmunizationRecommendationRequestMessageHeader\"> </a><a name=\"hc2-4-ImmunizationRecommendationRequestMessageHeader\"> </a><a name=\"2-4-ImmunizationRecommendationRequestMessageHeader-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-06-01 00:00:00+0200</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-recommendation-request-messageheader.html\">CH VACD Immunization Recommendation Request MessageHeader</a></p></div><p><b>event</b>: <a href=\"CodeSystem-ch-vacd-clinical-decision-support-event-cs.html#ch-vacd-clinical-decision-support-event-cs-immunrecorequest\">CDS Event immunrecorequest</a>: Immunization Recommendation Request</p><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Endpoint</b></td><td><b>Receiver</b></td></tr><tr><td style=\"display: none\">*</td><td>Example Vaccination Clinical Decision Support System</td><td><a href=\"https://example.com/cds/immunization/ws\">https://example.com/cds/immunization/ws</a></td><td><a href=\"Organization-CDSS-Organization.html\">Organization Immunization CDS Service</a></td></tr></table><p><b>sender</b>: <a href=\"PractitionerRole-6-4-PractitionerRole.html\">PractitionerRole</a></p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Software</b></td><td><b>Version</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>Example Portal EPR</td><td>EPR-Portal-VacModule</td><td>V1.1</td><td>urn:oid:1.2.3.4.5</td></tr></table><p><b>responsible</b>: <a href=\"PractitionerRole-6-4-PractitionerRole.html\">PractitionerRole</a></p><p><b>reason</b>: <span title=\"Codes:{http://snomed.info/sct 830152006}\">Recommendation regarding vaccination (procedure)</span></p><p><b>focus</b>: </p><ul><li><a href=\"Immunization-7-7-Immunization.html\">Immunization: extension = -&gt;PractitionerRole,Confirmed (SNOMED CT#59156000); identifier = urn:oid:2.16.756.5.30.1.147.1.3.1#12345; status = completed; vaccineCode = Boostrix; occurrence[x] = 2013-09-15 00:00:00+0200; recorded = 2013-09-15 00:00:00+0200; lotNumber = 12345; reasonCode = Immunization</a></li><li><a href=\"Immunization-7-8-Immunization.html\">Immunization: extension = -&gt;PractitionerRole,Confirmed (SNOMED CT#59156000); identifier = urn:oid:2.16.756.5.30.1.147.1.3.1#23456; status = completed; vaccineCode = Boostrix; occurrence[x] = 2014-08-12 00:00:00+0200; recorded = 2014-08-12 00:00:00+0200; lotNumber = 12345; reasonCode = Immunization</a></li><li><a href=\"Immunization-7-9-Immunization.html\">Immunization: extension = -&gt;PractitionerRole,Confirmed (SNOMED CT#59156000); identifier = urn:oid:2.16.756.5.30.1.147.1.3.1#34567; status = completed; vaccineCode = Boostrix; occurrence[x] = 2015-11-01 00:00:00+0100; recorded = 2015-11-01 00:00:00+0100; lotNumber = 12345; reasonCode = Immunization</a></li><li><a href=\"Immunization-7-10-Immunization.html\">Immunization: extension = -&gt;PractitionerRole,Confirmed (SNOMED CT#59156000); identifier = urn:oid:2.16.756.5.30.1.147.1.3.1#45678; status = completed; vaccineCode = MMR-II; occurrence[x] = 2016-03-05 00:00:00+0100; recorded = 2016-03-05 00:00:00+0100; lotNumber = 12345; reasonCode = Immunization</a></li><li><a href=\"Immunization-7-11-Immunization.html\">Immunization: extension = -&gt;PractitionerRole,Confirmed (SNOMED CT#59156000); identifier = urn:oid:2.16.756.5.30.1.147.1.3.1#12312; status = completed; vaccineCode = HBVAXPRO 40; occurrence[x] = 2012-02-26 00:00:00+0100; recorded = 2012-02-26 00:00:00+0100; lotNumber = 12345; reasonCode = Immunization</a></li><li><a href=\"Condition-8-6-Condition.html\">Condition Disorder of liver (disorder)</a></li><li><a href=\"Condition-8-7-Condition.html\">Condition Animal health occupation (occupation)</a></li><li><a href=\"Condition-8-8-Condition.html\">Condition Measles (disorder)</a></li><li><a href=\"AllergyIntolerance-11-3-AllergyIntolerance.html\">AllergyIntolerance Allergy to egg protein (finding)</a></li><li><a href=\"AllergyIntolerance-11-4-AllergyIntolerance.html\">AllergyIntolerance Atopic dermatitis (disorder)</a></li><li><a href=\"Observation-9-2-Observation.html\">Observation Hepatitis B virus surface Ab [Units/volume] in Serum</a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:event [
+     a fhir:Coding ;
+     fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-clinical-decision-support-event-cs"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "immunrecorequest" ] ;
+     fhir:display [ fhir:v "Immunization Recommendation Request" ]
+  ] ; # 
+  fhir:destination ( [
+     fhir:name [ fhir:v "Example Vaccination Clinical Decision Support System" ] ;
+     fhir:endpoint [ fhir:v "https://example.com/cds/immunization/ws"^^xsd:anyURI ] ;
+     fhir:receiver [
+       fhir:link <http://fhir.ch/ig/ch-vacd/Organization/CDSS-Organization> ;
+       fhir:reference [ fhir:v "Organization/CDSS-Organization" ]
+     ]
+  ] ) ; # 
+  fhir:sender [
+     fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-4-PractitionerRole> ;
+     fhir:reference [ fhir:v "PractitionerRole/6-4-PractitionerRole" ]
+  ] ; # 
+  fhir:source [
+     fhir:name [ fhir:v "Example Portal EPR" ] ;
+     fhir:software [ fhir:v "EPR-Portal-VacModule" ] ;
+     fhir:version [ fhir:v "V1.1" ] ;
+     fhir:endpoint [ fhir:v "urn:oid:1.2.3.4.5"^^xsd:anyURI ]
+  ] ; # 
+  fhir:responsible [
+     fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-4-PractitionerRole> ;
+     fhir:reference [ fhir:v "PractitionerRole/6-4-PractitionerRole" ]
+  ] ; # 
+  fhir:reason [
+     fhir:coding ( [
+       a sct:830152006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "830152006" ] ;
+       fhir:display [ fhir:v "Recommendation regarding vaccination (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/7-7-Immunization> ;
+     fhir:reference [ fhir:v "Immunization/7-7-Immunization" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/7-8-Immunization> ;
+     fhir:reference [ fhir:v "Immunization/7-8-Immunization" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/7-9-Immunization> ;
+     fhir:reference [ fhir:v "Immunization/7-9-Immunization" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/7-10-Immunization> ;
+     fhir:reference [ fhir:v "Immunization/7-10-Immunization" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/7-11-Immunization> ;
+     fhir:reference [ fhir:v "Immunization/7-11-Immunization" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Condition/8-6-Condition> ;
+     fhir:reference [ fhir:v "Condition/8-6-Condition" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Condition/8-7-Condition> ;
+     fhir:reference [ fhir:v "Condition/8-7-Condition" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Condition/8-8-Condition> ;
+     fhir:reference [ fhir:v "Condition/8-8-Condition" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/AllergyIntolerance/11-3-AllergyIntolerance> ;
+     fhir:reference [ fhir:v "AllergyIntolerance/11-3-AllergyIntolerance" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/AllergyIntolerance/11-4-AllergyIntolerance> ;
+     fhir:reference [ fhir:v "AllergyIntolerance/11-4-AllergyIntolerance" ]
+  ] [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Observation/9-2-Observation> ;
+     fhir:reference [ fhir:v "Observation/9-2-Observation" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

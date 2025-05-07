@@ -1,0 +1,72 @@
+{
+  "resourceType" : "Immunization",
+  "id" : "TCE01-IMMUN1-fr",
+  "meta" : {
+    "profile" : ["http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization"]
+  },
+  "language" : "fr-CH",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr-CH\" lang=\"fr-CH\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization TCE01-IMMUN1-fr</b></p><a name=\"TCE01-IMMUN1-fr\"> </a><a name=\"hcTCE01-IMMUN1-fr\"> </a><a name=\"TCE01-IMMUN1-fr-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: fr-CH</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-immunization.html\">CH VACD Immunization</a></p></div><p><b>Author of the content</b>: <a href=\"PractitionerRole-TC-HCP1-ORG1-ROLE-author.html\">PractitionerRole</a></p><p><b>CH VACD Extension Immunization Medication Reference</b>: <a href=\"Medication-TC-IMMUN-MEDIC-FSMEIMMCC.html\">Medication FSME-IMMUN CC Inj Susp sep Nadel</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href=\"http://snomed.info/id/59156000\">SNOMED CT 59156000</a>: confirmé</p><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/urn:uuid:4386ca26-6866-4322-a203-b488b84ab499</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs 450}\">FSME-Immun CC</span></p><p><b>patient</b>: <a href=\"Patient-TC-patient.html\">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>occurrence</b>: 2021-06-22</p><p><b>recorded</b>: 2021-06-22 11:00:00+0200</p><p><b>lotNumber</b>: 12-34244</p><p><b>route</b>: <span title=\"Codes:{http://standardterms.edqm.eu 20035000}\">Intramuscular use</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-TC-HCP1-ORG1-ROLE-performer.html\">PractitionerRole</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 712986001}\">encéphalite à tiques</span></td><td>1</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author",
+    "valueReference" : {
+      "reference" : "PractitionerRole/TC-HCP1-ORG1-ROLE-author"
+    }
+  },
+  {
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-immunization-medication-reference",
+    "valueReference" : {
+      "reference" : "Medication/TC-IMMUN-MEDIC-FSMEIMMCC"
+    }
+  },
+  {
+    "url" : "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status",
+    "valueCoding" : {
+      "system" : "http://snomed.info/sct",
+      "code" : "59156000",
+      "display" : "confirmé"
+    }
+  }],
+  "identifier" : [{
+    "system" : "urn:oid:2.16.756.5.30.1.402.1.3.1.1.1",
+    "value" : "urn:uuid:4386ca26-6866-4322-a203-b488b84ab499"
+  }],
+  "status" : "completed",
+  "vaccineCode" : {
+    "coding" : [{
+      "system" : "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs",
+      "code" : "450",
+      "display" : "FSME-Immun CC"
+    }]
+  },
+  "patient" : {
+    "reference" : "Patient/TC-patient"
+  },
+  "occurrenceDateTime" : "2021-06-22",
+  "recorded" : "2021-06-22T11:00:00.390+02:00",
+  "lotNumber" : "12-34244",
+  "route" : {
+    "coding" : [{
+      "system" : "http://standardterms.edqm.eu",
+      "code" : "20035000",
+      "display" : "Intramuscular use"
+    }]
+  },
+  "performer" : [{
+    "actor" : {
+      "reference" : "PractitionerRole/TC-HCP1-ORG1-ROLE-performer"
+    }
+  }],
+  "protocolApplied" : [{
+    "targetDisease" : [{
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "712986001",
+        "display" : "encéphalite à tiques"
+      }]
+    }],
+    "doseNumberPositiveInt" : 1
+  }]
+}

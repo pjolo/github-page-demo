@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/Location/TC-Device-Aggregator-Location> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TC-Device-Aggregator-Location"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location TC-Device-Aggregator-Location</b></p><a name=\"TC-Device-Aggregator-Location\"> </a><a name=\"hcTC-Device-Aggregator-Location\"> </a><a name=\"TC-Device-Aggregator-Location-en-US\"> </a><p><b>status</b>: Active</p><p><b>telecom</b>: ph: tel:+41.56.299.55.22(Work), <a href=\"mailto:mailto:resultate@labor-messenalles.ch\">mailto:resultate@labor-messenalles.ch</a>, <a href=\"http://www.labor-messenalles.ch\">http://www.labor-messenalles.ch</a></p><p><b>address</b>: Messweg 1 Wissen ZG 6310 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "tel:+41.56.299.55.22" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mailto:resultate@labor-messenalles.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "url" ] ;
+     fhir:value [ fhir:v "http://www.labor-messenalles.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address [
+     fhir:line ( [ fhir:v "Messweg 1" ] ) ;
+     fhir:city [ fhir:v "Wissen" ] ;
+     fhir:state [ fhir:v "ZG" ] ;
+     fhir:postalCode [ fhir:v "6310" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

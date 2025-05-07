@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/Immunization/7-4-Immunization> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "7-4-Immunization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization 7-4-Immunization</b></p><a name=\"7-4-Immunization\"> </a><a name=\"hc7-4-Immunization\"> </a><a name=\"7-4-Immunization-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-immunization.html\">CH VACD Immunization</a></p></div><p><b>Author of the content</b>: <a href=\"PractitionerRole-6-2-PractitionerRole.html\">PractitionerRole</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href=\"http://snomed.info/id/59156000\">SNOMED CT 59156000</a>: Confirmed</p><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.147.1.3.1</code>/34567</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs 637}\">Boostrix</span></p><p><b>patient</b>: <a href=\"Patient-3-1-Patient.html\">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>occurrence</b>: 2015-11-01 00:00:00+0100</p><p><b>recorded</b>: 2015-11-01 00:00:00+0100</p><p><b>lotNumber</b>: 12-34244</p><p><b>route</b>: <span title=\"Codes:{http://standardterms.edqm.eu 20035000}\">Intramuscular use</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-6-2-PractitionerRole.html\">PractitionerRole</a></td></tr></table><blockquote><p><b>protocolApplied</b></p><p><b>targetDisease</b>: <span title=\"Codes:{http://snomed.info/sct 397430003}\">Diphtheria caused by Corynebacterium diphtheriae (disorder)</span>, <span title=\"Codes:{http://snomed.info/sct 76902006}\">Tetanus (disorder)</span>, <span title=\"Codes:{http://snomed.info/sct 27836007}\">Pertussis (disorder)</span></p><p><b>doseNumber</b>: 1</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-2-PractitionerRole> ;
+       fhir:reference [ fhir:v "PractitionerRole/6-2-PractitionerRole" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding, sct:59156000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "59156000" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.147.1.3.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "34567" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "637" ] ;
+       fhir:display [ fhir:v "Boostrix" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/3-1-Patient> ;
+     fhir:reference [ fhir:v "Patient/3-1-Patient" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2015-11-01T00:00:00+01:00"^^xsd:dateTime
+  ] ; # 
+  fhir:recorded [ fhir:v "2015-11-01T00:00:00+01:00"^^xsd:dateTime] ; # 
+  fhir:lotNumber [ fhir:v "12-34244"] ; # 
+  fhir:route [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "20035000" ] ;
+       fhir:display [ fhir:v "Intramuscular use" ]
+     ] )
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/6-2-PractitionerRole> ;
+       fhir:reference [ fhir:v "PractitionerRole/6-2-PractitionerRole" ]
+     ]
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:targetDisease ( [
+       fhir:coding ( [
+         a sct:397430003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "397430003" ] ;
+         fhir:display [ fhir:v "Diphtheria caused by Corynebacterium diphtheriae (disorder)" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         a sct:76902006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "76902006" ] ;
+         fhir:display [ fhir:v "Tetanus (disorder)" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         a sct:27836007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "27836007" ] ;
+         fhir:display [ fhir:v "Pertussis (disorder)" ]
+       ] )
+     ] ) ;
+     fhir:doseNumber [
+       a fhir:positiveInt ;
+       fhir:v "1"^^xsd:positiveInteger
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

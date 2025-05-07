@@ -1,0 +1,579 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-medical-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ch-vacd-risks-medical-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ch-vacd-risks-medical-vs</b></p><a name=\"ch-vacd-risks-medical-vs\"> </a><a name=\"hcch-vacd-risks-medical-vs\"> </a><a name=\"ch-vacd-risks-medical-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/373068000\">373068000</a></td><td>Undetermined (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/77386006\">77386006</a></td><td>Pregnancy (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/102947004\">102947004</a></td><td>High risk sexual behavior (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/226034001\">226034001</a></td><td>Injecting drug user (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237016007\">1237016007</a></td><td>At increased risk of exposure to Measles virus (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237017003\">1237017003</a></td><td>At increased risk of exposure to Mumps virus (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237018008\">1237018008</a></td><td>At increased risk of exposure to Rubella virus (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237019000\">1237019000</a></td><td>At increased risk of exposure to Haemophilus influenzae type b (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237020006\">1237020006</a></td><td>At increased risk of exposure to hepatitis B virus (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237021005\">1237021005</a></td><td>At increased risk of exposure to European tick-borne encephalitis virus (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237022003\">1237022003</a></td><td>At increased risk of exposure to human poliovirus (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237023008\">1237023008</a></td><td>At increased risk of exposure to Neisseria meningitidis (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237024002\">1237024002</a></td><td>At increased risk of exposure to rabies virus (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237025001\">1237025001</a></td><td>At increased risk of exposure to Mycobacterium tuberculosis complex (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237026000\">1237026000</a></td><td>At increased risk of exposure to hepatitis A virus (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237027009\">1237027009</a></td><td>At increased risk of exposure to Human alphaherpesvirus 3 (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237028004\">1237028004</a></td><td>At increased risk of exposure to Influenza virus (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237029007\">1237029007</a></td><td>At increased risk of exposure to Streptococcus pneumoniae (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237030002\">1237030002</a></td><td>At increased risk of exposure to Bordetella pertussis (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237443008\">1237443008</a></td><td>Birth weight 1.5 kilogram or less (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1237570003\">1237570003</a></td><td>Maternal history of viral hepatitis B (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/1237576009\">1237576009</a></td><td>Baby premature at delivery less than 32 weeks (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1251534000\">1251534000</a></td><td>Exposure to invasive meningococcal disease (event)</td></tr><tr><td><a href=\"http://snomed.info/id/1254737008\">1254737008</a></td><td>Has contact with infant (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1254738003\">1254738003</a></td><td>In contact with infant younger than 6 months (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1254739006\">1254739006</a></td><td>Has contact with premature infant (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1255625008\">1255625008</a></td><td>Childbirth within last 4 weeks (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/870577009\">870577009</a></td><td>At increased risk of exposure to severe acute respiratory syndrome coronavirus 2 (finding)</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (Schweiz) (German (Switzerland), de)</b></td><td><b>English (United States) (English (United States), en)</b></td><td><b>French (Switzerland) (fr)</b></td><td><b>Italian (Switzerland) (it)</b></td><td><b>rm</b></td></tr><tr><td>373068000</td><td>Nicht bekannt</td><td>Undetermined (qualifier value)</td><td>Indéterminé</td><td>Indeterminato</td><td>Nunenconuschent</td></tr><tr><td>77386006</td><td>Schwangerschaft</td><td>Pregnancy (finding)</td><td>grossesse</td><td>gravidanza</td><td>gravidanza</td></tr><tr><td>102947004</td><td>Risikoreiches Sexualverhalten</td><td>High risk sexual behavior (finding)</td><td>comportement sexuel à risque élevé</td><td>comportamento sessuale ad alto rischio</td><td>cumportament sexual privlus</td></tr><tr><td>226034001</td><td>Konsument / Konsumentin von injizierbaren Drogen</td><td>Injecting drug user (finding)</td><td>consommateurs de drogue par injection</td><td>consumatore di stupefacenti iniettabili</td><td>consumenta u consument da drogas injectablas</td></tr><tr><td>1237016007</td><td>Erhöhtes Expositionsrisiko für Masern</td><td>At increased risk of exposure to Measles virus (finding)</td><td>risque accru d'exposition à la rougeole</td><td>maggiore rischio d'esposizione al morbillo</td><td>pli gronda ristga d'esser expost al virustgel</td></tr><tr><td>1237017003</td><td>Erhöhtes Expositionsrisiko für Mumps</td><td>At increased risk of exposure to Mumps virus (finding)</td><td>risque accru d'exposition aux oreillons</td><td>maggiore rischio d'esposizione agli orecchioni</td><td>pli gronda ristga d'esser expost al glandun</td></tr><tr><td>1237018008</td><td>Erhöhtes Expositionsrisiko für Röteln</td><td>At increased risk of exposure to Rubella virus (finding)</td><td>risque accru d'exposition à la rubéole</td><td>maggiore rischio d'esposizione alla rosolia</td><td>pli gronda ristga d'esser expost la rubella</td></tr><tr><td>1237019000</td><td>Erhöhtes Expositionsrisiko für Haemophilus influenzae Typ b</td><td>At increased risk of exposure to Haemophilus influenzae type b (finding)</td><td>risque accru d'exposition à l'Haemophilus influenzae de type b</td><td>maggiore rischio d'esposizione a Haemophilus influenzae di tipo B</td><td>pli gronda ristga d'esser expost a la hemofilus influenza tip B</td></tr><tr><td>1237020006</td><td>Erhöhtes Expositionsrisiko für Hepatitis B</td><td>At increased risk of exposure to hepatitis B virus (finding)</td><td>risque accru d'exposition à l'hépatite B</td><td>maggiore rischio d'esposizione all'epatite B</td><td>pli gronda ristga d'esser expost a hepatitis B</td></tr><tr><td>1237021005</td><td>Erhöhtes Expositionsrisiko für FSME</td><td>At increased risk of exposure to European tick-borne encephalitis virus (finding)</td><td>risque accru d'exposition à la MEVE</td><td>maggiore rischio d'esposizione all'encefalite da zecche (FSME)</td><td>pli gronda ristga d'esser expost a la meningoencefalitis da zeccas</td></tr><tr><td>1237022003</td><td>Erhöhtes Expositionsrisiko für Poliomyelitis</td><td>At increased risk of exposure to human poliovirus (finding)</td><td>risque accru d'exposition à la poliomyélite</td><td>maggiore rischio d'esposizione alla poliomielite</td><td>pli gronda ristga d'esser expost a la poliomielitis</td></tr><tr><td>1237023008</td><td>Erhöhtes Expositionsrisiko für Meningokokken</td><td>At increased risk of exposure to Neisseria meningitidis (finding)</td><td>risque accru d'exposition aux méningocoques</td><td>maggiore rischio d'esposizione ai meningococchi</td><td>pli gronda ristga d'esser expost a meningococcus</td></tr><tr><td>1237024002</td><td>Erhöhtes Expositionsrisiko für Tollwut</td><td>At increased risk of exposure to rabies virus (finding)</td><td>risque accru d'exposition à la rage</td><td>maggiore rischio d'esposizione alla rabbia</td><td>pli gronda ristga d'esser expost a la frenesia</td></tr><tr><td>1237025001</td><td>Erhöhtes Expositionsrisiko für Tuberkulose</td><td>At increased risk of exposure to Mycobacterium tuberculosis complex (finding)</td><td>risque accru d'exposition à la tuberculose</td><td>maggiore rischio d'esposizione alla tubercolosi</td><td>pli gronda ristga d'esser expost a tuberculosa</td></tr><tr><td>1237026000</td><td>Erhöhtes Expositionsrisiko für Hepatitis A</td><td>At increased risk of exposure to hepatitis A virus (finding)</td><td>risque accru d'exposition à l'hépatite A</td><td>maggiore rischio d'esposizione all'epatite A</td><td>pli gronda ristga d'esser expost a hepatitis A</td></tr><tr><td>1237027009</td><td>Erhöhtes Expositionsrisiko für Varizellen</td><td>At increased risk of exposure to Human alphaherpesvirus 3 (finding)</td><td>risque accru d'exposition à la varicelle</td><td>maggiore rischio d'esposizione alla varicella</td><td>pli gronda ristga d'esser expost a la virola selvadia</td></tr><tr><td>1237028004</td><td>Erhöhtes Expositionsrisiko für Influenza</td><td>At increased risk of exposure to Influenza virus (finding)</td><td>risque accru d'exposition à l'influenza</td><td>maggiore rischio d'esposizione all'influenza</td><td>pli gronda ristga d'esser expost a l'influenza</td></tr><tr><td>1237029007</td><td>Erhöhtes Expositionsrisiko für Pneumokokken</td><td>At increased risk of exposure to Streptococcus pneumoniae (finding)</td><td>risque accru d'exposition aux pneumocoques</td><td>maggiore rischio d'esposizione agli pneumococchi</td><td>pli gronda ristga d'esser expost a pneumococcus</td></tr><tr><td>1237030002</td><td>Erhöhtes Expositionsrisiko für Pertussis</td><td>At increased risk of exposure to Bordetella pertussis (finding)</td><td>risque accru d'exposition à la coqueluche</td><td>maggiore rischio d'esposizione alla pertosse</td><td>pli gronda ristga d'esser expost a la tuss chanina</td></tr><tr><td>1237443008</td><td>Geburtsgewicht 1,5 Kilogramm oder weniger</td><td>Birth weight 1.5 kilogram or less (finding)</td><td>Poids à la naissance 1,5 kilogramme ou moins</td><td>peso alla nascita 1,5 kg o meno</td><td>pais da naschientscha 1,5 kilograms u damain</td></tr><tr><td>1237570003</td><td>Mütterliche Anamnese einer Virushepatitis B</td><td>Maternal history of viral hepatitis B (situation)</td><td>antécédents maternels d'hépatite B</td><td>anamnesi materna di epatite virale B</td><td>anamnesa materna d'ina hepatitis virala B</td></tr><tr><td>1237576009</td><td>Frühgeburt bei einer Geburt von weniger als 32 Wochen</td><td>Baby premature at delivery less than 32 weeks (finding)</td><td>naissance prématurée à moins de 32 semaines</td><td>prematurità: parto prima della 32a settimana</td><td>naschientscha prematura en cas d'ina gravidanza da main che 32 emnas</td></tr><tr><td>1251534000</td><td>Exposition gegenüber invasiver Meningokokkeninfektion</td><td>Exposure to invasive meningococcal disease (event)</td><td>exposition à une infection invasive à méningocoque</td><td>esposizione a infezione invasiva da meningococchi</td><td>expost ad ina infecziun invasiva cun meningococcus</td></tr><tr><td>1254737008</td><td>Kontakt zu Säuglingen</td><td>Has contact with infant (finding)</td><td>contact avec un nourrisson</td><td>contatto con un lattante</td><td>contact cun in poppin</td></tr><tr><td>1254738003</td><td>Kontakt zu Säugling jünger als 6 Monate</td><td>In contact with infant younger than 6 months (finding)</td><td>contact avec un nourrisson de moins de 6 mois</td><td>contatto con un lattante di meno di 6 mesi</td><td>contact cun in poppin da main che 6 mais</td></tr><tr><td>1254739006</td><td>Kontakt zu Frühgeborenen</td><td>Has contact with premature infant (finding)</td><td>contact avec des prématurés</td><td>contatto con un prematuro</td><td>contact cun in uffant naschì permaturamain</td></tr><tr><td>1255625008</td><td>Entbindung in letzten 4 Wochen</td><td>Childbirth within last 4 weeks (finding)</td><td>accouchement au cours des 4 dernières semaines</td><td>parto nelle ultime 4 settimane</td><td>pagliola entaifer las ultimas 4 emnas</td></tr><tr><td>870577009</td><td>Erhöhtes Expositionsrisiko für das schwere akute respiratorische Syndrom Coronavirus 2</td><td>At increased risk of exposure to severe acute respiratory syndrome coronavirus 2</td><td>risque accru d'exposition aux syndromes respiratoires aigus sévères coronavirus 2</td><td>maggiore rischio d'esposizione a sindrome respiratoria acuta grave coronavirus 2</td><td>pli gronda ristga d'esser expost a la situaziun dal grev sindrom respiratoric acut coronavirus 2</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-medical-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "6.0.0-ballot-ci-build"] ; # 
+  fhir:name [ fhir:v "SwissMedicalRisksForImmunizations"] ; # 
+  fhir:title [ fhir:v "Swiss Medical Risks For Immunizations"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-07T07:26:19+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Switzerland"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Switzerland" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7.ch/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The medical risks used in Switzerland."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CHE" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "CC0-1.0"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "373068000" ] ;
+         fhir:display [ fhir:v "Undetermined (qualifier value)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Nicht bekannt" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Indéterminé" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "Indeterminato" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "Nunenconuschent" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Undetermined (qualifier value)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "77386006" ] ;
+         fhir:display [ fhir:v "Pregnancy (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Schwangerschaft" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "grossesse" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "gravidanza" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "gravidanza" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Pregnancy (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "102947004" ] ;
+         fhir:display [ fhir:v "High risk sexual behavior (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Risikoreiches Sexualverhalten" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "comportement sexuel à risque élevé" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "comportamento sessuale ad alto rischio" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "cumportament sexual privlus" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "High risk sexual behavior (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "226034001" ] ;
+         fhir:display [ fhir:v "Injecting drug user (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Konsument / Konsumentin von injizierbaren Drogen" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "consommateurs de drogue par injection" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "consumatore di stupefacenti iniettabili" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "consumenta u consument da drogas injectablas" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Injecting drug user (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237016007" ] ;
+         fhir:display [ fhir:v "At increased risk of exposure to Measles virus (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erhöhtes Expositionsrisiko für Masern" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "risque accru d'exposition à la rougeole" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "maggiore rischio d'esposizione al morbillo" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pli gronda ristga d'esser expost al virustgel" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "At increased risk of exposure to Measles virus (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237017003" ] ;
+         fhir:display [ fhir:v "At increased risk of exposure to Mumps virus (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erhöhtes Expositionsrisiko für Mumps" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "risque accru d'exposition aux oreillons" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "maggiore rischio d'esposizione agli orecchioni" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pli gronda ristga d'esser expost al glandun" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "At increased risk of exposure to Mumps virus (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237018008" ] ;
+         fhir:display [ fhir:v "At increased risk of exposure to Rubella virus (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erhöhtes Expositionsrisiko für Röteln" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "risque accru d'exposition à la rubéole" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "maggiore rischio d'esposizione alla rosolia" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pli gronda ristga d'esser expost la rubella" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "At increased risk of exposure to Rubella virus (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237019000" ] ;
+         fhir:display [ fhir:v "At increased risk of exposure to Haemophilus influenzae type b (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erhöhtes Expositionsrisiko für Haemophilus influenzae Typ b" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "risque accru d'exposition à l'Haemophilus influenzae de type b" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "maggiore rischio d'esposizione a Haemophilus influenzae di tipo B" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pli gronda ristga d'esser expost a la hemofilus influenza tip B" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "At increased risk of exposure to Haemophilus influenzae type b (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237020006" ] ;
+         fhir:display [ fhir:v "At increased risk of exposure to hepatitis B virus (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erhöhtes Expositionsrisiko für Hepatitis B" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "risque accru d'exposition à l'hépatite B" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "maggiore rischio d'esposizione all'epatite B" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pli gronda ristga d'esser expost a hepatitis B" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "At increased risk of exposure to hepatitis B virus (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237021005" ] ;
+         fhir:display [ fhir:v "At increased risk of exposure to European tick-borne encephalitis virus (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erhöhtes Expositionsrisiko für FSME" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "risque accru d'exposition à la MEVE" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "maggiore rischio d'esposizione all'encefalite da zecche (FSME)" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pli gronda ristga d'esser expost a la meningoencefalitis da zeccas" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "At increased risk of exposure to European tick-borne encephalitis virus (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237022003" ] ;
+         fhir:display [ fhir:v "At increased risk of exposure to human poliovirus (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erhöhtes Expositionsrisiko für Poliomyelitis" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "risque accru d'exposition à la poliomyélite" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "maggiore rischio d'esposizione alla poliomielite" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pli gronda ristga d'esser expost a la poliomielitis" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "At increased risk of exposure to human poliovirus (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237023008" ] ;
+         fhir:display [ fhir:v "At increased risk of exposure to Neisseria meningitidis (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erhöhtes Expositionsrisiko für Meningokokken" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "risque accru d'exposition aux méningocoques" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "maggiore rischio d'esposizione ai meningococchi" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pli gronda ristga d'esser expost a meningococcus" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "At increased risk of exposure to Neisseria meningitidis (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237024002" ] ;
+         fhir:display [ fhir:v "At increased risk of exposure to rabies virus (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erhöhtes Expositionsrisiko für Tollwut" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "risque accru d'exposition à la rage" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "maggiore rischio d'esposizione alla rabbia" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pli gronda ristga d'esser expost a la frenesia" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "At increased risk of exposure to rabies virus (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237025001" ] ;
+         fhir:display [ fhir:v "At increased risk of exposure to Mycobacterium tuberculosis complex (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erhöhtes Expositionsrisiko für Tuberkulose" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "risque accru d'exposition à la tuberculose" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "maggiore rischio d'esposizione alla tubercolosi" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pli gronda ristga d'esser expost a tuberculosa" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "At increased risk of exposure to Mycobacterium tuberculosis complex (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237026000" ] ;
+         fhir:display [ fhir:v "At increased risk of exposure to hepatitis A virus (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erhöhtes Expositionsrisiko für Hepatitis A" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "risque accru d'exposition à l'hépatite A" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "maggiore rischio d'esposizione all'epatite A" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pli gronda ristga d'esser expost a hepatitis A" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "At increased risk of exposure to hepatitis A virus (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237027009" ] ;
+         fhir:display [ fhir:v "At increased risk of exposure to Human alphaherpesvirus 3 (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erhöhtes Expositionsrisiko für Varizellen" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "risque accru d'exposition à la varicelle" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "maggiore rischio d'esposizione alla varicella" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pli gronda ristga d'esser expost a la virola selvadia" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "At increased risk of exposure to Human alphaherpesvirus 3 (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237028004" ] ;
+         fhir:display [ fhir:v "At increased risk of exposure to Influenza virus (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erhöhtes Expositionsrisiko für Influenza" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "risque accru d'exposition à l'influenza" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "maggiore rischio d'esposizione all'influenza" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pli gronda ristga d'esser expost a l'influenza" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "At increased risk of exposure to Influenza virus (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237029007" ] ;
+         fhir:display [ fhir:v "At increased risk of exposure to Streptococcus pneumoniae (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erhöhtes Expositionsrisiko für Pneumokokken" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "risque accru d'exposition aux pneumocoques" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "maggiore rischio d'esposizione agli pneumococchi" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pli gronda ristga d'esser expost a pneumococcus" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "At increased risk of exposure to Streptococcus pneumoniae (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237030002" ] ;
+         fhir:display [ fhir:v "At increased risk of exposure to Bordetella pertussis (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erhöhtes Expositionsrisiko für Pertussis" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "risque accru d'exposition à la coqueluche" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "maggiore rischio d'esposizione alla pertosse" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pli gronda ristga d'esser expost a la tuss chanina" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "At increased risk of exposure to Bordetella pertussis (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237443008" ] ;
+         fhir:display [ fhir:v "Birth weight 1.5 kilogram or less (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Geburtsgewicht 1,5 Kilogramm oder weniger" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "Poids à la naissance 1,5 kilogramme ou moins" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "peso alla nascita 1,5 kg o meno" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pais da naschientscha 1,5 kilograms u damain" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Birth weight 1.5 kilogram or less (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237570003" ] ;
+         fhir:display [ fhir:v "Maternal history of viral hepatitis B (situation)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Mütterliche Anamnese einer Virushepatitis B" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "antécédents maternels d'hépatite B" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "anamnesi materna di epatite virale B" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "anamnesa materna d'ina hepatitis virala B" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Maternal history of viral hepatitis B (situation)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1237576009" ] ;
+         fhir:display [ fhir:v "Baby premature at delivery less than 32 weeks (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Frühgeburt bei einer Geburt von weniger als 32 Wochen" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "naissance prématurée à moins de 32 semaines" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "prematurità: parto prima della 32a settimana" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "naschientscha prematura en cas d'ina gravidanza da main che 32 emnas" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Baby premature at delivery less than 32 weeks (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1251534000" ] ;
+         fhir:display [ fhir:v "Exposure to invasive meningococcal disease (event)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Exposition gegenüber invasiver Meningokokkeninfektion" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "exposition à une infection invasive à méningocoque" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "esposizione a infezione invasiva da meningococchi" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "expost ad ina infecziun invasiva cun meningococcus" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Exposure to invasive meningococcal disease (event)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1254737008" ] ;
+         fhir:display [ fhir:v "Has contact with infant (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Kontakt zu Säuglingen" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "contact avec un nourrisson" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "contatto con un lattante" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "contact cun in poppin" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Has contact with infant (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1254738003" ] ;
+         fhir:display [ fhir:v "In contact with infant younger than 6 months (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Kontakt zu Säugling jünger als 6 Monate" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "contact avec un nourrisson de moins de 6 mois" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "contatto con un lattante di meno di 6 mesi" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "contact cun in poppin da main che 6 mais" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "In contact with infant younger than 6 months (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1254739006" ] ;
+         fhir:display [ fhir:v "Has contact with premature infant (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Kontakt zu Frühgeborenen" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "contact avec des prématurés" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "contatto con un prematuro" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "contact cun in uffant naschì permaturamain" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Has contact with premature infant (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1255625008" ] ;
+         fhir:display [ fhir:v "Childbirth within last 4 weeks (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Entbindung in letzten 4 Wochen" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "accouchement au cours des 4 dernières semaines" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "parto nelle ultime 4 settimane" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pagliola entaifer las ultimas 4 emnas" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Childbirth within last 4 weeks (finding)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "870577009" ] ;
+         fhir:display [ fhir:v "At increased risk of exposure to severe acute respiratory syndrome coronavirus 2 (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Erhöhtes Expositionsrisiko für das schwere akute respiratorische Syndrom Coronavirus 2" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "risque accru d'exposition aux syndromes respiratoires aigus sévères coronavirus 2" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "maggiore rischio d'esposizione a sindrome respiratoria acuta grave coronavirus 2" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "pli gronda ristga d'esser expost a la situaziun dal grev sindrom respiratoric acut coronavirus 2" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "At increased risk of exposure to severe acute respiratory syndrome coronavirus 2" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

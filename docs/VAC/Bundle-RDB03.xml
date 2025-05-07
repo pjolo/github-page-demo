@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="RDB03"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-document-vaccination-record"/>
+  </meta>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:f9a26a92-662e-4601-b1ae-183c8f19d3e2"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2021-10-28T14:00:00.390+02:00"/>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/Composition/RDB03-Composition"/>
+    <resource>
+      <Composition>
+        <id value="RDB03-Composition"/>
+        <meta>
+          <profile value="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-composition-vaccination-record"/>
+        </meta>
+        <language value="en-US"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><h3>Vaccination Record</h3><p><b>Id: </b>RDB03-Composition</p><p><b>Identifier: </b><span>urn:ietf:rfc:3986#urn:uuid:f9a26a92-662e-4601-b1ae-183c8f19d3e2</span></p><p><b>Status: </b>Final</p><p><b>Code: </b><span>Immunization record (http://snomed.info/sct#41000179103)</span></p><p><b>Patient: </b><a href="Patient-TC-patient.html">Patient/TC-patient</a> Wegmueller Monika</p><p><b>Date: </b>October 28, 2021</p><p><b>Authors:</b></p><table><tr><td><p><a href="Patient-TC-patient.html">Patient/TC-patient</a> Wegmueller Monika</p></td></tr></table><p><b>Confidentiality: </b>null<span> Normal (qualifier value) (http://snomed.info/sct#17621005)</span></p><p><b>Sections:</b></p><table><tr><td>Immunization Administration</td></tr><tr><td>Medical Problems</td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:f9a26a92-662e-4601-b1ae-183c8f19d3e2"/>
+        </identifier>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="41000179103"/>
+            <display value="Immunization record"/>
+          </coding>
+        </type>
+        <category>
+          <coding>
+            <system value="urn:oid:2.16.756.5.30.1.127.3.10.10"/>
+            <code value="urn:che:epr:ch-vacd:vaccination-record:2022"/>
+          </coding>
+        </category>
+        <subject>
+          <reference value="Patient/TC-patient"/>
+        </subject>
+        <date value="2021-10-28T14:00:00.390+02:00"/>
+        <author>
+          <reference value="Patient/TC-patient"/>
+        </author>
+        <title value="Vaccination Record"/>
+        <confidentiality value="N">
+          <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="17621005"/>
+                <display value="Normal (qualifier value)"/>
+              </coding>
+            </valueCodeableConcept>
+          </extension>
+        </confidentiality>
+        <custodian>
+          <reference value="Organization/TC-ORG1"/>
+        </custodian>
+        <section id="administration">
+          <title value="Immunization Administration"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="11369-6"/>
+              <display value="Hx of Immunization"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Code: </b><span>Hx of Immunization (http://loinc.org#11369-6)</span></p><p><b>Entries:</b></p><table><tr><td><a href="Immunization-TCB01-IMMUN1.html">Immunization/TCB01-IMMUN1</a></td></tr><tr><td><a href="Immunization-TCB01-IMMUN2.html">Immunization/TCB01-IMMUN2</a></td></tr></table></div>
+          </text>
+          <entry>
+            <reference value="Immunization/TCB01-IMMUN1"/>
+          </entry>
+          <entry>
+            <reference value="Immunization/TCB01-IMMUN2"/>
+          </entry>
+        </section>
+        <section id="medicalproblems">
+          <title value="Medical Problems"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="11450-4"/>
+              <display value="Problem list Reported"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><p><b>Code: </b><span>Problem list Reported (http://loinc.org#11450-4)</span></p><p><b>Entries:</b></p><table><tr><td><a href="Condition-TCB03-EXPRISK1.html">Condition/TCB03-EXPRISK1</a></td></tr></table></div>
+          </text>
+          <entry>
+            <reference value="Condition/TCB03-EXPRISK1"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/Patient/TC-patient"/>
+    <resource>
+      <Patient>
+        <id value="TC-patient"/>
+        <meta>
+          <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_TC-patient"> </a><p class="res-header-id"><b>Generated Narrative: Patient TC-patient</b></p><a name="TC-patient"> </a><a name="hcTC-patient"> </a><a name="TC-patient-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-patient-epr.html">CH Core Patient EPR</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li>ph: tel:+41.32.685.12.34(Home)</li><li>Leidensweg 10 Specimendorf 9876 CH </li></ul></td></tr></table></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+            </coding>
+          </type>
+          <system value="urn:oid:1.2.3.4"/>
+          <value value="12345678"/>
+        </identifier>
+        <name>
+          <family value="Wegmueller"/>
+          <given value="Monika"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="tel:+41.32.685.12.34"/>
+          <use value="home"/>
+        </telecom>
+        <gender value="female"/>
+        <birthDate value="1967-02-10"/>
+        <address>
+          <type value="both"/>
+          <line value="Leidensweg 10"/>
+          <city value="Specimendorf"/>
+          <postalCode value="9876"/>
+          <country value="CH"/>
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/Practitioner/TC-HCP1-C1"/>
+    <resource>
+      <Practitioner>
+        <id value="TC-HCP1-C1"/>
+        <meta>
+          <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Practitioner_TC-HCP1-C1"> </a><p class="res-header-id"><b>Generated Narrative: Practitioner TC-HCP1-C1</b></p><a name="TC-HCP1-C1"> </a><a name="hcTC-HCP1-C1"> </a><a name="TC-HCP1-C1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitioner-epr.html">CH Core Practitioner EPR</a></p></div><p><b>identifier</b>: <a href="https://www.gs1.org/standards/id-keys/gln" title="Global Location Number">GLN</a>/7601888888884</p><p><b>active</b>: true</p><p><b>name</b>: Peter Müller </p><p><b>telecom</b>: ph: tel:+41.32.234.55.66(Work), fax: fax:+41.32.234.55.67(Work), <a href="mailto:mailto:allzeit.bereit@gruppenpraxis.ch">mailto:allzeit.bereit@gruppenpraxis.ch</a>, <a href="http://www.gruppenpraxis.ch">http://www.gruppenpraxis.ch</a></p><p><b>address</b>: Grabenstrasse 2 Zürich 8005 CH </p></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:2.51.1.3"/>
+          <value value="7601888888884"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <family value="Müller"/>
+          <given value="Peter"/>
+          <prefix value="Dr. med."/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="tel:+41.32.234.55.66"/>
+          <use value="work"/>
+        </telecom>
+        <telecom>
+          <system value="fax"/>
+          <value value="fax:+41.32.234.55.67"/>
+          <use value="work"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="mailto:allzeit.bereit@gruppenpraxis.ch"/>
+          <use value="work"/>
+        </telecom>
+        <telecom>
+          <system value="url"/>
+          <value value="http://www.gruppenpraxis.ch"/>
+          <use value="work"/>
+        </telecom>
+        <address>
+          <type value="physical"/>
+          <line value="Grabenstrasse 2"/>
+          <city value="Zürich"/>
+          <postalCode value="8005"/>
+          <country value="CH"/>
+        </address>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/Organization/TC-ORG1"/>
+    <resource>
+      <Organization>
+        <id value="TC-ORG1"/>
+        <meta>
+          <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_TC-ORG1"> </a><p class="res-header-id"><b>Generated Narrative: Organization TC-ORG1</b></p><a name="TC-ORG1"> </a><a name="hcTC-ORG1"> </a><a name="TC-ORG1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization-epr.html">CH Core Organization EPR</a></p></div><p><b>identifier</b>: <a href="https://www.gs1.org/standards/id-keys/gln" title="Global Location Number">GLN</a>/7601777777718</p><p><b>name</b>: Gruppenpraxis Müller</p><p><b>telecom</b>: ph: tel:+41.32.234.55.66(Work), fax: fax:+41.32.234.55.67(Work), <a href="mailto:mailto:bereit@gruppenpraxis.ch">mailto:bereit@gruppenpraxis.ch</a>, <a href="http://www.gruppenpraxis.ch">http://www.gruppenpraxis.ch</a></p><p><b>address</b>: Grabenstrasse 2 Zürich ZH 8005 CH </p></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:2.51.1.3"/>
+          <value value="7601777777718"/>
+        </identifier>
+        <name value="Gruppenpraxis Müller"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="tel:+41.32.234.55.66"/>
+          <use value="work"/>
+        </telecom>
+        <telecom>
+          <system value="fax"/>
+          <value value="fax:+41.32.234.55.67"/>
+          <use value="work"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="mailto:bereit@gruppenpraxis.ch"/>
+          <use value="work"/>
+        </telecom>
+        <telecom>
+          <system value="url"/>
+          <value value="http://www.gruppenpraxis.ch"/>
+          <use value="work"/>
+        </telecom>
+        <address>
+          <line value="Grabenstrasse 2"/>
+          <city value="Zürich"/>
+          <state value="ZH"/>
+          <postalCode value="8005"/>
+          <country value="CH"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/TC-HCP1-ORG1-ROLE-performer"/>
+    <resource>
+      <PractitionerRole>
+        <id value="TC-HCP1-ORG1-ROLE-performer"/>
+        <meta>
+          <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="PractitionerRole_TC-HCP1-ORG1-ROLE-performer"> </a><p class="res-header-id"><b>Generated Narrative: PractitionerRole TC-HCP1-ORG1-ROLE-performer</b></p><a name="TC-HCP1-ORG1-ROLE-performer"> </a><a name="hcTC-HCP1-ORG1-ROLE-performer"> </a><a name="TC-HCP1-ORG1-ROLE-performer-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitionerrole-epr.html">CH Core PractitionerRole EPR</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner-TC-HCP1-C1.html">Practitioner Peter Müller </a></p><p><b>organization</b>: <a href="Organization-TC-ORG1.html">Organization Gruppenpraxis Müller</a></p></div>
+        </text>
+        <active value="true"/>
+        <practitioner>
+          <reference value="Practitioner/TC-HCP1-C1"/>
+        </practitioner>
+        <organization>
+          <reference value="Organization/TC-ORG1"/>
+        </organization>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/PractitionerRole/TC-HCP1-ORG1-ROLE-author"/>
+    <resource>
+      <PractitionerRole>
+        <id value="TC-HCP1-ORG1-ROLE-author"/>
+        <meta>
+          <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="PractitionerRole_TC-HCP1-ORG1-ROLE-author"> </a><p class="res-header-id"><b>Generated Narrative: PractitionerRole TC-HCP1-ORG1-ROLE-author</b></p><a name="TC-HCP1-ORG1-ROLE-author"> </a><a name="hcTC-HCP1-ORG1-ROLE-author"> </a><a name="TC-HCP1-ORG1-ROLE-author-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitionerrole-epr.html">CH Core PractitionerRole EPR</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href="Practitioner-TC-HCP1-C1.html">Practitioner Peter Müller </a></p><p><b>organization</b>: <a href="Organization-TC-ORG1.html">Organization Gruppenpraxis Müller</a></p></div>
+        </text>
+        <active value="true"/>
+        <practitioner>
+          <reference value="Practitioner/TC-HCP1-C1"/>
+        </practitioner>
+        <organization>
+          <reference value="Organization/TC-ORG1"/>
+        </organization>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/Immunization/TCB01-IMMUN1"/>
+    <resource>
+      <Immunization>
+        <id value="TCB01-IMMUN1"/>
+        <meta>
+          <profile value="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Immunization_TCB01-IMMUN1"> </a><p class="res-header-id"><b>Generated Narrative: Immunization TCB01-IMMUN1</b></p><a name="TCB01-IMMUN1"> </a><a name="hcTCB01-IMMUN1"> </a><a name="TCB01-IMMUN1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ch-vacd-immunization.html">CH VACD Immunization</a></p></div><p><b>Author of the content</b>: <a href="PractitionerRole-TC-HCP1-ORG1-ROLE-author.html">PractitionerRole</a></p><p><b>CH VACD Extension Immunization Medication Reference</b>: <a href="Medication-TC-IMMUN-MEDIC-FSMEIMMCC.html">Medication FSME-IMMUN CC Inj Susp sep Nadel</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href="http://snomed.info/id/59156000">SNOMED CT 59156000</a>: Confirmed</p><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/urn:uuid:4386ca26-6866-4322-a203-b488b84ab499</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title="Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs 450}">FSME-Immun CC</span></p><p><b>patient</b>: <a href="Patient-TC-patient.html">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>occurrence</b>: 2021-06-22</p><p><b>recorded</b>: 2021-06-22 11:00:00+0200</p><p><b>lotNumber</b>: 12-34244</p><p><b>route</b>: <span title="Codes:{http://standardterms.edqm.eu 20035000}">Intramuscular use</span></p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="PractitionerRole-TC-HCP1-ORG1-ROLE-performer.html">PractitionerRole</a></td></tr></table><h3>ProtocolApplieds</h3><table class="grid"><tr><td style="display: none">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 712986001}">Tickborne encephalitis</span></td><td>1</td></tr></table></div>
+        </text>
+        <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
+          <valueReference>
+            <reference value="PractitionerRole/TC-HCP1-ORG1-ROLE-author"/>
+          </valueReference>
+        </extension>
+        <extension url="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-immunization-medication-reference">
+          <valueReference>
+            <reference value="Medication/TC-IMMUN-MEDIC-FSMEIMMCC"/>
+          </valueReference>
+        </extension>
+        <extension url="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status">
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="59156000"/>
+            <display value="Confirmed"/>
+          </valueCoding>
+        </extension>
+        <identifier>
+          <system value="urn:oid:2.16.756.5.30.1.402.1.3.1.1.1"/>
+          <value value="urn:uuid:4386ca26-6866-4322-a203-b488b84ab499"/>
+        </identifier>
+        <status value="completed"/>
+        <vaccineCode>
+          <coding>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs"/>
+            <code value="450"/>
+            <display value="FSME-Immun CC"/>
+          </coding>
+        </vaccineCode>
+        <patient>
+          <reference value="Patient/TC-patient"/>
+        </patient>
+        <occurrenceDateTime value="2021-06-22"/>
+        <recorded value="2021-06-22T11:00:00.390+02:00"/>
+        <lotNumber value="12-34244"/>
+        <route>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="20035000"/>
+            <display value="Intramuscular use"/>
+          </coding>
+        </route>
+        <performer>
+          <actor>
+            <reference value="PractitionerRole/TC-HCP1-ORG1-ROLE-performer"/>
+          </actor>
+        </performer>
+        <protocolApplied>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="712986001"/>
+              <display value="Tickborne encephalitis"/>
+            </coding>
+          </targetDisease>
+          <doseNumberPositiveInt value="1"/>
+        </protocolApplied>
+      </Immunization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/Medication/TC-IMMUN-MEDIC-FSMEIMMCC"/>
+    <resource>
+      <Medication>
+        <id value="TC-IMMUN-MEDIC-FSMEIMMCC"/>
+        <meta>
+          <profile value="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medication-for-immunization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Medication_TC-IMMUN-MEDIC-FSMEIMMCC"> </a><p class="res-header-id"><b>Generated Narrative: Medication TC-IMMUN-MEDIC-FSMEIMMCC</b></p><a name="TC-IMMUN-MEDIC-FSMEIMMCC"> </a><a name="hcTC-IMMUN-MEDIC-FSMEIMMCC"> </a><a name="TC-IMMUN-MEDIC-FSMEIMMCC-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ch-vacd-medication-for-immunization.html">CH VACD Medication For Immunization</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/01194ac7-70ad-4259-b5f4-c5ff0c1b40c5</p><p><b>code</b>: <span title="Codes:{urn:oid:2.51.1.1 7680004500039}">FSME-IMMUN CC Inj Susp sep Nadel</span></p><p><b>status</b>: Active</p><p><b>manufacturer</b>: <a href="Organization-TC-ORG-PFIZER.html">Organization Pfizer AG</a></p><p><b>form</b>: <span title="Codes:{urn:oid:0.4.0.127.0.16.1.1.2.1 11202000}">Suspension for injection</span></p><p><b>amount</b>: 0.5 milliliter<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemL = 'mL')</span>/1 Syringe (unit of presentation)<span style="background: LightGoldenRodYellow"> (Details: SNOMED CT  code733020007 = 'Syringe')</span></p><h3>Ingredients</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Item[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 106181007}">Immunologic substance (substance)</span></td></tr></table><h3>Batches</h3><table class="grid"><tr><td style="display: none">-</td><td><b>LotNumber</b></td></tr><tr><td style="display: none">*</td><td>VNR1T10C</td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:2.16.756.5.30.1.402.1.3.1.1.1"/>
+          <value value="01194ac7-70ad-4259-b5f4-c5ff0c1b40c5"/>
+        </identifier>
+        <code>
+          <coding>
+            <system value="urn:oid:2.51.1.1"/>
+            <code value="7680004500039"/>
+            <display value="FSME-IMMUN CC Inj Susp sep Nadel"/>
+          </coding>
+          <text value="FSME-IMMUN CC Inj Susp sep Nadel"/>
+        </code>
+        <status value="active"/>
+        <manufacturer>
+          <reference value="Organization/TC-ORG-PFIZER"/>
+        </manufacturer>
+        <form>
+          <coding>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11202000"/>
+            <display value="Suspension for injection"/>
+          </coding>
+        </form>
+        <amount>
+          <numerator>
+            <value value="0.5"/>
+            <unit value="milliliter"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mL"/>
+          </numerator>
+          <denominator>
+            <value value="1"/>
+            <unit value="Syringe (unit of presentation)"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="733020007"/>
+          </denominator>
+        </amount>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="106181007"/>
+              <display value="Immunologic substance (substance)"/>
+            </coding>
+            <text value="Immunologic substance (substance)"/>
+          </itemCodeableConcept>
+        </ingredient>
+        <batch>
+          <lotNumber value="VNR1T10C"/>
+        </batch>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/Organization/TC-ORG-PFIZER"/>
+    <resource>
+      <Organization>
+        <id value="TC-ORG-PFIZER"/>
+        <meta>
+          <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_TC-ORG-PFIZER"> </a><p class="res-header-id"><b>Generated Narrative: Organization TC-ORG-PFIZER</b></p><a name="TC-ORG-PFIZER"> </a><a name="hcTC-ORG-PFIZER"> </a><a name="TC-ORG-PFIZER-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization.html">CH Core Organization</a></p></div><p><b>identifier</b>: <a href="https://www.gs1.org/standards/id-keys/gln" title="Global Location Number">GLN</a>/7601001010604</p><p><b>name</b>: Pfizer AG</p><p><b>telecom</b>: ph: tel:+41 800 562 825(Work), fax: fax:+41 44 583 07 00(Work), <a href="mailto:mailto:customer.ch@pfizer.com">mailto:customer.ch@pfizer.com</a>, <a href="https://www.pfizer.ch">https://www.pfizer.ch</a></p><p><b>address</b>: Schärenmoosstrasse 99 Postfach Zürich ZH 8052 CH </p></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:2.51.1.3"/>
+          <value value="7601001010604"/>
+        </identifier>
+        <name value="Pfizer AG"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="tel:+41 800 562 825"/>
+          <use value="work"/>
+        </telecom>
+        <telecom>
+          <system value="fax"/>
+          <value value="fax:+41 44 583 07 00"/>
+          <use value="work"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="mailto:customer.ch@pfizer.com"/>
+          <use value="work"/>
+        </telecom>
+        <telecom>
+          <system value="url"/>
+          <value value="https://www.pfizer.ch"/>
+          <use value="work"/>
+        </telecom>
+        <address>
+          <line value="Schärenmoosstrasse 99"/>
+          <line value="Postfach"/>
+          <city value="Zürich"/>
+          <state value="ZH"/>
+          <postalCode value="8052"/>
+          <country value="CH"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/Immunization/TCB01-IMMUN2"/>
+    <resource>
+      <Immunization>
+        <id value="TCB01-IMMUN2"/>
+        <meta>
+          <profile value="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Immunization_TCB01-IMMUN2"> </a><p class="res-header-id"><b>Generated Narrative: Immunization TCB01-IMMUN2</b></p><a name="TCB01-IMMUN2"> </a><a name="hcTCB01-IMMUN2"> </a><a name="TCB01-IMMUN2-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ch-vacd-immunization.html">CH VACD Immunization</a></p></div><p><b>Author of the content</b>: <a href="PractitionerRole-TC-HCP1-ORG1-ROLE-author.html">PractitionerRole</a></p><p><b>CH VACD Extension Immunization Medication Reference</b>: <a href="Medication-TC-IMMUN-MEDIC-BOOSTRIX.html">Medication BOOSTRIX Inj Susp</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href="http://snomed.info/id/59156000">SNOMED CT 59156000</a>: Confirmed</p><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/urn:uuid:ebcf6de2-ed9c-463c-8b08-cb487af8ce4e</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title="Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs 637}">Boostrix</span></p><p><b>patient</b>: <a href="Patient-TC-patient.html">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>occurrence</b>: 2020-12-09</p><p><b>recorded</b>: 2020-12-09 11:00:00+0200</p><p><b>lotNumber</b>: AHAVB946A</p><p><b>route</b>: <span title="Codes:{http://standardterms.edqm.eu 20035000}">Intramuscular use</span></p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="PractitionerRole-TC-HCP1-ORG1-ROLE-performer.html">PractitionerRole</a></td></tr></table><blockquote><p><b>protocolApplied</b></p><p><b>targetDisease</b>: <span title="Codes:{http://snomed.info/sct 76902006}">Tetanus (disorder)</span>, <span title="Codes:{http://snomed.info/sct 27836007}">Pertussis (disorder)</span>, <span title="Codes:{http://snomed.info/sct 397430003}">Diphtheria caused by Corynebacterium diphtheriae (disorder)</span></p><p><b>doseNumber</b>: 1</p></blockquote></div>
+        </text>
+        <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author">
+          <valueReference>
+            <reference value="PractitionerRole/TC-HCP1-ORG1-ROLE-author"/>
+          </valueReference>
+        </extension>
+        <extension url="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-immunization-medication-reference">
+          <valueReference>
+            <reference value="Medication/TC-IMMUN-MEDIC-BOOSTRIX"/>
+          </valueReference>
+        </extension>
+        <extension url="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status">
+          <valueCoding>
+            <system value="http://snomed.info/sct"/>
+            <code value="59156000"/>
+            <display value="Confirmed"/>
+          </valueCoding>
+        </extension>
+        <identifier>
+          <system value="urn:oid:2.16.756.5.30.1.402.1.3.1.1.1"/>
+          <value value="urn:uuid:ebcf6de2-ed9c-463c-8b08-cb487af8ce4e"/>
+        </identifier>
+        <status value="completed"/>
+        <vaccineCode>
+          <coding>
+            <system value="http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs"/>
+            <code value="637"/>
+            <display value="Boostrix"/>
+          </coding>
+        </vaccineCode>
+        <patient>
+          <reference value="Patient/TC-patient"/>
+        </patient>
+        <occurrenceDateTime value="2020-12-09"/>
+        <recorded value="2020-12-09T11:00:00.390+02:00"/>
+        <lotNumber value="AHAVB946A"/>
+        <route>
+          <coding>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="20035000"/>
+            <display value="Intramuscular use"/>
+          </coding>
+        </route>
+        <performer>
+          <actor>
+            <reference value="PractitionerRole/TC-HCP1-ORG1-ROLE-performer"/>
+          </actor>
+        </performer>
+        <protocolApplied>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="76902006"/>
+              <display value="Tetanus (disorder)"/>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="27836007"/>
+              <display value="Pertussis (disorder)"/>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="397430003"/>
+              <display value="Diphtheria caused by Corynebacterium diphtheriae (disorder)"/>
+            </coding>
+          </targetDisease>
+          <doseNumberPositiveInt value="1"/>
+        </protocolApplied>
+      </Immunization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/Medication/TC-IMMUN-MEDIC-BOOSTRIX"/>
+    <resource>
+      <Medication>
+        <id value="TC-IMMUN-MEDIC-BOOSTRIX"/>
+        <meta>
+          <profile value="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medication-for-immunization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Medication_TC-IMMUN-MEDIC-BOOSTRIX"> </a><p class="res-header-id"><b>Generated Narrative: Medication TC-IMMUN-MEDIC-BOOSTRIX</b></p><a name="TC-IMMUN-MEDIC-BOOSTRIX"> </a><a name="hcTC-IMMUN-MEDIC-BOOSTRIX"> </a><a name="TC-IMMUN-MEDIC-BOOSTRIX-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ch-vacd-medication-for-immunization.html">CH VACD Medication For Immunization</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/ead68e47-34a6-4534-a658-b718e565fb91</p><p><b>code</b>: <span title="Codes:{urn:oid:2.51.1.1 7680006370012}">BOOSTRIX Inj Susp</span></p><p><b>status</b>: Active</p><p><b>manufacturer</b>: <a href="Organization-TC-ORG-GSK.html">Organization GlaxoSmithKline AG</a></p><p><b>form</b>: <span title="Codes:{urn:oid:0.4.0.127.0.16.1.1.2.1 11202000}">Suspension for injection</span></p><p><b>amount</b>: 0.5 milliliter<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemL = 'mL')</span>/1 Syringe (unit of presentation)<span style="background: LightGoldenRodYellow"> (Details: SNOMED CT  code733020007 = 'Syringe')</span></p><h3>Ingredients</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Item[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 106181007}">Immunologic substance (substance)</span></td></tr></table><h3>Batches</h3><table class="grid"><tr><td style="display: none">-</td><td><b>LotNumber</b></td></tr><tr><td style="display: none">*</td><td>AHAVB946A</td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:2.16.756.5.30.1.402.1.3.1.1.1"/>
+          <value value="ead68e47-34a6-4534-a658-b718e565fb91"/>
+        </identifier>
+        <code>
+          <coding>
+            <system value="urn:oid:2.51.1.1"/>
+            <code value="7680006370012"/>
+            <display value="BOOSTRIX Inj Susp"/>
+          </coding>
+          <text value="BOOSTRIX Inj Susp"/>
+        </code>
+        <status value="active"/>
+        <manufacturer>
+          <reference value="Organization/TC-ORG-GSK"/>
+        </manufacturer>
+        <form>
+          <coding>
+            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+            <code value="11202000"/>
+            <display value="Suspension for injection"/>
+          </coding>
+        </form>
+        <amount>
+          <numerator>
+            <value value="0.5"/>
+            <unit value="milliliter"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mL"/>
+          </numerator>
+          <denominator>
+            <value value="1"/>
+            <unit value="Syringe (unit of presentation)"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="733020007"/>
+          </denominator>
+        </amount>
+        <ingredient>
+          <itemCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="106181007"/>
+              <display value="Immunologic substance (substance)"/>
+            </coding>
+            <text value="Immunologic substance (substance)"/>
+          </itemCodeableConcept>
+        </ingredient>
+        <batch>
+          <lotNumber value="AHAVB946A"/>
+        </batch>
+      </Medication>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/Organization/TC-ORG-GSK"/>
+    <resource>
+      <Organization>
+        <id value="TC-ORG-GSK"/>
+        <meta>
+          <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_TC-ORG-GSK"> </a><p class="res-header-id"><b>Generated Narrative: Organization TC-ORG-GSK</b></p><a name="TC-ORG-GSK"> </a><a name="hcTC-ORG-GSK"> </a><a name="TC-ORG-GSK-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization.html">CH Core Organization</a></p></div><p><b>identifier</b>: <a href="https://www.gs1.org/standards/id-keys/gln" title="Global Location Number">GLN</a>/7601001000674</p><p><b>name</b>: GlaxoSmithKline AG</p><p><b>telecom</b>: ph: tel:+41 31 862 21 11(Work), fax: fax:+41 31 862 22 00(Work), <a href="mailto:mailto:swiss.info@gsk.com">mailto:swiss.info@gsk.com</a>, <a href="https://www.gsk.com">https://www.gsk.com</a></p><p><b>address</b>: Talstrasse 3-5 Münchenbuchsee BE 3053 CH </p></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:2.51.1.3"/>
+          <value value="7601001000674"/>
+        </identifier>
+        <name value="GlaxoSmithKline AG"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="tel:+41 31 862 21 11"/>
+          <use value="work"/>
+        </telecom>
+        <telecom>
+          <system value="fax"/>
+          <value value="fax:+41 31 862 22 00"/>
+          <use value="work"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="mailto:swiss.info@gsk.com"/>
+          <use value="work"/>
+        </telecom>
+        <telecom>
+          <system value="url"/>
+          <value value="https://www.gsk.com"/>
+          <use value="work"/>
+        </telecom>
+        <address>
+          <line value="Talstrasse 3-5"/>
+          <city value="Münchenbuchsee"/>
+          <state value="BE"/>
+          <postalCode value="3053"/>
+          <country value="CH"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://test.fhir.ch/r4/Condition/TCB03-EXPRISK1"/>
+    <resource>
+      <Condition>
+        <id value="TCB03-EXPRISK1"/>
+        <meta>
+          <profile value="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medical-problems"/>
+        </meta>
+        <language value="en-US"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><a name="Condition_TCB03-EXPRISK1"> </a><p class="res-header-id"><b>Generated Narrative: Condition TCB03-EXPRISK1</b></p><a name="TCB03-EXPRISK1"> </a><a name="hcTCB03-EXPRISK1"> </a><a name="TCB03-EXPRISK1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en-US</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ch-vacd-medical-problems.html">CH VACD Medical Problems</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.2</code>/30327ea1-6893-4c65-896e-c32c394f1ec6</p><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 223366009}">Healthcare professional (occupation)</span></p><p><b>subject</b>: <a href="Patient-TC-patient.html">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>onset</b>: 2021-10-01</p><p><b>recordedDate</b>: 2021-10-20</p><p><b>recorder</b>: <a href="PractitionerRole-TC-HCP1-ORG1-ROLE-author.html">PractitionerRole</a></p></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:2.16.756.5.30.1.402.1.3.1.1.2"/>
+          <value value="30327ea1-6893-4c65-896e-c32c394f1ec6"/>
+        </identifier>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+            <display value="Problem List Item"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="223366009"/>
+            <display value="Healthcare professional (occupation)"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/TC-patient"/>
+        </subject>
+        <onsetDateTime value="2021-10-01"/>
+        <recordedDate value="2021-10-20"/>
+        <recorder>
+          <reference value="PractitionerRole/TC-HCP1-ORG1-ROLE-author"/>
+        </recorder>
+      </Condition>
+    </resource>
+  </entry>
+</Bundle>

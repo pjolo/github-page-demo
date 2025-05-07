@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/Organization/TC-ORG-PFIZER> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TC-ORG-PFIZER"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization TC-ORG-PFIZER</b></p><a name=\"TC-ORG-PFIZER\"> </a><a name=\"hcTC-ORG-PFIZER\"> </a><a name=\"TC-ORG-PFIZER-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization.html\">CH Core Organization</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601001010604</p><p><b>name</b>: Pfizer AG</p><p><b>telecom</b>: ph: tel:+41 800 562 825(Work), fax: fax:+41 44 583 07 00(Work), <a href=\"mailto:mailto:customer.ch@pfizer.com\">mailto:customer.ch@pfizer.com</a>, <a href=\"https://www.pfizer.ch\">https://www.pfizer.ch</a></p><p><b>address</b>: Schärenmoosstrasse 99 Postfach Zürich ZH 8052 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601001010604" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Pfizer AG"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "tel:+41 800 562 825" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "fax" ] ;
+     fhir:value [ fhir:v "fax:+41 44 583 07 00" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mailto:customer.ch@pfizer.com" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "url" ] ;
+     fhir:value [ fhir:v "https://www.pfizer.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "Schärenmoosstrasse 99" ] [ fhir:v "Postfach" ] ) ;
+     fhir:city [ fhir:v "Zürich" ] ;
+     fhir:state [ fhir:v "ZH" ] ;
+     fhir:postalCode [ fhir:v "8052" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

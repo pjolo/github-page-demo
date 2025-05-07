@@ -1,0 +1,1368 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/Bundle/RDD01> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RDD01"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-document-vaccination-record"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-document-vaccination-record>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:07335736-7c2e-4fb4-8203-0b331862b7b6" ]
+  ] ; # 
+  fhir:type [ fhir:v "document"] ; # 
+  fhir:timestamp [ fhir:v "2021-12-08T10:00:00.390+02:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Composition/RDD01-Composition"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Composition/RDD01-Composition> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Patient/TC-patient"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Patient/TC-patient> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Organization/TC-ORG1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Organization/TC-ORG1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Practitioner/TC-HCP1-C1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Practitioner/TC-HCP1-C1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/PractitionerRole/TC-HCP1-ORG1-ROLE-performer"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/PractitionerRole/TC-HCP1-ORG1-ROLE-performer> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/PractitionerRole/TC-HCP1-ORG1-ROLE-author"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/PractitionerRole/TC-HCP1-ORG1-ROLE-author> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Immunization/TCD01-IMMUN1"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Immunization/TCD01-IMMUN1> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Medication/TC-IMMUN-MEDIC-FSMEIMMCC"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Medication/TC-IMMUN-MEDIC-FSMEIMMCC> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Organization/TC-ORG-PFIZER"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Organization/TC-ORG-PFIZER> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Immunization/TCD01-IMMUN2-2"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Immunization/TCD01-IMMUN2-2> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Medication/TC-IMMUN-MEDIC-BOOSTRIX"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Medication/TC-IMMUN-MEDIC-BOOSTRIX> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Organization/TC-ORG-GSK"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Organization/TC-ORG-GSK> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Practitioner/TC-HCP2-C2"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Practitioner/TC-HCP2-C2> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Organization/TC-ORG2"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Organization/TC-ORG2> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/PractitionerRole/TC-HCP2-ORG2-ROLE-performer"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/PractitionerRole/TC-HCP2-ORG2-ROLE-performer> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/PractitionerRole/TC-HCP2-ORG2-ROLE-author"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/PractitionerRole/TC-HCP2-ORG2-ROLE-author> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Immunization/TCD01-IMMUN3-2"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Immunization/TCD01-IMMUN3-2> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Immunization/TCD01-IMMUN4"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Immunization/TCD01-IMMUN4> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Medication/TC-IMMUN-MEDIC-PRIORIX"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Medication/TC-IMMUN-MEDIC-PRIORIX> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Immunization/TCD01-IMMUN5"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Immunization/TCD01-IMMUN5> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Medication/TC-IMMUN-MEDIC-GARDASIL9"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Medication/TC-IMMUN-MEDIC-GARDASIL9> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://test.fhir.ch/r4/Organization/TC-ORG-MSD"^^xsd:anyURI ] ;
+     fhir:resource ( <http://test.fhir.ch/r4/Organization/TC-ORG-MSD> )
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Composition/RDD01-Composition> a fhir:Composition ;
+  fhir:id [ fhir:v "RDD01-Composition"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-composition-vaccination-record"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-composition-vaccination-record>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "en-US"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><h3>Vaccination Record</h3><p><b>Id: </b>RDD01-Composition</p><p><b>Identifier: </b><span>urn:ietf:rfc:3986#urn:uuid:07335736-7c2e-4fb4-8203-0b331862b7b6</span></p><p><b>Status: </b>Final</p><p><b>Code: </b><span>Immunization record (http://snomed.info/sct#41000179103)</span></p><p><b>Patient: </b><a href=\"Patient-TC-patient.html\">Patient/TC-patient</a> Wegmueller Monika</p><p><b>Date: </b>October 6, 2021</p><p><b>Authors:</b></p><table><tr><td><p><a href=\"Patient-TC-patient.html\">Patient/TC-patient</a> Wegmueller Monika</p></td></tr></table><p><b>Confidentiality: </b>null<span> Normal (qualifier value) (http://snomed.info/sct#17621005)</span></p><p><b>Sections:</b></p><table><tr><td>Immunization Administration</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:07335736-7c2e-4fb4-8203-0b331862b7b6" ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a sct:41000179103 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "41000179103" ] ;
+       fhir:display [ fhir:v "Immunization record" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.127.3.10.10"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "urn:che:epr:ch-vacd:vaccination-record:2022" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/TC-patient> ;
+     fhir:reference [ fhir:v "Patient/TC-patient" ]
+  ] ; # 
+  fhir:date [ fhir:v "2021-10-06T00:00:00.390+02:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/TC-patient> ;
+     fhir:reference [ fhir:v "Patient/TC-patient" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Vaccination Record"] ; # 
+  fhir:confidentiality [
+     fhir:v "N" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:17621005 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "17621005" ] ;
+           fhir:display [ fhir:v "Normal (qualifier value)" ]
+         ] )
+       ]
+     ] )
+  ] ; # 
+  fhir:custodian [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Organization/TC-ORG1> ;
+     fhir:reference [ fhir:v "Organization/TC-ORG1" ]
+  ] ; # 
+  fhir:section ( [
+     fhir:id [ fhir:v "administration" ] ;
+     fhir:title [ fhir:v "Immunization Administration" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:11369-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11369-6" ] ;
+         fhir:display [ fhir:v "Hx of Immunization" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Code: </b><span>Hx of Immunization (http://loinc.org#11369-6)</span></p><p><b>Entries:</b></p><table><tr><td><a href=\"Immunization-TCD01-IMMUN1.html\">Immunization/TCD01-IMMUN1</a></td></tr><tr><td><a href=\"Immunization-TCD01-IMMUN2-2.html\">Immunization/TCD01-IMMUN2-2</a></td></tr><tr><td><a href=\"Immunization-TCD01-IMMUN3-2.html\">Immunization/TCD01-IMMUN3-2</a></td></tr><tr><td><a href=\"Immunization-TCD01-IMMUN4.html\">Immunization/TCD01-IMMUN4</a></td></tr><tr><td><a href=\"Immunization-TCD01-IMMUN5.html\">Immunization/TCD01-IMMUN5</a></td></tr></table></div>"^^rdf:XMLLiteral
+     ] ;
+     fhir:entry ( [
+       fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/TCD01-IMMUN1> ;
+       fhir:reference [ fhir:v "Immunization/TCD01-IMMUN1" ]
+     ] [
+       fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/TCD01-IMMUN2-2> ;
+       fhir:reference [ fhir:v "Immunization/TCD01-IMMUN2-2" ]
+     ] [
+       fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/TCD01-IMMUN3-2> ;
+       fhir:reference [ fhir:v "Immunization/TCD01-IMMUN3-2" ]
+     ] [
+       fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/TCD01-IMMUN4> ;
+       fhir:reference [ fhir:v "Immunization/TCD01-IMMUN4" ]
+     ] [
+       fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/TCD01-IMMUN5> ;
+       fhir:reference [ fhir:v "Immunization/TCD01-IMMUN5" ]
+     ] )
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Patient/TC-patient> a fhir:Patient ;
+  fhir:id [ fhir:v "TC-patient"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-patient-epr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_TC-patient\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient TC-patient</b></p><a name=\"TC-patient\"> </a><a name=\"hcTC-patient\"> </a><a name=\"TC-patient-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-patient-epr.html\">CH Core Patient EPR</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: tel:+41.32.685.12.34(Home)</li><li>Leidensweg 10 Specimendorf 9876 CH </li></ul></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.3.4"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12345678" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Wegmueller" ] ;
+     fhir:given ( [ fhir:v "Monika" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "tel:+41.32.685.12.34" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1967-02-10"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:type [ fhir:v "both" ] ;
+     fhir:line ( [ fhir:v "Leidensweg 10" ] ) ;
+     fhir:city [ fhir:v "Specimendorf" ] ;
+     fhir:postalCode [ fhir:v "9876" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Organization/TC-ORG1> a fhir:Organization ;
+  fhir:id [ fhir:v "TC-ORG1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_TC-ORG1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization TC-ORG1</b></p><a name=\"TC-ORG1\"> </a><a name=\"hcTC-ORG1\"> </a><a name=\"TC-ORG1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization-epr.html\">CH Core Organization EPR</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601777777718</p><p><b>name</b>: Gruppenpraxis Müller</p><p><b>telecom</b>: ph: tel:+41.32.234.55.66(Work), fax: fax:+41.32.234.55.67(Work), <a href=\"mailto:mailto:bereit@gruppenpraxis.ch\">mailto:bereit@gruppenpraxis.ch</a>, <a href=\"http://www.gruppenpraxis.ch\">http://www.gruppenpraxis.ch</a></p><p><b>address</b>: Grabenstrasse 2 Zürich ZH 8005 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601777777718" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Gruppenpraxis Müller"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "tel:+41.32.234.55.66" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "fax" ] ;
+     fhir:value [ fhir:v "fax:+41.32.234.55.67" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mailto:bereit@gruppenpraxis.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "url" ] ;
+     fhir:value [ fhir:v "http://www.gruppenpraxis.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "Grabenstrasse 2" ] ) ;
+     fhir:city [ fhir:v "Zürich" ] ;
+     fhir:state [ fhir:v "ZH" ] ;
+     fhir:postalCode [ fhir:v "8005" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Practitioner/TC-HCP1-C1> a fhir:Practitioner ;
+  fhir:id [ fhir:v "TC-HCP1-C1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_TC-HCP1-C1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner TC-HCP1-C1</b></p><a name=\"TC-HCP1-C1\"> </a><a name=\"hcTC-HCP1-C1\"> </a><a name=\"TC-HCP1-C1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitioner-epr.html\">CH Core Practitioner EPR</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601888888884</p><p><b>active</b>: true</p><p><b>name</b>: Peter Müller </p><p><b>telecom</b>: ph: tel:+41.32.234.55.66(Work), fax: fax:+41.32.234.55.67(Work), <a href=\"mailto:mailto:allzeit.bereit@gruppenpraxis.ch\">mailto:allzeit.bereit@gruppenpraxis.ch</a>, <a href=\"http://www.gruppenpraxis.ch\">http://www.gruppenpraxis.ch</a></p><p><b>address</b>: Grabenstrasse 2 Zürich 8005 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601888888884" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Müller" ] ;
+     fhir:given ( [ fhir:v "Peter" ] ) ;
+     fhir:prefix ( [ fhir:v "Dr. med." ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "tel:+41.32.234.55.66" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "fax" ] ;
+     fhir:value [ fhir:v "fax:+41.32.234.55.67" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mailto:allzeit.bereit@gruppenpraxis.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "url" ] ;
+     fhir:value [ fhir:v "http://www.gruppenpraxis.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:type [ fhir:v "physical" ] ;
+     fhir:line ( [ fhir:v "Grabenstrasse 2" ] ) ;
+     fhir:city [ fhir:v "Zürich" ] ;
+     fhir:postalCode [ fhir:v "8005" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/PractitionerRole/TC-HCP1-ORG1-ROLE-performer> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "TC-HCP1-ORG1-ROLE-performer"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_TC-HCP1-ORG1-ROLE-performer\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole TC-HCP1-ORG1-ROLE-performer</b></p><a name=\"TC-HCP1-ORG1-ROLE-performer\"> </a><a name=\"hcTC-HCP1-ORG1-ROLE-performer\"> </a><a name=\"TC-HCP1-ORG1-ROLE-performer-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitionerrole-epr.html\">CH Core PractitionerRole EPR</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-TC-HCP1-C1.html\">Practitioner Peter Müller </a></p><p><b>organization</b>: <a href=\"Organization-TC-ORG1.html\">Organization Gruppenpraxis Müller</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:practitioner [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Practitioner/TC-HCP1-C1> ;
+     fhir:reference [ fhir:v "Practitioner/TC-HCP1-C1" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Organization/TC-ORG1> ;
+     fhir:reference [ fhir:v "Organization/TC-ORG1" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/PractitionerRole/TC-HCP1-ORG1-ROLE-author> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "TC-HCP1-ORG1-ROLE-author"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_TC-HCP1-ORG1-ROLE-author\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole TC-HCP1-ORG1-ROLE-author</b></p><a name=\"TC-HCP1-ORG1-ROLE-author\"> </a><a name=\"hcTC-HCP1-ORG1-ROLE-author\"> </a><a name=\"TC-HCP1-ORG1-ROLE-author-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitionerrole-epr.html\">CH Core PractitionerRole EPR</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-TC-HCP1-C1.html\">Practitioner Peter Müller </a></p><p><b>organization</b>: <a href=\"Organization-TC-ORG1.html\">Organization Gruppenpraxis Müller</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:practitioner [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Practitioner/TC-HCP1-C1> ;
+     fhir:reference [ fhir:v "Practitioner/TC-HCP1-C1" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Organization/TC-ORG1> ;
+     fhir:reference [ fhir:v "Organization/TC-ORG1" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/Immunization/TCD01-IMMUN1> a fhir:Immunization ;
+  fhir:id [ fhir:v "TCD01-IMMUN1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_TCD01-IMMUN1\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization TCD01-IMMUN1</b></p><a name=\"TCD01-IMMUN1\"> </a><a name=\"hcTCD01-IMMUN1\"> </a><a name=\"TCD01-IMMUN1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-immunization.html\">CH VACD Immunization</a></p></div><p><b>Author of the content</b>: <a href=\"PractitionerRole-TC-HCP1-ORG1-ROLE-author.html\">PractitionerRole</a></p><p><b>CH VACD Extension Immunization Medication Reference</b>: <a href=\"Medication-TC-IMMUN-MEDIC-FSMEIMMCC.html\">Medication FSME-IMMUN CC Inj Susp sep Nadel</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href=\"http://snomed.info/id/59156000\">SNOMED CT 59156000</a>: Confirmed</p><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/urn:uuid:4386ca26-6866-4322-a203-b488b84ab499</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs 450}\">FSME-Immun CC</span></p><p><b>patient</b>: <a href=\"Patient-TC-patient.html\">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>occurrence</b>: 2021-06-22</p><p><b>recorded</b>: 2021-06-22 11:00:00+0200</p><p><b>lotNumber</b>: 12-34244</p><p><b>route</b>: <span title=\"Codes:{http://standardterms.edqm.eu 20035000}\">Intramuscular use</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-TC-HCP1-ORG1-ROLE-performer.html\">PractitionerRole</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 712986001}\">Tickborne encephalitis</span></td><td>1</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/TC-HCP1-ORG1-ROLE-author> ;
+       fhir:reference [ fhir:v "PractitionerRole/TC-HCP1-ORG1-ROLE-author" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-immunization-medication-reference"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/Medication/TC-IMMUN-MEDIC-FSMEIMMCC> ;
+       fhir:reference [ fhir:v "Medication/TC-IMMUN-MEDIC-FSMEIMMCC" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding, sct:59156000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "59156000" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.402.1.3.1.1.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:4386ca26-6866-4322-a203-b488b84ab499" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "450" ] ;
+       fhir:display [ fhir:v "FSME-Immun CC" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/TC-patient> ;
+     fhir:reference [ fhir:v "Patient/TC-patient" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2021-06-22"^^xsd:date
+  ] ; # 
+  fhir:recorded [ fhir:v "2021-06-22T11:00:00.390+02:00"^^xsd:dateTime] ; # 
+  fhir:lotNumber [ fhir:v "12-34244"] ; # 
+  fhir:route [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "20035000" ] ;
+       fhir:display [ fhir:v "Intramuscular use" ]
+     ] )
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/TC-HCP1-ORG1-ROLE-performer> ;
+       fhir:reference [ fhir:v "PractitionerRole/TC-HCP1-ORG1-ROLE-performer" ]
+     ]
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:targetDisease ( [
+       fhir:coding ( [
+         a sct:712986001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "712986001" ] ;
+         fhir:display [ fhir:v "Tickborne encephalitis" ]
+       ] )
+     ] ) ;
+     fhir:doseNumber [
+       a fhir:positiveInt ;
+       fhir:v "1"^^xsd:positiveInteger
+     ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Medication/TC-IMMUN-MEDIC-FSMEIMMCC> a fhir:Medication ;
+  fhir:id [ fhir:v "TC-IMMUN-MEDIC-FSMEIMMCC"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medication-for-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medication-for-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_TC-IMMUN-MEDIC-FSMEIMMCC\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Medication TC-IMMUN-MEDIC-FSMEIMMCC</b></p><a name=\"TC-IMMUN-MEDIC-FSMEIMMCC\"> </a><a name=\"hcTC-IMMUN-MEDIC-FSMEIMMCC\"> </a><a name=\"TC-IMMUN-MEDIC-FSMEIMMCC-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-medication-for-immunization.html\">CH VACD Medication For Immunization</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/01194ac7-70ad-4259-b5f4-c5ff0c1b40c5</p><p><b>code</b>: <span title=\"Codes:{urn:oid:2.51.1.1 7680004500039}\">FSME-IMMUN CC Inj Susp sep Nadel</span></p><p><b>status</b>: Active</p><p><b>manufacturer</b>: <a href=\"Organization-TC-ORG-PFIZER.html\">Organization Pfizer AG</a></p><p><b>form</b>: <span title=\"Codes:{urn:oid:0.4.0.127.0.16.1.1.2.1 11202000}\">Suspension for injection</span></p><p><b>amount</b>: 0.5 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span>/1 Syringe (unit of presentation)<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code733020007 = 'Syringe')</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 106181007}\">Immunologic substance (substance)</span></td></tr></table><h3>Batches</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>LotNumber</b></td></tr><tr><td style=\"display: none\">*</td><td>VNR1T10C</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.402.1.3.1.1.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "01194ac7-70ad-4259-b5f4-c5ff0c1b40c5" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.51.1.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "7680004500039" ] ;
+       fhir:display [ fhir:v "FSME-IMMUN CC Inj Susp sep Nadel" ]
+     ] ) ;
+     fhir:text [ fhir:v "FSME-IMMUN CC Inj Susp sep Nadel" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Organization/TC-ORG-PFIZER> ;
+     fhir:reference [ fhir:v "Organization/TC-ORG-PFIZER" ]
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:0.4.0.127.0.16.1.1.2.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11202000" ] ;
+       fhir:display [ fhir:v "Suspension for injection" ]
+     ] )
+  ] ; # 
+  fhir:amount [
+     fhir:numerator [
+       fhir:value [ fhir:v 0.5 ] ;
+       fhir:unit [ fhir:v "milliliter" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mL" ]
+     ] ;
+     fhir:denominator [
+       fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "Syringe (unit of presentation)" ] ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "733020007" ]
+     ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:106181007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "106181007" ] ;
+         fhir:display [ fhir:v "Immunologic substance (substance)" ]
+       ] ) ;
+       fhir:text [ fhir:v "Immunologic substance (substance)" ]
+     ]
+  ] ) ; # 
+  fhir:batch [
+     fhir:lotNumber [ fhir:v "VNR1T10C" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/Organization/TC-ORG-PFIZER> a fhir:Organization ;
+  fhir:id [ fhir:v "TC-ORG-PFIZER"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_TC-ORG-PFIZER\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization TC-ORG-PFIZER</b></p><a name=\"TC-ORG-PFIZER\"> </a><a name=\"hcTC-ORG-PFIZER\"> </a><a name=\"TC-ORG-PFIZER-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization.html\">CH Core Organization</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601001010604</p><p><b>name</b>: Pfizer AG</p><p><b>telecom</b>: ph: tel:+41 800 562 825(Work), fax: fax:+41 44 583 07 00(Work), <a href=\"mailto:mailto:customer.ch@pfizer.com\">mailto:customer.ch@pfizer.com</a>, <a href=\"https://www.pfizer.ch\">https://www.pfizer.ch</a></p><p><b>address</b>: Schärenmoosstrasse 99 Postfach Zürich ZH 8052 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601001010604" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Pfizer AG"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "tel:+41 800 562 825" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "fax" ] ;
+     fhir:value [ fhir:v "fax:+41 44 583 07 00" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mailto:customer.ch@pfizer.com" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "url" ] ;
+     fhir:value [ fhir:v "https://www.pfizer.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "Schärenmoosstrasse 99" ] [ fhir:v "Postfach" ] ) ;
+     fhir:city [ fhir:v "Zürich" ] ;
+     fhir:state [ fhir:v "ZH" ] ;
+     fhir:postalCode [ fhir:v "8052" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Immunization/TCD01-IMMUN2-2> a fhir:Immunization ;
+  fhir:id [ fhir:v "TCD01-IMMUN2-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_TCD01-IMMUN2-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization TCD01-IMMUN2-2</b></p><a name=\"TCD01-IMMUN2-2\"> </a><a name=\"hcTCD01-IMMUN2-2\"> </a><a name=\"TCD01-IMMUN2-2-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-immunization.html\">CH VACD Immunization</a></p></div><p><b>Author of the content</b>: <a href=\"PractitionerRole-TC-HCP1-ORG1-ROLE-author.html\">PractitionerRole</a></p><p><b>CH VACD Extension Immunization Medication Reference</b>: <a href=\"Medication-TC-IMMUN-MEDIC-BOOSTRIX.html\">Medication BOOSTRIX Inj Susp</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href=\"http://snomed.info/id/59156000\">SNOMED CT 59156000</a>: Confirmed</p><blockquote><p><b>CH VACD Extension Merging Conflict Entry Reference</b></p><ul><li>entry: <a href=\"Immunization-TCD01-IMMUN3-2.html\">Immunization: extension = -&gt;PractitionerRole,-&gt;Medication BOOSTRIX Inj Susp,Confirmed (SNOMED CT#59156000),; identifier = urn:oid:2.16.756.5.30.1.402.1.3.1.1.1#urn:uuid:58457607-9160-4d0a-9a79-55495755a677; status = completed; vaccineCode = Boostrix; occurrence[x] = 2020-12-09; recorded = 2020-12-09 11:00:00+0200; lotNumber = AHAVB946A; route = Intramuscular use</a></li><li>conflict: duplicate</li></ul></blockquote><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/urn:uuid:ebcf6de2-ed9c-463c-8b08-cb487af8ce4e</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs 637}\">Boostrix</span></p><p><b>patient</b>: <a href=\"Patient-TC-patient.html\">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>occurrence</b>: 2020-12-09</p><p><b>recorded</b>: 2020-12-09 11:00:00+0200</p><p><b>lotNumber</b>: AHAVB946A</p><p><b>route</b>: <span title=\"Codes:{http://standardterms.edqm.eu 20035000}\">Intramuscular use</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-TC-HCP1-ORG1-ROLE-performer.html\">PractitionerRole</a></td></tr></table><blockquote><p><b>protocolApplied</b></p><p><b>targetDisease</b>: <span title=\"Codes:{http://snomed.info/sct 76902006}\">Tetanus (disorder)</span>, <span title=\"Codes:{http://snomed.info/sct 27836007}\">Pertussis (disorder)</span>, <span title=\"Codes:{http://snomed.info/sct 397430003}\">Diphtheria caused by Corynebacterium diphtheriae (disorder)</span></p><p><b>doseNumber</b>: 1</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/TC-HCP1-ORG1-ROLE-author> ;
+       fhir:reference [ fhir:v "PractitionerRole/TC-HCP1-ORG1-ROLE-author" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-immunization-medication-reference"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/Medication/TC-IMMUN-MEDIC-BOOSTRIX> ;
+       fhir:reference [ fhir:v "Medication/TC-IMMUN-MEDIC-BOOSTRIX" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding, sct:59156000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "59156000" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "entry"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/TCD01-IMMUN3-2> ;
+         fhir:reference [ fhir:v "Immunization/TCD01-IMMUN3-2" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "conflict"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "duplicate"
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-merging-conflict-entry-reference"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.402.1.3.1.1.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:ebcf6de2-ed9c-463c-8b08-cb487af8ce4e" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "637" ] ;
+       fhir:display [ fhir:v "Boostrix" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/TC-patient> ;
+     fhir:reference [ fhir:v "Patient/TC-patient" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2020-12-09"^^xsd:date
+  ] ; # 
+  fhir:recorded [ fhir:v "2020-12-09T11:00:00.390+02:00"^^xsd:dateTime] ; # 
+  fhir:lotNumber [ fhir:v "AHAVB946A"] ; # 
+  fhir:route [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "20035000" ] ;
+       fhir:display [ fhir:v "Intramuscular use" ]
+     ] )
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/TC-HCP1-ORG1-ROLE-performer> ;
+       fhir:reference [ fhir:v "PractitionerRole/TC-HCP1-ORG1-ROLE-performer" ]
+     ]
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:targetDisease ( [
+       fhir:coding ( [
+         a sct:76902006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "76902006" ] ;
+         fhir:display [ fhir:v "Tetanus (disorder)" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         a sct:27836007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "27836007" ] ;
+         fhir:display [ fhir:v "Pertussis (disorder)" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         a sct:397430003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "397430003" ] ;
+         fhir:display [ fhir:v "Diphtheria caused by Corynebacterium diphtheriae (disorder)" ]
+       ] )
+     ] ) ;
+     fhir:doseNumber [
+       a fhir:positiveInt ;
+       fhir:v "1"^^xsd:positiveInteger
+     ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Medication/TC-IMMUN-MEDIC-BOOSTRIX> a fhir:Medication ;
+  fhir:id [ fhir:v "TC-IMMUN-MEDIC-BOOSTRIX"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medication-for-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medication-for-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_TC-IMMUN-MEDIC-BOOSTRIX\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Medication TC-IMMUN-MEDIC-BOOSTRIX</b></p><a name=\"TC-IMMUN-MEDIC-BOOSTRIX\"> </a><a name=\"hcTC-IMMUN-MEDIC-BOOSTRIX\"> </a><a name=\"TC-IMMUN-MEDIC-BOOSTRIX-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-medication-for-immunization.html\">CH VACD Medication For Immunization</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/ead68e47-34a6-4534-a658-b718e565fb91</p><p><b>code</b>: <span title=\"Codes:{urn:oid:2.51.1.1 7680006370012}\">BOOSTRIX Inj Susp</span></p><p><b>status</b>: Active</p><p><b>manufacturer</b>: <a href=\"Organization-TC-ORG-GSK.html\">Organization GlaxoSmithKline AG</a></p><p><b>form</b>: <span title=\"Codes:{urn:oid:0.4.0.127.0.16.1.1.2.1 11202000}\">Suspension for injection</span></p><p><b>amount</b>: 0.5 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span>/1 Syringe (unit of presentation)<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code733020007 = 'Syringe')</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 106181007}\">Immunologic substance (substance)</span></td></tr></table><h3>Batches</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>LotNumber</b></td></tr><tr><td style=\"display: none\">*</td><td>AHAVB946A</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.402.1.3.1.1.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "ead68e47-34a6-4534-a658-b718e565fb91" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.51.1.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "7680006370012" ] ;
+       fhir:display [ fhir:v "BOOSTRIX Inj Susp" ]
+     ] ) ;
+     fhir:text [ fhir:v "BOOSTRIX Inj Susp" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Organization/TC-ORG-GSK> ;
+     fhir:reference [ fhir:v "Organization/TC-ORG-GSK" ]
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:0.4.0.127.0.16.1.1.2.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11202000" ] ;
+       fhir:display [ fhir:v "Suspension for injection" ]
+     ] )
+  ] ; # 
+  fhir:amount [
+     fhir:numerator [
+       fhir:value [ fhir:v 0.5 ] ;
+       fhir:unit [ fhir:v "milliliter" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mL" ]
+     ] ;
+     fhir:denominator [
+       fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "Syringe (unit of presentation)" ] ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "733020007" ]
+     ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:106181007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "106181007" ] ;
+         fhir:display [ fhir:v "Immunologic substance (substance)" ]
+       ] ) ;
+       fhir:text [ fhir:v "Immunologic substance (substance)" ]
+     ]
+  ] ) ; # 
+  fhir:batch [
+     fhir:lotNumber [ fhir:v "AHAVB946A" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/Organization/TC-ORG-GSK> a fhir:Organization ;
+  fhir:id [ fhir:v "TC-ORG-GSK"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_TC-ORG-GSK\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization TC-ORG-GSK</b></p><a name=\"TC-ORG-GSK\"> </a><a name=\"hcTC-ORG-GSK\"> </a><a name=\"TC-ORG-GSK-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization.html\">CH Core Organization</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601001000674</p><p><b>name</b>: GlaxoSmithKline AG</p><p><b>telecom</b>: ph: tel:+41 31 862 21 11(Work), fax: fax:+41 31 862 22 00(Work), <a href=\"mailto:mailto:swiss.info@gsk.com\">mailto:swiss.info@gsk.com</a>, <a href=\"https://www.gsk.com\">https://www.gsk.com</a></p><p><b>address</b>: Talstrasse 3-5 Münchenbuchsee BE 3053 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601001000674" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "GlaxoSmithKline AG"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "tel:+41 31 862 21 11" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "fax" ] ;
+     fhir:value [ fhir:v "fax:+41 31 862 22 00" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mailto:swiss.info@gsk.com" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "url" ] ;
+     fhir:value [ fhir:v "https://www.gsk.com" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "Talstrasse 3-5" ] ) ;
+     fhir:city [ fhir:v "Münchenbuchsee" ] ;
+     fhir:state [ fhir:v "BE" ] ;
+     fhir:postalCode [ fhir:v "3053" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Practitioner/TC-HCP2-C2> a fhir:Practitioner ;
+  fhir:id [ fhir:v "TC-HCP2-C2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_TC-HCP2-C2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner TC-HCP2-C2</b></p><a name=\"TC-HCP2-C2\"> </a><a name=\"hcTC-HCP2-C2\"> </a><a name=\"TC-HCP2-C2-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitioner-epr.html\">CH Core Practitioner EPR</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601999999998</p><p><b>active</b>: true</p><p><b>name</b>: Gabriela Meier </p><p><b>telecom</b>: ph: tel:+41.32.234.77.88(Work), fax: fax:+41.32.234.77.89(Work), <a href=\"mailto:mailto:leitung@praxis-gesund.ch\">mailto:leitung@praxis-gesund.ch</a>, <a href=\"http://www.praxis-gesund.ch\">http://www.praxis-gesund.ch</a></p><p><b>address</b>: Werthgasse 34 Bern ZH 3000 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601999999998" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Meier" ] ;
+     fhir:given ( [ fhir:v "Gabriela" ] ) ;
+     fhir:prefix ( [ fhir:v "Dr. med." ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "tel:+41.32.234.77.88" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "fax" ] ;
+     fhir:value [ fhir:v "fax:+41.32.234.77.89" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mailto:leitung@praxis-gesund.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "url" ] ;
+     fhir:value [ fhir:v "http://www.praxis-gesund.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:type [ fhir:v "physical" ] ;
+     fhir:line ( [ fhir:v "Werthgasse 34" ] ) ;
+     fhir:city [ fhir:v "Bern" ] ;
+     fhir:state [ fhir:v "ZH" ] ;
+     fhir:postalCode [ fhir:v "3000" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Organization/TC-ORG2> a fhir:Organization ;
+  fhir:id [ fhir:v "TC-ORG2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization-epr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_TC-ORG2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization TC-ORG2</b></p><a name=\"TC-ORG2\"> </a><a name=\"hcTC-ORG2\"> </a><a name=\"TC-ORG2-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization-epr.html\">CH Core Organization EPR</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601999999912</p><p><b>name</b>: Praxis Dr. G. Meier</p><p><b>telecom</b>: ph: tel:+41.32.234.77.88(Work), fax: fax:+41.32.234.77.89(Work), <a href=\"mailto:mailto:leitung@praxis-gesund.ch\">mailto:leitung@praxis-gesund.ch</a>, <a href=\"http://www.praxis-gesund.ch\">http://www.praxis-gesund.ch</a></p><p><b>address</b>: Werthgasse 34 Bern ZH 3000 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601999999912" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Praxis Dr. G. Meier"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "tel:+41.32.234.77.88" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "fax" ] ;
+     fhir:value [ fhir:v "fax:+41.32.234.77.89" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mailto:leitung@praxis-gesund.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "url" ] ;
+     fhir:value [ fhir:v "http://www.praxis-gesund.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "Werthgasse 34" ] ) ;
+     fhir:city [ fhir:v "Bern" ] ;
+     fhir:state [ fhir:v "ZH" ] ;
+     fhir:postalCode [ fhir:v "3000" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/PractitionerRole/TC-HCP2-ORG2-ROLE-performer> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "TC-HCP2-ORG2-ROLE-performer"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_TC-HCP2-ORG2-ROLE-performer\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole TC-HCP2-ORG2-ROLE-performer</b></p><a name=\"TC-HCP2-ORG2-ROLE-performer\"> </a><a name=\"hcTC-HCP2-ORG2-ROLE-performer\"> </a><a name=\"TC-HCP2-ORG2-ROLE-performer-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitionerrole-epr.html\">CH Core PractitionerRole EPR</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-TC-HCP2-C2.html\">Practitioner Gabriela Meier </a></p><p><b>organization</b>: <a href=\"Organization-TC-ORG2.html\">Organization Praxis Dr. G. Meier</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:practitioner [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Practitioner/TC-HCP2-C2> ;
+     fhir:reference [ fhir:v "Practitioner/TC-HCP2-C2" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Organization/TC-ORG2> ;
+     fhir:reference [ fhir:v "Organization/TC-ORG2" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/PractitionerRole/TC-HCP2-ORG2-ROLE-author> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "TC-HCP2-ORG2-ROLE-author"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitionerrole-epr>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_TC-HCP2-ORG2-ROLE-author\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole TC-HCP2-ORG2-ROLE-author</b></p><a name=\"TC-HCP2-ORG2-ROLE-author\"> </a><a name=\"hcTC-HCP2-ORG2-ROLE-author\"> </a><a name=\"TC-HCP2-ORG2-ROLE-author-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitionerrole-epr.html\">CH Core PractitionerRole EPR</a></p></div><p><b>active</b>: true</p><p><b>practitioner</b>: <a href=\"Practitioner-TC-HCP2-C2.html\">Practitioner Gabriela Meier </a></p><p><b>organization</b>: <a href=\"Organization-TC-ORG2.html\">Organization Praxis Dr. G. Meier</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:practitioner [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Practitioner/TC-HCP2-C2> ;
+     fhir:reference [ fhir:v "Practitioner/TC-HCP2-C2" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Organization/TC-ORG2> ;
+     fhir:reference [ fhir:v "Organization/TC-ORG2" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/Immunization/TCD01-IMMUN3-2> a fhir:Immunization ;
+  fhir:id [ fhir:v "TCD01-IMMUN3-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_TCD01-IMMUN3-2\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization TCD01-IMMUN3-2</b></p><a name=\"TCD01-IMMUN3-2\"> </a><a name=\"hcTCD01-IMMUN3-2\"> </a><a name=\"TCD01-IMMUN3-2-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-immunization.html\">CH VACD Immunization</a></p></div><p><b>Author of the content</b>: <a href=\"PractitionerRole-TC-HCP2-ORG2-ROLE-author.html\">PractitionerRole</a></p><p><b>CH VACD Extension Immunization Medication Reference</b>: <a href=\"Medication-TC-IMMUN-MEDIC-BOOSTRIX.html\">Medication BOOSTRIX Inj Susp</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href=\"http://snomed.info/id/59156000\">SNOMED CT 59156000</a>: Confirmed</p><blockquote><p><b>CH VACD Extension Merging Conflict Entry Reference</b></p><ul><li>entry: <a href=\"Immunization-TCD01-IMMUN2-2.html\">Immunization: extension = -&gt;PractitionerRole,-&gt;Medication BOOSTRIX Inj Susp,Confirmed (SNOMED CT#59156000),; identifier = urn:oid:2.16.756.5.30.1.402.1.3.1.1.1#urn:uuid:ebcf6de2-ed9c-463c-8b08-cb487af8ce4e; status = completed; vaccineCode = Boostrix; occurrence[x] = 2020-12-09; recorded = 2020-12-09 11:00:00+0200; lotNumber = AHAVB946A; route = Intramuscular use</a></li><li>conflict: duplicate</li></ul></blockquote><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/urn:uuid:58457607-9160-4d0a-9a79-55495755a677</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs 637}\">Boostrix</span></p><p><b>patient</b>: <a href=\"Patient-TC-patient.html\">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>occurrence</b>: 2020-12-09</p><p><b>recorded</b>: 2020-12-09 11:00:00+0200</p><p><b>lotNumber</b>: AHAVB946A</p><p><b>route</b>: <span title=\"Codes:{http://standardterms.edqm.eu 20035000}\">Intramuscular use</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-TC-HCP2-ORG2-ROLE-performer.html\">PractitionerRole</a></td></tr></table><blockquote><p><b>protocolApplied</b></p><p><b>targetDisease</b>: <span title=\"Codes:{http://snomed.info/sct 76902006}\">Tetanus (disorder)</span>, <span title=\"Codes:{http://snomed.info/sct 27836007}\">Pertussis (disorder)</span>, <span title=\"Codes:{http://snomed.info/sct 397430003}\">Diphtheria caused by Corynebacterium diphtheriae (disorder)</span></p><p><b>doseNumber</b>: 1</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/TC-HCP2-ORG2-ROLE-author> ;
+       fhir:reference [ fhir:v "PractitionerRole/TC-HCP2-ORG2-ROLE-author" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-immunization-medication-reference"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/Medication/TC-IMMUN-MEDIC-BOOSTRIX> ;
+       fhir:reference [ fhir:v "Medication/TC-IMMUN-MEDIC-BOOSTRIX" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding, sct:59156000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "59156000" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "entry"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:link <http://fhir.ch/ig/ch-vacd/Immunization/TCD01-IMMUN2-2> ;
+         fhir:reference [ fhir:v "Immunization/TCD01-IMMUN2-2" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "conflict"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "duplicate"
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-merging-conflict-entry-reference"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.402.1.3.1.1.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:58457607-9160-4d0a-9a79-55495755a677" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "637" ] ;
+       fhir:display [ fhir:v "Boostrix" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/TC-patient> ;
+     fhir:reference [ fhir:v "Patient/TC-patient" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2020-12-09"^^xsd:date
+  ] ; # 
+  fhir:recorded [ fhir:v "2020-12-09T11:00:00.390+02:00"^^xsd:dateTime] ; # 
+  fhir:lotNumber [ fhir:v "AHAVB946A"] ; # 
+  fhir:route [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "20035000" ] ;
+       fhir:display [ fhir:v "Intramuscular use" ]
+     ] )
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/TC-HCP2-ORG2-ROLE-performer> ;
+       fhir:reference [ fhir:v "PractitionerRole/TC-HCP2-ORG2-ROLE-performer" ]
+     ]
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:targetDisease ( [
+       fhir:coding ( [
+         a sct:76902006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "76902006" ] ;
+         fhir:display [ fhir:v "Tetanus (disorder)" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         a sct:27836007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "27836007" ] ;
+         fhir:display [ fhir:v "Pertussis (disorder)" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         a sct:397430003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "397430003" ] ;
+         fhir:display [ fhir:v "Diphtheria caused by Corynebacterium diphtheriae (disorder)" ]
+       ] )
+     ] ) ;
+     fhir:doseNumber [
+       a fhir:positiveInt ;
+       fhir:v "1"^^xsd:positiveInteger
+     ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Immunization/TCD01-IMMUN4> a fhir:Immunization ;
+  fhir:id [ fhir:v "TCD01-IMMUN4"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_TCD01-IMMUN4\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization TCD01-IMMUN4</b></p><a name=\"TCD01-IMMUN4\"> </a><a name=\"hcTCD01-IMMUN4\"> </a><a name=\"TCD01-IMMUN4-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-immunization.html\">CH VACD Immunization</a></p></div><p><b>Author of the content</b>: <a href=\"PractitionerRole-TC-HCP2-ORG2-ROLE-author.html\">PractitionerRole</a></p><p><b>CH VACD Extension Immunization Medication Reference</b>: <a href=\"Medication-TC-IMMUN-MEDIC-PRIORIX.html\">Medication PRIORIX Trockensub c Solv</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href=\"http://snomed.info/id/59156000\">SNOMED CT 59156000</a>: Confirmed</p><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/urn:uuid:58457607-9160-4d0a-9a79-55495755a677</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs 615}\">Priorix</span></p><p><b>patient</b>: <a href=\"Patient-TC-patient.html\">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>occurrence</b>: 2020-12-09</p><p><b>recorded</b>: 2020-12-09 11:00:00+0200</p><p><b>lotNumber</b>: A69FE297A</p><p><b>route</b>: <span title=\"Codes:{http://standardterms.edqm.eu 20035000}\">Intramuscular use</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-TC-HCP2-ORG2-ROLE-performer.html\">PractitionerRole</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 36989005}\">Mumps (disorder)</span></td><td>1</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/TC-HCP2-ORG2-ROLE-author> ;
+       fhir:reference [ fhir:v "PractitionerRole/TC-HCP2-ORG2-ROLE-author" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-immunization-medication-reference"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/Medication/TC-IMMUN-MEDIC-PRIORIX> ;
+       fhir:reference [ fhir:v "Medication/TC-IMMUN-MEDIC-PRIORIX" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding, sct:59156000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "59156000" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.402.1.3.1.1.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:58457607-9160-4d0a-9a79-55495755a677" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "615" ] ;
+       fhir:display [ fhir:v "Priorix" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/TC-patient> ;
+     fhir:reference [ fhir:v "Patient/TC-patient" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2020-12-09"^^xsd:date
+  ] ; # 
+  fhir:recorded [ fhir:v "2020-12-09T11:00:00.390+02:00"^^xsd:dateTime] ; # 
+  fhir:lotNumber [ fhir:v "A69FE297A"] ; # 
+  fhir:route [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "20035000" ] ;
+       fhir:display [ fhir:v "Intramuscular use" ]
+     ] )
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/TC-HCP2-ORG2-ROLE-performer> ;
+       fhir:reference [ fhir:v "PractitionerRole/TC-HCP2-ORG2-ROLE-performer" ]
+     ]
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:targetDisease ( [
+       fhir:coding ( [
+         a sct:36989005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "36989005" ] ;
+         fhir:display [ fhir:v "Mumps (disorder)" ]
+       ] )
+     ] ) ;
+     fhir:doseNumber [
+       a fhir:positiveInt ;
+       fhir:v "1"^^xsd:positiveInteger
+     ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Medication/TC-IMMUN-MEDIC-PRIORIX> a fhir:Medication ;
+  fhir:id [ fhir:v "TC-IMMUN-MEDIC-PRIORIX"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medication-for-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medication-for-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_TC-IMMUN-MEDIC-PRIORIX\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Medication TC-IMMUN-MEDIC-PRIORIX</b></p><a name=\"TC-IMMUN-MEDIC-PRIORIX\"> </a><a name=\"hcTC-IMMUN-MEDIC-PRIORIX\"> </a><a name=\"TC-IMMUN-MEDIC-PRIORIX-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-medication-for-immunization.html\">CH VACD Medication For Immunization</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/47fd8496-cadb-4546-9533-5fad5127a1d5</p><p><b>code</b>: <span title=\"Codes:{urn:oid:2.51.1.1 7680006150010}\">PRIORIX Trockensub c Solv</span></p><p><b>status</b>: Active</p><p><b>manufacturer</b>: <a href=\"Organization-TC-ORG-GSK.html\">Organization GlaxoSmithKline AG</a></p><p><b>form</b>: <span title=\"Codes:{urn:oid:0.4.0.127.0.16.1.1.2.1 11202000}\">Suspension for injection</span></p><p><b>amount</b>: 0.5 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span>/1 Syringe (unit of presentation)<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code733020007 = 'Syringe')</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 106181007}\">Immunologic substance (substance)</span></td></tr></table><h3>Batches</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>LotNumber</b></td></tr><tr><td style=\"display: none\">*</td><td>A69FE297A</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.402.1.3.1.1.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "47fd8496-cadb-4546-9533-5fad5127a1d5" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.51.1.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "7680006150010" ] ;
+       fhir:display [ fhir:v "PRIORIX Trockensub c Solv" ]
+     ] ) ;
+     fhir:text [ fhir:v "PRIORIX Trockensub c Solv" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Organization/TC-ORG-GSK> ;
+     fhir:reference [ fhir:v "Organization/TC-ORG-GSK" ]
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:0.4.0.127.0.16.1.1.2.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11202000" ] ;
+       fhir:display [ fhir:v "Suspension for injection" ]
+     ] )
+  ] ; # 
+  fhir:amount [
+     fhir:numerator [
+       fhir:value [ fhir:v 0.5 ] ;
+       fhir:unit [ fhir:v "milliliter" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mL" ]
+     ] ;
+     fhir:denominator [
+       fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "Syringe (unit of presentation)" ] ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "733020007" ]
+     ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:106181007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "106181007" ] ;
+         fhir:display [ fhir:v "Immunologic substance (substance)" ]
+       ] ) ;
+       fhir:text [ fhir:v "Immunologic substance (substance)" ]
+     ]
+  ] ) ; # 
+  fhir:batch [
+     fhir:lotNumber [ fhir:v "A69FE297A" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/Immunization/TCD01-IMMUN5> a fhir:Immunization ;
+  fhir:id [ fhir:v "TCD01-IMMUN5"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_TCD01-IMMUN5\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization TCD01-IMMUN5</b></p><a name=\"TCD01-IMMUN5\"> </a><a name=\"hcTCD01-IMMUN5\"> </a><a name=\"TCD01-IMMUN5-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-immunization.html\">CH VACD Immunization</a></p></div><p><b>Author of the content</b>: <a href=\"PractitionerRole-TC-HCP2-ORG2-ROLE-author.html\">PractitionerRole</a></p><p><b>CH VACD Extension Immunization Medication Reference</b>: <a href=\"Medication-TC-IMMUN-MEDIC-GARDASIL9.html\">Medication GARDASIL 9 Inj Susp Fertspr</a></p><p><b>CH VACD Extension verificationStatus</b>: <a href=\"http://snomed.info/id/59156000\">SNOMED CT 59156000</a>: Confirmed</p><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/urn:uuid:cc632c23-ffb4-4cd9-a090-61afd0746aff</p><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs 65387}\">Gardasil 9</span></p><p><b>patient</b>: <a href=\"Patient-TC-patient.html\">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>occurrence</b>: 2021-03-29</p><p><b>recorded</b>: 2021-03-29 11:00:00+0200</p><p><b>lotNumber</b>: 12435</p><p><b>route</b>: <span title=\"Codes:{http://standardterms.edqm.eu 20035000}\">Intramuscular use</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"PractitionerRole-TC-HCP2-ORG2-ROLE-performer.html\">PractitionerRole</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 240532009}\">Human papillomavirus infection (disorder)</span></td><td>1</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/TC-HCP2-ORG2-ROLE-author> ;
+       fhir:reference [ fhir:v "PractitionerRole/TC-HCP2-ORG2-ROLE-author" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-immunization-medication-reference"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/Medication/TC-IMMUN-MEDIC-GARDASIL9> ;
+       fhir:reference [ fhir:v "Medication/TC-IMMUN-MEDIC-GARDASIL9" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding, sct:59156000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "59156000" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.402.1.3.1.1.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:cc632c23-ffb4-4cd9-a090-61afd0746aff" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-swissmedic-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "65387" ] ;
+       fhir:display [ fhir:v "Gardasil 9" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/TC-patient> ;
+     fhir:reference [ fhir:v "Patient/TC-patient" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2021-03-29"^^xsd:date
+  ] ; # 
+  fhir:recorded [ fhir:v "2021-03-29T11:00:00.390+02:00"^^xsd:dateTime] ; # 
+  fhir:lotNumber [ fhir:v "12435"] ; # 
+  fhir:route [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "20035000" ] ;
+       fhir:display [ fhir:v "Intramuscular use" ]
+     ] )
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/TC-HCP2-ORG2-ROLE-performer> ;
+       fhir:reference [ fhir:v "PractitionerRole/TC-HCP2-ORG2-ROLE-performer" ]
+     ]
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:targetDisease ( [
+       fhir:coding ( [
+         a sct:240532009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "240532009" ] ;
+         fhir:display [ fhir:v "Human papillomavirus infection (disorder)" ]
+       ] )
+     ] ) ;
+     fhir:doseNumber [
+       a fhir:positiveInt ;
+       fhir:v "1"^^xsd:positiveInteger
+     ]
+  ] ) . # 
+
+<http://test.fhir.ch/r4/Medication/TC-IMMUN-MEDIC-GARDASIL9> a fhir:Medication ;
+  fhir:id [ fhir:v "TC-IMMUN-MEDIC-GARDASIL9"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medication-for-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medication-for-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Medication_TC-IMMUN-MEDIC-GARDASIL9\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Medication TC-IMMUN-MEDIC-GARDASIL9</b></p><a name=\"TC-IMMUN-MEDIC-GARDASIL9\"> </a><a name=\"hcTC-IMMUN-MEDIC-GARDASIL9\"> </a><a name=\"TC-IMMUN-MEDIC-GARDASIL9-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-medication-for-immunization.html\">CH VACD Medication For Immunization</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/cdd3c568-516b-4dea-94b4-1a05683595fc</p><p><b>code</b>: <span title=\"Codes:{urn:oid:2.51.1.1 7680653870019}\">GARDASIL 9 Inj Susp Fertspr</span></p><p><b>status</b>: Active</p><p><b>manufacturer</b>: <a href=\"Organization-TC-ORG-MSD.html\">Organization MSD Merck Sharp &amp; Dohme AG</a></p><p><b>form</b>: <span title=\"Codes:{urn:oid:0.4.0.127.0.16.1.1.2.1 11202000}\">Suspension for injection</span></p><p><b>amount</b>: 0.5 milliliter<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemL = 'mL')</span>/1 Syringe (unit of presentation)<span style=\"background: LightGoldenRodYellow\"> (Details: SNOMED CT  code733020007 = 'Syringe')</span></p><h3>Ingredients</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Item[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 106181007}\">Immunologic substance (substance)</span></td></tr></table><h3>Batches</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>LotNumber</b></td></tr><tr><td style=\"display: none\">*</td><td>A69FE297A</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.402.1.3.1.1.1"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "cdd3c568-516b-4dea-94b4-1a05683595fc" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.51.1.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "7680653870019" ] ;
+       fhir:display [ fhir:v "GARDASIL 9 Inj Susp Fertspr" ]
+     ] ) ;
+     fhir:text [ fhir:v "GARDASIL 9 Inj Susp Fertspr" ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Organization/TC-ORG-MSD> ;
+     fhir:reference [ fhir:v "Organization/TC-ORG-MSD" ]
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:0.4.0.127.0.16.1.1.2.1"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11202000" ] ;
+       fhir:display [ fhir:v "Suspension for injection" ]
+     ] )
+  ] ; # 
+  fhir:amount [
+     fhir:numerator [
+       fhir:value [ fhir:v 0.5 ] ;
+       fhir:unit [ fhir:v "milliliter" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mL" ]
+     ] ;
+     fhir:denominator [
+       fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "Syringe (unit of presentation)" ] ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "733020007" ]
+     ]
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:106181007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "106181007" ] ;
+         fhir:display [ fhir:v "Immunologic substance (substance)" ]
+       ] ) ;
+       fhir:text [ fhir:v "Immunologic substance (substance)" ]
+     ]
+  ] ) ; # 
+  fhir:batch [
+     fhir:lotNumber [ fhir:v "A69FE297A" ]
+  ] . # 
+
+<http://test.fhir.ch/r4/Organization/TC-ORG-MSD> a fhir:Organization ;
+  fhir:id [ fhir:v "TC-ORG-MSD"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_TC-ORG-MSD\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization TC-ORG-MSD</b></p><a name=\"TC-ORG-MSD\"> </a><a name=\"hcTC-ORG-MSD\"> </a><a name=\"TC-ORG-MSD-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-organization.html\">CH Core Organization</a></p></div><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601001000674</p><p><b>name</b>: MSD Merck Sharp &amp; Dohme AG</p><p><b>telecom</b>: ph: tel:+41 58 618 30 30(Work), <a href=\"mailto:mailto:msd.kundendienst@msd.com\">mailto:msd.kundendienst@msd.com</a>, <a href=\"https://www.msd.ch\">https://www.msd.ch</a></p><p><b>address</b>: Werftestrasse 4 Lucerne LU 6005 CH </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601001000674" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "MSD Merck Sharp & Dohme AG"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "tel:+41 58 618 30 30" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mailto:msd.kundendienst@msd.com" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "url" ] ;
+     fhir:value [ fhir:v "https://www.msd.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "Werftestrasse 4" ] ) ;
+     fhir:city [ fhir:v "Lucerne" ] ;
+     fhir:state [ fhir:v "LU" ] ;
+     fhir:postalCode [ fhir:v "6005" ] ;
+     fhir:country [ fhir:v "CH" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

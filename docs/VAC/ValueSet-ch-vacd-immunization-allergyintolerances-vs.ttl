@@ -1,0 +1,754 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-immunization-allergyintolerances-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ch-vacd-immunization-allergyintolerances-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ch-vacd-immunization-allergyintolerances-vs</b></p><a name=\"ch-vacd-immunization-allergyintolerances-vs\"> </a><a name=\"hcch-vacd-immunization-allergyintolerances-vs\"> </a><a name=\"ch-vacd-immunization-allergyintolerances-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/716186003\">716186003</a></td><td>No known allergy (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/213020009\">213020009</a></td><td>Allergy to egg protein (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/416098002\">416098002</a></td><td>Allergy to drug (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/39579001\">39579001</a></td><td>Anaphylaxis (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/24079001\">24079001</a></td><td>Atopic dermatitis (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/863903001\">863903001</a></td><td>Allergy to component of vaccine product (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/293104008\">293104008</a></td><td>Adverse reaction to component of vaccine product (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/219082005\">219082005</a></td><td>Adverse reaction to component of vaccine product containing Vibrio cholerae antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/1142181004\">1142181004</a></td><td>Adverse reaction to component of vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/1157106007\">1157106007</a></td><td>Adverse reaction to component of vaccine product containing only recombinant non-replicating viral vector encoding Severe acute respiratory syndrome coronavirus 2 spike protein (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/1162639000\">1162639000</a></td><td>Adverse reaction to component of vaccine product containing only acellular Bordetella pertussis, Clostridium tetani, Corynebacterium diphtheriae, Haemophilus influenzae type B, Hepatitis B virus and inactivated Human poliovirus antigens (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/293108006\">293108006</a></td><td>Adverse reaction to component of vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/293109003\">293109003</a></td><td>Adverse reaction to component of vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/293127000\">293127000</a></td><td>Adverse reaction to component of vaccine product containing Haemophilus influenzae type B antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/293126009\">293126009</a></td><td>Adverse reaction to component of vaccine product containing Hepatitis A virus antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/293110008\">293110008</a></td><td>Adverse reaction to component of vaccine product containing Hepatitis B virus antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/420113004\">420113004</a></td><td>Adverse reaction to component of vaccine product containing Influenza virus antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/293125008\">293125008</a></td><td>Adverse reaction to component of vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/219096004\">219096004</a></td><td>Adverse reaction to component of vaccine product containing Measles morbillivirus antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/219088009\">219088009</a></td><td>Adverse reaction to component of vaccine product containing Neisseria meningitidis antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/293114004\">293114004</a></td><td>Adverse reaction to component of vaccine product containing Mumps orthorubulavirus antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/293116002\">293116002</a></td><td>Adverse reaction to component of vaccine product containing Streptococcus pneumoniae antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/293117006\">293117006</a></td><td>Adverse reaction to component of vaccine product containing Human poliovirus antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/293118001\">293118001</a></td><td>Adverse reaction to component of vaccine product containing Rabies lyssavirus antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/219084006\">219084006</a></td><td>Adverse reaction to component of vaccine product containing Clostridium tetani antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/219076007\">219076007</a></td><td>Adverse reaction to component of vaccine product containing Bacillus Calmette-Guerin antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/293122006\">293122006</a></td><td>Adverse reaction to component of vaccine product containing Salmonella enterica subspecies enterica serovar Typhi antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/219095000\">219095000</a></td><td>Adverse reaction to component of vaccine product containing Yellow fever virus antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/1162644007\">1162644007</a></td><td>Adverse reaction to component of vaccine product containing only severe acute respiratory syndrome coronavirus 2 recombinant spike protein antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/1217476001\">1217476001</a></td><td>Anaphylaxis caused by component of vaccine product (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/293120003\">293120003</a></td><td>Adverse reaction to component of vaccine product containing Vaccinia virus antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/294657002\">294657002</a></td><td>Allergy to component of vaccine product containing Vaccinia virus antigen (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/294641002\">294641002</a></td><td>Allergy to component of vaccine product containing Bacillus anthracis antigen (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/700468006\">700468006</a></td><td>Allergy to component of vaccine product containing Rotavirus antigen (finding)</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> version <code>http://snomed.info/sct/2011000195101/version/20241207</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/1303850003\">1303850003</a></td><td>Adverse reaction to component of vaccine product containing Tick-borne encephalitis virus antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/1303851004\">1303851004</a></td><td>Adverse reaction to component of vaccine product containing Human papillomavirus antigen (disorder)</td></tr><tr><td><a href=\"http://snomed.info/id/1303852006\">1303852006</a></td><td>Adverse reaction to component of vaccine product containing Human alphaherpesvirus 3 antigen (disorder)</td></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (Schweiz) (German (Switzerland), de)</b></td><td><b>English (United States) (English (United States), en)</b></td><td><b>French (Switzerland) (fr)</b></td><td><b>Italian (Switzerland) (it)</b></td><td><b>rm</b></td></tr><tr><td>716186003</td><td>Keine Allergie bekannt</td><td>No known allergy</td><td>pas d'allergie connue</td><td>nessuna allergia nota</td><td>nagina allergia enconuschenta</td></tr><tr><td>213020009</td><td>Allergie gegen Hühnereiweiss</td><td>Allergy to egg protein</td><td>allergie aux protéines de l'œuf</td><td>allergia alle proteine dell'uovo</td><td>allergia cunter alv d'ov da giaglina</td></tr><tr><td>416098002</td><td>Medikamenten-Allergie</td><td>Allergy to drug</td><td>allergie aux médicaments</td><td>allergia ai farmaci</td><td>allergia cunter medicaments</td></tr><tr><td>39579001</td><td>Anaphylaktische Reaktion</td><td>Anaphylactic reaction</td><td>réaction anaphylactique</td><td>reazione anafilattica</td><td>reacziun anafilactica</td></tr><tr><td>24079001</td><td>Atopische Dermatitis</td><td>Atopic dermatitis</td><td>dermite atopique</td><td>dermatite atopica</td><td>dermatitis atopica</td></tr><tr><td>863903001</td><td>Allergie gegen Bestandteil eines Impfstoffs</td><td>Allergy to component of vaccine product</td><td>allergie à un composant du vaccin</td><td>allergia a un componente del vaccino</td><td>allergia cunter ina cumponenta d'in vaccin</td></tr><tr><td>293104008</td><td>Unerwünschte Wirkung eines Impfstoffs</td><td>Vaccine adverse reaction</td><td>effet indésirable à un vaccin</td><td>reazione avversa a un vaccino</td><td>effect nungiavischà d'in vaccin</td></tr><tr><td>219082005</td><td>Unerwünschte Wirkung eines Cholera-Impfstoffs</td><td>Cholera vaccine adverse reaction</td><td>effet indésirable d'un vaccin contre le choléra</td><td>reazione avversa al vaccino contro il colera</td><td>effect nungiavischà d'in vaccin cunter colera</td></tr><tr><td>1142181004</td><td>Unerwünschte Wirkung eines mRNA-Impfstoffs gegen COVID-19</td><td>COVID-19 mRNA vaccine adverse reaction</td><td>effet indésirable d'un vaccin à ARNm contre la COVID-19</td><td>reazione avversa al vaccino a mRNA anti-COVID-19</td><td>effect nungiavischà d'in vaccin cunter COVID-19 mRNA</td></tr><tr><td>1157106007</td><td>Unerwünschte Wirkung eines nicht replizierenden viralen Vektorimpfstoffs gegen COVID-19</td><td>COVID-19 non-replicating viral vector vaccine adverse reaction</td><td>effet indésirable d'un vaccin à vecteur viral recombinant non réplicatif contre le COVID-19</td><td>reazione avversa al vaccino a vettore virale non replicante anti-COVID-19</td><td>effect nungiavischà d'in vaccin vectorial viral betg replitgant cunter COVID-19</td></tr><tr><td>1162639000</td><td>Unerwünschte Wirkung eines Diphtherie-, Pertussis (azellulär)-, Haemophilus influenzae B-, Hepatitis B- und Poliomyelitis sowie Tetanus (inaktiviert)-Impfstoffs</td><td>Diphtheria and acellular pertussis and Haemophilus influenzae type B and hepatitis B and inactivated poliomyelitis and tetanus vaccine adverse reaction</td><td>effet indésirable d'un vaccin contre la diphtérie, la coqueluche (acellulaire), Haemophilus influenzae de type B, l'hépatite B, la poliomyélite (inactivé) et le tétanos</td><td>reazione avversa al vaccino contro la difterite, il tetano, la pertosse (acellulare), la poliomielite (inattivato), l’Haemophilus influenzae di tipo B e l’epatite B</td><td>effect nungiavischà d'in vaccin (inactivà) cunter difteria, la tuss chanina (acellulara), hemofilus influenza B, hepatitis B e poliomielitis sco er tetanus</td></tr><tr><td>293108006</td><td>Unerwünschte Wirkung eines Diphtherie- und Tetanus-Impfstoffs</td><td>Diphtheria and tetanus vaccine adverse reaction</td><td>effet indésirable du vaccin contre la diphtérie et le tétanos</td><td>reazione avversa al vaccino contro la difterite e il tetano</td><td>effect nungiavischà d'in vaccin cunter difteria e tetanus</td></tr><tr><td>293109003</td><td>Unerwünschte Wirkung eines Diphtherie-, Pertussis und Tetanus-Impfstoffs</td><td>Diphtheria, pertussis, and tetanus vaccine adverse reaction</td><td>effet indésirable du vaccin contre la diphtérie, le tétanos et la coqueluche</td><td>reazione avversa al vaccino contro la difterite, il tetano e la pertosse</td><td>effect nungiavischà d'in vaccin cunter difteria, la tuss chanina e tetanus</td></tr><tr><td>293127000</td><td>Unerwünschte Wirkung eines Haemophilus influenzae B-Impfstoffs</td><td>Haemophilus influenzae Type B vaccine adverse reaction</td><td>effet indésirable du vaccin contre Haemophilus influenzae de type B</td><td>reazione avversa al vaccino contro l’Haemophilus influenzae di tipo B</td><td>effect nungiavischà d'in vaccin cunter hemofilus influenza B</td></tr><tr><td>293126009</td><td>Unerwünschte Wirkung eines Hepatitis A-Impfstoffs</td><td>Hepatitis A vaccine adverse reaction</td><td>effet indésirable du vaccin contre l'hépatite A</td><td>reazione avversa al vaccino contro l’epatite A</td><td>effect nungiavischà d'in vaccin cunter hepatitis A</td></tr><tr><td>293110008</td><td>Unerwünschte Wirkung eines Hepatitis B-Impfstoffs</td><td>Hepatitis B vaccine adverse reaction</td><td>effet indésirable du vaccin contre l'hépatite B</td><td>reazione avversa al vaccino contro l’epatite B</td><td>effect nungiavischà d'in vaccin cunter hepatitis B</td></tr><tr><td>420113004</td><td>Unerwünschte Wirkung eines Influenzavirus-Impfstoffs</td><td>Influenza virus vaccine adverse reaction</td><td>effet indésirable du vaccin contre l'influenza</td><td>reazione avversa al vaccino contro l’influenza</td><td>effect nungiavischà d'in vaccin cunter la grippa</td></tr><tr><td>293125008</td><td>Unerwünschte Wirkung eines Masern-, Mumps- und Röteln-Impfstoffs</td><td>Measles and mumps and rubella vaccine adverse reaction</td><td>effet indésirable du vaccin contre la rougeole, les oreillons et la rubéole</td><td>reazione avversa al vaccino contro il morbillo, la parotite e la rosolia</td><td>effect nungiavischà d'in vaccin cunter il virustgel, il glandun e la rubella</td></tr><tr><td>219096004</td><td>Unerwünschte Wirkung eines Masern-Impfstoffs</td><td>Measles vaccine adverse reaction</td><td>effet indésirable du vaccin antirougeoleux</td><td>reazione avversa al vaccino contro il morbillo</td><td>effect nungiavischà d'in vaccin cunter il virustgel</td></tr><tr><td>219088009</td><td>Unerwünschte Wirkung eines Meningokokken-Impfstoffs</td><td>Meningococcal vaccine adverse reaction</td><td>effet indésirable du vaccin contre les méningocoques</td><td>reazione avversa al vaccino contro i meningococchi</td><td>effect nungiavischà d'in vaccin cunter meningococcus</td></tr><tr><td>293114004</td><td>Unerwünschte Wirkung eines Mumps-Impfstoffs</td><td>Mumps vaccine adverse reaction</td><td>effet indésirable du vaccin contre les oreillons</td><td>reazione avversa al vaccino contro la parotite</td><td>effect nungiavischà d'in vaccin cunter il glandun</td></tr><tr><td>293116002</td><td>Unerwünschte Wirkung eines Pneumokokken-Impfstoffs</td><td>Pneumococcal vaccine adverse reaction</td><td>effet indésirable du vaccin contre les pneumocoques</td><td>reazione avversa al vaccino contro gli pneumococchi</td><td>effect nungiavischà d'in vaccin cunter pneumococcus</td></tr><tr><td>293117006</td><td>Unerwünschte Wirkung eines Poliomyelitis-Impfstoffs</td><td>Poliomyelitis vaccine adverse reaction</td><td>effet indésirable du vaccin contre la poliomyélite</td><td>reazione avversa al vaccino contro la poliomielite</td><td>effect nungiavischà d'in vaccin cunter poliomielitis</td></tr><tr><td>293118001</td><td>Unerwünschte Wirkung eines Tollwut-Impfstoffs</td><td>Rabies vaccine adverse reaction</td><td>effet indésirable du vaccin contre la rage</td><td>reazione avversa al vaccino contro la rabbia</td><td>effect nungiavischà d'in vaccin cunter la frenesia</td></tr><tr><td>219084006</td><td>Unerwünschte Wirkung eines Tetanus-Impfstoffs</td><td>Tetanus vaccine adverse reaction</td><td>effet indésirable du vaccin contre le tétanos</td><td>reazione avversa al vaccino contro il tetano</td><td>effect nungiavischà d'in vaccin cunter tetanus</td></tr><tr><td>219076007</td><td>Unerwünschte Wirkung eines Tuberkulose-Impfstoffs</td><td>Adverse reaction to component of vaccine product containing Bacillus Calmette-Guerin antigen (disorder)</td><td>effet indésirable du vaccin contre la tuberculose</td><td>reazione avversa al vaccino contro la tubercolosi</td><td>effect nungiavischà d'in vaccin cunter tuberculosa</td></tr><tr><td>293122006</td><td>Unerwünschte Wirkung eines Typhus-Impfstoffs</td><td>Typhoid vaccine adverse reaction</td><td>effet indésirable du vaccin contre la fièvre typhoïde</td><td>reazione avversa al vaccino contro la febbre tifoide</td><td>effect nungiavischà d'in vaccin cunter tifus</td></tr><tr><td>219095000</td><td>Unerwünschte Wirkung eines Gelbfieber-Impfstoffs</td><td>Yellow fever vaccine adverse reaction</td><td>effet indésirable du vaccin contre la fièvre jaune</td><td>reazione avversa al vaccino contro la febbre gialla</td><td>effect nungiavischà d'in vaccin cunter la fevra melna</td></tr><tr><td>1162644007</td><td>Unerwünschte Wirkung eines Covid-19-rekombinanten Spike-Protein-Antigen-Impfstoffs</td><td>COVID-19 recombinant spike protein antigen vaccine adverse reaction</td><td>effet indésirable du vaccin antigénique à protéine Spike recombinante contre le COVID-19</td><td>reazione avversa al vaccino anti-COVID-19 ricombinante con antigene della proteina spike</td><td>effect nungiavischà d'in vaccin cunter COVID-19 cun antigens dal protein spike recumbinant</td></tr><tr><td>1217476001</td><td>Anaphylaktische Reaktion auf einen Impfstoff</td><td>Anaphylaxis due to vaccine</td><td>réaction anaphylactique due au vaccin</td><td>anafilassi dovuta al vaccino</td><td>reacziun anafilactica sin in vaccin</td></tr><tr><td>293120003</td><td>Unerwünschte Wirkung eines Pocken-Impfstoffs</td><td>Smallpox vaccine adverse reactionerse reaction</td><td>effet indésirable d'un vaccin contre la variole</td><td>effetto indesiderato di un vaccino antivaiolo</td><td>effect nungiavischà d'in vaccin cunter la virola</td></tr><tr><td>294657002</td><td>Allergie gegen Pockenimpfstoff</td><td>Allergy to smallpox vaccine</td><td>allergie au vaccin contre la variole</td><td>allergia al vaccino contro il vaiolo</td><td>allergia cunter in vaccin en virola</td></tr><tr><td>294641002</td><td>Allergie gegen Anthrax-Impfstoff</td><td>Allergy to anthrax vaccine</td><td>allergie au vaccin contre le charbon</td><td>allergia al vaccino contro l'antrace</td><td>allergia cunter in vaccin cunter antrax</td></tr><tr><td>700468006</td><td>Allergie gegen Impfstoff gegen Rotavirus</td><td>Allergy to Rotavirus vaccine</td><td>allergie au vaccin contre le rotavirus</td><td>allergia al vaccino contro il Rotavirus</td><td>allergia cunter il vaccin cunter Rotavirus</td></tr><tr><td>1303850003</td><td>Unerwünschte Wirkung eines FSME-Impfstoffs</td><td>Adverse reaction to component of vaccine product containing Tick-borne encephalitis virus antigen</td><td>effet indésirable du vaccin contre la FSME</td><td>reazione avversa al vaccino contro la TBE</td><td>effect nungiavischà d'in vaccin FSME</td></tr><tr><td>1303851004</td><td>Unerwünschte Wirkung eines Humanen-Papillomaviren-Impfstoffs</td><td>Adverse reaction to component of vaccine product containing Human papillomavirus antigen</td><td>effet indésirable du vaccin contre le papillomavirus humain</td><td>reazione avversa al vaccino contro il papillomavirus umano</td><td>effect nungiavischà d'in vaccin da pirlas da l'uman</td></tr><tr><td>1303852006</td><td>Unerwünschte Wirkung eines Varizellen-Impfstoffs</td><td>Adverse reaction to component of vaccine product containing Human alphaherpesvirus 3 antigen</td><td>effet indésirable du vaccin contre la varicelle</td><td>reazione avversa al vaccino contro la varicella</td><td>effect nungiavischà d'in vaccin cunter varizellas</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-immunization-allergyintolerances-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "6.0.0-ballot-ci-build"] ; # 
+  fhir:name [ fhir:v "AllergiesAndIntolerancesForImmunization"] ; # 
+  fhir:title [ fhir:v "Allergies and Intolerance values for Immunization"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-07T07:26:19+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Switzerland"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Switzerland" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7.ch/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The allergies and adverse reactions which have an influence on the immunization recommendations."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CHE" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "CC0-1.0"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "716186003" ] ;
+         fhir:display [ fhir:v "No known allergy (situation)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Keine Allergie bekannt" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "pas d'allergie connue" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "nessuna allergia nota" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "nagina allergia enconuschenta" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "No known allergy" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "213020009" ] ;
+         fhir:display [ fhir:v "Allergy to egg protein (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Allergie gegen Hühnereiweiss" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "allergie aux protéines de l'œuf" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "allergia alle proteine dell'uovo" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "allergia cunter alv d'ov da giaglina" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Allergy to egg protein" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "416098002" ] ;
+         fhir:display [ fhir:v "Allergy to drug (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Medikamenten-Allergie" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "allergie aux médicaments" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "allergia ai farmaci" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "allergia cunter medicaments" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Allergy to drug" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "39579001" ] ;
+         fhir:display [ fhir:v "Anaphylaxis (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Anaphylaktische Reaktion" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "réaction anaphylactique" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione anafilattica" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "reacziun anafilactica" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Anaphylactic reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "24079001" ] ;
+         fhir:display [ fhir:v "Atopic dermatitis (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Atopische Dermatitis" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "dermite atopique" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "dermatite atopica" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "dermatitis atopica" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Atopic dermatitis" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "863903001" ] ;
+         fhir:display [ fhir:v "Allergy to component of vaccine product (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Allergie gegen Bestandteil eines Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "allergie à un composant du vaccin" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "allergia a un componente del vaccino" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "allergia cunter ina cumponenta d'in vaccin" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Allergy to component of vaccine product" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "293104008" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable à un vaccin" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa a un vaccino" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "219082005" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Vibrio cholerae antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Cholera-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable d'un vaccin contre le choléra" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro il colera" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter colera" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Cholera vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1142181004" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines mRNA-Impfstoffs gegen COVID-19" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable d'un vaccin à ARNm contre la COVID-19" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino a mRNA anti-COVID-19" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter COVID-19 mRNA" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "COVID-19 mRNA vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1157106007" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing only recombinant non-replicating viral vector encoding Severe acute respiratory syndrome coronavirus 2 spike protein (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines nicht replizierenden viralen Vektorimpfstoffs gegen COVID-19" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable d'un vaccin à vecteur viral recombinant non réplicatif contre le COVID-19" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino a vettore virale non replicante anti-COVID-19" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin vectorial viral betg replitgant cunter COVID-19" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "COVID-19 non-replicating viral vector vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1162639000" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing only acellular Bordetella pertussis, Clostridium tetani, Corynebacterium diphtheriae, Haemophilus influenzae type B, Hepatitis B virus and inactivated Human poliovirus antigens (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Diphtherie-, Pertussis (azellulär)-, Haemophilus influenzae B-, Hepatitis B- und Poliomyelitis sowie Tetanus (inaktiviert)-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable d'un vaccin contre la diphtérie, la coqueluche (acellulaire), Haemophilus influenzae de type B, l'hépatite B, la poliomyélite (inactivé) et le tétanos" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro la difterite, il tetano, la pertosse (acellulare), la poliomielite (inattivato), l’Haemophilus influenzae di tipo B e l’epatite B" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin (inactivà) cunter difteria, la tuss chanina (acellulara), hemofilus influenza B, hepatitis B e poliomielitis sco er tetanus" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Diphtheria and acellular pertussis and Haemophilus influenzae type B and hepatitis B and inactivated poliomyelitis and tetanus vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "293108006" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Diphtherie- und Tetanus-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre la diphtérie et le tétanos" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro la difterite e il tetano" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter difteria e tetanus" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Diphtheria and tetanus vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "293109003" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Diphtherie-, Pertussis und Tetanus-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre la diphtérie, le tétanos et la coqueluche" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro la difterite, il tetano e la pertosse" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter difteria, la tuss chanina e tetanus" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Diphtheria, pertussis, and tetanus vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "293127000" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Haemophilus influenzae type B antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Haemophilus influenzae B-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre Haemophilus influenzae de type B" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro l’Haemophilus influenzae di tipo B" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter hemofilus influenza B" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Haemophilus influenzae Type B vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "293126009" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Hepatitis A virus antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Hepatitis A-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre l'hépatite A" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro l’epatite A" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter hepatitis A" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Hepatitis A vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "293110008" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Hepatitis B virus antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Hepatitis B-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre l'hépatite B" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro l’epatite B" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter hepatitis B" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Hepatitis B vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "420113004" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Influenza virus antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Influenzavirus-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre l'influenza" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro l’influenza" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter la grippa" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Influenza virus vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "293125008" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Masern-, Mumps- und Röteln-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre la rougeole, les oreillons et la rubéole" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro il morbillo, la parotite e la rosolia" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter il virustgel, il glandun e la rubella" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Measles and mumps and rubella vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "219096004" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Measles morbillivirus antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Masern-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin antirougeoleux" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro il morbillo" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter il virustgel" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Measles vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "219088009" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Neisseria meningitidis antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Meningokokken-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre les méningocoques" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro i meningococchi" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter meningococcus" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Meningococcal vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "293114004" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Mumps orthorubulavirus antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Mumps-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre les oreillons" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro la parotite" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter il glandun" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Mumps vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "293116002" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Streptococcus pneumoniae antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Pneumokokken-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre les pneumocoques" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro gli pneumococchi" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter pneumococcus" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Pneumococcal vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "293117006" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Human poliovirus antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Poliomyelitis-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre la poliomyélite" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro la poliomielite" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter poliomielitis" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Poliomyelitis vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "293118001" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Rabies lyssavirus antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Tollwut-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre la rage" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro la rabbia" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter la frenesia" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Rabies vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "219084006" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Clostridium tetani antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Tetanus-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre le tétanos" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro il tetano" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter tetanus" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Tetanus vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "219076007" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Bacillus Calmette-Guerin antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Tuberkulose-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre la tuberculose" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro la tubercolosi" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter tuberculosa" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Adverse reaction to component of vaccine product containing Bacillus Calmette-Guerin antigen (disorder)" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "293122006" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Salmonella enterica subspecies enterica serovar Typhi antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Typhus-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre la fièvre typhoïde" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro la febbre tifoide" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter tifus" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Typhoid vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "219095000" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Yellow fever virus antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Gelbfieber-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre la fièvre jaune" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro la febbre gialla" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter la fevra melna" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Yellow fever vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1162644007" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing only severe acute respiratory syndrome coronavirus 2 recombinant spike protein antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Covid-19-rekombinanten Spike-Protein-Antigen-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin antigénique à protéine Spike recombinante contre le COVID-19" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino anti-COVID-19 ricombinante con antigene della proteina spike" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter COVID-19 cun antigens dal protein spike recumbinant" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "COVID-19 recombinant spike protein antigen vaccine adverse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1217476001" ] ;
+         fhir:display [ fhir:v "Anaphylaxis caused by component of vaccine product (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Anaphylaktische Reaktion auf einen Impfstoff" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "réaction anaphylactique due au vaccin" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "anafilassi dovuta al vaccino" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "reacziun anafilactica sin in vaccin" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Anaphylaxis due to vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "293120003" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Vaccinia virus antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Pocken-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable d'un vaccin contre la variole" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "effetto indesiderato di un vaccino antivaiolo" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter la virola" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Smallpox vaccine adverse reactionerse reaction" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "294657002" ] ;
+         fhir:display [ fhir:v "Allergy to component of vaccine product containing Vaccinia virus antigen (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Allergie gegen Pockenimpfstoff" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "allergie au vaccin contre la variole" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "allergia al vaccino contro il vaiolo" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "allergia cunter in vaccin en virola" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Allergy to smallpox vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "294641002" ] ;
+         fhir:display [ fhir:v "Allergy to component of vaccine product containing Bacillus anthracis antigen (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Allergie gegen Anthrax-Impfstoff" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "allergie au vaccin contre le charbon" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "allergia al vaccino contro l'antrace" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "allergia cunter in vaccin cunter antrax" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Allergy to anthrax vaccine" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "700468006" ] ;
+         fhir:display [ fhir:v "Allergy to component of vaccine product containing Rotavirus antigen (finding)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Allergie gegen Impfstoff gegen Rotavirus" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "allergie au vaccin contre le rotavirus" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "allergia al vaccino contro il Rotavirus" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "allergia cunter il vaccin cunter Rotavirus" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Allergy to Rotavirus vaccine" ]
+         ] )
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/2011000195101/version/20241207" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1303850003" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Tick-borne encephalitis virus antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines FSME-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre la FSME" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro la TBE" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin FSME" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Adverse reaction to component of vaccine product containing Tick-borne encephalitis virus antigen" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1303851004" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Human papillomavirus antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Humanen-Papillomaviren-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre le papillomavirus humain" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro il papillomavirus umano" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin da pirlas da l'uman" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Adverse reaction to component of vaccine product containing Human papillomavirus antigen" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "1303852006" ] ;
+         fhir:display [ fhir:v "Adverse reaction to component of vaccine product containing Human alphaherpesvirus 3 antigen (disorder)" ] ;
+         fhir:designation ( [
+           fhir:language [ fhir:v "de-CH" ] ;
+           fhir:value [ fhir:v "Unerwünschte Wirkung eines Varizellen-Impfstoffs" ]
+         ] [
+           fhir:language [ fhir:v "fr-CH" ] ;
+           fhir:value [ fhir:v "effet indésirable du vaccin contre la varicelle" ]
+         ] [
+           fhir:language [ fhir:v "it-CH" ] ;
+           fhir:value [ fhir:v "reazione avversa al vaccino contro la varicella" ]
+         ] [
+           fhir:language [ fhir:v "rm-CH" ] ;
+           fhir:value [ fhir:v "effect nungiavischà d'in vaccin cunter varizellas" ]
+         ] [
+           fhir:language [ fhir:v "en-US" ] ;
+           fhir:value [ fhir:v "Adverse reaction to component of vaccine product containing Human alphaherpesvirus 3 antigen" ]
+         ] )
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,131 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "83b40197-8873-4b2e-a9fd-813f4a7e06b6-137",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/83b40197-8873-4b2e-a9fd-813f4a7e06b6-137",
+  "name" : "UnionSwissMedicalRisksForImmunizationsAndSwissMedicalRisksForImmunizations",
+  "title" : "Union of Swiss Medical Risks For Immunizations And Swiss Medical Risks For Immunizations",
+  "status" : "active",
+  "date" : "2025-05-07T07:31:23+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CHE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "373068000",
+        "display" : "Undetermined (qualifier value)"
+      },
+      {
+        "code" : "77386006",
+        "display" : "Pregnancy (finding)"
+      },
+      {
+        "code" : "102947004",
+        "display" : "High risk sexual behavior (finding)"
+      },
+      {
+        "code" : "226034001",
+        "display" : "Injecting drug user (finding)"
+      },
+      {
+        "code" : "1237016007",
+        "display" : "At increased risk of exposure to Measles virus (finding)"
+      },
+      {
+        "code" : "1237017003",
+        "display" : "At increased risk of exposure to Mumps virus (finding)"
+      },
+      {
+        "code" : "1237018008",
+        "display" : "At increased risk of exposure to Rubella virus (finding)"
+      },
+      {
+        "code" : "1237019000",
+        "display" : "At increased risk of exposure to Haemophilus influenzae type b (finding)"
+      },
+      {
+        "code" : "1237020006",
+        "display" : "At increased risk of exposure to hepatitis B virus (finding)"
+      },
+      {
+        "code" : "1237021005",
+        "display" : "At increased risk of exposure to European tick-borne encephalitis virus (finding)"
+      },
+      {
+        "code" : "1237022003",
+        "display" : "At increased risk of exposure to human poliovirus (finding)"
+      },
+      {
+        "code" : "1237023008",
+        "display" : "At increased risk of exposure to Neisseria meningitidis (finding)"
+      },
+      {
+        "code" : "1237024002",
+        "display" : "At increased risk of exposure to rabies virus (finding)"
+      },
+      {
+        "code" : "1237025001",
+        "display" : "At increased risk of exposure to Mycobacterium tuberculosis complex (finding)"
+      },
+      {
+        "code" : "1237026000",
+        "display" : "At increased risk of exposure to hepatitis A virus (finding)"
+      },
+      {
+        "code" : "1237027009",
+        "display" : "At increased risk of exposure to Human alphaherpesvirus 3 (finding)"
+      },
+      {
+        "code" : "1237028004",
+        "display" : "At increased risk of exposure to Influenza virus (finding)"
+      },
+      {
+        "code" : "1237029007",
+        "display" : "At increased risk of exposure to Streptococcus pneumoniae (finding)"
+      },
+      {
+        "code" : "1237030002",
+        "display" : "At increased risk of exposure to Bordetella pertussis (finding)"
+      },
+      {
+        "code" : "1237443008",
+        "display" : "Birth weight 1.5 kilogram or less (finding)"
+      },
+      {
+        "code" : "1237570003",
+        "display" : "Maternal history of viral hepatitis B (situation)"
+      },
+      {
+        "code" : "1237576009",
+        "display" : "Baby premature at delivery less than 32 weeks (finding)"
+      },
+      {
+        "code" : "1251534000",
+        "display" : "Exposure to invasive meningococcal disease (event)"
+      },
+      {
+        "code" : "1254737008",
+        "display" : "Has contact with infant (finding)"
+      },
+      {
+        "code" : "1254738003",
+        "display" : "In contact with infant younger than 6 months (finding)"
+      },
+      {
+        "code" : "1254739006",
+        "display" : "Has contact with premature infant (finding)"
+      },
+      {
+        "code" : "1255625008",
+        "display" : "Childbirth within last 4 weeks (finding)"
+      },
+      {
+        "code" : "870577009",
+        "display" : "At increased risk of exposure to severe acute respiratory syndrome coronavirus 2 (finding)"
+      }]
+    }]
+  }
+}

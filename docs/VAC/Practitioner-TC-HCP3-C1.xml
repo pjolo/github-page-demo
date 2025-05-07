@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="TC-HCP3-C1"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-practitioner-epr"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner TC-HCP3-C1</b></p><a name="TC-HCP3-C1"> </a><a name="hcTC-HCP3-C1"> </a><a name="TC-HCP3-C1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/hl7ch/ch-core/StructureDefinition-ch-core-practitioner-epr.html">CH Core Practitioner EPR</a></p></div><p><b>identifier</b>: <a href="https://www.gs1.org/standards/id-keys/gln" title="Global Location Number">GLN</a>/7601077777777</p><p><b>active</b>: true</p><p><b>name</b>: Macht Gesund </p><p><b>telecom</b>: ph: tel:+41.11.222.55.66(Work), fax: fax:+41.11.222.55.67(Work), <a href="mailto:mailto:macht.gesund@gruppenpraxis.ch">mailto:macht.gesund@gruppenpraxis.ch</a>, <a href="http://www.gruppenpraxis.ch">http://www.gruppenpraxis.ch</a></p><p><b>address</b>: Doktorgasse 2 Musterhausen 8888 CH </p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.51.1.3"/>
+    <value value="7601077777777"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Gesund"/>
+    <given value="Macht"/>
+    <prefix value="Dr. med."/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="tel:+41.11.222.55.66"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="fax"/>
+    <value value="fax:+41.11.222.55.67"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="mailto:macht.gesund@gruppenpraxis.ch"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="url"/>
+    <value value="http://www.gruppenpraxis.ch"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <type value="physical"/>
+    <line value="Doktorgasse 2"/>
+    <city value="Musterhausen"/>
+    <postalCode value="8888"/>
+    <country value="CH"/>
+  </address>
+</Practitioner>

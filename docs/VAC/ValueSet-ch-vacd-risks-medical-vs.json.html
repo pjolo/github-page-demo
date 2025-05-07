@@ -1,0 +1,1123 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Swiss Medical Risks For Immunizations - JSON Representation - Implementation Guide CH VACD v6.0.0-ballot-ci-build</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir.css" rel="stylesheet"/>
+
+    <style>
+    
+
+    
+
+    
+
+    </style>
+ 
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"66.25"}
+    h3,h4,h5,h6{--heading-prefix:"66.25"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+            <div id="family-nav">
+	<a id="logo" no-external="true" href="http://hl7.org/fhir"> <img
+		alt="logo fhir" src="fhir-logo-www.png" />
+	</a>
+</div>
+
+            <div id="family-nav">
+                <a id="logo" no-external="true" href="searchform.html">
+                    <img src="assets/images/search.png" alt="Search FHIR" />
+                </a>
+            </div>
+            <div id="hl7-nav">
+    <a id="hl7-logo" no-external="true" href="http://www.hl7.ch">
+        <img alt="visit the hl7 website" height="50" src="hl7-logo.png" />
+    </a>            
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Implementation Guide CH VACD</span>
+            <br/>
+            <span style="display:inline-block;">6.0.0-ballot-ci-build - ci-build
+
+
+
+  <img alt="Switzerland flag" src="assets/images/che.svg" height="16" title="Switzerland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<!--<li><a href="toc.html">Table of Contents</a></li> -->
+	<li>
+		<a href="index.html">Home</a>
+	</li>
+
+
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Use Cases
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="Use-Cases-Deutsch.html">Anwendungsfälle</a>
+			</li>
+			<li>
+				<a href="Use-Cases-Francais.html">Les cas d'utilisation</a>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Documents/Messages
+			<b class="caret">
+			</b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="immunization-administration-document.html">Immunization Administration document</a>
+			</li>
+			<li>
+				<a href="vaccination-record-document.html">Vaccination Record document</a>
+			</li>
+			<li>
+				<a href="immunization-recommendation-request-message.html">Immunization Recommendation Request message</a>
+			</li>
+			<li>
+				<a href="immunization-recommendation-response-message.html">Immunization Recommendation Response message</a>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="profiles.html">Profiles</a>
+	</li>
+	<li>
+		<a href="extensions.html">Extensions</a>
+	</li>
+	<li>
+		<a href="terminology.html">Terminology</a>
+	</li>
+	<li>
+		<a href="artifacts.html">Artifacts</a>
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+			Test Cases
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="TestCases.html">Overview</a>
+			</li>
+			<li>
+				<a href="TestCases.html#a-immunizations">A Immunizations</a>
+			</li>
+			<li>
+				<a href="TestCases.html#b-other-elements">B Other Elements</a>
+			</li>
+			<li>
+				<a href="TestCases.html#c-correction-of-entries">C Correction of Entries</a>
+			</li>
+			<li>
+				<a href="TestCases.html#d-conflicts-on-merging-documents">D Conflicts on merging Documents</a>
+			</li>
+			<li>
+				<a href="TestCases.html#e-language-handling-on-merging-documents">E Language handling on merging Documents</a>
+			</li>
+			<li>
+				<a href="TestCases.html#f-add-notes-to-existing-elements">F Add Notes to existing Elements</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Swiss Medical Risks For Immunizations</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">Implementation Guide CH VACD - Local Development build (v6.0.0-ballot-ci-build) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://fhir.ch/ig/ch-vacd/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="ValueSet-ch-vacd-risks-medical-vs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-ch-vacd-risks-medical-vs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Swiss Medical Risks For Immunizations - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2025-05-07
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="ValueSet-ch-vacd-risks-medical-vs.json" no-download="true">Raw json</a> | <a href="ValueSet-ch-vacd-risks-medical-vs.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "ch-vacd-risks-medical-vs",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet ch-vacd-risks-medical-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ch-vacd-risks-medical-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcch-vacd-risks-medical-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;ch-vacd-risks-medical-vs-en-US\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://www.snomed.org/\&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/373068000\&quot;&gt;373068000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Undetermined (qualifier value)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/77386006\&quot;&gt;77386006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pregnancy (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/102947004\&quot;&gt;102947004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;High risk sexual behavior (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/226034001\&quot;&gt;226034001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Injecting drug user (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237016007\&quot;&gt;1237016007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Measles virus (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237017003\&quot;&gt;1237017003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Mumps virus (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237018008\&quot;&gt;1237018008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Rubella virus (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237019000\&quot;&gt;1237019000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Haemophilus influenzae type b (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237020006\&quot;&gt;1237020006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At increased risk of exposure to hepatitis B virus (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237021005\&quot;&gt;1237021005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At increased risk of exposure to European tick-borne encephalitis virus (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237022003\&quot;&gt;1237022003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At increased risk of exposure to human poliovirus (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237023008\&quot;&gt;1237023008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Neisseria meningitidis (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237024002\&quot;&gt;1237024002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At increased risk of exposure to rabies virus (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237025001\&quot;&gt;1237025001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Mycobacterium tuberculosis complex (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237026000\&quot;&gt;1237026000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At increased risk of exposure to hepatitis A virus (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237027009\&quot;&gt;1237027009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Human alphaherpesvirus 3 (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237028004\&quot;&gt;1237028004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Influenza virus (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237029007\&quot;&gt;1237029007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Streptococcus pneumoniae (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237030002\&quot;&gt;1237030002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Bordetella pertussis (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237443008\&quot;&gt;1237443008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Birth weight 1.5 kilogram or less (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237570003\&quot;&gt;1237570003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maternal history of viral hepatitis B (situation)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1237576009\&quot;&gt;1237576009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Baby premature at delivery less than 32 weeks (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1251534000\&quot;&gt;1251534000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Exposure to invasive meningococcal disease (event)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1254737008\&quot;&gt;1254737008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Has contact with infant (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1254738003\&quot;&gt;1254738003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;In contact with infant younger than 6 months (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1254739006\&quot;&gt;1254739006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Has contact with premature infant (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/1255625008\&quot;&gt;1255625008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Childbirth within last 4 weeks (finding)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://snomed.info/id/870577009\&quot;&gt;870577009&lt;/a&gt;&lt;/td&gt;&lt;td&gt;At increased risk of exposure to severe acute respiratory syndrome coronavirus 2 (finding)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Deutsch (Schweiz) (German (Switzerland), de)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (United States) (English (United States), en)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;French (Switzerland) (fr)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Italian (Switzerland) (it)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;rm&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;373068000&lt;/td&gt;&lt;td&gt;Nicht bekannt&lt;/td&gt;&lt;td&gt;Undetermined (qualifier value)&lt;/td&gt;&lt;td&gt;Indéterminé&lt;/td&gt;&lt;td&gt;Indeterminato&lt;/td&gt;&lt;td&gt;Nunenconuschent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;77386006&lt;/td&gt;&lt;td&gt;Schwangerschaft&lt;/td&gt;&lt;td&gt;Pregnancy (finding)&lt;/td&gt;&lt;td&gt;grossesse&lt;/td&gt;&lt;td&gt;gravidanza&lt;/td&gt;&lt;td&gt;gravidanza&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;102947004&lt;/td&gt;&lt;td&gt;Risikoreiches Sexualverhalten&lt;/td&gt;&lt;td&gt;High risk sexual behavior (finding)&lt;/td&gt;&lt;td&gt;comportement sexuel à risque élevé&lt;/td&gt;&lt;td&gt;comportamento sessuale ad alto rischio&lt;/td&gt;&lt;td&gt;cumportament sexual privlus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;226034001&lt;/td&gt;&lt;td&gt;Konsument / Konsumentin von injizierbaren Drogen&lt;/td&gt;&lt;td&gt;Injecting drug user (finding)&lt;/td&gt;&lt;td&gt;consommateurs de drogue par injection&lt;/td&gt;&lt;td&gt;consumatore di stupefacenti iniettabili&lt;/td&gt;&lt;td&gt;consumenta u consument da drogas injectablas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237016007&lt;/td&gt;&lt;td&gt;Erhöhtes Expositionsrisiko für Masern&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Measles virus (finding)&lt;/td&gt;&lt;td&gt;risque accru d'exposition à la rougeole&lt;/td&gt;&lt;td&gt;maggiore rischio d'esposizione al morbillo&lt;/td&gt;&lt;td&gt;pli gronda ristga d'esser expost al virustgel&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237017003&lt;/td&gt;&lt;td&gt;Erhöhtes Expositionsrisiko für Mumps&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Mumps virus (finding)&lt;/td&gt;&lt;td&gt;risque accru d'exposition aux oreillons&lt;/td&gt;&lt;td&gt;maggiore rischio d'esposizione agli orecchioni&lt;/td&gt;&lt;td&gt;pli gronda ristga d'esser expost al glandun&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237018008&lt;/td&gt;&lt;td&gt;Erhöhtes Expositionsrisiko für Röteln&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Rubella virus (finding)&lt;/td&gt;&lt;td&gt;risque accru d'exposition à la rubéole&lt;/td&gt;&lt;td&gt;maggiore rischio d'esposizione alla rosolia&lt;/td&gt;&lt;td&gt;pli gronda ristga d'esser expost la rubella&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237019000&lt;/td&gt;&lt;td&gt;Erhöhtes Expositionsrisiko für Haemophilus influenzae Typ b&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Haemophilus influenzae type b (finding)&lt;/td&gt;&lt;td&gt;risque accru d'exposition à l'Haemophilus influenzae de type b&lt;/td&gt;&lt;td&gt;maggiore rischio d'esposizione a Haemophilus influenzae di tipo B&lt;/td&gt;&lt;td&gt;pli gronda ristga d'esser expost a la hemofilus influenza tip B&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237020006&lt;/td&gt;&lt;td&gt;Erhöhtes Expositionsrisiko für Hepatitis B&lt;/td&gt;&lt;td&gt;At increased risk of exposure to hepatitis B virus (finding)&lt;/td&gt;&lt;td&gt;risque accru d'exposition à l'hépatite B&lt;/td&gt;&lt;td&gt;maggiore rischio d'esposizione all'epatite B&lt;/td&gt;&lt;td&gt;pli gronda ristga d'esser expost a hepatitis B&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237021005&lt;/td&gt;&lt;td&gt;Erhöhtes Expositionsrisiko für FSME&lt;/td&gt;&lt;td&gt;At increased risk of exposure to European tick-borne encephalitis virus (finding)&lt;/td&gt;&lt;td&gt;risque accru d'exposition à la MEVE&lt;/td&gt;&lt;td&gt;maggiore rischio d'esposizione all'encefalite da zecche (FSME)&lt;/td&gt;&lt;td&gt;pli gronda ristga d'esser expost a la meningoencefalitis da zeccas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237022003&lt;/td&gt;&lt;td&gt;Erhöhtes Expositionsrisiko für Poliomyelitis&lt;/td&gt;&lt;td&gt;At increased risk of exposure to human poliovirus (finding)&lt;/td&gt;&lt;td&gt;risque accru d'exposition à la poliomyélite&lt;/td&gt;&lt;td&gt;maggiore rischio d'esposizione alla poliomielite&lt;/td&gt;&lt;td&gt;pli gronda ristga d'esser expost a la poliomielitis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237023008&lt;/td&gt;&lt;td&gt;Erhöhtes Expositionsrisiko für Meningokokken&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Neisseria meningitidis (finding)&lt;/td&gt;&lt;td&gt;risque accru d'exposition aux méningocoques&lt;/td&gt;&lt;td&gt;maggiore rischio d'esposizione ai meningococchi&lt;/td&gt;&lt;td&gt;pli gronda ristga d'esser expost a meningococcus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237024002&lt;/td&gt;&lt;td&gt;Erhöhtes Expositionsrisiko für Tollwut&lt;/td&gt;&lt;td&gt;At increased risk of exposure to rabies virus (finding)&lt;/td&gt;&lt;td&gt;risque accru d'exposition à la rage&lt;/td&gt;&lt;td&gt;maggiore rischio d'esposizione alla rabbia&lt;/td&gt;&lt;td&gt;pli gronda ristga d'esser expost a la frenesia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237025001&lt;/td&gt;&lt;td&gt;Erhöhtes Expositionsrisiko für Tuberkulose&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Mycobacterium tuberculosis complex (finding)&lt;/td&gt;&lt;td&gt;risque accru d'exposition à la tuberculose&lt;/td&gt;&lt;td&gt;maggiore rischio d'esposizione alla tubercolosi&lt;/td&gt;&lt;td&gt;pli gronda ristga d'esser expost a tuberculosa&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237026000&lt;/td&gt;&lt;td&gt;Erhöhtes Expositionsrisiko für Hepatitis A&lt;/td&gt;&lt;td&gt;At increased risk of exposure to hepatitis A virus (finding)&lt;/td&gt;&lt;td&gt;risque accru d'exposition à l'hépatite A&lt;/td&gt;&lt;td&gt;maggiore rischio d'esposizione all'epatite A&lt;/td&gt;&lt;td&gt;pli gronda ristga d'esser expost a hepatitis A&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237027009&lt;/td&gt;&lt;td&gt;Erhöhtes Expositionsrisiko für Varizellen&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Human alphaherpesvirus 3 (finding)&lt;/td&gt;&lt;td&gt;risque accru d'exposition à la varicelle&lt;/td&gt;&lt;td&gt;maggiore rischio d'esposizione alla varicella&lt;/td&gt;&lt;td&gt;pli gronda ristga d'esser expost a la virola selvadia&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237028004&lt;/td&gt;&lt;td&gt;Erhöhtes Expositionsrisiko für Influenza&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Influenza virus (finding)&lt;/td&gt;&lt;td&gt;risque accru d'exposition à l'influenza&lt;/td&gt;&lt;td&gt;maggiore rischio d'esposizione all'influenza&lt;/td&gt;&lt;td&gt;pli gronda ristga d'esser expost a l'influenza&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237029007&lt;/td&gt;&lt;td&gt;Erhöhtes Expositionsrisiko für Pneumokokken&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Streptococcus pneumoniae (finding)&lt;/td&gt;&lt;td&gt;risque accru d'exposition aux pneumocoques&lt;/td&gt;&lt;td&gt;maggiore rischio d'esposizione agli pneumococchi&lt;/td&gt;&lt;td&gt;pli gronda ristga d'esser expost a pneumococcus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237030002&lt;/td&gt;&lt;td&gt;Erhöhtes Expositionsrisiko für Pertussis&lt;/td&gt;&lt;td&gt;At increased risk of exposure to Bordetella pertussis (finding)&lt;/td&gt;&lt;td&gt;risque accru d'exposition à la coqueluche&lt;/td&gt;&lt;td&gt;maggiore rischio d'esposizione alla pertosse&lt;/td&gt;&lt;td&gt;pli gronda ristga d'esser expost a la tuss chanina&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237443008&lt;/td&gt;&lt;td&gt;Geburtsgewicht 1,5 Kilogramm oder weniger&lt;/td&gt;&lt;td&gt;Birth weight 1.5 kilogram or less (finding)&lt;/td&gt;&lt;td&gt;Poids à la naissance 1,5 kilogramme ou moins&lt;/td&gt;&lt;td&gt;peso alla nascita 1,5 kg o meno&lt;/td&gt;&lt;td&gt;pais da naschientscha 1,5 kilograms u damain&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237570003&lt;/td&gt;&lt;td&gt;Mütterliche Anamnese einer Virushepatitis B&lt;/td&gt;&lt;td&gt;Maternal history of viral hepatitis B (situation)&lt;/td&gt;&lt;td&gt;antécédents maternels d'hépatite B&lt;/td&gt;&lt;td&gt;anamnesi materna di epatite virale B&lt;/td&gt;&lt;td&gt;anamnesa materna d'ina hepatitis virala B&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1237576009&lt;/td&gt;&lt;td&gt;Frühgeburt bei einer Geburt von weniger als 32 Wochen&lt;/td&gt;&lt;td&gt;Baby premature at delivery less than 32 weeks (finding)&lt;/td&gt;&lt;td&gt;naissance prématurée à moins de 32 semaines&lt;/td&gt;&lt;td&gt;prematurità: parto prima della 32a settimana&lt;/td&gt;&lt;td&gt;naschientscha prematura en cas d'ina gravidanza da main che 32 emnas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1251534000&lt;/td&gt;&lt;td&gt;Exposition gegenüber invasiver Meningokokkeninfektion&lt;/td&gt;&lt;td&gt;Exposure to invasive meningococcal disease (event)&lt;/td&gt;&lt;td&gt;exposition à une infection invasive à méningocoque&lt;/td&gt;&lt;td&gt;esposizione a infezione invasiva da meningococchi&lt;/td&gt;&lt;td&gt;expost ad ina infecziun invasiva cun meningococcus&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1254737008&lt;/td&gt;&lt;td&gt;Kontakt zu Säuglingen&lt;/td&gt;&lt;td&gt;Has contact with infant (finding)&lt;/td&gt;&lt;td&gt;contact avec un nourrisson&lt;/td&gt;&lt;td&gt;contatto con un lattante&lt;/td&gt;&lt;td&gt;contact cun in poppin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1254738003&lt;/td&gt;&lt;td&gt;Kontakt zu Säugling jünger als 6 Monate&lt;/td&gt;&lt;td&gt;In contact with infant younger than 6 months (finding)&lt;/td&gt;&lt;td&gt;contact avec un nourrisson de moins de 6 mois&lt;/td&gt;&lt;td&gt;contatto con un lattante di meno di 6 mesi&lt;/td&gt;&lt;td&gt;contact cun in poppin da main che 6 mais&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1254739006&lt;/td&gt;&lt;td&gt;Kontakt zu Frühgeborenen&lt;/td&gt;&lt;td&gt;Has contact with premature infant (finding)&lt;/td&gt;&lt;td&gt;contact avec des prématurés&lt;/td&gt;&lt;td&gt;contatto con un prematuro&lt;/td&gt;&lt;td&gt;contact cun in uffant naschì permaturamain&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1255625008&lt;/td&gt;&lt;td&gt;Entbindung in letzten 4 Wochen&lt;/td&gt;&lt;td&gt;Childbirth within last 4 weeks (finding)&lt;/td&gt;&lt;td&gt;accouchement au cours des 4 dernières semaines&lt;/td&gt;&lt;td&gt;parto nelle ultime 4 settimane&lt;/td&gt;&lt;td&gt;pagliola entaifer las ultimas 4 emnas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;870577009&lt;/td&gt;&lt;td&gt;Erhöhtes Expositionsrisiko für das schwere akute respiratorische Syndrom Coronavirus 2&lt;/td&gt;&lt;td&gt;At increased risk of exposure to severe acute respiratory syndrome coronavirus 2&lt;/td&gt;&lt;td&gt;risque accru d'exposition aux syndromes respiratoires aigus sévères coronavirus 2&lt;/td&gt;&lt;td&gt;maggiore rischio d'esposizione a sindrome respiratoria acuta grave coronavirus 2&lt;/td&gt;&lt;td&gt;pli gronda ristga d'esser expost a la situaziun dal grev sindrom respiratoric acut coronavirus 2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-medical-vs",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "6.0.0-ballot-ci-build",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "SwissMedicalRisksForImmunizations",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Swiss Medical Risks For Immunizations",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2025-05-07T07:26:19+02:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "HL7 Switzerland",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "HL7 Switzerland",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://www.hl7.ch/"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "The medical risks used in Switzerland.",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "urn:iso:std:iso:3166",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "CHE"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.copyright">copyright</a>" : "CC0-1.0",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
+    "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "http://snomed.info/sct",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "373068000",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Undetermined (qualifier value)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Nicht bekannt"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Indéterminé"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Indeterminato"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Nunenconuschent"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Undetermined (qualifier value)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "77386006",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Pregnancy (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Schwangerschaft"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "grossesse"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "gravidanza"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "gravidanza"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Pregnancy (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "102947004",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "High risk sexual behavior (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Risikoreiches Sexualverhalten"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "comportement sexuel à risque élevé"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "comportamento sessuale ad alto rischio"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "cumportament sexual privlus"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "High risk sexual behavior (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "226034001",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Injecting drug user (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Konsument / Konsumentin von injizierbaren Drogen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "consommateurs de drogue par injection"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "consumatore di stupefacenti iniettabili"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "consumenta u consument da drogas injectablas"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Injecting drug user (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237016007",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "At increased risk of exposure to Measles virus (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erhöhtes Expositionsrisiko für Masern"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "risque accru d'exposition à la rougeole"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "maggiore rischio d'esposizione al morbillo"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pli gronda ristga d'esser expost al virustgel"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "At increased risk of exposure to Measles virus (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237017003",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "At increased risk of exposure to Mumps virus (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erhöhtes Expositionsrisiko für Mumps"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "risque accru d'exposition aux oreillons"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "maggiore rischio d'esposizione agli orecchioni"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pli gronda ristga d'esser expost al glandun"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "At increased risk of exposure to Mumps virus (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237018008",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "At increased risk of exposure to Rubella virus (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erhöhtes Expositionsrisiko für Röteln"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "risque accru d'exposition à la rubéole"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "maggiore rischio d'esposizione alla rosolia"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pli gronda ristga d'esser expost la rubella"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "At increased risk of exposure to Rubella virus (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237019000",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "At increased risk of exposure to Haemophilus influenzae type b (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erhöhtes Expositionsrisiko für Haemophilus influenzae Typ b"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "risque accru d'exposition à l'Haemophilus influenzae de type b"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "maggiore rischio d'esposizione a Haemophilus influenzae di tipo B"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pli gronda ristga d'esser expost a la hemofilus influenza tip B"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "At increased risk of exposure to Haemophilus influenzae type b (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237020006",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "At increased risk of exposure to hepatitis B virus (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erhöhtes Expositionsrisiko für Hepatitis B"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "risque accru d'exposition à l'hépatite B"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "maggiore rischio d'esposizione all'epatite B"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pli gronda ristga d'esser expost a hepatitis B"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "At increased risk of exposure to hepatitis B virus (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237021005",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "At increased risk of exposure to European tick-borne encephalitis virus (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erhöhtes Expositionsrisiko für FSME"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "risque accru d'exposition à la MEVE"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "maggiore rischio d'esposizione all'encefalite da zecche (FSME)"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pli gronda ristga d'esser expost a la meningoencefalitis da zeccas"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "At increased risk of exposure to European tick-borne encephalitis virus (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237022003",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "At increased risk of exposure to human poliovirus (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erhöhtes Expositionsrisiko für Poliomyelitis"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "risque accru d'exposition à la poliomyélite"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "maggiore rischio d'esposizione alla poliomielite"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pli gronda ristga d'esser expost a la poliomielitis"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "At increased risk of exposure to human poliovirus (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237023008",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "At increased risk of exposure to Neisseria meningitidis (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erhöhtes Expositionsrisiko für Meningokokken"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "risque accru d'exposition aux méningocoques"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "maggiore rischio d'esposizione ai meningococchi"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pli gronda ristga d'esser expost a meningococcus"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "At increased risk of exposure to Neisseria meningitidis (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237024002",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "At increased risk of exposure to rabies virus (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erhöhtes Expositionsrisiko für Tollwut"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "risque accru d'exposition à la rage"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "maggiore rischio d'esposizione alla rabbia"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pli gronda ristga d'esser expost a la frenesia"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "At increased risk of exposure to rabies virus (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237025001",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "At increased risk of exposure to Mycobacterium tuberculosis complex (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erhöhtes Expositionsrisiko für Tuberkulose"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "risque accru d'exposition à la tuberculose"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "maggiore rischio d'esposizione alla tubercolosi"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pli gronda ristga d'esser expost a tuberculosa"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "At increased risk of exposure to Mycobacterium tuberculosis complex (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237026000",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "At increased risk of exposure to hepatitis A virus (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erhöhtes Expositionsrisiko für Hepatitis A"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "risque accru d'exposition à l'hépatite A"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "maggiore rischio d'esposizione all'epatite A"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pli gronda ristga d'esser expost a hepatitis A"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "At increased risk of exposure to hepatitis A virus (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237027009",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "At increased risk of exposure to Human alphaherpesvirus 3 (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erhöhtes Expositionsrisiko für Varizellen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "risque accru d'exposition à la varicelle"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "maggiore rischio d'esposizione alla varicella"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pli gronda ristga d'esser expost a la virola selvadia"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "At increased risk of exposure to Human alphaherpesvirus 3 (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237028004",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "At increased risk of exposure to Influenza virus (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erhöhtes Expositionsrisiko für Influenza"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "risque accru d'exposition à l'influenza"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "maggiore rischio d'esposizione all'influenza"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pli gronda ristga d'esser expost a l'influenza"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "At increased risk of exposure to Influenza virus (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237029007",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "At increased risk of exposure to Streptococcus pneumoniae (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erhöhtes Expositionsrisiko für Pneumokokken"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "risque accru d'exposition aux pneumocoques"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "maggiore rischio d'esposizione agli pneumococchi"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pli gronda ristga d'esser expost a pneumococcus"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "At increased risk of exposure to Streptococcus pneumoniae (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237030002",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "At increased risk of exposure to Bordetella pertussis (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erhöhtes Expositionsrisiko für Pertussis"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "risque accru d'exposition à la coqueluche"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "maggiore rischio d'esposizione alla pertosse"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pli gronda ristga d'esser expost a la tuss chanina"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "At increased risk of exposure to Bordetella pertussis (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237443008",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Birth weight 1.5 kilogram or less (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Geburtsgewicht 1,5 Kilogramm oder weniger"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Poids à la naissance 1,5 kilogramme ou moins"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "peso alla nascita 1,5 kg o meno"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pais da naschientscha 1,5 kilograms u damain"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Birth weight 1.5 kilogram or less (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237570003",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Maternal history of viral hepatitis B (situation)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Mütterliche Anamnese einer Virushepatitis B"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "antécédents maternels d'hépatite B"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "anamnesi materna di epatite virale B"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "anamnesa materna d'ina hepatitis virala B"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Maternal history of viral hepatitis B (situation)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1237576009",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Baby premature at delivery less than 32 weeks (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Frühgeburt bei einer Geburt von weniger als 32 Wochen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "naissance prématurée à moins de 32 semaines"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "prematurità: parto prima della 32a settimana"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "naschientscha prematura en cas d'ina gravidanza da main che 32 emnas"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Baby premature at delivery less than 32 weeks (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1251534000",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Exposure to invasive meningococcal disease (event)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Exposition gegenüber invasiver Meningokokkeninfektion"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "exposition à une infection invasive à méningocoque"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "esposizione a infezione invasiva da meningococchi"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "expost ad ina infecziun invasiva cun meningococcus"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Exposure to invasive meningococcal disease (event)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1254737008",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Has contact with infant (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Kontakt zu Säuglingen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "contact avec un nourrisson"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "contatto con un lattante"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "contact cun in poppin"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Has contact with infant (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1254738003",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "In contact with infant younger than 6 months (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Kontakt zu Säugling jünger als 6 Monate"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "contact avec un nourrisson de moins de 6 mois"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "contatto con un lattante di meno di 6 mesi"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "contact cun in poppin da main che 6 mais"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "In contact with infant younger than 6 months (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1254739006",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Has contact with premature infant (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Kontakt zu Frühgeborenen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "contact avec des prématurés"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "contatto con un prematuro"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "contact cun in uffant naschì permaturamain"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Has contact with premature infant (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1255625008",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Childbirth within last 4 weeks (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Entbindung in letzten 4 Wochen"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "accouchement au cours des 4 dernières semaines"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "parto nelle ultime 4 settimane"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pagliola entaifer las ultimas 4 emnas"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Childbirth within last 4 weeks (finding)"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "870577009",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "At increased risk of exposure to severe acute respiratory syndrome coronavirus 2 (finding)",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "de-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "Erhöhtes Expositionsrisiko für das schwere akute respiratorische Syndrom Coronavirus 2"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "fr-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "risque accru d'exposition aux syndromes respiratoires aigus sévères coronavirus 2"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "it-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "maggiore rischio d'esposizione a sindrome respiratoria acuta grave coronavirus 2"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "rm-CH",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "pli gronda ristga d'esser expost a la situaziun dal grev sindrom respiratoric acut coronavirus 2"
+              },
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en-US",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "At increased risk of exposure to severe acute respiratory syndrome coronavirus 2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.ch/">HL7 Switzerland</a>.  Package ch.fhir.ig.ch-vacd#6.0.0-ballot-ci-build based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 7, 2025 07:29+0200">2025-05-07</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+
+| <a style="color: #81BEF7" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSejY5cinbQ4kHgGKMhncYu0mPuWb7euUkxfeXZeiUCFFa4k6g/viewform?usp=sf_link&amp;entry%2E1353807103=ch.fhir.ig.ch-vacd%236.0.0-ballot-ci-build%20/ValueSet-ch-vacd-risks-medical-vs.json.html&amp;entry%2E247644557=Swiss%20Medical%20Risks%20For%20Immunizations%20-%20JSON%20Representation">Propose a change</a>
+
+
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

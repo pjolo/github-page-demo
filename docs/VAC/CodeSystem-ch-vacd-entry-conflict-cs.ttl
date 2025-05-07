@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-entry-conflict-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ch-vacd-entry-conflict-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ch-vacd-entry-conflict-cs</b></p><a name=\"ch-vacd-entry-conflict-cs\"> </a><a name=\"hcch-vacd-entry-conflict-cs\"> </a><a name=\"ch-vacd-entry-conflict-cs-en-US\"> </a><p>This case-sensitive code system <code>http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-entry-conflict-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">duplicate<a name=\"ch-vacd-entry-conflict-cs-duplicate\"> </a></td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (Schweiz) (German (Switzerland), de)</b></td><td><b>English (United States) (English (United States), en)</b></td><td><b>French (Switzerland) (fr)</b></td><td><b>Italian (Switzerland) (it)</b></td><td><b>rm</b></td></tr><tr><td>duplicate</td><td>Duplikat</td><td>duplicate</td><td>doublon</td><td>duplicare</td><td>duplicat</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Period ;
+       fhir:start [ fhir:v "2021-12-21T00:00:00+01:00"^^xsd:dateTime ]
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-entry-conflict-cs"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://fhir.ch/ig/ch-vacd/cs/entry-conflict"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "entry-conflict" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "6.0.0-ballot-ci-build"] ; # 
+  fhir:name [ fhir:v "EntryConflictCodesystem"] ; # 
+  fhir:title [ fhir:v "Entry Conflict Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-07T07:26:19+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Switzerland"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Switzerland" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7.ch/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The entry conflict codesystem"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CHE" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "CC0-1.0"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "duplicate" ] ;
+     fhir:display [ fhir:v "duplicate" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "de-CH" ] ;
+       fhir:value [ fhir:v "Duplikat" ]
+     ] [
+       fhir:language [ fhir:v "fr-CH" ] ;
+       fhir:value [ fhir:v "doublon" ]
+     ] [
+       fhir:language [ fhir:v "it-CH" ] ;
+       fhir:value [ fhir:v "duplicare" ]
+     ] [
+       fhir:language [ fhir:v "rm-CH" ] ;
+       fhir:value [ fhir:v "duplicat" ]
+     ] [
+       fhir:language [ fhir:v "en-US" ] ;
+       fhir:value [ fhir:v "duplicate" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

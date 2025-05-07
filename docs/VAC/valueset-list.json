@@ -1,0 +1,104 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-basic-immunization-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "BasicImmunizationCode",
+      "title" : "Basic Immunization Codes",
+      "description" : "The codes for declaring basic immunization.",
+      "systems" : [
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-basic-immunization-cs"
+      ]
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-entry-conflict-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "CHVACDEntryConflictCode",
+      "title" : "Entry Conflict Codes",
+      "description" : "The codes for declaring document entry conflicts",
+      "systems" : [
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-entry-conflict-cs"
+      ]
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-immunization-allergyintolerances-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "draft",
+      "name" : "AllergiesAndIntolerancesForImmunization",
+      "title" : "Allergies and Intolerance values for Immunization",
+      "description" : "The allergies and adverse reactions which have an influence on the immunization recommendations.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-laboratory-serology-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "LaboratorySerologyImmunization",
+      "title" : "Laboratory Serology for Immunization",
+      "description" : "Laboratory Serology for immunization",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-medical-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "SwissMedicalRisksForImmunizations",
+      "title" : "Swiss Medical Risks For Immunizations",
+      "description" : "The medical risks used in Switzerland.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-occupation-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "SwissOccupationRisksForImmunizations",
+      "title" : "Swiss Occupation Risks For Immunizations",
+      "description" : "The occupation exposition risks used in Switzerland.",
+      "systems" : [
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-preillness-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "SwissPreillnessRisksForImmunizations",
+      "title" : "Swiss Preillness Risks For Immunizations",
+      "description" : "The preillness risks used in Switzerland.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-social-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "SwissSocialRisksForImmunizations",
+      "title" : "Swiss Social Risks For Immunizations",
+      "description" : "The social exposition risks used in Switzerland.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "SwissRisksForImmunizations",
+      "title" : "Swiss Risks For Immunizations",
+      "description" : "The medical and exposition risks used in Switzerland.",
+      "systems" : [
+        "http://fhir.ch/ig/ch-vacd/CodeSystem/ch-vacd-exposure-risks-cs",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-verification-status-vs",
+      "version" : "6.0.0-ballot-ci-build",
+      "status" : "active",
+      "name" : "CHVACDVerificationStatusVS",
+      "title" : "Verification Status Codes",
+      "description" : "Definition the verification status codes for the extension ch-vacd-ext-verification-status.",
+      "systems" : ["http://snomed.info/sct"]
+    }
+  ]
+}

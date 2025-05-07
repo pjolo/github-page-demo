@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="TCF03-UNDILL2"/>
+  <meta>
+    <profile value="http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-pastillnesses"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition TCF03-UNDILL2</b></p><a name="TCF03-UNDILL2"> </a><a name="hcTCF03-UNDILL2"> </a><a name="TCF03-UNDILL2-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ch-vacd-pastillnesses.html">CH VACD Past Illness</a></p></div><blockquote><p><b>Entry Resource Cross References</b></p><ul><li>entry: Identifier: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/14802b84-6b1d-4545-930d-17ce5ca7443c</li><li>container: Identifier: <a href="http://terminology.hl7.org/6.3.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
+
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
+
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
+
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:uuid:fb253a1b-7e26-48db-a9c8-d605875bcdc4</li><li>relationcode: replaces</li></ul></blockquote><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.2</code>/70cd36a7-5bd5-41fa-bbb9-5e3d10ca43ef</p><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}">Resolved</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 38907003}">Varicella (disorder)</span></p><p><b>subject</b>: <a href="Patient-TC-patient.html">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>onset</b>: 2015-05-30</p><p><b>recordedDate</b>: 2015-05-30</p><p><b>recorder</b>: <a href="PractitionerRole-TC-HCP1-ORG1-ROLE-author.html">PractitionerRole</a></p><p><b>note</b>: Der Patient hatte einen milden Verlauf der Windpockenerkrankung (By Practitioner/TC-HCP1-C1 @2017-01-20)</p></div>
+  </text>
+  <extension url="http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-ext-entry-resource-cross-references">
+    <extension url="entry">
+      <valueReference>
+        <type value="Condition"/>
+        <identifier>
+          <system value="urn:oid:2.16.756.5.30.1.402.1.3.1.1.1"/>
+          <value value="14802b84-6b1d-4545-930d-17ce5ca7443c"/>
+        </identifier>
+      </valueReference>
+    </extension>
+    <extension url="container">
+      <valueReference>
+        <type value="Composition"/>
+        <identifier>
+          <system value="urn:ietf:rfc:3986"/>
+          <value value="urn:uuid:fb253a1b-7e26-48db-a9c8-d605875bcdc4"/>
+        </identifier>
+      </valueReference>
+    </extension>
+    <extension url="relationcode">
+      <valueCode value="replaces"/>
+    </extension>
+  </extension>
+  <identifier>
+    <system value="urn:oid:2.16.756.5.30.1.402.1.3.1.1.2"/>
+    <value value="70cd36a7-5bd5-41fa-bbb9-5e3d10ca43ef"/>
+  </identifier>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="resolved"/>
+      <display value="Resolved"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+  </verificationStatus>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="38907003"/>
+      <display value="Varicella (disorder)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/TC-patient"/>
+  </subject>
+  <onsetDateTime value="2015-05-30"/>
+  <recordedDate value="2015-05-30"/>
+  <recorder>
+    <reference value="PractitionerRole/TC-HCP1-ORG1-ROLE-author"/>
+  </recorder>
+  <note>
+    <authorReference>
+      <reference value="Practitioner/TC-HCP1-C1"/>
+    </authorReference>
+    <time value="2017-01-20"/>
+    <text value="Der Patient hatte einen milden Verlauf der Windpockenerkrankung"/>
+  </note>
+</Condition>

@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ch-vacd-risks-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ch-vacd-risks-vs</b></p><a name=\"ch-vacd-risks-vs\"> </a><a name=\"hcch-vacd-risks-vs\"> </a><a name=\"ch-vacd-risks-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-ch-vacd-risks-medical-vs.html\">Swiss Medical Risks For Immunizations</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-ch-vacd-risks-social-vs.html\">Swiss Social Risks For Immunizations</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-ch-vacd-risks-occupation-vs.html\">Swiss Occupation Risks For Immunizations</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-ch-vacd-risks-preillness-vs.html\">Swiss Preillness Risks For Immunizations</a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "6.0.0-ballot-ci-build"] ; # 
+  fhir:name [ fhir:v "SwissRisksForImmunizations"] ; # 
+  fhir:title [ fhir:v "Swiss Risks For Immunizations"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-07T07:26:19+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Switzerland"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Switzerland" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7.ch/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The medical and exposition risks used in Switzerland."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CHE" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "CC0-1.0"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-medical-vs"^^xsd:anyURI ;
+         fhir:link <http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-medical-vs>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-social-vs"^^xsd:anyURI ;
+         fhir:link <http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-social-vs>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-occupation-vs"^^xsd:anyURI ;
+         fhir:link <http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-occupation-vs>
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-preillness-vs"^^xsd:anyURI ;
+         fhir:link <http://fhir.ch/ig/ch-vacd/ValueSet/ch-vacd-risks-preillness-vs>
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,20 @@
+{
+  "url" : "http://fhir.ch/ig/ch-vacd/ImplementationGuide/ch.fhir.ig.ch-vacd",
+  "name" : "CH_VACD",
+  "title" : "Implementation Guide CH VACD",
+  "description" : null,
+  "ig-date" : "2024-12-17",
+  "status" : "active",
+  "package-id" : "ch.fhir.ig.ch-vacd",
+  "ig-ver" : "6.0.0-ballot-ci-build",
+  "date" : "Wed, 07 May, 2025 07:29:31 +0200",
+  "dateISO8601" : "2025-05-07T07:29:31+02:00",
+  "errs" : 30,
+  "warnings" : 1104,
+  "hints" : 660,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 208,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 3900040976
+}

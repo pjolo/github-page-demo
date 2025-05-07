@@ -1,0 +1,103 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/Condition/TCF03-UNDILL2> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TCF03-UNDILL2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-pastillnesses"^^xsd:anyURI ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-pastillnesses>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition TCF03-UNDILL2</b></p><a name=\"TCF03-UNDILL2\"> </a><a name=\"hcTCF03-UNDILL2\"> </a><a name=\"TCF03-UNDILL2-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ch-vacd-pastillnesses.html\">CH VACD Past Illness</a></p></div><blockquote><p><b>Entry Resource Cross References</b></p><ul><li>entry: Identifier: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.1</code>/14802b84-6b1d-4545-930d-17ce5ca7443c</li><li>container: Identifier: <a href=\"http://terminology.hl7.org/6.3.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:fb253a1b-7e26-48db-a9c8-d605875bcdc4</li><li>relationcode: replaces</li></ul></blockquote><p><b>identifier</b>: <code>urn:oid:2.16.756.5.30.1.402.1.3.1.1.2</code>/70cd36a7-5bd5-41fa-bbb9-5e3d10ca43ef</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical resolved}\">Resolved</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}\">Confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 38907003}\">Varicella (disorder)</span></p><p><b>subject</b>: <a href=\"Patient-TC-patient.html\">Monika Wegmueller  Female, DoB: 1967-02-10 ( Medical record number)</a></p><p><b>onset</b>: 2015-05-30</p><p><b>recordedDate</b>: 2015-05-30</p><p><b>recorder</b>: <a href=\"PractitionerRole-TC-HCP1-ORG1-ROLE-author.html\">PractitionerRole</a></p><p><b>note</b>: Der Patient hatte einen milden Verlauf der Windpockenerkrankung (By Practitioner/TC-HCP1-C1 @2017-01-20)</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "entry"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:type [ fhir:v "Condition"^^xsd:anyURI ] ;
+         fhir:identifier [
+           fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.402.1.3.1.1.1"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "14802b84-6b1d-4545-930d-17ce5ca7443c" ]
+         ]
+       ]
+     ] [
+       fhir:url [ fhir:v "container"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:type [ fhir:v "Composition"^^xsd:anyURI ] ;
+         fhir:identifier [
+           fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "urn:uuid:fb253a1b-7e26-48db-a9c8-d605875bcdc4" ]
+         ]
+       ]
+     ] [
+       fhir:url [ fhir:v "relationcode"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "replaces"
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-ext-entry-resource-cross-references"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.16.756.5.30.1.402.1.3.1.1.2"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "70cd36a7-5bd5-41fa-bbb9-5e3d10ca43ef" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "resolved" ] ;
+       fhir:display [ fhir:v "Resolved" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:38907003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "38907003" ] ;
+       fhir:display [ fhir:v "Varicella (disorder)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Patient/TC-patient> ;
+     fhir:reference [ fhir:v "Patient/TC-patient" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:dateTime ;
+     fhir:v "2015-05-30"^^xsd:date
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2015-05-30"^^xsd:date] ; # 
+  fhir:recorder [
+     fhir:link <http://fhir.ch/ig/ch-vacd/PractitionerRole/TC-HCP1-ORG1-ROLE-author> ;
+     fhir:reference [ fhir:v "PractitionerRole/TC-HCP1-ORG1-ROLE-author" ]
+  ] ; # 
+  fhir:note ( [
+     fhir:author [
+       a fhir:Reference ;
+       fhir:link <http://fhir.ch/ig/ch-vacd/Practitioner/TC-HCP1-C1> ;
+       fhir:reference [ fhir:v "Practitioner/TC-HCP1-C1" ]
+     ] ;
+     fhir:time [ fhir:v "2017-01-20"^^xsd:date ] ;
+     fhir:text [ fhir:v "Der Patient hatte einen milden Verlauf der Windpockenerkrankung" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

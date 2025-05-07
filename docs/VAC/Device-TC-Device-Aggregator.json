@@ -1,0 +1,40 @@
+{
+  "resourceType" : "Device",
+  "id" : "TC-Device-Aggregator",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device TC-Device-Aggregator</b></p><a name=\"TC-Device-Aggregator\"> </a><a name=\"hcTC-Device-Aggregator\"> </a><a name=\"TC-Device-Aggregator-en-US\"> </a><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601999999981</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: The Aggregator Company</p><p><b>manufactureDate</b>: 2023-01-01</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Vaccination Aggregator</td><td>Manufacturer name</td></tr></table><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>v1.0.0</td></tr></table><p><b>contact</b>: ph: tel:+41.56.299.55.22(Work), <a href=\"mailto:mailto:resultate@aggregator.ch\">mailto:resultate@aggregator.ch</a>, <a href=\"http://www.aggregator.ch\">http://www.aggregator.ch</a></p><p><b>location</b>: <a href=\"Location-TC-Device-Aggregator-Location.html\">Location: status = active; telecom = ph: tel:+41.56.299.55.22(Work),mailto:resultate@labor-messenalles.ch(Work),http://www.labor-messenalles.ch(Work)</a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:oid:2.51.1.3",
+    "value" : "7601999999981"
+  }],
+  "status" : "active",
+  "manufacturer" : "The Aggregator Company",
+  "manufactureDate" : "2023-01-01",
+  "deviceName" : [{
+    "name" : "Vaccination Aggregator",
+    "type" : "manufacturer-name"
+  }],
+  "version" : [{
+    "value" : "v1.0.0"
+  }],
+  "contact" : [{
+    "system" : "phone",
+    "value" : "tel:+41.56.299.55.22",
+    "use" : "work"
+  },
+  {
+    "system" : "email",
+    "value" : "mailto:resultate@aggregator.ch",
+    "use" : "work"
+  },
+  {
+    "system" : "url",
+    "value" : "http://www.aggregator.ch",
+    "use" : "work"
+  }],
+  "location" : {
+    "reference" : "Location/TC-Device-Aggregator-Location"
+  }
+}

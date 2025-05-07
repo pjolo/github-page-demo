@@ -1,0 +1,275 @@
+{
+  "package": "ch.fhir.ig.ch-vacd",
+  "version": "6.0.0-ballot-ci-build",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "CHE",
+  "extensions": [
+    {
+      "url": "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-immunization-medication-reference",
+      "title": "CH VACD Extension Immunization Medication Reference",
+      "types": [
+        "Reference",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-merging-conflict-entry-reference",
+      "title": "CH VACD Extension Merging Conflict Entry Reference",
+      "types": [
+        "Reference",
+        "Reference",
+        "code",
+        "code",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status",
+      "title": "CH VACD Extension verificationStatus",
+      "types": [
+        "Coding",
+        "Coding"
+      ]
+    }
+  ],
+  "profiles": {
+    "AllergyIntolerance": [
+      {
+        "url": "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-allergyintolerances",
+        "title": "CH VACD AllergyIntolerance"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-pastillnesses",
+        "title": "CH VACD Past Illness"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-composition-immunization-administration",
+        "title": "CH VACD Immunization Administration Composition"
+      },
+      {
+        "url": "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-composition-vaccination-record",
+        "title": "CH VACD VaccinationRecord Composition"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-recommendation-response-message",
+        "title": "CH VACD Message Immunization Recommendation Response"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization",
+        "title": "CH VACD Immunization"
+      }
+    ],
+    "ImmunizationRecommendation": [
+      {
+        "url": "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-immunization-recommendation",
+        "title": "CH VACD Immunization Recommendations"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-laboratory-serology",
+        "title": "CH VACD Laboratory And Serology"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-medication-for-immunization",
+        "title": "CH VACD Medication For Immunization"
+      }
+    ],
+    "MessageHeader": [
+      {
+        "url": "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-recommendation-response-messageheader",
+        "title": "CH VACD Immunization Recommendation Response MessageHeader"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.ch/ig/ch-core/StructureDefinition/ch-core-ext-entry-resource-cross-references": [
+      "AllergyIntolerance",
+      "Bundle.entry.resource",
+      "Condition",
+      "Immunization",
+      "Observation"
+    ],
+    "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-author": [
+      "Bundle.entry.resource",
+      "Immunization",
+      "Observation"
+    ],
+    "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-confidentialitycode": [
+      "Bundle.entry.resource.confidentiality",
+      "Composition.confidentiality"
+    ],
+    "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-dataenterer": [
+      "Composition"
+    ],
+    "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-informationrecipient": [
+      "Composition"
+    ],
+    "http://fhir.ch/ig/ch-core/StructureDefinition/ch-ext-epr-time": [
+      "Composition.author",
+      "Composition.section.author"
+    ],
+    "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-immunization-medication-reference": [
+      "Bundle.entry.resource",
+      "Immunization"
+    ],
+    "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-merging-conflict-entry-reference": [
+      "AllergyIntolerance",
+      "Bundle.entry.resource",
+      "Condition",
+      "Immunization",
+      "Observation"
+    ],
+    "http://fhir.ch/ig/ch-vacd/StructureDefinition/ch-vacd-ext-verification-status": [
+      "Bundle.entry.resource",
+      "Immunization",
+      "Observation"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/allergyintolerance-certainty|5.2.0": [
+      "AllergyIntolerance.reaction"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/allergyintolerance-duration|5.2.0": [
+      "AllergyIntolerance.reaction"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Immunization.occurrenceDateTime"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason|4.0.1": [
+      "Immunization.occurrence[x]"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/openEHR-exposureDate|5.2.0": [
+      "AllergyIntolerance.reaction"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/openEHR-exposureDescription|5.2.0": [
+      "AllergyIntolerance.reaction"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/openEHR-exposureDuration|5.2.0": [
+      "AllergyIntolerance.reaction"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/openEHR-location|5.2.0": [
+      "AllergyIntolerance.reaction"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/openEHR-management|5.2.0": [
+      "AllergyIntolerance.reaction"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod": [
+      "CodeSystem"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/valueset-deprecated": [
+      "ValueSet.compose.include.concept"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ]
+  }
+}

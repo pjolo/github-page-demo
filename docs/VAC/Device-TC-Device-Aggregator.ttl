@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.ch/ig/ch-vacd/Device/TC-Device-Aggregator> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TC-Device-Aggregator"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device TC-Device-Aggregator</b></p><a name=\"TC-Device-Aggregator\"> </a><a name=\"hcTC-Device-Aggregator\"> </a><a name=\"TC-Device-Aggregator-en-US\"> </a><p><b>identifier</b>: <a href=\"https://www.gs1.org/standards/id-keys/gln\" title=\"Global Location Number\">GLN</a>/7601999999981</p><p><b>status</b>: Active</p><p><b>manufacturer</b>: The Aggregator Company</p><p><b>manufactureDate</b>: 2023-01-01</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Vaccination Aggregator</td><td>Manufacturer name</td></tr></table><h3>Versions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td></tr><tr><td style=\"display: none\">*</td><td>v1.0.0</td></tr></table><p><b>contact</b>: ph: tel:+41.56.299.55.22(Work), <a href=\"mailto:mailto:resultate@aggregator.ch\">mailto:resultate@aggregator.ch</a>, <a href=\"http://www.aggregator.ch\">http://www.aggregator.ch</a></p><p><b>location</b>: <a href=\"Location-TC-Device-Aggregator-Location.html\">Location: status = active; telecom = ph: tel:+41.56.299.55.22(Work),mailto:resultate@labor-messenalles.ch(Work),http://www.labor-messenalles.ch(Work)</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:oid:2.51.1.3"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7601999999981" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "The Aggregator Company"] ; # 
+  fhir:manufactureDate [ fhir:v "2023-01-01"^^xsd:date] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "Vaccination Aggregator" ] ;
+     fhir:type [ fhir:v "manufacturer-name" ]
+  ] ) ; # 
+  fhir:version ( [
+     fhir:value [ fhir:v "v1.0.0" ]
+  ] ) ; # 
+  fhir:contact ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "tel:+41.56.299.55.22" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mailto:resultate@aggregator.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "url" ] ;
+     fhir:value [ fhir:v "http://www.aggregator.ch" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:location [
+     fhir:link <http://fhir.ch/ig/ch-vacd/Location/TC-Device-Aggregator-Location> ;
+     fhir:reference [ fhir:v "Location/TC-Device-Aggregator-Location" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
